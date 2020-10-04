@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 17 24
+Title "Control Adder Position 6.4"
+Date "2020-07-31"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L Device:Transformer_1P_1S T-AMPHTRTF--DCHTRPU-1
+U 1 1 5F3C16C3
+P 6475 4850
+F 0 "T-AMPHTRTF--DCHTRPU-1" H 6500 5250 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 6500 5150 50  0000 C CNN
+F 2 "SamacSys_Parts_l:FP12950" H 6475 4850 50  0001 C CNN
+F 3 "~" H 6475 4850 50  0001 C CNN
+	1    6475 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 4650 6025 4650
+Wire Wire Line
+	6075 5050 5725 5050
+$Comp
+L power:PWR_FLAG #FLG-DCHTRPU-0101
+U 1 1 5F3C16C4
+P 6025 4650
+F 0 "#FLG-DCHTRPU-0101" H 6025 4725 50  0001 C CNN
+F 1 "PWR_FLAG" H 6025 4850 50  0000 C CNN
+F 2 "" H 6025 4650 50  0001 C CNN
+F 3 "~" H 6025 4650 50  0001 C CNN
+	1    6025 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6025 4650
+Wire Wire Line
+	6025 4650 5725 4650
+Text Notes 5850 4850 0    50   ~ 0
+230V AC
+$Comp
+L Diode_Bridge:B250C3x00-2200A D-DCHTRPU-1
+U 1 1 5F39F8B5
+P 7850 4900
+F 0 "D-DCHTRPU-1" H 8200 5350 50  0000 L CNN
+F 1 "B250C3x00-2200A" H 8100 5250 50  0000 L CNN
+F 2 "Diode_THT:Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm" H 8000 5025 50  0001 L CNN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/b40c3700" H 7850 4900 50  0001 C CNN
+	1    7850 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4650 7550 4400
+Wire Wire Line
+	7550 4400 7850 4400
+Wire Wire Line
+	7850 4400 7850 4600
+Wire Wire Line
+	6875 4650 7550 4650
+Wire Wire Line
+	7850 5200 7850 5350
+Wire Wire Line
+	7850 5350 7550 5350
+Wire Wire Line
+	7550 5350 7550 5050
+Wire Wire Line
+	6875 5050 7550 5050
+Wire Wire Line
+	8150 4900 9300 4900
+$Comp
+L Device:R_Variable R-DCHTRPU-1
+U 1 1 5F3A4421
+P 9450 4900
+F 0 "R-DCHTRPU-1" V 9750 4900 50  0000 C CNN
+F 1 "R_Variable" V 9650 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P20.32mm_Horizontal" V 9380 4900 50  0001 C CNN
+F 3 "~" H 9450 4900 50  0001 C CNN
+	1    9450 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 4900 7250 4900
+Wire Wire Line
+	9600 4900 10000 4900
+Wire Wire Line
+	10000 5450 9450 5450
+$Comp
+L Device:D_Zener D-DCHTRPU-2
+U 1 1 5F3A6D5F
+P 9450 5800
+F 0 "D-DCHTRPU-2" V 9500 5700 50  0000 R CNN
+F 1 "D_Zener" V 9450 5700 50  0000 R CNN
+F 2 "Diode_THT:D_DO-34_SOD68_P7.62mm_Horizontal" H 9450 5800 50  0001 C CNN
+F 3 "~" H 9450 5800 50  0001 C CNN
+	1    9450 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9450 5450 9450 5650
+Wire Wire Line
+	9450 5950 9450 6000
+$Comp
+L Device:R R-DCHTRPU-2
+U 1 1 5F3A7AC2
+P 9450 6300
+F 0 "R-DCHTRPU-2" H 9550 6350 50  0000 L CNN
+F 1 "R" H 9550 6300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P15.24mm_Horizontal" V 9380 6300 50  0001 C CNN
+F 3 "~" H 9450 6300 50  0001 C CNN
+	1    9450 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 6450 9450 6550
+$Comp
+L Device:Q_NPN_BCE Q-DCHTRPU-1
+U 1 1 5F3AB48A
+P 9900 6000
+F 0 "Q-DCHTRPU-1" H 10100 6050 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 10100 6000 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-3P-3_Vertical" H 10100 6100 50  0001 C CNN
+F 3 "~" H 9900 6000 50  0001 C CNN
+	1    9900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4900 10000 5450
+Connection ~ 10000 5450
+Wire Wire Line
+	10000 5450 10000 5800
+Connection ~ 9450 6000
+Wire Wire Line
+	9450 6000 9450 6150
+Wire Wire Line
+	9450 6550 10000 6550
+Wire Wire Line
+	10000 6550 10000 6200
+Wire Wire Line
+	7250 6800 10000 6800
+Wire Wire Line
+	10000 6800 10000 6550
+Wire Wire Line
+	7250 4900 7250 6800
+Connection ~ 10000 6550
+Wire Wire Line
+	10000 4900 10700 4900
+Connection ~ 10000 4900
+Connection ~ 10000 6800
+$Comp
+L Device:C C-DCHTRPU-1
+U 1 1 5F3AF3B7
+P 10700 5850
+F 0 "C-DCHTRPU-1" H 10550 5900 50  0000 R CNN
+F 1 "C" H 10550 5850 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 10738 5700 50  0001 C CNN
+F 3 "~" H 10700 5850 50  0001 C CNN
+	1    10700 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 5700 10700 4900
+Connection ~ 10700 4900
+Wire Wire Line
+	10700 4900 11000 4900
+Wire Wire Line
+	10000 6800 10700 6800
+Wire Wire Line
+	10700 6000 10700 6800
+Connection ~ 10700 6800
+Wire Wire Line
+	10700 6800 11000 6800
+$Comp
+L Device:C C-DCHTRPU-2
+U 1 1 5F3B078D
+P 11000 5850
+F 0 "C-DCHTRPU-2" H 11150 5900 50  0000 L CNN
+F 1 "C" H 11150 5850 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 11038 5700 50  0001 C CNN
+F 3 "~" H 11000 5850 50  0001 C CNN
+	1    11000 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 5700 11000 4900
+Wire Wire Line
+	11000 6000 11000 6800
+Wire Wire Line
+	12750 4900 12750 5800
+Connection ~ 11000 4900
+Wire Wire Line
+	11000 6800 12750 6800
+Wire Wire Line
+	12750 6800 12750 6000
+Connection ~ 11000 6800
+$Comp
+L Switch:SW_SPDT SW-DCHTRPU-1
+U 1 1 5F3B3447
+P 12550 5900
+F 0 "SW-DCHTRPU-1" H 12550 6200 50  0000 C CNN
+F 1 "SW_SPDT" H 12550 6100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 12550 5900 50  0001 C CNN
+F 3 "~" H 12550 5900 50  0001 C CNN
+	1    12550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Galvanometer MES-DCHTRPU-1
+U 1 1 5F3B4D69
+P 11700 5450
+F 0 "MES-DCHTRPU-1" H 11900 5500 50  0000 L CNN
+F 1 "Galvanometer" H 11900 5450 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 11700 5550 50  0001 C CNN
+F 3 "~" V 11700 5550 50  0001 C CNN
+	1    11700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 5900 11700 5650
+Wire Wire Line
+	11700 5900 12350 5900
+Wire Wire Line
+	11700 5250 11700 4900
+Wire Wire Line
+	11000 4900 11700 4900
+$Comp
+L Device:R_Shunt R-DCHTRPU-3
+U 1 1 5F3B6220
+P 12200 4900
+F 0 "R-DCHTRPU-3" V 12050 4900 50  0000 C CNN
+F 1 "R_Shunt" V 11950 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_Shunt_Ohmite_LVK25" V 12130 4900 50  0001 C CNN
+F 3 "~" H 12200 4900 50  0001 C CNN
+	1    12200 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11700 4900 12000 4900
+Connection ~ 11700 4900
+Wire Wire Line
+	12400 4900 12750 4900
+Text Label 12750 4900 0    50   ~ 0
+6V-DC
+Text Label 12750 6800 0    50   ~ 0
+OV-DC
+Wire Wire Line
+	9450 6000 9700 6000
+$Comp
+L Device:Speaker LS1
+U 1 1 5F3C260D
+P 9100 8500
+F 0 "LS1" H 9300 8500 50  0000 L CNN
+F 1 "Speaker" H 9300 8450 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9100 8300 50  0001 C CNN
+F 3 "~" H 9090 8450 50  0001 C CNN
+	1    9100 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 8500 8750 8500
+Wire Wire Line
+	8900 8600 8750 8600
+Text Label 8750 8500 2    50   ~ 0
+LS1
+Text Label 8750 8600 2    50   ~ 0
+LS2
+$EndSCHEMATC

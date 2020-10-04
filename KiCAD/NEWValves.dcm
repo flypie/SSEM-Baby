@@ -1,0 +1,165 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 10E_105
+D diode
+K diode
+F http://www.r-type.org/pdfs/ea50.pdf
+$ENDCMP
+#
+$CMP 19E_92
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/pdfs/ef50.pdf
+$ENDCMP
+#
+$CMP 2b35
+D diode
+K diode
+F http://www.r-type.org/pdfs/ea50.pdf
+$ENDCMP
+#
+$CMP 4623
+D diode
+K diode
+F http://www.r-type.org/pdfs/ea50.pdf
+$ENDCMP
+#
+$CMP 6D1
+D diode
+K diode
+F http://www.r-type.org/pdfs/ea50.pdf
+$ENDCMP
+#
+$CMP 6SN7GT
+D double triode
+K triode valve
+F http://www.r-type.org/pdfs/6sn7gt-1.pdf
+$ENDCMP
+#
+$CMP ARP35
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/pdfs/ef50.pdf
+$ENDCMP
+#
+$CMP CV0124
+D Output Beam Tetrode, 25W  (Va = 300V, Ia = 83mA).
+K Beam Tetrode
+F http://www.r-type.org/pdfs/cv124.pdf
+$ENDCMP
+#
+$CMP CV1091
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/pdfs/ef50.pdf
+$ENDCMP
+#
+$CMP CV1131
+D 12-inch Cathode Ray Tube crt
+K 12-inch Cathode Ray Tube crt
+F http://www.r-type.org/exhib/zaa0420.htm
+$ENDCMP
+#
+$CMP CV173
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/pdfs/ef55.pdf
+$ENDCMP
+#
+$CMP CV71
+D gas filled voltage stabiliser
+K gas filled voltage stabiliser
+F http://www.r-type.org/pdfs/cv71.pdf
+$ENDCMP
+#
+$CMP CV73
+D Power Beam Tetrode (Va = 250V, Ia = 85mA)  (Not CV72 = V1120).
+K Power Beam Tetrode (Va = 250V, Ia = 85mA)  (Not CV72 = V1120).
+F http://www.r-type.org/pdfs/cv73.pdf
+$ENDCMP
+#
+$CMP CV989
+D 12-inch Cathode Ray Tube (
+K 12-inch Cathode Ray Tube (
+F http://www.r-type.org/exhib/zaa0420.htm
+$ENDCMP
+#
+$CMP EA50
+D diode
+K diode
+F http://www.r-type.org/pdfs/ea50.pdf
+$ENDCMP
+#
+$CMP EF50
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/exhib/aaa0098.htm
+$ENDCMP
+#
+$CMP EF55
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/exhib/aaa0075.htm
+$ENDCMP
+#
+$CMP VCR97
+D 6-inch Cathode Ray Tube
+K 6-inch Cathode Ray Tube CRT
+F http://www.r-type.org/exhib/aaj0166.htm
+$ENDCMP
+#
+$CMP VR105_30
+D Neon Voltage Stabiliser  (Va = 105V, Ia = 40mA).
+K Voltage Stabiliser
+F http://www.r-type.org/pdfs/vr105-30.pdf
+$ENDCMP
+#
+$CMP VR116
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/pdfs/ef55.pdf
+$ENDCMP
+#
+$CMP VR78
+D Diode for DCVa = 125V, Ia = 5mA).
+K Diode for DCVa = 125V, Ia = 5mA).
+F http://www.r-type.org/pdfs/d1.pdf
+$ENDCMP
+#
+$CMP VR91
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/pdfs/ef50.pdf
+$ENDCMP
+#
+$CMP VT207_GPO
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/pdfs/ef50.pdf
+$ENDCMP
+#
+$CMP VU111
+D HIGH Voltage rectifier
+K HIGH Voltage rectifier
+F http://www.r-type.org/pdfs/r10.pdf
+$ENDCMP
+#
+$CMP ZA3058
+D Single Ended Short Wave H.F. Pentode
+K pentode valve
+F http://www.r-type.org/pdfs/ef50.pdf
+$ENDCMP
+#
+$CMP cv1092
+D diode
+K diode
+F http://www.r-type.org/pdfs/ea50.pdf
+$ENDCMP
+#
+$CMP vr92
+D diode
+K diode
+F http://www.r-type.org/pdfs/ea50.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,894 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 24 24
+Title "Control Gate Posn 6.3"
+Date "2020-07-31"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L local:VARIAC TR?
+U 1 1 5F75EEA0
+P 3200 1700
+F 0 "TR?" H 3350 2100 50  0000 C CNN
+F 1 "VARIAC" H 3350 2000 50  0000 C CNN
+F 2 "" H 3200 1700 50  0001 C CNN
+F 3 "" H 3200 1700 50  0001 C CNN
+	1    3200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5F75F50F
+P 2800 1500
+F 0 "F?" V 2550 1500 50  0000 C CNN
+F 1 "Fuse" V 2650 1500 50  0000 C CNN
+F 2 "" V 2730 1500 50  0001 C CNN
+F 3 "~" H 2800 1500 50  0001 C CNN
+	1    2800 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 5F77448C
+P 2300 1500
+F 0 "SW?" H 2300 1750 50  0000 C CNN
+F 1 "SW_SPST" H 2300 1650 50  0000 C CNN
+F 2 "" H 2300 1500 50  0001 C CNN
+F 3 "~" H 2300 1500 50  0001 C CNN
+	1    2300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5F7791CE
+P 4150 1700
+F 0 "T?" H 4150 2050 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 4150 2000 50  0000 C CNN
+F 2 "" H 4150 1700 50  0001 C CNN
+F 3 "~" H 4150 1700 50  0001 C CNN
+	1    4150 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VU111 U?
+U 1 1 5F77E4E3
+P 4250 2500
+F 0 "U?" H 4600 2550 50  0000 L CNN
+F 1 "VU111" H 4600 2500 50  0000 L CNN
+F 2 "NewValves:Valve_B4+1" H 4850 2300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/r10.pdf" H 3750 2400 50  0001 C CNN
+	1    4250 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L NEWValves:CV71 U?
+U 1 1 5F794FD6
+P 5300 2150
+F 0 "U?" H 5450 2200 50  0000 L CNN
+F 1 "CV71" H 5450 2150 50  0000 L CNN
+F 2 "" V 5300 2250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/cv71.pdf" V 5300 2250 50  0001 C CNN
+	1    5300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Iron L?
+U 1 1 5F796124
+P 4400 3500
+F 0 "L?" H 4500 3550 50  0000 L CNN
+F 1 "100h 20 mA" H 4500 3400 50  0000 L CNN
+F 2 "" H 4400 3500 50  0001 C CNN
+F 3 "~" H 4400 3500 50  0001 C CNN
+	1    4400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Voltmeter_DC MES?
+U 1 1 5F79756E
+P 5200 3750
+F 0 "MES?" H 5450 3800 50  0000 L CNN
+F 1 "Voltmeter_DC" H 5450 3750 50  0000 L CNN
+F 2 "" V 5200 3850 50  0001 C CNN
+F 3 "~" V 5200 3850 50  0001 C CNN
+	1    5200 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2400 4550 2000
+Wire Wire Line
+	4400 2900 4400 3200
+Wire Wire Line
+	3750 1500 3550 1500
+Wire Wire Line
+	3100 1900 3100 2000
+Wire Wire Line
+	3100 2000 3750 2000
+Wire Wire Line
+	3750 2000 3750 1900
+Wire Wire Line
+	2650 1500 2500 1500
+Wire Wire Line
+	2100 1500 2000 1500
+Wire Wire Line
+	3100 1500 2950 1500
+$Comp
+L local:Transformer_1P_4S T?
+U 1 1 5F8BC718
+P 2800 3050
+F 0 "T?" H 2800 4000 50  0000 C CNN
+F 1 "Transformer_1P_4S" H 2800 3900 50  0000 C CNN
+F 2 "" H 2800 3250 50  0001 C CNN
+F 3 "~" H 2800 3250 50  0001 C CNN
+	1    2800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2000 3850 2000
+Wire Wire Line
+	3850 2000 3850 2300
+Wire Wire Line
+	3850 2300 3200 2300
+Connection ~ 4550 2000
+Wire Wire Line
+	4550 2000 4550 1900
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 5F8D6B5C
+P 3400 2600
+F 0 "R-KVPSU1-?" V 3650 2600 50  0000 C CNN
+F 1 "2R 3W" V 3550 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3330 2600 50  0001 C CNN
+F 3 "~" H 3400 2600 50  0001 C CNN
+	1    3400 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 2600 3200 2600
+Wire Wire Line
+	3950 2400 3950 2600
+Wire Wire Line
+	3950 2600 3550 2600
+Wire Wire Line
+	3200 2700 3250 2700
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 5F983C54
+P 3400 2700
+F 0 "R-KVPSU1-?" V 3200 2700 50  0000 C CNN
+F 1 "0R8 4W" V 3300 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3330 2700 50  0001 C CNN
+F 3 "~" H 3400 2700 50  0001 C CNN
+	1    3400 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 2700 3850 2700
+Wire Wire Line
+	3200 3000 3850 3000
+Text Notes 3700 2900 0    50   ~ 0
+4v 3A\nfor CV73
+Text Notes 2900 2500 0    50   ~ 0
+6.3v 2A
+Text Notes 2900 2900 0    50   ~ 0
+6.3v 2A
+Text Notes 2950 3300 0    50   ~ 0
+4.1v 1A
+Text Notes 2950 3700 0    50   ~ 0
+4.1v 1A
+Wire Wire Line
+	3200 3100 3300 3100
+Wire Wire Line
+	3200 3400 3300 3400
+Wire Wire Line
+	3200 3500 3300 3500
+Wire Wire Line
+	3200 3800 3300 3800
+Text Label 3300 3100 0    50   ~ 0
+c
+Text Label 3300 3400 0    50   ~ 0
+c
+Text Label 3300 3800 0    50   ~ 0
+d
+Text Label 3300 3500 0    50   ~ 0
+d
+Wire Wire Line
+	3100 1900 2200 1900
+Wire Wire Line
+	2200 1900 2200 3250
+Wire Wire Line
+	2200 3250 2350 3250
+Connection ~ 3100 1900
+Wire Wire Line
+	2350 2850 2000 2850
+Wire Wire Line
+	2000 1500 2000 2850
+$Comp
+L Device:Fuse F?
+U 1 1 5FA53F8A
+P 1850 2850
+F 0 "F?" V 1600 2850 50  0000 C CNN
+F 1 "Fuse" V 1700 2850 50  0000 C CNN
+F 2 "" V 1780 2850 50  0001 C CNN
+F 3 "~" H 1850 2850 50  0001 C CNN
+	1    1850 2850
+	0    1    1    0   
+$EndComp
+Connection ~ 2000 2850
+$Comp
+L Connector:Conn_01x01_Female J-KVPSU1-?
+U 1 1 5FA58CDA
+P 1400 2850
+F 0 "J-KVPSU1-?" H 1250 3050 50  0000 C CNN
+F 1 "L" H 1250 2950 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 1450 2810 50  0001 C CNN
+F 3 "~" H 1450 2810 50  0001 C CNN
+	1    1400 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2850 1600 2850
+$Comp
+L Connector:Conn_01x01_Female J-KVPSU1-?
+U 1 1 5FA7655C
+P 1400 3250
+F 0 "J-KVPSU1-?" H 1250 3450 50  0000 C CNN
+F 1 "N" H 1250 3350 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 1450 3210 50  0001 C CNN
+F 3 "~" H 1450 3210 50  0001 C CNN
+	1    1400 3250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3250 2200 3250
+Connection ~ 2200 3250
+$Comp
+L Connector:Conn_01x01_Female J-KVPSU1-?
+U 1 1 5FAAD11E
+P 1400 3650
+F 0 "J-KVPSU1-?" H 1250 3850 50  0000 C CNN
+F 1 "E" H 1250 3750 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 1450 3610 50  0001 C CNN
+F 3 "~" H 1450 3610 50  0001 C CNN
+	1    1400 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3650 2200 3650
+Wire Wire Line
+	2200 3650 2200 3850
+$Comp
+L Device:C C-KVPSU1-?
+U 1 1 5FB05B33
+P 4650 3200
+F 0 "C-KVPSU1-?" V 4350 3200 50  0000 C CNN
+F 1 "1.5uf 3kV" V 4450 3200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4688 3050 50  0001 C CNN
+F 3 "~" H 4650 3200 50  0001 C CNN
+	1    4650 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 3200 4400 3200
+Connection ~ 4400 3200
+Wire Wire Line
+	4400 3200 4400 3350
+Wire Wire Line
+	4800 3200 4900 3200
+Wire Wire Line
+	4400 3650 4400 3800
+$Comp
+L Device:C C-KVPSU1-?
+U 1 1 5FB5BFF3
+P 4650 3800
+F 0 "C-KVPSU1-?" V 4850 3850 50  0000 C CNN
+F 1 "1.5uf 3kV" V 4750 3800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4688 3650 50  0001 C CNN
+F 3 "~" H 4650 3800 50  0001 C CNN
+	1    4650 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3800 4900 3800
+Wire Wire Line
+	4500 3800 4400 3800
+Connection ~ 4400 3800
+Wire Wire Line
+	4550 1500 4900 1500
+Wire Wire Line
+	4900 1500 4900 3200
+Connection ~ 4900 3200
+Wire Wire Line
+	4900 3200 4900 3800
+Wire Wire Line
+	4400 4150 5200 4150
+Wire Wire Line
+	4400 3800 4400 4150
+Wire Wire Line
+	5200 4150 5200 3950
+Connection ~ 5200 4150
+Wire Wire Line
+	5200 3550 5200 3400
+Text Label 2200 3850 0    50   ~ 0
+GND
+Text Label 5200 3400 0    50   ~ 0
+GND
+Wire Wire Line
+	4900 1500 5700 1500
+Connection ~ 4900 1500
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 5FC739F7
+P 5700 1700
+F 0 "R-KVPSU1-?" V 5900 1700 50  0000 C CNN
+F 1 "470K" V 5800 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5630 1700 50  0001 C CNN
+F 3 "~" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1550 5700 1500
+Connection ~ 5700 1500
+Wire Wire Line
+	5700 1500 6600 1500
+Wire Wire Line
+	5700 1850 5700 1950
+Wire Wire Line
+	5700 1950 5300 1950
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 5FCD2A4A
+P 5700 2150
+F 0 "R-KVPSU1-?" V 5900 2150 50  0000 C CNN
+F 1 "470K" V 5800 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5630 2150 50  0001 C CNN
+F 3 "~" H 5700 2150 50  0001 C CNN
+	1    5700 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2000 5700 1950
+Wire Wire Line
+	5700 2300 5700 2400
+Connection ~ 5700 1950
+Wire Wire Line
+	5300 2350 5300 2400
+Wire Wire Line
+	5300 2400 5700 2400
+Connection ~ 5700 2400
+Wire Wire Line
+	5700 2400 5800 2400
+Wire Wire Line
+	5800 2400 5800 2450
+Connection ~ 5800 2400
+Text Label 5800 2450 3    50   ~ 0
+200*
+$Comp
+L NEWValves:CV73 V-KVPSU1-3
+U 1 1 5FD38DCA
+P 6450 2250
+F 0 "V-KVPSU1-3" H 6500 1850 50  0000 C CNN
+F 1 "CV73" H 6500 1750 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7450 2500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 6450 2250 50  0001 C CNN
+	1    6450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2400 6150 2400
+Wire Wire Line
+	6800 2300 6900 2300
+Wire Wire Line
+	6800 2150 6900 2150
+Wire Wire Line
+	6900 2150 6900 2050
+Wire Wire Line
+	6600 1800 6600 1500
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 5FDE2675
+P 7050 2300
+F 0 "R-KVPSU1-?" V 6850 2300 50  0000 C CNN
+F 1 "2R 3W" V 6950 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6980 2300 50  0001 C CNN
+F 3 "~" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 5FE05E55
+P 6900 1900
+F 0 "R-KVPSU1-?" H 7000 1950 50  0000 L CNN
+F 1 "1.5K" H 7000 1900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6830 1900 50  0001 C CNN
+F 3 "~" H 6900 1900 50  0001 C CNN
+	1    6900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1750 6900 1250
+Text Label 6900 1250 0    50   ~ 0
++300
+Wire Wire Line
+	7200 2300 7800 2300
+$Comp
+L NEWValves:CV73 V-KVPSU1-3
+U 2 1 5FE50753
+P 3250 10250
+F 0 "V-KVPSU1-3" H 3300 9850 50  0000 C CNN
+F 1 "CV73" H 3300 9750 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4250 10500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3250 10250 50  0001 C CNN
+	2    3250 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-KVPSU1-2
+U 1 1 5FE5BD72
+P 7800 3400
+F 0 "V-KVPSU1-2" H 7850 3000 50  0000 C CNN
+F 1 "VR91" H 7850 2900 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8800 3650 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 7800 3400 50  0001 C CNN
+	1    7800 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2950 7800 2300
+NoConn ~ 7500 3600
+NoConn ~ 7500 3500
+$Comp
+L NEWValves:VR91 V-KVPSU1-2
+U 2 1 5FF1DAA2
+P 2650 10250
+F 0 "V-KVPSU1-2" H 2700 9850 50  0000 C CNN
+F 1 "VR91" H 2700 9750 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3650 10500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2650 10250 50  0001 C CNN
+	2    2650 10250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 5FF42D9E
+P 8400 3450
+F 0 "R-KVPSU1-?" V 8200 3450 50  0000 C CNN
+F 1 "2R 3W" V 8300 3450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8330 3450 50  0001 C CNN
+F 3 "~" H 8400 3450 50  0001 C CNN
+	1    8400 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 3350 7300 3350
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 5FF65E8E
+P 7800 2000
+F 0 "R-KVPSU1-?" H 7900 2050 50  0000 L CNN
+F 1 "22K" H 7900 2000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7730 2000 50  0001 C CNN
+F 3 "~" H 7800 2000 50  0001 C CNN
+	1    7800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-KVPSU1-?
+U 1 1 5FF66B0F
+P 7300 3600
+F 0 "C-KVPSU1-?" H 7450 3550 50  0000 L CNN
+F 1 "0.5" H 7450 3600 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7338 3450 50  0001 C CNN
+F 3 "~" H 7300 3600 50  0001 C CNN
+	1    7300 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 3750 7300 3850
+Text Label 7300 3850 2    50   ~ 0
+GND
+Wire Wire Line
+	7800 1850 7800 1250
+Text Label 7800 1250 0    50   ~ 0
++300
+Wire Wire Line
+	8100 3250 8250 3250
+Wire Wire Line
+	8100 3550 8100 3700
+Text Label 8100 3700 0    50   ~ 0
+GND
+Text Label 8250 3250 0    50   ~ 0
+GND
+Wire Wire Line
+	7800 2300 7950 2300
+Connection ~ 7800 2300
+$Comp
+L Device:C C-KVPSU1-?
+U 1 1 6001CE08
+P 8100 2300
+F 0 "C-KVPSU1-?" V 7900 2300 50  0000 C CNN
+F 1 "0.5" V 7800 2300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8138 2150 50  0001 C CNN
+F 3 "~" H 8100 2300 50  0001 C CNN
+	1    8100 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8550 3450 8650 3450
+Wire Wire Line
+	8650 3450 8650 3050
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 60041A48
+P 8650 2900
+F 0 "R-KVPSU1-?" H 8750 2950 50  0000 L CNN
+F 1 "22K" H 8750 2900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8580 2900 50  0001 C CNN
+F 3 "~" H 8650 2900 50  0001 C CNN
+	1    8650 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2300 8250 2300
+Wire Wire Line
+	8650 3450 9350 3450
+Connection ~ 8650 3450
+Wire Wire Line
+	8650 2300 8650 2750
+Wire Wire Line
+	8100 3450 8250 3450
+Wire Wire Line
+	7800 2300 7800 2150
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 6016D8B8
+P 7300 3050
+F 0 "R-KVPSU1-?" H 7200 3100 50  0000 R CNN
+F 1 "15k 3W" H 7200 3050 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7230 3050 50  0001 C CNN
+F 3 "~" H 7300 3050 50  0001 C CNN
+	1    7300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2900 7300 2800
+Text Label 7300 2800 0    50   ~ 0
++300
+Wire Wire Line
+	7300 3350 7300 3200
+Wire Wire Line
+	7300 3450 7300 3350
+Connection ~ 7300 3350
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 601E749D
+P 9350 3700
+F 0 "R-KVPSU1-?" H 9450 3750 50  0000 L CNN
+F 1 "470k" H 9450 3700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9280 3700 50  0001 C CNN
+F 3 "~" H 9350 3700 50  0001 C CNN
+	1    9350 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 601E88D3
+P 9350 3200
+F 0 "R-KVPSU1-?" H 9450 3250 50  0000 L CNN
+F 1 "470k" H 9450 3200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9280 3200 50  0001 C CNN
+F 3 "~" H 9350 3200 50  0001 C CNN
+	1    9350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3350 9350 3450
+Connection ~ 9350 3450
+Wire Wire Line
+	9350 3450 9350 3550
+$Comp
+L NEWValves:VR91 V-KVPSU1-?
+U 1 1 60235996
+P 10550 2750
+F 0 "V-KVPSU1-?" H 10600 2350 50  0000 C CNN
+F 1 "VR91" H 10600 2250 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 11550 3000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 10550 2750 50  0001 C CNN
+	1    10550 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3050 9350 2200
+Wire Wire Line
+	9350 2200 10550 2200
+Wire Wire Line
+	10550 2200 10550 2300
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 6025EB0D
+P 10550 1900
+F 0 "R-KVPSU1-?" H 10450 1950 50  0000 R CNN
+F 1 "47k 2W" H 10450 1900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10480 1900 50  0001 C CNN
+F 3 "~" H 10550 1900 50  0001 C CNN
+	1    10550 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 1750 10550 1250
+Text Label 10550 1250 0    50   ~ 0
++300
+Wire Wire Line
+	10550 2200 10550 2050
+Connection ~ 10550 2200
+Wire Wire Line
+	9350 3850 9350 4000
+Text Label 9350 4000 0    50   ~ 0
+-150*
+Wire Wire Line
+	10250 2600 10100 2600
+Text Label 10100 2600 2    50   ~ 0
+GND
+Text Label 10250 3450 2    50   ~ 0
+GND
+Wire Wire Line
+	10250 2900 10250 3350
+NoConn ~ 10850 2850
+NoConn ~ 10850 2950
+Wire Wire Line
+	10900 2700 11000 2700
+Wire Wire Line
+	11000 2700 11000 2250
+Wire Wire Line
+	10250 2800 10000 2800
+Wire Wire Line
+	10000 2800 10000 3600
+Wire Wire Line
+	10000 3600 11200 3600
+Wire Wire Line
+	11200 3600 11200 2800
+Wire Wire Line
+	11200 2800 11250 2800
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 6049E9B6
+P 11400 2800
+F 0 "R-KVPSU1-?" V 11200 2800 50  0000 C CNN
+F 1 "2R 3W" V 11300 2800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11330 2800 50  0001 C CNN
+F 3 "~" H 11400 2800 50  0001 C CNN
+	1    11400 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11550 2800 11750 2800
+Wire Wire Line
+	11750 2800 11750 3050
+Connection ~ 11750 2800
+$Comp
+L Device:C C-KVPSU1-?
+U 1 1 604F5529
+P 11750 3200
+F 0 "C-KVPSU1-?" H 12300 3100 50  0000 R CNN
+F 1 "0.5" H 12150 3200 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11788 3050 50  0001 C CNN
+F 3 "~" H 11750 3200 50  0001 C CNN
+	1    11750 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11750 3350 10250 3350
+Connection ~ 10250 3350
+Wire Wire Line
+	10250 3350 10250 3450
+Wire Wire Line
+	11750 2800 12050 2800
+Wire Wire Line
+	12050 2800 12050 3600
+$Comp
+L Device:C C-KVPSU1-?
+U 1 1 605D726D
+P 12050 3750
+F 0 "C-KVPSU1-?" H 11900 3700 50  0000 R CNN
+F 1 "0.5uf 3kv" H 11900 3750 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 12088 3600 50  0001 C CNN
+F 3 "~" H 12050 3750 50  0001 C CNN
+	1    12050 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12050 3900 12050 4150
+Wire Wire Line
+	5200 4150 11550 4150
+Wire Wire Line
+	11200 2200 11200 2250
+$Comp
+L Device:C C-KVPSU1-?
+U 1 1 6065E37A
+P 11200 2450
+F 0 "C-KVPSU1-?" H 11050 2400 50  0000 R CNN
+F 1 "0.5" H 11050 2450 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11238 2300 50  0001 C CNN
+F 3 "~" H 11200 2450 50  0001 C CNN
+	1    11200 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11200 2600 11200 2700
+Text Label 11200 2700 2    50   ~ 0
+GND
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 6068C55E
+P 11200 2050
+F 0 "R-KVPSU1-?" H 11300 2100 50  0000 L CNN
+F 1 "15k 3W" H 11300 2050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11130 2050 50  0001 C CNN
+F 3 "~" H 11200 2050 50  0001 C CNN
+	1    11200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 1900 11200 1250
+Text Label 11200 1250 0    50   ~ 0
++300
+Wire Wire Line
+	11000 2250 11200 2250
+Connection ~ 11200 2250
+Wire Wire Line
+	11200 2250 11200 2300
+Connection ~ 12050 2800
+Connection ~ 12050 4150
+Wire Wire Line
+	12050 2800 12750 2800
+Wire Wire Line
+	12050 4150 12900 4150
+$Comp
+L Device:R_POT RV?
+U 1 1 608C1FFC
+P 12900 2800
+F 0 "RV?" H 12800 2750 50  0000 R CNN
+F 1 "500K WW" H 12800 2800 50  0000 R CNN
+F 2 "" H 12900 2800 50  0001 C CNN
+F 3 "~" H 12900 2800 50  0001 C CNN
+	1    12900 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 608C2B9F
+P 12900 3450
+F 0 "R-KVPSU1-?" H 13000 3500 50  0000 L CNN
+F 1 "4.5m" H 13000 3450 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 12830 3450 50  0001 C CNN
+F 3 "~" H 12900 3450 50  0001 C CNN
+	1    12900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 60AF3194
+P 12900 2350
+F 0 "R-KVPSU1-?" H 13000 2400 50  0000 L CNN
+F 1 "15k 3W" H 13000 2350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12830 2350 50  0001 C CNN
+F 3 "~" H 12900 2350 50  0001 C CNN
+	1    12900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 2650 12900 2500
+Text Label 12900 1250 2    50   ~ 0
+200*
+Wire Wire Line
+	12900 1250 12900 1950
+Wire Wire Line
+	12900 1950 13050 1950
+Connection ~ 12900 1950
+Wire Wire Line
+	12900 1950 12900 2200
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 60BE4ED8
+P 13200 1950
+F 0 "R-KVPSU1-?" V 12950 1950 50  0000 C CNN
+F 1 "15k 3W" V 13050 1950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13130 1950 50  0001 C CNN
+F 3 "~" H 13200 1950 50  0001 C CNN
+	1    13200 1950
+	0    1    1    0   
+$EndComp
+Text Label 13650 1950 3    50   ~ 0
+GND
+Wire Wire Line
+	13350 1950 13500 1950
+$Comp
+L Connector:Conn_01x01_Female J-KVPSU1-?
+U 1 1 60C4A7EF
+P 13850 1550
+F 0 "J-KVPSU1-?" H 13750 1300 50  0000 C CNN
+F 1 "0V" H 13750 1400 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 13900 1510 50  0001 C CNN
+F 3 "~" H 13900 1510 50  0001 C CNN
+	1    13850 1550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13500 1550 13500 1950
+Wire Wire Line
+	13500 1550 13650 1550
+Connection ~ 13500 1950
+Wire Wire Line
+	13500 1950 13650 1950
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 60E00B26
+P 13450 4150
+F 0 "R-KVPSU1-?" V 13600 4150 50  0000 C CNN
+F 1 "4.7k" V 13700 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13380 4150 50  0001 C CNN
+F 3 "~" H 13450 4150 50  0001 C CNN
+	1    13450 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13300 4150 12900 4150
+Connection ~ 12900 4150
+Wire Wire Line
+	13600 4150 13650 4150
+$Comp
+L Connector:Conn_01x01_Female J-KVPSU1-?
+U 1 1 60E6452A
+P 13850 4150
+F 0 "J-KVPSU1-?" H 13750 3900 50  0000 C CNN
+F 1 "S.EHT -KV" H 13750 4000 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 13900 4110 50  0001 C CNN
+F 3 "~" H 13900 4110 50  0001 C CNN
+	1    13850 4150
+	1    0    0    1   
+$EndComp
+$Comp
+L NEWValves:VR91 V-KVPSU1-1
+U 2 1 60E9A0B7
+P 2050 10250
+F 0 "V-KVPSU1-1" H 2100 9850 50  0000 C CNN
+F 1 "VR91" H 2100 9750 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3050 10500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2050 10250 50  0001 C CNN
+	2    2050 10250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 3600 12900 4150
+Wire Wire Line
+	12900 2950 12900 3300
+$Comp
+L Device:R R-KVPSU1-?
+U 1 1 61131A4A
+P 11550 3900
+F 0 "R-KVPSU1-?" H 11450 3950 50  0000 R CNN
+F 1 "360k" H 11450 3900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11480 3900 50  0001 C CNN
+F 3 "~" H 11550 3900 50  0001 C CNN
+	1    11550 3900
+	1    0    0    -1  
+$EndComp
+Text Label 11550 3600 0    50   ~ 0
+GND
+Wire Wire Line
+	11550 3750 11550 3600
+Wire Wire Line
+	11550 4150 11550 4050
+Connection ~ 11550 4150
+Wire Wire Line
+	11550 4150 12050 4150
+$EndSCHEMATC

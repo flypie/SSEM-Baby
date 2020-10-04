@@ -1,0 +1,2172 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 16 20
+Title "Control Gate Posn 6.3"
+Date "2020-07-31"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "Copied from Computer Conservation Society WWW"
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4049 U-CMOSCRT1-10
+U 7 1 61543E7B
+P 3900 10650
+AR Path="/5F2CB321/61543E7B" Ref="U-CMOSCRT1-10"  Part="7" 
+AR Path="/603D7E1B/61543E7B" Ref="U-CMOSCRT1-?"  Part="7" 
+AR Path="/5F39A11B/61543E7B" Ref="U-CRTPCIF2-4"  Part="7" 
+F 0 "U-CRTPCIF2-4" H 4150 10700 50  0000 L CNN
+F 1 "4049" H 4150 10650 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 3700 11100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4098b.pdf" H 3700 11100 50  0001 C CNN
+	7    3900 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4098 U-CMOSCRT1-5
+U 3 1 63B3C57E
+P 900 10650
+AR Path="/5F2CB321/63B3C57E" Ref="U-CMOSCRT1-5"  Part="3" 
+AR Path="/603D7E1B/63B3C57E" Ref="U-CMOSCRT1-?"  Part="3" 
+AR Path="/5F39A11B/63B3C57E" Ref="U-CRTPCIF2-1"  Part="3" 
+F 0 "U-CRTPCIF2-1" H 650 10700 50  0000 R CNN
+F 1 "4049" H 650 10650 50  0000 R CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 700 11100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4098b.pdf" H 700 11100 50  0001 C CNN
+	3    900  10650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2325 10250 2325 10150
+Wire Wire Line
+	2350 11150 2350 11050
+Text Label 1225 11050 0    50   ~ 0
+GND
+Text Label 1200 10250 0    50   ~ 0
+VCC
+$Comp
+L Connector:Conn_01x01_Female J-CTRLGATE-?
+U 1 1 5F3CB5A2
+P 1300 1300
+AR Path="/5F23114F/5F3CB5A2" Ref="J-CTRLGATE-?"  Part="1" 
+AR Path="/5F3692CF/5F3CB5A2" Ref="J-CTRLGATE-?"  Part="1" 
+AR Path="/5F2CB321/5F3CB5A2" Ref="J-CTRLGATE-?"  Part="1" 
+AR Path="/603D7E1B/5F3CB5A2" Ref="J-CTRLGATE-?"  Part="1" 
+AR Path="/5F39A11B/5F3CB5A2" Ref="J-CRTPCIF2-4"  Part="1" 
+F 0 "J-CRTPCIF2-4" H 1350 1350 50  0000 L CNN
+F 1 "C4" H 1350 1250 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1350 1260 50  0001 C CNN
+F 3 "~" H 1350 1260 50  0001 C CNN
+	1    1300 1300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1300 1750 1300
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 5F3DE4B0
+P 2000 1550
+AR Path="/5F2CB321/5F3DE4B0" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F3DE4B0" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F3DE4B0" Ref="C-CRTPCIF2-5"  Part="1" 
+F 0 "C-CRTPCIF2-5" V 1800 1550 50  0000 C CNN
+F 1 "22p" V 1700 1550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2038 1400 50  0001 C CNN
+F 3 "~" H 2000 1550 50  0001 C CNN
+	1    2000 1550
+	0    -1   -1   0   
+$EndComp
+Text Label 2450 1800 0    50   ~ 0
+GND
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 5F3DE4C8
+P 2000 1300
+AR Path="/5F2CB321/5F3DE4C8" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F3DE4C8" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F3DE4C8" Ref="R-CRTPCIF2-5"  Part="1" 
+F 0 "R-CRTPCIF2-5" V 1750 1300 50  0000 C CNN
+F 1 "100K" V 1850 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1930 1300 50  0001 C CNN
+F 3 "~" H 2000 1300 50  0001 C CNN
+	1    2000 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 1550 1750 1550
+Wire Wire Line
+	1750 1550 1750 1300
+Connection ~ 1750 1300
+Wire Wire Line
+	1750 1300 1850 1300
+Wire Wire Line
+	2150 1550 2250 1550
+Wire Wire Line
+	2250 1550 2250 1300
+Wire Wire Line
+	2250 1300 2150 1300
+Connection ~ 2250 1300
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 5F466AAF
+P 2450 1100
+AR Path="/5F2CB321/5F466AAF" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F466AAF" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F466AAF" Ref="D-CRTPCIF2-2"  Part="1" 
+F 0 "D-CRTPCIF2-2" V 2400 1200 50  0000 L CNN
+F 1 "CS60" V 2450 1200 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2450 1100 50  0001 C CNN
+F 3 "~" H 2450 1100 50  0001 C CNN
+	1    2450 1100
+	0    1    1    0   
+$EndComp
+Text Label 2450 900  0    50   ~ 0
+VCC
+Wire Wire Line
+	2450 1300 2450 1250
+Wire Wire Line
+	2250 1300 2450 1300
+Wire Wire Line
+	2450 950  2450 900 
+Wire Wire Line
+	2450 1300 2450 1400
+Connection ~ 2450 1300
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 5F4CF589
+P 2450 1550
+AR Path="/5F2CB321/5F4CF589" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F4CF589" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F4CF589" Ref="D-CRTPCIF2-3"  Part="1" 
+F 0 "D-CRTPCIF2-3" V 2400 1650 50  0000 L CNN
+F 1 "CS60" V 2450 1650 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2450 1550 50  0001 C CNN
+F 3 "~" H 2450 1550 50  0001 C CNN
+	1    2450 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 1700 2450 1800
+$Comp
+L 4xxx_IEEE:4049 U-CRTPCIF2-?
+U 1 1 5F55910C
+P 3550 1300
+AR Path="/5F2CB321/5F55910C" Ref="U-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F55910C" Ref="U-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F55910C" Ref="U-CRTPCIF2-5"  Part="1" 
+F 0 "U-CRTPCIF2-5" H 4150 1350 50  0000 L CNN
+F 1 "4049" H 4150 1300 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4098b.pdf" H 3550 1300 50  0001 C CNN
+	1    3550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1300 2450 1300
+Wire Wire Line
+	3550 1050 3550 950 
+Wire Wire Line
+	3550 1550 3550 1650
+Text Label 3550 950  0    50   ~ 0
+VCC
+Text Label 3550 1650 2    50   ~ 0
+GND
+Text Notes 1400 1250 0    50   ~ 0
+Bu
+Wire Wire Line
+	4400 1300 4400 700 
+Wire Wire Line
+	4100 1300 4400 1300
+$Comp
+L Connector:DB25_Female_MountingHoles J-CRTPCIF2-12
+U 1 1 5F5FF0E6
+P 13900 1900
+F 0 "J-CRTPCIF2-12" V 14250 1850 50  0000 C CNN
+F 1 "DB25_Female_MountingHoles" V 14150 1850 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-25_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 13900 1900 50  0001 C CNN
+F 3 " ~" H 13900 1900 50  0001 C CNN
+	1    13900 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14900 2200 14900 2550
+Text Label 14900 2550 3    50   ~ 0
+PE
+Text Label 4400 700  2    50   ~ 0
+PE
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 5F648209
+P 1300 2950
+AR Path="/5F23114F/5F648209" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/5F648209" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5F648209" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F648209" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F648209" Ref="J-CRTPCIF2-5"  Part="1" 
+F 0 "J-CRTPCIF2-5" H 1350 3000 50  0000 L CNN
+F 1 "VAR.DASH.CF" H 1350 2900 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1350 2910 50  0001 C CNN
+F 3 "~" H 1350 2910 50  0001 C CNN
+	1    1300 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2950 1750 2950
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 5F648214
+P 2000 3200
+AR Path="/5F2CB321/5F648214" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F648214" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F648214" Ref="C-CRTPCIF2-6"  Part="1" 
+F 0 "C-CRTPCIF2-6" V 1800 3200 50  0000 C CNN
+F 1 "22p" V 1700 3200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2038 3050 50  0001 C CNN
+F 3 "~" H 2000 3200 50  0001 C CNN
+	1    2000 3200
+	0    -1   -1   0   
+$EndComp
+Text Label 2450 3450 0    50   ~ 0
+GND
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 5F64821F
+P 2000 2950
+AR Path="/5F2CB321/5F64821F" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F64821F" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F64821F" Ref="R-CRTPCIF2-6"  Part="1" 
+F 0 "R-CRTPCIF2-6" V 1750 2950 50  0000 C CNN
+F 1 "100K" V 1850 2950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1930 2950 50  0001 C CNN
+F 3 "~" H 2000 2950 50  0001 C CNN
+	1    2000 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 3200 1750 3200
+Wire Wire Line
+	1750 3200 1750 2950
+Connection ~ 1750 2950
+Wire Wire Line
+	1750 2950 1850 2950
+Wire Wire Line
+	2150 3200 2250 3200
+Wire Wire Line
+	2250 3200 2250 2950
+Wire Wire Line
+	2250 2950 2150 2950
+Connection ~ 2250 2950
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 5F648231
+P 2450 2700
+AR Path="/5F2CB321/5F648231" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F648231" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F648231" Ref="D-CRTPCIF2-4"  Part="1" 
+F 0 "D-CRTPCIF2-4" V 2400 2800 50  0000 L CNN
+F 1 "CS60" V 2450 2800 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2450 2700 50  0001 C CNN
+F 3 "~" H 2450 2700 50  0001 C CNN
+	1    2450 2700
+	0    1    1    0   
+$EndComp
+Text Label 2450 2450 0    50   ~ 0
+VCC
+Wire Wire Line
+	2450 2950 2450 2850
+Wire Wire Line
+	2250 2950 2450 2950
+Wire Wire Line
+	2450 2550 2450 2450
+Wire Wire Line
+	2450 2950 2450 3050
+Connection ~ 2450 2950
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 5F648241
+P 2450 3200
+AR Path="/5F2CB321/5F648241" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F648241" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F648241" Ref="D-CRTPCIF2-5"  Part="1" 
+F 0 "D-CRTPCIF2-5" V 2400 3300 50  0000 L CNN
+F 1 "CS60" V 2450 3300 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2450 3200 50  0001 C CNN
+F 3 "~" H 2450 3200 50  0001 C CNN
+	1    2450 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 3350 2450 3450
+$Comp
+L 4xxx_IEEE:4049 U-CRTPCIF2-?
+U 2 1 5F64824C
+P 3550 2950
+AR Path="/5F2CB321/5F64824C" Ref="U-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F64824C" Ref="U-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F64824C" Ref="U-CRTPCIF2-5"  Part="2" 
+F 0 "U-CRTPCIF2-5" H 3550 3450 50  0000 C CNN
+F 1 "4049" H 3550 3350 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 2950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4098b.pdf" H 3550 2950 50  0001 C CNN
+	2    3550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2950 2450 2950
+Wire Wire Line
+	3550 3200 3550 3300
+Text Notes 1400 3050 0    50   ~ 0
+Gn
+Wire Wire Line
+	4100 2950 4150 2950
+Text Label 4300 4400 1    50   ~ 0
+VCC
+Wire Wire Line
+	4400 4400 4300 4400
+$Comp
+L 74xx:74LS175 U-CRTPCIF2-?
+U 1 1 5F65EC57
+P 4900 3900
+AR Path="/5F2CB321/5F65EC57" Ref="U-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F65EC57" Ref="U-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F65EC57" Ref="U-CRTPCIF2-6"  Part="1" 
+F 0 "U-CRTPCIF2-6" H 4900 3000 50  0000 C CNN
+F 1 "4049" H 4900 2900 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 4900 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4098b.pdf" H 4900 3900 50  0001 C CNN
+	1    4900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx_IEEE:4049 U-CRTPCIF2-?
+U 3 1 5F713EED
+P 4850 1900
+AR Path="/5F2CB321/5F713EED" Ref="U-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F713EED" Ref="U-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F713EED" Ref="U-CRTPCIF2-5"  Part="3" 
+F 0 "U-CRTPCIF2-5" H 4850 2400 50  0000 C CNN
+F 1 "4049" H 4850 2300 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4850 1900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4098b.pdf" H 4850 1900 50  0001 C CNN
+	3    4850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2950 4150 1900
+Connection ~ 4150 2950
+Wire Wire Line
+	4150 2950 4300 2950
+Wire Wire Line
+	4150 1900 4300 1900
+Wire Wire Line
+	4400 4300 4300 4300
+Wire Wire Line
+	4300 4300 4300 2950
+Connection ~ 4300 2950
+Wire Wire Line
+	4300 2950 5850 2950
+Wire Wire Line
+	5400 1900 7050 1900
+Text Label 7050 1900 2    50   ~ 0
+Err
+Wire Wire Line
+	13000 2200 13000 2550
+Text Label 13000 2550 3    50   ~ 0
+Err
+Wire Wire Line
+	5400 3800 5850 3800
+Wire Wire Line
+	5850 3800 5850 3700
+Wire Wire Line
+	5650 4150 5650 4000
+Wire Wire Line
+	5650 4000 5400 4000
+Wire Wire Line
+	5650 4150 5850 4150
+Wire Wire Line
+	5850 4550 5850 4450
+Wire Wire Line
+	5850 4450 5500 4450
+Wire Wire Line
+	5500 4450 5500 4200
+Wire Wire Line
+	5500 4200 5400 4200
+Connection ~ 5850 4450
+Wire Wire Line
+	5850 4450 5850 4350
+Connection ~ 5850 3700
+Wire Wire Line
+	5850 3700 5850 3500
+Wire Wire Line
+	5400 3150 5400 3500
+Wire Wire Line
+	5400 3150 5850 3150
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 5F9FE4DC
+P 7000 3050
+AR Path="/5F23114F/5F9FE4DC" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/5F9FE4DC" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5F9FE4DC" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5F9FE4DC" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5F9FE4DC" Ref="J-CRTPCIF2-6"  Part="1" 
+F 0 "J-CRTPCIF2-6" H 7050 3100 50  0000 L CNN
+F 1 "PC.UPLOAD" H 7050 3000 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7050 3010 50  0001 C CNN
+F 3 "~" H 7050 3010 50  0001 C CNN
+	1    7000 3050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6450 3050 6800 3050
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 5FA30A2B
+P 7000 3600
+AR Path="/5F23114F/5FA30A2B" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/5FA30A2B" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FA30A2B" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5FA30A2B" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FA30A2B" Ref="J-CRTPCIF2-7"  Part="1" 
+F 0 "J-CRTPCIF2-7" H 7050 3650 50  0000 L CNN
+F 1 "CRT Blank" H 7050 3550 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7050 3560 50  0001 C CNN
+F 3 "~" H 7050 3560 50  0001 C CNN
+	1    7000 3600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6450 3600 6800 3600
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 5FA48BE2
+P 7000 4150
+AR Path="/5F23114F/5FA48BE2" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/5FA48BE2" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FA48BE2" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5FA48BE2" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FA48BE2" Ref="J-CRTPCIF2-8"  Part="1" 
+F 0 "J-CRTPCIF2-8" H 7050 4200 50  0000 L CNN
+F 1 "Scope trigger" H 7050 4100 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7050 4110 50  0001 C CNN
+F 3 "~" H 7050 4110 50  0001 C CNN
+	1    7000 4150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6400 4150 6800 4150
+Wire Wire Line
+	6450 4450 7200 4450
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 5FAC47D6
+P 7350 4450
+AR Path="/5F2CB321/5FAC47D6" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/5FAC47D6" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FAC47D6" Ref="R-CRTPCIF2-16"  Part="1" 
+F 0 "R-CRTPCIF2-16" V 7500 4450 50  0000 C CNN
+F 1 "4K7" V 7600 4450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7280 4450 50  0001 C CNN
+F 3 "~" H 7350 4450 50  0001 C CNN
+	1    7350 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 4450 7500 4450
+$Comp
+L SamacSys_Parts:SN75188N U-CRTPCIF2-2
+U 4 1 5F955EDF
+P 6000 4300
+F 0 "U-CRTPCIF2-2" H 6150 3900 50  0000 C CNN
+F 1 "SN75188N" H 6150 3800 50  0000 C CNN
+F 2 "DIP794W53P254L1930H508Q14N" H 7050 4400 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn75188" H 7050 4300 50  0001 L CNN
+F 4 "RS232 line driver,SN75188N DIL14" H 7050 4200 50  0001 L CNN "Description"
+F 5 "5.08" H 7050 4100 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 7050 4000 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN75188N" H 7050 3900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "SN75188N" H 7050 3800 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/sn75188n/texas-instruments" H 7050 3700 50  0001 L CNN "Arrow Price/Stock"
+F 10 "595-SN75188N" H 7050 3600 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN75188N?qs=HE9hdJajmer8F9deQZgjCQ%3D%3D" H 7050 3500 50  0001 L CNN "Mouser Price/Stock"
+	4    6000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SN75188N U-CRTPCIF2-2
+U 3 1 5F8EA63F
+P 6000 3450
+F 0 "U-CRTPCIF2-2" H 6150 3650 50  0000 C CNN
+F 1 "SN75188N" H 6150 3550 50  0000 C CNN
+F 2 "DIP794W53P254L1930H508Q14N" H 7050 3550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn75188" H 7050 3450 50  0001 L CNN
+F 4 "RS232 line driver,SN75188N DIL14" H 7050 3350 50  0001 L CNN "Description"
+F 5 "5.08" H 7050 3250 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 7050 3150 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN75188N" H 7050 3050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "SN75188N" H 7050 2950 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/sn75188n/texas-instruments" H 7050 2850 50  0001 L CNN "Arrow Price/Stock"
+F 10 "595-SN75188N" H 7050 2750 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN75188N?qs=HE9hdJajmer8F9deQZgjCQ%3D%3D" H 7050 2650 50  0001 L CNN "Mouser Price/Stock"
+	3    6000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SN75188N U-CRTPCIF2-2
+U 2 1 5F851ED7
+P 6000 2900
+F 0 "U-CRTPCIF2-2" H 6150 3100 50  0000 C CNN
+F 1 "SN75188N" H 6150 3000 50  0000 C CNN
+F 2 "DIP794W53P254L1930H508Q14N" H 7050 3000 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn75188" H 7050 2900 50  0001 L CNN
+F 4 "RS232 line driver,SN75188N DIL14" H 7050 2800 50  0001 L CNN "Description"
+F 5 "5.08" H 7050 2700 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 7050 2600 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN75188N" H 7050 2500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "SN75188N" H 7050 2400 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/sn75188n/texas-instruments" H 7050 2300 50  0001 L CNN "Arrow Price/Stock"
+F 10 "595-SN75188N" H 7050 2200 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN75188N?qs=HE9hdJajmer8F9deQZgjCQ%3D%3D" H 7050 2100 50  0001 L CNN "Mouser Price/Stock"
+	2    6000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SN75188N U-CRTPCIF2-2
+U 5 1 5F7E682A
+P 2600 10350
+F 0 "U-CRTPCIF2-2" H 3050 10100 50  0000 L CNN
+F 1 "SN75188N" H 3050 10050 50  0000 L CNN
+F 2 "DIP794W53P254L1930H508Q14N" H 3650 10450 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn75188" H 3650 10350 50  0001 L CNN
+F 4 "RS232 line driver,SN75188N DIL14" H 3650 10250 50  0001 L CNN "Description"
+F 5 "5.08" H 3650 10150 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 3650 10050 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN75188N" H 3650 9950 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "SN75188N" H 3650 9850 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/sn75188n/texas-instruments" H 3650 9750 50  0001 L CNN "Arrow Price/Stock"
+F 10 "595-SN75188N" H 3650 9650 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN75188N?qs=HE9hdJajmer8F9deQZgjCQ%3D%3D" H 3650 9550 50  0001 L CNN "Mouser Price/Stock"
+	5    2600 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SN75188N U-CRTPCIF2-2
+U 1 1 5F7E1414
+P 6000 4150
+F 0 "U-CRTPCIF2-2" H 6150 4450 50  0000 C CNN
+F 1 "SN75188N" H 6150 4350 50  0000 C CNN
+F 2 "DIP794W53P254L1930H508Q14N" H 7050 4250 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/sn75188" H 7050 4150 50  0001 L CNN
+F 4 "RS232 line driver,SN75188N DIL14" H 7050 4050 50  0001 L CNN "Description"
+F 5 "5.08" H 7050 3950 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 7050 3850 50  0001 L CNN "Manufacturer_Name"
+F 7 "SN75188N" H 7050 3750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "SN75188N" H 7050 3650 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/sn75188n/texas-instruments" H 7050 3550 50  0001 L CNN "Arrow Price/Stock"
+F 10 "595-SN75188N" H 7050 3450 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN75188N?qs=HE9hdJajmer8F9deQZgjCQ%3D%3D" H 7050 3350 50  0001 L CNN "Mouser Price/Stock"
+	1    6000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4550 7950 4700
+$Comp
+L NEWValves:VR91 V-CRTPCIF2-?
+U 1 1 5FBD7455
+P 8250 4400
+AR Path="/5F3692CF/5FBD7455" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FBD7455" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/5FBD7455" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FBD7455" Ref="V-CRTPCIF2-1"  Part="1" 
+F 0 "V-CRTPCIF2-1" H 8300 4000 50  0000 C CNN
+F 1 "VR91" H 8300 3900 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9250 4650 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 8250 4400 50  0001 C CNN
+	1    8250 4400
+	1    0    0    -1  
+$EndComp
+Text Label 7950 4700 2    50   ~ 0
+GND
+Text Label 7850 4250 2    50   ~ 0
+GND
+Wire Wire Line
+	7850 4250 7950 4250
+NoConn ~ 8550 4600
+NoConn ~ 8550 4500
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 5FE3E25D
+P 8250 3375
+AR Path="/5F3692CF/5FE3E25D" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FE3E25D" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/5FE3E25D" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FE3E25D" Ref="R-CRTPCIF2-17"  Part="1" 
+F 0 "R-CRTPCIF2-17" H 8150 3325 50  0000 R CNN
+F 1 "56K 2W" H 8150 3375 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8180 3375 50  0001 C CNN
+F 3 "~" H 8250 3375 50  0001 C CNN
+	1    8250 3375
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 3225 8250 3025
+Wire Wire Line
+	8250 3525 8250 3950
+Text Label 8250 3025 1    50   ~ 0
++300V
+Wire Wire Line
+	8600 4350 8900 4350
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 5FE82E64
+P 8900 4175
+AR Path="/5F3692CF/5FE82E64" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FE82E64" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/5FE82E64" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FE82E64" Ref="R-CRTPCIF2-18"  Part="1" 
+F 0 "R-CRTPCIF2-18" H 8800 4125 50  0000 R CNN
+F 1 "56K 2W" H 8800 4175 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8830 4175 50  0001 C CNN
+F 3 "~" H 8900 4175 50  0001 C CNN
+	1    8900 4175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 4025 8900 3975
+Wire Wire Line
+	8900 4325 8900 4350
+Text Label 8900 3975 1    50   ~ 0
++300V
+Wire Wire Line
+	8900 5150 8900 4900
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 5FEA42AA
+P 8900 4750
+AR Path="/5F3692CF/5FEA42AA" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FEA42AA" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/5FEA42AA" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FEA42AA" Ref="C-CRTPCIF2-9"  Part="1" 
+F 0 "C-CRTPCIF2-9" H 9050 4800 50  0000 L CNN
+F 1 "0.1" H 9050 4750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8938 4600 50  0001 C CNN
+F 3 "~" H 8900 4750 50  0001 C CNN
+	1    8900 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 4600 8900 4350
+Connection ~ 8900 4350
+Text Label 8900 5150 2    50   ~ 0
+GND
+$Comp
+L NEWValves:VR91 V-CRTPCIF2-?
+U 2 1 5FF48624
+P 7350 10250
+AR Path="/5F3692CF/5FF48624" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FF48624" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/5FF48624" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FF48624" Ref="V-CRTPCIF2-1"  Part="2" 
+F 0 "V-CRTPCIF2-1" H 7350 10800 50  0000 C CNN
+F 1 "VR91" H 7350 10700 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8350 10500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 7350 10250 50  0001 C CNN
+	2    7350 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-CRTPCIF2-?
+U 1 1 5FF4D632
+P 11200 5200
+AR Path="/5F3692CF/5FF4D632" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FF4D632" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/5FF4D632" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FF4D632" Ref="D-CRTPCIF2-1"  Part="1" 
+F 0 "D-CRTPCIF2-1" H 11450 5150 50  0000 L CNN
+F 1 "EA50" H 11450 5050 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 11800 5000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11200 5200 50  0001 C CNN
+	1    11200 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8900 4325
+Wire Wire Line
+	8900 4325 8900 4300
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 5FFF19EB
+P 10600 4650
+AR Path="/5F3692CF/5FFF19EB" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FFF19EB" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/5FFF19EB" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FFF19EB" Ref="C-CRTPCIF2-12"  Part="1" 
+F 0 "C-CRTPCIF2-12" H 10750 4700 50  0000 L CNN
+F 1 "0.1" H 10750 4650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10638 4500 50  0001 C CNN
+F 3 "~" H 10600 4650 50  0001 C CNN
+	1    10600 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 4500 10600 4300
+Wire Wire Line
+	10200 4500 10200 4300
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 5FFF19F7
+P 10200 4650
+AR Path="/5F3692CF/5FFF19F7" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/5FFF19F7" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/5FFF19F7" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/5FFF19F7" Ref="R-CRTPCIF2-19"  Part="1" 
+F 0 "R-CRTPCIF2-19" H 10800 4450 50  0000 R CNN
+F 1 "470K" H 10600 4600 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10130 4650 50  0001 C CNN
+F 3 "~" H 10200 4650 50  0001 C CNN
+	1    10200 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 4300 10200 4300
+Wire Wire Line
+	10200 4300 10600 4300
+Connection ~ 10200 4300
+Wire Wire Line
+	10200 4800 10200 4900
+Wire Wire Line
+	10200 4900 10600 4900
+Wire Wire Line
+	10600 4900 10600 4800
+Wire Wire Line
+	10200 4900 10200 4950
+Connection ~ 10200 4900
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 6011D37E
+P 10200 5150
+AR Path="/5F3692CF/6011D37E" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/6011D37E" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/6011D37E" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/6011D37E" Ref="R-CRTPCIF2-20"  Part="1" 
+F 0 "R-CRTPCIF2-20" H 10100 5100 50  0000 R CNN
+F 1 "330K" H 10100 5150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10130 5150 50  0001 C CNN
+F 3 "~" H 10200 5150 50  0001 C CNN
+	1    10200 5150
+	-1   0    0    1   
+$EndComp
+Text Label 10200 5550 3    50   ~ 0
+-150V
+Wire Wire Line
+	10200 5300 10200 5550
+Wire Wire Line
+	10200 4950 11200 4950
+Connection ~ 10200 4950
+Wire Wire Line
+	10200 4950 10200 5000
+Wire Wire Line
+	11200 5950 11200 5700
+Text Label 11200 5950 2    50   ~ 0
+GND
+Wire Wire Line
+	11200 4950 12250 4950
+Connection ~ 11200 4950
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 6025D53C
+P 12900 4950
+AR Path="/5F23114F/6025D53C" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/6025D53C" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/6025D53C" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/6025D53C" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/6025D53C" Ref="J-CRTPCIF2-10"  Part="1" 
+F 0 "J-CRTPCIF2-10" H 12950 5000 50  0000 L CNN
+F 1 "PC.S.ERASE" H 12950 4900 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 12950 4910 50  0001 C CNN
+F 3 "~" H 12950 4910 50  0001 C CNN
+	1    12900 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 6026122D
+P 12250 4650
+AR Path="/5F2CB321/6026122D" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/6026122D" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/6026122D" Ref="D-CRTPCIF2-16"  Part="1" 
+F 0 "D-CRTPCIF2-16" V 12200 4750 50  0000 L CNN
+F 1 "IN4007" V 12250 4750 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 12250 4650 50  0001 C CNN
+F 3 "~" H 12250 4650 50  0001 C CNN
+	1    12250 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12250 4800 12250 4950
+Connection ~ 12250 4950
+Wire Wire Line
+	12250 4950 12700 4950
+Wire Wire Line
+	12250 4300 12700 4300
+Wire Wire Line
+	12250 4300 12250 4500
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 602C9E77
+P 12900 4300
+AR Path="/5F23114F/602C9E77" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/602C9E77" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/602C9E77" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/602C9E77" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/602C9E77" Ref="J-CRTPCIF2-9"  Part="1" 
+F 0 "J-CRTPCIF2-9" H 12950 4350 50  0000 L CNN
+F 1 "S.ERASE.ALL" H 12950 4250 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 12950 4260 50  0001 C CNN
+F 3 "~" H 12950 4260 50  0001 C CNN
+	1    12900 4300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	11450 7850 11450 8050
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 602CFC21
+P 11450 7700
+AR Path="/5F3692CF/602CFC21" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/602CFC21" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/602CFC21" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/602CFC21" Ref="R-CRTPCIF2-21"  Part="1" 
+F 0 "R-CRTPCIF2-21" H 11375 7650 50  0000 R CNN
+F 1 "15K 3W" H 11375 7700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11380 7700 50  0001 C CNN
+F 3 "~" H 11450 7700 50  0001 C CNN
+	1    11450 7700
+	-1   0    0    1   
+$EndComp
+Text Label 10350 1300 1    50   ~ 0
++200V
+Wire Wire Line
+	10350 1550 10350 1300
+NoConn ~ 10650 2100
+NoConn ~ 10650 2200
+Wire Wire Line
+	10700 1950 10700 1550
+Wire Wire Line
+	10050 1850 10050 1550
+Text Label 11450 8050 3    50   ~ 0
+-150V
+Wire Wire Line
+	10050 2550 10050 2800
+Connection ~ 10050 2550
+Wire Wire Line
+	10050 2150 10050 2550
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 602CFC3A
+P 9700 2050
+AR Path="/5F3692CF/602CFC3A" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/602CFC3A" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/602CFC3A" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/602CFC3A" Ref="R-CRTPCIF2-22"  Part="1" 
+F 0 "R-CRTPCIF2-22" V 9450 2075 50  0000 C CNN
+F 1 "470" V 9550 2075 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9630 2050 50  0001 C CNN
+F 3 "~" H 9700 2050 50  0001 C CNN
+	1    9700 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 602FF76E
+P 9225 2050
+AR Path="/5F23114F/602FF76E" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/602FF76E" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/602FF76E" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/602FF76E" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/602FF76E" Ref="J-CRTPCIF2-11"  Part="1" 
+F 0 "J-CRTPCIF2-11" H 9275 2100 50  0000 L CNN
+F 1 "S Read" H 9275 2000 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 9275 2010 50  0001 C CNN
+F 3 "~" H 9275 2010 50  0001 C CNN
+	1    9225 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9425 2050 9550 2050
+$Comp
+L NEWValves:CV173 V-CRTPCIF2-?
+U 2 1 60351140
+P 6600 10250
+AR Path="/5F3692CF/60351140" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/60351140" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/60351140" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60351140" Ref="V-CRTPCIF2-2"  Part="2" 
+F 0 "V-CRTPCIF2-2" H 6600 10800 50  0000 C CNN
+F 1 "VR91" H 6600 10700 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7600 10500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 6600 10250 50  0001 C CNN
+	2    6600 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-CRTPCIF2-?
+U 2 1 60353E6A
+P 7950 10150
+AR Path="/5F3692CF/60353E6A" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/60353E6A" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/60353E6A" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60353E6A" Ref="D-CRTPCIF2-1"  Part="2" 
+F 0 "D-CRTPCIF2-1" H 8200 10050 50  0000 L CNN
+F 1 "EA50" H 8200 9950 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 8550 9950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7950 10150 50  0001 C CNN
+	2    7950 10150
+	1    0    0    -1  
+$EndComp
+Text Label 5350 5850 1    50   ~ 0
+GND
+Wire Wire Line
+	5350 5850 5500 5850
+Wire Wire Line
+	5500 5850 5500 5950
+Connection ~ 5500 5850
+Wire Wire Line
+	5500 5850 5600 5850
+Wire Wire Line
+	5600 5850 5600 5950
+Connection ~ 5600 5850
+Wire Wire Line
+	5600 5850 5700 5850
+Wire Wire Line
+	5700 5850 5700 5950
+Text Label 5500 5950 3    50   ~ 0
+Bk1
+Text Label 5600 5950 3    50   ~ 0
+Bk2
+Text Label 5700 5950 3    50   ~ 0
+Screen
+Wire Wire Line
+	14600 2200 14600 2300
+Wire Wire Line
+	14800 2200 14800 2300
+Wire Wire Line
+	15000 2200 15000 2300
+Text Label 14600 2300 3    50   ~ 0
+Bk1
+Text Label 14800 2300 3    50   ~ 0
+Bk2
+Text Label 15000 2300 3    50   ~ 0
+Screen
+Wire Wire Line
+	4400 3500 3350 3500
+Wire Wire Line
+	3350 3500 3350 3750
+Wire Wire Line
+	3350 3750 3150 3750
+Wire Wire Line
+	3450 3700 3450 3950
+Wire Wire Line
+	3450 3950 2900 3950
+Wire Wire Line
+	4400 3700 3450 3700
+Wire Wire Line
+	3550 3900 3550 4150
+Wire Wire Line
+	3550 4150 2700 4150
+Wire Wire Line
+	4400 3900 3550 3900
+Wire Wire Line
+	3650 4100 3650 4350
+Wire Wire Line
+	3650 4350 2450 4350
+Wire Wire Line
+	4400 4100 3650 4100
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 60634585
+P 2900 4700
+AR Path="/5F2CB321/60634585" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60634585" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60634585" Ref="R-CRTPCIF2-14"  Part="1" 
+F 0 "R-CRTPCIF2-14" H 3000 4650 50  0000 L CNN
+F 1 "10K" H 3000 4700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2830 4700 50  0001 C CNN
+F 3 "~" H 2900 4700 50  0001 C CNN
+	1    2900 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 3750 3150 4550
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 60635B8A
+P 3150 4700
+AR Path="/5F2CB321/60635B8A" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60635B8A" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60635B8A" Ref="R-CRTPCIF2-15"  Part="1" 
+F 0 "R-CRTPCIF2-15" H 3050 4650 50  0000 R CNN
+F 1 "10K" H 3050 4700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3080 4700 50  0001 C CNN
+F 3 "~" H 3150 4700 50  0001 C CNN
+	1    3150 4700
+	-1   0    0    1   
+$EndComp
+Connection ~ 3150 3750
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 60662AB7
+P 2450 4700
+AR Path="/5F2CB321/60662AB7" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60662AB7" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60662AB7" Ref="R-CRTPCIF2-11"  Part="1" 
+F 0 "R-CRTPCIF2-11" H 2550 4650 50  0000 L CNN
+F 1 "10K" H 2550 4700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2380 4700 50  0001 C CNN
+F 3 "~" H 2450 4700 50  0001 C CNN
+	1    2450 4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 60662AC2
+P 2700 4700
+AR Path="/5F2CB321/60662AC2" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60662AC2" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60662AC2" Ref="R-CRTPCIF2-13"  Part="1" 
+F 0 "R-CRTPCIF2-13" H 2600 4650 50  0000 R CNN
+F 1 "10K" H 2600 4700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2630 4700 50  0001 C CNN
+F 3 "~" H 2700 4700 50  0001 C CNN
+	1    2700 4700
+	-1   0    0    1   
+$EndComp
+Connection ~ 2900 3950
+Wire Wire Line
+	2900 3950 2900 4550
+Connection ~ 2700 4150
+Wire Wire Line
+	2700 4150 2700 4550
+Connection ~ 2450 4350
+Wire Wire Line
+	2450 4350 2450 4550
+Wire Wire Line
+	1350 3750 3150 3750
+Wire Wire Line
+	2450 4850 2450 4950
+Wire Wire Line
+	2450 4950 2700 4950
+Wire Wire Line
+	3150 4950 3150 4850
+Wire Wire Line
+	2900 4850 2900 4950
+Connection ~ 2900 4950
+Wire Wire Line
+	2900 4950 3150 4950
+Wire Wire Line
+	2700 4950 2700 4850
+Connection ~ 2700 4950
+Wire Wire Line
+	2700 4950 2800 4950
+Text Label 2800 5050 3    50   ~ 0
+VCC
+Wire Wire Line
+	2800 5050 2800 4950
+Connection ~ 2800 4950
+Wire Wire Line
+	2800 4950 2900 4950
+Wire Wire Line
+	1350 4350 2450 4350
+Wire Wire Line
+	1350 4150 2700 4150
+Wire Wire Line
+	1350 3950 2900 3950
+Wire Wire Line
+	1350 5450 2450 5450
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 60887B27
+P 2450 5200
+AR Path="/5F2CB321/60887B27" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60887B27" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60887B27" Ref="R-CRTPCIF2-12"  Part="1" 
+F 0 "R-CRTPCIF2-12" H 2550 5150 50  0000 L CNN
+F 1 "10K" H 2550 5200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2380 5200 50  0001 C CNN
+F 3 "~" H 2450 5200 50  0001 C CNN
+	1    2450 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 5050 2450 4950
+Connection ~ 2450 4950
+Wire Wire Line
+	2450 5450 2450 5350
+Connection ~ 2450 5450
+Text Label 1350 3750 2    50   ~ 0
+D0
+Text Label 1350 3950 2    50   ~ 0
+D1
+Text Label 1350 4150 2    50   ~ 0
+D2
+Text Label 1350 4350 2    50   ~ 0
+D3
+Text Label 1350 5450 2    50   ~ 0
+Select
+Text Label 12900 2300 3    50   ~ 0
+D0
+Text Label 13100 2300 3    50   ~ 0
+D1
+Text Label 13300 2300 3    50   ~ 0
+D2
+Text Label 13500 2300 3    50   ~ 0
+D3
+Text Label 13400 2550 3    50   ~ 0
+Select
+Wire Wire Line
+	12700 2200 12700 2300
+Wire Wire Line
+	12900 2200 12900 2300
+Wire Wire Line
+	13100 2200 13100 2300
+Wire Wire Line
+	13300 2200 13300 2300
+Wire Wire Line
+	13500 2200 13500 2300
+Wire Wire Line
+	13400 2200 13400 2550
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 60C524CD
+P 1200 6000
+AR Path="/5F23114F/60C524CD" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/60C524CD" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/60C524CD" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60C524CD" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60C524CD" Ref="J-CRTPCIF2-2"  Part="1" 
+F 0 "J-CRTPCIF2-2" H 1250 6050 50  0000 L CNN
+F 1 "A Read" H 1250 5950 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1250 5960 50  0001 C CNN
+F 3 "~" H 1250 5960 50  0001 C CNN
+	1    1200 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 60C54123
+P 1850 6000
+AR Path="/5F2CB321/60C54123" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60C54123" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60C54123" Ref="R-CRTPCIF2-1"  Part="1" 
+F 0 "R-CRTPCIF2-1" V 2100 6000 50  0000 C CNN
+F 1 "100K" V 2000 6000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1780 6000 50  0001 C CNN
+F 3 "~" H 1850 6000 50  0001 C CNN
+	1    1850 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 60C85FB5
+P 1850 6250
+AR Path="/5F3692CF/60C85FB5" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/60C85FB5" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/60C85FB5" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60C85FB5" Ref="C-CRTPCIF2-1"  Part="1" 
+F 0 "C-CRTPCIF2-1" V 2050 6250 50  0000 C CNN
+F 1 "22p" V 2150 6250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 1888 6100 50  0001 C CNN
+F 3 "~" H 1850 6250 50  0001 C CNN
+	1    1850 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 6250 1700 6000
+Wire Wire Line
+	2000 6000 2000 6250
+Wire Wire Line
+	1700 6000 1400 6000
+Connection ~ 1700 6000
+Wire Wire Line
+	2000 6000 2100 6000
+Connection ~ 2000 6000
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 60D4DE23
+P 2100 5850
+AR Path="/5F2CB321/60D4DE23" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60D4DE23" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60D4DE23" Ref="R-CRTPCIF2-7"  Part="1" 
+F 0 "R-CRTPCIF2-7" H 2000 5800 50  0000 R CNN
+F 1 "10K" H 2000 5850 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2030 5850 50  0001 C CNN
+F 3 "~" H 2100 5850 50  0001 C CNN
+	1    2100 5850
+	-1   0    0    1   
+$EndComp
+Text Label 2600 6500 0    50   ~ 0
+GND
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 60D8282F
+P 2600 5750
+AR Path="/5F2CB321/60D8282F" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60D8282F" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60D8282F" Ref="D-CRTPCIF2-6"  Part="1" 
+F 0 "D-CRTPCIF2-6" V 2550 5850 50  0000 L CNN
+F 1 "CS60" V 2600 5850 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2600 5750 50  0001 C CNN
+F 3 "~" H 2600 5750 50  0001 C CNN
+	1    2600 5750
+	0    1    1    0   
+$EndComp
+Text Label 2600 5550 0    50   ~ 0
+VCC
+Wire Wire Line
+	2600 6000 2600 5900
+Wire Wire Line
+	2600 5600 2600 5550
+Wire Wire Line
+	2600 6000 2600 6100
+Connection ~ 2600 6000
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 60D8283F
+P 2600 6250
+AR Path="/5F2CB321/60D8283F" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/60D8283F" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/60D8283F" Ref="D-CRTPCIF2-7"  Part="1" 
+F 0 "D-CRTPCIF2-7" V 2550 6350 50  0000 L CNN
+F 1 "CS60" V 2600 6350 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2600 6250 50  0001 C CNN
+F 3 "~" H 2600 6250 50  0001 C CNN
+	1    2600 6250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 6400 2600 6500
+Wire Wire Line
+	2100 6000 2600 6000
+Connection ~ 2100 6000
+Wire Wire Line
+	2100 5550 2100 5700
+Wire Wire Line
+	2100 5550 2600 5550
+$Comp
+L 4xxx:4011 U-CRTPCIF2-3
+U 1 1 60EA03D3
+P 3800 5900
+F 0 "U-CRTPCIF2-3" H 3800 6250 50  0000 C CNN
+F 1 "4011" H 3800 6150 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3800 5900 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 3800 5900 50  0001 C CNN
+	1    3800 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6000 3500 6000
+Wire Wire Line
+	3500 5800 3500 5450
+Wire Wire Line
+	2450 5450 3450 5450
+$Comp
+L 4xxx:4011 U-CRTPCIF2-3
+U 2 1 60FB5A24
+P 3350 6450
+F 0 "U-CRTPCIF2-3" V 3300 6650 50  0000 L CNN
+F 1 "4011" V 3350 6650 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3350 6450 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 3350 6450 50  0001 C CNN
+	2    3350 6450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 6150 3450 6250
+Connection ~ 3450 5450
+Wire Wire Line
+	3450 5450 3500 5450
+Wire Wire Line
+	3450 6250 3250 6250
+Wire Wire Line
+	3250 6250 3250 6150
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 61023F87
+P 1200 7050
+AR Path="/5F23114F/61023F87" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/61023F87" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/61023F87" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61023F87" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61023F87" Ref="J-CRTPCIF2-3"  Part="1" 
+F 0 "J-CRTPCIF2-3" H 1250 7100 50  0000 L CNN
+F 1 "A Read" H 1250 7000 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1250 7010 50  0001 C CNN
+F 3 "~" H 1250 7010 50  0001 C CNN
+	1    1200 7050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 61023F91
+P 1850 7050
+AR Path="/5F2CB321/61023F91" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61023F91" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61023F91" Ref="R-CRTPCIF2-2"  Part="1" 
+F 0 "R-CRTPCIF2-2" V 2100 7050 50  0000 C CNN
+F 1 "100K" V 2000 7050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1780 7050 50  0001 C CNN
+F 3 "~" H 1850 7050 50  0001 C CNN
+	1    1850 7050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 61023F9B
+P 1850 7300
+AR Path="/5F3692CF/61023F9B" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/61023F9B" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/61023F9B" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61023F9B" Ref="C-CRTPCIF2-2"  Part="1" 
+F 0 "C-CRTPCIF2-2" V 2050 7300 50  0000 C CNN
+F 1 "22p" V 2150 7300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 1888 7150 50  0001 C CNN
+F 3 "~" H 1850 7300 50  0001 C CNN
+	1    1850 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 7300 1700 7050
+Wire Wire Line
+	2000 7050 2000 7300
+Wire Wire Line
+	1700 7050 1400 7050
+Connection ~ 1700 7050
+Wire Wire Line
+	2000 7050 2100 7050
+Connection ~ 2000 7050
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 61023FAB
+P 2100 6900
+AR Path="/5F2CB321/61023FAB" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61023FAB" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61023FAB" Ref="R-CRTPCIF2-8"  Part="1" 
+F 0 "R-CRTPCIF2-8" H 2000 6850 50  0000 R CNN
+F 1 "10K" H 2000 6900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2030 6900 50  0001 C CNN
+F 3 "~" H 2100 6900 50  0001 C CNN
+	1    2100 6900
+	-1   0    0    1   
+$EndComp
+Text Label 2600 7550 0    50   ~ 0
+GND
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 61023FB6
+P 2600 6800
+AR Path="/5F2CB321/61023FB6" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61023FB6" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61023FB6" Ref="D-CRTPCIF2-8"  Part="1" 
+F 0 "D-CRTPCIF2-8" V 2550 6900 50  0000 L CNN
+F 1 "CS60" V 2600 6900 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2600 6800 50  0001 C CNN
+F 3 "~" H 2600 6800 50  0001 C CNN
+	1    2600 6800
+	0    1    1    0   
+$EndComp
+Text Label 2600 6600 0    50   ~ 0
+VCC
+Wire Wire Line
+	2600 7050 2600 6950
+Wire Wire Line
+	2600 6650 2600 6600
+Wire Wire Line
+	2600 7050 2600 7150
+Connection ~ 2600 7050
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 61023FC5
+P 2600 7300
+AR Path="/5F2CB321/61023FC5" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61023FC5" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61023FC5" Ref="D-CRTPCIF2-9"  Part="1" 
+F 0 "D-CRTPCIF2-9" V 2550 7400 50  0000 L CNN
+F 1 "CS60" V 2600 7400 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2600 7300 50  0001 C CNN
+F 3 "~" H 2600 7300 50  0001 C CNN
+	1    2600 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 7450 2600 7550
+Wire Wire Line
+	2100 7050 2600 7050
+Connection ~ 2100 7050
+Wire Wire Line
+	2100 6600 2100 6750
+Wire Wire Line
+	2100 6600 2600 6600
+$Comp
+L 4xxx:4011 U-CRTPCIF2-3
+U 3 1 61023FD6
+P 3800 6950
+F 0 "U-CRTPCIF2-3" H 3800 7300 50  0000 C CNN
+F 1 "4011" H 3800 7200 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3800 6950 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 3800 6950 50  0001 C CNN
+	3    3800 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7050 3500 7050
+Wire Wire Line
+	4250 6400 4200 6400
+Wire Wire Line
+	3500 6850 3350 6850
+Wire Wire Line
+	3350 6850 3350 6750
+$Comp
+L 4xxx:4011 U-CRTPCIF2-3
+U 4 1 61023FE2
+P 4550 6500
+F 0 "U-CRTPCIF2-3" H 4550 6850 50  0000 C CNN
+F 1 "4011" H 4550 6750 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4550 6500 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 4550 6500 50  0001 C CNN
+	4    4550 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5900 4200 5900
+Wire Wire Line
+	4200 5900 4200 6400
+Wire Wire Line
+	4100 6950 4150 6950
+Wire Wire Line
+	4150 6950 4150 6600
+Wire Wire Line
+	4150 6600 4250 6600
+Wire Wire Line
+	4850 6500 5050 6500
+Text Label 5050 6500 3    50   ~ 0
+Ack
+Text Label 14500 2550 3    50   ~ 0
+Ack
+Wire Wire Line
+	14500 2550 14500 2200
+$Comp
+L 4xxx:4011 U-CRTPCIF2-3
+U 5 1 60EA0E03
+P 5050 10650
+F 0 "U-CRTPCIF2-3" H 5300 10700 50  0000 L CNN
+F 1 "4011" H 5300 10650 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5050 10650 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf" H 5050 10650 50  0001 C CNN
+	5    5050 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 613D0955
+P 1850 8100
+AR Path="/5F2CB321/613D0955" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/613D0955" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/613D0955" Ref="R-CRTPCIF2-3"  Part="1" 
+F 0 "R-CRTPCIF2-3" V 2100 8100 50  0000 C CNN
+F 1 "100K" V 2000 8100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1780 8100 50  0001 C CNN
+F 3 "~" H 1850 8100 50  0001 C CNN
+	1    1850 8100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 613D095F
+P 1850 8350
+AR Path="/5F3692CF/613D095F" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/613D095F" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/613D095F" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/613D095F" Ref="C-CRTPCIF2-3"  Part="1" 
+F 0 "C-CRTPCIF2-3" V 2050 8350 50  0000 C CNN
+F 1 "22p" V 2150 8350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 1888 8200 50  0001 C CNN
+F 3 "~" H 1850 8350 50  0001 C CNN
+	1    1850 8350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 8350 1700 8100
+Wire Wire Line
+	2000 8100 2000 8350
+Wire Wire Line
+	1700 8100 1350 8100
+Connection ~ 1700 8100
+Wire Wire Line
+	2000 8100 2100 8100
+Connection ~ 2000 8100
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 613D096F
+P 2100 7950
+AR Path="/5F2CB321/613D096F" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/613D096F" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/613D096F" Ref="R-CRTPCIF2-9"  Part="1" 
+F 0 "R-CRTPCIF2-9" H 2000 7900 50  0000 R CNN
+F 1 "10K" H 2000 7950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2030 7950 50  0001 C CNN
+F 3 "~" H 2100 7950 50  0001 C CNN
+	1    2100 7950
+	-1   0    0    1   
+$EndComp
+Text Label 2600 8600 0    50   ~ 0
+GND
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 613D097A
+P 2600 7850
+AR Path="/5F2CB321/613D097A" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/613D097A" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/613D097A" Ref="D-CRTPCIF2-10"  Part="1" 
+F 0 "D-CRTPCIF2-10" V 2550 7950 50  0000 L CNN
+F 1 "CS60" V 2600 7950 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2600 7850 50  0001 C CNN
+F 3 "~" H 2600 7850 50  0001 C CNN
+	1    2600 7850
+	0    1    1    0   
+$EndComp
+Text Label 2600 7700 0    50   ~ 0
+VCC
+Wire Wire Line
+	2600 8100 2600 8000
+Wire Wire Line
+	2600 7700 2600 7650
+Wire Wire Line
+	2600 8100 2600 8200
+Connection ~ 2600 8100
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 613D0989
+P 2600 8350
+AR Path="/5F2CB321/613D0989" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/613D0989" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/613D0989" Ref="D-CRTPCIF2-11"  Part="1" 
+F 0 "D-CRTPCIF2-11" V 2550 8450 50  0000 L CNN
+F 1 "CS60" V 2600 8450 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2600 8350 50  0001 C CNN
+F 3 "~" H 2600 8350 50  0001 C CNN
+	1    2600 8350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 8500 2600 8600
+Wire Wire Line
+	2100 8100 2600 8100
+Connection ~ 2100 8100
+Wire Wire Line
+	2100 7650 2100 7800
+Wire Wire Line
+	2100 7650 2600 7650
+Wire Wire Line
+	2600 8100 3500 8100
+Text Label 10600 2550 0    50   ~ 0
+S-Read-(buff'd)
+Connection ~ 10350 1550
+Wire Wire Line
+	10050 1550 10350 1550
+Wire Wire Line
+	9850 2050 10050 2050
+Wire Wire Line
+	10700 1550 10350 1550
+$Comp
+L NEWValves:CV173 V-CRTPCIF2-?
+U 1 1 602CFC44
+P 10350 2000
+AR Path="/5F3692CF/602CFC44" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/602CFC44" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/602CFC44" Ref="V-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/602CFC44" Ref="V-CRTPCIF2-2"  Part="1" 
+F 0 "V-CRTPCIF2-2" H 10400 1600 50  0000 C CNN
+F 1 "VR91" H 10400 1500 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 11350 2250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 10350 2000 50  0001 C CNN
+	1    10350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2550 10600 2550
+Text Label 1350 8100 2    50   ~ 0
+S-Read-(buff'd)
+$Comp
+L 4xxx:4049 U-CRTPCIF2-?
+U 5 1 616FD4C7
+P 3800 8100
+AR Path="/5F2CB321/616FD4C7" Ref="U-CRTPCIF2-?"  Part="3" 
+AR Path="/603D7E1B/616FD4C7" Ref="U-CRTPCIF2-?"  Part="3" 
+AR Path="/5F39A11B/616FD4C7" Ref="U-CRTPCIF2-4"  Part="5" 
+F 0 "U-CRTPCIF2-4" H 3825 7850 50  0000 C CNN
+F 1 "4049" H 3825 7750 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 3800 8100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4098b.pdf" H 3800 8100 50  0001 C CNN
+	5    3800 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 8100 5050 8100
+Text Label 5050 8100 0    50   ~ 0
+SelectIn
+Text Label 14700 2550 3    50   ~ 0
+Busy
+Wire Wire Line
+	14700 2550 14700 2200
+Text Label 15100 2550 3    50   ~ 0
+SelectIn
+Wire Wire Line
+	15100 2550 15100 2200
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 61867D71
+P 1850 9100
+AR Path="/5F2CB321/61867D71" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61867D71" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61867D71" Ref="R-CRTPCIF2-4"  Part="1" 
+F 0 "R-CRTPCIF2-4" V 2100 9100 50  0000 C CNN
+F 1 "100K" V 2000 9100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1780 9100 50  0001 C CNN
+F 3 "~" H 1850 9100 50  0001 C CNN
+	1    1850 9100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 61867D7B
+P 1850 9350
+AR Path="/5F3692CF/61867D7B" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/61867D7B" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/61867D7B" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61867D7B" Ref="C-CRTPCIF2-4"  Part="1" 
+F 0 "C-CRTPCIF2-4" V 2050 9350 50  0000 C CNN
+F 1 "22p" V 2150 9350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 1888 9200 50  0001 C CNN
+F 3 "~" H 1850 9350 50  0001 C CNN
+	1    1850 9350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 9350 1700 9100
+Wire Wire Line
+	2000 9100 2000 9350
+Wire Wire Line
+	1700 9100 1350 9100
+Connection ~ 1700 9100
+Wire Wire Line
+	2000 9100 2100 9100
+Connection ~ 2000 9100
+$Comp
+L Device:R R-CRTPCIF2-?
+U 1 1 61867D8B
+P 2100 8950
+AR Path="/5F2CB321/61867D8B" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61867D8B" Ref="R-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61867D8B" Ref="R-CRTPCIF2-10"  Part="1" 
+F 0 "R-CRTPCIF2-10" H 2000 8900 50  0000 R CNN
+F 1 "10K" H 2000 8950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2030 8950 50  0001 C CNN
+F 3 "~" H 2100 8950 50  0001 C CNN
+	1    2100 8950
+	-1   0    0    1   
+$EndComp
+Text Label 2600 9600 0    50   ~ 0
+GND
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 61867D96
+P 2600 8850
+AR Path="/5F2CB321/61867D96" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61867D96" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61867D96" Ref="D-CRTPCIF2-12"  Part="1" 
+F 0 "D-CRTPCIF2-12" V 2550 8950 50  0000 L CNN
+F 1 "CS60" V 2600 8950 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2600 8850 50  0001 C CNN
+F 3 "~" H 2600 8850 50  0001 C CNN
+	1    2600 8850
+	0    1    1    0   
+$EndComp
+Text Label 2600 8700 0    50   ~ 0
+VCC
+Wire Wire Line
+	2600 9100 2600 9000
+Wire Wire Line
+	2600 8700 2600 8650
+Wire Wire Line
+	2600 9100 2600 9200
+Connection ~ 2600 9100
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 61867DA5
+P 2600 9350
+AR Path="/5F2CB321/61867DA5" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/61867DA5" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/61867DA5" Ref="D-CRTPCIF2-13"  Part="1" 
+F 0 "D-CRTPCIF2-13" V 2550 9450 50  0000 L CNN
+F 1 "CS60" V 2600 9450 50  0000 L CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 2600 9350 50  0001 C CNN
+F 3 "~" H 2600 9350 50  0001 C CNN
+	1    2600 9350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 9500 2600 9600
+Wire Wire Line
+	2100 9100 2600 9100
+Connection ~ 2100 9100
+Wire Wire Line
+	2100 8650 2100 8800
+Wire Wire Line
+	2100 8650 2600 8650
+Wire Wire Line
+	2600 9100 3500 9100
+$Comp
+L 4xxx:4049 U-CRTPCIF2-?
+U 6 1 61867DB8
+P 3800 9100
+AR Path="/5F2CB321/61867DB8" Ref="U-CRTPCIF2-?"  Part="3" 
+AR Path="/603D7E1B/61867DB8" Ref="U-CRTPCIF2-?"  Part="3" 
+AR Path="/5F39A11B/61867DB8" Ref="U-CRTPCIF2-4"  Part="6" 
+F 0 "U-CRTPCIF2-4" H 3825 8850 50  0000 C CNN
+F 1 "4049" H 3825 8750 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 3800 9100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd4098b.pdf" H 3800 9100 50  0001 C CNN
+	6    3800 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 9100 5050 9100
+Text Label 5050 9100 0    50   ~ 0
+Busy
+$Comp
+L Connector:Conn_01x01_Female J-CRTPCIF2-?
+U 1 1 6194029C
+P 1150 9100
+AR Path="/5F23114F/6194029C" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F3692CF/6194029C" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/6194029C" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/6194029C" Ref="J-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/6194029C" Ref="J-CRTPCIF2-1"  Part="1" 
+F 0 "J-CRTPCIF2-1" H 1200 9150 50  0000 L CNN
+F 1 "PC.Read" H 1200 9050 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1200 9060 50  0001 C CNN
+F 3 "~" H 1200 9060 50  0001 C CNN
+	1    1150 9100
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3450 6150
+Wire Wire Line
+	3450 6150 3450 5450
+Wire Wire Line
+	2325 10150 2800 10150
+Connection ~ 2800 10150
+Wire Wire Line
+	2800 10150 3900 10150
+Connection ~ 3900 10150
+Wire Wire Line
+	3900 10150 5050 10150
+Connection ~ 2800 11150
+Wire Wire Line
+	2800 11150 3900 11150
+Connection ~ 3900 11150
+Wire Wire Line
+	3900 11150 5050 11150
+Wire Wire Line
+	2350 11150 2800 11150
+Wire Wire Line
+	9850 9325 9650 9325
+Wire Wire Line
+	9850 9225 9650 9225
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 61FF8800
+P 9650 9325
+AR Path="/61FF8800" Ref="#FLG?"  Part="1" 
+AR Path="/5F23114F/61FF8800" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DCED2/61FF8800" Ref="#FLG?"  Part="1" 
+AR Path="/5F93A7B3/61FF8800" Ref="#FLG?"  Part="1" 
+AR Path="/5F73CC58/61FF8800" Ref="#FLG?"  Part="1" 
+AR Path="/5F830654/61FF8800" Ref="#FLG?"  Part="1" 
+AR Path="/5F39A11B/61FF8800" Ref="#FLG0138"  Part="1" 
+F 0 "#FLG0138" H 9650 9400 50  0001 C CNN
+F 1 "PWR_FLAG" H 9675 9525 50  0000 C CNN
+F 2 "" H 9650 9325 50  0001 C CNN
+F 3 "~" H 9650 9325 50  0001 C CNN
+	1    9650 9325
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 61FF8806
+P 9650 9225
+AR Path="/61FF8806" Ref="#FLG?"  Part="1" 
+AR Path="/5F23114F/61FF8806" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DCED2/61FF8806" Ref="#FLG?"  Part="1" 
+AR Path="/5F93A7B3/61FF8806" Ref="#FLG?"  Part="1" 
+AR Path="/5F73CC58/61FF8806" Ref="#FLG?"  Part="1" 
+AR Path="/5F830654/61FF8806" Ref="#FLG?"  Part="1" 
+AR Path="/5F39A11B/61FF8806" Ref="#FLG0139"  Part="1" 
+F 0 "#FLG0139" H 9650 9300 50  0001 C CNN
+F 1 "PWR_FLAG" H 9675 9425 50  0000 C CNN
+F 2 "" H 9650 9225 50  0001 C CNN
+F 3 "~" H 9650 9225 50  0001 C CNN
+	1    9650 9225
+	-1   0    0    1   
+$EndComp
+Connection ~ 9650 9225
+Wire Wire Line
+	9650 9225 9350 9225
+Wire Wire Line
+	9850 9625 9650 9625
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 61FF880F
+P 9650 9625
+AR Path="/61FF880F" Ref="#FLG?"  Part="1" 
+AR Path="/5F23114F/61FF880F" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DCED2/61FF880F" Ref="#FLG?"  Part="1" 
+AR Path="/5F93A7B3/61FF880F" Ref="#FLG?"  Part="1" 
+AR Path="/5F73CC58/61FF880F" Ref="#FLG?"  Part="1" 
+AR Path="/5F830654/61FF880F" Ref="#FLG?"  Part="1" 
+AR Path="/5F39A11B/61FF880F" Ref="#FLG0140"  Part="1" 
+F 0 "#FLG0140" H 9650 9700 50  0001 C CNN
+F 1 "PWR_FLAG" H 9675 9825 50  0000 C CNN
+F 2 "" H 9650 9625 50  0001 C CNN
+F 3 "~" H 9650 9625 50  0001 C CNN
+	1    9650 9625
+	-1   0    0    1   
+$EndComp
+Connection ~ 9650 9625
+Wire Wire Line
+	9650 9625 9350 9625
+Wire Wire Line
+	9850 9425 9350 9425
+Wire Wire Line
+	9850 9525 9350 9525
+Wire Wire Line
+	9850 9725 9350 9725
+$Comp
+L Connector_Generic:Conn_01x08 J-ADDER1-?
+U 1 1 61FF881A
+P 10050 9525
+AR Path="/5F23114F/61FF881A" Ref="J-ADDER1-?"  Part="1" 
+AR Path="/5F2DCED2/61FF881A" Ref="J-ADDER1-?"  Part="1" 
+AR Path="/5F93A7B3/61FF881A" Ref="J-ADDER1-?"  Part="1" 
+AR Path="/5F73CC58/61FF881A" Ref="J-ADDER1-?"  Part="1" 
+AR Path="/5F830654/61FF881A" Ref="J-ADDER1-?"  Part="1" 
+AR Path="/5F39A11B/61FF881A" Ref="J-ADDER1-18"  Part="1" 
+F 0 "J-ADDER1-18" H 10150 9525 50  0000 L CNN
+F 1 "HIGH Voltage." H 10150 9425 50  0000 L CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770970-x_2x04_P4.14mm_Horizontal" H 10050 9525 50  0001 C CNN
+F 3 "~" H 10050 9525 50  0001 C CNN
+	1    10050 9525
+	1    0    0    -1  
+$EndComp
+Connection ~ 9650 9325
+Wire Wire Line
+	9650 9325 9350 9325
+NoConn ~ 9850 9825
+Text Label 9350 9925 2    50   ~ 0
+GND
+Text Label 9350 9225 2    50   ~ 0
+Heater-GND
+Text Label 9350 9325 2    50   ~ 0
+Heater-6.3V
+Text Label 9350 9425 2    50   ~ 0
++200V
+Text Label 9350 9525 2    50   ~ 0
++300V
+Text Label 9350 9625 2    50   ~ 0
+-150V
+Text Label 9350 9725 2    50   ~ 0
++50V
+Wire Wire Line
+	9350 9925 9850 9925
+$Comp
+L Device:D D-CRTPCIF2-?
+U 1 1 620919E7
+P 7650 7950
+AR Path="/5F2CB321/620919E7" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/620919E7" Ref="D-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/620919E7" Ref="D-CRTPCIF2-14"  Part="1" 
+F 0 "D-CRTPCIF2-14" H 7650 7700 50  0000 C CNN
+F 1 "IN4004" H 7650 7800 50  0000 C CNN
+F 2 "Diode_THT:D_T-1_P5.08mm_Horizontal" H 7650 7950 50  0001 C CNN
+F 3 "~" H 7650 7950 50  0001 C CNN
+	1    7650 7950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C-CRTPCIF2-?
+U 1 1 620A99BD
+P 7850 8250
+AR Path="/5F2CB321/620A99BD" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/620A99BD" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/620A99BD" Ref="C-CRTPCIF2-7"  Part="1" 
+F 0 "C-CRTPCIF2-7" H 7700 8300 50  0000 R CNN
+F 1 "10000uf 16V" H 7700 8250 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7888 8100 50  0001 C CNN
+F 3 "~" H 7850 8250 50  0001 C CNN
+	1    7850 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 7950 7850 7950
+$Comp
+L Device:CP C-CRTPCIF2-?
+U 1 1 621A21BF
+P 8250 8250
+AR Path="/5F2CB321/621A21BF" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/603D7E1B/621A21BF" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/621A21BF" Ref="C-CRTPCIF2-8"  Part="1" 
+F 0 "C-CRTPCIF2-8" H 8400 8300 50  0000 L CNN
+F 1 "4u7 35V" H 8400 8250 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8288 8100 50  0001 C CNN
+F 3 "~" H 8250 8250 50  0001 C CNN
+	1    8250 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 8100 7850 7950
+Text Label 7200 7950 2    50   ~ 0
+Heater-6.3V
+Wire Wire Line
+	7500 7950 7200 7950
+Wire Wire Line
+	7850 8400 7850 8500
+Wire Wire Line
+	8250 8500 8250 8400
+Text Label 7200 8500 2    50   ~ 0
+Heater-GND
+Wire Wire Line
+	8250 8100 8250 7950
+$Comp
+L Regulator_Linear:L78L05_TO92 U1
+U 1 1 62397501
+P 9000 7950
+F 0 "U1" H 9000 8250 50  0000 C CNN
+F 1 "L78L05_TO92" H 9000 8150 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9000 8175 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 9000 7900 50  0001 C CNN
+	1    9000 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 8250 9000 8500
+Wire Wire Line
+	9000 8500 10150 8500
+Connection ~ 9000 8500
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 6254155A
+P 10150 8200
+AR Path="/5F3692CF/6254155A" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/6254155A" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/6254155A" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/6254155A" Ref="C-CRTPCIF2-10"  Part="1" 
+F 0 "C-CRTPCIF2-10" H 10000 8250 50  0000 R CNN
+F 1 "4n7" H 10000 8200 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10188 8050 50  0001 C CNN
+F 3 "~" H 10150 8200 50  0001 C CNN
+	1    10150 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 8500 10150 8350
+Connection ~ 10150 8500
+Wire Wire Line
+	10150 8050 10150 7950
+Wire Wire Line
+	9300 7950 10150 7950
+$Comp
+L Device:C C-CRTPCIF2-?
+U 1 1 625F2F09
+P 10500 8200
+AR Path="/5F3692CF/625F2F09" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2CB321/625F2F09" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F2DDAEA/625F2F09" Ref="C-CRTPCIF2-?"  Part="1" 
+AR Path="/5F39A11B/625F2F09" Ref="C-CRTPCIF2-11"  Part="1" 
+F 0 "C-CRTPCIF2-11" H 10650 8250 50  0000 L CNN
+F 1 "4n7" H 10650 8200 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10538 8050 50  0001 C CNN
+F 3 "~" H 10500 8200 50  0001 C CNN
+	1    10500 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 8500 10500 8350
+Wire Wire Line
+	10500 8050 10500 7950
+Wire Wire Line
+	10150 7950 10500 7950
+Connection ~ 10150 7950
+Text Label 10500 7950 0    50   ~ 0
+VCC
+Connection ~ 7850 7950
+Connection ~ 7850 8500
+Wire Wire Line
+	7850 8500 7200 8500
+Connection ~ 8250 7950
+Connection ~ 8250 8500
+Wire Wire Line
+	7850 8500 8250 8500
+Wire Wire Line
+	7850 7950 8250 7950
+Wire Wire Line
+	8250 7950 8700 7950
+Wire Wire Line
+	8250 8500 9000 8500
+Wire Wire Line
+	10150 8500 10500 8500
+Wire Wire Line
+	8250 7950 8250 7450
+Wire Wire Line
+	8250 7450 8500 7450
+Text Label 8500 7450 0    50   ~ 0
++8V
+Wire Wire Line
+	11450 7550 11450 7400
+$Comp
+L Device:D_Tunnel D-CRTPCIF2-15
+U 1 1 62AAA382
+P 11450 7150
+F 0 "D-CRTPCIF2-15" V 11400 7250 50  0000 L CNN
+F 1 "D_Tunnel" V 11450 7250 50  0000 L CNN
+F 2 "Diode_THT:D_DO-201AD_P12.70mm_Horizontal" H 11450 7150 50  0001 C CNN
+F 3 "~" H 11450 7150 50  0001 C CNN
+	1    11450 7150
+	0    1    1    0   
+$EndComp
+Text Label 10500 8500 0    50   ~ 0
+GND
+Wire Wire Line
+	11450 7400 10950 7400
+Connection ~ 11450 7400
+Wire Wire Line
+	11450 7400 11450 7300
+Text Label 10950 7400 2    50   ~ 0
+-15V
+Wire Wire Line
+	11450 7000 11450 6800
+Text Label 11450 6800 0    50   ~ 0
+VCC
+Wire Notes Line
+	1500 800  6850 800 
+Wire Notes Line
+	6850 800  6850 5050
+Wire Notes Line
+	1500 800  1500 10000
+Wire Notes Line
+	1500 10000 4900 10000
+Wire Notes Line
+	4900 10000 4900 5900
+Wire Notes Line
+	8100 6950 8100 8800
+Wire Notes Line
+	8100 8800 11250 8800
+Wire Notes Line
+	11250 8800 11250 6950
+Wire Notes Line
+	8500 6900 6850 5050
+Wire Notes Line
+	8100 6950 6850 5600
+Wire Notes Line
+	6850 5600 6850 5900
+Wire Notes Line
+	4900 5900 6850 5900
+Wire Notes Line
+	8500 6900 8550 6950
+Wire Notes Line
+	8550 6950 11250 6950
+Text Notes 6900 4450 0    50   ~ 0
+Wh
+Text Notes 6800 4550 0    50   ~ 0
+CRT Erase
+Text Notes 6850 4250 0    50   ~ 0
+Gy
+Text Notes 6950 3700 2    50   ~ 0
+Bn
+Text Notes 6950 3150 2    50   ~ 0
+Or
+Text Notes 6950 2000 2    50   ~ 0
+Gn
+Text Notes 4550 750  2    50   ~ 0
+Bu
+Text Notes 1450 3750 2    50   ~ 0
+Bn
+Text Notes 1450 3950 2    50   ~ 0
+O
+Text Notes 1400 4150 2    50   ~ 0
+V
+Text Notes 1450 4350 2    50   ~ 0
+Gy
+Text Label 1450 5450 2    50   ~ 0
+Bn
+Text Notes 1450 6000 2    50   ~ 0
+W
+Text Label 1450 7050 2    50   ~ 0
+Y
+Text Notes 1400 8100 2    50   ~ 0
+R
+Text Notes 1400 9100 2    50   ~ 0
+W
+Text Notes 5000 9100 2    50   ~ 0
+W
+Text Notes 4950 8050 2    50   ~ 0
+R
+Text Notes 4950 6500 2    50   ~ 0
+Y
+Wire Wire Line
+	6500 10600 6500 11000
+Wire Wire Line
+	7250 10600 7250 11000
+Wire Wire Line
+	7850 10600 7850 11000
+Wire Wire Line
+	6700 10600 6700 10750
+Wire Wire Line
+	7450 10600 7450 10750
+Wire Wire Line
+	8050 10600 8050 10750
+Wire Wire Line
+	8050 10750 7450 10750
+Connection ~ 7450 10750
+Wire Wire Line
+	7450 10750 6700 10750
+Wire Wire Line
+	7850 11000 7250 11000
+Connection ~ 6500 11000
+Wire Wire Line
+	6500 11000 6250 11000
+Connection ~ 7250 11000
+Wire Wire Line
+	7250 11000 6500 11000
+Wire Wire Line
+	6700 10750 6250 10750
+Connection ~ 6700 10750
+Text Label 6250 10750 2    50   ~ 0
+Heater-6.3V
+Text Label 6250 11000 2    50   ~ 0
+Heater-GND
+Wire Wire Line
+	900  10250 2325 10250
+Wire Wire Line
+	900  11050 2350 11050
+Text Label 4900 4850 2    50   ~ 0
+GND
+Wire Wire Line
+	4900 4850 4900 4700
+Text Label 4900 3100 0    50   ~ 0
+VCC
+Wire Wire Line
+	4900 3200 4900 3100
+$EndSCHEMATC

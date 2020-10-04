@@ -1,0 +1,2230 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 21 24
+Title "Instruction Gate & Y Shift Position 4.1"
+Date "2020-07-31"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-IGYSH3-1
+U 2 1 5F5BFDD5
+P 1250 10500
+F 0 "V-IGYSH3-1" H 1250 11075 50  0000 C CNN
+F 1 "VR91" H 1250 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2250 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 1250 10500 50  0001 C CNN
+	2    1250 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-8
+U 2 1 5F6C01D9
+P 5600 9050
+F 0 "D-IGYSH3-8" H 5600 9350 50  0000 C CNN
+F 1 "EA50" H 5600 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6200 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5600 9050 50  0001 C CNN
+	2    5600 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 10900 1150 10900
+Wire Wire Line
+	1000 11150 1350 11150
+Wire Wire Line
+	1150 10850 1150 10900
+Connection ~ 1150 10900
+Wire Wire Line
+	1350 10850 1350 11150
+Connection ~ 1350 11150
+Wire Wire Line
+	6925 10425 6725 10425
+Wire Wire Line
+	6925 10325 6725 10325
+$Comp
+L power:PWR_FLAG #FLG0143
+U 1 1 631D14DC
+P 6725 10425
+F 0 "#FLG0143" H 6725 10500 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 10625 50  0000 C CNN
+F 2 "" H 6725 10425 50  0001 C CNN
+F 3 "~" H 6725 10425 50  0001 C CNN
+	1    6725 10425
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0144
+U 1 1 631D14DD
+P 6725 10325
+F 0 "#FLG0144" H 6725 10400 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 10525 50  0000 C CNN
+F 2 "" H 6725 10325 50  0001 C CNN
+F 3 "~" H 6725 10325 50  0001 C CNN
+	1    6725 10325
+	-1   0    0    1   
+$EndComp
+Connection ~ 6725 10325
+Wire Wire Line
+	6725 10325 6425 10325
+Wire Wire Line
+	6925 10525 6425 10525
+Wire Wire Line
+	6925 10625 6425 10625
+Wire Wire Line
+	6925 10825 6425 10825
+$Comp
+L Connector_Generic:Conn_01x08 J-IGYSH3-2
+U 1 1 631D14EA
+P 7125 10625
+F 0 "J-IGYSH3-2" H 7250 10625 50  0000 L CNN
+F 1 "HIGH Voltage." H 7250 10525 50  0000 L CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770970-x_2x04_P4.14mm_Horizontal" H 7125 10625 50  0001 C CNN
+F 3 "~" H 7125 10625 50  0001 C CNN
+	1    7125 10625
+	1    0    0    -1  
+$EndComp
+Connection ~ 6725 10425
+Wire Wire Line
+	6725 10425 6425 10425
+NoConn ~ 6925 10925
+Text Label 6425 10325 2    50   ~ 0
+Heater-GND
+Text Label 6425 10425 2    50   ~ 0
+Heater-6.3V
+Text Label 6425 10525 2    50   ~ 0
++200V
+Text Label 6425 10625 2    50   ~ 0
++300V
+Text Label 6425 10725 2    50   ~ 0
+-150V
+Text Label 6425 10825 2    50   ~ 0
++50V
+Text Label 1000 10900 2    50   ~ 0
+Heater-6.3V
+Text Label 1000 11150 2    50   ~ 0
+Heater-GND
+Text Label 6425 11025 2    50   ~ 0
+GND
+Wire Wire Line
+	6425 11025 6925 11025
+$Comp
+L Device:C C-IGYSH3-6
+U 1 1 631D14E7
+P 11400 10500
+F 0 "C-IGYSH3-6" H 11550 10550 50  0000 L CNN
+F 1 "0.5" H 11550 10500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11438 10350 50  0001 C CNN
+F 3 "~" H 11400 10500 50  0001 C CNN
+	1    11400 10500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C-IGYSH3--A-1
+U 1 1 5F6C01D5
+P 8700 10500
+F 0 "C-IGYSH3--A-1" H 8575 10575 50  0000 R CNN
+F 1 "0.5" H 8575 10475 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8738 10350 50  0001 C CNN
+F 3 "~" H 8700 10500 50  0001 C CNN
+	1    8700 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-IGYSH3-3
+U 1 1 631D14D4
+P 9550 10500
+F 0 "C-IGYSH3-3" H 9400 10550 50  0000 R CNN
+F 1 "0.5" H 9400 10500 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9588 10350 50  0001 C CNN
+F 3 "~" H 9550 10500 50  0001 C CNN
+	1    9550 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-3
+U 2 1 5F6C020E
+P 2500 9050
+F 0 "D-IGYSH3-3" H 2500 9350 50  0000 C CNN
+F 1 "EA50" H 2500 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3100 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2500 9050 50  0001 C CNN
+	2    2500 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-2
+U 2 1 5F7A1D40
+P 1900 9050
+F 0 "D-IGYSH3-2" H 1900 9350 50  0000 C CNN
+F 1 "EA50" H 1900 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2500 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1900 9050 50  0001 C CNN
+	2    1900 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-1
+U 2 1 5F6C01F8
+P 1250 9050
+F 0 "D-IGYSH3-1" H 1275 9350 50  0000 C CNN
+F 1 "EA50" H 1275 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1850 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1250 9050 50  0001 C CNN
+	2    1250 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-IGYSH3-3
+U 2 1 5F60D295
+P 2550 10500
+F 0 "V-IGYSH3-3" H 2575 11075 50  0000 C CNN
+F 1 "VR91" H 2575 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3550 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 2550 10500 50  0001 C CNN
+	2    2550 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-4
+U 2 1 631D14E1
+P 3100 9050
+F 0 "D-IGYSH3-4" H 3100 9350 50  0000 C CNN
+F 1 "EA50" H 3100 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3700 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3100 9050 50  0001 C CNN
+	2    3100 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-7
+U 2 1 631D14D5
+P 4950 9050
+F 0 "D-IGYSH3-7" H 4950 9350 50  0000 C CNN
+F 1 "EA50" H 4950 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5550 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4950 9050 50  0001 C CNN
+	2    4950 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-6
+U 2 1 60DF2258
+P 4350 9050
+F 0 "D-IGYSH3-6" H 4350 9350 50  0000 C CNN
+F 1 "EA50" H 4350 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4950 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4350 9050 50  0001 C CNN
+	2    4350 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-5
+U 2 1 631D14E3
+P 3700 9050
+F 0 "D-IGYSH3-5" H 3725 9350 50  0000 C CNN
+F 1 "EA50" H 3725 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4300 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3700 9050 50  0001 C CNN
+	2    3700 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-IGYSH3-2
+U 2 1 5F60D280
+P 1900 10500
+F 0 "V-IGYSH3-2" H 1900 11075 50  0000 C CNN
+F 1 "VR91" H 1900 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2900 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1900 10500 50  0001 C CNN
+	2    1900 10500
+	1    0    0    -1  
+$EndComp
+Text Label 11400 10750 3    50   ~ 0
+GND
+Text Label 8700 10750 3    50   ~ 0
+GND
+Text Label 9550 10750 3    50   ~ 0
+GND
+Wire Wire Line
+	10450 10650 10450 10750
+Text Label 10450 10750 3    50   ~ 0
+GND
+Wire Wire Line
+	6425 10725 6925 10725
+Text Label 8700 10300 1    50   ~ 0
++300V
+Text Label 9550 10250 1    50   ~ 0
++200V
+Text Label 11400 10250 1    50   ~ 0
++50V
+$Comp
+L NEWValves:EA50 D-IGYSH3-1
+U 1 1 631D14DE
+P 14250 1050
+F 0 "D-IGYSH3-1" V 13850 950 50  0000 C CNN
+F 1 "EA50" V 13950 950 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 14850 850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 14250 1050 50  0001 C CNN
+	1    14250 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-2
+U 1 1 631D14D7
+P 14250 1900
+F 0 "D-IGYSH3-2" V 14550 1800 50  0000 C CNN
+F 1 "EA50" V 14650 1800 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 14850 1700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 14250 1900 50  0001 C CNN
+	1    14250 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 11150 2000 11150
+Wire Wire Line
+	1150 10900 1800 10900
+Wire Wire Line
+	2000 11150 2000 10850
+Connection ~ 2000 11150
+Wire Wire Line
+	1800 10850 1800 10900
+Connection ~ 1800 10900
+Wire Wire Line
+	2000 11150 2650 11150
+Wire Wire Line
+	1800 10900 2450 10900
+Wire Wire Line
+	2650 11150 2650 10850
+Connection ~ 2650 11150
+Wire Wire Line
+	2450 10850 2450 10900
+Connection ~ 2450 10900
+$Comp
+L NEWValves:VR91 V-IGYSH3-5
+U 2 1 631D14DA
+P 3850 10500
+F 0 "V-IGYSH3-5" H 3875 11075 50  0000 C CNN
+F 1 "CV173" H 3875 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4850 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3850 10500 50  0001 C CNN
+	2    3850 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 11150 3950 10850
+Wire Wire Line
+	3750 10850 3750 10900
+$Comp
+L NEWValves:VR91 V-IGYSH3-4
+U 2 1 631D14DB
+P 3200 10500
+F 0 "V-IGYSH3-4" H 3225 11075 50  0000 C CNN
+F 1 "VR91" H 3225 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4200 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3200 10500 50  0001 C CNN
+	2    3200 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 11150 3300 10850
+$Comp
+L NEWValves:VR91 V-IGYSH3-7
+U 2 1 5F6C01F4
+P 5050 10500
+F 0 "V-IGYSH3-7" H 5075 11075 50  0000 C CNN
+F 1 "CV173" H 5075 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6050 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5050 10500 50  0001 C CNN
+	2    5050 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 11150 5150 10850
+Wire Wire Line
+	4950 10850 4950 10900
+Wire Wire Line
+	5050 9800 5700 9800
+Wire Wire Line
+	3800 9800 4450 9800
+Connection ~ 5050 9800
+Connection ~ 3800 9800
+Wire Wire Line
+	4850 9550 5500 9550
+Connection ~ 4850 9550
+Wire Wire Line
+	3600 9550 4250 9550
+Connection ~ 3600 9550
+Wire Wire Line
+	2400 9550 3000 9550
+Wire Wire Line
+	2600 9800 3200 9800
+Connection ~ 2600 9800
+Connection ~ 2400 9550
+Wire Wire Line
+	1150 9550 1800 9550
+Connection ~ 1150 9550
+Connection ~ 1350 9800
+Text Label 1000 9800 2    50   ~ 0
+Heater-GND
+Text Label 1000 9550 2    50   ~ 0
+Heater-6.3V
+Wire Wire Line
+	1350 9500 1350 9800
+Wire Wire Line
+	1150 9500 1150 9550
+Wire Wire Line
+	1000 9800 1350 9800
+Wire Wire Line
+	1000 9550 1150 9550
+Wire Wire Line
+	2400 9500 2400 9550
+Wire Wire Line
+	2600 9500 2600 9800
+Wire Wire Line
+	3600 9500 3600 9550
+Wire Wire Line
+	3800 9500 3800 9800
+Wire Wire Line
+	4850 9500 4850 9550
+Wire Wire Line
+	5050 9500 5050 9800
+Wire Wire Line
+	5500 9500 5500 9550
+Wire Wire Line
+	5700 9500 5700 9800
+Wire Wire Line
+	1350 9800 2000 9800
+Wire Wire Line
+	2000 9500 2000 9800
+Connection ~ 2000 9800
+Wire Wire Line
+	2000 9800 2600 9800
+Wire Wire Line
+	3200 9500 3200 9800
+Connection ~ 3200 9800
+Wire Wire Line
+	3200 9800 3800 9800
+Wire Wire Line
+	4450 9500 4450 9800
+Connection ~ 4450 9800
+Wire Wire Line
+	4450 9800 5050 9800
+Wire Wire Line
+	4250 9500 4250 9550
+Connection ~ 4250 9550
+Wire Wire Line
+	4250 9550 4850 9550
+Wire Wire Line
+	3000 9500 3000 9550
+Connection ~ 3000 9550
+Wire Wire Line
+	3000 9550 3600 9550
+Wire Wire Line
+	1800 9500 1800 9550
+Connection ~ 1800 9550
+Wire Wire Line
+	1800 9550 2400 9550
+Wire Wire Line
+	11400 10350 11400 10250
+Wire Wire Line
+	11400 10650 11400 10750
+Wire Wire Line
+	9550 10750 9550 10650
+Wire Wire Line
+	8700 10750 8700 10650
+Wire Wire Line
+	9550 10350 9550 10250
+Wire Wire Line
+	8700 10350 8700 10250
+Wire Wire Line
+	10450 10250 10450 10350
+Text Label 10450 10250 1    50   ~ 0
+-150V
+$Comp
+L Device:C C-IGYSH3-5
+U 1 1 631D14E8
+P 10450 10500
+F 0 "C-IGYSH3-5" H 10600 10450 50  0000 L CNN
+F 1 "0.5" H 10600 10500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10488 10350 50  0001 C CNN
+F 3 "~" H 10450 10500 50  0001 C CNN
+	1    10450 10500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-IGYSH3-2
+U 1 1 5F5FB235
+P 1450 3900
+F 0 "R-IGYSH3-2" H 1350 3825 50  0000 R CNN
+F 1 "10K" H 1350 3925 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1380 3900 50  0001 C CNN
+F 3 "~" H 1450 3900 50  0001 C CNN
+	1    1450 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-IGYSH3-1
+U 1 1 5F5FB23F
+P 2000 3850
+F 0 "V-IGYSH3-1" H 2050 3450 50  0000 C CNN
+F 1 "VR91" H 2050 3350 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3000 4100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 2000 3850 50  0001 C CNN
+	1    2000 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3900 1600 3900
+Wire Wire Line
+	1700 4000 1700 4650
+Wire Wire Line
+	1700 3700 1600 3700
+Wire Wire Line
+	1600 3700 1600 3250
+Wire Wire Line
+	1600 3250 2850 3250
+$Comp
+L NEWValves:EA50 D-IGYSH3-3
+U 1 1 5F5FB24E
+P 2850 4050
+F 0 "D-IGYSH3-3" H 3100 4000 50  0000 L CNN
+F 1 "EA50" H 3100 3900 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 3450 3850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2850 4050 50  0001 C CNN
+	1    2850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-IGYSH3-8
+U 1 1 5F5FB258
+P 2850 3500
+F 0 "R-IGYSH3-8" H 2950 3550 50  0000 L CNN
+F 1 "470" H 2950 3500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2780 3500 50  0001 C CNN
+F 3 "~" H 2850 3500 50  0001 C CNN
+	1    2850 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3800 2850 3700
+Wire Wire Line
+	2850 3350 2850 3250
+Wire Wire Line
+	2850 3700 3750 3700
+Connection ~ 2850 3700
+Wire Wire Line
+	2850 3700 2850 3650
+$Comp
+L Device:R R-IGYSH3-9
+U 1 1 5F5FB267
+P 3750 4400
+F 0 "R-IGYSH3-9" H 3650 4325 50  0000 R CNN
+F 1 "330K" H 3650 4425 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3680 4400 50  0001 C CNN
+F 3 "~" H 3750 4400 50  0001 C CNN
+	1    3750 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4550 2850 4650
+Wire Wire Line
+	2000 3400 2000 3150
+$Comp
+L Device:R R-IGYSH3-5
+U 1 1 5F5FB276
+P 2350 3150
+F 0 "R-IGYSH3-5" V 2550 3150 50  0000 C CNN
+F 1 "470K" V 2450 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2280 3150 50  0001 C CNN
+F 3 "~" H 2350 3150 50  0001 C CNN
+	1    2350 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-IGYSH3-2
+U 1 1 5F5FB280
+P 3150 2900
+F 0 "C-IGYSH3-2" V 2850 2900 50  0000 C CNN
+F 1 "100p" V 2950 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3188 2750 50  0001 C CNN
+F 3 "~" H 3150 2900 50  0001 C CNN
+	1    3150 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-IGYSH3-3
+U 1 1 5F5FB28A
+P 2000 2650
+F 0 "R-IGYSH3-3" H 2100 2700 50  0000 L CNN
+F 1 "56K" H 2100 2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1930 2650 50  0001 C CNN
+F 3 "~" H 2000 2650 50  0001 C CNN
+	1    2000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2900 2000 2900
+Connection ~ 2000 2900
+Wire Wire Line
+	2200 3150 2000 3150
+Connection ~ 2000 3150
+Wire Wire Line
+	2000 3150 2000 2900
+Wire Wire Line
+	2500 3150 3750 3150
+Wire Wire Line
+	3750 3150 3750 2900
+Wire Wire Line
+	3750 2900 3300 2900
+Wire Wire Line
+	2000 2900 2000 2800
+$Comp
+L Device:R R-IGYSH3-1
+U 1 1 5F5FB29D
+P 1200 3650
+F 0 "R-IGYSH3-1" H 1300 3600 50  0000 L CNN
+F 1 "1M" H 1300 3650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1130 3650 50  0001 C CNN
+F 3 "~" H 1200 3650 50  0001 C CNN
+	1    1200 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 3400 1200 3500
+Wire Wire Line
+	1200 3800 1200 3900
+NoConn ~ 2300 4050
+NoConn ~ 2300 3950
+NoConn ~ 2350 3800
+$Comp
+L NEWValves:VR91 V-IGYSH3-2
+U 1 1 5F5FB2B0
+P 5900 3850
+F 0 "V-IGYSH3-2" H 5950 3450 50  0000 C CNN
+F 1 "VR91" H 5950 3350 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6900 4100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5900 3850 50  0001 C CNN
+	1    5900 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3900 6350 3900
+Wire Wire Line
+	6200 3700 6350 3700
+Wire Wire Line
+	6350 3700 6350 3250
+Wire Wire Line
+	6350 3250 5050 3250
+$Comp
+L NEWValves:EA50 D-IGYSH3-4
+U 1 1 5F5FB2BF
+P 5050 4050
+F 0 "D-IGYSH3-4" H 5300 4000 50  0000 L CNN
+F 1 "EA50" H 5300 3900 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 5650 3850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-IGYSH3-13
+U 1 1 5F5FB2C9
+P 5050 3500
+F 0 "R-IGYSH3-13" H 5150 3550 50  0000 L CNN
+F 1 "470" H 5150 3500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4980 3500 50  0001 C CNN
+F 3 "~" H 5050 3500 50  0001 C CNN
+	1    5050 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3800 5050 3700
+Wire Wire Line
+	5050 3350 5050 3250
+Wire Wire Line
+	5050 3700 4150 3700
+Connection ~ 5050 3700
+Wire Wire Line
+	5050 3700 5050 3650
+$Comp
+L Device:R R-IGYSH3-10
+U 1 1 5F5FB2D8
+P 4150 4400
+F 0 "R-IGYSH3-10" H 4050 4325 50  0000 R CNN
+F 1 "330K" H 4050 4425 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4080 4400 50  0001 C CNN
+F 3 "~" H 4150 4400 50  0001 C CNN
+	1    4150 4400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 3400 5900 3150
+$Comp
+L Device:R R-IGYSH3-14
+U 1 1 5F5FB2E7
+P 5550 3150
+F 0 "R-IGYSH3-14" V 5750 3150 50  0000 C CNN
+F 1 "470K" V 5650 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5480 3150 50  0001 C CNN
+F 3 "~" H 5550 3150 50  0001 C CNN
+	1    5550 3150
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C-IGYSH3-4
+U 1 1 5F5FB2F1
+P 4750 2900
+F 0 "C-IGYSH3-4" V 4450 2900 50  0000 C CNN
+F 1 "100p" V 4550 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4788 2750 50  0001 C CNN
+F 3 "~" H 4750 2900 50  0001 C CNN
+	1    4750 2900
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-IGYSH3-15
+U 1 1 5F5FB2FB
+P 5900 2650
+F 0 "R-IGYSH3-15" H 6000 2700 50  0000 L CNN
+F 1 "56K" H 6000 2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5830 2650 50  0001 C CNN
+F 3 "~" H 5900 2650 50  0001 C CNN
+	1    5900 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2900 5900 2900
+Connection ~ 5900 2900
+Wire Wire Line
+	5700 3150 5900 3150
+Connection ~ 5900 3150
+Wire Wire Line
+	5900 3150 5900 2900
+Wire Wire Line
+	5400 3150 4150 3150
+Wire Wire Line
+	4150 3150 4150 2900
+Wire Wire Line
+	4150 2900 4600 2900
+Wire Wire Line
+	5900 2900 5900 2800
+NoConn ~ 5600 4050
+NoConn ~ 5600 3950
+Wire Wire Line
+	4150 3700 3750 3150
+Connection ~ 4150 3700
+Connection ~ 3750 3150
+Wire Wire Line
+	4150 3150 3750 3700
+Connection ~ 4150 3150
+Connection ~ 3750 3700
+Wire Wire Line
+	5550 3800 5550 3350
+Wire Wire Line
+	5550 3350 6100 3350
+$Comp
+L Device:R R-IGYSH3-16
+U 1 1 5F5FB321
+P 6100 2650
+F 0 "R-IGYSH3-16" H 6000 2575 50  0000 R CNN
+F 1 "12K" H 6000 2675 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6030 2650 50  0001 C CNN
+F 3 "~" H 6100 2650 50  0001 C CNN
+	1    6100 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-IGYSH3-17
+U 1 1 5F5FB332
+P 6500 3900
+F 0 "R-IGYSH3-17" V 6350 3900 50  0000 C CNN
+F 1 "470" V 6250 3900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6430 3900 50  0001 C CNN
+F 3 "~" H 6500 3900 50  0001 C CNN
+	1    6500 3900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1300 3900 1200 3900
+$Comp
+L Device:C C-IGYSH3-1
+U 1 1 5F69DDC5
+P 950 3900
+F 0 "C-IGYSH3-1" V 1150 3900 50  0000 C CNN
+F 1 "470p" V 1250 3900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 988 3750 50  0001 C CNN
+F 3 "~" H 950 3900 50  0001 C CNN
+	1    950  3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 3900 1100 3900
+Connection ~ 1200 3900
+$Comp
+L Connector:Conn_01x01_Female J-IGYSH3-1
+U 1 1 5F70B00B
+P 600 3700
+F 0 "J-IGYSH3-1" H 650 3625 50  0000 L CNN
+F 1 "Completion" H 650 3725 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 650 3660 50  0001 C CNN
+F 3 "~" H 650 3660 50  0001 C CNN
+	1    600  3700
+	0    1    -1   0   
+$EndComp
+Text Label 1200 3400 2    50   ~ 0
++300V
+Wire Wire Line
+	2000 2400 2000 2500
+Text Label 2000 2400 2    50   ~ 0
++300V
+Wire Wire Line
+	2000 3150 1600 3150
+Wire Wire Line
+	1600 3150 1600 2150
+Wire Wire Line
+	5900 2400 5900 2500
+Text Label 5900 2400 2    50   ~ 0
++300V
+Wire Wire Line
+	6100 2400 6100 2500
+Text Label 6100 2400 0    50   ~ 0
++300V
+Wire Wire Line
+	6100 2800 6100 3350
+Wire Wire Line
+	6650 3900 6750 3900
+Wire Wire Line
+	6750 3900 6750 2800
+$Comp
+L Device:R R-IGYSH3-18
+U 1 1 5FA76DFC
+P 6750 2650
+F 0 "R-IGYSH3-18" H 6650 2575 50  0000 R CNN
+F 1 "1.2M" H 6650 2675 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6680 2650 50  0001 C CNN
+F 3 "~" H 6750 2650 50  0001 C CNN
+	1    6750 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2400 6750 2500
+Text Label 6750 2400 0    50   ~ 0
++300V
+Wire Wire Line
+	3750 3700 3750 4250
+Wire Wire Line
+	4150 3700 4150 4250
+Text Label 2850 4650 2    50   ~ 0
+GND
+Text Label 1700 4650 2    50   ~ 0
+GND
+Wire Wire Line
+	5050 4550 5050 4650
+Text Label 5050 4650 2    50   ~ 0
+GND
+Wire Wire Line
+	6200 4000 6200 4650
+Text Label 6200 4650 2    50   ~ 0
+GND
+Wire Wire Line
+	3750 4650 3750 4550
+Wire Wire Line
+	4150 4550 4150 4650
+Text Label 4150 4650 0    50   ~ 0
+-150V
+Text Label 3750 4650 0    50   ~ 0
+-150V
+Wire Wire Line
+	6750 3900 6750 4800
+Connection ~ 6750 3900
+$Comp
+L Device:C C-IGYSH3-7
+U 1 1 5FE21159
+P 5750 4800
+F 0 "C-IGYSH3-7" V 5450 4800 50  0000 C CNN
+F 1 "47p" V 5550 4800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5788 4650 50  0001 C CNN
+F 3 "~" H 5750 4800 50  0001 C CNN
+	1    5750 4800
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-IGYSH3-3
+U 1 1 5FE45E87
+P 600 5000
+F 0 "J-IGYSH3-3" H 650 4925 50  0000 L CNN
+F 1 "Hs" H 650 5025 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 650 4960 50  0001 C CNN
+F 3 "~" H 650 4960 50  0001 C CNN
+	1    600  5000
+	0    -1   1    0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-IGYSH3-3
+U 1 1 5FE6F85A
+P 8250 3850
+F 0 "V-IGYSH3-3" H 8300 3450 50  0000 C CNN
+F 1 "VR91" H 8300 3350 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9250 4100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 8250 3850 50  0001 C CNN
+	1    8250 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4000 7950 4650
+Wire Wire Line
+	7950 3700 7850 3700
+Wire Wire Line
+	7850 3700 7850 3250
+Wire Wire Line
+	7850 3250 9100 3250
+$Comp
+L NEWValves:EA50 D-IGYSH3-7
+U 1 1 5FE6F869
+P 9100 4050
+F 0 "D-IGYSH3-7" H 9350 4000 50  0000 L CNN
+F 1 "EA50" H 9350 3900 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 9700 3850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9100 4050 50  0001 C CNN
+	1    9100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-IGYSH3-26
+U 1 1 5FE6F873
+P 9100 3500
+F 0 "R-IGYSH3-26" H 9200 3550 50  0000 L CNN
+F 1 "470" H 9200 3500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9030 3500 50  0001 C CNN
+F 3 "~" H 9100 3500 50  0001 C CNN
+	1    9100 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3800 9100 3700
+Wire Wire Line
+	9100 3350 9100 3250
+Wire Wire Line
+	9100 3700 10000 3700
+Connection ~ 9100 3700
+Wire Wire Line
+	9100 3700 9100 3650
+$Comp
+L Device:R R-IGYSH3-27
+U 1 1 5FE6F882
+P 10000 4400
+F 0 "R-IGYSH3-27" H 9900 4325 50  0000 R CNN
+F 1 "330K" H 9900 4425 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9930 4400 50  0001 C CNN
+F 3 "~" H 10000 4400 50  0001 C CNN
+	1    10000 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4550 9100 4650
+Wire Wire Line
+	8250 3400 8250 3150
+$Comp
+L Device:R R-IGYSH3-24
+U 1 1 5FE6F88E
+P 8600 3150
+F 0 "R-IGYSH3-24" V 8800 3150 50  0000 C CNN
+F 1 "470K" V 8700 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8530 3150 50  0001 C CNN
+F 3 "~" H 8600 3150 50  0001 C CNN
+	1    8600 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-IGYSH3-9
+U 1 1 5FE6F898
+P 9400 2900
+F 0 "C-IGYSH3-9" V 9100 2900 50  0000 C CNN
+F 1 "100p" V 9200 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9438 2750 50  0001 C CNN
+F 3 "~" H 9400 2900 50  0001 C CNN
+	1    9400 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-IGYSH3-23
+U 1 1 5FE6F8A2
+P 8250 2650
+F 0 "R-IGYSH3-23" H 8350 2700 50  0000 L CNN
+F 1 "56K" H 8350 2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8180 2650 50  0001 C CNN
+F 3 "~" H 8250 2650 50  0001 C CNN
+	1    8250 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2900 8250 2900
+Connection ~ 8250 2900
+Wire Wire Line
+	8450 3150 8250 3150
+Connection ~ 8250 3150
+Wire Wire Line
+	8250 3150 8250 2900
+Wire Wire Line
+	8750 3150 10000 3150
+Wire Wire Line
+	10000 3150 10000 2900
+Wire Wire Line
+	10000 2900 9550 2900
+Wire Wire Line
+	8250 2900 8250 2800
+$Comp
+L Device:R R-IGYSH3-19
+U 1 1 5FE6F8B5
+P 7350 3650
+F 0 "R-IGYSH3-19" H 7450 3600 50  0000 L CNN
+F 1 "1M" H 7450 3650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7280 3650 50  0001 C CNN
+F 3 "~" H 7350 3650 50  0001 C CNN
+	1    7350 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 3400 7350 3500
+NoConn ~ 8550 4050
+NoConn ~ 8550 3950
+NoConn ~ 8600 3800
+$Comp
+L NEWValves:VR91 V-IGYSH3-4
+U 1 1 5FE6F8C4
+P 12150 3850
+F 0 "V-IGYSH3-4" H 12200 3450 50  0000 C CNN
+F 1 "VR91" H 12200 3350 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 13150 4100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 12150 3850 50  0001 C CNN
+	1    12150 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 3900 12600 3900
+Wire Wire Line
+	12450 3700 12600 3700
+Wire Wire Line
+	12600 3700 12600 3250
+Wire Wire Line
+	12600 3250 11300 3250
+$Comp
+L NEWValves:EA50 D-IGYSH3-8
+U 1 1 5FE6F8D2
+P 11300 4050
+F 0 "D-IGYSH3-8" H 11550 4000 50  0000 L CNN
+F 1 "EA50" H 11550 3900 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 11900 3850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11300 4050 50  0001 C CNN
+	1    11300 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-IGYSH3-34
+U 1 1 5FE6F8DC
+P 11300 3500
+F 0 "R-IGYSH3-34" H 11400 3550 50  0000 L CNN
+F 1 "470" H 11400 3500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11230 3500 50  0001 C CNN
+F 3 "~" H 11300 3500 50  0001 C CNN
+	1    11300 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11300 3800 11300 3700
+Wire Wire Line
+	11300 3350 11300 3250
+Wire Wire Line
+	11300 3700 10400 3700
+Connection ~ 11300 3700
+Wire Wire Line
+	11300 3700 11300 3650
+$Comp
+L Device:R R-IGYSH3-32
+U 1 1 5FE6F8EB
+P 10400 4400
+F 0 "R-IGYSH3-32" H 10300 4325 50  0000 R CNN
+F 1 "330K" H 10300 4425 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10330 4400 50  0001 C CNN
+F 3 "~" H 10400 4400 50  0001 C CNN
+	1    10400 4400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 3400 12150 3150
+$Comp
+L Device:R R-IGYSH3-35
+U 1 1 5FE6F8F6
+P 11800 3150
+F 0 "R-IGYSH3-35" V 12000 3150 50  0000 C CNN
+F 1 "470K" V 11900 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11730 3150 50  0001 C CNN
+F 3 "~" H 11800 3150 50  0001 C CNN
+	1    11800 3150
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C-IGYSH3-11
+U 1 1 5FE6F900
+P 11000 2900
+F 0 "C-IGYSH3-11" V 10700 2900 50  0000 C CNN
+F 1 "100p" V 10800 2900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11038 2750 50  0001 C CNN
+F 3 "~" H 11000 2900 50  0001 C CNN
+	1    11000 2900
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-IGYSH3-37
+U 1 1 5FE6F90A
+P 12150 2650
+F 0 "R-IGYSH3-37" H 12250 2700 50  0000 L CNN
+F 1 "56K" H 12250 2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12080 2650 50  0001 C CNN
+F 3 "~" H 12150 2650 50  0001 C CNN
+	1    12150 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 2900 12150 2900
+Connection ~ 12150 2900
+Wire Wire Line
+	11950 3150 12150 3150
+Connection ~ 12150 3150
+Wire Wire Line
+	12150 3150 12150 2900
+Wire Wire Line
+	11650 3150 10400 3150
+Wire Wire Line
+	10400 3150 10400 2900
+Wire Wire Line
+	10400 2900 10850 2900
+Wire Wire Line
+	12150 2900 12150 2800
+NoConn ~ 11850 4050
+NoConn ~ 11850 3950
+Wire Wire Line
+	10400 3700 10000 3150
+Connection ~ 10400 3700
+Connection ~ 10000 3150
+Wire Wire Line
+	10400 3150 10000 3700
+Connection ~ 10400 3150
+Connection ~ 10000 3700
+Wire Wire Line
+	11800 3800 11800 3350
+Wire Wire Line
+	11800 3350 12350 3350
+$Comp
+L Device:R R-IGYSH3-38
+U 1 1 5FE6F927
+P 12350 2650
+F 0 "R-IGYSH3-38" H 12250 2575 50  0000 R CNN
+F 1 "12K" H 12250 2675 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12280 2650 50  0001 C CNN
+F 3 "~" H 12350 2650 50  0001 C CNN
+	1    12350 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-IGYSH3-39
+U 1 1 5FE6F931
+P 12750 3900
+F 0 "R-IGYSH3-39" V 12600 3900 50  0000 C CNN
+F 1 "470" V 12500 3900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12680 3900 50  0001 C CNN
+F 3 "~" H 12750 3900 50  0001 C CNN
+	1    12750 3900
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C-IGYSH3-8
+U 1 1 5FE6F93C
+P 7100 3900
+F 0 "C-IGYSH3-8" V 7300 3900 50  0000 C CNN
+F 1 "470p" V 7400 3900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7138 3750 50  0001 C CNN
+F 3 "~" H 7100 3900 50  0001 C CNN
+	1    7100 3900
+	0    1    1    0   
+$EndComp
+Text Label 7350 3400 2    50   ~ 0
++300V
+Wire Wire Line
+	8250 2400 8250 2450
+Wire Wire Line
+	8250 3150 7750 3150
+Wire Wire Line
+	12150 2000 12150 2100
+Text Label 12150 2000 2    50   ~ 0
++300V
+Wire Wire Line
+	12350 2400 12350 2500
+Text Label 12350 2400 0    50   ~ 0
++300V
+Wire Wire Line
+	12350 2800 12350 3350
+Wire Wire Line
+	12900 3900 13000 3900
+Wire Wire Line
+	13000 3900 13000 3650
+$Comp
+L Device:R R-IGYSH3-40
+U 1 1 5FE6F960
+P 13000 3500
+F 0 "R-IGYSH3-40" H 12900 3425 50  0000 R CNN
+F 1 "1.2M" H 12900 3525 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12930 3500 50  0001 C CNN
+F 3 "~" H 13000 3500 50  0001 C CNN
+	1    13000 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 3250 13000 3350
+Text Label 13000 3250 0    50   ~ 0
++300V
+Wire Wire Line
+	10000 3700 10000 4250
+Wire Wire Line
+	10400 3700 10400 4250
+Text Label 9100 4650 2    50   ~ 0
+GND
+Text Label 7950 4650 2    50   ~ 0
+GND
+Wire Wire Line
+	11300 4550 11300 4650
+Text Label 11300 4650 2    50   ~ 0
+GND
+Wire Wire Line
+	12450 4000 12450 4650
+Text Label 12450 4650 2    50   ~ 0
+GND
+Wire Wire Line
+	10000 4650 10000 4550
+Wire Wire Line
+	10400 4550 10400 4650
+Text Label 10400 4650 0    50   ~ 0
+-150V
+Text Label 10000 4650 2    50   ~ 0
+-150V
+Wire Wire Line
+	13000 3900 13000 4800
+Wire Wire Line
+	13000 4800 12150 4800
+Connection ~ 13000 3900
+$Comp
+L Device:C C-IGYSH3-12
+U 1 1 5FE6F97B
+P 12000 4800
+F 0 "C-IGYSH3-12" V 11700 4800 50  0000 C CNN
+F 1 "47p" V 11800 4800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 12038 4650 50  0001 C CNN
+F 3 "~" H 12000 4800 50  0001 C CNN
+	1    12000 4800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6950 3900 6950 2150
+Wire Wire Line
+	1600 2150 6950 2150
+Wire Wire Line
+	5900 4800 6750 4800
+Connection ~ 6750 4800
+Wire Wire Line
+	6750 4800 11850 4800
+$Comp
+L Device:R R-IGYSH3-22
+U 1 1 600EDD1D
+P 8250 2250
+F 0 "R-IGYSH3-22" H 8350 2300 50  0000 L CNN
+F 1 "10K" H 8350 2250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8180 2250 50  0001 C CNN
+F 3 "~" H 8250 2250 50  0001 C CNN
+	1    8250 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2000 8250 2100
+Text Label 8250 2000 0    50   ~ 0
++300V
+Wire Wire Line
+	8250 2450 8900 2450
+Wire Wire Line
+	8900 2450 8900 1050
+Wire Wire Line
+	8900 1050 12200 1050
+Connection ~ 8250 2450
+Wire Wire Line
+	8250 2450 8250 2500
+$Comp
+L Device:C C-IGYSH3-13
+U 1 1 6032FEF5
+P 12350 1050
+F 0 "C-IGYSH3-13" V 12050 1050 50  0000 C CNN
+F 1 "100p" V 12150 1050 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 12388 900 50  0001 C CNN
+F 3 "~" H 12350 1050 50  0001 C CNN
+	1    12350 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13750 1050 13550 1050
+$Comp
+L Device:R R-IGYSH3-36
+U 1 1 6038FC08
+P 12150 2250
+F 0 "R-IGYSH3-36" H 12250 2300 50  0000 L CNN
+F 1 "10K" H 12250 2250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12080 2250 50  0001 C CNN
+F 3 "~" H 12150 2250 50  0001 C CNN
+	1    12150 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 2500 12150 2450
+Wire Wire Line
+	12150 2450 11800 2450
+Wire Wire Line
+	11800 2450 11800 1900
+Connection ~ 12150 2450
+Wire Wire Line
+	12150 2450 12150 2400
+Wire Wire Line
+	11800 1900 12200 1900
+$Comp
+L Device:C C-IGYSH3-14
+U 1 1 60487339
+P 12350 1900
+F 0 "C-IGYSH3-14" V 12050 1900 50  0000 C CNN
+F 1 "100p" V 12150 1900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 12388 1750 50  0001 C CNN
+F 3 "~" H 12350 1900 50  0001 C CNN
+	1    12350 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13750 1900 13250 1900
+$Comp
+L NEWValves:VR91 V-IGYSH3-6
+U 1 1 60552BFB
+P 15400 1450
+F 0 "V-IGYSH3-6" H 15950 1450 50  0000 C CNN
+F 1 "VR91" H 15900 1350 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 16400 1700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 15400 1450 50  0001 C CNN
+	1    15400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14500 1050 14600 1050
+Wire Wire Line
+	14600 1050 14600 1500
+Wire Wire Line
+	14600 1900 14500 1900
+$Comp
+L Device:R R-IGYSH3-47
+U 1 1 605B6AE9
+P 14850 1500
+F 0 "R-IGYSH3-47" V 15100 1500 50  0000 C CNN
+F 1 "470" V 15000 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 14780 1500 50  0001 C CNN
+F 3 "~" H 14850 1500 50  0001 C CNN
+	1    14850 1500
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	14600 1500 14700 1500
+Connection ~ 14600 1500
+Wire Wire Line
+	14600 1500 14600 1900
+Wire Wire Line
+	15000 1500 15100 1500
+Wire Wire Line
+	15100 1300 15100 900 
+Wire Wire Line
+	15100 900  15400 900 
+Wire Wire Line
+	15400 900  15400 1000
+Wire Wire Line
+	15750 1400 15750 900 
+Wire Wire Line
+	15750 900  15400 900 
+Connection ~ 15400 900 
+Wire Wire Line
+	15400 800  15400 900 
+Text Label 15400 800  2    50   ~ 0
++200V
+NoConn ~ 15700 1650
+NoConn ~ 15700 1550
+Wire Wire Line
+	15100 1600 15100 1850
+$Comp
+L Connector:Conn_01x01_Female J-IGYSH3-8
+U 1 1 60787ABD
+P 15550 1850
+F 0 "J-IGYSH3-8" H 15600 1775 50  0000 L CNN
+F 1 "Action.Trigger" H 15600 1875 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 15600 1810 50  0001 C CNN
+F 3 "~" H 15600 1810 50  0001 C CNN
+	1    15550 1850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	15350 1850 15100 1850
+Wire Wire Line
+	15100 1950 15100 1850
+Connection ~ 15100 1850
+$Comp
+L Device:R R-IGYSH3-48
+U 1 1 607F5C60
+P 15100 2100
+F 0 "R-IGYSH3-48" H 15000 2050 50  0000 R CNN
+F 1 "10K" H 15000 2100 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 15030 2100 50  0001 C CNN
+F 3 "~" H 15100 2100 50  0001 C CNN
+	1    15100 2100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	15100 2350 15100 2250
+Text Label 15100 2350 0    50   ~ 0
+-150V
+$Comp
+L Device:R R-IGYSH3-41
+U 1 1 6085F35A
+P 13550 2900
+F 0 "R-IGYSH3-41" H 13450 2850 50  0000 R CNN
+F 1 "47K" H 13450 2900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13480 2900 50  0001 C CNN
+F 3 "~" H 13550 2900 50  0001 C CNN
+	1    13550 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R-IGYSH3-43
+U 1 1 6085FB1E
+P 13750 2900
+F 0 "R-IGYSH3-43" H 13850 2850 50  0000 L CNN
+F 1 "47K" H 13850 2900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13680 2900 50  0001 C CNN
+F 3 "~" H 13750 2900 50  0001 C CNN
+	1    13750 2900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13750 2750 13750 1900
+Connection ~ 13750 1900
+Wire Wire Line
+	13550 2750 13550 1050
+Connection ~ 13550 1050
+Wire Wire Line
+	13550 1050 12500 1050
+Wire Wire Line
+	13550 3050 13550 3150
+Wire Wire Line
+	13550 3150 13750 3150
+Wire Wire Line
+	13750 3050 13750 3150
+Connection ~ 13750 3150
+Wire Wire Line
+	13750 3150 14550 3150
+Wire Wire Line
+	14550 3150 14550 3400
+Wire Wire Line
+	14650 3400 14550 3400
+Wire Wire Line
+	14450 3400 14550 3400
+Connection ~ 14550 3400
+$Comp
+L Device:R R-IGYSH3-44
+U 1 1 60A0C188
+P 14300 3400
+F 0 "R-IGYSH3-44" V 14150 3400 50  0000 C CNN
+F 1 "1.2K" V 14050 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 14230 3400 50  0001 C CNN
+F 3 "~" H 14300 3400 50  0001 C CNN
+	1    14300 3400
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R-IGYSH3-46
+U 1 1 60A0C80E
+P 14800 3400
+F 0 "R-IGYSH3-46" V 14650 3400 50  0000 C CNN
+F 1 "82K 1W" V 14550 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 14730 3400 50  0001 C CNN
+F 3 "~" H 14800 3400 50  0001 C CNN
+	1    14800 3400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	14950 3400 15050 3400
+Wire Wire Line
+	14150 3400 14050 3400
+Wire Wire Line
+	14050 3400 14050 3700
+Wire Wire Line
+	15050 3400 15050 3150
+Text Label 15050 3150 2    50   ~ 0
++300V
+Text Label 14050 3700 2    50   ~ 0
+GND
+Wire Wire Line
+	14550 3400 14550 3700
+$Comp
+L Device:C C-IGYSH3-17
+U 1 1 60B22491
+P 14550 3850
+F 0 "C-IGYSH3-17" H 14400 3900 50  0000 R CNN
+F 1 "47p" H 14400 3850 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 14588 3700 50  0001 C CNN
+F 3 "~" H 14550 3850 50  0001 C CNN
+	1    14550 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 4000 14550 4100
+Text Label 14550 4100 2    50   ~ 0
+GND
+Wire Wire Line
+	13250 1900 13250 4400
+Wire Wire Line
+	13250 4400 13400 4400
+Connection ~ 13250 1900
+Wire Wire Line
+	13250 1900 12500 1900
+$Comp
+L Device:R R-IGYSH3-42
+U 1 1 60B95980
+P 13550 4400
+F 0 "R-IGYSH3-42" V 13400 4400 50  0000 C CNN
+F 1 "1.2K" V 13300 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13480 4400 50  0001 C CNN
+F 3 "~" H 13550 4400 50  0001 C CNN
+	1    13550 4400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	13700 4400 13800 4400
+Wire Wire Line
+	13800 4400 13800 4500
+$Comp
+L Device:C C-IGYSH3-15
+U 1 1 60BCEF8D
+P 13800 4650
+F 0 "C-IGYSH3-15" H 13650 4700 50  0000 R CNN
+F 1 "0.001" H 13650 4650 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 13838 4500 50  0001 C CNN
+F 3 "~" H 13800 4650 50  0001 C CNN
+	1    13800 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 4800 13800 4900
+Text Label 13800 4900 2    50   ~ 0
+GND
+Connection ~ 13800 4400
+$Comp
+L Switch:SW_SPST SW-IGYSH3-1
+U 1 1 60C41ECB
+P 14200 4400
+F 0 "SW-IGYSH3-1" H 14200 4650 50  0000 C CNN
+F 1 "SW_SPST" H 14200 4550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 14200 4400 50  0001 C CNN
+F 3 "~" H 14200 4400 50  0001 C CNN
+	1    14200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 4400 14000 4400
+$Comp
+L Device:R R-IGYSH3-45
+U 1 1 60C7BE5F
+P 14650 4400
+F 0 "R-IGYSH3-45" V 14500 4400 50  0000 C CNN
+F 1 "100K" V 14400 4400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 14580 4400 50  0001 C CNN
+F 3 "~" H 14650 4400 50  0001 C CNN
+	1    14650 4400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	14400 4400 14500 4400
+Wire Wire Line
+	14800 4400 14900 4400
+Wire Wire Line
+	14900 4400 14900 4150
+Text Label 14900 4150 2    50   ~ 0
++300V
+Text Notes 13600 4350 0    50   ~ 0
+Auto/Man.Cmn2
+Text Notes 14300 4350 0    50   ~ 0
+Auto/Man.Nc2
+$Comp
+L Device:R_POT RV-IGYSH3-3
+U 1 1 60CFB933
+P 13500 5550
+F 0 "RV-IGYSH3-3" H 13400 5600 50  0000 R CNN
+F 1 "300K" H 13400 5550 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical_HandSoldering" H 13500 5550 50  0001 C CNN
+F 3 "~" H 13500 5550 50  0001 C CNN
+	1    13500 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 5550 13900 5650
+$Comp
+L Device:C C-IGYSH3-16
+U 1 1 60D36E06
+P 13900 5800
+F 0 "C-IGYSH3-16" H 13750 5850 50  0000 R CNN
+F 1 "0.001" H 13750 5800 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 13938 5650 50  0001 C CNN
+F 3 "~" H 13900 5800 50  0001 C CNN
+	1    13900 5800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 5950 13900 6050
+Text Label 13900 6050 2    50   ~ 0
+GND
+Text Label 13500 6050 2    50   ~ 0
+GND
+Wire Wire Line
+	13500 5700 13500 6050
+Wire Wire Line
+	13650 5550 13900 5550
+Wire Wire Line
+	13900 5550 14250 5550
+Connection ~ 13900 5550
+Text Label 13500 5150 2    50   ~ 0
++300V
+Wire Wire Line
+	13500 5150 13500 5400
+$Comp
+L Connector:Conn_01x01_Female J-IGYSH3-7
+U 1 1 60E9E479
+P 14450 5550
+F 0 "J-IGYSH3-7" H 14500 5475 50  0000 L CNN
+F 1 "C.Y2" H 14500 5575 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 14500 5510 50  0001 C CNN
+F 3 "~" H 14500 5510 50  0001 C CNN
+	1    14450 5550
+	1    0    0    1   
+$EndComp
+Text Notes 13750 5500 0    50   ~ 0
+Y2 Shift
+Text Label 2200 6500 2    50   ~ 0
++200V
+Wire Wire Line
+	2500 7450 2750 7450
+$Comp
+L Connector:Conn_01x01_Female J-IGYSH3-4
+U 1 1 60EACE75
+P 2950 7450
+F 0 "J-IGYSH3-4" H 3000 7375 50  0000 L CNN
+F 1 "Inst.Gate" H 3000 7475 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 3000 7410 50  0001 C CNN
+F 3 "~" H 3000 7410 50  0001 C CNN
+	1    2950 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6600 2200 6600
+Wire Wire Line
+	2500 7000 2500 6600
+Wire Wire Line
+	2200 6600 2200 6700
+Connection ~ 2200 6600
+Wire Wire Line
+	1850 6600 2200 6600
+Wire Wire Line
+	1850 6600 1850 7100
+$Comp
+L NEWValves:CV173 V-IGYSH3-5
+U 1 1 60EACE87
+P 2200 7150
+F 0 "V-IGYSH3-5" H 2250 6750 50  0000 C CNN
+F 1 "CV173" H 2250 6650 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3200 7400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 2200 7150 50  0001 C CNN
+	1    2200 7150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-IGYSH3-7
+U 1 1 60EACE91
+P 2750 7200
+F 0 "R-IGYSH3-7" V 2500 7225 50  0000 C CNN
+F 1 "470" V 2600 7225 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2680 7200 50  0001 C CNN
+F 3 "~" H 2750 7200 50  0001 C CNN
+	1    2750 7200
+	0    1    1    0   
+$EndComp
+NoConn ~ 1900 7250
+NoConn ~ 1900 7350
+Wire Wire Line
+	2500 7200 2600 7200
+Wire Wire Line
+	2500 7300 2500 7450
+Wire Wire Line
+	2200 6500 2200 6600
+Wire Wire Line
+	3000 7200 2900 7200
+$Comp
+L Device:R R-IGYSH3-6
+U 1 1 60EACEA2
+P 2500 7750
+F 0 "R-IGYSH3-6" H 2600 7800 50  0000 L CNN
+F 1 "15K 6W" H 2600 7750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2430 7750 50  0001 C CNN
+F 3 "~" H 2500 7750 50  0001 C CNN
+	1    2500 7750
+	1    0    0    -1  
+$EndComp
+Text Label 5150 6500 1    50   ~ 0
++200V
+Wire Wire Line
+	4850 7450 4600 7450
+$Comp
+L Connector:Conn_01x01_Female J-IGYSH3-5
+U 1 1 60EACEAE
+P 4400 7450
+F 0 "J-IGYSH3-5" H 4450 7375 50  0000 L CNN
+F 1 "CL Y Shift" H 4450 7475 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 4450 7410 50  0001 C CNN
+F 3 "~" H 4450 7410 50  0001 C CNN
+	1    4400 7450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6600 5150 6600
+Wire Wire Line
+	4850 7000 4850 6600
+Wire Wire Line
+	5150 6600 5150 6700
+Connection ~ 5150 6600
+Wire Wire Line
+	5500 6600 5150 6600
+Wire Wire Line
+	5500 6600 5500 7100
+$Comp
+L NEWValves:CV173 V-IGYSH3-7
+U 1 1 60EACEC0
+P 5150 7150
+F 0 "V-IGYSH3-7" H 5200 6750 50  0000 C CNN
+F 1 "CV173" H 5200 6650 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6150 7400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-IGYSH3-11
+U 1 1 60EACECA
+P 4550 7200
+F 0 "R-IGYSH3-11" V 4300 7225 50  0000 C CNN
+F 1 "470" V 4400 7225 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4480 7200 50  0001 C CNN
+F 3 "~" H 4550 7200 50  0001 C CNN
+	1    4550 7200
+	0    -1   1    0   
+$EndComp
+NoConn ~ 5450 7250
+NoConn ~ 5450 7350
+Wire Wire Line
+	4850 7200 4700 7200
+Wire Wire Line
+	4850 7300 4850 7450
+Wire Wire Line
+	5150 6500 5150 6600
+$Comp
+L Device:R R-IGYSH3-12
+U 1 1 60EACEDB
+P 4850 7750
+F 0 "R-IGYSH3-12" H 4950 7800 50  0000 L CNN
+F 1 "15K 6W" H 4950 7750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4780 7750 50  0001 C CNN
+F 3 "~" H 4850 7750 50  0001 C CNN
+	1    4850 7750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 7900 2500 8000
+Wire Wire Line
+	4850 8000 4850 7900
+Text Notes 3000 7550 2    50   ~ 0
++10V/-60V
+Text Notes 4850 7550 2    50   ~ 0
++10V/-60V
+Text Label 2500 8000 0    50   ~ 0
+-150V
+Text Label 4850 8000 0    50   ~ 0
+-150V
+Connection ~ 2500 7450
+Wire Wire Line
+	2500 7450 2500 7600
+Connection ~ 4850 7450
+Wire Wire Line
+	4850 7450 4850 7600
+Text Notes 3850 7650 0    50   ~ 0
+(No longer used.)
+$Comp
+L NEWValves:EA50 D-IGYSH3-10
+U 1 1 614F91EB
+P 3000 6100
+F 0 "D-IGYSH3-10" H 2750 5900 50  0000 R CNN
+F 1 "EA50" H 2750 6000 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 3600 5900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3000 6100 50  0001 C CNN
+	1    3000 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 7200 3000 6350
+$Comp
+L NEWValves:EA50 D-IGYSH3-9
+U 1 1 61581BE4
+P 2500 6100
+F 0 "D-IGYSH3-9" H 3150 5800 50  0000 R CNN
+F 1 "EA50" H 2950 5900 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 3100 5900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2500 6100 50  0001 C CNN
+	1    2500 6100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 6350 2500 6350
+Wire Wire Line
+	2500 6350 2250 6350
+Connection ~ 2500 6350
+$Comp
+L Device:R R-IGYSH3-4
+U 1 1 616095FF
+P 2100 6350
+F 0 "R-IGYSH3-4" V 1850 6350 50  0000 C CNN
+F 1 "5M6" V 1950 6350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2030 6350 50  0001 C CNN
+F 3 "~" H 2100 6350 50  0001 C CNN
+	1    2100 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 6350 1850 6350
+Wire Wire Line
+	1850 6350 1850 6050
+Text Label 1850 6050 2    50   ~ 0
++300V
+Wire Wire Line
+	2850 3700 2500 4100
+Wire Wire Line
+	2500 4100 2500 5600
+Wire Wire Line
+	3000 5600 3000 5450
+Wire Wire Line
+	3000 5450 4300 5450
+Wire Wire Line
+	8750 5450 8750 4150
+Wire Wire Line
+	8750 4150 9100 3700
+Wire Wire Line
+	4300 7200 4300 5450
+Wire Wire Line
+	4300 7200 4400 7200
+Connection ~ 4300 5450
+Wire Wire Line
+	4300 5450 8750 5450
+Wire Wire Line
+	7250 3900 7350 3900
+Wire Wire Line
+	7350 3800 7350 3900
+Connection ~ 7350 3900
+Wire Wire Line
+	7350 3900 7400 3900
+$Comp
+L Device:R R-IGYSH3-20
+U 1 1 5FE6F850
+P 7550 3900
+F 0 "R-IGYSH3-20" H 7450 3825 50  0000 R CNN
+F 1 "470" H 7450 3925 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7480 3900 50  0001 C CNN
+F 3 "~" H 7550 3900 50  0001 C CNN
+	1    7550 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 3150 7750 5100
+Wire Wire Line
+	7700 3900 7950 3900
+$Comp
+L Device:R_POT RV-IGYSH3-1
+U 1 1 61C08B6A
+P 8150 7250
+F 0 "RV-IGYSH3-1" H 8050 7300 50  0000 R CNN
+F 1 "10K" H 8050 7250 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical_HandSoldering" H 8150 7250 50  0001 C CNN
+F 3 "~" H 8150 7250 50  0001 C CNN
+	1    8150 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-IGYSH3-10
+U 1 1 61C08B75
+P 9900 6750
+F 0 "C-IGYSH3-10" H 10050 6800 50  0000 L CNN
+F 1 "10pF" H 10050 6750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9938 6600 50  0001 C CNN
+F 3 "~" H 9900 6750 50  0001 C CNN
+	1    9900 6750
+	-1   0    0    -1  
+$EndComp
+Text Label 9850 7350 2    50   ~ 0
+GND
+Wire Wire Line
+	8300 7250 8400 7250
+Text Label 8150 7000 2    50   ~ 0
++200V
+Wire Wire Line
+	8150 7000 8150 7100
+Text Notes 8250 7350 0    50   ~ 0
+Y1 Amp
+$Comp
+L Device:R R-IGYSH3-21
+U 1 1 61C5DADD
+P 8150 7650
+F 0 "R-IGYSH3-21" H 8250 7700 50  0000 L CNN
+F 1 "80K" H 8250 7650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8080 7650 50  0001 C CNN
+F 3 "~" H 8150 7650 50  0001 C CNN
+	1    8150 7650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 7400 8150 7500
+Wire Wire Line
+	8150 7900 8150 7800
+Text Label 8150 7900 2    50   ~ 0
+GND
+$Comp
+L NEWValves:EA50 D-IGYSH3-5
+U 1 1 61EF1491
+P 8400 6900
+F 0 "D-IGYSH3-5" H 8650 6850 50  0000 L CNN
+F 1 "EA50" H 8650 6750 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 9000 6700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8400 6900 50  0001 C CNN
+	1    8400 6900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 7250 8400 7150
+$Comp
+L NEWValves:EA50 D-IGYSH3-6
+U 1 1 61F3CDF1
+P 8900 6650
+F 0 "D-IGYSH3-6" H 9050 6850 50  0000 L CNN
+F 1 "EA50" H 9050 6750 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 9500 6450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8900 6650 50  0001 C CNN
+	1    8900 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 7150 8900 7250
+Text Label 8900 7250 2    50   ~ 0
++200V
+Wire Wire Line
+	8400 6400 8900 6400
+Wire Wire Line
+	8900 6400 8900 6300
+Connection ~ 8900 6400
+$Comp
+L Device:R R-IGYSH3-25
+U 1 1 620B05EA
+P 8900 6150
+F 0 "R-IGYSH3-25" H 8800 6100 50  0000 R CNN
+F 1 "470K" H 8800 6150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8830 6150 50  0001 C CNN
+F 3 "~" H 8900 6150 50  0001 C CNN
+	1    8900 6150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8900 6000 8900 5900
+Text Label 8900 5900 2    50   ~ 0
++300V
+Wire Wire Line
+	8900 6400 10100 6400
+Wire Wire Line
+	10100 6400 10100 6500
+Wire Wire Line
+	10100 6400 10100 6300
+Connection ~ 10100 6400
+$Comp
+L Device:R R-IGYSH3-29
+U 1 1 621DF59E
+P 10100 6750
+F 0 "R-IGYSH3-29" H 10200 6700 50  0000 L CNN
+F 1 "820K" H 10200 6800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10030 6750 50  0001 C CNN
+F 3 "~" H 10100 6750 50  0001 C CNN
+	1    10100 6750
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R-IGYSH3-28
+U 1 1 621E03E0
+P 10100 6150
+F 0 "R-IGYSH3-28" H 10000 6100 50  0000 R CNN
+F 1 "150K" H 10000 6150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10030 6150 50  0001 C CNN
+F 3 "~" H 10100 6150 50  0001 C CNN
+	1    10100 6150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9900 6600 9900 6500
+Wire Wire Line
+	9900 6500 10100 6500
+Connection ~ 10100 6500
+Wire Wire Line
+	10100 6500 10100 6600
+Wire Wire Line
+	10100 6900 10100 7000
+Wire Wire Line
+	10100 7000 9900 7000
+Wire Wire Line
+	9900 7000 9900 6900
+Wire Wire Line
+	10100 7000 10100 7100
+Connection ~ 10100 7000
+$Comp
+L Device:R R-IGYSH3-30
+U 1 1 6236087F
+P 10100 7250
+F 0 "R-IGYSH3-30" H 10000 7200 50  0000 R CNN
+F 1 "1M" H 10000 7250 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10030 7250 50  0001 C CNN
+F 3 "~" H 10100 7250 50  0001 C CNN
+	1    10100 7250
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV-IGYSH3-2
+U 1 1 623AF7F8
+P 9850 7650
+F 0 "RV-IGYSH3-2" H 9750 7700 50  0000 R CNN
+F 1 "150K" H 9750 7650 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical_HandSoldering" H 9850 7650 50  0001 C CNN
+F 3 "~" H 9850 7650 50  0001 C CNN
+	1    9850 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 7650 10100 7650
+Wire Wire Line
+	9850 7350 9850 7500
+Text Notes 9950 7750 0    50   ~ 0
+Y1 Amp
+Wire Wire Line
+	9850 7800 9850 7900
+Text Label 9850 7900 0    50   ~ 0
+-150V
+Wire Wire Line
+	10100 7650 10100 7400
+Wire Wire Line
+	10100 7000 10200 7000
+$Comp
+L Device:R R-IGYSH3-31
+U 1 1 62675732
+P 10350 7000
+F 0 "R-IGYSH3-31" V 10550 6900 50  0000 C CNN
+F 1 "470" V 10450 7000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10280 7000 50  0001 C CNN
+F 3 "~" H 10350 7000 50  0001 C CNN
+	1    10350 7000
+	0    -1   1    0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-IGYSH3-8
+U 1 1 62678D46
+P 11050 6950
+F 0 "V-IGYSH3-8" H 11100 6550 50  0000 C CNN
+F 1 "VR91" H 11100 6450 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 12050 7200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 11050 6950 50  0001 C CNN
+	1    11050 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 7000 10750 7000
+Wire Wire Line
+	10750 6800 10750 6400
+Wire Wire Line
+	10750 6400 11050 6400
+Wire Wire Line
+	11400 6400 11400 6900
+Wire Wire Line
+	11050 6500 11050 6400
+Text Label 11050 6300 2    50   ~ 0
++200V
+Wire Wire Line
+	10750 7100 10750 7300
+$Comp
+L Device:R R-IGYSH3-33
+U 1 1 6285CF2A
+P 10750 7650
+F 0 "R-IGYSH3-33" H 10850 7600 50  0000 L CNN
+F 1 "15K 6W" H 10850 7650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10680 7650 50  0001 C CNN
+F 3 "~" H 10750 7650 50  0001 C CNN
+	1    10750 7650
+	1    0    0    1   
+$EndComp
+Text Label 10750 7900 0    50   ~ 0
+-150V
+Wire Wire Line
+	10750 7800 10750 7900
+$Comp
+L Connector:Conn_01x01_Female J-IGYSH3-6
+U 1 1 629F3AE4
+P 11550 7300
+F 0 "J-IGYSH3-6" H 11600 7225 50  0000 L CNN
+F 1 "C.Y1" H 11600 7325 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 11600 7260 50  0001 C CNN
+F 3 "~" H 11600 7260 50  0001 C CNN
+	1    11550 7300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	11350 7300 10750 7300
+Connection ~ 10750 7300
+Wire Wire Line
+	10750 7300 10750 7500
+NoConn ~ 11350 7150
+NoConn ~ 11350 7050
+Wire Wire Line
+	10100 6000 10100 5100
+Wire Wire Line
+	10100 5100 7750 5100
+Wire Wire Line
+	600  3900 800  3900
+Wire Wire Line
+	600  4800 5600 4800
+$Comp
+L NEWValves:EA50 D-IGYSH3-10
+U 2 1 62F64A20
+P 6850 9050
+F 0 "D-IGYSH3-10" H 6850 9350 50  0000 C CNN
+F 1 "EA50" H 6850 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7450 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6850 9050 50  0001 C CNN
+	2    6850 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-IGYSH3-9
+U 2 1 62F64A2A
+P 6200 9050
+F 0 "D-IGYSH3-9" H 6200 9350 50  0000 C CNN
+F 1 "EA50" H 6200 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6800 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6200 9050 50  0001 C CNN
+	2    6200 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 9800 6950 9800
+Connection ~ 6300 9800
+Wire Wire Line
+	6100 9550 6750 9550
+Connection ~ 6100 9550
+Wire Wire Line
+	6100 9500 6100 9550
+Wire Wire Line
+	6300 9500 6300 9800
+Wire Wire Line
+	6750 9500 6750 9550
+Wire Wire Line
+	6950 9500 6950 9800
+Wire Wire Line
+	5700 9800 6300 9800
+Wire Wire Line
+	5500 9550 6100 9550
+Connection ~ 5500 9550
+Connection ~ 5700 9800
+Wire Wire Line
+	2650 11150 3300 11150
+Connection ~ 3300 11150
+Wire Wire Line
+	3300 11150 3950 11150
+Wire Wire Line
+	2450 10900 3100 10900
+Wire Wire Line
+	3100 10850 3100 10900
+Connection ~ 3100 10900
+Wire Wire Line
+	3100 10900 3750 10900
+Connection ~ 3750 10900
+Wire Wire Line
+	3750 10900 4350 10900
+Connection ~ 3950 11150
+Wire Wire Line
+	3950 11150 4550 11150
+$Comp
+L NEWValves:VR91 V-IGYSH3-6
+U 2 1 630794F1
+P 4450 10500
+F 0 "V-IGYSH3-6" H 4475 11075 50  0000 C CNN
+F 1 "VR91" H 4475 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5450 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4450 10500 50  0001 C CNN
+	2    4450 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 11150 4550 10850
+Wire Wire Line
+	4350 10850 4350 10900
+Connection ~ 4350 10900
+Wire Wire Line
+	4350 10900 4950 10900
+Connection ~ 4550 11150
+Wire Wire Line
+	4550 11150 5150 11150
+Connection ~ 4950 10900
+Connection ~ 5150 11150
+$Comp
+L NEWValves:VR91 V-IGYSH3-8
+U 2 1 631244E5
+P 5650 10500
+F 0 "V-IGYSH3-8" H 5675 11075 50  0000 C CNN
+F 1 "VR91" H 5675 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6650 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5650 10500 50  0001 C CNN
+	2    5650 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 11150 5750 10850
+Wire Wire Line
+	5550 10850 5550 10900
+Wire Wire Line
+	4950 10900 5550 10900
+Wire Wire Line
+	5150 11150 5750 11150
+Connection ~ 11050 6400
+Wire Wire Line
+	11050 6400 11400 6400
+Wire Wire Line
+	11050 6400 11050 6300
+$EndSCHEMATC

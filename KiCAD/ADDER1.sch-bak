@@ -1,0 +1,2571 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 4 24
+Title "Control Adder Position 6.4"
+Date "2020-07-31"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:EA50 D-ADDER1-1
+U 2 1 5F23E926
+P 1250 8650
+F 0 "D-ADDER1-1" H 1250 8950 50  0000 C CNN
+F 1 "EA50" H 1250 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1850 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1250 8650 50  0001 C CNN
+	2    1250 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-2
+U 2 1 5F26BF6C
+P 1875 8650
+F 0 "D-ADDER1-2" H 1875 8950 50  0000 C CNN
+F 1 "EA50" H 1875 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2475 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1875 8650 50  0001 C CNN
+	2    1875 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-3
+U 2 1 5F26D2AB
+P 2500 8650
+F 0 "D-ADDER1-3" H 2500 8950 50  0000 C CNN
+F 1 "EA50" H 2500 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3100 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2500 8650 50  0001 C CNN
+	2    2500 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 9100 1150 9200
+Wire Wire Line
+	1775 9100 1775 9200
+Wire Wire Line
+	2400 9100 2400 9200
+Wire Wire Line
+	3000 9100 2900 9200
+Wire Wire Line
+	1350 9100 1350 9425
+Wire Wire Line
+	1975 9100 1975 9425
+Wire Wire Line
+	2600 9100 2600 9425
+Wire Wire Line
+	3200 9100 3200 9425
+$Comp
+L NEWValves:EA50 D-ADDER1-7
+U 1 1 5F29A28B
+P 3300 1850
+F 0 "D-ADDER1-7" V 3725 1700 50  0000 C CNN
+F 1 "EA50" V 3625 1700 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3900 1650 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3300 1850 50  0001 C CNN
+	1    3300 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-4
+U 1 1 5F29A29F
+P 3850 2000
+F 0 "R-ADDER1-4" H 3950 2075 50  0000 L CNN
+F 1 "47K" H 3950 1975 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3780 2000 50  0001 C CNN
+F 3 "~" H 3850 2000 50  0001 C CNN
+	1    3850 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 9100 3600 9200
+Wire Wire Line
+	3800 9100 3800 9425
+Wire Wire Line
+	4175 9100 4175 9200
+Wire Wire Line
+	4375 9100 4375 9425
+Wire Wire Line
+	4800 9100 4800 9200
+Wire Wire Line
+	5000 9100 5000 9425
+$Comp
+L NEWValves:EA50 D-ADDER1-6
+U 1 1 5F29A295
+P 4375 1850
+F 0 "D-ADDER1-6" V 4800 1725 50  0000 C CNN
+F 1 "EA50" V 4700 1725 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4975 1650 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4375 1850 50  0001 C CNN
+	1    4375 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3875 1850 3850 1850
+Connection ~ 3850 1850
+Wire Wire Line
+	3850 1850 3800 1850
+$Comp
+L NEWValves:VR91 V-ADDER1-2
+U 1 1 5F2F3586
+P 5225 1800
+F 0 "V-ADDER1-2" H 5275 1400 50  0000 C CNN
+F 1 "VR91" H 5275 1300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6225 2050 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 5225 1800 50  0001 C CNN
+	1    5225 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-7
+U 1 1 5F2FC16E
+P 3975 1350
+F 0 "R-ADDER1-7" H 3550 1475 50  0000 L CNN
+F 1 "82k" H 3625 1425 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3905 1350 50  0001 C CNN
+F 3 "~" H 3975 1350 50  0001 C CNN
+	1    3975 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4625 1850
+$Comp
+L Device:R R-ADDER1-9
+U 1 1 5F302BBB
+P 4775 1850
+F 0 "R-ADDER1-9" H 4875 1925 50  0000 L CNN
+F 1 "470" H 4875 1825 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4705 1850 50  0001 C CNN
+F 3 "~" H 4775 1850 50  0001 C CNN
+	1    4775 1850
+	0    1    1    0   
+$EndComp
+NoConn ~ 5525 1900
+NoConn ~ 5525 2000
+$Comp
+L Device:C C-ADDER1-1
+U 1 1 5F30EF9A
+P 5700 1900
+F 0 "C-ADDER1-1" H 5750 1775 50  0000 L CNN
+F 1 "0.1" H 5775 1700 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5738 1750 50  0001 C CNN
+F 3 "~" H 5700 1900 50  0001 C CNN
+	1    5700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 1750 5700 1750
+$Comp
+L Device:R R-ADDER1-11
+U 1 1 5F313C2F
+P 5700 1600
+F 0 "R-ADDER1-11" H 5375 1750 50  0000 L CNN
+F 1 "15K 3W" H 5475 1700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5630 1600 50  0001 C CNN
+F 3 "~" H 5700 1600 50  0001 C CNN
+	1    5700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1450 5700 1350
+Connection ~ 5700 1750
+$Comp
+L NEWValves:EA50 D-ADDER1-3
+U 1 1 5F31B095
+P 4975 1350
+F 0 "D-ADDER1-3" V 4575 1050 50  0000 C CNN
+F 1 "EA50" V 4675 1225 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5575 1150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4975 1350 50  0001 C CNN
+	1    4975 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-10
+U 1 1 5F3241B7
+P 5225 1200
+F 0 "R-ADDER1-10" H 5325 1275 50  0000 L CNN
+F 1 "33K 3W" H 5325 1175 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5155 1200 50  0001 C CNN
+F 3 "~" H 5225 1200 50  0001 C CNN
+	1    5225 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 1050 5225 950 
+Connection ~ 5225 1350
+Wire Wire Line
+	5225 1350 5550 1350
+Wire Wire Line
+	5550 1350 5550 1225
+Wire Wire Line
+	5550 1225 6175 1225
+$Comp
+L Device:R R-ADDER1-12
+U 1 1 5F32A9E7
+P 6175 1375
+F 0 "R-ADDER1-12" H 5950 1700 50  0000 L CNN
+F 1 "15K" H 6050 1625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6105 1375 50  0001 C CNN
+F 3 "~" H 6175 1375 50  0001 C CNN
+	1    6175 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-13
+U 1 1 5F32B284
+P 6175 1675
+F 0 "R-ADDER1-13" H 5800 1675 50  0000 L CNN
+F 1 "56K" H 5950 1575 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6105 1675 50  0001 C CNN
+F 3 "~" H 6175 1675 50  0001 C CNN
+	1    6175 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-14
+U 1 1 5F32BB0A
+P 6325 1525
+F 0 "R-ADDER1-14" V 6100 1550 50  0000 C CNN
+F 1 "470" V 6200 1550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6255 1525 50  0001 C CNN
+F 3 "~" H 6325 1525 50  0001 C CNN
+	1    6325 1525
+	0    1    1    0   
+$EndComp
+Connection ~ 6175 1525
+$Comp
+L NEWValves:CV173 V-ADDER1-3
+U 1 1 5F32C3F4
+P 6775 1475
+F 0 "V-ADDER1-3" H 7175 1825 50  0000 C CNN
+F 1 "CV173" H 7125 1750 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7775 1725 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 6775 1475 50  0001 C CNN
+	1    6775 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6175 1825 6175 1925
+Wire Wire Line
+	7125 1425 7125 1025
+Wire Wire Line
+	7125 1025 6775 1025
+Wire Wire Line
+	6475 1325 6475 1025
+Wire Wire Line
+	6475 1025 6775 1025
+Connection ~ 6775 1025
+Wire Wire Line
+	6475 1625 6475 1800
+$Comp
+L Device:R R-ADDER1-15
+U 1 1 5F33E080
+P 6475 1975
+F 0 "R-ADDER1-15" H 6550 2050 50  0000 L CNN
+F 1 "10K 3W" H 6550 1950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6405 1975 50  0001 C CNN
+F 3 "~" H 6475 1975 50  0001 C CNN
+	1    6475 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 2125 6475 2225
+Connection ~ 6475 1800
+Wire Wire Line
+	6475 1800 6475 1825
+$Comp
+L NEWValves:EA50 D-ADDER1-12
+U 1 1 5F342CAD
+P 7700 1800
+F 0 "D-ADDER1-12" V 7425 1550 50  0000 C CNN
+F 1 "EA50" V 7500 1475 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8300 1600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7700 1800 50  0001 C CNN
+	1    7700 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-23
+U 1 1 5F344AA8
+P 8200 1800
+F 0 "D-ADDER1-23" V 8625 1650 50  0000 C CNN
+F 1 "EA50" V 8525 1650 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8800 1600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8200 1800 50  0001 C CNN
+	1    8200 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-16
+U 1 1 5F34A913
+P 7950 1650
+F 0 "R-ADDER1-16" H 8050 1700 50  0000 L CNN
+F 1 "100K" H 8050 1650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7880 1650 50  0001 C CNN
+F 3 "~" H 7950 1650 50  0001 C CNN
+	1    7950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-22
+U 1 1 5F34D9CD
+P 8850 1800
+F 0 "R-ADDER1-22" H 8950 1875 50  0000 L CNN
+F 1 "470" H 8950 1775 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8780 1800 50  0001 C CNN
+F 3 "~" H 8850 1800 50  0001 C CNN
+	1    8850 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6775 1025 6775 850 
+$Comp
+L Device:C C-ADDER1-2
+U 1 1 5F358118
+P 9650 2200
+F 0 "C-ADDER1-2" H 9725 2075 50  0000 L CNN
+F 1 "0.1" H 9775 2200 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9688 2050 50  0001 C CNN
+F 3 "~" H 9650 2200 50  0001 C CNN
+	1    9650 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9600 1950
+NoConn ~ 9600 1850
+Wire Wire Line
+	9650 2050 9650 1700
+$Comp
+L Device:R R-ADDER1-24
+U 1 1 5F36D661
+P 9650 1550
+F 0 "R-ADDER1-24" H 9700 1550 50  0000 L CNN
+F 1 "15K 3W" H 9750 1450 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9580 1550 50  0001 C CNN
+F 3 "~" H 9650 1550 50  0001 C CNN
+	1    9650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-ADDER1-4
+U 1 1 5F34E0CA
+P 9300 1750
+F 0 "V-ADDER1-4" H 9350 1350 50  0000 C CNN
+F 1 "VR91" H 9350 1250 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 10300 2000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 9300 1750 50  0001 C CNN
+	1    9300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-25
+U 1 1 5F37686B
+P 10150 1650
+F 0 "R-ADDER1-25" H 10250 1700 50  0000 L CNN
+F 1 "15K" H 10200 1650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10080 1650 50  0001 C CNN
+F 3 "~" H 10150 1650 50  0001 C CNN
+	1    10150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-27
+U 1 1 5F37EF6C
+P 10300 1800
+F 0 "R-ADDER1-27" V 10400 1925 50  0000 C CNN
+F 1 "470" V 10450 1875 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10230 1800 50  0001 C CNN
+F 3 "~" H 10300 1800 50  0001 C CNN
+	1    10300 1800
+	0    1    1    0   
+$EndComp
+Connection ~ 10150 1800
+$Comp
+L Device:C C-ADDER1-11
+U 1 1 5F398283
+P 11100 2200
+F 0 "C-ADDER1-11" H 11250 2250 50  0000 L CNN
+F 1 "0.1" H 11250 2200 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11138 2050 50  0001 C CNN
+F 3 "~" H 11100 2200 50  0001 C CNN
+	1    11100 2200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 11050 1950
+NoConn ~ 11050 1850
+Wire Wire Line
+	11100 2050 11100 1700
+Connection ~ 11100 1700
+$Comp
+L Device:R R-ADDER1-29
+U 1 1 5F39829D
+P 11100 1550
+F 0 "R-ADDER1-29" H 11200 1625 50  0000 L CNN
+F 1 "15K 3W" H 11200 1525 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11030 1550 50  0001 C CNN
+F 3 "~" H 11100 1550 50  0001 C CNN
+	1    11100 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-ADDER1-5
+U 1 1 5F3982A7
+P 10750 1750
+F 0 "V-ADDER1-5" H 10800 1350 50  0000 C CNN
+F 1 "VR91" H 10800 1250 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 11750 2000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 10750 1750 50  0001 C CNN
+	1    10750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-30
+U 1 1 5F3A1CBD
+P 11475 1650
+F 0 "R-ADDER1-30" H 11200 1625 50  0000 L CNN
+F 1 "15K" H 11325 1575 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11405 1650 50  0001 C CNN
+F 3 "~" H 11475 1650 50  0001 C CNN
+	1    11475 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-32
+U 1 1 5F3A1CDB
+P 11950 1800
+F 0 "R-ADDER1-32" V 11650 1675 50  0000 C CNN
+F 1 "470" V 11800 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11880 1800 50  0001 C CNN
+F 3 "~" H 11950 1800 50  0001 C CNN
+	1    11950 1800
+	0    1    1    0   
+$EndComp
+NoConn ~ 12700 1950
+NoConn ~ 12700 1850
+$Comp
+L NEWValves:VR91 V-ADDER1-6
+U 1 1 5F3A1D09
+P 12400 1750
+F 0 "V-ADDER1-6" H 12800 2075 50  0000 C CNN
+F 1 "VR91" H 12675 2000 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 13400 2000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 12400 1750 50  0001 C CNN
+	1    12400 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-20
+U 1 1 5F3C9C75
+P 10500 1300
+F 0 "D-ADDER1-20" V 10100 1200 50  0000 C CNN
+F 1 "EA50" V 10200 1200 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 11100 1100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10500 1300 50  0001 C CNN
+	1    10500 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-23
+U 1 1 5F3D36BB
+P 9300 1150
+F 0 "R-ADDER1-23" H 9400 1200 50  0000 L CNN
+F 1 "33K 3W" H 9400 1150 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9230 1150 50  0001 C CNN
+F 3 "~" H 9300 1150 50  0001 C CNN
+	1    9300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1000 9300 900 
+$Comp
+L Device:R R-ADDER1-28
+U 1 1 5F3DD19C
+P 10750 1150
+F 0 "R-ADDER1-28" H 10850 1225 50  0000 L CNN
+F 1 "56K 2W" H 10850 1125 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10680 1150 50  0001 C CNN
+F 3 "~" H 10750 1150 50  0001 C CNN
+	1    10750 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 1000 10750 900 
+Connection ~ 10750 1300
+Wire Wire Line
+	10150 1500 9875 1500
+Wire Wire Line
+	9875 1500 9875 1300
+Wire Wire Line
+	11475 1300 11475 1500
+Wire Wire Line
+	12750 1700 12750 1300
+Wire Wire Line
+	12100 1600 12100 1300
+Wire Wire Line
+	10750 1300 11475 1300
+$Comp
+L NEWValves:EA50 D-ADDER1-24
+U 1 1 5F427A76
+P 11750 2575
+F 0 "D-ADDER1-24" H 11500 2400 50  0000 R CNN
+F 1 "EA50" H 11500 2450 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 12350 2375 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11750 2575 50  0001 C CNN
+	1    11750 2575
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11475 1800 11750 1800
+Wire Wire Line
+	11750 1800 11750 2075
+Connection ~ 11750 1800
+Wire Wire Line
+	11750 1800 11800 1800
+Wire Wire Line
+	12100 1900 12100 2075
+$Comp
+L Device:R R-ADDER1-33
+U 1 1 5F45C241
+P 12425 2300
+F 0 "R-ADDER1-33" H 12500 2350 50  0000 L CNN
+F 1 "15K 3W" H 12500 2300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12355 2300 50  0001 C CNN
+F 3 "~" H 12425 2300 50  0001 C CNN
+	1    12425 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12425 2150 12100 2150
+$Comp
+L NEWValves:EA50 D-ADDER1-27
+U 1 1 5F45D024
+P 11750 4200
+F 0 "D-ADDER1-27" H 12000 4150 50  0000 L CNN
+F 1 "EA50" H 12000 4050 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 12350 4000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11750 4200 50  0001 C CNN
+	1    11750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-15
+U 1 1 5F46163E
+P 10975 4200
+F 0 "D-ADDER1-15" H 11225 4150 50  0000 L CNN
+F 1 "EA50" H 11225 4050 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 11575 4000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10975 4200 50  0001 C CNN
+	1    10975 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-16
+U 1 1 5F46385B
+P 10275 4200
+F 0 "D-ADDER1-16" H 10550 4150 50  0000 L CNN
+F 1 "EA50" H 10550 4050 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 10875 4000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10275 4200 50  0001 C CNN
+	1    10275 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-16A1
+U 1 1 5F463865
+P 9500 4200
+F 0 "D-ADDER1-16A1" H 9250 4150 50  0000 R CNN
+F 1 "EA50" H 9250 4050 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 10100 4000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9500 4200 50  0001 C CNN
+	1    9500 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4700 9875 4700
+Wire Wire Line
+	11750 4700 10975 4700
+Connection ~ 10275 4700
+Connection ~ 10975 4700
+Wire Wire Line
+	10975 4700 10600 4700
+$Comp
+L Device:R R-ADDER1-35
+U 1 1 5F4A9FBA
+P 11900 4700
+F 0 "R-ADDER1-35" V 11650 4700 50  0000 C CNN
+F 1 "470" V 11750 4700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11830 4700 50  0001 C CNN
+F 3 "~" H 11900 4700 50  0001 C CNN
+	1    11900 4700
+	0    1    1    0   
+$EndComp
+Connection ~ 11750 4700
+Wire Wire Line
+	12700 4600 12700 4200
+$Comp
+L Device:R R-ADDER1-36
+U 1 1 5F4CA083
+P 12050 5200
+F 0 "R-ADDER1-36" H 12025 4650 50  0000 L CNN
+F 1 "4.7k" H 12275 4850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11980 5200 50  0001 C CNN
+F 3 "~" H 12050 5200 50  0001 C CNN
+	1    12050 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 4800 12050 5025
+Connection ~ 12050 5025
+Wire Wire Line
+	12050 5025 12050 5050
+$Comp
+L NEWValves:EA50 D-ADDER1-26
+U 1 1 5F4DD093
+P 11750 4950
+F 0 "D-ADDER1-26" H 11500 4900 50  0000 R CNN
+F 1 "EA50" H 11500 4800 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 12350 4750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11750 4950 50  0001 C CNN
+	1    11750 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-34
+U 1 1 5F4E18E9
+P 9875 4850
+F 0 "R-ADDER1-34" H 9300 4925 50  0000 L CNN
+F 1 "180K" H 9450 4850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9805 4850 50  0001 C CNN
+F 3 "~" H 9875 4850 50  0001 C CNN
+	1    9875 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9875 4700
+Wire Wire Line
+	9875 4700 10275 4700
+$Comp
+L Device:R R-ADDER1-34B1
+U 1 1 5F4E73B8
+P 10600 4850
+F 0 "R-ADDER1-34B1" H 10500 4900 50  0000 R CNN
+F 1 "1M" H 10500 4850 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10530 4850 50  0001 C CNN
+F 3 "~" H 10600 4850 50  0001 C CNN
+	1    10600 4850
+	1    0    0    -1  
+$EndComp
+Connection ~ 10600 4700
+Wire Wire Line
+	10600 4700 10275 4700
+$Comp
+L Device:R R-ADDER1-34C1
+U 1 1 5F4EF43B
+P 10975 4850
+F 0 "R-ADDER1-34C1" H 11050 4900 50  0000 L CNN
+F 1 "15K" H 11050 4850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10905 4850 50  0001 C CNN
+F 3 "~" H 10975 4850 50  0001 C CNN
+	1    10975 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-8
+U 1 1 5F252EB3
+P 7375 3825
+F 0 "D-ADDER1-8" V 7800 3675 50  0000 C CNN
+F 1 "EA50" V 7700 3675 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7975 3625 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7375 3825 50  0001 C CNN
+	1    7375 3825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-9
+U 1 1 5F252EBD
+P 8450 3825
+F 0 "D-ADDER1-9" V 8025 3725 50  0000 C CNN
+F 1 "EA50" V 8125 3725 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9050 3625 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8450 3825 50  0001 C CNN
+	1    8450 3825
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-19
+U 1 1 5F252EC7
+P 7925 3975
+F 0 "R-ADDER1-19" H 8025 4050 50  0000 L CNN
+F 1 "68K" H 8025 3950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7855 3975 50  0001 C CNN
+F 3 "~" H 7925 3975 50  0001 C CNN
+	1    7925 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 4125 7925 4225
+Wire Wire Line
+	7950 3825 7925 3825
+Connection ~ 7925 3825
+Wire Wire Line
+	7925 3825 7875 3825
+$Comp
+L NEWValves:EA50 D-ADDER1-10
+U 1 1 5F252ED6
+P 7400 2550
+F 0 "D-ADDER1-10" V 7825 2400 50  0000 C CNN
+F 1 "EA50" V 7725 2400 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8000 2350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7400 2550 50  0001 C CNN
+	1    7400 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-18
+U 1 1 5F252EE0
+P 7925 2700
+F 0 "R-ADDER1-18" H 8000 2750 50  0000 L CNN
+F 1 "68K" H 8000 2700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7855 2700 50  0001 C CNN
+F 3 "~" H 7925 2700 50  0001 C CNN
+	1    7925 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7925 2850 7925 2950
+$Comp
+L NEWValves:EA50 D-ADDER1-21
+U 1 1 5F252EEC
+P 7375 4775
+F 0 "D-ADDER1-21" V 7800 4625 50  0000 C CNN
+F 1 "EA50" V 7700 4625 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7975 4575 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7375 4775 50  0001 C CNN
+	1    7375 4775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-22
+U 1 1 5F252EF6
+P 8450 4775
+F 0 "D-ADDER1-22" V 8025 4675 50  0000 C CNN
+F 1 "EA50" V 8125 4675 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9050 4575 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8450 4775 50  0001 C CNN
+	1    8450 4775
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-20
+U 1 1 5F252F00
+P 7925 4925
+F 0 "R-ADDER1-20" H 8000 5000 50  0000 L CNN
+F 1 "68K" H 8000 4900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7855 4925 50  0001 C CNN
+F 3 "~" H 7925 4925 50  0001 C CNN
+	1    7925 4925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 4800 8025 4900
+Wire Wire Line
+	7950 4775 7925 4775
+Connection ~ 7925 4775
+Wire Wire Line
+	7925 4775 7875 4775
+$Comp
+L NEWValves:EA50 D-ADDER1-11
+U 1 1 5F252F0E
+P 8450 2550
+F 0 "D-ADDER1-11" V 8050 2450 50  0000 C CNN
+F 1 "EA50" V 8150 2450 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9050 2350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8450 2550 50  0001 C CNN
+	1    8450 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 2550 7925 2550
+Connection ~ 8700 1800
+Wire Wire Line
+	8700 4775 8700 3825
+Connection ~ 8700 3825
+Wire Wire Line
+	7900 2550 7925 2550
+Connection ~ 7925 2550
+Wire Wire Line
+	7925 5075 7925 5175
+Wire Wire Line
+	6475 1800 7075 1800
+Wire Wire Line
+	3850 4125 3800 4125
+Connection ~ 3850 4125
+Wire Wire Line
+	3875 4125 3850 4125
+$Comp
+L Device:R R-ADDER1-6
+U 1 1 5F2CAFA1
+P 3850 4275
+F 0 "R-ADDER1-6" H 3925 4150 50  0000 L CNN
+F 1 "47K" H 3950 4025 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3780 4275 50  0001 C CNN
+F 3 "~" H 3850 4275 50  0001 C CNN
+	1    3850 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-17
+U 1 1 5F2CAF97
+P 4375 4125
+F 0 "D-ADDER1-17" V 4000 4000 50  0000 C CNN
+F 1 "EA50" V 4100 3975 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4975 3925 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4375 4125 50  0001 C CNN
+	1    4375 4125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 2150 3850 2250
+Wire Wire Line
+	3850 3175 3800 3175
+Connection ~ 3850 3175
+Wire Wire Line
+	3875 3175 3850 3175
+Wire Wire Line
+	3850 3475 3850 3575
+$Comp
+L Device:R R-ADDER1-5
+U 1 1 5F25DDAD
+P 3850 3325
+F 0 "R-ADDER1-5" H 3950 3400 50  0000 L CNN
+F 1 "47K" H 3950 3300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3780 3325 50  0001 C CNN
+F 3 "~" H 3850 3325 50  0001 C CNN
+	1    3850 3325
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-5
+U 1 1 5F25C45E
+P 4375 3175
+F 0 "D-ADDER1-5" V 3950 3050 50  0000 C CNN
+F 1 "EA50" V 4050 3050 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4975 2975 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4375 3175 50  0001 C CNN
+	1    4375 3175
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-4
+U 1 1 5F256711
+P 3300 3175
+F 0 "D-ADDER1-4" V 3725 3025 50  0000 C CNN
+F 1 "EA50" V 3625 3025 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3900 2975 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3300 3175 50  0001 C CNN
+	1    3300 3175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2825 2550 2825 2150
+Wire Wire Line
+	2825 2150 2475 2150
+Wire Wire Line
+	2175 2150 2475 2150
+Connection ~ 2475 2150
+Wire Wire Line
+	2175 2450 2175 2150
+$Comp
+L NEWValves:VR91 V-ADDER1-1
+U 1 1 5F24A18C
+P 2475 2600
+F 0 "V-ADDER1-1" H 2525 2200 50  0000 C CNN
+F 1 "VR91" H 2525 2100 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3475 2850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2475 2600 50  0001 C CNN
+	1    2475 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 2750 2175 3175
+Wire Wire Line
+	3050 3175 3025 3175
+Connection ~ 2175 3175
+Wire Wire Line
+	2175 3475 2175 3575
+Wire Wire Line
+	2475 2150 2475 2050
+$Comp
+L NEWValves:EA50 D-ADDER1-1
+U 1 1 5F23F385
+P 1625 2225
+F 0 "D-ADDER1-1" V 1200 2100 50  0000 C CNN
+F 1 "EA50" V 1300 2100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2225 2025 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1625 2225 50  0001 C CNN
+	1    1625 2225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-1
+U 1 1 5F242D30
+P 1875 2075
+F 0 "R-ADDER1-1" H 1975 2150 50  0000 L CNN
+F 1 "82K" H 1975 2050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1805 2075 50  0001 C CNN
+F 3 "~" H 1875 2075 50  0001 C CNN
+	1    1875 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-2
+U 1 1 5F243C36
+P 1625 2650
+F 0 "D-ADDER1-2" V 1925 2600 50  0000 C CNN
+F 1 "EA50" V 2025 2600 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2225 2450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1625 2650 50  0001 C CNN
+	1    1625 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1875 2650 1875 2225
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-2
+U 1 1 5F246530
+P 925 2225
+F 0 "J-ADDER1-2" H 1000 2150 50  0000 L CNN
+F 1 "OTG.Sig" H 1000 2250 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 925 2225 50  0001 C CNN
+F 3 "~" H 925 2225 50  0001 C CNN
+	1    925  2225
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-3
+U 1 1 5F24793E
+P 925 2650
+F 0 "J-ADDER1-3" H 1000 2550 50  0000 L CNN
+F 1 "PLUS1OR2" H 1000 2650 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 925 2650 50  0001 C CNN
+F 3 "~" H 925 2650 50  0001 C CNN
+	1    925  2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-ADDER1-2
+U 1 1 5F249955
+P 2025 2650
+F 0 "R-ADDER1-2" V 1775 2675 50  0000 C CNN
+F 1 "470" V 1875 2675 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1955 2650 50  0001 C CNN
+F 3 "~" H 2025 2650 50  0001 C CNN
+	1    2025 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-3
+U 1 1 5F2511A1
+P 2175 3325
+F 0 "R-ADDER1-3" H 2275 3400 50  0000 L CNN
+F 1 "15K 3W" H 2275 3300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2105 3325 50  0001 C CNN
+F 3 "~" H 2175 3325 50  0001 C CNN
+	1    2175 3325
+	1    0    0    -1  
+$EndComp
+Connection ~ 1875 2650
+Text Notes 650  4675 0    50   ~ 0
+(For diagnostic)\n(use only.)
+Wire Wire Line
+	1125 4125 1475 4125
+Wire Wire Line
+	1875 1925 1875 1825
+Wire Wire Line
+	3025 1850 3050 1850
+Wire Wire Line
+	3025 2550 7150 2550
+Wire Wire Line
+	3850 4425 3850 4525
+Wire Wire Line
+	3025 3825 7125 3825
+Wire Wire Line
+	3025 4125 3025 4775
+Wire Wire Line
+	3025 4775 7125 4775
+Connection ~ 3025 4125
+Wire Wire Line
+	3025 4125 3050 4125
+Wire Wire Line
+	1525 5500 1525 5100
+Wire Wire Line
+	1525 5100 1875 5100
+Wire Wire Line
+	2175 5100 1875 5100
+Connection ~ 1875 5100
+Wire Wire Line
+	2175 5400 2175 5100
+$Comp
+L NEWValves:VR91 V-ADDER1-7
+U 1 1 5F4D1533
+P 1875 5550
+F 0 "V-ADDER1-7" H 1900 5150 50  0000 C CNN
+F 1 "VR91" H 1900 5050 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2875 5800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1875 5550 50  0001 C CNN
+	1    1875 5550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 6425 2175 6525
+Wire Wire Line
+	1875 5100 1875 5000
+$Comp
+L Device:R R-ADDER1-45
+U 1 1 5F4D1542
+P 2325 5600
+F 0 "R-ADDER1-45" V 2100 5400 50  0000 C CNN
+F 1 "470" V 2175 5575 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2255 5600 50  0001 C CNN
+F 3 "~" H 2325 5600 50  0001 C CNN
+	1    2325 5600
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-ADDER1-46
+U 1 1 5F4D154C
+P 2175 6275
+F 0 "R-ADDER1-46" H 2275 6350 50  0000 L CNN
+F 1 "15K 3W" H 2275 6250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2105 6275 50  0001 C CNN
+F 3 "~" H 2175 6275 50  0001 C CNN
+	1    2175 6275
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1475 4125 1450 5975
+Connection ~ 1475 4125
+Wire Wire Line
+	1475 4125 3025 4125
+NoConn ~ 1575 5750
+NoConn ~ 1575 5650
+$Comp
+L Device:C C-ADDER1-7
+U 1 1 5F519C12
+P 2475 5750
+F 0 "C-ADDER1-7" H 2600 5800 50  0000 L CNN
+F 1 "47pf" H 2600 5750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2513 5600 50  0001 C CNN
+F 3 "~" H 2475 5750 50  0001 C CNN
+	1    2475 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-25
+U 1 1 5F533053
+P 3000 6100
+F 0 "D-ADDER1-25" H 3500 6075 50  0000 R CNN
+F 1 "EA50" H 3350 6150 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 3600 5900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3000 6100 50  0001 C CNN
+	1    3000 6100
+	-1   0    0    1   
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-14
+U 1 1 5F53502D
+P 3450 5600
+F 0 "D-ADDER1-14" V 3875 5450 50  0000 C CNN
+F 1 "EA50" V 3775 5450 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4050 5400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3450 5600 50  0001 C CNN
+	1    3450 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 5600 3000 5600
+Connection ~ 2475 5600
+Connection ~ 3000 5600
+Wire Wire Line
+	3000 5600 2475 5600
+Wire Wire Line
+	3950 6200 3950 6300
+$Comp
+L Device:R R-ADDER1-44
+U 1 1 5F547942
+P 3950 6050
+F 0 "R-ADDER1-44" H 4050 6125 50  0000 L CNN
+F 1 "4.7K" H 4050 6025 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3880 6050 50  0001 C CNN
+F 3 "~" H 3950 6050 50  0001 C CNN
+	1    3950 6050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5900 3950 5600
+$Comp
+L Device:C C-ADDER1-6
+U 1 1 5F569652
+P 4100 5600
+F 0 "C-ADDER1-6" V 3800 5600 50  0000 C CNN
+F 1 "270pf" V 3900 5600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4138 5450 50  0001 C CNN
+F 3 "~" H 4100 5600 50  0001 C CNN
+	1    4100 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:CV173 V-ADDER1-8
+U 1 1 5F580320
+P 4625 6050
+F 0 "V-ADDER1-8" H 4675 5650 50  0000 C CNN
+F 1 "CV173" H 4675 5550 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5625 6300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4625 6050 50  0001 C CNN
+	1    4625 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-43
+U 1 1 6115CE07
+P 4625 5450
+F 0 "R-ADDER1-43" H 4725 5525 50  0000 L CNN
+F 1 "10K" H 4725 5425 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4555 5450 50  0001 C CNN
+F 3 "~" H 4625 5450 50  0001 C CNN
+	1    4625 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 5300 4625 5200
+$Comp
+L NEWValves:EA50 D-ADDER1-19
+U 1 1 5F5C1DCA
+P 9050 1300
+F 0 "D-ADDER1-19" V 8650 1200 50  0000 C CNN
+F 1 "EA50" V 8750 1200 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9650 1100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9050 1300 50  0001 C CNN
+	1    9050 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 1300 9875 1300
+$Comp
+L Device:C C-ADDER1-3
+U 1 1 5F5E9CF8
+P 5025 6150
+F 0 "C-ADDER1-3" H 5050 6000 50  0000 L CNN
+F 1 "0.1" H 5150 6150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5063 6000 50  0001 C CNN
+F 3 "~" H 5025 6150 50  0001 C CNN
+	1    5025 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-42
+U 1 1 5F5E9D0D
+P 5025 5850
+F 0 "R-ADDER1-42" H 5125 5925 50  0000 L CNN
+F 1 "15K 3W" H 5125 5825 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4955 5850 50  0001 C CNN
+F 3 "~" H 5025 5850 50  0001 C CNN
+	1    5025 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 6000 5025 6000
+Connection ~ 5025 6000
+Wire Wire Line
+	4325 6100 4125 6100
+Wire Wire Line
+	4125 6100 4125 6475
+Wire Wire Line
+	4125 6475 5350 6475
+Wire Wire Line
+	5350 6475 5350 6100
+$Comp
+L Device:R R-ADDER1-41
+U 1 1 5F629EAC
+P 5500 6100
+F 0 "R-ADDER1-41" V 5425 6250 50  0000 C CNN
+F 1 "470" V 5350 6100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5430 6100 50  0001 C CNN
+F 3 "~" H 5500 6100 50  0001 C CNN
+	1    5500 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-ADDER1-5
+U 1 1 5F62B121
+P 5650 6250
+F 0 "C-ADDER1-5" H 5775 6300 50  0000 L CNN
+F 1 "47pf" H 5775 6250 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5688 6100 50  0001 C CNN
+F 3 "~" H 5650 6250 50  0001 C CNN
+	1    5650 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-28
+U 1 1 5F62D68B
+P 6000 6600
+F 0 "D-ADDER1-28" H 5750 6425 50  0000 R CNN
+F 1 "EA50" H 5750 6475 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 6600 6400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6000 6600 50  0001 C CNN
+	1    6000 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-13
+U 1 1 5F62D695
+P 6475 6100
+F 0 "D-ADDER1-13" V 6900 5950 50  0000 C CNN
+F 1 "EA50" V 6800 5950 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7075 5900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6475 6100 50  0001 C CNN
+	1    6475 6100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5650 6100
+Wire Wire Line
+	4625 5600 4250 5600
+Wire Wire Line
+	7075 1800 7075 5350
+Connection ~ 7075 1800
+Wire Wire Line
+	7075 1800 7200 1800
+Wire Wire Line
+	2175 5700 2175 5975
+Wire Wire Line
+	1450 5975 2175 5975
+Connection ~ 2175 5975
+Wire Wire Line
+	2175 5975 2175 6125
+$Comp
+L Device:C C-ADDER1-4
+U 1 1 5F727BDC
+P 7075 5500
+F 0 "C-ADDER1-4" H 7200 5550 50  0000 L CNN
+F 1 "270pf" H 7200 5500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7113 5350 50  0001 C CNN
+F 3 "~" H 7075 5500 50  0001 C CNN
+	1    7075 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-37
+U 1 1 5F749618
+P 7225 6100
+F 0 "R-ADDER1-37" V 6975 6125 50  0000 C CNN
+F 1 "470k" V 7075 6125 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7155 6100 50  0001 C CNN
+F 3 "~" H 7225 6100 50  0001 C CNN
+	1    7225 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6975 6100 7075 6100
+Wire Wire Line
+	7075 6100 7075 5650
+Connection ~ 7075 6100
+$Comp
+L Device:R R-ADDER1-38
+U 1 1 5F77101F
+P 7075 6250
+F 0 "R-ADDER1-38" H 7000 6200 50  0000 R CNN
+F 1 "4.7K" H 7000 6250 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7005 6250 50  0001 C CNN
+F 3 "~" H 7075 6250 50  0001 C CNN
+	1    7075 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-ADDER1-40
+U 1 1 5F7723FD
+P 6000 7000
+F 0 "R-ADDER1-40" H 5925 6950 50  0000 R CNN
+F 1 "4.7K" H 5925 7000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5930 7000 50  0001 C CNN
+F 3 "~" H 6000 7000 50  0001 C CNN
+	1    6000 7000
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4925 6250
+NoConn ~ 4925 6150
+$Comp
+L NEWValves:CV173 V-ADDER1-9
+U 1 1 5F79B0DB
+P 12350 4650
+F 0 "V-ADDER1-9" H 12400 4250 50  0000 C CNN
+F 1 "CV173" H 12400 4150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 13350 4900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 12350 4650 50  0001 C CNN
+	1    12350 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 12650 4850
+NoConn ~ 12650 4750
+Wire Wire Line
+	12050 4200 12050 4500
+$Comp
+L NEWValves:EA50 D-ADDER1-18
+U 1 1 5F2CAF8C
+P 3300 4125
+F 0 "D-ADDER1-18" V 3675 3975 50  0000 C CNN
+F 1 "EA50" V 3575 3975 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3900 3925 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3300 4125 50  0001 C CNN
+	1    3300 4125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-ADDER1-1
+U 2 1 5F28E52F
+P 10725 8825
+F 0 "V-ADDER1-1" H 10725 9400 50  0000 C CNN
+F 1 "VR91" H 10725 9300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 11725 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 10725 8825 50  0001 C CNN
+	2    10725 8825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10625 9175 10625 9275
+Wire Wire Line
+	10825 9175 10825 9500
+$Comp
+L NEWValves:VR91 V-ADDER1-2
+U 2 1 5F29AB63
+P 11300 8825
+F 0 "V-ADDER1-2" H 11325 9400 50  0000 C CNN
+F 1 "VR91" H 11325 9300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 12300 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 11300 8825 50  0001 C CNN
+	2    11300 8825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 9175 11200 9275
+Wire Wire Line
+	11400 9175 11400 9500
+$Comp
+L NEWValves:EA50 D-ADDER1-9
+U 2 1 5F39BBFD
+P 6125 8650
+F 0 "D-ADDER1-9" H 6125 8950 50  0000 C CNN
+F 1 "EA50" H 6125 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6725 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6125 8650 50  0001 C CNN
+	2    6125 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-10
+U 2 1 5F39BC07
+P 6750 8650
+F 0 "D-ADDER1-10" H 6750 8950 50  0000 C CNN
+F 1 "EA50" H 6750 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7350 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6750 8650 50  0001 C CNN
+	2    6750 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-11
+U 2 1 5F39BC11
+P 7375 8650
+F 0 "D-ADDER1-11" H 7375 8950 50  0000 C CNN
+F 1 "EA50" H 7375 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7975 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7375 8650 50  0001 C CNN
+	2    7375 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5375 9100 5375 9200
+Wire Wire Line
+	6025 9100 6025 9200
+Wire Wire Line
+	6650 9100 6650 9200
+Wire Wire Line
+	7275 9100 7275 9200
+Wire Wire Line
+	5575 9100 5575 9425
+Wire Wire Line
+	6225 9100 6225 9425
+Wire Wire Line
+	6850 9100 6850 9425
+Wire Wire Line
+	7475 9100 7475 9425
+Wire Wire Line
+	7900 9100 7900 9200
+Wire Wire Line
+	8100 9100 8100 9425
+Wire Wire Line
+	8550 9100 8550 9200
+Wire Wire Line
+	8750 9100 8750 9425
+$Comp
+L NEWValves:EA50 D-ADDER1-14
+U 2 1 5F39BC49
+P 9250 8650
+F 0 "D-ADDER1-14" H 9275 8950 50  0000 C CNN
+F 1 "EA50" H 9275 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9850 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9250 8650 50  0001 C CNN
+	2    9250 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 9100 9150 9200
+Wire Wire Line
+	9350 9100 9350 9425
+Wire Wire Line
+	1150 9200 1775 9200
+Wire Wire Line
+	1350 9425 1975 9425
+Connection ~ 1775 9200
+Connection ~ 1975 9425
+Wire Wire Line
+	1775 9200 2400 9200
+Wire Wire Line
+	1975 9425 2600 9425
+Connection ~ 2400 9200
+Connection ~ 2600 9425
+Wire Wire Line
+	2400 9200 2900 9200
+Wire Wire Line
+	2600 9425 3200 9425
+Connection ~ 2900 9200
+Connection ~ 3200 9425
+Wire Wire Line
+	2900 9200 3600 9200
+Wire Wire Line
+	3200 9425 3800 9425
+Connection ~ 3600 9200
+Connection ~ 3800 9425
+Wire Wire Line
+	3600 9200 4175 9200
+Wire Wire Line
+	3800 9425 4375 9425
+Connection ~ 4175 9200
+Connection ~ 4375 9425
+Wire Wire Line
+	4175 9200 4800 9200
+Wire Wire Line
+	4375 9425 5000 9425
+Connection ~ 4800 9200
+Connection ~ 5000 9425
+Wire Wire Line
+	4800 9200 5375 9200
+Wire Wire Line
+	5000 9425 5575 9425
+Connection ~ 5375 9200
+Connection ~ 5575 9425
+Wire Wire Line
+	5575 9425 6225 9425
+Wire Wire Line
+	5375 9200 6025 9200
+Connection ~ 6025 9200
+Connection ~ 6225 9425
+Wire Wire Line
+	6025 9200 6650 9200
+Wire Wire Line
+	6225 9425 6850 9425
+Connection ~ 6650 9200
+Connection ~ 6850 9425
+Wire Wire Line
+	6650 9200 7275 9200
+Wire Wire Line
+	6850 9425 7475 9425
+Connection ~ 7275 9200
+Connection ~ 7475 9425
+Wire Wire Line
+	7275 9200 7900 9200
+Wire Wire Line
+	7475 9425 8100 9425
+Connection ~ 7900 9200
+Connection ~ 8100 9425
+Wire Wire Line
+	7900 9200 8550 9200
+Wire Wire Line
+	8100 9425 8750 9425
+Connection ~ 8550 9200
+Connection ~ 8750 9425
+Wire Wire Line
+	8550 9200 9150 9200
+Wire Wire Line
+	8750 9425 9350 9425
+Connection ~ 11200 9275
+Connection ~ 11400 9500
+NoConn ~ 7075 1675
+NoConn ~ 7075 1575
+$Comp
+L Device:R R-ADDER1-17
+U 1 1 5FB6BE5C
+P 7950 1350
+F 0 "R-ADDER1-17" H 7425 1425 50  0000 L CNN
+F 1 "82K" H 7650 1350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7880 1350 50  0001 C CNN
+F 3 "~" H 7950 1350 50  0001 C CNN
+	1    7950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-26
+U 1 1 5FBFEFC4
+P 10150 1950
+F 0 "R-ADDER1-26" H 9700 2000 50  0000 L CNN
+F 1 "56K" H 9875 1925 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10080 1950 50  0001 C CNN
+F 3 "~" H 10150 1950 50  0001 C CNN
+	1    10150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-ADDER1-31
+U 1 1 5FC2605D
+P 11475 1950
+F 0 "R-ADDER1-31" H 11575 2025 50  0000 L CNN
+F 1 "56K" H 11575 1925 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11405 1950 50  0001 C CNN
+F 3 "~" H 11475 1950 50  0001 C CNN
+	1    11475 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 11475 1800
+$Comp
+L Device:R R-ADDER1-8
+U 1 1 5FCF0796
+P 4625 1700
+F 0 "R-ADDER1-8" H 4200 1825 50  0000 L CNN
+F 1 "82k" H 4275 1775 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4555 1700 50  0001 C CNN
+F 3 "~" H 4625 1700 50  0001 C CNN
+	1    4625 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 1550 3975 1550
+Wire Wire Line
+	3975 1550 3975 1500
+Wire Wire Line
+	10825 9500 11400 9500
+Wire Wire Line
+	10625 9275 11200 9275
+NoConn ~ 2775 2700
+NoConn ~ 2775 2800
+Wire Wire Line
+	3025 3175 3025 3825
+Connection ~ 3025 3175
+Wire Wire Line
+	3025 3175 2175 3175
+Wire Wire Line
+	11750 3950 12100 3950
+Wire Wire Line
+	12100 3950 12100 2150
+Connection ~ 12100 2150
+$Comp
+L Device:C C-ADDER1-12
+U 1 1 5F262B1F
+P 10525 5950
+F 0 "C-ADDER1-12" H 10675 6025 50  0000 L CNN
+F 1 "0.5" H 10675 5925 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10563 5800 50  0001 C CNN
+F 3 "~" H 10525 5950 50  0001 C CNN
+	1    10525 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-ADDER1-10
+U 1 1 5F268E45
+P 10075 6675
+F 0 "C-ADDER1-10" H 10200 6750 50  0000 L CNN
+F 1 "0.5" H 10200 6650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10113 6525 50  0001 C CNN
+F 3 "~" H 10075 6675 50  0001 C CNN
+	1    10075 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-ADDER1-8
+U 1 1 5F290644
+P 9550 5950
+F 0 "C-ADDER1-8" H 9425 6025 50  0000 R CNN
+F 1 "0.5" H 9425 5925 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9588 5800 50  0001 C CNN
+F 3 "~" H 9550 5950 50  0001 C CNN
+	1    9550 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-ADDER1-9
+U 1 1 5F29064E
+P 9800 5950
+F 0 "C-ADDER1-9" H 9925 6025 50  0000 L CNN
+F 1 "0.5" H 9925 5925 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9838 5800 50  0001 C CNN
+F 3 "~" H 9800 5950 50  0001 C CNN
+	1    9800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-4
+U 1 1 5F404268
+P 925 4125
+F 0 "J-ADDER1-4" H 800 3850 50  0000 C CNN
+F 1 "C.CARRY" H 800 3950 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 975 4085 50  0001 C CNN
+F 3 "~" H 975 4085 50  0001 C CNN
+	1    925  4125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 6700 3000 6350
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-5
+U 1 1 5F76F91E
+P 3000 6900
+F 0 "J-ADDER1-5" V 3150 6700 50  0000 R CNN
+F 1 "VAR.DASH.CF" V 3050 6700 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 3050 6860 50  0001 C CNN
+F 3 "~" H 3050 6860 50  0001 C CNN
+	1    3000 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5675 7150 6000 7150
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-7
+U 1 1 5F8184B9
+P 5475 7150
+F 0 "J-ADDER1-7" H 5550 7500 50  0000 C CNN
+F 1 "CARRY.INH" H 5550 7400 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 5525 7110 50  0001 C CNN
+F 3 "~" H 5525 7110 50  0001 C CNN
+	1    5475 7150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-13
+U 1 1 5F89C8EF
+P 13000 5025
+F 0 "J-ADDER1-13" H 13050 4950 50  0000 L CNN
+F 1 "CI&CR" H 13050 5050 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 13050 4985 50  0001 C CNN
+F 3 "~" H 13050 4985 50  0001 C CNN
+	1    13000 5025
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	12050 5025 12800 5025
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-12
+U 1 1 5F934975
+P 11750 3175
+F 0 "J-ADDER1-12" V 11575 3225 50  0000 L CNN
+F 1 "VAR.DASH.CF" V 11675 3225 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 11800 3135 50  0001 C CNN
+F 3 "~" H 11800 3135 50  0001 C CNN
+	1    11750 3175
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	11750 2975 11750 2825
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-11
+U 1 1 5FA70F9A
+P 10975 3600
+F 0 "J-ADDER1-11" V 11175 3625 50  0000 C CNN
+F 1 "INST.GATE" V 11075 3625 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 11025 3560 50  0001 C CNN
+F 3 "~" H 11025 3560 50  0001 C CNN
+	1    10975 3600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10975 3800 10975 3950
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-10
+U 1 1 5FAAB9FF
+P 10275 3600
+F 0 "J-ADDER1-10" V 10225 3675 50  0000 L CNN
+F 1 "STROBE.CF" V 10125 3675 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 10325 3560 50  0001 C CNN
+F 3 "~" H 10325 3560 50  0001 C CNN
+	1    10275 3600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10275 3800 10275 3950
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-8
+U 1 1 5FB17EE2
+P 9500 3600
+F 0 "J-ADDER1-8" V 9450 3650 50  0000 L CNN
+F 1 "Ha" V 9350 3650 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 9550 3560 50  0001 C CNN
+F 3 "~" H 9550 3560 50  0001 C CNN
+	1    9500 3600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9500 3800 9500 3950
+Connection ~ 12100 2075
+Wire Wire Line
+	12100 2075 12100 2150
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-14
+U 1 1 5FBE1F51
+P 13375 2075
+F 0 "J-ADDER1-14" H 13450 2150 50  0000 L CNN
+F 1 "C.WRITE" H 13450 2050 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 13425 2035 50  0001 C CNN
+F 3 "~" H 13425 2035 50  0001 C CNN
+	1    13375 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 2075 13175 2075
+$Comp
+L Connector:Conn_01x01_Female J-ADDER1-6
+U 1 1 5FC2F3C2
+P 3025 1450
+F 0 "J-ADDER1-6" V 2975 1525 50  0000 L CNN
+F 1 "C.READ" V 2875 1525 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 3025 1450 50  0001 C CNN
+F 3 "~" H 3025 1450 50  0001 C CNN
+	1    3025 1450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3025 1650 3025 1850
+Connection ~ 3025 1850
+Wire Wire Line
+	3025 1850 3025 2550
+Wire Wire Line
+	13250 7200 13050 7200
+Wire Wire Line
+	13250 7100 13050 7100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FCFC4EF
+P 13050 7200
+F 0 "#FLG0101" H 13050 7275 50  0001 C CNN
+F 1 "PWR_FLAG" H 13075 7400 50  0000 C CNN
+F 2 "" H 13050 7200 50  0001 C CNN
+F 3 "~" H 13050 7200 50  0001 C CNN
+	1    13050 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FCFC4F7
+P 13050 7100
+F 0 "#FLG0102" H 13050 7175 50  0001 C CNN
+F 1 "PWR_FLAG" H 13075 7300 50  0000 C CNN
+F 2 "" H 13050 7100 50  0001 C CNN
+F 3 "~" H 13050 7100 50  0001 C CNN
+	1    13050 7100
+	-1   0    0    1   
+$EndComp
+Connection ~ 13050 7100
+Wire Wire Line
+	13050 7100 12750 7100
+Wire Wire Line
+	13250 7500 13050 7500
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FCFC504
+P 13050 7500
+F 0 "#FLG0103" H 13050 7575 50  0001 C CNN
+F 1 "PWR_FLAG" H 13075 7700 50  0000 C CNN
+F 2 "" H 13050 7500 50  0001 C CNN
+F 3 "~" H 13050 7500 50  0001 C CNN
+	1    13050 7500
+	-1   0    0    1   
+$EndComp
+Connection ~ 13050 7500
+Wire Wire Line
+	13050 7500 12750 7500
+Wire Wire Line
+	13250 7300 12750 7300
+Wire Wire Line
+	13250 7400 12750 7400
+Wire Wire Line
+	13250 7600 12750 7600
+$Comp
+L Connector_Generic:Conn_01x08 J-ADDER1-9
+U 1 1 6115CE0D
+P 13450 7400
+F 0 "J-ADDER1-9" H 13550 7400 50  0000 L CNN
+F 1 "HIGH Voltage." H 13550 7300 50  0000 L CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770970-x_2x04_P4.14mm_Horizontal" H 13450 7400 50  0001 C CNN
+F 3 "~" H 13450 7400 50  0001 C CNN
+	1    13450 7400
+	1    0    0    -1  
+$EndComp
+Connection ~ 13050 7200
+Wire Wire Line
+	13050 7200 12750 7200
+NoConn ~ 13250 7700
+Text Label 12750 7800 2    50   ~ 0
+GND
+Text Label 12750 7100 2    50   ~ 0
+Heater-GND
+Text Label 12750 7200 2    50   ~ 0
+Heater-6.3V
+Text Label 12750 7300 2    50   ~ 0
++200V
+Text Label 12750 7400 2    50   ~ 0
++300V
+Text Label 12750 7500 2    50   ~ 0
+-150V
+Text Label 12750 7600 2    50   ~ 0
++50V
+Text Label 3950 6300 3    50   ~ 0
+GND
+Wire Wire Line
+	5650 6400 5650 6500
+Text Label 5650 6500 3    50   ~ 0
+GND
+Wire Wire Line
+	7075 6400 7075 6500
+Text Label 7075 6500 3    50   ~ 0
+GND
+Wire Wire Line
+	10525 6100 10525 6200
+Text Label 10525 6200 3    50   ~ 0
+GND
+Wire Wire Line
+	9550 6100 9550 6200
+Text Label 9550 6200 3    50   ~ 0
+GND
+Wire Wire Line
+	9800 6100 9800 6200
+Text Label 9800 6200 3    50   ~ 0
+GND
+Wire Wire Line
+	10075 6525 10075 6425
+Text Label 10075 6425 1    50   ~ 0
+GND
+Wire Wire Line
+	11750 5450 11750 5550
+Text Label 11750 5550 3    50   ~ 0
+GND
+Wire Wire Line
+	9650 2350 9650 2450
+Text Label 9650 2450 3    50   ~ 0
+GND
+Wire Wire Line
+	11100 2350 11100 2450
+Text Label 11100 2450 3    50   ~ 0
+GND
+Text Label 5700 2325 3    50   ~ 0
+GND
+Wire Wire Line
+	5700 2050 5700 2325
+Text Label 4925 2225 3    50   ~ 0
+GND
+Wire Wire Line
+	4925 1950 4925 2225
+Wire Wire Line
+	4925 1650 4825 1650
+Text Label 4825 1650 2    50   ~ 0
+GND
+Wire Wire Line
+	10450 1600 10350 1600
+Text Label 10350 1600 2    50   ~ 0
+GND
+Wire Wire Line
+	9000 1900 8900 1900
+Text Label 8900 1900 2    50   ~ 0
+GND
+Wire Wire Line
+	9000 1600 8900 1600
+Text Label 8900 1600 2    50   ~ 0
+GND
+Wire Wire Line
+	2475 5900 2475 6000
+Text Label 2475 6000 3    50   ~ 0
+GND
+Wire Wire Line
+	12750 7800 13250 7800
+Wire Wire Line
+	4325 5900 4225 5900
+Text Label 4225 5900 2    50   ~ 0
+GND
+Wire Wire Line
+	4325 6200 4325 6300
+Text Label 4325 6300 3    50   ~ 0
+GND
+Wire Wire Line
+	5025 6300 5025 6400
+Text Label 5025 6400 3    50   ~ 0
+GND
+Wire Wire Line
+	10450 1900 10450 2000
+Text Label 10450 2000 3    50   ~ 0
+GND
+Text Label 9550 5800 1    50   ~ 0
++300V
+Text Label 9800 5800 1    50   ~ 0
++200V
+Text Label 10525 5800 1    50   ~ 0
++50V
+Text Label 10075 6825 3    50   ~ 0
+-150V
+Text Label 7375 6100 0    50   ~ 0
++200V
+Text Label 12050 5350 3    50   ~ 0
+-150V
+Text Label 10975 5000 3    50   ~ 0
+-150V
+Text Label 10600 5000 3    50   ~ 0
+-150V
+Text Label 9875 5000 3    50   ~ 0
+-150V
+Text Label 7925 5175 2    50   ~ 0
+-150V
+Text Label 5025 5700 1    50   ~ 0
++300V
+Text Label 4625 5200 2    50   ~ 0
++300V
+Text Label 2175 6525 2    50   ~ 0
+-150V
+Text Label 1875 5000 0    50   ~ 0
++200V
+Text Label 2175 3575 2    50   ~ 0
+-150V
+Text Label 3850 4525 2    50   ~ 0
+-150V
+Text Label 3850 3575 2    50   ~ 0
+-150V
+Text Label 2475 2050 2    50   ~ 0
++200V
+Text Label 1875 1825 1    50   ~ 0
++300V
+Text Label 3850 2250 2    50   ~ 0
+-150V
+Text Label 3975 1200 1    50   ~ 0
++200V
+Text Label 5225 950  2    50   ~ 0
++300V
+Text Label 4475 1350 2    50   ~ 0
++50V
+Text Label 5700 1350 0    50   ~ 0
++300V
+Text Label 6175 1925 2    50   ~ 0
+-150V
+Text Label 6475 2225 2    50   ~ 0
+-150V
+Text Label 6775 850  2    50   ~ 0
++200V
+Text Label 8700 775  1    50   ~ 0
++200V
+Text Label 8550 1300 2    50   ~ 0
++50V
+Text Label 9300 900  1    50   ~ 0
++300V
+Text Label 9650 1400 1    50   ~ 0
++300V
+Text Label 10000 1300 1    50   ~ 0
++50V
+Text Label 10150 2100 3    50   ~ 0
+-150V
+Text Label 10750 900  0    50   ~ 0
++300V
+Text Label 11100 1400 0    50   ~ 0
++300V
+Text Label 7925 2950 2    50   ~ 0
+-150V
+Text Label 7925 4225 2    50   ~ 0
+-150V
+Text Label 11475 2100 3    50   ~ 0
+-150V
+Text Label 12425 2450 3    50   ~ 0
+-150V
+Text Label 12400 1300 1    50   ~ 0
++200V
+Text Label 12350 4200 1    50   ~ 0
++200V
+Wire Wire Line
+	12100 1300 12400 1300
+Wire Wire Line
+	8700 1800 8700 2550
+Wire Wire Line
+	4625 1850 4625 3175
+Wire Wire Line
+	12050 4200 12700 4200
+Wire Wire Line
+	5650 6100 6000 6100
+$Comp
+L NEWValves:EA50 D-ADDER1-12
+U 2 1 5F39BC30
+P 8000 8650
+F 0 "D-ADDER1-12" H 8025 8950 50  0000 C CNN
+F 1 "EA50" H 8025 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8600 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8000 8650 50  0001 C CNN
+	2    8000 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-13
+U 2 1 5F39BC3D
+P 8650 8650
+F 0 "D-ADDER1-13" H 8650 8950 50  0000 C CNN
+F 1 "EA50" H 8650 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9250 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8650 8650 50  0001 C CNN
+	2    8650 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-8
+U 2 1 5F39BBF3
+P 5475 8650
+F 0 "D-ADDER1-8" H 5500 8950 50  0000 C CNN
+F 1 "EA50" H 5500 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6075 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5475 8650 50  0001 C CNN
+	2    5475 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-7
+U 2 1 5F2BA2EF
+P 4900 8650
+F 0 "D-ADDER1-7" H 4900 8950 50  0000 C CNN
+F 1 "EA50" H 4900 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5500 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4900 8650 50  0001 C CNN
+	2    4900 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-6
+U 2 1 5F2BA2E3
+P 4275 8650
+F 0 "D-ADDER1-6" H 4300 8950 50  0000 C CNN
+F 1 "EA50" H 4300 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4875 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4275 8650 50  0001 C CNN
+	2    4275 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-5
+U 2 1 5F2B7062
+P 3700 8650
+F 0 "D-ADDER1-5" H 3700 8950 50  0000 C CNN
+F 1 "EA50" H 3700 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4300 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3700 8650 50  0001 C CNN
+	2    3700 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-4
+U 2 1 5F26D2B5
+P 3100 8650
+F 0 "D-ADDER1-4" H 3100 8950 50  0000 C CNN
+F 1 "EA50" H 3100 8850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3700 8450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3100 8650 50  0001 C CNN
+	2    3100 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-21
+U 2 1 5F41D564
+P 4375 9975
+F 0 "D-ADDER1-21" H 4400 10275 50  0000 C CNN
+F 1 "EA50" H 4400 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4975 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4375 9975 50  0001 C CNN
+	2    4375 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4475 10425 4475 10750
+$Comp
+L NEWValves:EA50 D-ADDER1-22
+U 2 1 5F41D570
+P 5025 9975
+F 0 "D-ADDER1-22" H 5025 10275 50  0000 C CNN
+F 1 "EA50" H 5025 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5625 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5025 9975 50  0001 C CNN
+	2    5025 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 10425 4850 10525
+Wire Wire Line
+	5125 10425 5125 10750
+$Comp
+L NEWValves:EA50 D-ADDER1-23
+U 2 1 5F41D586
+P 5625 9975
+F 0 "D-ADDER1-23" H 5650 10275 50  0000 C CNN
+F 1 "EA50" H 5650 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6225 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5625 9975 50  0001 C CNN
+	2    5625 9975
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-24
+U 2 1 5F41D590
+P 6275 9975
+F 0 "D-ADDER1-24" H 6275 10275 50  0000 C CNN
+F 1 "EA50" H 6275 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6875 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6275 9975 50  0001 C CNN
+	2    6275 9975
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-25
+U 2 1 5F41D59A
+P 6900 9975
+F 0 "D-ADDER1-25" H 6900 10275 50  0000 C CNN
+F 1 "EA50" H 6900 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7500 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6900 9975 50  0001 C CNN
+	2    6900 9975
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-26
+U 2 1 5F41D5A4
+P 7525 9975
+F 0 "D-ADDER1-26" H 7525 10275 50  0000 C CNN
+F 1 "EA50" H 7525 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8125 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7525 9975 50  0001 C CNN
+	2    7525 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 10425 5475 10525
+Wire Wire Line
+	6175 10425 6175 10525
+Wire Wire Line
+	6800 10425 6800 10525
+Wire Wire Line
+	7425 10425 7425 10525
+Wire Wire Line
+	5725 10425 5725 10750
+Wire Wire Line
+	6375 10425 6375 10750
+Wire Wire Line
+	7000 10425 7000 10750
+Wire Wire Line
+	7625 10425 7625 10750
+$Comp
+L NEWValves:EA50 D-ADDER1-27
+U 2 1 5F41D5C2
+P 8125 9975
+F 0 "D-ADDER1-27" H 8150 10275 50  0000 C CNN
+F 1 "EA50" H 8150 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8725 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8125 9975 50  0001 C CNN
+	2    8125 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8025 10425 8025 10525
+Wire Wire Line
+	8225 10425 8225 10750
+$Comp
+L NEWValves:EA50 D-ADDER1-28
+U 2 1 5F41D5CF
+P 8775 9975
+F 0 "D-ADDER1-28" H 8775 10275 50  0000 C CNN
+F 1 "EA50" H 8775 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9375 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8775 9975 50  0001 C CNN
+	2    8775 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 10425 8675 10525
+Wire Wire Line
+	8875 10425 8875 10750
+$Comp
+L NEWValves:EA50 D-ADDER1-16A1
+U 2 1 5F41D5DB
+P 9325 9975
+F 0 "D-ADDER1-16A1" H 9100 10275 50  0000 L CNN
+F 1 "EA50" H 9225 10200 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 9925 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9325 9975 50  0001 C CNN
+	2    9325 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9225 10425 9225 10525
+Wire Wire Line
+	9425 10425 9425 10750
+Wire Wire Line
+	3875 10750 4475 10750
+Connection ~ 4475 10750
+Wire Wire Line
+	4200 10525 4850 10525
+Wire Wire Line
+	4475 10750 5125 10750
+Connection ~ 4850 10525
+Connection ~ 5125 10750
+Wire Wire Line
+	4850 10525 5475 10525
+Wire Wire Line
+	5125 10750 5725 10750
+Connection ~ 5475 10525
+Wire Wire Line
+	5475 10525 6175 10525
+Connection ~ 5725 10750
+Wire Wire Line
+	5725 10750 6375 10750
+Connection ~ 6175 10525
+Connection ~ 6375 10750
+Wire Wire Line
+	6175 10525 6800 10525
+Wire Wire Line
+	6375 10750 7000 10750
+Connection ~ 6800 10525
+Connection ~ 7000 10750
+Wire Wire Line
+	6800 10525 7425 10525
+Wire Wire Line
+	7000 10750 7625 10750
+Connection ~ 7425 10525
+Connection ~ 7625 10750
+Wire Wire Line
+	7625 10750 8225 10750
+Wire Wire Line
+	7425 10525 8025 10525
+Connection ~ 8025 10525
+Connection ~ 8225 10750
+Wire Wire Line
+	8025 10525 8675 10525
+Wire Wire Line
+	8225 10750 8875 10750
+Connection ~ 8675 10525
+Connection ~ 8875 10750
+Wire Wire Line
+	8675 10525 9225 10525
+Wire Wire Line
+	8875 10750 9425 10750
+Connection ~ 3875 10750
+Connection ~ 4200 10525
+$Comp
+L NEWValves:EA50 D-ADDER1-15
+U 2 1 5F41D51A
+P 1200 9975
+F 0 "D-ADDER1-15" H 1200 10275 50  0000 C CNN
+F 1 "EA50" H 1200 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1800 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1200 9975 50  0001 C CNN
+	2    1200 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 10525 4200 10525
+Connection ~ 3550 10525
+Wire Wire Line
+	3200 10750 3875 10750
+Connection ~ 3200 10750
+Wire Wire Line
+	3200 10425 3200 10750
+Wire Wire Line
+	3000 10525 3550 10525
+Wire Wire Line
+	2550 10750 3200 10750
+Wire Wire Line
+	1925 10750 2550 10750
+Wire Wire Line
+	1725 10525 2350 10525
+Connection ~ 2550 10750
+Wire Wire Line
+	2350 10525 3000 10525
+Connection ~ 2350 10525
+Connection ~ 3000 10525
+Wire Wire Line
+	1300 10750 1925 10750
+Wire Wire Line
+	1100 10525 1725 10525
+Connection ~ 1925 10750
+Connection ~ 1725 10525
+Wire Wire Line
+	4275 10425 4200 10525
+Wire Wire Line
+	3875 10425 3875 10750
+Wire Wire Line
+	3675 10425 3550 10525
+$Comp
+L NEWValves:EA50 D-ADDER1-20
+U 2 1 5F41D557
+P 3775 9975
+F 0 "D-ADDER1-20" H 3775 10275 50  0000 C CNN
+F 1 "EA50" H 3775 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4375 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3775 9975 50  0001 C CNN
+	2    3775 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 10425 2550 10750
+Wire Wire Line
+	1925 10425 1925 10750
+Wire Wire Line
+	1300 10425 1300 10750
+Wire Wire Line
+	3000 10425 3000 10525
+Wire Wire Line
+	2350 10425 2350 10525
+Wire Wire Line
+	1725 10425 1725 10525
+Wire Wire Line
+	1100 10425 1100 10525
+$Comp
+L NEWValves:EA50 D-ADDER1-19
+U 2 1 5F41D538
+P 3100 9975
+F 0 "D-ADDER1-19" H 3125 10275 50  0000 C CNN
+F 1 "EA50" H 3125 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3700 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3100 9975 50  0001 C CNN
+	2    3100 9975
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-18
+U 2 1 5F41D52E
+P 2450 9975
+F 0 "D-ADDER1-18" H 2475 10275 50  0000 C CNN
+F 1 "EA50" H 2475 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3050 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2450 9975 50  0001 C CNN
+	2    2450 9975
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-ADDER1-16
+U 2 1 5F41D524
+P 1825 9975
+F 0 "D-ADDER1-16" H 1850 10275 50  0000 C CNN
+F 1 "EA50" H 1850 10175 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2425 9775 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1825 9975 50  0001 C CNN
+	2    1825 9975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14925 9500 15450 9500
+Wire Wire Line
+	14725 9275 15250 9275
+Connection ~ 14925 9500
+Connection ~ 14725 9275
+Wire Wire Line
+	14325 9500 14925 9500
+Wire Wire Line
+	14125 9275 14725 9275
+Connection ~ 14325 9500
+Connection ~ 14125 9275
+Wire Wire Line
+	13750 9500 14325 9500
+Wire Wire Line
+	13550 9275 14125 9275
+Connection ~ 13750 9500
+Connection ~ 13550 9275
+Wire Wire Line
+	12550 9500 13175 9500
+Connection ~ 12550 9500
+Wire Wire Line
+	12350 9275 12975 9275
+Connection ~ 12350 9275
+Wire Wire Line
+	13175 9500 13750 9500
+Wire Wire Line
+	12975 9275 13550 9275
+Connection ~ 13175 9500
+Connection ~ 12975 9275
+Wire Wire Line
+	11975 9500 12550 9500
+Wire Wire Line
+	11775 9275 12350 9275
+Connection ~ 11975 9500
+Connection ~ 11775 9275
+Wire Wire Line
+	11400 9500 11975 9500
+Wire Wire Line
+	11200 9275 11775 9275
+$Comp
+L NEWValves:CV173 V-ADDER1-9
+U 2 1 5F32847C
+P 15350 8825
+F 0 "V-ADDER1-9" H 15625 8900 50  0000 L CNN
+F 1 "CV173" H 15625 8800 50  0000 L CNN
+F 2 "NewValves:Valve_9Loctal" H 16350 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 15350 8825 50  0001 C CNN
+	2    15350 8825
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-ADDER1-7
+U 2 1 5F315A1B
+P 14225 8825
+F 0 "V-ADDER1-7" H 14250 9400 50  0000 C CNN
+F 1 "VR91" H 14250 9300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 15225 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 14225 8825 50  0001 C CNN
+	2    14225 8825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14325 9175 14325 9500
+Wire Wire Line
+	14125 9175 14125 9275
+Wire Wire Line
+	13750 9175 13750 9500
+Wire Wire Line
+	13550 9175 13550 9275
+$Comp
+L NEWValves:VR91 V-ADDER1-5
+U 2 1 5F2F8544
+P 13075 8825
+F 0 "V-ADDER1-5" H 13075 9400 50  0000 C CNN
+F 1 "VR91" H 13075 9300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 14075 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 13075 8825 50  0001 C CNN
+	2    13075 8825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13175 9175 13175 9500
+Wire Wire Line
+	12975 9175 12975 9275
+$Comp
+L NEWValves:VR91 V-ADDER1-4
+U 2 1 5F2F8537
+P 12450 8825
+F 0 "V-ADDER1-4" H 12475 9400 50  0000 C CNN
+F 1 "VR91" H 12475 9300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 13450 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 12450 8825 50  0001 C CNN
+	2    12450 8825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14925 9175 14925 9500
+Wire Wire Line
+	14725 9175 14725 9275
+$Comp
+L NEWValves:VR91 V-ADDER1-6
+U 2 1 5F2F8528
+P 13650 8825
+F 0 "V-ADDER1-6" H 13675 9400 50  0000 C CNN
+F 1 "VR91" H 13675 9300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 14650 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 13650 8825 50  0001 C CNN
+	2    13650 8825
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:CV173 V-ADDER1-3
+U 2 1 5F2C1E4E
+P 11875 8825
+F 0 "V-ADDER1-3" H 11900 9400 50  0000 C CNN
+F 1 "CV173" H 11900 9300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 12875 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 11875 8825 50  0001 C CNN
+	2    11875 8825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11975 9175 11975 9500
+Wire Wire Line
+	11775 9175 11775 9275
+Wire Wire Line
+	15250 9175 15250 9275
+Wire Wire Line
+	15450 9500 15450 9175
+$Comp
+L NEWValves:CV173 V-ADDER1-8
+U 2 1 5F47B59B
+P 14825 8825
+F 0 "V-ADDER1-8" H 14825 9400 50  0000 C CNN
+F 1 "CV173" H 14825 9300 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 15825 9075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 14825 8825 50  0001 C CNN
+	2    14825 8825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 9175 12550 9500
+Wire Wire Line
+	12350 9175 12350 9275
+Connection ~ 6000 6100
+Wire Wire Line
+	6000 6100 6225 6100
+$Comp
+L Device:R R-ADDER1-39
+U 1 1 60224823
+P 6000 5850
+F 0 "R-ADDER1-39" H 6100 5900 50  0000 L CNN
+F 1 "4.7m" H 6100 5850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5930 5850 50  0001 C CNN
+F 3 "~" H 6000 5850 50  0001 C CNN
+	1    6000 5850
+	1    0    0    -1  
+$EndComp
+Text Label 6000 5700 1    50   ~ 0
++300V
+Wire Wire Line
+	6000 6100 6000 6000
+$Comp
+L Device:R R-ADDER1-21
+U 1 1 5FB8AE45
+P 8700 925
+F 0 "R-ADDER1-21" H 8600 1000 50  0000 R CNN
+F 1 "180K" H 8600 900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8630 925 50  0001 C CNN
+F 3 "~" H 8700 925 50  0001 C CNN
+	1    8700 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1800 8700 1075
+Connection ~ 8700 2550
+Wire Wire Line
+	8700 2550 8700 3825
+Text Label 7950 1200 1    50   ~ 0
++200V
+Connection ~ 4625 3175
+Wire Wire Line
+	4625 3175 4625 4125
+Connection ~ 12400 1300
+Wire Wire Line
+	12400 1300 12750 1300
+Text Label 1150 9200 2    50   ~ 0
+Heater-6.3V
+Text Label 1350 9425 2    50   ~ 0
+Heater-GND
+Text Label 1100 10525 2    50   ~ 0
+Heater-6.3V
+Text Label 1300 10750 2    50   ~ 0
+Heater-GND
+Text Label 10625 9275 2    50   ~ 0
+Heater-6.3V
+Text Label 10825 9500 2    50   ~ 0
+Heater-GND
+$EndSCHEMATC
