@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 24
+Sheet 1 25
 Title "Control Adder Position 6.4"
-Date "2020-07-31"
+Date "2020-10-08"
 Rev "Alpha"
 Comp "John Bradley"
 Comment1 "Small-Scale Experimental Machine Manchester Baby."
@@ -150,5 +150,11 @@ S 4000 4000 750  500
 U 5F7109BC
 F0 "KVPSU1" 50
 F1 "KVPSU1.sch" 50
+$EndSheet
+$Sheet
+S 4000 4750 750  500 
+U 5F91C001
+F0 "KVPSU2" 50
+F1 "KVPSU2.sch" 50
 $EndSheet
 $EndSCHEMATC

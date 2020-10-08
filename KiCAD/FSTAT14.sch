@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 19 24
+Sheet 19 25
 Title "Control Gate Posn 6.3"
-Date "2020-07-31"
+Date "2020-10-08"
 Rev "Alpha"
 Comp "John Bradley"
 Comment1 "Small-Scale Experimental Machine Manchester Baby."

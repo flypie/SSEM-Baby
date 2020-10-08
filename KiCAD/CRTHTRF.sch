@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 24
+Sheet 15 25
 Title "Control Adder Position 6.4"
-Date "2020-07-31"
+Date "2020-10-08"
 Rev "Alpha"
 Comp "John Bradley"
 Comment1 "Small-Scale Experimental Machine Manchester Baby."
