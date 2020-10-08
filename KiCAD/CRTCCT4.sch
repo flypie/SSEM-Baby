@@ -431,24 +431,24 @@ Wire Wire Line
 Connection ~ 6700 5650
 $Comp
 L NEWValves:VR78 D-CRTCCT4-1
-U 2 1 60246941
+U 1 1 60246941
 P 5700 4450
 F 0 "D-CRTCCT4-1" V 5400 4350 50  0000 C CNN
 F 1 "VR78" V 5300 4350 50  0000 C CNN
 F 2 "NewValves:Valve_B3G" H 6300 4750 50  0001 C CNN
 F 3 "http://www.r-type.org/pdfs/d1.pdf" H 5700 4450 50  0001 C CNN
-	2    5700 4450
+	1    5700 4450
 	0    -1   -1   0   
 $EndComp
 $Comp
 L NEWValves:VR78 D-CRTCCT4-1
-U 1 1 602A013B
+U 2 1 602A013B
 P 4000 6550
 F 0 "D-CRTCCT4-1" H 4000 6850 50  0000 C CNN
 F 1 "VR78" H 4000 6750 50  0000 C CNN
 F 2 "NewValves:Valve_B3G" H 4600 6850 50  0001 C CNN
 F 3 "http://www.r-type.org/pdfs/d1.pdf" H 4000 6550 50  0001 C CNN
-	1    4000 6550
+	2    4000 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
