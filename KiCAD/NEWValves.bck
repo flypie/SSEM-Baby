@@ -102,6 +102,24 @@ K pentode valve
 F http://www.r-type.org/exhib/aaa0075.htm
 $ENDCMP
 #
+$CMP SW_DPDT
+D Switch, dual pole double throw, separate symbols
+K switch dual-pole double-throw DPDT spdt ON-ON
+F ~
+$ENDCMP
+#
+$CMP SW_Double_Acting_Push
+D Push button switch, generic, symbol, four pins
+K switch normally-open pushbutton push-button
+F ~
+$ENDCMP
+#
+$CMP SW_QPDT
+D Switch, dual pole double throw, separate symbols
+K switch dual-pole double-throw DPDT spdt ON-ON
+F ~
+$ENDCMP
+#
 $CMP VCR97
 D 6-inch Cathode Ray Tube
 K 6-inch Cathode Ray Tube CRT
