@@ -220,7 +220,7 @@ U 1 1 5F806C65
 P 3200 1200
 F 0 "V-KVPSU2-4" H 3350 1250 50  0000 L CNN
 F 1 "CV71" H 3350 1200 50  0000 L CNN
-F 2 "Valve:Valve_Octal" H 3530 1125 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3530 1125 50  0001 C CNN
 F 3 "http://www.r-type.org/pdfs/cv71.pdf" H 2200 1500 50  0001 C CNN
 	1    3200 1200
 	1    0    0    -1  
@@ -255,8 +255,6 @@ Wire Wire Line
 Connection ~ 3200 950 
 Wire Wire Line
 	3200 950  2900 950 
-Wire Wire Line
-	5350 2400 5500 2400
 Wire Wire Line
 	5350 2900 6650 2900
 Wire Wire Line
@@ -367,7 +365,6 @@ Wire Wire Line
 	9700 950  10000 950 
 Text Label 9700 1100 0    50   ~ 0
 GND
-Connection ~ 5500 2400
 Wire Wire Line
 	4900 2400 4900 2600
 Text Notes 2850 2900 0    50   ~ 0

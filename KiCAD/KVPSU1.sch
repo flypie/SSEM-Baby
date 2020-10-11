@@ -220,7 +220,7 @@ U 1 1 5F8A59DB
 P 1400 2850
 F 0 "J-KVPSU1-1" H 1250 3050 50  0000 C CNN
 F 1 "L" H 1250 2950 50  0000 C CNN
-F 2 "SamacSys_Parts_l:242431" H 1450 2810 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 1450 2810 50  0001 C CNN
 F 3 "~" H 1450 2810 50  0001 C CNN
 	1    1400 2850
 	-1   0    0    -1  
@@ -233,7 +233,7 @@ U 1 1 5F8A59DC
 P 1400 3250
 F 0 "J-KVPSU1-2" H 1250 3450 50  0000 C CNN
 F 1 "N" H 1250 3350 50  0000 C CNN
-F 2 "SamacSys_Parts_l:242431" H 1450 3210 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 1450 3210 50  0001 C CNN
 F 3 "~" H 1450 3210 50  0001 C CNN
 	1    1400 3250
 	-1   0    0    -1  
@@ -809,7 +809,7 @@ U 1 1 60C4A7EF
 P 13850 1550
 F 0 "J-KVPSU1-9" H 13750 1300 50  0000 C CNN
 F 1 "0V" H 13750 1400 50  0000 C CNN
-F 2 "SamacSys_Parts_l:242431" H 13900 1510 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 13900 1510 50  0001 C CNN
 F 3 "~" H 13900 1510 50  0001 C CNN
 	1    13850 1550
 	1    0    0    1   
@@ -843,7 +843,7 @@ U 1 1 60E6452A
 P 13850 4150
 F 0 "J-KVPSU1-10" H 13750 3900 50  0000 C CNN
 F 1 "S.EHT -KV" H 13750 4000 50  0000 C CNN
-F 2 "SamacSys_Parts_l:242431" H 13900 4110 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 13900 4110 50  0001 C CNN
 F 3 "~" H 13900 4110 50  0001 C CNN
 	1    13850 4150
 	1    0    0    1   
@@ -1011,7 +1011,7 @@ U 1 1 5F85D4EE
 P 3500 3100
 F 0 "J-KVPSU1-4" H 3800 3100 50  0000 C CNN
 F 1 "+4V L" H 3650 3200 50  0000 C CNN
-F 2 "SamacSys_Parts_l:242431" H 3550 3060 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 3550 3060 50  0001 C CNN
 F 3 "~" H 3550 3060 50  0001 C CNN
 	1    3500 3100
 	1    0    0    1   
@@ -1022,7 +1022,7 @@ U 1 1 5F85E3B7
 P 3500 3400
 F 0 "J-KVPSU1-5" H 3800 3300 50  0000 C CNN
 F 1 "+4V N" H 3650 3400 50  0000 C CNN
-F 2 "SamacSys_Parts_l:242431" H 3550 3360 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 3550 3360 50  0001 C CNN
 F 3 "~" H 3550 3360 50  0001 C CNN
 	1    3500 3400
 	1    0    0    1   
@@ -1033,7 +1033,7 @@ U 1 1 5F85EC31
 P 3500 3500
 F 0 "J-KVPSU1-6" H 3550 3500 50  0000 L CNN
 F 1 "+4V L" H 3550 3600 50  0000 L CNN
-F 2 "SamacSys_Parts_l:242431" H 3550 3460 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 3550 3460 50  0001 C CNN
 F 3 "~" H 3550 3460 50  0001 C CNN
 	1    3500 3500
 	1    0    0    1   
@@ -1044,7 +1044,7 @@ U 1 1 5F85EE0F
 P 3500 3800
 F 0 "J-KVPSU1-7" H 3550 3800 50  0000 L CNN
 F 1 "+4V N" H 3550 3900 50  0000 L CNN
-F 2 "SamacSys_Parts_l:242431" H 3550 3760 50  0001 C CNN
+F 2 "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_360271_1x01_Horizontal_ScrewM3.0_Boxed" H 3550 3760 50  0001 C CNN
 F 3 "~" H 3550 3760 50  0001 C CNN
 	1    3500 3800
 	1    0    0    1   
