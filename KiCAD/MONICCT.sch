@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 27 29
+Sheet 27 32
 Title "Monitor CRT Position 4.4"
 Date "2020-10-09"
 Rev "Alpha"

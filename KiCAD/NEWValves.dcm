@@ -36,6 +36,12 @@ K triode valve
 F http://www.r-type.org/pdfs/6sn7gt-1.pdf
 $ENDCMP
 #
+$CMP 807
+D Output Beam Tetrode, 25W  (Va = 300V, Ia = 83mA).
+K Beam Tetrode
+F http://www.r-type.org/pdfs/807.pdf
+$ENDCMP
+#
 $CMP ARP35
 D Single Ended Short Wave H.F. Pentode
 K pentode valve
@@ -48,6 +54,12 @@ K Beam Tetrode
 F http://www.r-type.org/pdfs/cv124.pdf
 $ENDCMP
 #
+$CMP CV1060
+D Output Beam Tetrode, 25W  (Va = 300V, Ia = 83mA).
+K Beam Tetrode
+F http://www.r-type.org/pdfs/cv1060.pdf
+$ENDCMP
+#
 $CMP CV1091
 D Single Ended Short Wave H.F. Pentode
 K pentode valve
@@ -58,6 +70,12 @@ $CMP CV1131
 D 12-inch Cathode Ray Tube crt
 K 12-inch Cathode Ray Tube crt
 F http://www.r-type.org/exhib/zaa0420.htm
+$ENDCMP
+#
+$CMP CV1364
+D Output Beam Tetrode, 25W  (Va = 300V, Ia = 83mA).
+K Beam Tetrode
+F http://www.r-type.org/pdfs/cv1364.pdf
 $ENDCMP
 #
 $CMP CV173

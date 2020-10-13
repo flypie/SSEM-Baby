@@ -1,0 +1,1370 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 32 32
+Title "REMOTE MONITOR DRIVERS Position 2.6"
+Date "2020-10-12"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-RMONDRS-1
+U 2 1 5F5BFDD5
+P 1200 7000
+F 0 "V-RMONDRS-1" H 1200 7575 50  0000 C CNN
+F 1 "EF50" H 1200 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2200 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 1200 7000 50  0001 C CNN
+	2    1200 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  7400 1100 7400
+Wire Wire Line
+	950  7650 1300 7650
+Wire Wire Line
+	1100 7350 1100 7400
+Connection ~ 1100 7400
+Wire Wire Line
+	1300 7350 1300 7650
+Connection ~ 1300 7650
+Wire Wire Line
+	6325 6925 6125 6925
+Wire Wire Line
+	6325 6825 6125 6825
+$Comp
+L power:PWR_FLAG #FLG0160
+U 1 1 61357372
+P 6125 6925
+F 0 "#FLG0160" H 6125 7000 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 7125 50  0000 C CNN
+F 2 "" H 6125 6925 50  0001 C CNN
+F 3 "~" H 6125 6925 50  0001 C CNN
+	1    6125 6925
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0161
+U 1 1 60773F70
+P 6125 6825
+F 0 "#FLG0161" H 6125 6900 50  0001 C CNN
+F 1 "PWR_FLAG" H 6150 7025 50  0000 C CNN
+F 2 "" H 6125 6825 50  0001 C CNN
+F 3 "~" H 6125 6825 50  0001 C CNN
+	1    6125 6825
+	-1   0    0    1   
+$EndComp
+Connection ~ 6125 6825
+Wire Wire Line
+	6125 6825 5825 6825
+Wire Wire Line
+	6325 7025 5825 7025
+Wire Wire Line
+	6325 7125 5825 7125
+Wire Wire Line
+	6325 7325 5825 7325
+$Comp
+L Connector_Generic:Conn_01x08 J-RMONDRS-2
+U 1 1 60773F79
+P 6525 7125
+F 0 "J-RMONDRS-2" H 6650 7125 50  0000 L CNN
+F 1 "HIGH Voltage." H 6650 7025 50  0000 L CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770970-x_2x04_P4.14mm_Horizontal" H 6525 7125 50  0001 C CNN
+F 3 "~" H 6525 7125 50  0001 C CNN
+	1    6525 7125
+	1    0    0    -1  
+$EndComp
+Connection ~ 6125 6925
+Wire Wire Line
+	6125 6925 5825 6925
+NoConn ~ 6325 7425
+Text Label 5825 6825 2    50   ~ 0
+Heater-GND
+Text Label 5825 6925 2    50   ~ 0
+Heater-6.3V
+Text Label 5825 7025 2    50   ~ 0
++200V
+Text Label 5825 7125 2    50   ~ 0
++300V
+Text Label 5825 7225 2    50   ~ 0
+-150V
+Text Label 5825 7325 2    50   ~ 0
++50V
+Text Label 950  7400 2    50   ~ 0
+Heater-6.3V
+Text Label 950  7650 2    50   ~ 0
+Heater-GND
+Text Label 5825 7525 2    50   ~ 0
+GND
+Wire Wire Line
+	5825 7525 6325 7525
+$Comp
+L NEWValves:EF50 V-RMONDRS-3
+U 2 1 61357367
+P 2500 7000
+F 0 "V-RMONDRS-3" H 2525 7575 50  0000 C CNN
+F 1 "EF50" H 2525 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3500 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 2500 7000 50  0001 C CNN
+	2    2500 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EF55 V-RMONDRS-2
+U 2 1 60773F46
+P 1850 7000
+F 0 "V-RMONDRS-2" H 1850 7575 50  0000 C CNN
+F 1 "EF55" H 1850 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2850 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0075.htm" H 1850 7000 50  0001 C CNN
+	2    1850 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 7225 6325 7225
+Wire Wire Line
+	1300 7650 1950 7650
+Wire Wire Line
+	1100 7400 1750 7400
+Wire Wire Line
+	1950 7650 1950 7350
+Connection ~ 1950 7650
+Wire Wire Line
+	1750 7350 1750 7400
+Connection ~ 1750 7400
+Wire Wire Line
+	1950 7650 2600 7650
+Wire Wire Line
+	1750 7400 2400 7400
+Wire Wire Line
+	2600 7650 2600 7350
+Connection ~ 2600 7650
+Wire Wire Line
+	2400 7350 2400 7400
+Connection ~ 2400 7400
+$Comp
+L NEWValves:CV173 V-RMONDRS-5
+U 2 1 631D14DA
+P 3800 7000
+F 0 "V-RMONDRS-5" H 3825 7575 50  0000 C CNN
+F 1 "EF50" H 3825 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4800 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 3800 7000 50  0001 C CNN
+	2    3800 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 7650 3900 7350
+Wire Wire Line
+	3700 7350 3700 7400
+$Comp
+L NEWValves:EF50 V-RMONDRS-4
+U 2 1 61357371
+P 3150 7000
+F 0 "V-RMONDRS-4" H 3175 7575 50  0000 C CNN
+F 1 "EF50" H 3175 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4150 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 3150 7000 50  0001 C CNN
+	2    3150 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 7650 3250 7350
+Wire Wire Line
+	2600 7650 3250 7650
+Connection ~ 3250 7650
+Wire Wire Line
+	3250 7650 3900 7650
+Wire Wire Line
+	2400 7400 3050 7400
+Wire Wire Line
+	3050 7350 3050 7400
+Connection ~ 3050 7400
+Wire Wire Line
+	3050 7400 3700 7400
+Connection ~ 3700 7400
+Wire Wire Line
+	3700 7400 4350 7400
+Connection ~ 3900 7650
+Wire Wire Line
+	3900 7650 4550 7650
+$Comp
+L NEWValves:EF50 V-RMONDRS-6
+U 2 1 6135736B
+P 4450 7000
+F 0 "V-RMONDRS-6" H 4475 7575 50  0000 C CNN
+F 1 "EF50" H 4475 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5450 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 4450 7000 50  0001 C CNN
+	2    4450 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 7650 4550 7350
+Wire Wire Line
+	4350 7350 4350 7400
+$Comp
+L Device:C C-RMONDRS-2
+U 1 1 60773F58
+P 3000 2150
+F 0 "C-RMONDRS-2" H 3150 2200 50  0000 L CNN
+F 1 "0.1uf" H 3150 2150 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3038 2000 50  0001 C CNN
+F 3 "~" H 3000 2150 50  0001 C CNN
+	1    3000 2150
+	1    0    0    -1  
+$EndComp
+Text Label 2150 2300 2    50   ~ 0
+GND
+Wire Wire Line
+	1350 3800 1350 3900
+Text Label 1350 3900 0    50   ~ 0
+-150V
+$Comp
+L NEWValves:EF50 V-RMONDRS-1
+U 1 1 5F5FB23F
+P 2450 1750
+F 0 "V-RMONDRS-1" H 2500 1350 50  0000 C CNN
+F 1 "EF50" H 2500 1250 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3450 2000 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 2450 1750 50  0001 C CNN
+	1    2450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-RMONDRS-5
+U 1 1 61357373
+P 8050 5800
+F 0 "C-RMONDRS-5" H 8200 5750 50  0000 L CNN
+F 1 "0.5" H 8200 5800 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8088 5650 50  0001 C CNN
+F 3 "~" H 8050 5800 50  0001 C CNN
+	1    8050 5800
+	-1   0    0    1   
+$EndComp
+Text Label 8050 5550 1    50   ~ 0
+-150V
+Wire Wire Line
+	8050 5550 8050 5650
+Wire Wire Line
+	6300 5650 6300 5550
+Wire Wire Line
+	7150 5650 7150 5550
+Wire Wire Line
+	6300 6050 6300 5950
+Wire Wire Line
+	7150 6050 7150 5950
+Wire Wire Line
+	9000 5950 9000 6050
+Wire Wire Line
+	9000 5650 9000 5550
+Text Label 9000 5550 1    50   ~ 0
++50V
+Text Label 7150 5550 1    50   ~ 0
++200V
+Text Label 6300 5600 1    50   ~ 0
++300V
+Text Label 8050 6050 3    50   ~ 0
+GND
+Wire Wire Line
+	8050 5950 8050 6050
+Text Label 7150 6050 3    50   ~ 0
+GND
+Text Label 6300 6050 3    50   ~ 0
+GND
+Text Label 9000 6050 3    50   ~ 0
+GND
+$Comp
+L Device:C C-RMONDRS-3
+U 1 1 631D14D4
+P 7150 5800
+F 0 "C-RMONDRS-3" H 7000 5850 50  0000 R CNN
+F 1 "0.5" H 7000 5800 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7188 5650 50  0001 C CNN
+F 3 "~" H 7150 5800 50  0001 C CNN
+	1    7150 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-RMONDRS--A-1
+U 1 1 60773F4C
+P 6300 5800
+F 0 "C-RMONDRS--A-1" H 6175 5875 50  0000 R CNN
+F 1 "0.5" H 6175 5775 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6338 5650 50  0001 C CNN
+F 3 "~" H 6300 5800 50  0001 C CNN
+	1    6300 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-RMONDRS-6
+U 1 1 6135736D
+P 9000 5800
+F 0 "C-RMONDRS-6" H 9150 5850 50  0000 L CNN
+F 1 "0.5" H 9150 5800 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9038 5650 50  0001 C CNN
+F 3 "~" H 9000 5800 50  0001 C CNN
+	1    9000 5800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-RMONDRS-3
+U 1 1 607E4DEA
+P 1750 1450
+F 0 "R-RMONDRS-3" H 1650 1500 50  0000 R CNN
+F 1 "1M" H 1650 1450 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1680 1450 50  0001 C CNN
+F 3 "~" H 1750 1450 50  0001 C CNN
+	1    1750 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1200 1750 1300
+Text Label 1750 1200 2    50   ~ 0
++300V
+Wire Wire Line
+	1750 1600 1750 1700
+Wire Wire Line
+	1750 1800 1850 1800
+Connection ~ 1750 1800
+Wire Wire Line
+	1750 1800 1750 1900
+$Comp
+L Device:R R-RMONDRS-4
+U 1 1 60803599
+P 2000 1800
+F 0 "R-RMONDRS-4" V 1750 1850 50  0000 C CNN
+F 1 "R" V 1650 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1930 1800 50  0001 C CNN
+F 3 "~" H 2000 1800 50  0001 C CNN
+	1    2000 1800
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:D D-RMONDRS-1
+U 1 1 6080B756
+P 1500 1700
+F 0 "D-RMONDRS-1" H 1500 1950 50  0000 C CNN
+F 1 "D" H 1500 1850 50  0000 C CNN
+F 2 "Diode_THT:D_5W_P5.08mm_Vertical_KathodeUp" H 1500 1700 50  0001 C CNN
+F 3 "~" H 1500 1700 50  0001 C CNN
+	1    1500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1700 1650 1700
+Connection ~ 1750 1700
+Wire Wire Line
+	1750 1700 1750 1800
+Wire Wire Line
+	1350 1700 1250 1700
+$Comp
+L Device:D D-RMONDRS-2
+U 1 1 60821C20
+P 1500 1900
+F 0 "D-RMONDRS-2" H 1400 1700 50  0000 C CNN
+F 1 "D" H 1350 1600 50  0000 C CNN
+F 2 "Diode_THT:D_5W_P5.08mm_Vertical_KathodeUp" H 1500 1900 50  0001 C CNN
+F 3 "~" H 1500 1900 50  0001 C CNN
+	1    1500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1900 1650 1900
+Wire Wire Line
+	1350 1900 1250 1900
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-1
+U 1 1 6082B626
+P 1050 1700
+F 0 "J-RMONDRS-1" H 1100 1625 50  0000 L CNN
+F 1 "S.Read" H 1100 1725 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1100 1660 50  0001 C CNN
+F 3 "~" H 1100 1660 50  0001 C CNN
+	1    1050 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-3
+U 1 1 6082C16E
+P 1050 1900
+F 0 "J-RMONDRS-3" H 1100 1825 50  0000 L CNN
+F 1 "Diff.Dot" H 1100 1925 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1100 1860 50  0001 C CNN
+F 3 "~" H 1100 1860 50  0001 C CNN
+	1    1050 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1900 2150 2300
+NoConn ~ 2750 1950
+NoConn ~ 2750 1850
+Wire Wire Line
+	2800 1700 3000 1700
+Wire Wire Line
+	3000 1700 3000 2000
+Wire Wire Line
+	3000 2300 3000 2400
+Text Label 3000 2400 2    50   ~ 0
+GND
+Wire Wire Line
+	2450 1100 2450 1200
+$Comp
+L Device:R R-RMONDRS-7
+U 1 1 6088BDF5
+P 2450 950
+F 0 "R-RMONDRS-7" H 2550 1000 50  0000 L CNN
+F 1 "33K 50W" H 2550 950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2380 950 50  0001 C CNN
+F 3 "~" H 2450 950 50  0001 C CNN
+	1    2450 950 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 700  2450 800 
+Text Label 2450 700  2    50   ~ 0
++300V
+$Comp
+L Device:R R-RMONDRS-8
+U 1 1 60895A1A
+P 3000 950
+F 0 "R-RMONDRS-8" H 3200 1000 50  0000 R CNN
+F 1 "22K 50W" H 3050 900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2930 950 50  0001 C CNN
+F 3 "~" H 3000 950 50  0001 C CNN
+	1    3000 950 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 700  3000 800 
+Text Label 3000 700  0    50   ~ 0
++300V
+Wire Wire Line
+	3000 1100 3000 1700
+Connection ~ 3000 1700
+Wire Wire Line
+	2450 1200 2750 1200
+Connection ~ 2450 1200
+Wire Wire Line
+	2450 1200 2450 1300
+Wire Wire Line
+	2750 1200 2750 1100
+Connection ~ 2750 1200
+Wire Wire Line
+	2750 1200 2850 1200
+$Comp
+L Device:D D-RMONDRS-3
+U 1 1 608C3B73
+P 2750 950
+F 0 "D-RMONDRS-3" V 2400 750 50  0000 L CNN
+F 1 "D" V 2650 900 50  0000 L CNN
+F 2 "Diode_THT:D_5W_P5.08mm_Vertical_KathodeUp" H 2750 950 50  0001 C CNN
+F 3 "~" H 2750 950 50  0001 C CNN
+	1    2750 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 700  2750 800 
+Text Label 2750 700  0    50   ~ 0
++50V
+$Comp
+L Device:C C-RMONDRS-1
+U 1 1 608D9C37
+P 3250 1200
+F 0 "C-RMONDRS-1" V 3450 1200 50  0000 C CNN
+F 1 "0.1uf" V 3550 1200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3288 1050 50  0001 C CNN
+F 3 "~" H 3250 1200 50  0001 C CNN
+	1    3250 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_SPDT SW-RMONDRS-2
+U 1 1 608DB844
+P 3600 1200
+F 0 "SW-RMONDRS-2" H 3300 1300 50  0000 C CNN
+F 1 "SW_SPDT" H 3600 1400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3600 1200 50  0001 C CNN
+F 3 "~" H 3600 1200 50  0001 C CNN
+	1    3600 1200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1200 3400 1300
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-5
+U 1 1 60903234
+P 3400 700
+F 0 "J-RMONDRS-5" V 3350 750 50  0000 L CNN
+F 1 "S.GRID" V 3500 800 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 3450 660 50  0001 C CNN
+F 3 "~" H 3450 660 50  0001 C CNN
+	1    3400 700 
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3400 900  3400 1100
+Wire Wire Line
+	3400 1300 3400 1600
+Connection ~ 3400 1300
+$Comp
+L Device:R R-RMONDRS-10
+U 1 1 6092F5A3
+P 3400 1750
+F 0 "R-RMONDRS-10" H 3300 1800 50  0000 R CNN
+F 1 "100K" H 3300 1750 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3330 1750 50  0001 C CNN
+F 3 "~" H 3400 1750 50  0001 C CNN
+	1    3400 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1900 3400 2000
+Text Label 3400 2000 2    50   ~ 0
+GND
+Wire Wire Line
+	3800 1200 3900 1200
+$Comp
+L Device:R R-RMONDRS-11
+U 1 1 609463CB
+P 4050 1200
+F 0 "R-RMONDRS-11" V 4300 1200 50  0000 C CNN
+F 1 "R" V 4200 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3980 1200 50  0001 C CNN
+F 3 "~" H 4050 1200 50  0001 C CNN
+	1    4050 1200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4200 1200 4300 1200
+$Comp
+L NEWValves:EF55 V-RMONDRS-2
+U 1 1 6095109E
+P 4600 1150
+F 0 "V-RMONDRS-2" H 4650 750 50  0000 C CNN
+F 1 "EF55" H 4650 650 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5600 1400 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0075.htm" H 4600 1150 50  0001 C CNN
+	1    4600 1150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 1350
+NoConn ~ 4900 1250
+Wire Wire Line
+	4300 1300 4300 1500
+$Comp
+L Device:R R-RMONDRS-12
+U 1 1 6097C105
+P 4300 1750
+F 0 "R-RMONDRS-12" H 4200 1800 50  0000 R CNN
+F 1 "100K" H 4200 1750 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4230 1750 50  0001 C CNN
+F 3 "~" H 4300 1750 50  0001 C CNN
+	1    4300 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1900 4300 2000
+Text Label 4300 2000 2    50   ~ 0
+GND
+Wire Wire Line
+	4600 700  4600 600 
+Wire Wire Line
+	4600 600  4300 600 
+Wire Wire Line
+	4300 600  4300 1000
+Wire Wire Line
+	4950 1100 4950 600 
+Wire Wire Line
+	4950 600  4600 600 
+Connection ~ 4600 600 
+Wire Wire Line
+	4600 600  4600 500 
+Text Label 4600 500  0    50   ~ 0
++200V
+Wire Wire Line
+	4300 1500 4950 1500
+Connection ~ 4300 1500
+Wire Wire Line
+	4300 1500 4300 1600
+$Comp
+L Device:C C-RMONDRS-7
+U 1 1 609D16BD
+P 5100 1500
+F 0 "C-RMONDRS-7" V 4800 1500 50  0000 C CNN
+F 1 "0.5uf" V 4900 1500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5138 1350 50  0001 C CNN
+F 3 "~" H 5100 1500 50  0001 C CNN
+	1    5100 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 1500 5350 1500
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-7
+U 1 1 609DE706
+P 5550 1500
+F 0 "J-RMONDRS-7" H 5600 1400 50  0000 L CNN
+F 1 "R.Grid" H 5600 1500 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 5600 1460 50  0001 C CNN
+F 3 "~" H 5600 1460 50  0001 C CNN
+	1    5550 1500
+	1    0    0    1   
+$EndComp
+$Comp
+L NEWValves:VR91 V-RMONDRS-8
+U 1 1 609E02B4
+P 2850 3350
+F 0 "V-RMONDRS-8" H 2900 2950 50  0000 C CNN
+F 1 "CV173" H 2900 2850 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3850 3600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 2850 3350 50  0001 C CNN
+	1    2850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1200 2850 2900
+Connection ~ 2850 1200
+Wire Wire Line
+	2850 1200 3100 1200
+Wire Wire Line
+	2550 3200 2350 3200
+$Comp
+L Device:R R-RMONDRS-5
+U 1 1 609FF825
+P 2200 3200
+F 0 "R-RMONDRS-5" V 2450 3200 50  0000 C CNN
+F 1 "R" V 2350 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2130 3200 50  0001 C CNN
+F 3 "~" H 2200 3200 50  0001 C CNN
+	1    2200 3200
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2050 3200 1950 3200
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-4
+U 1 1 60A0C7FF
+P 1750 3200
+F 0 "J-RMONDRS-4" H 1800 3125 50  0000 L CNN
+F 1 "Ha" H 1800 3225 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1800 3160 50  0001 C CNN
+F 3 "~" H 1800 3160 50  0001 C CNN
+	1    1750 3200
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 3150 3450
+NoConn ~ 3150 3550
+Wire Wire Line
+	2550 3400 2350 3400
+$Comp
+L Device:R R-RMONDRS-6
+U 1 1 60A258F4
+P 2200 3400
+F 0 "R-RMONDRS-6" V 2050 3400 50  0000 C CNN
+F 1 "R" V 1950 3400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2130 3400 50  0001 C CNN
+F 3 "~" H 2200 3400 50  0001 C CNN
+	1    2200 3400
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R-RMONDRS-1
+U 1 1 60A41546
+P 1350 3150
+F 0 "R-RMONDRS-1" H 1650 3000 50  0000 R CNN
+F 1 "15K" H 1250 3150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1280 3150 50  0001 C CNN
+F 3 "~" H 1350 3150 50  0001 C CNN
+	1    1350 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R-RMONDRS-2
+U 1 1 60A4F8D7
+P 1350 3650
+F 0 "R-RMONDRS-2" H 1250 3600 50  0000 R CNN
+F 1 "150K" H 1250 3650 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1280 3650 50  0001 C CNN
+F 3 "~" H 1350 3650 50  0001 C CNN
+	1    1350 3650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1350 3400 1350 3300
+Wire Wire Line
+	1350 3400 2050 3400
+Wire Wire Line
+	1350 3500 1350 3400
+Connection ~ 1350 3400
+Wire Wire Line
+	1350 3000 1350 2900
+Wire Wire Line
+	1350 2900 1450 2900
+Text Label 1450 2900 2    50   ~ 0
+GND
+$Comp
+L Switch:SW_SPST SW-RMONDRS-1
+U 1 1 60AA8B9F
+P 1000 3100
+F 0 "SW-RMONDRS-1" V 1050 3200 50  0000 L CNN
+F 1 "SW_SPST" V 1000 3200 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1000 3100 50  0001 C CNN
+F 3 "~" H 1000 3100 50  0001 C CNN
+	1    1000 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 3400 1000 3400
+Wire Wire Line
+	1000 3400 1000 3300
+Wire Wire Line
+	1000 2900 1000 2800
+Wire Wire Line
+	1000 2800 1350 2800
+Wire Wire Line
+	1350 2800 1350 2900
+Connection ~ 1350 2900
+Wire Wire Line
+	2550 3500 2550 3900
+Text Label 2550 3900 2    50   ~ 0
+GND
+Wire Wire Line
+	3200 3300 3300 3300
+Wire Wire Line
+	3300 3300 3300 3200
+$Comp
+L Device:R R-RMONDRS-9
+U 1 1 60AE8C23
+P 3300 3050
+F 0 "R-RMONDRS-9" H 3400 3000 50  0000 L CNN
+F 1 "150K" H 3400 3050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3230 3050 50  0001 C CNN
+F 3 "~" H 3300 3050 50  0001 C CNN
+	1    3300 3050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3300 2900 3300 2800
+Text Label 3300 2800 2    50   ~ 0
++300V
+$Comp
+L Device:C C-RMONDRS-4
+U 1 1 60AFB1E0
+P 3300 3550
+F 0 "C-RMONDRS-4" H 3450 3600 50  0000 L CNN
+F 1 "0.1uf" H 3450 3550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3338 3400 50  0001 C CNN
+F 3 "~" H 3300 3550 50  0001 C CNN
+	1    3300 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3700 3300 3900
+Text Label 3300 3900 2    50   ~ 0
+GND
+Wire Wire Line
+	3300 3400 3300 3300
+Connection ~ 3300 3300
+Text Label 6900 2150 2    50   ~ 0
+GND
+$Comp
+L NEWValves:EF50 V-RMONDRS-3
+U 1 1 60B2DD95
+P 7200 1150
+F 0 "V-RMONDRS-3" H 7250 750 50  0000 C CNN
+F 1 "EF50" H 7250 650 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8200 1400 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 7200 1150 50  0001 C CNN
+	1    7200 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1200 6600 1200
+$Comp
+L Device:R R-RMONDRS-15
+U 1 1 60B2DDA0
+P 6750 1200
+F 0 "R-RMONDRS-15" V 7000 1050 50  0000 C CNN
+F 1 "R" V 6900 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6680 1200 50  0001 C CNN
+F 3 "~" H 6750 1200 50  0001 C CNN
+	1    6750 1200
+	0    1    -1   0   
+$EndComp
+NoConn ~ 7500 1350
+NoConn ~ 7500 1250
+Wire Wire Line
+	7200 600  7200 700 
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-9
+U 1 1 60B53CF0
+P 6300 1200
+F 0 "J-RMONDRS-9" H 6400 1350 50  0000 L CNN
+F 1 "Y2" H 6350 1225 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 6350 1160 50  0001 C CNN
+F 3 "~" H 6350 1160 50  0001 C CNN
+	1    6300 1200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1300 6900 1700
+$Comp
+L Device:R R-RMONDRS-16
+U 1 1 60B756F1
+P 6900 1900
+F 0 "R-RMONDRS-16" H 7000 1950 50  0000 L CNN
+F 1 "22K 3W" H 7000 1900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6830 1900 50  0001 C CNN
+F 3 "~" H 6900 1900 50  0001 C CNN
+	1    6900 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2050 6900 2150
+Wire Wire Line
+	7200 600  7550 600 
+Connection ~ 7200 600 
+Wire Wire Line
+	7550 1100 7550 600 
+Wire Wire Line
+	7200 600  7200 500 
+Text Label 7200 500  2    50   ~ 0
++300V
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-11
+U 1 1 60C0090E
+P 8250 1700
+F 0 "J-RMONDRS-11" H 8300 1625 50  0000 L CNN
+F 1 "Y2" H 8300 1725 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 8300 1660 50  0001 C CNN
+F 3 "~" H 8300 1660 50  0001 C CNN
+	1    8250 1700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6900 1700 7650 1700
+Connection ~ 6900 1700
+Wire Wire Line
+	6900 1700 6900 1750
+$Comp
+L Device:C C-RMONDRS-9
+U 1 1 60C3458F
+P 7800 1700
+F 0 "C-RMONDRS-9" V 8000 1700 50  0000 C CNN
+F 1 "0.5uf" V 8100 1700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7838 1550 50  0001 C CNN
+F 3 "~" H 7800 1700 50  0001 C CNN
+	1    7800 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 1700 8050 1700
+Wire Wire Line
+	6900 1000 6900 600 
+Wire Wire Line
+	6900 600  7200 600 
+Text Notes 5400 1600 0    50   ~ 0
+pin7
+Text Notes 8250 1850 0    50   ~ 0
+pin12
+Text Label 9250 2150 2    50   ~ 0
+GND
+$Comp
+L NEWValves:EF50 V-RMONDRS-4
+U 1 1 60C968B8
+P 9550 1150
+F 0 "V-RMONDRS-4" H 9600 750 50  0000 C CNN
+F 1 "EF50" H 9600 650 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 10550 1400 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 9550 1150 50  0001 C CNN
+	1    9550 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1200 8950 1200
+$Comp
+L Device:R R-RMONDRS-21
+U 1 1 60C968C3
+P 9100 1200
+F 0 "R-RMONDRS-21" V 9350 1050 50  0000 C CNN
+F 1 "R" V 9250 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9030 1200 50  0001 C CNN
+F 3 "~" H 9100 1200 50  0001 C CNN
+	1    9100 1200
+	0    1    -1   0   
+$EndComp
+NoConn ~ 9850 1350
+NoConn ~ 9850 1250
+Wire Wire Line
+	9550 600  9550 700 
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-12
+U 1 1 60C968D0
+P 8650 1200
+F 0 "J-RMONDRS-12" H 8750 1350 50  0000 L CNN
+F 1 "Y1" H 8700 1225 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 8700 1160 50  0001 C CNN
+F 3 "~" H 8700 1160 50  0001 C CNN
+	1    8650 1200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1300 9250 1700
+$Comp
+L Device:R R-RMONDRS-22
+U 1 1 60C968DB
+P 9250 1900
+F 0 "R-RMONDRS-22" H 9350 1950 50  0000 L CNN
+F 1 "22K 3W" H 9350 1900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9180 1900 50  0001 C CNN
+F 3 "~" H 9250 1900 50  0001 C CNN
+	1    9250 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2050 9250 2150
+Wire Wire Line
+	9550 600  9900 600 
+Connection ~ 9550 600 
+Wire Wire Line
+	9900 1100 9900 600 
+Wire Wire Line
+	9550 600  9550 500 
+Text Label 9550 500  2    50   ~ 0
++300V
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-15
+U 1 1 60C968EB
+P 10600 1700
+F 0 "J-RMONDRS-15" H 10650 1625 50  0000 L CNN
+F 1 "Y2" H 10650 1725 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 10650 1660 50  0001 C CNN
+F 3 "~" H 10650 1660 50  0001 C CNN
+	1    10600 1700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9250 1700 10000 1700
+Connection ~ 9250 1700
+Wire Wire Line
+	9250 1700 9250 1750
+$Comp
+L Device:C C-RMONDRS-11
+U 1 1 60C968F8
+P 10150 1700
+F 0 "C-RMONDRS-11" V 10350 1700 50  0000 C CNN
+F 1 "0.5uf" V 10450 1700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10188 1550 50  0001 C CNN
+F 3 "~" H 10150 1700 50  0001 C CNN
+	1    10150 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 1700 10400 1700
+Wire Wire Line
+	9250 1000 9250 600 
+Wire Wire Line
+	9250 600  9550 600 
+Text Notes 10600 1850 0    50   ~ 0
+pin11
+$Comp
+L NEWValves:EF50 V-RMONDRS-5
+U 1 1 60CBB666
+P 5650 3050
+F 0 "V-RMONDRS-5" H 5700 2650 50  0000 C CNN
+F 1 "EF50" H 5700 2550 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6650 3300 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 5650 3050 50  0001 C CNN
+	1    5650 3050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-RMONDRS-14
+U 1 1 60CBB670
+P 6400 3100
+F 0 "R-RMONDRS-14" V 6250 3100 50  0000 C CNN
+F 1 "39K" V 6150 3100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6330 3100 50  0001 C CNN
+F 3 "~" H 6400 3100 50  0001 C CNN
+	1    6400 3100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5350 3250
+NoConn ~ 5350 3150
+Wire Wire Line
+	5650 2500 5650 2600
+$Comp
+L Device:R R-RMONDRS-13
+U 1 1 60CBB67E
+P 5950 3800
+F 0 "R-RMONDRS-13" H 6050 3850 50  0000 L CNN
+F 1 "22K 3W" H 6050 3800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5880 3800 50  0001 C CNN
+F 3 "~" H 5950 3800 50  0001 C CNN
+	1    5950 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2500 5300 2500
+Connection ~ 5650 2500
+Wire Wire Line
+	5300 3000 5300 2500
+Wire Wire Line
+	5650 2500 5650 2400
+Text Label 5650 2400 0    50   ~ 0
++300V
+Wire Wire Line
+	5950 2900 5950 2500
+Wire Wire Line
+	5950 2500 5650 2500
+Wire Wire Line
+	5950 3200 5950 3400
+Wire Wire Line
+	5950 3400 5150 3400
+Connection ~ 5950 3400
+Wire Wire Line
+	5950 3400 5950 3650
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-6
+U 1 1 60D47EF4
+P 4950 3400
+F 0 "J-RMONDRS-6" H 5000 3450 50  0000 L CNN
+F 1 "R.X1" H 5000 3350 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 5000 3360 50  0001 C CNN
+F 3 "~" H 5000 3360 50  0001 C CNN
+	1    4950 3400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3950 5950 4150
+Text Label 5950 4150 2    50   ~ 0
+GND
+Wire Wire Line
+	5950 3100 6150 3100
+Wire Wire Line
+	6150 3100 6150 3000
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-8
+U 1 1 60D93E4B
+P 6150 2400
+F 0 "J-RMONDRS-8" V 6100 2450 50  0000 L CNN
+F 1 "M.X1" V 6000 2450 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 6200 2360 50  0001 C CNN
+F 3 "~" H 6200 2360 50  0001 C CNN
+	1    6150 2400
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C-RMONDRS-8
+U 1 1 60D949ED
+P 6150 2850
+F 0 "C-RMONDRS-8" H 6200 3050 50  0000 L CNN
+F 1 "0.1uf" H 6200 2950 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6188 2700 50  0001 C CNN
+F 3 "~" H 6150 2850 50  0001 C CNN
+	1    6150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2700 6150 2600
+Wire Wire Line
+	6250 3100 6150 3100
+Connection ~ 6150 3100
+$Comp
+L NEWValves:EF50 V-RMONDRS-6
+U 1 1 60E38A77
+P 8350 3050
+F 0 "V-RMONDRS-6" H 8400 2650 50  0000 C CNN
+F 1 "EF50" H 8400 2550 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9350 3300 50  0001 C CNN
+F 3 "http://www.r-type.org/exhib/aaa0098.htm" H 8350 3050 50  0001 C CNN
+	1    8350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-RMONDRS-19
+U 1 1 60E38FD5
+P 7600 3100
+F 0 "R-RMONDRS-19" V 7450 3100 50  0000 C CNN
+F 1 "39K" V 7350 3100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7530 3100 50  0001 C CNN
+F 3 "~" H 7600 3100 50  0001 C CNN
+	1    7600 3100
+	0    1    -1   0   
+$EndComp
+NoConn ~ 8650 3250
+NoConn ~ 8650 3150
+Wire Wire Line
+	8350 2500 8350 2600
+$Comp
+L Device:R R-RMONDRS-20
+U 1 1 60E38FE2
+P 8050 3800
+F 0 "R-RMONDRS-20" H 8150 3850 50  0000 L CNN
+F 1 "22K 3W" H 8150 3800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7980 3800 50  0001 C CNN
+F 3 "~" H 8050 3800 50  0001 C CNN
+	1    8050 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2500 8700 2500
+Connection ~ 8350 2500
+Wire Wire Line
+	8700 3000 8700 2500
+Wire Wire Line
+	8350 2500 8350 2400
+Text Label 8350 2400 2    50   ~ 0
++300V
+Wire Wire Line
+	8050 2900 8050 2500
+Wire Wire Line
+	8050 2500 8350 2500
+Wire Wire Line
+	8050 3200 8050 3400
+Wire Wire Line
+	8050 3400 8850 3400
+Connection ~ 8050 3400
+Wire Wire Line
+	8050 3400 8050 3650
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-13
+U 1 1 60E38FF7
+P 9050 3400
+F 0 "J-RMONDRS-13" H 9100 3450 50  0000 L CNN
+F 1 "R.X2" H 9100 3350 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 9100 3360 50  0001 C CNN
+F 3 "~" H 9100 3360 50  0001 C CNN
+	1    9050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3950 8050 4150
+Text Label 8050 4150 0    50   ~ 0
+GND
+Wire Wire Line
+	8050 3100 7850 3100
+Wire Wire Line
+	7850 3100 7850 3000
+$Comp
+L Connector:Conn_01x01_Female J-RMONDRS-10
+U 1 1 60E39005
+P 7850 2400
+F 0 "J-RMONDRS-10" V 7800 2450 50  0000 L CNN
+F 1 "M.X2" V 7700 2450 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7900 2360 50  0001 C CNN
+F 3 "~" H 7900 2360 50  0001 C CNN
+	1    7850 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-RMONDRS-10
+U 1 1 60E3900F
+P 7850 2850
+F 0 "C-RMONDRS-10" H 8000 2900 50  0000 L CNN
+F 1 "0.1uf" H 8000 2850 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7888 2700 50  0001 C CNN
+F 3 "~" H 7850 2850 50  0001 C CNN
+	1    7850 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 2700 7850 2600
+Wire Wire Line
+	7750 3100 7850 3100
+Connection ~ 7850 3100
+Wire Wire Line
+	6550 3100 7050 3100
+Wire Wire Line
+	7050 3100 7050 3000
+$Comp
+L Device:R R-RMONDRS-17
+U 1 1 60EC6E62
+P 7050 2850
+F 0 "R-RMONDRS-17" H 6950 2850 50  0000 R CNN
+F 1 "220K" H 6950 2950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6980 2850 50  0001 C CNN
+F 3 "~" H 7050 2850 50  0001 C CNN
+	1    7050 2850
+	1    0    0    1   
+$EndComp
+Text Label 7050 2500 2    50   ~ 0
++300V
+Wire Wire Line
+	7050 2500 7050 2700
+$Comp
+L Device:R_POT RV-CRTCCT3-?
+U 1 1 60F556E4
+P 7050 3500
+AR Path="/5F830654/60F556E4" Ref="RV-CRTCCT3-?"  Part="1" 
+AR Path="/607AC010/60F556E4" Ref="RV-CRTCCT3-4"  Part="1" 
+F 0 "RV-CRTCCT3-4" H 6950 3550 50  0000 R CNN
+F 1 "250K" H 6950 3500 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical_HandSoldering" H 7050 3500 50  0001 C CNN
+F 3 "~" H 7050 3500 50  0001 C CNN
+	1    7050 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3350 7050 3100
+Connection ~ 7050 3100
+NoConn ~ 7050 3650
+Wire Wire Line
+	7450 3100 7350 3100
+Wire Wire Line
+	7350 3100 7350 3500
+Wire Wire Line
+	7200 3500 7350 3500
+Wire Wire Line
+	7350 3500 7350 3750
+Wire Wire Line
+	7350 3750 7050 3750
+Wire Wire Line
+	7050 3750 7050 3800
+Connection ~ 7350 3500
+$Comp
+L Device:R R-RMONDRS-18
+U 1 1 61081B36
+P 7050 3950
+F 0 "R-RMONDRS-18" H 7150 4000 50  0000 L CNN
+F 1 "560K" H 7150 3950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6980 3950 50  0001 C CNN
+F 3 "~" H 7050 3950 50  0001 C CNN
+	1    7050 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4100 7050 4200
+Text Label 7050 4200 0    50   ~ 0
+-150V
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-RMONDRS-14
+U 1 1 610BBA4D
+P 9850 4950
+F 0 "J-RMONDRS-14" V 9850 5250 50  0000 L CNN
+F 1 "Conn_02x06_Odd_Even" V 9900 5250 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 9850 4950 50  0001 C CNN
+F 3 "~" H 9850 4950 50  0001 C CNN
+	1    9850 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 4750 9550 4650
+Wire Wire Line
+	9650 4750 9650 4400
+Text Label 9550 4650 1    50   ~ 0
+R.X1
+Text Label 9650 4400 1    50   ~ 0
+R.Y1
+Wire Wire Line
+	9750 4750 9750 4650
+Text Label 9750 4650 1    50   ~ 0
+GND
+NoConn ~ 9850 4750
+Wire Wire Line
+	9950 4750 9950 4650
+Text Label 9950 4650 1    50   ~ 0
+R.EHT
+Wire Wire Line
+	10050 4750 10050 4400
+Text Label 10050 4400 1    50   ~ 0
+HTR
+Wire Wire Line
+	9550 5250 9550 5350
+Wire Wire Line
+	9650 5250 9650 5600
+Text Label 9550 5350 3    50   ~ 0
+R.X2
+Text Label 9650 5600 3    50   ~ 0
+R.Y2
+Wire Wire Line
+	9750 5250 9750 5350
+Text Label 9750 5350 3    50   ~ 0
++300V
+Wire Wire Line
+	9950 5250 9950 5350
+Text Label 9950 5350 3    50   ~ 0
+R.GRID
+Wire Wire Line
+	10050 5250 10050 5600
+Text Label 10050 5600 3    50   ~ 0
+HTR
+NoConn ~ 9850 5250
+Text Notes 10300 5500 0    50   ~ 0
+Jones Plug\n(Viewed from front)
+$Comp
+L local:Transformer_1P_4S T-RMONDRS-1
+U 1 1 6120B3F9
+P 2000 5150
+F 0 "T-RMONDRS-1" H 2000 6100 50  0000 C CNN
+F 1 "Transformer_1P_4S" H 2000 6000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Horizontal" H 2000 5350 50  0001 C CNN
+F 3 "~" H 2000 5350 50  0001 C CNN
+	1    2000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4950 1400 4950
+$Comp
+L power:AC #PWR0101
+U 1 1 61243AB5
+P 1400 4950
+F 0 "#PWR0101" H 1400 4850 50  0001 C CNN
+F 1 "AC" V 1400 5200 50  0000 L CNN
+F 2 "" H 1400 4950 50  0001 C CNN
+F 3 "" H 1400 4950 50  0001 C CNN
+	1    1400 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:AC #PWR0102
+U 1 1 6126061C
+P 1400 5350
+F 0 "#PWR0102" H 1400 5250 50  0001 C CNN
+F 1 "AC" V 1400 5600 50  0000 L CNN
+F 2 "" H 1400 5350 50  0001 C CNN
+F 3 "" H 1400 5350 50  0001 C CNN
+	1    1400 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 5350 1550 5350
+Text Notes 1400 5150 2    50   ~ 0
+240v
+Text Notes 2400 4550 0    50   ~ 0
+4v for CRT
+Text Notes 2400 4950 0    50   ~ 0
+6.3v for V1,2,3,4&7
+Text Notes 2350 5350 0    50   ~ 0
+6.3v for V5&6
+Wire Wire Line
+	4350 7400 5000 7400
+Wire Wire Line
+	4550 7650 5200 7650
+$Comp
+L NEWValves:CV173 V-RMONDRS-7
+U 2 1 612EA408
+P 5100 7000
+F 0 "V-RMONDRS-7" H 5125 7575 50  0000 C CNN
+F 1 "CV173" H 5125 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6100 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5100 7000 50  0001 C CNN
+	2    5100 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 7650 5200 7350
+Wire Wire Line
+	5000 7350 5000 7400
+Connection ~ 4350 7400
+Connection ~ 4550 7650
+Text Notes 950  4750 0    50   ~ 0
+Aux. Htrs. Supply
+$EndSCHEMATC

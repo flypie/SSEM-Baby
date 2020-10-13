@@ -1,0 +1,2267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 30 32
+Title "Instruction Gate & Y Shift Position 4.1"
+Date "2020-10-08"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-PREPULSE-1
+U 2 1 60773F40
+P 1250 10500
+F 0 "V-PREPULSE-1" H 1250 11075 50  0000 C CNN
+F 1 "VR91" H 1250 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2250 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 1250 10500 50  0001 C CNN
+	2    1250 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-8
+U 2 1 5F6C01D9
+P 5600 9050
+F 0 "D-PREPULSE-8" H 5600 9350 50  0000 C CNN
+F 1 "EA50" H 5600 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6200 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5600 9050 50  0001 C CNN
+	2    5600 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 10900 1150 10900
+Wire Wire Line
+	1000 11150 1350 11150
+Wire Wire Line
+	1150 10850 1150 10900
+Connection ~ 1150 10900
+Wire Wire Line
+	1350 10850 1350 11150
+Connection ~ 1350 11150
+Wire Wire Line
+	6925 10425 6725 10425
+Wire Wire Line
+	6925 10325 6725 10325
+$Comp
+L power:PWR_FLAG #FLG0156
+U 1 1 60773F6E
+P 6725 10425
+F 0 "#FLG0156" H 6725 10500 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 10625 50  0000 C CNN
+F 2 "" H 6725 10425 50  0001 C CNN
+F 3 "~" H 6725 10425 50  0001 C CNN
+	1    6725 10425
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0157
+U 1 1 631D14DD
+P 6725 10325
+F 0 "#FLG0157" H 6725 10400 50  0001 C CNN
+F 1 "PWR_FLAG" H 6750 10525 50  0000 C CNN
+F 2 "" H 6725 10325 50  0001 C CNN
+F 3 "~" H 6725 10325 50  0001 C CNN
+	1    6725 10325
+	-1   0    0    1   
+$EndComp
+Connection ~ 6725 10325
+Wire Wire Line
+	6725 10325 6425 10325
+Wire Wire Line
+	6925 10525 6425 10525
+Wire Wire Line
+	6925 10625 6425 10625
+Wire Wire Line
+	6925 10825 6425 10825
+$Comp
+L Connector_Generic:Conn_01x08 J-PREPULSE-2
+U 1 1 60773F7A
+P 7125 10625
+F 0 "J-PREPULSE-2" H 7250 10625 50  0000 L CNN
+F 1 "HIGH Voltage." H 7250 10525 50  0000 L CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770970-x_2x04_P4.14mm_Horizontal" H 7125 10625 50  0001 C CNN
+F 3 "~" H 7125 10625 50  0001 C CNN
+	1    7125 10625
+	1    0    0    -1  
+$EndComp
+Connection ~ 6725 10425
+Wire Wire Line
+	6725 10425 6425 10425
+NoConn ~ 6925 10925
+Text Label 6425 10325 2    50   ~ 0
+Heater-GND
+Text Label 6425 10425 2    50   ~ 0
+Heater-6.3V
+Text Label 6425 10525 2    50   ~ 0
++200V
+Text Label 6425 10625 2    50   ~ 0
++300V
+Text Label 6425 10725 2    50   ~ 0
+-150V
+Text Label 6425 10825 2    50   ~ 0
++50V
+Text Label 1000 10900 2    50   ~ 0
+Heater-6.3V
+Text Label 1000 11150 2    50   ~ 0
+Heater-GND
+Text Label 6425 11025 2    50   ~ 0
+GND
+Wire Wire Line
+	6425 11025 6925 11025
+$Comp
+L Device:C C-PREPULSE-6
+U 1 1 60773F75
+P 11400 10500
+F 0 "C-PREPULSE-6" H 11550 10550 50  0000 L CNN
+F 1 "0.5" H 11550 10500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11438 10350 50  0001 C CNN
+F 3 "~" H 11400 10500 50  0001 C CNN
+	1    11400 10500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C-PREPULSE--A-1
+U 1 1 60773F4D
+P 8700 10500
+F 0 "C-PREPULSE--A-1" H 8575 10575 50  0000 R CNN
+F 1 "0.5" H 8575 10475 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8738 10350 50  0001 C CNN
+F 3 "~" H 8700 10500 50  0001 C CNN
+	1    8700 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-PREPULSE-3
+U 1 1 60773F67
+P 9550 10500
+F 0 "C-PREPULSE-3" H 9400 10550 50  0000 R CNN
+F 1 "0.5" H 9400 10500 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9588 10350 50  0001 C CNN
+F 3 "~" H 9550 10500 50  0001 C CNN
+	1    9550 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-3
+U 2 1 60773F52
+P 2500 9050
+F 0 "D-PREPULSE-3" H 2500 9350 50  0000 C CNN
+F 1 "EA50" H 2500 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3100 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2500 9050 50  0001 C CNN
+	2    2500 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-2
+U 2 1 60773F56
+P 1900 9050
+F 0 "D-PREPULSE-2" H 1900 9350 50  0000 C CNN
+F 1 "EA50" H 1900 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2500 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1900 9050 50  0001 C CNN
+	2    1900 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-1
+U 2 1 60773F50
+P 1250 9050
+F 0 "D-PREPULSE-1" H 1275 9350 50  0000 C CNN
+F 1 "EA50" H 1275 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1850 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1250 9050 50  0001 C CNN
+	2    1250 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-PREPULSE-3
+U 2 1 60773F49
+P 2550 10500
+F 0 "V-PREPULSE-3" H 2575 11075 50  0000 C CNN
+F 1 "VR91" H 2575 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3550 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 2550 10500 50  0001 C CNN
+	2    2550 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-4
+U 2 1 60773F73
+P 3100 9050
+F 0 "D-PREPULSE-4" H 3100 9350 50  0000 C CNN
+F 1 "EA50" H 3100 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3700 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3100 9050 50  0001 C CNN
+	2    3100 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-7
+U 2 1 60773F68
+P 4950 9050
+F 0 "D-PREPULSE-7" H 4950 9350 50  0000 C CNN
+F 1 "EA50" H 4950 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5550 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4950 9050 50  0001 C CNN
+	2    4950 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-6
+U 2 1 60DF2258
+P 4350 9050
+F 0 "D-PREPULSE-6" H 4350 9350 50  0000 C CNN
+F 1 "EA50" H 4350 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4950 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4350 9050 50  0001 C CNN
+	2    4350 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-5
+U 2 1 60773F74
+P 3700 9050
+F 0 "D-PREPULSE-5" H 3725 9350 50  0000 C CNN
+F 1 "EA50" H 3725 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4300 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3700 9050 50  0001 C CNN
+	2    3700 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-PREPULSE-2
+U 2 1 60773F47
+P 1900 10500
+F 0 "V-PREPULSE-2" H 1900 11075 50  0000 C CNN
+F 1 "VR91" H 1900 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2900 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1900 10500 50  0001 C CNN
+	2    1900 10500
+	1    0    0    -1  
+$EndComp
+Text Label 11400 10750 3    50   ~ 0
+GND
+Text Label 8700 10750 3    50   ~ 0
+GND
+Text Label 9550 10750 3    50   ~ 0
+GND
+Wire Wire Line
+	10450 10650 10450 10750
+Text Label 10450 10750 3    50   ~ 0
+GND
+Wire Wire Line
+	6425 10725 6925 10725
+Text Label 8700 10300 1    50   ~ 0
++300V
+Text Label 9550 10250 1    50   ~ 0
++200V
+Text Label 11400 10250 1    50   ~ 0
++50V
+$Comp
+L NEWValves:EA50 D-PREPULSE-1
+U 1 1 631D14DE
+P 1600 3400
+F 0 "D-PREPULSE-1" V 1200 3300 50  0000 C CNN
+F 1 "EA50" V 1300 3300 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2200 3200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1600 3400 50  0001 C CNN
+	1    1600 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 11150 2000 11150
+Wire Wire Line
+	1150 10900 1800 10900
+Wire Wire Line
+	2000 11150 2000 10850
+Connection ~ 2000 11150
+Wire Wire Line
+	1800 10850 1800 10900
+Connection ~ 1800 10900
+Wire Wire Line
+	2000 11150 2650 11150
+Wire Wire Line
+	1800 10900 2450 10900
+Wire Wire Line
+	2650 11150 2650 10850
+Connection ~ 2650 11150
+Wire Wire Line
+	2450 10850 2450 10900
+Connection ~ 2450 10900
+$Comp
+L NEWValves:VR91 V-PREPULSE-5
+U 2 1 60773F6A
+P 3850 10500
+F 0 "V-PREPULSE-5" H 3875 11075 50  0000 C CNN
+F 1 "VR91" H 3875 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4850 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3850 10500 50  0001 C CNN
+	2    3850 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 11150 3950 10850
+Wire Wire Line
+	3750 10850 3750 10900
+$Comp
+L NEWValves:VR91 V-PREPULSE-4
+U 2 1 60773F6C
+P 3200 10500
+F 0 "V-PREPULSE-4" H 3225 11075 50  0000 C CNN
+F 1 "VR91" H 3225 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4200 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3200 10500 50  0001 C CNN
+	2    3200 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 11150 3300 10850
+Wire Wire Line
+	5050 9800 5700 9800
+Wire Wire Line
+	3800 9800 4450 9800
+Connection ~ 5050 9800
+Connection ~ 3800 9800
+Wire Wire Line
+	4850 9550 5500 9550
+Connection ~ 4850 9550
+Wire Wire Line
+	3600 9550 4250 9550
+Connection ~ 3600 9550
+Wire Wire Line
+	2400 9550 3000 9550
+Wire Wire Line
+	2600 9800 3200 9800
+Connection ~ 2600 9800
+Connection ~ 2400 9550
+Wire Wire Line
+	1150 9550 1800 9550
+Connection ~ 1150 9550
+Connection ~ 1350 9800
+Text Label 1000 9800 2    50   ~ 0
+Heater-GND
+Text Label 1000 9550 2    50   ~ 0
+Heater-6.3V
+Wire Wire Line
+	1350 9500 1350 9800
+Wire Wire Line
+	1150 9500 1150 9550
+Wire Wire Line
+	1000 9800 1350 9800
+Wire Wire Line
+	1000 9550 1150 9550
+Wire Wire Line
+	2400 9500 2400 9550
+Wire Wire Line
+	2600 9500 2600 9800
+Wire Wire Line
+	3600 9500 3600 9550
+Wire Wire Line
+	3800 9500 3800 9800
+Wire Wire Line
+	4850 9500 4850 9550
+Wire Wire Line
+	5050 9500 5050 9800
+Wire Wire Line
+	5500 9500 5500 9550
+Wire Wire Line
+	5700 9500 5700 9800
+Wire Wire Line
+	1350 9800 2000 9800
+Wire Wire Line
+	2000 9500 2000 9800
+Connection ~ 2000 9800
+Wire Wire Line
+	2000 9800 2600 9800
+Wire Wire Line
+	3200 9500 3200 9800
+Connection ~ 3200 9800
+Wire Wire Line
+	3200 9800 3800 9800
+Wire Wire Line
+	4450 9500 4450 9800
+Connection ~ 4450 9800
+Wire Wire Line
+	4450 9800 5050 9800
+Wire Wire Line
+	4250 9500 4250 9550
+Connection ~ 4250 9550
+Wire Wire Line
+	4250 9550 4850 9550
+Wire Wire Line
+	3000 9500 3000 9550
+Connection ~ 3000 9550
+Wire Wire Line
+	3000 9550 3600 9550
+Wire Wire Line
+	1800 9500 1800 9550
+Connection ~ 1800 9550
+Wire Wire Line
+	1800 9550 2400 9550
+Wire Wire Line
+	11400 10350 11400 10250
+Wire Wire Line
+	11400 10650 11400 10750
+Wire Wire Line
+	9550 10750 9550 10650
+Wire Wire Line
+	8700 10750 8700 10650
+Wire Wire Line
+	9550 10350 9550 10250
+Wire Wire Line
+	8700 10350 8700 10250
+Wire Wire Line
+	10450 10250 10450 10350
+Text Label 10450 10250 1    50   ~ 0
+-150V
+$Comp
+L Device:C C-PREPULSE-5
+U 1 1 60773F78
+P 10450 10500
+F 0 "C-PREPULSE-5" H 10600 10450 50  0000 L CNN
+F 1 "0.5" H 10600 10500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10488 10350 50  0001 C CNN
+F 3 "~" H 10450 10500 50  0001 C CNN
+	1    10450 10500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-PREPULSE-2
+U 1 1 5F5FB235
+P 3100 1850
+F 0 "R-PREPULSE-2" V 3350 1850 50  0000 C CNN
+F 1 "470" V 3250 1850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3030 1850 50  0001 C CNN
+F 3 "~" H 3100 1850 50  0001 C CNN
+	1    3100 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-PREPULSE-1
+U 1 1 60773F43
+P 3600 2000
+F 0 "V-PREPULSE-1" H 3650 1600 50  0000 C CNN
+F 1 "VR91" H 3650 1500 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4600 2250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3600 2000 50  0001 C CNN
+	1    3600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 1850 3250 1850
+$Comp
+L NEWValves:VR91 V-PREPULSE-2
+U 1 1 60773F45
+P 5750 2250
+F 0 "V-PREPULSE-2" H 5800 1850 50  0000 C CNN
+F 1 "VR91" H 5800 1750 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6750 2500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5750 2250 50  0001 C CNN
+	1    5750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-1
+U 1 1 5F70B00B
+P 1550 1300
+F 0 "J-PREPULSE-1" H 1600 1225 50  0000 L CNN
+F 1 "C0" H 1600 1325 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1600 1260 50  0001 C CNN
+F 3 "~" H 1600 1260 50  0001 C CNN
+	1    1550 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-PREPULSE-4
+U 1 1 5FE6F8C4
+P 14200 2350
+F 0 "V-PREPULSE-4" H 14250 1950 50  0000 C CNN
+F 1 "VR91" H 14250 1850 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 15200 2600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 14200 2350 50  0001 C CNN
+	1    14200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-PREPULSE-12
+U 1 1 60EACEDB
+P 6800 2900
+F 0 "R-PREPULSE-12" H 6700 2950 50  0000 R CNN
+F 1 "220K" H 6700 2900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6730 2900 50  0001 C CNN
+F 3 "~" H 6800 2900 50  0001 C CNN
+	1    6800 2900
+	-1   0    0    -1  
+$EndComp
+Text Label 6800 3150 0    50   ~ 0
+-150V
+Wire Wire Line
+	6800 2100 6800 2200
+$Comp
+L NEWValves:EA50 D-PREPULSE-5
+U 1 1 61EF1491
+P 6400 2550
+F 0 "D-PREPULSE-5" H 6650 2500 50  0000 L CNN
+F 1 "EA50" H 6650 2400 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 7000 2350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6400 2550 50  0001 C CNN
+	1    6400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-9
+U 1 1 61F3CDF1
+P 13400 2750
+F 0 "D-PREPULSE-9" H 13150 2700 50  0000 R CNN
+F 1 "EA50" H 13150 2600 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 14000 2550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 13400 2750 50  0001 C CNN
+	1    13400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1300 1950 1300
+$Comp
+L NEWValves:EA50 D-PREPULSE-10
+U 2 1 62F64A20
+P 6850 9050
+F 0 "D-PREPULSE-10" H 6850 9350 50  0000 C CNN
+F 1 "EA50" H 6850 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7450 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6850 9050 50  0001 C CNN
+	2    6850 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-9
+U 2 1 62F64A2A
+P 6200 9050
+F 0 "D-PREPULSE-9" H 6200 9350 50  0000 C CNN
+F 1 "EA50" H 6200 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6800 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6200 9050 50  0001 C CNN
+	2    6200 9050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6300 9800
+Wire Wire Line
+	6100 9550 6750 9550
+Connection ~ 6100 9550
+Wire Wire Line
+	6100 9500 6100 9550
+Wire Wire Line
+	6300 9500 6300 9800
+Wire Wire Line
+	6750 9500 6750 9550
+Wire Wire Line
+	6950 9500 6950 9800
+Wire Wire Line
+	5700 9800 6300 9800
+Wire Wire Line
+	5500 9550 6100 9550
+Connection ~ 5500 9550
+Connection ~ 5700 9800
+Wire Wire Line
+	2650 11150 3300 11150
+Connection ~ 3300 11150
+Wire Wire Line
+	3300 11150 3950 11150
+Wire Wire Line
+	2450 10900 3100 10900
+Wire Wire Line
+	3100 10850 3100 10900
+Connection ~ 3100 10900
+Wire Wire Line
+	3100 10900 3750 10900
+Connection ~ 3750 10900
+Wire Wire Line
+	3750 10900 4400 10900
+Connection ~ 3950 11150
+Wire Wire Line
+	3950 11150 4600 11150
+$Comp
+L NEWValves:VR91 V-PREPULSE-6
+U 2 1 630794F1
+P 4500 10500
+F 0 "V-PREPULSE-6" H 4525 11075 50  0000 C CNN
+F 1 "VR91" H 4525 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5500 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4500 10500 50  0001 C CNN
+	2    4500 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 11150 4600 10850
+Wire Wire Line
+	4400 10850 4400 10900
+Connection ~ 2350 1300
+Wire Wire Line
+	2900 1300 2350 1300
+Wire Wire Line
+	2350 1300 2250 1300
+Text Label 2350 1800 0    50   ~ 0
++150V
+$Comp
+L Device:C C-PREPULSE-1
+U 1 1 5F69DDC5
+P 2100 1300
+F 0 "C-PREPULSE-1" V 2300 1300 50  0000 C CNN
+F 1 "220p" V 2400 1300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2138 1150 50  0001 C CNN
+F 3 "~" H 2100 1300 50  0001 C CNN
+	1    2100 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 1400 2350 1300
+Wire Wire Line
+	2350 1800 2350 1700
+$Comp
+L Device:R R-PREPULSE-1
+U 1 1 60773F44
+P 2350 1550
+F 0 "R-PREPULSE-1" H 2450 1500 50  0000 L CNN
+F 1 "51K" H 2450 1550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2280 1550 50  0001 C CNN
+F 3 "~" H 2350 1550 50  0001 C CNN
+	1    2350 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1200 2350 1300
+Wire Wire Line
+	2350 800  2350 900 
+$Comp
+L Device:R R-PREPULSE-8
+U 1 1 5F96B4BA
+P 2350 1050
+F 0 "R-PREPULSE-8" H 2450 1000 50  0000 L CNN
+F 1 "47K" H 2450 1050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2280 1050 50  0001 C CNN
+F 3 "~" H 2350 1050 50  0001 C CNN
+	1    2350 1050
+	-1   0    0    1   
+$EndComp
+Text Label 2350 800  2    50   ~ 0
+GND
+Wire Wire Line
+	2950 1850 2900 1850
+Wire Wire Line
+	2900 1850 2900 1300
+$Comp
+L Device:R R-PREPULSE-11
+U 1 1 5FAF816B
+P 3100 2050
+F 0 "R-PREPULSE-11" V 3350 2050 50  0000 C CNN
+F 1 "470" V 3250 2050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3030 2050 50  0001 C CNN
+F 3 "~" H 3100 2050 50  0001 C CNN
+	1    3100 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 2050 3250 2050
+Wire Wire Line
+	2950 2050 2900 2050
+Wire Wire Line
+	3300 2250 3300 2150
+Text Label 3300 2250 0    50   ~ 0
+GND
+$Comp
+L Device:R R-PREPULSE-15
+U 1 1 5FB3D244
+P 3600 850
+F 0 "R-PREPULSE-15" H 3500 775 50  0000 R CNN
+F 1 "47K" H 3500 875 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3530 850 50  0001 C CNN
+F 3 "~" H 3600 850 50  0001 C CNN
+	1    3600 850 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 600  3600 700 
+Text Label 3600 600  0    50   ~ 0
++300V
+Wire Wire Line
+	3600 1000 3600 1100
+$Comp
+L Device:C C-PREPULSE-7
+U 1 1 5FB636FC
+P 3350 1100
+F 0 "C-PREPULSE-7" V 3550 1100 50  0000 C CNN
+F 1 "0.1u" V 3650 1100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3388 950 50  0001 C CNN
+F 3 "~" H 3350 1100 50  0001 C CNN
+	1    3350 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-PREPULSE-8
+U 1 1 5FB63F4A
+P 3850 1100
+F 0 "C-PREPULSE-8" V 4050 1100 50  0000 C CNN
+F 1 "47p" V 4150 1100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3888 950 50  0001 C CNN
+F 3 "~" H 3850 1100 50  0001 C CNN
+	1    3850 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 1100 3600 1100
+Connection ~ 3600 1100
+Wire Wire Line
+	3600 1100 3600 1550
+Wire Wire Line
+	3600 1100 3500 1100
+Wire Wire Line
+	3200 1100 3100 1100
+Wire Wire Line
+	4000 1100 4350 1100
+$Comp
+L Device:R R-PREPULSE-10
+U 1 1 5FBE4869
+P 3100 850
+F 0 "R-PREPULSE-10" H 3200 900 50  0000 L CNN
+F 1 "220uf" H 3200 850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3030 850 50  0001 C CNN
+F 3 "~" H 3100 850 50  0001 C CNN
+	1    3100 850 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 600  3100 700 
+Wire Wire Line
+	3100 1000 3100 1100
+$Comp
+L Device:R R-PREPULSE-20
+U 1 1 5FC06834
+P 4350 850
+F 0 "R-PREPULSE-20" H 4250 775 50  0000 R CNN
+F 1 "1M" H 4250 875 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4280 850 50  0001 C CNN
+F 3 "~" H 4350 850 50  0001 C CNN
+	1    4350 850 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 600  4350 700 
+Text Label 4350 600  0    50   ~ 0
++300V
+Wire Wire Line
+	4350 1000 4350 1100
+Text Label 3100 600  0    50   ~ 0
+GND
+NoConn ~ 3900 2200
+NoConn ~ 3900 2100
+$Comp
+L Device:R R-PREPULSE-18
+U 1 1 5FCD0C58
+P 4050 1700
+F 0 "R-PREPULSE-18" H 3950 1625 50  0000 R CNN
+F 1 "15K 2W" H 3950 1725 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3980 1700 50  0001 C CNN
+F 3 "~" H 4050 1700 50  0001 C CNN
+	1    4050 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1450 4050 1550
+Text Label 4050 1450 0    50   ~ 0
++300V
+$Comp
+L Device:C C-PREPULSE-10
+U 1 1 5FCF44DD
+P 4050 2200
+F 0 "C-PREPULSE-10" H 4200 2250 50  0000 L CNN
+F 1 "0.1u" H 4200 2200 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4088 2050 50  0001 C CNN
+F 3 "~" H 4050 2200 50  0001 C CNN
+	1    4050 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2350 4050 2450
+Wire Wire Line
+	3950 1950 4050 1950
+Wire Wire Line
+	4050 1850 4050 1950
+Connection ~ 4050 1950
+Wire Wire Line
+	4050 1950 4050 2050
+Text Label 4050 2450 0    50   ~ 0
+GND
+$Comp
+L Device:R R-PREPULSE-9
+U 1 1 5FD4102B
+P 2900 2300
+F 0 "R-PREPULSE-9" H 2800 2350 50  0000 R CNN
+F 1 "51K" H 2800 2300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2830 2300 50  0001 C CNN
+F 3 "~" H 2900 2300 50  0001 C CNN
+	1    2900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2600 3500 2600
+Wire Wire Line
+	3500 2600 3500 2700
+$Comp
+L Device:R R-PREPULSE-13
+U 1 1 5FD65C38
+P 3150 2700
+F 0 "R-PREPULSE-13" V 2900 2700 50  0000 C CNN
+F 1 "3K9 6W" V 3000 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3080 2700 50  0001 C CNN
+F 3 "~" H 3150 2700 50  0001 C CNN
+	1    3150 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-PREPULSE-17
+U 1 1 5FD66659
+P 3850 2700
+F 0 "R-PREPULSE-17" V 3600 2700 50  0000 C CNN
+F 1 "750" V 3700 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3780 2700 50  0001 C CNN
+F 3 "~" H 3850 2700 50  0001 C CNN
+	1    3850 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 2700 3500 2700
+Connection ~ 3500 2700
+Wire Wire Line
+	3500 2700 3300 2700
+$Comp
+L Device:C C-PREPULSE-9
+U 1 1 5FD8D05D
+P 3850 3100
+F 0 "C-PREPULSE-9" V 4050 3100 50  0000 C CNN
+F 1 "0.1" V 4150 3100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3888 2950 50  0001 C CNN
+F 3 "~" H 3850 3100 50  0001 C CNN
+	1    3850 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2700 3500 3100
+Wire Wire Line
+	3500 3100 3700 3100
+Wire Wire Line
+	4000 3100 4150 3100
+Wire Wire Line
+	4150 3100 4150 2700
+Wire Wire Line
+	4150 2700 4000 2700
+Wire Wire Line
+	4150 2700 4350 2700
+Wire Wire Line
+	4350 2700 4350 2800
+Connection ~ 4150 2700
+Text Label 4350 2800 0    50   ~ 0
+GND
+Wire Wire Line
+	3000 2700 2800 2700
+Wire Wire Line
+	2800 2700 2800 3100
+Text Label 2800 3100 0    50   ~ 0
+-150V
+Wire Wire Line
+	2900 2050 2150 2050
+Wire Wire Line
+	2150 2050 2150 2550
+Connection ~ 2900 2050
+$Comp
+L Switch:SW_SPDT SW-PREPULSE-1
+U 1 1 5FE4B587
+P 1600 2250
+F 0 "SW-PREPULSE-1" V 2050 2450 50  0000 R CNN
+F 1 "SW_SPDT" V 1950 2400 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 2250 50  0001 C CNN
+F 3 "~" H 1600 2250 50  0001 C CNN
+	1    1600 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_SPST SW-PREPULSE-2
+U 1 1 5FE4BFB9
+P 2150 3150
+F 0 "SW-PREPULSE-2" V 2100 3050 50  0000 R CNN
+F 1 "SW_SPST" V 2150 3050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2150 3150 50  0001 C CNN
+F 3 "~" H 2150 3150 50  0001 C CNN
+	1    2150 3150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-PREPULSE-6
+U 1 1 5FE4C468
+P 2150 2700
+F 0 "R-PREPULSE-6" H 2050 2625 50  0000 R CNN
+F 1 "100K" H 2050 2725 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2080 2700 50  0001 C CNN
+F 3 "~" H 2150 2700 50  0001 C CNN
+	1    2150 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2850 2150 2950
+Wire Wire Line
+	2150 3350 2150 3450
+Text Label 2150 3450 0    50   ~ 0
+CS.Inhibit
+Wire Wire Line
+	2150 2050 1700 2050
+Connection ~ 2150 2050
+Wire Wire Line
+	1600 2450 1600 2550
+Wire Wire Line
+	1600 2550 1250 2550
+Connection ~ 1600 2550
+Wire Wire Line
+	1600 2550 1600 2900
+$Comp
+L Device:C C-PREPULSE-2
+U 1 1 5FFABB04
+P 1350 3600
+F 0 "C-PREPULSE-2" H 1200 3650 50  0000 R CNN
+F 1 "2800pf" H 1200 3600 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 1388 3450 50  0001 C CNN
+F 3 "~" H 1350 3600 50  0001 C CNN
+	1    1350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3750 1350 3850
+Text Label 1350 3850 1    50   ~ 0
+GND
+$Comp
+L Device:R R-PREPULSE-3
+U 1 1 60773F59
+P 1250 2300
+F 0 "R-PREPULSE-3" H 1350 2350 50  0000 L CNN
+F 1 "1M" H 1350 2300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1180 2300 50  0001 C CNN
+F 3 "~" H 1250 2300 50  0001 C CNN
+	1    1250 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2050 1250 2150
+Text Label 1250 2050 2    50   ~ 0
++300V
+Wire Wire Line
+	1250 2450 1250 2550
+Wire Wire Line
+	1350 2900 1350 3450
+$Comp
+L Device:R R-PREPULSE-4
+U 1 1 600B078E
+P 1250 2700
+F 0 "R-PREPULSE-4" H 1350 2750 50  0000 L CNN
+F 1 "100K" H 1350 2700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1180 2700 50  0001 C CNN
+F 3 "~" H 1250 2700 50  0001 C CNN
+	1    1250 2700
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1250 2550
+Wire Wire Line
+	1250 2850 1250 2950
+Text Label 1250 2950 1    50   ~ 0
+GND
+Wire Wire Line
+	2900 2450 2900 2600
+Wire Wire Line
+	2900 2150 2900 2050
+Wire Wire Line
+	4350 1100 4950 1100
+Wire Wire Line
+	4950 1100 4950 2300
+Connection ~ 4350 1100
+Wire Wire Line
+	1350 2900 1600 2900
+Connection ~ 1600 2900
+$Comp
+L Device:R R-PREPULSE-21
+U 1 1 5F950B0E
+P 5100 2300
+F 0 "R-PREPULSE-21" V 5350 2300 50  0000 C CNN
+F 1 "470" V 5250 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5030 2300 50  0001 C CNN
+F 3 "~" H 5100 2300 50  0001 C CNN
+	1    5100 2300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5250 2300 5450 2300
+Wire Wire Line
+	5450 2400 5450 2500
+Text Label 5450 2500 2    50   ~ 0
+GND
+$Comp
+L Device:R R-PREPULSE-22
+U 1 1 5FA0B233
+P 5750 850
+F 0 "R-PREPULSE-22" H 5850 900 50  0000 L CNN
+F 1 "47K" H 5850 850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5680 850 50  0001 C CNN
+F 3 "~" H 5750 850 50  0001 C CNN
+	1    5750 850 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1000 5750 1350
+$Comp
+L Device:C C-PREPULSE-11
+U 1 1 5FA0B6A0
+P 6000 1350
+F 0 "C-PREPULSE-11" V 5750 1450 50  0000 C CNN
+F 1 "100pf" V 5850 1350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6038 1200 50  0001 C CNN
+F 3 "~" H 6000 1350 50  0001 C CNN
+	1    6000 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5850 1350 5750 1350
+Connection ~ 5750 1350
+Wire Wire Line
+	5750 1350 5750 1600
+$Comp
+L Device:R R-PREPULSE-23
+U 1 1 5FA93668
+P 6000 1600
+F 0 "R-PREPULSE-23" V 6050 1150 50  0000 C CNN
+F 1 "470K" V 5950 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5930 1600 50  0001 C CNN
+F 3 "~" H 6000 1600 50  0001 C CNN
+	1    6000 1600
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5750 1600 5850 1600
+Connection ~ 5750 1600
+Wire Wire Line
+	5750 1600 5750 1800
+Wire Wire Line
+	5450 2100 5400 2100
+Wire Wire Line
+	5400 2100 5400 1750
+Wire Wire Line
+	5400 1750 6300 1750
+Wire Wire Line
+	6300 1750 6300 2100
+$Comp
+L Device:R R-PREPULSE-24
+U 1 1 5FAEF037
+P 6450 2100
+F 0 "R-PREPULSE-24" V 6700 2100 50  0000 C CNN
+F 1 "470" V 6600 2100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6380 2100 50  0001 C CNN
+F 3 "~" H 6450 2100 50  0001 C CNN
+	1    6450 2100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6600 2100 6800 2100
+NoConn ~ 6050 2450
+NoConn ~ 6050 2350
+NoConn ~ 6100 2200
+Wire Wire Line
+	6150 1600 6250 1600
+Wire Wire Line
+	6250 1600 6250 1350
+Wire Wire Line
+	6250 1350 6150 1350
+Wire Wire Line
+	6800 3050 6800 3150
+Wire Wire Line
+	6400 2300 6400 2200
+Wire Wire Line
+	6400 2200 6800 2200
+Connection ~ 6800 2200
+Wire Wire Line
+	6800 2200 6800 2750
+Wire Wire Line
+	6400 3050 6400 3150
+Text Label 6400 3150 2    50   ~ 0
+GND
+Wire Wire Line
+	5750 600  5750 700 
+Text Label 5750 600  0    50   ~ 0
++300V
+$Comp
+L NEWValves:VR91 V-PREPULSE-3
+U 1 1 5FE68D18
+P 8900 2250
+F 0 "V-PREPULSE-3" H 8950 1850 50  0000 C CNN
+F 1 "VR91" H 8950 1750 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9900 2500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 8900 2250 50  0001 C CNN
+	1    8900 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-PREPULSE-26
+U 1 1 5FE69162
+P 7850 2900
+F 0 "R-PREPULSE-26" H 7950 2950 50  0000 L CNN
+F 1 "220K" H 7950 2900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7780 2900 50  0001 C CNN
+F 3 "~" H 7850 2900 50  0001 C CNN
+	1    7850 2900
+	1    0    0    -1  
+$EndComp
+Text Label 7850 3150 2    50   ~ 0
+-150V
+Wire Wire Line
+	7850 2100 7850 2200
+$Comp
+L NEWValves:EA50 D-PREPULSE-6
+U 1 1 5FE6916E
+P 8250 2550
+F 0 "D-PREPULSE-6" H 8500 2500 50  0000 L CNN
+F 1 "EA50" H 8500 2400 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 8850 2350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8250 2550 50  0001 C CNN
+	1    8250 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-PREPULSE-33
+U 1 1 5FE69178
+P 9550 2300
+F 0 "R-PREPULSE-33" V 9800 2300 50  0000 C CNN
+F 1 "470" V 9700 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9480 2300 50  0001 C CNN
+F 3 "~" H 9550 2300 50  0001 C CNN
+	1    9550 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 2300 9200 2300
+Wire Wire Line
+	9200 2400 9200 2500
+Text Label 9200 2500 0    50   ~ 0
+GND
+$Comp
+L Device:R R-PREPULSE-31
+U 1 1 5FE69185
+P 8900 850
+F 0 "R-PREPULSE-31" H 9000 900 50  0000 L CNN
+F 1 "47K 2W" H 9000 850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8830 850 50  0001 C CNN
+F 3 "~" H 8900 850 50  0001 C CNN
+	1    8900 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 1000 8900 1350
+$Comp
+L Device:C C-PREPULSE-12
+U 1 1 5FE69190
+P 8650 1350
+F 0 "C-PREPULSE-12" V 8400 1450 50  0000 C CNN
+F 1 "100pf" V 8500 1350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8688 1200 50  0001 C CNN
+F 3 "~" H 8650 1350 50  0001 C CNN
+	1    8650 1350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8800 1350 8900 1350
+Connection ~ 8900 1350
+Wire Wire Line
+	8900 1350 8900 1600
+$Comp
+L Device:R R-PREPULSE-29
+U 1 1 5FE6919D
+P 8650 1600
+F 0 "R-PREPULSE-29" V 8700 1150 50  0000 C CNN
+F 1 "470K" V 8600 1200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8580 1600 50  0001 C CNN
+F 3 "~" H 8650 1600 50  0001 C CNN
+	1    8650 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 1600 8800 1600
+Connection ~ 8900 1600
+Wire Wire Line
+	8900 1600 8900 1800
+Wire Wire Line
+	9200 2100 9250 2100
+Wire Wire Line
+	9250 2100 9250 1750
+Wire Wire Line
+	9250 1750 8350 1750
+Wire Wire Line
+	8350 1750 8350 2100
+$Comp
+L Device:R R-PREPULSE-27
+U 1 1 5FE691AE
+P 8200 2100
+F 0 "R-PREPULSE-27" V 8450 2100 50  0000 C CNN
+F 1 "470" V 8350 2100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8130 2100 50  0001 C CNN
+F 3 "~" H 8200 2100 50  0001 C CNN
+	1    8200 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8050 2100 7850 2100
+NoConn ~ 8600 2450
+NoConn ~ 8600 2350
+Wire Wire Line
+	8500 1600 8400 1600
+Wire Wire Line
+	8400 1600 8400 1350
+Wire Wire Line
+	8400 1350 8500 1350
+Wire Wire Line
+	7850 3050 7850 3150
+Wire Wire Line
+	8250 2300 8250 2200
+Wire Wire Line
+	8250 2200 7850 2200
+Connection ~ 7850 2200
+Wire Wire Line
+	7850 2200 7850 2750
+Wire Wire Line
+	8250 3050 8250 3150
+Text Label 8250 3150 0    50   ~ 0
+GND
+Wire Wire Line
+	8900 600  8900 700 
+Text Label 8900 600  0    50   ~ 0
++300V
+Wire Wire Line
+	6250 1600 7850 2100
+Connection ~ 6250 1600
+Connection ~ 7850 2100
+Wire Wire Line
+	6800 2100 8400 1350
+Connection ~ 6800 2100
+Connection ~ 8400 1350
+$Comp
+L Device:C C-PREPULSE-13
+U 1 1 5FFF32EA
+P 9950 2300
+F 0 "C-PREPULSE-13" V 10150 2300 50  0000 C CNN
+F 1 "100pf" V 10250 2300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9988 2150 50  0001 C CNN
+F 3 "~" H 9950 2300 50  0001 C CNN
+	1    9950 2300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9800 2300 9750 2300
+Wire Wire Line
+	10100 2300 10200 2300
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-9
+U 1 1 600610AA
+P 10400 2300
+F 0 "J-PREPULSE-9" H 10450 2225 50  0000 L CNN
+F 1 "C0" H 10450 2325 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 10450 2260 50  0001 C CNN
+F 3 "~" H 10450 2260 50  0001 C CNN
+	1    10400 2300
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R-PREPULSE-34
+U 1 1 6006636E
+P 9750 2050
+F 0 "R-PREPULSE-34" H 9850 2100 50  0000 L CNN
+F 1 "1M" H 9850 2050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9680 2050 50  0001 C CNN
+F 3 "~" H 9750 2050 50  0001 C CNN
+	1    9750 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2200 9750 2300
+Wire Wire Line
+	9750 1800 9750 1900
+Text Label 9750 1800 0    50   ~ 0
++300V
+Connection ~ 9750 2300
+Wire Wire Line
+	9750 2300 9700 2300
+Wire Wire Line
+	8550 2200 8550 1700
+Wire Wire Line
+	8550 1700 9800 1700
+$Comp
+L Device:R R-PREPULSE-35
+U 1 1 601EA3D0
+P 9800 850
+F 0 "R-PREPULSE-35" H 9900 900 50  0000 L CNN
+F 1 "12K 2W" H 9900 850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9730 850 50  0001 C CNN
+F 3 "~" H 9800 850 50  0001 C CNN
+	1    9800 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 600  9800 700 
+Text Label 9800 600  0    50   ~ 0
++300V
+$Comp
+L Device:C C-PREPULSE-14
+U 1 1 6026048E
+P 10050 1350
+F 0 "C-PREPULSE-14" V 9800 1450 50  0000 C CNN
+F 1 "100pf" V 9900 1350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10088 1200 50  0001 C CNN
+F 3 "~" H 10050 1350 50  0001 C CNN
+	1    10050 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10300 1600 10300 1350
+Wire Wire Line
+	10300 1350 10200 1350
+Text Label 10300 1600 0    50   ~ 0
+GND
+Wire Wire Line
+	9800 1000 9800 1350
+Wire Wire Line
+	9900 1350 9800 1350
+Connection ~ 9800 1350
+Wire Wire Line
+	9800 1350 9800 1700
+Wire Wire Line
+	6800 2200 7300 2200
+Wire Wire Line
+	7300 2200 7300 3300
+$Comp
+L NEWValves:EA50 D-PREPULSE-7
+U 1 1 603F6D7C
+P 11700 1800
+F 0 "D-PREPULSE-7" H 11950 1750 50  0000 L CNN
+F 1 "EA50" H 11950 1650 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 12300 1600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11700 1800 50  0001 C CNN
+	1    11700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-PREPULSE-36
+U 1 1 603F6D86
+P 12250 2650
+F 0 "R-PREPULSE-36" H 12150 2575 50  0000 R CNN
+F 1 "820K" H 12150 2675 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12180 2650 50  0001 C CNN
+F 3 "~" H 12250 2650 50  0001 C CNN
+	1    12250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-8
+U 1 1 603F6D91
+P 12850 1800
+F 0 "D-PREPULSE-8" H 12600 1750 50  0000 R CNN
+F 1 "EA50" H 12600 1650 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 13450 1600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 12850 1800 50  0001 C CNN
+	1    12850 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-PREPULSE-37
+U 1 1 603F6D9B
+P 13650 2400
+F 0 "R-PREPULSE-37" V 13900 2400 50  0000 C CNN
+F 1 "470" V 13800 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13580 2400 50  0001 C CNN
+F 3 "~" H 13650 2400 50  0001 C CNN
+	1    13650 2400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	12250 2400 12250 2500
+Wire Wire Line
+	13400 3250 13400 3350
+Text Label 13400 3350 2    50   ~ 0
+GND
+Text Label 12250 2900 2    50   ~ 0
+-150V
+Wire Wire Line
+	11700 1450 11700 1550
+Wire Wire Line
+	11700 2300 11700 2400
+Wire Wire Line
+	11700 2400 12250 2400
+Wire Wire Line
+	12850 2300 12850 2400
+Connection ~ 12850 2400
+Wire Wire Line
+	12850 1550 12850 1450
+Wire Wire Line
+	12850 1450 14000 1450
+Wire Wire Line
+	14000 1450 14000 1400
+Connection ~ 12250 2400
+Wire Wire Line
+	12250 2400 12850 2400
+Wire Wire Line
+	12250 2800 12250 2900
+Wire Wire Line
+	12850 2400 13400 2400
+Wire Wire Line
+	13400 2500 13400 2400
+Connection ~ 13400 2400
+Wire Wire Line
+	13400 2400 13500 2400
+Wire Wire Line
+	13800 2400 13900 2400
+NoConn ~ 14500 2550
+NoConn ~ 14500 2450
+Wire Wire Line
+	14200 1900 14200 1800
+Wire Wire Line
+	14200 1800 13900 1800
+Wire Wire Line
+	13900 1800 13900 2200
+Wire Wire Line
+	14550 2300 14550 1800
+Wire Wire Line
+	14550 1800 14200 1800
+Connection ~ 14200 1800
+$Comp
+L Device:R R-PREPULSE-38
+U 1 1 60C87681
+P 13900 3100
+F 0 "R-PREPULSE-38" H 14000 3150 50  0000 L CNN
+F 1 "3.3k6W" H 14000 3100 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13830 3100 50  0001 C CNN
+F 3 "~" H 13900 3100 50  0001 C CNN
+	1    13900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 2500 13900 2900
+Text Label 13900 3350 2    50   ~ 0
+-150V
+Wire Wire Line
+	13900 3250 13900 3350
+Text Label 14200 1700 2    50   ~ 0
++200V
+Wire Wire Line
+	14200 1800 14200 1700
+$Comp
+L Device:R R-PREPULSE-40
+U 1 1 60D8C62C
+P 14000 1250
+F 0 "R-PREPULSE-40" H 13900 1175 50  0000 R CNN
+F 1 "22K" H 13900 1275 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13930 1250 50  0001 C CNN
+F 3 "~" H 14000 1250 50  0001 C CNN
+	1    14000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-PREPULSE-39
+U 1 1 60DCA55C
+P 14000 750
+F 0 "R-PREPULSE-39" H 13900 675 50  0000 R CNN
+F 1 "470K" H 13900 775 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13930 750 50  0001 C CNN
+F 3 "~" H 14000 750 50  0001 C CNN
+	1    14000 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 900  14000 1000
+Wire Wire Line
+	14100 1000 14000 1000
+Connection ~ 14000 1000
+Wire Wire Line
+	14000 1000 14000 1100
+$Comp
+L Device:C C-PREPULSE-15
+U 1 1 60E466AA
+P 14250 1000
+F 0 "C-PREPULSE-15" V 14000 1100 50  0000 C CNN
+F 1 "220pf" V 14100 1000 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 14288 850 50  0001 C CNN
+F 3 "~" H 14250 1000 50  0001 C CNN
+	1    14250 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14450 1000 14400 1000
+Wire Wire Line
+	14000 500  14000 600 
+Text Label 14000 500  0    50   ~ 0
++300V
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-10
+U 1 1 60EC4F17
+P 14650 1000
+F 0 "J-PREPULSE-10" H 14700 925 50  0000 L CNN
+F 1 "HA" H 14700 1025 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 14700 960 50  0001 C CNN
+F 3 "~" H 14700 960 50  0001 C CNN
+	1    14650 1000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13900 2900 14650 2900
+Connection ~ 13900 2900
+Wire Wire Line
+	13900 2900 13900 2950
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-11
+U 1 1 60F05C03
+P 14850 2900
+F 0 "J-PREPULSE-11" H 14900 2825 50  0000 L CNN
+F 1 "Completion Signal (Prepulse)" H 14900 2925 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 14900 2860 50  0001 C CNN
+F 3 "~" H 14900 2860 50  0001 C CNN
+	1    14850 2900
+	1    0    0    1   
+$EndComp
+Connection ~ 14650 2900
+Wire Wire Line
+	11700 1450 11100 1450
+Wire Wire Line
+	11100 1450 11100 3300
+Wire Wire Line
+	7300 3300 11100 3300
+Wire Wire Line
+	1600 3650 1600 3750
+Wire Wire Line
+	14650 2900 14650 3750
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-3
+U 1 1 611E9DF2
+P 1800 5500
+F 0 "J-PREPULSE-3" H 1850 5425 50  0000 L CNN
+F 1 "Completion Signal (Prepulse)" H 1850 5525 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1850 5460 50  0001 C CNN
+F 3 "~" H 1850 5460 50  0001 C CNN
+	1    1800 5500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5500 2100 5500
+Wire Wire Line
+	2100 5500 2100 5600
+Wire Wire Line
+	2100 5500 2200 5500
+Connection ~ 2100 5500
+Wire Wire Line
+	2200 5500 2200 5600
+Connection ~ 2200 5500
+Wire Wire Line
+	2200 5500 2300 5500
+$Comp
+L Device:R R-PREPULSE-5
+U 1 1 612E421A
+P 2100 5750
+F 0 "R-PREPULSE-5" H 2000 5800 50  0000 R CNN
+F 1 "68K" H 2000 5750 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2030 5750 50  0001 C CNN
+F 3 "~" H 2100 5750 50  0001 C CNN
+	1    2100 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 5900 2100 6000
+Text Label 2100 6000 2    50   ~ 0
+GND
+$Comp
+L Device:R R-PREPULSE-7
+U 1 1 6132E8F5
+P 2200 5750
+F 0 "R-PREPULSE-7" H 2100 5400 50  0000 L CNN
+F 1 "39K" H 2100 5300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2130 5750 50  0001 C CNN
+F 3 "~" H 2200 5750 50  0001 C CNN
+	1    2200 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5900 2200 6000
+Text Label 2200 6000 0    50   ~ 0
+-150V
+$Comp
+L NEWValves:EA50 D-PREPULSE-2
+U 1 1 613B0B85
+P 2550 5500
+F 0 "D-PREPULSE-2" V 2950 5350 50  0000 C CNN
+F 1 "EA50" V 2850 5350 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3150 5300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2550 5500 50  0001 C CNN
+	1    2550 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 5500 3150 5500
+Wire Wire Line
+	3150 5500 3150 5400
+$Comp
+L NEWValves:EA50 D-PREPULSE-3
+U 1 1 613F28C9
+P 3150 5150
+F 0 "D-PREPULSE-3" H 2900 4950 50  0000 R CNN
+F 1 "EA50" H 2900 5050 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 3750 4950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3150 5150 50  0001 C CNN
+	1    3150 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-PREPULSE-4
+U 1 1 613F6A6D
+P 3150 5750
+F 0 "C-PREPULSE-4" H 2400 5750 50  0000 L CNN
+F 1 "100p" H 2800 5650 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3188 5600 50  0001 C CNN
+F 3 "~" H 3150 5750 50  0001 C CNN
+	1    3150 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 5900 3150 6000
+Text Label 3150 6000 2    50   ~ 0
+GND
+Wire Wire Line
+	3150 5600 3150 5500
+Connection ~ 3150 5500
+Wire Wire Line
+	3350 5500 3350 5600
+Connection ~ 3350 5500
+$Comp
+L Device:R R-PREPULSE-14
+U 1 1 614BC913
+P 3350 5750
+F 0 "R-PREPULSE-14" H 3450 5900 50  0000 L CNN
+F 1 "10M" H 3450 5800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3280 5750 50  0001 C CNN
+F 3 "~" H 3350 5750 50  0001 C CNN
+	1    3350 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5900 3350 6000
+Text Label 3350 6000 2    50   ~ 0
+GND
+Wire Wire Line
+	3150 5500 3350 5500
+$Comp
+L NEWValves:VR91 V-PREPULSE-5
+U 1 1 61547937
+P 4350 5450
+F 0 "V-PREPULSE-5" H 4400 5050 50  0000 C CNN
+F 1 "VR91" H 4400 4950 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5350 5700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4350 5450 50  0001 C CNN
+	1    4350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-PREPULSE-16
+U 1 1 61549D02
+P 3800 5500
+F 0 "R-PREPULSE-16" V 4050 5500 50  0000 C CNN
+F 1 "470" V 3950 5500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3730 5500 50  0001 C CNN
+F 3 "~" H 3800 5500 50  0001 C CNN
+	1    3800 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3950 5500 4050 5500
+Wire Wire Line
+	3350 5500 3650 5500
+Wire Wire Line
+	4350 5000 4350 4900
+Wire Wire Line
+	4350 4900 4700 4900
+Wire Wire Line
+	4700 4900 4700 5400
+Wire Wire Line
+	4050 5300 4050 4900
+Wire Wire Line
+	4050 4900 4350 4900
+Connection ~ 4350 4900
+Wire Wire Line
+	4350 4900 4350 4800
+Text Label 4350 4800 0    50   ~ 0
++200V
+Wire Wire Line
+	4050 5600 4050 5800
+$Comp
+L Device:R R-PREPULSE-19
+U 1 1 616A0067
+P 4050 6000
+F 0 "R-PREPULSE-19" H 3400 6050 50  0000 L CNN
+F 1 "10K 3W" H 3600 6000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3980 6000 50  0001 C CNN
+F 3 "~" H 4050 6000 50  0001 C CNN
+	1    4050 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6150 4050 6250
+NoConn ~ 4650 5650
+NoConn ~ 4650 5550
+Wire Wire Line
+	4050 5800 5000 5800
+Connection ~ 4050 5800
+Wire Wire Line
+	4050 5800 4050 5850
+$Comp
+L NEWValves:EA50 D-PREPULSE-15
+U 1 1 6188A5F6
+P 5300 6150
+F 0 "D-PREPULSE-15" H 5550 6100 50  0000 L CNN
+F 1 "EA50" H 5550 6000 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 5900 5950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5300 6150 50  0001 C CNN
+	1    5300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5900 5300 5800
+$Comp
+L NEWValves:EA50 D-PREPULSE-16
+U 1 1 618D1A29
+P 6450 6150
+F 0 "D-PREPULSE-16" H 6700 6100 50  0000 L CNN
+F 1 "EA50" H 6700 6000 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 7050 5950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6450 6150 50  0001 C CNN
+	1    6450 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5900 6450 5800
+$Comp
+L NEWValves:EA50 D-PREPULSE-17
+U 1 1 61961916
+P 7600 6150
+F 0 "D-PREPULSE-17" H 7850 6100 50  0000 L CNN
+F 1 "EA50" H 7850 6000 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 8200 5950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7600 6150 50  0001 C CNN
+	1    7600 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5900 7600 5800
+Wire Wire Line
+	5300 6650 5300 6750
+Wire Wire Line
+	5300 6750 6450 6750
+Wire Wire Line
+	7600 6750 7600 6650
+Wire Wire Line
+	6450 6650 6450 6750
+Connection ~ 6450 6750
+Wire Wire Line
+	6450 6750 7600 6750
+Wire Wire Line
+	7700 6750 7600 6750
+Connection ~ 7600 6750
+$Comp
+L NEWValves:EA50 D-PREPULSE-19
+U 1 1 61B144F7
+P 8200 6750
+F 0 "D-PREPULSE-19" V 8500 6650 50  0000 C CNN
+F 1 "EA50" V 8600 6650 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8800 6550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8200 6750 50  0001 C CNN
+	1    8200 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 6750 8550 6750
+Wire Wire Line
+	8550 6750 8550 6850
+$Comp
+L NEWValves:EA50 D-PREPULSE-20
+U 1 1 61B5F864
+P 8550 7100
+F 0 "D-PREPULSE-20" H 8800 7050 50  0000 L CNN
+F 1 "EA50" H 8800 6950 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 9150 6900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8550 7100 50  0001 C CNN
+	1    8550 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-12
+U 1 1 61BAE2D8
+P 5300 4650
+F 0 "D-PREPULSE-12" H 5550 4600 50  0000 L CNN
+F 1 "EA50" H 5550 4500 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 5900 4450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5300 4650 50  0001 C CNN
+	1    5300 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4400 5300 4300
+$Comp
+L NEWValves:EA50 D-PREPULSE-13
+U 1 1 61BAE911
+P 6450 4650
+F 0 "D-PREPULSE-13" H 6700 4600 50  0000 L CNN
+F 1 "EA50" H 6700 4500 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 7050 4450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6450 4650 50  0001 C CNN
+	1    6450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4400 6450 4300
+$Comp
+L NEWValves:EA50 D-PREPULSE-14
+U 1 1 61BAE91C
+P 7600 4650
+F 0 "D-PREPULSE-14" H 7850 4600 50  0000 L CNN
+F 1 "EA50" H 7850 4500 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 8200 4450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7600 4650 50  0001 C CNN
+	1    7600 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4400 7600 4300
+Wire Wire Line
+	5300 5150 5300 5250
+Wire Wire Line
+	5300 5250 6450 5250
+Wire Wire Line
+	7600 5250 7600 5150
+Wire Wire Line
+	6450 5150 6450 5250
+Connection ~ 6450 5250
+Wire Wire Line
+	6450 5250 7600 5250
+Wire Wire Line
+	7700 5250 7600 5250
+Connection ~ 7600 5250
+$Comp
+L NEWValves:EA50 D-PREPULSE-18
+U 1 1 61BAE92F
+P 8200 5250
+F 0 "D-PREPULSE-18" V 8500 5150 50  0000 C CNN
+F 1 "EA50" V 8600 5150 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8800 5050 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8200 5250 50  0001 C CNN
+	1    8200 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 4300 5000 4300
+Wire Wire Line
+	5000 4300 5000 5800
+Connection ~ 5000 5800
+Wire Wire Line
+	5000 5800 5300 5800
+Wire Wire Line
+	8550 6750 8550 6000
+Wire Wire Line
+	8550 5250 8450 5250
+Connection ~ 8550 6750
+$Comp
+L NEWValves:VR91 V-PREPULSE-6
+U 1 1 60773F5C
+P 9350 5950
+F 0 "V-PREPULSE-6" H 9400 5550 50  0000 C CNN
+F 1 "VR91" H 9400 5450 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 10350 6200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 9350 5950 50  0001 C CNN
+	1    9350 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 6000 8950 6000
+$Comp
+L Device:R R-PREPULSE-30
+U 1 1 60773F5D
+P 8800 6000
+F 0 "R-PREPULSE-30" H 8150 6050 50  0000 L CNN
+F 1 "10K 3W" H 8350 6000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8730 6000 50  0001 C CNN
+F 3 "~" H 8800 6000 50  0001 C CNN
+	1    8800 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 6000 8550 6000
+Connection ~ 8550 6000
+Wire Wire Line
+	8550 6000 8550 5250
+Wire Wire Line
+	8550 7600 8550 7700
+Text Label 8550 7700 2    50   ~ 0
+GND
+$Comp
+L Device:R R-PREPULSE-32
+U 1 1 60773F5E
+P 9050 6750
+F 0 "R-PREPULSE-32" H 9150 6800 50  0000 L CNN
+F 1 "68K 3W" H 9150 6750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8980 6750 50  0001 C CNN
+F 3 "~" H 9050 6750 50  0001 C CNN
+	1    9050 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 6900 9050 7000
+Text Label 9050 7000 0    50   ~ 0
+-150V
+Wire Wire Line
+	9050 6600 9050 6550
+NoConn ~ 9650 6150
+NoConn ~ 9650 6050
+Wire Wire Line
+	9350 5500 9350 5400
+Wire Wire Line
+	9050 5400 9350 5400
+Wire Wire Line
+	9700 5400 9700 5900
+Wire Wire Line
+	9050 5400 9050 5800
+Connection ~ 9350 5400
+Wire Wire Line
+	9350 5400 9350 5300
+Wire Wire Line
+	9350 5400 9700 5400
+Text Label 9350 5300 0    50   ~ 0
++200V
+Wire Wire Line
+	9050 6550 9600 6550
+Connection ~ 9050 6550
+Wire Wire Line
+	9050 6550 9050 6100
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-8
+U 1 1 621B84D5
+P 9800 6550
+F 0 "J-PREPULSE-8" H 9850 6475 50  0000 L CNN
+F 1 "Plus1or2" H 9850 6575 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 9850 6510 50  0001 C CNN
+F 3 "~" H 9850 6510 50  0001 C CNN
+	1    9800 6550
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R-PREPULSE-28
+U 1 1 621C5934
+P 8550 5000
+F 0 "R-PREPULSE-28" H 8450 5050 50  0000 R CNN
+F 1 "330K" H 8450 5000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8480 5000 50  0001 C CNN
+F 3 "~" H 8550 5000 50  0001 C CNN
+	1    8550 5000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 4750 8550 4850
+Text Label 8550 4750 0    50   ~ 0
++300V
+Wire Wire Line
+	8550 5250 8550 5150
+Connection ~ 8550 5250
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-4
+U 1 1 622722AE
+P 6450 4100
+F 0 "J-PREPULSE-4" V 6400 4150 50  0000 L CNN
+F 1 "P0.CF" V 6300 4150 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 6500 4060 50  0001 C CNN
+F 3 "~" H 6500 4060 50  0001 C CNN
+	1    6450 4100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-6
+U 1 1 622C65DA
+P 7600 4100
+F 0 "J-PREPULSE-6" V 7550 4150 50  0000 L CNN
+F 1 "Plus1" V 7450 4150 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7650 4060 50  0001 C CNN
+F 3 "~" H 7650 4060 50  0001 C CNN
+	1    7600 4100
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-5
+U 1 1 622C8B75
+P 6450 5600
+F 0 "J-PREPULSE-5" V 6650 5600 50  0000 C CNN
+F 1 "P1.CF" V 6550 5600 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 6500 5560 50  0001 C CNN
+F 3 "~" H 6500 5560 50  0001 C CNN
+	1    6450 5600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-PREPULSE-7
+U 1 1 622C8B7F
+P 7600 5600
+F 0 "J-PREPULSE-7" V 7550 5500 50  0000 R CNN
+F 1 "Plus2" V 7450 5500 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 7650 5560 50  0001 C CNN
+F 3 "~" H 7650 5560 50  0001 C CNN
+	1    7600 5600
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R-PREPULSE-25
+U 1 1 62325275
+P 6450 7000
+F 0 "R-PREPULSE-25" H 6550 7050 50  0000 L CNN
+F 1 "39K 1W" H 6550 7000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6380 7000 50  0001 C CNN
+F 3 "~" H 6450 7000 50  0001 C CNN
+	1    6450 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 7150 6450 7250
+Text Label 6450 7250 0    50   ~ 0
+-150V
+Wire Wire Line
+	6450 6850 6450 6750
+Wire Wire Line
+	3150 4650 3150 3750
+Wire Wire Line
+	1600 3750 3150 3750
+Connection ~ 3150 3750
+Wire Wire Line
+	3150 3750 14650 3750
+Text Label 4050 6250 0    50   ~ 0
+-150V
+$Comp
+L NEWValves:EA50 D-PREPULSE-19
+U 2 1 625D019A
+P 11850 9050
+F 0 "D-PREPULSE-19" H 11850 9350 50  0000 C CNN
+F 1 "EA50" H 11850 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 12450 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11850 9050 50  0001 C CNN
+	2    11850 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-13
+U 2 1 625D0910
+P 8750 9050
+F 0 "D-PREPULSE-13" H 8750 9350 50  0000 C CNN
+F 1 "EA50" H 8750 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9350 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8750 9050 50  0001 C CNN
+	2    8750 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-15
+U 2 1 625D091A
+P 8150 9050
+F 0 "D-PREPULSE-15" H 8150 9350 50  0000 C CNN
+F 1 "EA50" H 8150 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8750 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8150 9050 50  0001 C CNN
+	2    8150 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-12
+U 2 1 625D0924
+P 7500 9050
+F 0 "D-PREPULSE-12" H 7525 9350 50  0000 C CNN
+F 1 "EA50" H 7525 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8100 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7500 9050 50  0001 C CNN
+	2    7500 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-16
+U 2 1 625D092E
+P 9350 9050
+F 0 "D-PREPULSE-16" H 9350 9350 50  0000 C CNN
+F 1 "EA50" H 9350 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9950 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9350 9050 50  0001 C CNN
+	2    9350 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-18
+U 2 1 625D0938
+P 11200 9050
+F 0 "D-PREPULSE-18" H 11200 9350 50  0000 C CNN
+F 1 "EA50" H 11200 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 11800 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11200 9050 50  0001 C CNN
+	2    11200 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-17
+U 2 1 625D0942
+P 10600 9050
+F 0 "D-PREPULSE-17" H 10600 9350 50  0000 C CNN
+F 1 "EA50" H 10600 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 11200 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10600 9050 50  0001 C CNN
+	2    10600 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-14
+U 2 1 625D094C
+P 9950 9050
+F 0 "D-PREPULSE-14" H 9975 9350 50  0000 C CNN
+F 1 "EA50" H 9975 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 10550 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9950 9050 50  0001 C CNN
+	2    9950 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11300 9800 11950 9800
+Wire Wire Line
+	10050 9800 10700 9800
+Connection ~ 11300 9800
+Connection ~ 10050 9800
+Wire Wire Line
+	11100 9550 11750 9550
+Connection ~ 11100 9550
+Wire Wire Line
+	9850 9550 10500 9550
+Connection ~ 9850 9550
+Wire Wire Line
+	8650 9550 9250 9550
+Wire Wire Line
+	8850 9800 9450 9800
+Connection ~ 8850 9800
+Connection ~ 8650 9550
+Wire Wire Line
+	7400 9550 8050 9550
+Connection ~ 7400 9550
+Connection ~ 7600 9800
+Wire Wire Line
+	7600 9500 7600 9800
+Wire Wire Line
+	7400 9500 7400 9550
+Wire Wire Line
+	7250 9800 7600 9800
+Wire Wire Line
+	8650 9500 8650 9550
+Wire Wire Line
+	8850 9500 8850 9800
+Wire Wire Line
+	9850 9500 9850 9550
+Wire Wire Line
+	10050 9500 10050 9800
+Wire Wire Line
+	11100 9500 11100 9550
+Wire Wire Line
+	11300 9500 11300 9800
+Wire Wire Line
+	11750 9500 11750 9550
+Wire Wire Line
+	11950 9500 11950 9800
+Wire Wire Line
+	7600 9800 8250 9800
+Wire Wire Line
+	8250 9500 8250 9800
+Connection ~ 8250 9800
+Wire Wire Line
+	8250 9800 8850 9800
+Wire Wire Line
+	9450 9500 9450 9800
+Connection ~ 9450 9800
+Wire Wire Line
+	9450 9800 10050 9800
+Wire Wire Line
+	10700 9500 10700 9800
+Connection ~ 10700 9800
+Wire Wire Line
+	10700 9800 11300 9800
+Wire Wire Line
+	10500 9500 10500 9550
+Connection ~ 10500 9550
+Wire Wire Line
+	10500 9550 11100 9550
+Wire Wire Line
+	9250 9500 9250 9550
+Connection ~ 9250 9550
+Wire Wire Line
+	9250 9550 9850 9550
+Wire Wire Line
+	8050 9500 8050 9550
+Connection ~ 8050 9550
+Wire Wire Line
+	8050 9550 8650 9550
+$Comp
+L NEWValves:EA50 D-PREPULSE-11
+U 2 1 625D0984
+P 13100 9050
+F 0 "D-PREPULSE-11" H 13100 9350 50  0000 C CNN
+F 1 "EA50" H 13100 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 13700 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 13100 9050 50  0001 C CNN
+	2    13100 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-PREPULSE-20
+U 2 1 625D098E
+P 12450 9050
+F 0 "D-PREPULSE-20" H 12450 9350 50  0000 C CNN
+F 1 "EA50" H 12450 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 13050 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 12450 9050 50  0001 C CNN
+	2    12450 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 9800 13200 9800
+Connection ~ 12550 9800
+Wire Wire Line
+	12350 9550 13000 9550
+Connection ~ 12350 9550
+Wire Wire Line
+	12350 9500 12350 9550
+Wire Wire Line
+	12550 9500 12550 9800
+Wire Wire Line
+	13000 9500 13000 9550
+Wire Wire Line
+	13200 9500 13200 9800
+Wire Wire Line
+	11950 9800 12550 9800
+Wire Wire Line
+	11750 9550 12350 9550
+Connection ~ 11750 9550
+Connection ~ 11950 9800
+Wire Wire Line
+	6750 9550 7400 9550
+Connection ~ 6750 9550
+Wire Wire Line
+	6300 9800 6950 9800
+Connection ~ 6950 9800
+Wire Wire Line
+	6950 9800 7200 9800
+$EndSCHEMATC
