@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 32
+Sheet 8 33
 Title "Control Gate Posn 6.3"
 Date "2020-10-08"
 Rev "Alpha"
@@ -474,68 +474,6 @@ Text Label 7750 4575 3    50   ~ 0
 -150V
 Text Label 4325 2625 1    50   ~ 0
 +300V
-Wire Wire Line
-	2125 7950 1925 7950
-Wire Wire Line
-	2125 7850 1925 7850
-$Comp
-L power:PWR_FLAG #FLG0115
-U 1 1 6064965D
-P 1925 7950
-F 0 "#FLG0115" H 1925 8025 50  0001 C CNN
-F 1 "PWR_FLAG" H 1950 8150 50  0000 C CNN
-F 2 "" H 1925 7950 50  0001 C CNN
-F 3 "~" H 1925 7950 50  0001 C CNN
-	1    1925 7950
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0116
-U 1 1 5FE97B82
-P 1925 7850
-F 0 "#FLG0116" H 1925 7925 50  0001 C CNN
-F 1 "PWR_FLAG" H 1950 8050 50  0000 C CNN
-F 2 "" H 1925 7850 50  0001 C CNN
-F 3 "~" H 1925 7850 50  0001 C CNN
-	1    1925 7850
-	-1   0    0    1   
-$EndComp
-Connection ~ 1925 7850
-Wire Wire Line
-	1925 7850 1625 7850
-Wire Wire Line
-	2125 8050 1625 8050
-Wire Wire Line
-	2125 8150 1625 8150
-Wire Wire Line
-	2125 8350 1625 8350
-$Comp
-L Connector_Generic:Conn_01x08 J-ACCGATE-5
-U 1 1 6064965F
-P 2325 8150
-F 0 "J-ACCGATE-5" H 2450 8150 50  0000 L CNN
-F 1 "HIGH Voltage." H 2450 8050 50  0000 L CNN
-F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770970-x_2x04_P4.14mm_Horizontal" H 2325 8150 50  0001 C CNN
-F 3 "~" H 2325 8150 50  0001 C CNN
-	1    2325 8150
-	1    0    0    -1  
-$EndComp
-Connection ~ 1925 7950
-Wire Wire Line
-	1925 7950 1625 7950
-NoConn ~ 2125 8450
-Text Label 1625 7850 2    50   ~ 0
-Heater-GND
-Text Label 1625 7950 2    50   ~ 0
-Heater-6.3V
-Text Label 1625 8050 2    50   ~ 0
-+200V
-Text Label 1625 8150 2    50   ~ 0
-+300V
-Text Label 1625 8250 2    50   ~ 0
--150V
-Text Label 1625 8350 2    50   ~ 0
-+50V
 Text Label 1300 9550 2    50   ~ 0
 Heater-6.3V
 Text Label 1300 9800 2    50   ~ 0
@@ -544,8 +482,6 @@ Text Label 1300 10925 2    50   ~ 0
 Heater-6.3V
 Text Label 1300 11175 2    50   ~ 0
 Heater-GND
-Text Label 1625 8550 2    50   ~ 0
-GND
 Text Label 4325 4225 3    50   ~ 0
 GND
 Text Label 3400 3875 3    50   ~ 0
@@ -554,8 +490,6 @@ Text Label 5200 4650 3    50   ~ 0
 GND
 Text Label 6950 4225 2    50   ~ 0
 GND
-Wire Wire Line
-	1625 8550 2125 8550
 $Comp
 L Connector:Conn_01x01_Female J-ACCGATE-6
 U 1 1 5F28B44B
@@ -1222,8 +1156,6 @@ Wire Wire Line
 	8850 10700 8850 10800
 Text Label 8850 10800 3    50   ~ 0
 GND
-Wire Wire Line
-	1625 8250 2125 8250
 Text Label 7350 10400 1    50   ~ 0
 +300V
 Text Label 8100 10400 1    50   ~ 0
@@ -1247,4 +1179,95 @@ F 3 "~" H 9600 10550 50  0001 C CNN
 	1    9600 10550
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60B39D71
+P 9050 9600
+AR Path="/5F868E46/60B39D71" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60B39D71" Ref="#FLG0115"  Part="1" 
+F 0 "#FLG0115" H 9050 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 9075 9800 50  0000 C CNN
+F 2 "" H 9050 9600 50  0001 C CNN
+F 3 "~" H 9050 9600 50  0001 C CNN
+	1    9050 9600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SCFOLLWS-?
+U 1 1 60B39D77
+P 8700 9250
+AR Path="/5F868E46/60B39D77" Ref="J-SCFOLLWS-?"  Part="1" 
+AR Path="/5F2DDAEA/60B39D77" Ref="J-ACCGATE-5"  Part="1" 
+F 0 "J-ACCGATE-5" H 8750 9700 50  0000 C CNN
+F 1 "HIGH Voltage." H 8750 9600 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 8700 9250 50  0001 C CNN
+F 3 "~" H 8700 9250 50  0001 C CNN
+	1    8700 9250
+	1    0    0    -1  
+$EndComp
+Text Label 8400 9050 2    50   ~ 0
++300V
+Text Label 9100 9150 0    50   ~ 0
+-150V
+Text Label 8400 9150 2    50   ~ 0
++50V
+Text Label 8400 9250 2    50   ~ 0
+GND
+NoConn ~ 8500 9350
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60B39D82
+P 8450 9600
+AR Path="/5F868E46/60B39D82" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60B39D82" Ref="#FLG0116"  Part="1" 
+F 0 "#FLG0116" H 8450 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 8475 9800 50  0000 C CNN
+F 2 "" H 8450 9600 50  0001 C CNN
+F 3 "~" H 8450 9600 50  0001 C CNN
+	1    8450 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 9550 8450 9550
+Wire Wire Line
+	8450 9600 8450 9550
+Connection ~ 8450 9550
+Wire Wire Line
+	8450 9550 8400 9550
+Wire Wire Line
+	9000 9550 9050 9550
+Text Label 9100 9550 0    50   ~ 0
+Heater-6.3V
+Connection ~ 9050 9550
+Wire Wire Line
+	9050 9550 9100 9550
+Wire Wire Line
+	9100 9050 9000 9050
+Wire Wire Line
+	9100 9150 9000 9150
+Wire Wire Line
+	9100 9250 9000 9250
+Wire Wire Line
+	8500 9050 8400 9050
+Wire Wire Line
+	8500 9150 8400 9150
+Wire Wire Line
+	8500 9250 8400 9250
+Wire Wire Line
+	8450 9550 8450 9450
+Wire Wire Line
+	8450 9450 8500 9450
+Wire Wire Line
+	9050 9550 9050 9450
+Wire Wire Line
+	9050 9450 9000 9450
+Wire Wire Line
+	9050 9600 9050 9550
+Text Label 9100 9050 0    50   ~ 0
++200V
+Text Label 9100 9250 0    50   ~ 0
+GND
+NoConn ~ 9000 9350
+Text Label 8400 9550 2    50   ~ 0
+Heater-GND
 $EndSCHEMATC

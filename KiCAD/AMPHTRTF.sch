@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 32
+Sheet 7 33
 Title "Control Adder Position 6.4"
 Date "2020-10-08"
 Rev "Alpha"
@@ -28,28 +28,6 @@ Wire Wire Line
 	6075 4650 6025 4650
 Wire Wire Line
 	6075 5050 5725 5050
-$Comp
-L power:AC #PWR0103
-U 1 1 5F304A28
-P 5725 4650
-F 0 "#PWR0103" H 5725 4550 50  0001 C CNN
-F 1 "AC" H 5725 4950 50  0000 C CNN
-F 2 "" H 5725 4650 50  0001 C CNN
-F 3 "" H 5725 4650 50  0001 C CNN
-	1    5725 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:AC #PWR0104
-U 1 1 5F3052AC
-P 5725 5050
-F 0 "#PWR0104" H 5725 4950 50  0001 C CNN
-F 1 "AC" H 5725 5350 50  0000 C CNN
-F 2 "" H 5725 5050 50  0001 C CNN
-F 3 "" H 5725 5050 50  0001 C CNN
-	1    5725 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6875 4650 7250 4650
 Wire Wire Line

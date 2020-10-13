@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 32 32
+Sheet 32 33
 Title "REMOTE MONITOR DRIVERS Position 2.6"
 Date "2020-10-12"
 Rev "Alpha"
@@ -34,76 +34,10 @@ Connection ~ 1100 7400
 Wire Wire Line
 	1300 7350 1300 7650
 Connection ~ 1300 7650
-Wire Wire Line
-	6325 6925 6125 6925
-Wire Wire Line
-	6325 6825 6125 6825
-$Comp
-L power:PWR_FLAG #FLG0160
-U 1 1 61357372
-P 6125 6925
-F 0 "#FLG0160" H 6125 7000 50  0001 C CNN
-F 1 "PWR_FLAG" H 6150 7125 50  0000 C CNN
-F 2 "" H 6125 6925 50  0001 C CNN
-F 3 "~" H 6125 6925 50  0001 C CNN
-	1    6125 6925
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0161
-U 1 1 60773F70
-P 6125 6825
-F 0 "#FLG0161" H 6125 6900 50  0001 C CNN
-F 1 "PWR_FLAG" H 6150 7025 50  0000 C CNN
-F 2 "" H 6125 6825 50  0001 C CNN
-F 3 "~" H 6125 6825 50  0001 C CNN
-	1    6125 6825
-	-1   0    0    1   
-$EndComp
-Connection ~ 6125 6825
-Wire Wire Line
-	6125 6825 5825 6825
-Wire Wire Line
-	6325 7025 5825 7025
-Wire Wire Line
-	6325 7125 5825 7125
-Wire Wire Line
-	6325 7325 5825 7325
-$Comp
-L Connector_Generic:Conn_01x08 J-RMONDRS-2
-U 1 1 60773F79
-P 6525 7125
-F 0 "J-RMONDRS-2" H 6650 7125 50  0000 L CNN
-F 1 "HIGH Voltage." H 6650 7025 50  0000 L CNN
-F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770970-x_2x04_P4.14mm_Horizontal" H 6525 7125 50  0001 C CNN
-F 3 "~" H 6525 7125 50  0001 C CNN
-	1    6525 7125
-	1    0    0    -1  
-$EndComp
-Connection ~ 6125 6925
-Wire Wire Line
-	6125 6925 5825 6925
-NoConn ~ 6325 7425
-Text Label 5825 6825 2    50   ~ 0
-Heater-GND
-Text Label 5825 6925 2    50   ~ 0
-Heater-6.3V
-Text Label 5825 7025 2    50   ~ 0
-+200V
-Text Label 5825 7125 2    50   ~ 0
-+300V
-Text Label 5825 7225 2    50   ~ 0
--150V
-Text Label 5825 7325 2    50   ~ 0
-+50V
 Text Label 950  7400 2    50   ~ 0
 Heater-6.3V
 Text Label 950  7650 2    50   ~ 0
 Heater-GND
-Text Label 5825 7525 2    50   ~ 0
-GND
-Wire Wire Line
-	5825 7525 6325 7525
 $Comp
 L NEWValves:EF50 V-RMONDRS-3
 U 2 1 61357367
@@ -126,8 +60,6 @@ F 3 "http://www.r-type.org/exhib/aaa0075.htm" H 1850 7000 50  0001 C CNN
 	2    1850 7000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5825 7225 6325 7225
 Wire Wire Line
 	1300 7650 1950 7650
 Wire Wire Line
@@ -1312,28 +1244,6 @@ F 3 "~" H 2000 5350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 4950 1400 4950
-$Comp
-L power:AC #PWR0101
-U 1 1 61243AB5
-P 1400 4950
-F 0 "#PWR0101" H 1400 4850 50  0001 C CNN
-F 1 "AC" V 1400 5200 50  0000 L CNN
-F 2 "" H 1400 4950 50  0001 C CNN
-F 3 "" H 1400 4950 50  0001 C CNN
-	1    1400 4950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:AC #PWR0102
-U 1 1 6126061C
-P 1400 5350
-F 0 "#PWR0102" H 1400 5250 50  0001 C CNN
-F 1 "AC" V 1400 5600 50  0000 L CNN
-F 2 "" H 1400 5350 50  0001 C CNN
-F 3 "" H 1400 5350 50  0001 C CNN
-	1    1400 5350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1400 5350 1550 5350
 Text Notes 1400 5150 2    50   ~ 0
@@ -1367,4 +1277,95 @@ Connection ~ 4350 7400
 Connection ~ 4550 7650
 Text Notes 950  4750 0    50   ~ 0
 Aux. Htrs. Supply
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60B66CFD
+P 6400 7350
+AR Path="/5F868E46/60B66CFD" Ref="#FLG?"  Part="1" 
+AR Path="/607AC010/60B66CFD" Ref="#FLG0160"  Part="1" 
+F 0 "#FLG0160" H 6400 7425 50  0001 C CNN
+F 1 "PWR_FLAG" H 6425 7550 50  0000 C CNN
+F 2 "" H 6400 7350 50  0001 C CNN
+F 3 "~" H 6400 7350 50  0001 C CNN
+	1    6400 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SCFOLLWS-?
+U 1 1 60B66D03
+P 6050 7000
+AR Path="/5F868E46/60B66D03" Ref="J-SCFOLLWS-?"  Part="1" 
+AR Path="/607AC010/60B66D03" Ref="J-RMONDRS-2"  Part="1" 
+F 0 "J-RMONDRS-2" H 6100 7450 50  0000 C CNN
+F 1 "HIGH Voltage." H 6100 7350 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 6050 7000 50  0001 C CNN
+F 3 "~" H 6050 7000 50  0001 C CNN
+	1    6050 7000
+	1    0    0    -1  
+$EndComp
+Text Label 5750 6800 2    50   ~ 0
++300V
+Text Label 6450 6900 0    50   ~ 0
+-150V
+Text Label 5750 6900 2    50   ~ 0
++50V
+Text Label 5750 7000 2    50   ~ 0
+GND
+NoConn ~ 5850 7100
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60B66D0E
+P 5800 7350
+AR Path="/5F868E46/60B66D0E" Ref="#FLG?"  Part="1" 
+AR Path="/607AC010/60B66D0E" Ref="#FLG0161"  Part="1" 
+F 0 "#FLG0161" H 5800 7425 50  0001 C CNN
+F 1 "PWR_FLAG" H 5825 7550 50  0000 C CNN
+F 2 "" H 5800 7350 50  0001 C CNN
+F 3 "~" H 5800 7350 50  0001 C CNN
+	1    5800 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 7300 5800 7300
+Wire Wire Line
+	5800 7350 5800 7300
+Connection ~ 5800 7300
+Wire Wire Line
+	5800 7300 5750 7300
+Wire Wire Line
+	6350 7300 6400 7300
+Text Label 6450 7300 0    50   ~ 0
+Heater-6.3V
+Connection ~ 6400 7300
+Wire Wire Line
+	6400 7300 6450 7300
+Wire Wire Line
+	6450 6800 6350 6800
+Wire Wire Line
+	6450 6900 6350 6900
+Wire Wire Line
+	6450 7000 6350 7000
+Wire Wire Line
+	5850 6800 5750 6800
+Wire Wire Line
+	5850 6900 5750 6900
+Wire Wire Line
+	5850 7000 5750 7000
+Wire Wire Line
+	5800 7300 5800 7200
+Wire Wire Line
+	5800 7200 5850 7200
+Wire Wire Line
+	6400 7300 6400 7200
+Wire Wire Line
+	6400 7200 6350 7200
+Wire Wire Line
+	6400 7350 6400 7300
+Text Label 6450 6800 0    50   ~ 0
++200V
+Text Label 6450 7000 0    50   ~ 0
+GND
+NoConn ~ 6350 7100
+Text Label 5750 7300 2    50   ~ 0
+Heater-GND
 $EndSCHEMATC
