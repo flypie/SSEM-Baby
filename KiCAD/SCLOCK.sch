@@ -1,0 +1,2091 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 34 34
+Title "Clock Position 2.2"
+Date "2020-10-08"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-SCLOCK-1
+U 1 1 5F5A6148
+P 3500 2600
+F 0 "V-SCLOCK-1" H 3550 2200 50  0000 C CNN
+F 1 "VR91" H 3550 2100 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4500 2850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3500 2600 50  0001 C CNN
+	1    3500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SCLOCK-1
+U 2 1 60D69555
+P 1550 10500
+F 0 "V-SCLOCK-1" H 1550 11075 50  0000 C CNN
+F 1 "VR91" H 1550 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2550 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 1550 10500 50  0001 C CNN
+	2    1550 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SCLOCK-1
+U 1 1 5F35D344
+P 9700 2200
+F 0 "C-SCLOCK-1" H 9850 2250 50  0000 L CNN
+F 1 "470pf" H 9850 2200 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9738 2050 50  0001 C CNN
+F 3 "~" H 9700 2200 50  0001 C CNN
+	1    9700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SCLOCK-2
+U 1 1 60D6954D
+P 9250 1350
+F 0 "D-SCLOCK-2" H 9500 1300 50  0000 L CNN
+F 1 "EA50" H 9500 1200 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 9850 1150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9250 1350 50  0001 C CNN
+	1    9250 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SCLOCK-1
+U 2 1 60D69548
+P 1550 9050
+F 0 "D-SCLOCK-1" H 1550 9350 50  0000 C CNN
+F 1 "EA50" H 1550 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2150 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1550 9050 50  0001 C CNN
+	2    1550 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 10900 1450 10900
+Wire Wire Line
+	1300 11150 1650 11150
+Wire Wire Line
+	1450 10850 1450 10900
+Connection ~ 1450 10900
+Wire Wire Line
+	1650 10850 1650 11150
+Connection ~ 1650 11150
+Wire Wire Line
+	1300 9550 1450 9550
+Wire Wire Line
+	1300 9800 1650 9800
+Wire Wire Line
+	1450 9500 1450 9550
+Wire Wire Line
+	1650 9500 1650 9800
+Wire Wire Line
+	9250 1000 9250 1100
+Wire Wire Line
+	9250 1850 9250 1950
+$Comp
+L NEWValves:EA50 D-SCLOCK-1
+U 1 1 60D69551
+P 5000 1000
+F 0 "D-SCLOCK-1" H 5250 925 50  0000 L CNN
+F 1 "EA50" H 5250 875 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 5600 800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5000 1000 50  0001 C CNN
+	1    5000 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2075 10850 2075 10900
+Connection ~ 2075 10900
+Wire Wire Line
+	2275 10850 2275 11150
+Connection ~ 2275 11150
+Wire Wire Line
+	1450 10900 2075 10900
+Wire Wire Line
+	1650 11150 2275 11150
+Text Label 1300 9550 2    50   ~ 0
+Heater-6.3V
+Text Label 1300 9800 2    50   ~ 0
+Heater-GND
+Text Label 1300 10900 2    50   ~ 0
+Heater-6.3V
+Text Label 1300 11150 2    50   ~ 0
+Heater-GND
+Text Label 2350 3150 2    50   ~ 0
+GND
+$Comp
+L Device:C C-SCLOCK-7
+U 1 1 6064964E
+P 8850 10550
+F 0 "C-SCLOCK-7" H 8725 10475 50  0000 R CNN
+F 1 "0.5" H 8725 10575 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8888 10400 50  0001 C CNN
+F 3 "~" H 8850 10550 50  0001 C CNN
+	1    8850 10550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-SCLOCK-4
+U 1 1 6064964F
+P 7350 10550
+F 0 "C-SCLOCK-4" H 7500 10625 50  0000 L CNN
+F 1 "0.5" H 7500 10550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7388 10400 50  0001 C CNN
+F 3 "~" H 7350 10550 50  0001 C CNN
+	1    7350 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SCLOCK-5
+U 1 1 60649650
+P 8100 10550
+F 0 "C-SCLOCK-5" H 8225 10625 50  0000 L CNN
+F 1 "0.5" H 8225 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8138 10400 50  0001 C CNN
+F 3 "~" H 8100 10550 50  0001 C CNN
+	1    8100 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-SCLOCK-13
+U 1 1 60D6953B
+P 12300 2850
+F 0 "J-SCLOCK-13" H 12375 2900 50  0000 L CNN
+F 1 "Dash" H 12375 2800 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 12300 2850 50  0001 C CNN
+F 3 "~" H 12300 2850 50  0001 C CNN
+	1    12300 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1650 9800
+Connection ~ 1450 9550
+Wire Wire Line
+	1450 9550 2075 9550
+Wire Wire Line
+	2075 9550 2750 9550
+Connection ~ 2075 9550
+Wire Wire Line
+	2075 9550 2075 9500
+Wire Wire Line
+	2275 9800 2950 9800
+Connection ~ 3375 9550
+Wire Wire Line
+	2750 9550 3375 9550
+Wire Wire Line
+	2950 9800 3575 9800
+Wire Wire Line
+	3375 9550 3375 9500
+Connection ~ 3575 9800
+Wire Wire Line
+	3575 9500 3575 9800
+$Comp
+L NEWValves:EA50 D-SCLOCK-4
+U 2 1 60D69533
+P 3475 9050
+F 0 "D-SCLOCK-4" H 3475 9350 50  0000 C CNN
+F 1 "EA50" H 3475 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4075 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3475 9050 50  0001 C CNN
+	2    3475 9050
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 9800
+Wire Wire Line
+	2950 9500 2950 9800
+Connection ~ 2750 9550
+Wire Wire Line
+	2750 9500 2750 9550
+$Comp
+L NEWValves:EA50 D-SCLOCK-3
+U 2 1 60D69532
+P 2850 9050
+F 0 "D-SCLOCK-3" H 2850 9350 50  0000 C CNN
+F 1 "EA50" H 2850 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3450 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2850 9050 50  0001 C CNN
+	2    2850 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 9800 2275 9800
+Connection ~ 2275 9800
+Wire Wire Line
+	2275 9500 2275 9800
+$Comp
+L NEWValves:EA50 D-SCLOCK-2
+U 2 1 60D69550
+P 2175 9050
+F 0 "D-SCLOCK-2" H 2200 9350 50  0000 C CNN
+F 1 "EA50" H 2200 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2775 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2175 9050 50  0001 C CNN
+	2    2175 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SCLOCK-2
+U 2 1 60D69556
+P 2175 10500
+F 0 "V-SCLOCK-2" H 2200 11075 50  0000 C CNN
+F 1 "VR91" H 2200 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3175 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2175 10500 50  0001 C CNN
+	2    2175 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SCLOCK-5
+U 2 1 60D6951D
+P 4125 9050
+F 0 "D-SCLOCK-5" H 4125 9350 50  0000 C CNN
+F 1 "EA50" H 4125 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4725 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4125 9050 50  0001 C CNN
+	2    4125 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 9500 4025 9550
+Wire Wire Line
+	4225 9500 4225 9800
+Connection ~ 4225 9800
+Connection ~ 4025 9550
+Wire Wire Line
+	4025 9550 4700 9550
+Wire Wire Line
+	4700 9550 5375 9550
+Connection ~ 4700 9550
+Wire Wire Line
+	4700 9550 4700 9500
+Wire Wire Line
+	4900 9800 5575 9800
+Wire Wire Line
+	5375 9550 6025 9550
+Wire Wire Line
+	5575 9800 6225 9800
+Wire Wire Line
+	6025 9550 6025 9500
+Wire Wire Line
+	6225 9500 6225 9800
+$Comp
+L NEWValves:EA50 D-SCLOCK-8
+U 2 1 60D6951E
+P 6125 9050
+F 0 "D-SCLOCK-8" H 6150 9350 50  0000 C CNN
+F 1 "EA50" H 6150 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6725 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6125 9050 50  0001 C CNN
+	2    6125 9050
+	1    0    0    -1  
+$EndComp
+Connection ~ 5575 9800
+Wire Wire Line
+	5575 9500 5575 9800
+Connection ~ 5375 9550
+Wire Wire Line
+	5375 9500 5375 9550
+$Comp
+L NEWValves:EA50 D-SCLOCK-7
+U 2 1 60D6951F
+P 5475 9050
+F 0 "D-SCLOCK-7" H 5475 9350 50  0000 C CNN
+F 1 "EA50" H 5475 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6075 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5475 9050 50  0001 C CNN
+	2    5475 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4225 9800 4900 9800
+Connection ~ 4900 9800
+Wire Wire Line
+	4900 9500 4900 9800
+$Comp
+L NEWValves:EA50 D-SCLOCK-6
+U 2 1 5F8084DB
+P 4800 9050
+F 0 "D-SCLOCK-6" H 4825 9350 50  0000 C CNN
+F 1 "EA50" H 4825 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5400 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4800 9050 50  0001 C CNN
+	2    4800 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3375 9550 4025 9550
+Wire Wire Line
+	3575 9800 4225 9800
+$Comp
+L NEWValves:VR91 V-SCLOCK-3
+U 2 1 60D69552
+P 2850 10500
+F 0 "V-SCLOCK-3" H 2850 11075 50  0000 C CNN
+F 1 "CV173" H 2850 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3850 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 2850 10500 50  0001 C CNN
+	2    2850 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 10850 2750 10900
+Connection ~ 2750 10900
+Wire Wire Line
+	2950 10850 2950 11150
+Connection ~ 2950 11150
+Wire Wire Line
+	3400 10850 3400 10900
+Connection ~ 3400 10900
+Connection ~ 3600 11150
+Wire Wire Line
+	2750 10900 3400 10900
+Wire Wire Line
+	2950 11150 3600 11150
+$Comp
+L NEWValves:807 V-SCLOCK-4
+U 2 1 60D69553
+P 3500 10500
+F 0 "V-SCLOCK-4" H 3525 11075 50  0000 C CNN
+F 1 "807" H 3525 10975 50  0000 C CNN
+F 2 "NewValves:USM5+1" H 4500 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/807.pdf" H 3500 10500 50  0001 C CNN
+	2    3500 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 10850 4100 10900
+Wire Wire Line
+	4300 10850 4300 11150
+$Comp
+L NEWValves:VR116 V-SCLOCK-5
+U 2 1 6064965B
+P 4200 10500
+F 0 "V-SCLOCK-5" H 4225 11075 50  0000 C CNN
+F 1 "VR116" H 4225 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5200 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4200 10500 50  0001 C CNN
+	2    4200 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 10900 4100 10900
+Wire Wire Line
+	3600 10850 3600 11150
+Wire Wire Line
+	2275 11150 2950 11150
+Wire Wire Line
+	2075 10900 2750 10900
+Wire Wire Line
+	7350 10700 7350 10800
+Text Label 7350 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	8100 10700 8100 10800
+Text Label 8100 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	8850 10700 8850 10800
+Text Label 8850 10800 3    50   ~ 0
+GND
+Text Label 7350 10400 1    50   ~ 0
++300V
+Text Label 8100 10400 1    50   ~ 0
++200V
+Text Label 9600 10400 1    50   ~ 0
++50V
+Text Label 8850 10400 1    50   ~ 0
+-150V
+Text Label 9600 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	9600 10700 9600 10800
+$Comp
+L Device:C C-SCLOCK-8
+U 1 1 6064964D
+P 9600 10550
+F 0 "C-SCLOCK-8" H 9725 10625 50  0000 L CNN
+F 1 "0.5" H 9725 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9638 10400 50  0001 C CNN
+F 3 "~" H 9600 10550 50  0001 C CNN
+	1    9600 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60B39D71
+P 9050 9600
+AR Path="/5F868E46/60B39D71" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60B39D71" Ref="#FLG0115"  Part="1" 
+AR Path="/60BC2C2A/60B39D71" Ref="#FLG0164"  Part="1" 
+F 0 "#FLG0164" H 9050 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 9075 9800 50  0000 C CNN
+F 2 "" H 9050 9600 50  0001 C CNN
+F 3 "~" H 9050 9600 50  0001 C CNN
+	1    9050 9600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SCFOLLWS-?
+U 1 1 60D69558
+P 8700 9250
+AR Path="/5F868E46/60D69558" Ref="J-SCFOLLWS-?"  Part="1" 
+AR Path="/5F2DDAEA/60D69558" Ref="J-SCLOCK-5"  Part="1" 
+AR Path="/60BC2C2A/60D69558" Ref="J-SCLOCK-5"  Part="1" 
+F 0 "J-SCLOCK-5" H 8750 9700 50  0000 C CNN
+F 1 "HIGH Voltage." H 8750 9600 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 8700 9250 50  0001 C CNN
+F 3 "~" H 8700 9250 50  0001 C CNN
+	1    8700 9250
+	1    0    0    -1  
+$EndComp
+Text Label 8400 9050 2    50   ~ 0
++300V
+Text Label 9100 9150 0    50   ~ 0
+-150V
+Text Label 8400 9150 2    50   ~ 0
++50V
+Text Label 8400 9250 2    50   ~ 0
+GND
+NoConn ~ 8500 9350
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60D69559
+P 8450 9600
+AR Path="/5F868E46/60D69559" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60D69559" Ref="#FLG0116"  Part="1" 
+AR Path="/60BC2C2A/60D69559" Ref="#FLG0165"  Part="1" 
+F 0 "#FLG0165" H 8450 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 8475 9800 50  0000 C CNN
+F 2 "" H 8450 9600 50  0001 C CNN
+F 3 "~" H 8450 9600 50  0001 C CNN
+	1    8450 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8500 9550 8450 9550
+Wire Wire Line
+	8450 9600 8450 9550
+Connection ~ 8450 9550
+Wire Wire Line
+	8450 9550 8400 9550
+Wire Wire Line
+	9000 9550 9050 9550
+Text Label 9100 9550 0    50   ~ 0
+Heater-6.3V
+Connection ~ 9050 9550
+Wire Wire Line
+	9050 9550 9100 9550
+Wire Wire Line
+	9100 9050 9000 9050
+Wire Wire Line
+	9100 9150 9000 9150
+Wire Wire Line
+	9100 9250 9000 9250
+Wire Wire Line
+	8500 9050 8400 9050
+Wire Wire Line
+	8500 9150 8400 9150
+Wire Wire Line
+	8500 9250 8400 9250
+Wire Wire Line
+	8450 9550 8450 9450
+Wire Wire Line
+	8450 9450 8500 9450
+Wire Wire Line
+	9050 9550 9050 9450
+Wire Wire Line
+	9050 9450 9000 9450
+Wire Wire Line
+	9050 9600 9050 9550
+Text Label 9100 9050 0    50   ~ 0
++200V
+Text Label 9100 9250 0    50   ~ 0
+GND
+NoConn ~ 9000 9350
+Text Label 8400 9550 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:L_Coupled L1
+U 1 1 5F87C87E
+P 2700 1950
+F 0 "L1" V 2650 2100 50  0000 L CNN
+F 1 "L_Coupled" V 2700 2100 50  0000 L CNN
+F 2 "Inductor_THT:Choke_Schaffner_RN102-04-14.0x14.0mm" H 2700 1950 50  0001 C CNN
+F 3 "~" H 2700 1950 50  0001 C CNN
+	1    2700 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-SCLOCK-4
+U 1 1 5F880CA0
+P 2800 1400
+F 0 "R-SCLOCK-4" H 2900 1475 50  0000 L CNN
+F 1 "56K 2W" H 2900 1375 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2730 1400 50  0001 C CNN
+F 3 "~" H 2800 1400 50  0001 C CNN
+	1    2800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SCLOCK-13
+U 1 1 5F880CA6
+P 4600 2150
+F 0 "C-SCLOCK-13" V 4900 2150 50  0000 C CNN
+F 1 "0.01" V 4800 2150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4638 2000 50  0001 C CNN
+F 3 "~" H 4600 2150 50  0001 C CNN
+	1    4600 2150
+	0    -1   -1   0   
+$EndComp
+Text Label 2800 1150 2    50   ~ 0
++300V
+Wire Wire Line
+	2800 1750 2800 1650
+Wire Wire Line
+	2800 1250 2800 1150
+$Comp
+L Device:C C-SCLOCK-2
+U 1 1 5F8C21D2
+P 2350 1650
+F 0 "C-SCLOCK-2" V 2650 1650 50  0000 C CNN
+F 1 "1uF" V 2550 1650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2388 1500 50  0001 C CNN
+F 3 "~" H 2350 1650 50  0001 C CNN
+	1    2350 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 1750 2000 1750
+$Comp
+L Device:R R-SCLOCK-3
+U 1 1 5F8D3244
+P 2600 2650
+F 0 "R-SCLOCK-3" V 2500 2700 50  0000 C CNN
+F 1 "4k7" V 2700 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2530 2650 50  0001 C CNN
+F 3 "~" H 2600 2650 50  0001 C CNN
+	1    2600 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-SCLOCK-10
+U 1 1 5F8DC13C
+P 2350 2400
+F 0 "C-SCLOCK-10" H 2400 2550 50  0000 L CNN
+F 1 "470pf" H 2500 2400 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2388 2250 50  0001 C CNN
+F 3 "~" H 2350 2400 50  0001 C CNN
+	1    2350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2150 2350 2150
+Wire Wire Line
+	2350 2150 2350 2250
+Wire Wire Line
+	2350 2550 2350 2650
+Wire Wire Line
+	2350 2650 2450 2650
+Connection ~ 2350 2650
+Wire Wire Line
+	2350 2650 2350 2750
+Wire Wire Line
+	2000 1750 2000 2600
+Text Label 2000 2600 2    50   ~ 0
+GND
+$Comp
+L Device:R R-SCLOCK-2
+U 1 1 5F90BDD7
+P 2350 2900
+F 0 "R-SCLOCK-2" H 2450 2950 50  0000 L CNN
+F 1 "100k" H 2450 2900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2280 2900 50  0001 C CNN
+F 3 "~" H 2350 2900 50  0001 C CNN
+	1    2350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3050 2350 3150
+Text Label 2000 1650 2    50   ~ 0
+GND
+Wire Wire Line
+	2000 1650 2200 1650
+Wire Wire Line
+	2500 1650 2800 1650
+Connection ~ 2800 1650
+Wire Wire Line
+	2800 1650 2800 1550
+Wire Wire Line
+	3200 2650 2750 2650
+Wire Wire Line
+	2800 2150 3500 2150
+Wire Wire Line
+	3950 2550 3950 1650
+Wire Wire Line
+	3950 1650 2800 1650
+Wire Wire Line
+	3950 2550 3850 2550
+Wire Wire Line
+	3200 2450 3100 2450
+Wire Wire Line
+	3100 2450 3100 2750
+Wire Wire Line
+	3100 2750 3200 2750
+Wire Wire Line
+	3100 2750 3100 3150
+Connection ~ 3100 2750
+Text Label 3100 3150 2    50   ~ 0
+GND
+NoConn ~ 3800 2700
+NoConn ~ 3800 2800
+$Comp
+L Device:C_Variable C-SCLOCK-12
+U 1 1 5F87113C
+P 4100 2400
+F 0 "C-SCLOCK-12" H 4250 2450 50  0000 L CNN
+F 1 "C_Variable" H 4250 2400 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4100 2400 50  0001 C CNN
+F 3 "~" H 4100 2400 50  0001 C CNN
+	1    4100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2150 4100 2150
+Connection ~ 3500 2150
+Wire Wire Line
+	4100 2150 4100 2250
+Connection ~ 4100 2150
+Wire Wire Line
+	4100 2150 4450 2150
+Wire Wire Line
+	4100 2550 4100 2650
+Text Label 4100 2650 2    50   ~ 0
+GND
+Wire Wire Line
+	4750 2150 4850 2150
+$Comp
+L Device:R_POT RV-SCLOCK-1
+U 1 1 5F8C38BE
+P 5000 2150
+F 0 "RV-SCLOCK-1" H 4900 2100 50  0000 R CNN
+F 1 "100K" H 4900 2150 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 5000 2150 50  0001 C CNN
+F 3 "~" H 5000 2150 50  0001 C CNN
+	1    5000 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L NEWValves:VR91 V-SCLOCK-2
+U 1 1 5F8CEF9C
+P 5800 2600
+F 0 "V-SCLOCK-2" H 5850 2200 50  0000 C CNN
+F 1 "VR91" H 5850 2100 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6800 2850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 5800 2600 50  0001 C CNN
+	1    5800 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2550 6150 2550
+Wire Wire Line
+	5500 2450 5400 2450
+Wire Wire Line
+	5400 2650 5500 2650
+NoConn ~ 6100 2700
+NoConn ~ 6100 2800
+Text Label 5400 2450 2    50   ~ 0
+GND
+$Comp
+L Device:R R-SCLOCK-26
+U 1 1 5F8E6CAC
+P 5250 2650
+F 0 "R-SCLOCK-26" V 5150 2700 50  0000 C CNN
+F 1 "R" V 5350 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5180 2650 50  0001 C CNN
+F 3 "~" H 5250 2650 50  0001 C CNN
+	1    5250 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 2650 5000 2650
+Wire Wire Line
+	5000 2000 5000 1900
+$Comp
+L Device:R R-SCLOCK-25
+U 1 1 5F909110
+P 5000 1750
+F 0 "R-SCLOCK-25" H 4900 1700 50  0000 R CNN
+F 1 "2k7" H 4900 1750 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4930 1750 50  0001 C CNN
+F 3 "~" H 5000 1750 50  0001 C CNN
+	1    5000 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 1600 5000 1500
+Wire Wire Line
+	5000 750  5000 650 
+Text Label 5000 650  2    50   ~ 0
+GND
+Wire Wire Line
+	5000 2650 5000 2300
+Wire Wire Line
+	5500 2750 5500 2850
+Text Label 5500 2850 2    50   ~ 0
+GND
+Wire Wire Line
+	6250 2650 6250 2550
+Connection ~ 6250 2550
+Wire Wire Line
+	6250 2550 6250 2450
+$Comp
+L Device:C C-SCLOCK-16
+U 1 1 5F974584
+P 6250 2800
+F 0 "C-SCLOCK-16" H 6400 2850 50  0000 L CNN
+F 1 "0.5" H 6400 2800 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6288 2650 50  0001 C CNN
+F 3 "~" H 6250 2800 50  0001 C CNN
+	1    6250 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2950 6250 3050
+Text Label 6250 3050 0    50   ~ 0
+GND
+$Comp
+L Device:R R-SCLOCK-29
+U 1 1 5F983D11
+P 6250 2300
+F 0 "R-SCLOCK-29" H 6150 2250 50  0000 R CNN
+F 1 "10K 3W" H 6150 2300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6180 2300 50  0001 C CNN
+F 3 "~" H 6250 2300 50  0001 C CNN
+	1    6250 2300
+	-1   0    0    1   
+$EndComp
+Text Label 6250 2050 2    50   ~ 0
++300V
+Wire Wire Line
+	6250 2150 6250 2050
+Wire Wire Line
+	5800 2150 5800 1950
+Wire Wire Line
+	5800 1950 6900 1950
+Wire Wire Line
+	6900 2050 6900 1950
+$Comp
+L Device:C C-SCLOCK-18
+U 1 1 5F99F14E
+P 6900 2200
+F 0 "C-SCLOCK-18" H 7050 2250 50  0000 L CNN
+F 1 "0.5" H 7050 2200 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6938 2050 50  0001 C CNN
+F 3 "~" H 6900 2200 50  0001 C CNN
+	1    6900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2350 6900 2450
+$Comp
+L Device:R R-SCLOCK-34
+U 1 1 5F9B8370
+P 7600 2200
+F 0 "R-SCLOCK-34" H 7500 2150 50  0000 R CNN
+F 1 "39K" H 7500 2200 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7530 2200 50  0001 C CNN
+F 3 "~" H 7600 2200 50  0001 C CNN
+	1    7600 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 1950 7600 1950
+Wire Wire Line
+	7600 1950 7600 2050
+Connection ~ 6900 1950
+Wire Wire Line
+	6900 2450 7600 2450
+Wire Wire Line
+	7600 2450 7600 2350
+Wire Wire Line
+	5800 1950 5800 1850
+$Comp
+L Device:R R-SCLOCK-28
+U 1 1 5F9D43F3
+P 5800 1700
+F 0 "R-SCLOCK-28" H 5700 1650 50  0000 R CNN
+F 1 "47K" H 5700 1700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5730 1700 50  0001 C CNN
+F 3 "~" H 5800 1700 50  0001 C CNN
+	1    5800 1700
+	-1   0    0    1   
+$EndComp
+Text Label 5800 1450 2    50   ~ 0
++300V
+Wire Wire Line
+	5800 1550 5800 1450
+Connection ~ 5800 1950
+$Comp
+L NEWValves:CV173 V-SCLOCK-3
+U 1 1 5F9EA884
+P 8400 2600
+F 0 "V-SCLOCK-3" H 8450 2200 50  0000 C CNN
+F 1 "CV173" H 8450 2100 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9400 2850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 8400 2600 50  0001 C CNN
+	1    8400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2550 8750 2550
+Wire Wire Line
+	8100 2450 8000 2450
+Wire Wire Line
+	8000 2650 8100 2650
+NoConn ~ 8700 2700
+NoConn ~ 8700 2800
+Text Label 8000 2450 2    50   ~ 0
+GND
+$Comp
+L Device:R R-SCLOCK-39
+U 1 1 5F9EAB9E
+P 7850 2650
+F 0 "R-SCLOCK-39" V 7750 2700 50  0000 C CNN
+F 1 "R" V 7950 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7780 2650 50  0001 C CNN
+F 3 "~" H 7850 2650 50  0001 C CNN
+	1    7850 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 2650 7600 2650
+Wire Wire Line
+	8100 2750 8100 2850
+Text Label 8100 2850 2    50   ~ 0
+GND
+Wire Wire Line
+	8850 2650 8850 2550
+Connection ~ 8850 2550
+Wire Wire Line
+	8850 2550 8850 2450
+$Comp
+L Device:C C-SCLOCK-21
+U 1 1 5F9EABAE
+P 8850 2800
+F 0 "C-SCLOCK-21" H 9000 2850 50  0000 L CNN
+F 1 "0.5" H 9000 2800 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8888 2650 50  0001 C CNN
+F 3 "~" H 8850 2800 50  0001 C CNN
+	1    8850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2950 8850 3050
+Text Label 8850 3050 0    50   ~ 0
+GND
+$Comp
+L Device:R R-SCLOCK-45
+U 1 1 5F9EABBA
+P 8850 2300
+F 0 "R-SCLOCK-45" H 8750 2250 50  0000 R CNN
+F 1 "10K 3W" H 8750 2300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8780 2300 50  0001 C CNN
+F 3 "~" H 8850 2300 50  0001 C CNN
+	1    8850 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 2650 7600 2450
+Connection ~ 7600 2450
+Text Label 8850 2050 2    50   ~ 0
++300V
+Wire Wire Line
+	8850 2150 8850 2050
+Wire Wire Line
+	8400 2150 8400 1950
+Wire Wire Line
+	8400 1950 9250 1950
+Wire Wire Line
+	8400 1950 8400 1850
+$Comp
+L Device:R R-SCLOCK-42
+U 1 1 5FA5D4B6
+P 8400 1700
+F 0 "R-SCLOCK-42" H 8300 1650 50  0000 R CNN
+F 1 "15K" H 8300 1700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8330 1700 50  0001 C CNN
+F 3 "~" H 8400 1700 50  0001 C CNN
+	1    8400 1700
+	-1   0    0    1   
+$EndComp
+Text Label 8400 1450 2    50   ~ 0
++300V
+Wire Wire Line
+	8400 1550 8400 1450
+Connection ~ 8400 1950
+Connection ~ 9250 1950
+Wire Wire Line
+	9250 1950 9700 1950
+Wire Wire Line
+	9700 1950 9700 2050
+$Comp
+L NEWValves:807 V-SCLOCK-9
+U 1 1 5FAF8C3B
+P 10500 2600
+F 0 "V-SCLOCK-9" H 10550 2200 50  0000 C CNN
+F 1 "807" H 10550 2100 50  0000 C CNN
+F 2 "NewValves:USM5+1" H 11500 2850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/807.pdf" H 10500 2600 50  0001 C CNN
+	1    10500 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 2550 10850 2550
+$Comp
+L Device:R R-SCLOCK-48
+U 1 1 5FAF8FC1
+P 9950 2650
+F 0 "R-SCLOCK-48" V 10050 2450 50  0000 C CNN
+F 1 "R" V 10200 2550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9880 2650 50  0001 C CNN
+F 3 "~" H 9950 2650 50  0001 C CNN
+	1    9950 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10950 2650 10950 2550
+Connection ~ 10950 2550
+Wire Wire Line
+	10950 2550 10950 2450
+$Comp
+L Device:C C-SCLOCK-26
+U 1 1 5FAF8FD0
+P 10950 2800
+F 0 "C-SCLOCK-26" H 11100 2850 50  0000 L CNN
+F 1 "0.1" H 11100 2800 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10988 2650 50  0001 C CNN
+F 3 "~" H 10950 2800 50  0001 C CNN
+	1    10950 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 2950 10950 3050
+Text Label 10950 3050 0    50   ~ 0
+GND
+$Comp
+L Device:R R-SCLOCK-55
+U 1 1 5FAF8FDC
+P 10950 2300
+F 0 "R-SCLOCK-55" H 10850 2250 50  0000 R CNN
+F 1 "10K 3W" H 10850 2300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10880 2300 50  0001 C CNN
+F 3 "~" H 10950 2300 50  0001 C CNN
+	1    10950 2300
+	-1   0    0    1   
+$EndComp
+Text Label 10950 2050 2    50   ~ 0
++300V
+Wire Wire Line
+	10950 2150 10950 2050
+$Comp
+L Device:R R-SCLOCK-51
+U 1 1 5FAF8FEB
+P 10500 1700
+F 0 "R-SCLOCK-51" H 10400 1650 50  0000 R CNN
+F 1 "1K5" H 10400 1700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10430 1700 50  0001 C CNN
+F 3 "~" H 10500 1700 50  0001 C CNN
+	1    10500 1700
+	-1   0    0    1   
+$EndComp
+Text Label 10500 1450 2    50   ~ 0
++300V
+Wire Wire Line
+	10500 1550 10500 1450
+Wire Wire Line
+	9800 2650 9700 2650
+Wire Wire Line
+	9700 2650 9700 2350
+Wire Wire Line
+	10150 2650 10100 2650
+Wire Wire Line
+	10150 2500 10150 2100
+Wire Wire Line
+	10150 2100 10850 2100
+Wire Wire Line
+	10850 2100 10850 2550
+Wire Wire Line
+	10500 1850 10500 1950
+$Comp
+L Device:C C-SCLOCK-25
+U 1 1 5FC0058C
+P 10250 1950
+F 0 "C-SCLOCK-25" V 9950 1950 50  0000 C CNN
+F 1 "470pf" V 10050 1950 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10288 1800 50  0001 C CNN
+F 3 "~" H 10250 1950 50  0001 C CNN
+	1    10250 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10500 1950 10400 1950
+Connection ~ 10500 1950
+Wire Wire Line
+	10500 1950 10500 2150
+Wire Wire Line
+	10100 1950 10000 1950
+Text Label 10000 1950 0    50   ~ 0
+GND
+Text Label 10800 3550 2    50   ~ 0
+-150V
+$Comp
+L Device:R R-SCLOCK-54
+U 1 1 5FC3E74A
+P 10800 3300
+F 0 "R-SCLOCK-54" H 10900 3350 50  0000 L CNN
+F 1 "2K3 6W" H 10900 3300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10730 3300 50  0001 C CNN
+F 3 "~" H 10800 3300 50  0001 C CNN
+	1    10800 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 3450 10800 3550
+Wire Wire Line
+	10800 2750 10800 3100
+$Comp
+L Device:R_POT RV-SCLOCK-4
+U 1 1 5FCB6761
+P 11650 3100
+F 0 "RV-SCLOCK-4" V 11400 3100 50  0000 C CNN
+F 1 "10K" V 11500 3100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 11650 3100 50  0001 C CNN
+F 3 "~" H 11650 3100 50  0001 C CNN
+	1    11650 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10800 3100 11400 3100
+Connection ~ 10800 3100
+Wire Wire Line
+	10800 3100 10800 3150
+Wire Wire Line
+	11800 3100 11900 3100
+Text Label 11900 3100 0    50   ~ 0
+GND
+Wire Wire Line
+	11650 3250 11650 3350
+Wire Wire Line
+	11650 3350 12100 3350
+Wire Wire Line
+	11400 3100 11400 2850
+Wire Wire Line
+	11400 2850 12100 2850
+Connection ~ 11400 3100
+Wire Wire Line
+	11400 3100 11500 3100
+$Comp
+L Connector:Conn_01x01_Female J-SCLOCK-16
+U 1 1 5FD35D1A
+P 12300 3350
+F 0 "J-SCLOCK-16" H 12375 3400 50  0000 L CNN
+F 1 "Var.Dash" H 12375 3300 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 12300 3350 50  0001 C CNN
+F 3 "~" H 12300 3350 50  0001 C CNN
+	1    12300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 1950 10800 1800
+Text Label 10800 1800 0    50   ~ 0
+C
+$Comp
+L Connector:Conn_01x01_Female J-SCLOCK-14
+U 1 1 5FD55BE0
+P 1700 5050
+F 0 "J-SCLOCK-14" H 1775 5100 50  0000 L CNN
+F 1 "Var.Dash" H 1775 5000 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1700 5050 50  0001 C CNN
+F 3 "~" H 1700 5050 50  0001 C CNN
+	1    1700 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L NEWValves:EA50 D-SCLOCK-5
+U 1 1 5FD683EF
+P 2600 5050
+F 0 "D-SCLOCK-5" V 2900 4950 50  0000 C CNN
+F 1 "EA50" V 3000 4950 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3200 4850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2600 5050 50  0001 C CNN
+	1    2600 5050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1900 5050 2000 5050
+$Comp
+L Device:R R-SCLOCK-1
+U 1 1 5FD89E95
+P 2250 4750
+F 0 "R-SCLOCK-1" V 2150 4800 50  0000 C CNN
+F 1 "4k7" V 2350 4750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2180 4750 50  0001 C CNN
+F 3 "~" H 2250 4750 50  0001 C CNN
+	1    2250 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 4750 2100 4750
+Wire Wire Line
+	2000 4750 2000 5050
+Connection ~ 2000 5050
+Wire Wire Line
+	2000 5050 2100 5050
+Wire Wire Line
+	2850 5050 2950 5050
+Wire Wire Line
+	2950 5050 2950 4750
+Wire Wire Line
+	2400 4750 2950 4750
+Wire Wire Line
+	2950 4750 2950 4650
+Connection ~ 2950 4750
+$Comp
+L Device:C C-SCLOCK-11
+U 1 1 5FDEC246
+P 2950 4500
+F 0 "C-SCLOCK-11" H 3100 4550 50  0000 L CNN
+F 1 "50" H 3100 4500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2988 4350 50  0001 C CNN
+F 3 "~" H 2950 4500 50  0001 C CNN
+	1    2950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4350 2950 4250
+Text Label 2950 4250 0    50   ~ 0
+C
+$Comp
+L NEWValves:EA50 D-SCLOCK-8
+U 1 1 5FDFEE0F
+P 3300 5050
+F 0 "D-SCLOCK-8" V 3700 4900 50  0000 C CNN
+F 1 "EA50" V 3600 4900 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3900 4850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3300 5050 50  0001 C CNN
+	1    3300 5050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3050 5050 2950 5050
+Connection ~ 2950 5050
+Wire Wire Line
+	3800 5050 3900 5050
+$Comp
+L Device:R R-SCLOCK-20
+U 1 1 5FE23BA3
+P 3900 4800
+F 0 "R-SCLOCK-20" H 4000 4875 50  0000 L CNN
+F 1 "82K 2W" H 4000 4775 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3830 4800 50  0001 C CNN
+F 3 "~" H 3900 4800 50  0001 C CNN
+	1    3900 4800
+	1    0    0    -1  
+$EndComp
+Text Label 3900 4550 2    50   ~ 0
++300V
+Wire Wire Line
+	3900 4650 3900 4550
+Wire Wire Line
+	3900 4950 3900 5050
+$Comp
+L Device:R R-SCLOCK-21
+U 1 1 5FE49601
+P 3900 5300
+F 0 "R-SCLOCK-21" H 3800 5250 50  0000 R CNN
+F 1 "560" H 3800 5300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3830 5300 50  0001 C CNN
+F 3 "~" H 3900 5300 50  0001 C CNN
+	1    3900 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 5150 3900 5050
+Connection ~ 3900 5050
+Wire Wire Line
+	3900 5450 3900 5550
+$Comp
+L NEWValves:VR116 V-SCLOCK-8
+U 1 1 5FE7F877
+P 3900 6100
+F 0 "V-SCLOCK-8" H 3950 5700 50  0000 C CNN
+F 1 "VR116" H 3950 5600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4900 6350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3900 6100 50  0001 C CNN
+	1    3900 6100
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3900 5550
+Wire Wire Line
+	3900 5550 3900 5650
+$Comp
+L Device:R R-SCLOCK-24
+U 1 1 5FEAE879
+P 4450 6150
+F 0 "R-SCLOCK-24" V 4350 6200 50  0000 C CNN
+F 1 "4k7" V 4550 6150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4380 6150 50  0001 C CNN
+F 3 "~" H 4450 6150 50  0001 C CNN
+	1    4450 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 6150 4300 6150
+Wire Wire Line
+	4600 6150 4700 6150
+$Comp
+L Device:C C-SCLOCK-14
+U 1 1 5FEC4260
+P 4700 5800
+F 0 "C-SCLOCK-14" H 4850 5850 50  0000 L CNN
+F 1 "27" H 4850 5800 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4738 5650 50  0001 C CNN
+F 3 "~" H 4700 5800 50  0001 C CNN
+	1    4700 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5950 4700 6150
+Connection ~ 4700 6150
+Wire Wire Line
+	3900 5550 4700 5550
+Wire Wire Line
+	4700 5550 4700 5650
+NoConn ~ 3550 5800
+$Comp
+L Device:R R-SCLOCK-5
+U 1 1 5FF237CE
+P 3200 6050
+F 0 "R-SCLOCK-5" V 3100 6100 50  0000 C CNN
+F 1 "4k7" V 3300 6050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3130 6050 50  0001 C CNN
+F 3 "~" H 3200 6050 50  0001 C CNN
+	1    3200 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 6050 3050 6050
+Wire Wire Line
+	3350 6050 3450 6050
+Text Label 2950 6050 2    50   ~ 0
++200V
+Wire Wire Line
+	3450 6050 3450 6150
+Connection ~ 3450 6050
+Wire Wire Line
+	3450 6050 3550 6050
+$Comp
+L Connector:Conn_01x01_Female J-SCLOCK-15
+U 1 1 5FF62466
+P 3450 6350
+F 0 "J-SCLOCK-15" H 3525 6400 50  0000 L CNN
+F 1 "Div4" H 3525 6300 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 3450 6350 50  0001 C CNN
+F 3 "~" H 3450 6350 50  0001 C CNN
+	1    3450 6350
+	0    1    1    0   
+$EndComp
+Text Label 4200 6850 2    50   ~ 0
+GND
+$Comp
+L Device:R R-SCLOCK-22
+U 1 1 5FF66C23
+P 4200 6600
+F 0 "R-SCLOCK-22" H 4300 6650 50  0000 L CNN
+F 1 "4K7" H 4300 6600 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4130 6600 50  0001 C CNN
+F 3 "~" H 4200 6600 50  0001 C CNN
+	1    4200 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6750 4200 6850
+Wire Wire Line
+	4200 5950 4300 5950
+$Comp
+L Device:R R-SCLOCK-23
+U 1 1 5FFAFD3E
+P 4300 5800
+F 0 "R-SCLOCK-23" V 4200 5850 50  0000 C CNN
+F 1 "3K9" V 4400 5800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4230 5800 50  0001 C CNN
+F 3 "~" H 4300 5800 50  0001 C CNN
+	1    4300 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 5650 4200 5650
+Text Label 4200 5650 2    50   ~ 0
++40V
+$Comp
+L NEWValves:EA50 D-SCLOCK-4
+U 1 1 5FFCC218
+P 5700 6150
+F 0 "D-SCLOCK-4" V 5400 6000 50  0000 C CNN
+F 1 "EA50" V 5300 6000 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6300 5950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5700 6150 50  0001 C CNN
+	1    5700 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-SCLOCK-27
+U 1 1 5FFCCCCE
+P 5350 5900
+F 0 "R-SCLOCK-27" H 5250 5850 50  0000 R CNN
+F 1 "390K" H 5250 5900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5280 5900 50  0001 C CNN
+F 3 "~" H 5350 5900 50  0001 C CNN
+	1    5350 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 6150 5350 6150
+Wire Wire Line
+	5350 6150 5350 6050
+Wire Wire Line
+	4700 6150 5350 6150
+Connection ~ 5350 6150
+Wire Wire Line
+	6200 6150 6300 6150
+$Comp
+L Device:R_POT RV-SCLOCK-2
+U 1 1 6000DD6F
+P 6300 5650
+F 0 "RV-SCLOCK-2" H 6200 5600 50  0000 R CNN
+F 1 "100K" H 6200 5650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 6300 5650 50  0001 C CNN
+F 3 "~" H 6300 5650 50  0001 C CNN
+	1    6300 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 5800 6300 6150
+Wire Wire Line
+	6150 5650 5350 5650
+Wire Wire Line
+	5350 5650 5350 5750
+Wire Wire Line
+	6300 5500 6300 5400
+Text Label 6300 5400 0    50   ~ 0
+200dec
+$Comp
+L Device:C C-SCLOCK-23
+U 1 1 6004F096
+P 9600 6400
+F 0 "C-SCLOCK-23" V 9800 6400 50  0000 C CNN
+F 1 "100" V 9900 6400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9638 6250 50  0001 C CNN
+F 3 "~" H 9600 6400 50  0001 C CNN
+	1    9600 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 6400 11000 6400
+Wire Wire Line
+	6300 6150 6400 6150
+Connection ~ 6300 6150
+Text Label 6400 6150 0    50   ~ 0
++47V
+$Comp
+L NEWValves:EA50 D-SCLOCK-6
+U 1 1 600A3800
+P 6800 4900
+F 0 "D-SCLOCK-6" V 7100 4800 50  0000 C CNN
+F 1 "EA50" V 7200 4800 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7400 4700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6800 4900 50  0001 C CNN
+	1    6800 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 4900 6200 4900
+$Comp
+L Device:R R-SCLOCK-31
+U 1 1 600A3CD9
+P 6700 4600
+F 0 "R-SCLOCK-31" V 6600 4650 50  0000 C CNN
+F 1 "10K" V 6800 4600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6630 4600 50  0001 C CNN
+F 3 "~" H 6700 4600 50  0001 C CNN
+	1    6700 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 4600 6550 4600
+Wire Wire Line
+	6200 4600 6200 4900
+Connection ~ 6200 4900
+Wire Wire Line
+	6200 4900 6300 4900
+Wire Wire Line
+	7050 4900 7150 4900
+Wire Wire Line
+	6850 4600 7150 4600
+Wire Wire Line
+	7150 4900 7150 6400
+Wire Wire Line
+	7150 4900 7150 4600
+Connection ~ 7150 4900
+Text Label 6100 4900 2    50   ~ 0
+200dec
+$Comp
+L NEWValves:EA50 D-SCLOCK-9
+U 1 1 6011EC23
+P 7500 4900
+F 0 "D-SCLOCK-9" V 7900 4750 50  0000 C CNN
+F 1 "EA50" V 7800 4750 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8100 4700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7500 4900 50  0001 C CNN
+	1    7500 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7250 4900 7150 4900
+Wire Wire Line
+	8350 5450 8350 5550
+Connection ~ 8350 5550
+Wire Wire Line
+	8350 5550 8350 5650
+$Comp
+L Device:R R-SCLOCK-46
+U 1 1 6013C717
+P 8900 6150
+F 0 "R-SCLOCK-46" V 8800 6200 50  0000 C CNN
+F 1 "4k7" V 9000 6150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8830 6150 50  0001 C CNN
+F 3 "~" H 8900 6150 50  0001 C CNN
+	1    8900 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 6150 8750 6150
+NoConn ~ 8000 5800
+$Comp
+L Device:R R-SCLOCK-38
+U 1 1 6013C724
+P 7650 6050
+F 0 "R-SCLOCK-38" V 7800 6050 50  0000 C CNN
+F 1 "560" V 7900 6050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7580 6050 50  0001 C CNN
+F 3 "~" H 7650 6050 50  0001 C CNN
+	1    7650 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 6050 7500 6050
+Text Label 7400 5550 2    50   ~ 0
++200V
+Wire Wire Line
+	8650 6250 8650 6400
+$Comp
+L Device:R R-SCLOCK-43
+U 1 1 6013C73F
+P 8650 6600
+F 0 "R-SCLOCK-43" H 8750 6650 50  0000 L CNN
+F 1 "4K7" H 8750 6600 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8580 6600 50  0001 C CNN
+F 3 "~" H 8650 6600 50  0001 C CNN
+	1    8650 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5950 8750 5950
+$Comp
+L Device:R R-SCLOCK-44
+U 1 1 6013C74A
+P 8750 5800
+F 0 "R-SCLOCK-44" V 8650 5850 50  0000 C CNN
+F 1 "560" V 8850 5800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8680 5800 50  0001 C CNN
+F 3 "~" H 8750 5800 50  0001 C CNN
+	1    8750 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 5650 8650 5650
+Text Label 8650 5650 2    50   ~ 0
++40V
+Wire Wire Line
+	8650 6400 9450 6400
+Connection ~ 8650 6400
+Wire Wire Line
+	8650 6400 8650 6450
+$Comp
+L Device:R R-SCLOCK-33
+U 1 1 6015A1DD
+P 7400 5800
+F 0 "R-SCLOCK-33" H 7500 5850 50  0000 L CNN
+F 1 "2K2" H 7500 5800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7330 5800 50  0001 C CNN
+F 3 "~" H 7400 5800 50  0001 C CNN
+	1    7400 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 6050 7400 5950
+Wire Wire Line
+	7400 5650 7400 5550
+$Comp
+L NEWValves:VR116 V-SCLOCK-5
+U 1 1 6013C70B
+P 8350 6100
+F 0 "V-SCLOCK-5" H 8400 5700 50  0000 C CNN
+F 1 "VR116" H 8400 5600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9350 6350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 8350 6100 50  0001 C CNN
+	1    8350 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 6050 8000 6050
+$Comp
+L NEWValves:EA50 D-SCLOCK-7
+U 1 1 601E29CD
+P 10050 6150
+F 0 "D-SCLOCK-7" V 9750 6000 50  0000 C CNN
+F 1 "EA50" V 9650 6000 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 10650 5950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10050 6150 50  0001 C CNN
+	1    10050 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-SCLOCK-47
+U 1 1 601E2DC7
+P 9700 5900
+F 0 "R-SCLOCK-47" H 9600 5850 50  0000 R CNN
+F 1 "390K" H 9600 5900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9630 5900 50  0001 C CNN
+F 3 "~" H 9700 5900 50  0001 C CNN
+	1    9700 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9800 6150 9700 6150
+Wire Wire Line
+	9700 6150 9700 6050
+Wire Wire Line
+	9050 6150 9150 6150
+Connection ~ 9700 6150
+$Comp
+L Device:R_POT RV-SCLOCK-3
+U 1 1 601E2DD6
+P 10650 5500
+F 0 "RV-SCLOCK-3" H 10550 5450 50  0000 R CNN
+F 1 "20K" H 10550 5500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 10650 5500 50  0001 C CNN
+F 3 "~" H 10650 5500 50  0001 C CNN
+	1    10650 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10650 5650 10650 5750
+Wire Wire Line
+	10500 5500 9700 5500
+Text Label 10750 6150 0    50   ~ 0
++47V
+$Comp
+L Device:C C-SCLOCK-22
+U 1 1 601FFB2D
+P 9150 5800
+F 0 "C-SCLOCK-22" H 9300 5850 50  0000 L CNN
+F 1 "47" H 9300 5800 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9188 5650 50  0001 C CNN
+F 3 "~" H 9150 5800 50  0001 C CNN
+	1    9150 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5950 9150 6150
+Wire Wire Line
+	9150 5550 9150 5650
+Connection ~ 9150 6150
+Wire Wire Line
+	9150 6150 9700 6150
+$Comp
+L Device:R R-SCLOCK-41
+U 1 1 6023B2A4
+P 8350 5300
+F 0 "R-SCLOCK-41" H 8250 5250 50  0000 R CNN
+F 1 "560" H 8250 5300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8280 5300 50  0001 C CNN
+F 3 "~" H 8350 5300 50  0001 C CNN
+	1    8350 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8350 5550 9150 5550
+Wire Wire Line
+	8000 4900 8350 4900
+Wire Wire Line
+	8350 4900 8350 5150
+$Comp
+L Device:R R-SCLOCK-40
+U 1 1 6028F8A8
+P 8350 4650
+F 0 "R-SCLOCK-40" H 8450 4725 50  0000 L CNN
+F 1 "150K" H 8450 4625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8280 4650 50  0001 C CNN
+F 3 "~" H 8350 4650 50  0001 C CNN
+	1    8350 4650
+	1    0    0    -1  
+$EndComp
+Text Label 8350 4400 2    50   ~ 0
++300V
+Wire Wire Line
+	8350 4500 8350 4400
+Wire Wire Line
+	8350 4800 8350 4900
+Connection ~ 8350 4900
+Wire Wire Line
+	10550 6150 10650 6150
+$Comp
+L Device:R R-SCLOCK-53
+U 1 1 602CD845
+P 10650 5900
+F 0 "R-SCLOCK-53" H 10550 5850 50  0000 R CNN
+F 1 "4K7" H 10550 5900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10580 5900 50  0001 C CNN
+F 3 "~" H 10650 5900 50  0001 C CNN
+	1    10650 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10650 6150 10650 6050
+Connection ~ 10650 6150
+Wire Wire Line
+	10650 6150 10750 6150
+Wire Wire Line
+	9700 5500 9700 5750
+Wire Wire Line
+	10650 4850 10650 4950
+$Comp
+L Device:R R-SCLOCK-52
+U 1 1 60359B78
+P 10650 5100
+F 0 "R-SCLOCK-52" H 10550 5050 50  0000 R CNN
+F 1 "150K" H 10550 5100 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10580 5100 50  0001 C CNN
+F 3 "~" H 10650 5100 50  0001 C CNN
+	1    10650 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10650 5350 10650 5250
+Text Label 10650 4850 2    50   ~ 0
++300V
+$Comp
+L NEWValves:CV173 V-SCLOCK-10
+U 1 1 603D41DC
+P 12300 6350
+F 0 "V-SCLOCK-10" H 12350 5950 50  0000 C CNN
+F 1 "CV173" H 12350 5850 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 13300 6600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 12300 6350 50  0001 C CNN
+	1    12300 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SCLOCK-57
+U 1 1 603F3770
+P 11750 6400
+F 0 "R-SCLOCK-57" V 11650 6450 50  0000 C CNN
+F 1 "10K" V 11850 6400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11680 6400 50  0001 C CNN
+F 3 "~" H 11750 6400 50  0001 C CNN
+	1    11750 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11900 6400 12000 6400
+Wire Wire Line
+	12000 5800 12650 5800
+Wire Wire Line
+	12650 5800 12650 6300
+Wire Wire Line
+	12000 5800 12000 6200
+Wire Wire Line
+	12300 5700 12300 5900
+Text Label 12300 5700 2    50   ~ 0
++300V
+NoConn ~ 12600 6450
+NoConn ~ 12600 6550
+Text Label 12000 7300 2    50   ~ 0
+-150V
+$Comp
+L Device:R R-SCLOCK-58
+U 1 1 604BDA79
+P 12000 7050
+F 0 "R-SCLOCK-58" H 12100 7100 50  0000 L CNN
+F 1 "15K" H 12100 7050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11930 7050 50  0001 C CNN
+F 3 "~" H 12000 7050 50  0001 C CNN
+	1    12000 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 7200 12000 7300
+Wire Wire Line
+	12000 6500 12000 6700
+Wire Wire Line
+	12000 6700 12700 6700
+Connection ~ 12000 6700
+Wire Wire Line
+	12000 6700 12000 6900
+$Comp
+L Connector:Conn_01x01_Female J-SCLOCK-17
+U 1 1 60533922
+P 12900 6700
+F 0 "J-SCLOCK-17" H 12975 6750 50  0000 L CNN
+F 1 "P.R.F to Santrig" H 12975 6650 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 12900 6700 50  0001 C CNN
+F 3 "~" H 12900 6700 50  0001 C CNN
+	1    12900 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 6400 11000 6500
+Connection ~ 11000 6400
+Wire Wire Line
+	11000 6400 11600 6400
+Text Label 10300 7800 2    50   ~ 0
+-150V
+$Comp
+L Device:R R-SCLOCK-56
+U 1 1 605563D8
+P 11000 6650
+F 0 "R-SCLOCK-56" H 11100 6700 50  0000 L CNN
+F 1 "100K" H 11100 6650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10930 6650 50  0001 C CNN
+F 3 "~" H 11000 6650 50  0001 C CNN
+	1    11000 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SCLOCK-24
+U 1 1 60591AE8
+P 10000 7050
+F 0 "C-SCLOCK-24" H 10150 7000 50  0000 L CNN
+F 1 "100" H 10150 7050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10038 6900 50  0001 C CNN
+F 3 "~" H 10000 7050 50  0001 C CNN
+	1    10000 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-SCLOCK-49
+U 1 1 6059297A
+P 10300 7050
+F 0 "R-SCLOCK-49" H 10400 7100 50  0000 L CNN
+F 1 "33K" H 10400 7050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10230 7050 50  0001 C CNN
+F 3 "~" H 10300 7050 50  0001 C CNN
+	1    10300 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 6900 10000 6800
+Wire Wire Line
+	10000 6800 10300 6800
+Wire Wire Line
+	10300 6800 10300 6900
+Wire Wire Line
+	10300 7200 10300 7300
+Wire Wire Line
+	10300 7300 10000 7300
+Wire Wire Line
+	10000 7300 10000 7200
+Wire Wire Line
+	10300 6800 10300 6700
+Connection ~ 10300 6800
+Text Label 10300 6700 2    50   ~ 0
+GND
+$Comp
+L Device:R R-SCLOCK-50
+U 1 1 6060D981
+P 10300 7550
+F 0 "R-SCLOCK-50" H 10400 7600 50  0000 L CNN
+F 1 "470K" H 10400 7550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10230 7550 50  0001 C CNN
+F 3 "~" H 10300 7550 50  0001 C CNN
+	1    10300 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 7300 10300 7400
+Wire Wire Line
+	10300 7700 10300 7800
+Connection ~ 10300 7300
+Wire Wire Line
+	10300 6800 11000 6800
+$Comp
+L Device:C C-SCLOCK-15
+U 1 1 606B81F7
+P 5200 6400
+F 0 "C-SCLOCK-15" V 5400 6400 50  0000 C CNN
+F 1 "100" V 5500 6400 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5238 6250 50  0001 C CNN
+F 3 "~" H 5200 6400 50  0001 C CNN
+	1    5200 6400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 6400 7150 6400
+Wire Wire Line
+	4200 6250 4200 6400
+Wire Wire Line
+	5050 6400 4200 6400
+Connection ~ 4200 6400
+Wire Wire Line
+	4200 6400 4200 6450
+Text Label 8000 8150 0    50   ~ 0
++40V
+Wire Wire Line
+	7600 7650 7600 7750
+$Comp
+L Device:R R-SCLOCK-36
+U 1 1 608A29E4
+P 7600 7900
+F 0 "R-SCLOCK-36" H 7700 7950 50  0000 L CNN
+F 1 "820" H 7700 7900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7530 7900 50  0001 C CNN
+F 3 "~" H 7600 7900 50  0001 C CNN
+	1    7600 7900
+	1    0    0    -1  
+$EndComp
+Text Label 7700 7650 0    50   ~ 0
++47V
+Connection ~ 7600 7650
+Wire Wire Line
+	7600 7650 7700 7650
+Wire Wire Line
+	6950 7650 6950 7750
+Connection ~ 6950 7650
+Wire Wire Line
+	7600 7650 6950 7650
+Wire Wire Line
+	6950 7550 6950 7650
+Text Label 6950 8150 2    50   ~ 0
+GND
+Wire Wire Line
+	6950 8150 6950 8050
+$Comp
+L Device:C C-SCLOCK-19
+U 1 1 60818A80
+P 6950 7900
+F 0 "C-SCLOCK-19" H 7100 7850 50  0000 L CNN
+F 1 "0.1" H 7100 7900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6988 7750 50  0001 C CNN
+F 3 "~" H 6950 7900 50  0001 C CNN
+	1    6950 7900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 7150 7600 7150
+Wire Wire Line
+	7600 7550 7600 7650
+Wire Wire Line
+	7600 7150 7600 7250
+$Comp
+L Device:R R-SCLOCK-35
+U 1 1 607AD7F4
+P 7600 7400
+F 0 "R-SCLOCK-35" H 7700 7450 50  0000 L CNN
+F 1 "220k" H 7700 7400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7530 7400 50  0001 C CNN
+F 3 "~" H 7600 7400 50  0001 C CNN
+	1    7600 7400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 7150
+Wire Wire Line
+	6950 7150 6950 7250
+$Comp
+L Device:R R-SCLOCK-32
+U 1 1 60788A49
+P 6950 7400
+F 0 "R-SCLOCK-32" H 7050 7450 50  0000 L CNN
+F 1 "27k" H 7050 7400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6880 7400 50  0001 C CNN
+F 3 "~" H 6950 7400 50  0001 C CNN
+	1    6950 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 7150 6650 7250
+Connection ~ 6650 7150
+Wire Wire Line
+	6650 7150 6950 7150
+Text Label 6650 7650 2    50   ~ 0
+GND
+Wire Wire Line
+	6650 7050 6650 7150
+Wire Wire Line
+	6650 7650 6650 7550
+$Comp
+L Device:C C-SCLOCK-17
+U 1 1 607405DF
+P 6650 7400
+F 0 "C-SCLOCK-17" H 6800 7350 50  0000 L CNN
+F 1 "4uF" H 6800 7400 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6688 7250 50  0001 C CNN
+F 3 "~" H 6650 7400 50  0001 C CNN
+	1    6650 7400
+	-1   0    0    1   
+$EndComp
+Text Label 6650 6650 2    50   ~ 0
++200V
+Wire Wire Line
+	6650 6650 6650 6750
+$Comp
+L Device:R R-SCLOCK-30
+U 1 1 6069326F
+P 6650 6900
+F 0 "R-SCLOCK-30" H 6750 6950 50  0000 L CNN
+F 1 "470K" H 6750 6900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6580 6900 50  0001 C CNN
+F 3 "~" H 6650 6900 50  0001 C CNN
+	1    6650 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 6750 8650 6850
+Text Label 8650 6850 2    50   ~ 0
+GND
+Wire Wire Line
+	7600 8550 7600 8650
+$Comp
+L Device:R R-SCLOCK-37
+U 1 1 60912649
+P 7600 8400
+F 0 "R-SCLOCK-37" H 7500 8450 50  0000 R CNN
+F 1 "4k7" H 7500 8400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7530 8400 50  0001 C CNN
+F 3 "~" H 7600 8400 50  0001 C CNN
+	1    7600 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 8050 7600 8150
+Wire Wire Line
+	7900 8150 7900 8250
+Text Label 7750 8650 3    50   ~ 0
+GND
+Wire Wire Line
+	7900 8650 7900 8550
+$Comp
+L Device:C C-SCLOCK-20
+U 1 1 60936EE2
+P 7900 8400
+F 0 "C-SCLOCK-20" H 7750 8350 50  0000 R CNN
+F 1 "0.1" H 7750 8400 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7938 8250 50  0001 C CNN
+F 3 "~" H 7900 8400 50  0001 C CNN
+	1    7900 8400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 8150 7900 8150
+Connection ~ 7600 8150
+Wire Wire Line
+	7600 8150 7600 8250
+Connection ~ 7900 8150
+Wire Wire Line
+	7900 8150 8000 8150
+Wire Wire Line
+	7600 8650 7900 8650
+Wire Wire Line
+	4800 10850 4800 10900
+Wire Wire Line
+	5000 10850 5000 11150
+$Comp
+L NEWValves:VR116 V-SCLOCK-6
+U 2 1 60A07E90
+P 4900 10500
+F 0 "V-SCLOCK-6" H 4900 11050 50  0000 C CNN
+F 1 "VR116" H 4900 10950 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5900 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4900 10500 50  0001 C CNN
+	2    4900 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SCLOCK-7
+U 2 1 60B07A74
+P 5550 10500
+F 0 "V-SCLOCK-7" H 5550 11075 50  0000 C CNN
+F 1 "CV173" H 5550 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6550 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5550 10500 50  0001 C CNN
+	2    5550 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 10850 5450 10900
+Wire Wire Line
+	5650 10850 5650 11150
+Connection ~ 4100 10900
+Wire Wire Line
+	4100 10900 4800 10900
+Wire Wire Line
+	5450 10900 4800 10900
+Connection ~ 4800 10900
+Wire Wire Line
+	3600 11150 4300 11150
+Connection ~ 4300 11150
+Wire Wire Line
+	4300 11150 5000 11150
+Wire Wire Line
+	5000 11150 5650 11150
+Connection ~ 5000 11150
+Wire Wire Line
+	6025 9550 6675 9550
+Wire Wire Line
+	6225 9800 6875 9800
+Wire Wire Line
+	6675 9550 6675 9500
+Wire Wire Line
+	6875 9500 6875 9800
+$Comp
+L NEWValves:EA50 D-SCLOCK-9
+U 2 1 60D29901
+P 6775 9050
+F 0 "D-SCLOCK-9" H 7025 8950 50  0000 L CNN
+F 1 "EA50" H 7025 8850 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 7375 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6775 9050 50  0001 C CNN
+	2    6775 9050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6025 9550
+Connection ~ 6225 9800
+$Comp
+L local:Transformer_1P_4S T-SCLOCK-1
+U 1 1 60D5CE60
+P 2650 7800
+F 0 "T-SCLOCK-1" H 2650 8750 50  0000 C CNN
+F 1 "Transformer_1P_4S" H 2650 8650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 2650 8000 50  0001 C CNN
+F 3 "~" H 2650 8000 50  0001 C CNN
+	1    2650 7800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

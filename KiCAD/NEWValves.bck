@@ -186,12 +186,6 @@ K pentode valve
 F http://www.r-type.org/pdfs/ef50.pdf
 $ENDCMP
 #
-$CMP _807
-D Output Beam Tetrode, 25W  (Va = 300V, Ia = 83mA).
-K Beam Tetrode
-F http://www.r-type.org/pdfs/807.pdf
-$ENDCMP
-#
 $CMP cv1092
 D diode
 K diode

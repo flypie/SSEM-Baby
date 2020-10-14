@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 33
+Sheet 1 34
 Title "Control Adder Position 6.4"
 Date "2020-10-08"
 Rev "Alpha"
@@ -204,5 +204,11 @@ S 5500 4000 750  500
 U 5F868E46
 F0 "SCFOLLWS" 50
 F1 "SCFOLLWS.sch" 50
+$EndSheet
+$Sheet
+S 5500 4750 750  500 
+U 60BC2C2A
+F0 "SCLOCK" 50
+F1 "SCLOCK.sch" 50
 $EndSheet
 $EndSCHEMATC
