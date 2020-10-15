@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 26 34
+Sheet 26 35
 Title "L-STAT& YSHIFT Positions 3.5,3.6,37,3.8,3.9"
 Date "2020-10-08"
 Rev "Alpha"

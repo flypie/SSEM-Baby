@@ -1,0 +1,2421 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 35 35
+Title "Clock Position 2.2"
+Date "2020-10-08"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-SDOT&STB-1
+U 2 1 60D69555
+P 1550 10500
+F 0 "V-SDOT&STB-1" H 1550 11075 50  0000 C CNN
+F 1 "VR91" H 1550 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2550 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1550 10500 50  0001 C CNN
+	2    1550 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SDOT&STB-1
+U 2 1 651E4C90
+P 1550 9050
+F 0 "D-SDOT&STB-1" H 1550 9350 50  0000 C CNN
+F 1 "EA50" H 1550 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2150 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1550 9050 50  0001 C CNN
+	2    1550 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 10900 1450 10900
+Wire Wire Line
+	1300 11150 1650 11150
+Wire Wire Line
+	1450 10850 1450 10900
+Connection ~ 1450 10900
+Wire Wire Line
+	1650 10850 1650 11150
+Connection ~ 1650 11150
+Wire Wire Line
+	1300 9550 1450 9550
+Wire Wire Line
+	1300 9800 1650 9800
+Wire Wire Line
+	1450 9500 1450 9550
+Wire Wire Line
+	1650 9500 1650 9800
+Wire Wire Line
+	2075 10850 2075 10900
+Connection ~ 2075 10900
+Wire Wire Line
+	2275 10850 2275 11150
+Connection ~ 2275 11150
+Wire Wire Line
+	1450 10900 2075 10900
+Wire Wire Line
+	1650 11150 2275 11150
+Text Label 1300 9550 2    50   ~ 0
+Heater-6.3V
+Text Label 1300 9800 2    50   ~ 0
+Heater-GND
+Text Label 1300 10900 2    50   ~ 0
+Heater-6.3V
+Text Label 1300 11150 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:C C-SDOT&STB-7
+U 1 1 6064964E
+P 8850 10550
+F 0 "C-SDOT&STB-7" H 8725 10475 50  0000 R CNN
+F 1 "0.5" H 8725 10575 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8888 10400 50  0001 C CNN
+F 3 "~" H 8850 10550 50  0001 C CNN
+	1    8850 10550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-SDOT&STB-4
+U 1 1 6064964F
+P 7350 10550
+F 0 "C-SDOT&STB-4" H 7500 10625 50  0000 L CNN
+F 1 "0.5" H 7500 10550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7388 10400 50  0001 C CNN
+F 3 "~" H 7350 10550 50  0001 C CNN
+	1    7350 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SDOT&STB-5
+U 1 1 60649650
+P 8100 10550
+F 0 "C-SDOT&STB-5" H 8225 10625 50  0000 L CNN
+F 1 "0.5" H 8225 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8138 10400 50  0001 C CNN
+F 3 "~" H 8100 10550 50  0001 C CNN
+	1    8100 10550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1650 9800
+Connection ~ 1450 9550
+Wire Wire Line
+	1450 9550 2075 9550
+Connection ~ 2075 9550
+Wire Wire Line
+	2075 9550 2075 9500
+Connection ~ 2775 9550
+Wire Wire Line
+	2775 9550 2775 9500
+Connection ~ 2975 9800
+Wire Wire Line
+	2975 9500 2975 9800
+$Comp
+L NEWValves:EA50 D-SDOT&STB-4
+U 2 1 60D69533
+P 2875 9050
+F 0 "D-SDOT&STB-4" H 2875 9350 50  0000 C CNN
+F 1 "EA50" H 2875 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3475 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2875 9050 50  0001 C CNN
+	2    2875 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 9800 2275 9800
+Connection ~ 2275 9800
+Wire Wire Line
+	2275 9500 2275 9800
+$Comp
+L NEWValves:EA50 D-SDOT&STB-2
+U 2 1 651E4C92
+P 2175 9050
+F 0 "D-SDOT&STB-2" H 2200 9350 50  0000 C CNN
+F 1 "EA50" H 2200 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2775 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2175 9050 50  0001 C CNN
+	2    2175 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SDOT&STB-2
+U 2 1 651E4C97
+P 2175 10500
+F 0 "V-SDOT&STB-2" H 2200 11075 50  0000 C CNN
+F 1 "VR91" H 2200 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3175 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2175 10500 50  0001 C CNN
+	2    2175 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SDOT&STB-5
+U 2 1 651E4C8A
+P 3525 9050
+F 0 "D-SDOT&STB-5" H 3525 9350 50  0000 C CNN
+F 1 "EA50" H 3525 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4125 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3525 9050 50  0001 C CNN
+	2    3525 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3425 9500 3425 9550
+Wire Wire Line
+	3625 9500 3625 9800
+Connection ~ 3625 9800
+Connection ~ 3425 9550
+Wire Wire Line
+	3425 9550 4100 9550
+Wire Wire Line
+	4100 9550 4775 9550
+Connection ~ 4100 9550
+Wire Wire Line
+	4100 9550 4100 9500
+Wire Wire Line
+	4300 9800 4975 9800
+Wire Wire Line
+	4975 9500 4975 9800
+Wire Wire Line
+	4775 9500 4775 9550
+$Comp
+L NEWValves:EA50 D-SDOT&STB-7
+U 2 1 60D6951F
+P 4875 9050
+F 0 "D-SDOT&STB-7" H 4875 9350 50  0000 C CNN
+F 1 "EA50" H 4875 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5475 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4875 9050 50  0001 C CNN
+	2    4875 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3625 9800 4300 9800
+Connection ~ 4300 9800
+Wire Wire Line
+	4300 9500 4300 9800
+$Comp
+L NEWValves:EA50 D-SDOT&STB-6
+U 2 1 651E4C2C
+P 4200 9050
+F 0 "D-SDOT&STB-6" H 4225 9350 50  0000 C CNN
+F 1 "EA50" H 4225 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4800 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4200 9050 50  0001 C CNN
+	2    4200 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2775 9550 3425 9550
+Wire Wire Line
+	2975 9800 3625 9800
+$Comp
+L NEWValves:VR91 V-SDOT&STB-3
+U 2 1 60D69552
+P 2850 10500
+F 0 "V-SDOT&STB-3" H 2850 11075 50  0000 C CNN
+F 1 "VR91" H 2850 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3850 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2850 10500 50  0001 C CNN
+	2    2850 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 10850 2750 10900
+Connection ~ 2750 10900
+Wire Wire Line
+	2950 10850 2950 11150
+Connection ~ 2950 11150
+Wire Wire Line
+	3400 10850 3400 10900
+Connection ~ 3400 10900
+Connection ~ 3600 11150
+Wire Wire Line
+	2750 10900 3400 10900
+Wire Wire Line
+	2950 11150 3600 11150
+$Comp
+L NEWValves:CV173 V-SDOT&STB-4
+U 2 1 60D69553
+P 3500 10500
+F 0 "V-SDOT&STB-4" H 3525 11075 50  0000 C CNN
+F 1 "CV173" H 3525 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4500 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3500 10500 50  0001 C CNN
+	2    3500 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 10850 4100 10900
+Wire Wire Line
+	4300 10850 4300 11150
+$Comp
+L NEWValves:CV173 V-SDOT&STB-5
+U 2 1 6064965B
+P 4200 10500
+F 0 "V-SDOT&STB-5" H 4225 11075 50  0000 C CNN
+F 1 "CV173" H 4225 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5200 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4200 10500 50  0001 C CNN
+	2    4200 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 10900 4100 10900
+Wire Wire Line
+	3600 10850 3600 11150
+Wire Wire Line
+	2275 11150 2950 11150
+Wire Wire Line
+	2075 10900 2750 10900
+Wire Wire Line
+	7350 10700 7350 10800
+Text Label 7350 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	8100 10700 8100 10800
+Text Label 8100 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	8850 10700 8850 10800
+Text Label 8850 10800 3    50   ~ 0
+GND
+Text Label 7350 10400 1    50   ~ 0
++300V
+Text Label 8100 10400 1    50   ~ 0
++200V
+Text Label 9600 10400 1    50   ~ 0
++50V
+Text Label 8850 10400 1    50   ~ 0
+-150V
+Text Label 9600 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	9600 10700 9600 10800
+$Comp
+L Device:C C-SDOT&STB-8
+U 1 1 651E4C77
+P 9600 10550
+F 0 "C-SDOT&STB-8" H 9725 10625 50  0000 L CNN
+F 1 "0.5" H 9725 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9638 10400 50  0001 C CNN
+F 3 "~" H 9600 10550 50  0001 C CNN
+	1    9600 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60B39D71
+P 12100 1450
+AR Path="/5F868E46/60B39D71" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60B39D71" Ref="#FLG0115"  Part="1" 
+AR Path="/60BC2C2A/60B39D71" Ref="#FLG0164"  Part="1" 
+AR Path="/5F89117E/60B39D71" Ref="#FLG0166"  Part="1" 
+F 0 "#FLG0166" H 12100 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 12125 1650 50  0000 C CNN
+F 2 "" H 12100 1450 50  0001 C CNN
+F 3 "~" H 12100 1450 50  0001 C CNN
+	1    12100 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SCFOLLWS-?
+U 1 1 60D69558
+P 11750 1100
+AR Path="/5F868E46/60D69558" Ref="J-SCFOLLWS-?"  Part="1" 
+AR Path="/5F2DDAEA/60D69558" Ref="J-SDOT&STB-5"  Part="1" 
+AR Path="/60BC2C2A/60D69558" Ref="J-SDOT&STB-5"  Part="1" 
+AR Path="/5F89117E/60D69558" Ref="J-SDOT&STB-5"  Part="1" 
+F 0 "J-SDOT&STB-5" H 11800 1550 50  0000 C CNN
+F 1 "HIGH Voltage." H 11800 1450 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 11750 1100 50  0001 C CNN
+F 3 "~" H 11750 1100 50  0001 C CNN
+	1    11750 1100
+	1    0    0    -1  
+$EndComp
+Text Label 11450 900  2    50   ~ 0
++300V
+Text Label 12150 1000 0    50   ~ 0
+-150V
+Text Label 11450 1000 2    50   ~ 0
++50V
+Text Label 11450 1100 2    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60D69559
+P 11500 1450
+AR Path="/5F868E46/60D69559" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60D69559" Ref="#FLG0116"  Part="1" 
+AR Path="/60BC2C2A/60D69559" Ref="#FLG0165"  Part="1" 
+AR Path="/5F89117E/60D69559" Ref="#FLG0167"  Part="1" 
+F 0 "#FLG0167" H 11500 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 11525 1650 50  0000 C CNN
+F 2 "" H 11500 1450 50  0001 C CNN
+F 3 "~" H 11500 1450 50  0001 C CNN
+	1    11500 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11550 1400 11500 1400
+Wire Wire Line
+	11500 1450 11500 1400
+Connection ~ 11500 1400
+Wire Wire Line
+	11500 1400 11450 1400
+Wire Wire Line
+	12050 1400 12100 1400
+Text Label 12150 1400 0    50   ~ 0
+Heater-6.3V
+Connection ~ 12100 1400
+Wire Wire Line
+	12100 1400 12150 1400
+Wire Wire Line
+	12150 900  12050 900 
+Wire Wire Line
+	12150 1000 12050 1000
+Wire Wire Line
+	12150 1100 12050 1100
+Wire Wire Line
+	11550 900  11450 900 
+Wire Wire Line
+	11550 1000 11450 1000
+Wire Wire Line
+	11550 1100 11450 1100
+Wire Wire Line
+	11450 1300 11550 1300
+Wire Wire Line
+	12150 1300 12050 1300
+Wire Wire Line
+	12100 1450 12100 1400
+Text Label 12150 900  0    50   ~ 0
++200V
+Text Label 12150 1100 0    50   ~ 0
+GND
+Text Label 11450 1400 2    50   ~ 0
+Heater-GND
+Wire Wire Line
+	4800 10850 4800 10900
+Wire Wire Line
+	5000 10850 5000 11150
+$Comp
+L NEWValves:CV173 V-SDOT&STB-6
+U 2 1 60A07E90
+P 4900 10500
+F 0 "V-SDOT&STB-6" H 4900 11050 50  0000 C CNN
+F 1 "CV173" H 4900 10950 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5900 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4900 10500 50  0001 C CNN
+	2    4900 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SDOT&STB-7
+U 2 1 60B07A74
+P 5550 10500
+F 0 "V-SDOT&STB-7" H 5550 11075 50  0000 C CNN
+F 1 "VR91" H 5550 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6550 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 5550 10500 50  0001 C CNN
+	2    5550 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 10850 5450 10900
+Wire Wire Line
+	5650 10850 5650 11150
+Connection ~ 4100 10900
+Wire Wire Line
+	4100 10900 4800 10900
+Wire Wire Line
+	5450 10900 4800 10900
+Connection ~ 4800 10900
+Wire Wire Line
+	3600 11150 4300 11150
+Connection ~ 4300 11150
+Wire Wire Line
+	4300 11150 5000 11150
+Wire Wire Line
+	5000 11150 5650 11150
+Connection ~ 5000 11150
+$Comp
+L NEWValves:EA50 D-SDOT&STB-10
+U 1 1 5F8FDB95
+P 7350 1400
+F 0 "D-SDOT&STB-10" V 7650 1300 50  0000 C CNN
+F 1 "EA50" V 7750 1300 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7950 1200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7350 1400 50  0001 C CNN
+	1    7350 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2400 2350 2400 2000
+$Comp
+L Device:C C-SDOT&STB-3
+U 1 1 5F8FDBB3
+P 2400 1850
+F 0 "C-SDOT&STB-3" H 2550 1900 50  0000 L CNN
+F 1 "47" H 2550 1850 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2438 1700 50  0001 C CNN
+F 3 "~" H 2400 1850 50  0001 C CNN
+	1    2400 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SDOT&STB-86
+U 1 1 5F8FDBD9
+P 9150 2750
+F 0 "R-SDOT&STB-86" H 9250 2700 50  0000 L CNN
+F 1 "560" H 9250 2750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9080 2750 50  0001 C CNN
+F 3 "~" H 9150 2750 50  0001 C CNN
+	1    9150 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 2600 9150 1750
+Wire Wire Line
+	9150 2900 9150 3000
+$Comp
+L Device:R_POT RV-SDOT&STB-5
+U 1 1 5F92C80A
+P 1200 2350
+F 0 "RV-SDOT&STB-5" H 1100 2400 50  0000 R CNN
+F 1 "10K" H 1100 2350 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 1200 2350 50  0001 C CNN
+F 3 "~" H 1200 2350 50  0001 C CNN
+	1    1200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1750 1200 1800
+Wire Wire Line
+	1200 2100 1200 2200
+$Comp
+L Device:R R-SDOT&STB-6
+U 1 1 5F8FDC27
+P 1200 1950
+F 0 "R-SDOT&STB-6" H 1100 2000 50  0000 R CNN
+F 1 "4K7" H 1100 1950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1130 1950 50  0001 C CNN
+F 3 "~" H 1200 1950 50  0001 C CNN
+	1    1200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2500 1200 2550
+Wire Wire Line
+	1200 2850 1200 2950
+$Comp
+L Device:R R-SDOT&STB-7
+U 1 1 5F979DB3
+P 1200 2700
+F 0 "R-SDOT&STB-7" H 1100 2750 50  0000 R CNN
+F 1 "4K7" H 1100 2700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1130 2700 50  0001 C CNN
+F 3 "~" H 1200 2700 50  0001 C CNN
+	1    1200 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 550  2200 0    50   ~ 0
+DOT WIDTH
+Text Label 1200 1750 2    50   ~ 0
++200V
+Text Label 1200 2950 0    50   ~ 0
+GND
+$Comp
+L Device:R R-SDOT&STB-10
+U 1 1 5F9BEF7E
+P 2050 2300
+F 0 "R-SDOT&STB-10" V 1800 2300 50  0000 C CNN
+F 1 "150K" V 1900 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1980 2300 50  0001 C CNN
+F 3 "~" H 2050 2300 50  0001 C CNN
+	1    2050 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 2350 1800 2350
+Wire Wire Line
+	1800 2350 1800 2300
+Wire Wire Line
+	1800 2400 1800 2350
+Connection ~ 1800 2350
+Wire Wire Line
+	1800 2300 1900 2300
+Wire Wire Line
+	2200 2300 2300 2300
+Wire Wire Line
+	2300 2300 2300 2350
+$Comp
+L Device:R R-SDOT&STB-12
+U 1 1 5FA4BFEE
+P 2650 2350
+F 0 "R-SDOT&STB-12" V 2550 2400 50  0000 C CNN
+F 1 "470" V 2750 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2580 2350 50  0001 C CNN
+F 3 "~" H 2650 2350 50  0001 C CNN
+	1    2650 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 2400 2200 2400
+Wire Wire Line
+	1900 2400 1800 2400
+$Comp
+L Device:R R-SDOT&STB-11
+U 1 1 5F9E05BD
+P 2050 2400
+F 0 "R-SDOT&STB-11" V 2200 2400 50  0000 C CNN
+F 1 "120K" V 2300 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1980 2400 50  0001 C CNN
+F 3 "~" H 2050 2400 50  0001 C CNN
+	1    2050 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 2350 2400 2350
+Connection ~ 2300 2350
+Wire Wire Line
+	2300 2350 2300 2400
+$Comp
+L NEWValves:VR91 V-SDOT&STB-1
+U 1 1 5FAD8A4D
+P 3200 2300
+F 0 "V-SDOT&STB-1" H 3250 1900 50  0000 C CNN
+F 1 "VR91" H 3250 1800 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4200 2550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 3200 2300 50  0001 C CNN
+	1    3200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2350 2900 2350
+Wire Wire Line
+	3200 1850 3200 1800
+$Comp
+L Device:R R-SDOT&STB-15
+U 1 1 5FBAF6BC
+P 3200 1600
+F 0 "R-SDOT&STB-15" H 3100 1650 50  0000 R CNN
+F 1 "3K3" H 3100 1600 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3130 1600 50  0001 C CNN
+F 3 "~" H 3200 1600 50  0001 C CNN
+	1    3200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1450 3200 1350
+$Comp
+L NEWValves:EA50 D-SDOT&STB-3
+U 1 1 5FC1E678
+P 2150 1350
+F 0 "D-SDOT&STB-3" V 2450 1250 50  0000 C CNN
+F 1 "EA50" V 2550 1250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2750 1150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2150 1350 50  0001 C CNN
+	1    2150 1350
+	0    1    1    0   
+$EndComp
+Connection ~ 2400 2350
+Wire Wire Line
+	2400 2350 2300 2350
+Wire Wire Line
+	2400 1350 2400 1700
+Wire Wire Line
+	2400 1350 3200 1350
+Connection ~ 2400 1350
+Wire Wire Line
+	1650 1350 1550 1350
+$Comp
+L Device:R_POT RV-SDOT&STB-6
+U 1 1 5FDB7FC8
+P 1400 1350
+F 0 "RV-SDOT&STB-6" H 1300 1400 50  0000 R CNN
+F 1 "10K" H 1300 1350 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 1400 1350 50  0001 C CNN
+F 3 "~" H 1400 1350 50  0001 C CNN
+	1    1400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 750  1400 800 
+Wire Wire Line
+	1400 1100 1400 1200
+$Comp
+L Device:R R-SDOT&STB-8
+U 1 1 5FDB83DE
+P 1400 950
+F 0 "R-SDOT&STB-8" H 1300 1000 50  0000 R CNN
+F 1 "4K7" H 1300 950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1330 950 50  0001 C CNN
+F 3 "~" H 1400 950 50  0001 C CNN
+	1    1400 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1500 1400 1550
+Wire Wire Line
+	1400 1850 1400 1950
+$Comp
+L Device:R R-SDOT&STB-9
+U 1 1 5FDB83EA
+P 1400 1700
+F 0 "R-SDOT&STB-9" H 1300 1750 50  0000 R CNN
+F 1 "4K7" H 1300 1700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1330 1700 50  0001 C CNN
+F 3 "~" H 1400 1700 50  0001 C CNN
+	1    1400 1700
+	1    0    0    -1  
+$EndComp
+Text Notes 750  1200 0    50   ~ 0
+DOT WIDTH
+Text Label 1400 750  1    50   ~ 0
++200V
+Text Label 1400 1950 0    50   ~ 0
+GND
+Wire Wire Line
+	3200 750  3200 950 
+Wire Wire Line
+	3200 1250 3200 1350
+$Comp
+L Device:R R-SDOT&STB-14
+U 1 1 5FE09BE3
+P 3200 1100
+F 0 "R-SDOT&STB-14" H 3100 1150 50  0000 R CNN
+F 1 "47K 2W" H 3100 1100 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3130 1100 50  0001 C CNN
+F 3 "~" H 3200 1100 50  0001 C CNN
+	1    3200 1100
+	1    0    0    -1  
+$EndComp
+Text Label 3200 750  1    50   ~ 0
++300V
+Connection ~ 3200 1350
+NoConn ~ 3500 2500
+NoConn ~ 3500 2400
+Wire Wire Line
+	3550 750  3550 1200
+$Comp
+L Device:R R-SDOT&STB-16
+U 1 1 5FECB132
+P 3550 1350
+F 0 "R-SDOT&STB-16" H 3650 1400 50  0000 L CNN
+F 1 "15K" H 3650 1350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3480 1350 50  0001 C CNN
+F 3 "~" H 3550 1350 50  0001 C CNN
+	1    3550 1350
+	1    0    0    -1  
+$EndComp
+Text Label 3550 750  1    50   ~ 0
++300V
+Wire Wire Line
+	2900 2450 2900 3000
+Text Label 2900 3000 2    50   ~ 0
+GND
+Wire Wire Line
+	3550 1500 3550 2250
+Wire Wire Line
+	3200 1800 3650 1800
+Connection ~ 3200 1800
+Wire Wire Line
+	3200 1800 3200 1750
+Wire Wire Line
+	2900 2150 2900 1900
+Wire Wire Line
+	2900 1900 3750 1900
+Wire Wire Line
+	3750 1900 3750 2150
+Connection ~ 3650 1800
+Wire Wire Line
+	3650 1800 3750 1800
+Wire Wire Line
+	3750 2150 3850 2150
+$Comp
+L Device:R R-SDOT&STB-19
+U 1 1 6006458B
+P 3850 2400
+F 0 "R-SDOT&STB-19" V 3750 2450 50  0000 C CNN
+F 1 "470K" V 3950 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3780 2400 50  0001 C CNN
+F 3 "~" H 3850 2400 50  0001 C CNN
+	1    3850 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 2250 3850 2150
+Connection ~ 3850 2150
+Wire Wire Line
+	3850 2150 4250 2150
+$Comp
+L NEWValves:EA50 D-SDOT&STB-4
+U 1 1 6008E758
+P 4250 2400
+F 0 "D-SDOT&STB-4" V 4550 2300 50  0000 C CNN
+F 1 "EA50" V 4650 2300 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4850 2200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4250 2400 50  0001 C CNN
+	1    4250 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 2150
+$Comp
+L Device:C C-SDOT&STB-27
+U 1 1 6009094A
+P 3900 1800
+F 0 "C-SDOT&STB-27" V 4200 1800 50  0000 C CNN
+F 1 "47" V 4100 1800 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3938 1650 50  0001 C CNN
+F 3 "~" H 3900 1800 50  0001 C CNN
+	1    3900 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 2550 3850 3000
+Text Label 3850 3000 2    50   ~ 0
+GND
+Wire Wire Line
+	4250 2900 4250 3000
+Text Label 4250 3000 2    50   ~ 0
+GND
+$Comp
+L NEWValves:VR91 V-SDOT&STB-11
+U 1 1 601ED6C2
+P 5150 2300
+F 0 "V-SDOT&STB-11" H 5200 1900 50  0000 C CNN
+F 1 "CV173" H 5200 1800 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6150 2550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5150 2300 50  0001 C CNN
+	1    5150 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2450 4850 3000
+Text Label 4850 3000 2    50   ~ 0
+GND
+Wire Wire Line
+	4850 2150 4750 2150
+Text Label 4750 2150 1    50   ~ 0
+GND
+$Comp
+L Device:C C-SDOT&STB-31
+U 1 1 6029C8B1
+P 4900 1850
+F 0 "C-SDOT&STB-31" V 5200 1850 50  0000 C CNN
+F 1 "47" V 5100 1850 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4938 1700 50  0001 C CNN
+F 3 "~" H 4900 1850 50  0001 C CNN
+	1    4900 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 1850 5050 1850
+Wire Wire Line
+	4750 1850 4650 1850
+Wire Wire Line
+	4650 1850 4650 2150
+Wire Wire Line
+	4250 2150 4650 2150
+Wire Wire Line
+	4850 2350 4550 2350
+Wire Wire Line
+	4550 2350 4550 1800
+Wire Wire Line
+	4550 1800 4050 1800
+Wire Wire Line
+	4550 1250 4550 1800
+Connection ~ 4550 1800
+Wire Wire Line
+	4550 750  4550 950 
+$Comp
+L Device:R R-SDOT&STB-63
+U 1 1 603FCDA1
+P 4550 1100
+F 0 "R-SDOT&STB-63" H 4450 1150 50  0000 R CNN
+F 1 "100K" H 4450 1100 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4480 1100 50  0001 C CNN
+F 3 "~" H 4550 1100 50  0001 C CNN
+	1    4550 1100
+	1    0    0    -1  
+$EndComp
+Text Label 4550 750  2    50   ~ 0
++200V
+NoConn ~ 5450 2500
+NoConn ~ 5450 2400
+Wire Wire Line
+	5500 2250 5600 2250
+Wire Wire Line
+	5600 1800 5600 1850
+Wire Wire Line
+	5600 2150 5600 2250
+$Comp
+L Device:R R-SDOT&STB-69
+U 1 1 604DE48C
+P 5600 2000
+F 0 "R-SDOT&STB-69" H 5700 2050 50  0000 L CNN
+F 1 "15K 2W" H 5700 2000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5530 2000 50  0001 C CNN
+F 3 "~" H 5600 2000 50  0001 C CNN
+	1    5600 2000
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1800 1    50   ~ 0
++300V
+$Comp
+L Device:C C-SDOT&STB-33
+U 1 1 6050C5D0
+P 5600 2500
+F 0 "C-SDOT&STB-33" H 5750 2550 50  0000 L CNN
+F 1 "47" H 5750 2500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5638 2350 50  0001 C CNN
+F 3 "~" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2350 5600 2250
+Connection ~ 5600 2250
+Wire Wire Line
+	5600 2650 5600 3000
+Text Label 5600 3000 2    50   ~ 0
+GND
+$Comp
+L Device:R R-SDOT&STB-67
+U 1 1 6074C948
+P 5150 1600
+F 0 "R-SDOT&STB-67" H 5250 1650 50  0000 L CNN
+F 1 "8.2K 2W" H 5250 1600 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5080 1600 50  0001 C CNN
+F 3 "~" H 5150 1600 50  0001 C CNN
+	1    5150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 750  5150 950 
+$Comp
+L Device:R R-SDOT&STB-66
+U 1 1 6074CECA
+P 5150 1100
+F 0 "R-SDOT&STB-66" H 5250 1150 50  0000 L CNN
+F 1 "1.8K" H 5250 1100 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5080 1100 50  0001 C CNN
+F 3 "~" H 5150 1100 50  0001 C CNN
+	1    5150 1100
+	1    0    0    -1  
+$EndComp
+Text Label 5150 750  2    50   ~ 0
++300V
+Wire Wire Line
+	5150 1250 5150 1350
+Wire Wire Line
+	5150 1850 5150 1750
+Connection ~ 5150 1850
+Wire Wire Line
+	5150 1350 5250 1350
+$Comp
+L Device:C C-SDOT&STB-32
+U 1 1 607E3238
+P 5400 1350
+F 0 "C-SDOT&STB-32" V 5450 1000 50  0000 C CNN
+F 1 "47" V 5350 1250 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5438 1200 50  0001 C CNN
+F 3 "~" H 5400 1350 50  0001 C CNN
+	1    5400 1350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 1350
+Wire Wire Line
+	5150 1350 5150 1450
+Wire Wire Line
+	6600 1350 6600 2350
+Wire Wire Line
+	5550 1350 6600 1350
+$Comp
+L NEWValves:EA50 D-SDOT&STB-1
+U 1 1 6087F369
+P 4200 3750
+F 0 "D-SDOT&STB-1" V 4500 3650 50  0000 C CNN
+F 1 "EA50" V 4600 3650 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4800 3550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4200 3750 50  0001 C CNN
+	1    4200 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-SDOT&STB-2
+U 1 1 60880A0D
+P 4900 3750
+F 0 "D-SDOT&STB-2" V 5200 3650 50  0000 C CNN
+F 1 "EA50" V 5300 3650 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5500 3550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-SDOT&STB-18
+U 1 1 608B3E4E
+P 3600 4000
+F 0 "R-SDOT&STB-18" H 3500 4050 50  0000 R CNN
+F 1 "5K" H 3500 4000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3530 4000 50  0001 C CNN
+F 3 "~" H 3600 4000 50  0001 C CNN
+	1    3600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SDOT&STB-17
+U 1 1 608B43F5
+P 3600 3500
+F 0 "R-SDOT&STB-17" H 3700 3550 50  0000 L CNN
+F 1 "82K 2W" H 3700 3500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3530 3500 50  0001 C CNN
+F 3 "~" H 3600 3500 50  0001 C CNN
+	1    3600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3650 3600 3750
+Wire Wire Line
+	3600 3250 3600 3350
+Text Label 3600 3250 2    50   ~ 0
++200V
+Wire Wire Line
+	3600 4150 3600 4250
+Text Label 3600 4250 2    50   ~ 0
+GND
+$Comp
+L Device:C C-SDOT&STB-9
+U 1 1 60A3EB62
+P 3350 3750
+F 0 "C-SDOT&STB-9" V 3650 3750 50  0000 C CNN
+F 1 "200" V 3550 3750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3388 3600 50  0001 C CNN
+F 3 "~" H 3350 3750 50  0001 C CNN
+	1    3350 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 3750 3500 3750
+Connection ~ 3600 3750
+Wire Wire Line
+	3600 3750 3600 3850
+Wire Wire Line
+	3200 3750 3100 3750
+$Comp
+L Connector:Conn_01x01_Female J-SDOT&STB-1
+U 1 1 60AA518D
+P 2900 3750
+F 0 "J-SDOT&STB-1" H 2975 3800 50  0000 L CNN
+F 1 "DASH" H 2975 3700 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 2900 3750 50  0001 C CNN
+F 3 "~" H 2900 3750 50  0001 C CNN
+	1    2900 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3600 3750 3700 3750
+Wire Wire Line
+	4650 3750 4550 3750
+Wire Wire Line
+	5400 3750 5450 3750
+$Comp
+L Device:R R-SDOT&STB-68
+U 1 1 60BA53D0
+P 5450 4000
+F 0 "R-SDOT&STB-68" H 5550 4050 50  0000 L CNN
+F 1 "100K" H 5550 4000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5380 4000 50  0001 C CNN
+F 3 "~" H 5450 4000 50  0001 C CNN
+	1    5450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4150 5450 4250
+Text Label 5450 4250 2    50   ~ 0
+GND
+Wire Wire Line
+	5450 3850 5450 3750
+Connection ~ 5450 3750
+Wire Wire Line
+	5450 3750 5550 3750
+$Comp
+L Device:R R-SDOT&STB-70
+U 1 1 60CA5506
+P 5800 3750
+F 0 "R-SDOT&STB-70" V 5550 3750 50  0000 C CNN
+F 1 "100K" V 5650 3750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5730 3750 50  0001 C CNN
+F 3 "~" H 5800 3750 50  0001 C CNN
+	1    5800 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-SDOT&STB-35
+U 1 1 60CA725C
+P 5800 3350
+F 0 "C-SDOT&STB-35" V 6100 3350 50  0000 C CNN
+F 1 "0.1" V 6000 3350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5838 3200 50  0001 C CNN
+F 3 "~" H 5800 3350 50  0001 C CNN
+	1    5800 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 3750 5550 3350
+Wire Wire Line
+	5950 3750 6050 3750
+Wire Wire Line
+	6050 3750 6050 3350
+Wire Wire Line
+	6050 3350 5950 3350
+Wire Wire Line
+	5650 3750 5550 3750
+Connection ~ 5550 3750
+Wire Wire Line
+	5550 3350 5650 3350
+Wire Wire Line
+	6050 3750 6150 3750
+Connection ~ 6050 3750
+Text Label 6150 3750 0    50   ~ 0
+GND
+Wire Wire Line
+	4550 2350 4550 3750
+Connection ~ 4550 2350
+Connection ~ 4550 3750
+Wire Wire Line
+	4550 3750 4450 3750
+$Comp
+L NEWValves:VR91 V-SDOT&STB-13
+U 1 1 60EFA728
+P 7750 2300
+F 0 "V-SDOT&STB-13" H 7800 1900 50  0000 C CNN
+F 1 "CV173" H 7800 1800 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8750 2550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 7750 2300 50  0001 C CNN
+	1    7750 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2350 7350 2350
+$Comp
+L Device:R R-SDOT&STB-79
+U 1 1 60F32FE7
+P 7200 2350
+F 0 "R-SDOT&STB-79" V 6950 2350 50  0000 C CNN
+F 1 "100K" V 7050 2350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7130 2350 50  0001 C CNN
+F 3 "~" H 7200 2350 50  0001 C CNN
+	1    7200 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7450 2150 7350 2150
+$Comp
+L Device:R R-SDOT&STB-78
+U 1 1 60F69195
+P 7200 2150
+F 0 "R-SDOT&STB-78" V 6950 2150 50  0000 C CNN
+F 1 "100K" V 7050 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7130 2150 50  0001 C CNN
+F 3 "~" H 7200 2150 50  0001 C CNN
+	1    7200 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 2350 6950 2350
+Wire Wire Line
+	6950 2350 6950 2500
+$Comp
+L Device:R R-SDOT&STB-76
+U 1 1 60FD5B23
+P 6950 2650
+F 0 "R-SDOT&STB-76" H 6850 2600 50  0000 R CNN
+F 1 "470K" H 6850 2650 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6880 2650 50  0001 C CNN
+F 3 "~" H 6950 2650 50  0001 C CNN
+	1    6950 2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 2800 6950 3000
+Text Label 6950 3000 0    50   ~ 0
+GND
+Wire Wire Line
+	6950 2350 6850 2350
+Wire Wire Line
+	6850 2350 6850 2600
+$Comp
+L Device:R R-SDOT&STB-74
+U 1 1 6104986F
+P 6850 2750
+F 0 "R-SDOT&STB-74" H 6950 2700 50  0000 L CNN
+F 1 "5.6M" H 6950 2750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6780 2750 50  0001 C CNN
+F 3 "~" H 6850 2750 50  0001 C CNN
+	1    6850 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 2900 6850 3000
+Text Label 6850 3000 2    50   ~ 0
+-150
+Connection ~ 6950 2350
+Wire Wire Line
+	6850 2350 6600 2350
+Connection ~ 6850 2350
+Wire Wire Line
+	7050 2150 6700 2150
+Wire Wire Line
+	6700 2150 6700 1000
+$Comp
+L Connector:Conn_01x01_Female J-SDOT&STB-2
+U 1 1 61211714
+P 6700 800
+F 0 "J-SDOT&STB-2" V 6650 700 50  0000 R CNN
+F 1 "BO.Supp" V 6550 700 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 6700 800 50  0001 C CNN
+F 3 "~" H 6700 800 50  0001 C CNN
+	1    6700 800 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 1400 6850 1250
+$Comp
+L Device:R R-SDOT&STB-84
+U 1 1 612CE18E
+P 8150 1500
+F 0 "R-SDOT&STB-84" H 8050 1550 50  0000 R CNN
+F 1 "3K3" H 8050 1500 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8080 1500 50  0001 C CNN
+F 3 "~" H 8150 1500 50  0001 C CNN
+	1    8150 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 750  8150 850 
+$Comp
+L Device:R R-SDOT&STB-83
+U 1 1 612CE944
+P 8150 1000
+F 0 "R-SDOT&STB-83" H 8050 1050 50  0000 R CNN
+F 1 "47K 2W" H 8050 1000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8080 1000 50  0001 C CNN
+F 3 "~" H 8150 1000 50  0001 C CNN
+	1    8150 1000
+	1    0    0    -1  
+$EndComp
+Text Label 8150 750  1    50   ~ 0
++300V
+Wire Wire Line
+	8150 1150 8150 1250
+Wire Wire Line
+	7750 1400 7600 1400
+Wire Wire Line
+	7750 1400 7750 1850
+Wire Wire Line
+	8150 1650 8150 1750
+Wire Wire Line
+	8150 1850 7750 1850
+Connection ~ 7750 1850
+Wire Wire Line
+	8150 1250 8550 1250
+Connection ~ 8150 1250
+Wire Wire Line
+	8150 1250 8150 1350
+Text Label 6850 1250 0    50   ~ 0
+50v
+NoConn ~ 8050 2500
+NoConn ~ 8050 2400
+Wire Wire Line
+	7450 2450 7450 3000
+Text Label 7450 3000 2    50   ~ 0
+GND
+Wire Wire Line
+	8100 2250 8200 2250
+Wire Wire Line
+	8200 1800 8200 1850
+Wire Wire Line
+	8200 2150 8200 2250
+$Comp
+L Device:R R-SDOT&STB-85
+U 1 1 61521A8C
+P 8200 2000
+F 0 "R-SDOT&STB-85" H 8300 2050 50  0000 L CNN
+F 1 "15K 2W" H 8300 2000 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8130 2000 50  0001 C CNN
+F 3 "~" H 8200 2000 50  0001 C CNN
+	1    8200 2000
+	1    0    0    -1  
+$EndComp
+Text Label 8200 1800 0    50   ~ 0
++300V
+$Comp
+L Device:C C-SDOT&STB-38
+U 1 1 61521A97
+P 8200 2500
+F 0 "C-SDOT&STB-38" H 8350 2550 50  0000 L CNN
+F 1 "47" H 8350 2500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8238 2350 50  0001 C CNN
+F 3 "~" H 8200 2500 50  0001 C CNN
+	1    8200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2350 8200 2250
+Connection ~ 8200 2250
+Wire Wire Line
+	8200 2650 8200 3000
+Text Label 8200 3000 2    50   ~ 0
+GND
+Wire Wire Line
+	8150 1750 8750 1750
+Connection ~ 8150 1750
+Wire Wire Line
+	8150 1750 8150 1850
+$Comp
+L Device:C C-SDOT&STB-39
+U 1 1 6174C92E
+P 8900 1750
+F 0 "C-SDOT&STB-39" V 9200 1750 50  0000 C CNN
+F 1 "0.01" V 9100 1750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8938 1600 50  0001 C CNN
+F 3 "~" H 8900 1750 50  0001 C CNN
+	1    8900 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 1750 9150 1750
+Text Label 9150 3000 2    50   ~ 0
+GND
+Connection ~ 9150 1750
+$Comp
+L Device:R R-SDOT&STB-87
+U 1 1 618C6671
+P 9650 1750
+F 0 "R-SDOT&STB-87" V 9400 1750 50  0000 C CNN
+F 1 "470" V 9500 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9580 1750 50  0001 C CNN
+F 3 "~" H 9650 1750 50  0001 C CNN
+	1    9650 1750
+	0    1    1    0   
+$EndComp
+Text Label 9400 3000 2    50   ~ 0
+GND
+Wire Wire Line
+	9400 2500 9400 3000
+Wire Wire Line
+	9400 1750 9500 1750
+Connection ~ 9400 1750
+Wire Wire Line
+	9150 1750 9400 1750
+$Comp
+L NEWValves:EA50 D-SDOT&STB-13
+U 1 1 5F8FDBBF
+P 9400 2000
+F 0 "D-SDOT&STB-13" H 9650 1950 50  0000 L CNN
+F 1 "EA50" H 9650 1850 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 10000 1800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9400 2000 50  0001 C CNN
+	1    9400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:CV173 V-SDOT&STB-4
+U 1 1 619FF085
+P 10200 1700
+F 0 "V-SDOT&STB-4" H 10250 1300 50  0000 C CNN
+F 1 "CV173" H 10250 1200 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 11200 1950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 10200 1700 50  0001 C CNN
+	1    10200 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1750 9800 1750
+Wire Wire Line
+	9900 1550 9900 1150
+Wire Wire Line
+	9900 1150 10200 1150
+Wire Wire Line
+	10550 1150 10550 1650
+Wire Wire Line
+	10200 1250 10200 1150
+Connection ~ 10200 1150
+Wire Wire Line
+	10200 1150 10550 1150
+Wire Wire Line
+	10200 750  10200 1150
+Text Label 10200 750  1    50   ~ 0
++300V
+NoConn ~ 10500 1800
+NoConn ~ 10500 1900
+Wire Wire Line
+	9900 1850 9800 1850
+Wire Wire Line
+	9800 1850 9800 2300
+$Comp
+L Device:R R-SDOT&STB-88
+U 1 1 61C2A26F
+P 9800 2750
+F 0 "R-SDOT&STB-88" H 9700 2700 50  0000 R CNN
+F 1 "7.5K 3W" H 9700 2750 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9730 2750 50  0001 C CNN
+F 3 "~" H 9800 2750 50  0001 C CNN
+	1    9800 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9800 2900 9800 3000
+Text Label 9800 3000 2    50   ~ 0
+-150
+Connection ~ 9800 2300
+Wire Wire Line
+	9800 2300 9800 2600
+Wire Wire Line
+	9800 2300 10350 2300
+$Comp
+L Connector:Conn_01x01_Female J-SDOT&STB-4
+U 1 1 61D269D8
+P 10550 2300
+F 0 "J-SDOT&STB-4" H 10625 2350 50  0000 L CNN
+F 1 "DOT" H 10625 2250 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 10550 2300 50  0001 C CNN
+F 3 "~" H 10550 2300 50  0001 C CNN
+	1    10550 2300
+	1    0    0    -1  
+$EndComp
+Text Label 11450 1300 2    50   ~ 0
+Heater-GND@200
+Text Label 12150 1300 0    50   ~ 0
+Heater-6.3V@200
+Wire Wire Line
+	11450 1200 11550 1200
+Text Label 11450 1200 2    50   ~ 0
+Heater-GND_Bal
+Text Label 12150 1200 0    50   ~ 0
+Heater-6.3V+Bal
+Wire Wire Line
+	12150 1200 12050 1200
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 62132286
+P 14200 1450
+AR Path="/5F868E46/62132286" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/62132286" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/62132286" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/62132286" Ref="#FLG0168"  Part="1" 
+F 0 "#FLG0168" H 14200 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 14225 1650 50  0000 C CNN
+F 2 "" H 14200 1450 50  0001 C CNN
+F 3 "~" H 14200 1450 50  0001 C CNN
+	1    14200 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SDOT&STB-?
+U 1 1 62132C0A
+P 13850 1100
+AR Path="/5F868E46/62132C0A" Ref="J-SDOT&STB-?"  Part="1" 
+AR Path="/5F2DDAEA/62132C0A" Ref="J-SDOT&STB-?"  Part="1" 
+AR Path="/60BC2C2A/62132C0A" Ref="J-SDOT&STB-?"  Part="1" 
+AR Path="/5F89117E/62132C0A" Ref="J-SDOT&STB-7"  Part="1" 
+F 0 "J-SDOT&STB-7" H 13900 1550 50  0000 C CNN
+F 1 "HIGH Voltage." H 13900 1450 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 13850 1100 50  0001 C CNN
+F 3 "~" H 13850 1100 50  0001 C CNN
+	1    13850 1100
+	1    0    0    -1  
+$EndComp
+Text Label 13550 900  2    50   ~ 0
++300V
+Text Label 14250 1000 0    50   ~ 0
+-150V
+Text Label 13550 1000 2    50   ~ 0
++50V
+Text Label 13550 1100 2    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 62132C18
+P 13600 1450
+AR Path="/5F868E46/62132C18" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/62132C18" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/62132C18" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/62132C18" Ref="#FLG0169"  Part="1" 
+F 0 "#FLG0169" H 13600 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 13625 1650 50  0000 C CNN
+F 2 "" H 13600 1450 50  0001 C CNN
+F 3 "~" H 13600 1450 50  0001 C CNN
+	1    13600 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13650 1400 13600 1400
+Wire Wire Line
+	13600 1450 13600 1400
+Connection ~ 13600 1400
+Wire Wire Line
+	13600 1400 13550 1400
+Wire Wire Line
+	14150 1400 14200 1400
+Text Label 14250 1400 0    50   ~ 0
+Heater-6.3V@100
+Connection ~ 14200 1400
+Wire Wire Line
+	14200 1400 14250 1400
+Wire Wire Line
+	14250 900  14150 900 
+Wire Wire Line
+	14250 1000 14150 1000
+Wire Wire Line
+	14250 1100 14150 1100
+Wire Wire Line
+	13650 900  13550 900 
+Wire Wire Line
+	13650 1000 13550 1000
+Wire Wire Line
+	13650 1100 13550 1100
+Wire Wire Line
+	13550 1300 13650 1300
+Wire Wire Line
+	14250 1300 14150 1300
+Wire Wire Line
+	14200 1450 14200 1400
+Text Label 14250 900  0    50   ~ 0
++200V
+Text Label 14250 1100 0    50   ~ 0
+GND
+Text Label 13550 1400 2    50   ~ 0
+Heater-GND@100
+Text Label 13550 1300 2    50   ~ 0
+Heater-GND@200
+Text Label 14250 1300 0    50   ~ 0
+Heater-6.3V@200
+Wire Wire Line
+	13550 1200 13650 1200
+Text Label 13550 1200 2    50   ~ 0
+Heater-GND_Bal
+Text Label 14250 1200 0    50   ~ 0
+Heater-6.3V+Bal
+Wire Wire Line
+	14250 1200 14150 1200
+Wire Wire Line
+	3650 3150 2150 3150
+Wire Wire Line
+	3650 1800 3650 3150
+Wire Wire Line
+	9200 1200 9250 7600
+Text Label 6850 7900 0    50   ~ 0
+GND
+Wire Wire Line
+	6850 7750 6850 7900
+Wire Wire Line
+	6750 7750 6850 7750
+Text Label 6900 7450 1    50   ~ 0
+GND
+Wire Wire Line
+	6750 7450 6900 7450
+Wire Wire Line
+	6750 7650 6850 7650
+$Comp
+L Device:R R-SDOT&STB-77
+U 1 1 6317B763
+P 7000 7650
+F 0 "R-SDOT&STB-77" V 6750 7650 50  0000 C CNN
+F 1 "470" V 6850 7650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6930 7650 50  0001 C CNN
+F 3 "~" H 7000 7650 50  0001 C CNN
+	1    7000 7650
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7350 7650 7250 7650
+$Comp
+L Device:C C-SDOT&STB-37
+U 1 1 6317B206
+P 7500 7650
+F 0 "C-SDOT&STB-37" V 7300 7650 50  0000 C CNN
+F 1 "0.01" V 7200 7650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7538 7500 50  0001 C CNN
+F 3 "~" H 7500 7650 50  0001 C CNN
+	1    7500 7650
+	0    1    -1   0   
+$EndComp
+NoConn ~ 6150 7700
+NoConn ~ 6150 7800
+Wire Wire Line
+	5850 7550 5750 7550
+Connection ~ 5850 7550
+Text Label 5850 7100 2    50   ~ 0
++300V
+$Comp
+L Device:R R-SDOT&STB-72
+U 1 1 62ECCAE8
+P 5850 7300
+F 0 "R-SDOT&STB-72" H 5950 7350 50  0000 L CNN
+F 1 "7.5K 3W" H 5950 7300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5780 7300 50  0001 C CNN
+F 3 "~" H 5850 7300 50  0001 C CNN
+	1    5850 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 7450 5850 7550
+Wire Wire Line
+	5850 7100 5850 7150
+Text Label 5750 8600 2    50   ~ 0
+GND
+Wire Wire Line
+	5750 7550 5750 8200
+Wire Wire Line
+	5750 7550 5650 7550
+Connection ~ 5750 7550
+Wire Wire Line
+	5750 8500 5750 8600
+$Comp
+L Device:C C-SDOT&STB-34
+U 1 1 62D50141
+P 5750 8350
+F 0 "C-SDOT&STB-34" H 5900 8400 50  0000 L CNN
+F 1 "0.02" H 5900 8350 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5788 8200 50  0001 C CNN
+F 3 "~" H 5750 8350 50  0001 C CNN
+	1    5750 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 7550 5850 7550
+Wire Wire Line
+	6450 7000 6450 7150
+Wire Wire Line
+	5300 7000 5850 7000
+Wire Wire Line
+	5300 7150 5300 7000
+$Comp
+L NEWValves:CV173 V-SDOT&STB-6
+U 1 1 62C29CBF
+P 6450 7600
+F 0 "V-SDOT&STB-6" H 6500 7200 50  0000 C CNN
+F 1 "CV173" H 6500 7100 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7450 7850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 6450 7600 50  0001 C CNN
+	1    6450 7600
+	-1   0    0    -1  
+$EndComp
+Text Label 4850 7450 1    50   ~ 0
+GND
+Wire Wire Line
+	5000 7450 4850 7450
+Text Label 4900 7900 2    50   ~ 0
+GND
+Wire Wire Line
+	4900 7750 4900 7900
+Wire Wire Line
+	5000 7750 4900 7750
+NoConn ~ 5600 7800
+NoConn ~ 5600 7700
+Wire Wire Line
+	5000 7650 4900 7650
+$Comp
+L NEWValves:CV173 V-SDOT&STB-5
+U 1 1 6281EF11
+P 5300 7600
+F 0 "V-SDOT&STB-5" H 5350 7200 50  0000 C CNN
+F 1 "CV173" H 5350 7100 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6300 7850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5300 7600 50  0001 C CNN
+	1    5300 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SDOT&STB-65
+U 1 1 6281EEFD
+P 4750 7650
+F 0 "R-SDOT&STB-65" V 4500 7650 50  0000 C CNN
+F 1 "470" V 4600 7650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4680 7650 50  0001 C CNN
+F 3 "~" H 4750 7650 50  0001 C CNN
+	1    4750 7650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 7650 4600 7650
+Connection ~ 4000 7650
+Wire Wire Line
+	4000 7650 4100 7650
+$Comp
+L Device:C C-SDOT&STB-30
+U 1 1 626FA571
+P 4250 7650
+F 0 "C-SDOT&STB-30" V 4550 7650 50  0000 C CNN
+F 1 "50" V 4450 7650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4288 7500 50  0001 C CNN
+F 3 "~" H 4250 7650 50  0001 C CNN
+	1    4250 7650
+	0    -1   -1   0   
+$EndComp
+Text Notes 3950 8500 0    50   ~ 0
+"STROBE DELAY"
+Text Label 4250 8400 2    50   ~ 0
+-150
+Wire Wire Line
+	4100 8150 4000 8150
+Text Label 4250 7900 2    50   ~ 0
+GND
+Wire Wire Line
+	4250 8000 4250 7900
+Wire Wire Line
+	4250 8400 4250 8300
+$Comp
+L Device:R_POT RV-SDOT&STB-7
+U 1 1 624C154A
+P 4250 8150
+F 0 "RV-SDOT&STB-7" H 4150 8100 50  0000 R CNN
+F 1 "20K" H 4150 8150 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4250 8150 50  0001 C CNN
+F 3 "~" H 4250 8150 50  0001 C CNN
+	1    4250 8150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 7650 3900 7650
+Wire Wire Line
+	4000 7750 4000 7650
+Wire Wire Line
+	4000 8050 4000 8150
+$Comp
+L Device:R R-SDOT&STB-59
+U 1 1 623F02CC
+P 4000 7900
+F 0 "R-SDOT&STB-59" H 4650 7900 50  0000 R CNN
+F 1 "100K" H 4300 8000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3930 7900 50  0001 C CNN
+F 3 "~" H 4000 7900 50  0001 C CNN
+	1    4000 7900
+	-1   0    0    1   
+$EndComp
+Connection ~ 3050 7650
+Wire Wire Line
+	3150 7650 3050 7650
+$Comp
+L NEWValves:EA50 D-SDOT&STB-7
+U 1 1 623604A0
+P 3650 7650
+F 0 "D-SDOT&STB-7" V 3250 7550 50  0000 C CNN
+F 1 "EA50" V 3350 7550 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4250 7450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3650 7650 50  0001 C CNN
+	1    3650 7650
+	0    1    1    0   
+$EndComp
+Connection ~ 2700 7650
+Wire Wire Line
+	3050 7650 3050 7750
+Wire Wire Line
+	2700 7650 3050 7650
+Text Label 3050 8600 2    50   ~ 0
+GND
+Wire Wire Line
+	3050 8500 3050 8600
+$Comp
+L NEWValves:EA50 D-SDOT&STB-6
+U 1 1 622955E9
+P 3050 8000
+F 0 "D-SDOT&STB-6" H 3300 7750 50  0000 L CNN
+F 1 "EA50" H 3300 7650 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 3650 7800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3050 8000 50  0001 C CNN
+	1    3050 8000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 7750 2700 7650
+Text Label 2700 8150 2    50   ~ 0
+GND
+Wire Wire Line
+	2700 8050 2700 8150
+$Comp
+L Device:R R-SDOT&STB-13
+U 1 1 6220C54B
+P 2700 7900
+F 0 "R-SDOT&STB-13" H 2800 7850 50  0000 L CNN
+F 1 "220K" H 2800 7900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2630 7900 50  0001 C CNN
+F 3 "~" H 2700 7900 50  0001 C CNN
+	1    2700 7900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 7650 2200 7650
+Wire Wire Line
+	2700 7650 2600 7650
+$Comp
+L Device:C C-SDOT&STB-6
+U 1 1 621C5CDD
+P 2450 7650
+F 0 "C-SDOT&STB-6" V 2750 7650 50  0000 C CNN
+F 1 "1000" V 2650 7650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2488 7500 50  0001 C CNN
+F 3 "~" H 2450 7650 50  0001 C CNN
+	1    2450 7650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 3150 2200 7650
+Wire Wire Line
+	2075 9550 2775 9550
+Wire Wire Line
+	2275 9800 2975 9800
+$Comp
+L NEWValves:EA50 D-SDOT&STB-3
+U 2 1 60D69532
+P 7050 9000
+F 0 "D-SDOT&STB-3" H 7050 9300 50  0000 C CNN
+F 1 "EA50" H 7050 9200 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7650 8800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7050 9000 50  0001 C CNN
+	2    7050 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 9450 6950 9500
+Wire Wire Line
+	7150 9450 7150 9750
+Wire Wire Line
+	7625 9500 7625 9450
+Wire Wire Line
+	7825 9450 7825 9750
+$Comp
+L NEWValves:EA50 D-SDOT&STB-8
+U 2 1 651E4C8B
+P 7725 9000
+F 0 "D-SDOT&STB-8" H 7750 9300 50  0000 C CNN
+F 1 "EA50" H 7750 9200 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8325 8800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7725 9000 50  0001 C CNN
+	2    7725 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 9500 8325 9450
+Wire Wire Line
+	8525 9450 8525 9750
+$Comp
+L NEWValves:EA50 D-SDOT&STB-9
+U 2 1 60D29901
+P 8425 9000
+F 0 "D-SDOT&STB-9" H 8450 9300 50  0000 C CNN
+F 1 "EA50" H 8450 9200 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9025 8800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8425 9000 50  0001 C CNN
+	2    8425 9000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 9500 8975 9500
+Wire Wire Line
+	8525 9750 9175 9750
+Wire Wire Line
+	8975 9500 8975 9450
+Wire Wire Line
+	9175 9450 9175 9750
+$Comp
+L NEWValves:EA50 D-SDOT&STB-11
+U 2 1 6355ECC3
+P 9075 9000
+F 0 "D-SDOT&STB-11" H 9325 8900 50  0000 L CNN
+F 1 "EA50" H 9325 8800 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 9675 8800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9075 9000 50  0001 C CNN
+	2    9075 9000
+	1    0    0    -1  
+$EndComp
+Connection ~ 8325 9500
+Connection ~ 8525 9750
+Connection ~ 7625 9500
+Wire Wire Line
+	7625 9500 8325 9500
+Connection ~ 7825 9750
+Wire Wire Line
+	6800 9500 6950 9500
+Wire Wire Line
+	7825 9750 8525 9750
+Connection ~ 6950 9500
+Wire Wire Line
+	6950 9500 7625 9500
+Wire Wire Line
+	6800 9750 7150 9750
+Connection ~ 7150 9750
+Wire Wire Line
+	7150 9750 7825 9750
+Text Notes 11450 550  0    50   ~ 0
+From X-Timebase
+Text Label 6800 9500 2    50   ~ 0
+Heater-6.3V@100
+Text Label 6800 9750 2    50   ~ 0
+Heater-GND@100
+Text Notes 13750 550  0    50   ~ 0
+To Clock
+$Comp
+L Device:C C-SDOT&STB-28
+U 1 1 6399F92F
+P 4100 5200
+F 0 "C-SDOT&STB-28" V 4400 5200 50  0000 C CNN
+F 1 "0.5" V 4300 5200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4138 5050 50  0001 C CNN
+F 3 "~" H 4100 5200 50  0001 C CNN
+	1    4100 5200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 5200 3950 5200
+Text Label 5250 6050 2    50   ~ 0
+GND
+$Comp
+L NEWValves:EA50 D-SDOT&STB-11
+U 1 1 639F19BF
+P 4950 5200
+F 0 "D-SDOT&STB-11" V 5250 5100 50  0000 C CNN
+F 1 "EA50" V 5350 5100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5550 5000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4950 5200 50  0001 C CNN
+	1    4950 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 5200 4350 5200
+$Comp
+L Device:R R-SDOT&STB-64
+U 1 1 63A41C45
+P 4600 4950
+F 0 "R-SDOT&STB-64" V 4350 4950 50  0000 C CNN
+F 1 "33K" V 4450 4950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4530 4950 50  0001 C CNN
+F 3 "~" H 4600 4950 50  0001 C CNN
+	1    4600 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 5200 4350 4950
+Wire Wire Line
+	4350 4950 4450 4950
+Connection ~ 4350 5200
+Wire Wire Line
+	4350 5200 4450 5200
+$Comp
+L Device:R R-SDOT&STB-60
+U 1 1 63AE478B
+P 4350 4700
+F 0 "R-SDOT&STB-60" H 4250 4750 50  0000 R CNN
+F 1 "22K" H 4250 4700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4280 4700 50  0001 C CNN
+F 3 "~" H 4350 4700 50  0001 C CNN
+	1    4350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 4950 4350 4850
+Connection ~ 4350 4950
+Wire Wire Line
+	4350 4550 4350 4450
+Text Label 4350 4450 2    50   ~ 0
++200V
+$Comp
+L Device:C C-SDOT&STB-29
+U 1 1 63B8C6A3
+P 4100 5900
+F 0 "C-SDOT&STB-29" V 4400 5900 50  0000 C CNN
+F 1 "0.5" V 4300 5900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4138 5750 50  0001 C CNN
+F 3 "~" H 4100 5900 50  0001 C CNN
+	1    4100 5900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3850 5900 3950 5900
+Text Label 3850 5900 2    50   ~ 0
+GND
+Wire Wire Line
+	4250 5900 4350 5900
+Connection ~ 4350 5900
+Wire Wire Line
+	4350 5900 4450 5900
+$Comp
+L Device:R R-SDOT&STB-62
+U 1 1 63B8CAFE
+P 4350 6400
+F 0 "R-SDOT&STB-62" H 4250 6350 50  0000 R CNN
+F 1 "47K" H 4250 6400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4280 6400 50  0001 C CNN
+F 3 "~" H 4350 6400 50  0001 C CNN
+	1    4350 6400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4350 6550 4350 6650
+$Comp
+L NEWValves:EA50 D-SDOT&STB-12
+U 1 1 63B8CAE5
+P 4950 5900
+F 0 "D-SDOT&STB-12" V 4650 5800 50  0000 C CNN
+F 1 "EA50" V 4550 5800 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5550 5700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4950 5900 50  0001 C CNN
+	1    4950 5900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4350 5900 4350 6250
+$Comp
+L Device:R R-SDOT&STB-61
+U 1 1 63D2C966
+P 4350 5550
+F 0 "R-SDOT&STB-61" H 4250 5600 50  0000 R CNN
+F 1 "3.K" H 4250 5550 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4280 5550 50  0001 C CNN
+F 3 "~" H 4350 5550 50  0001 C CNN
+	1    4350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5900 4350 5700
+Wire Wire Line
+	4350 5400 4350 5200
+Wire Wire Line
+	5200 5200 5300 5200
+Wire Wire Line
+	5300 5200 5300 5550
+Wire Wire Line
+	5300 5900 5200 5900
+Text Label 4850 4950 0    50   ~ 0
+Heater-6.3V@100
+Wire Wire Line
+	4850 4950 4750 4950
+Text Label 4350 6650 2    50   ~ 0
+GND
+Wire Wire Line
+	5850 7000 5850 5550
+Wire Wire Line
+	5850 5550 5300 5550
+Connection ~ 5850 7000
+Wire Wire Line
+	5850 7000 6450 7000
+Connection ~ 5300 5550
+Wire Wire Line
+	5300 5550 5300 5900
+$Comp
+L Device:R R-SDOT&STB-71
+U 1 1 63F86767
+P 5850 4950
+F 0 "R-SDOT&STB-71" H 5950 5000 50  0000 L CNN
+F 1 "33K 1W" H 5950 4950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5780 4950 50  0001 C CNN
+F 3 "~" H 5850 4950 50  0001 C CNN
+	1    5850 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5550 5850 5100
+Wire Wire Line
+	5850 4800 5850 4700
+Text Label 5850 4700 2    50   ~ 0
++300V
+Connection ~ 5850 5550
+Text Label 3850 5200 2    50   ~ 0
+GND
+$Comp
+L NEWValves:VR91 V-SDOT&STB-7
+U 1 1 63FF252C
+P 7950 5500
+F 0 "V-SDOT&STB-7" H 8000 5100 50  0000 C CNN
+F 1 "VR91" H 8000 5000 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8950 5750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 7950 5500 50  0001 C CNN
+	1    7950 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5450 8300 5450
+Wire Wire Line
+	7650 5350 7550 5350
+Wire Wire Line
+	7550 5550 7650 5550
+NoConn ~ 8250 5600
+NoConn ~ 8250 5700
+$Comp
+L Device:C C-SDOT&STB-36
+U 1 1 63FF3120
+P 6400 5550
+F 0 "C-SDOT&STB-36" V 6700 5550 50  0000 C CNN
+F 1 "0.5" V 6600 5550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6438 5400 50  0001 C CNN
+F 3 "~" H 6400 5550 50  0001 C CNN
+	1    6400 5550
+	0    -1   -1   0   
+$EndComp
+Text Label 7950 4750 2    50   ~ 0
++300V
+Wire Wire Line
+	7950 5050 7950 4850
+Wire Wire Line
+	7950 4850 8400 4850
+Wire Wire Line
+	7950 4850 7950 4750
+Connection ~ 7950 4850
+Wire Wire Line
+	7550 4850 7950 4850
+Wire Wire Line
+	7550 4850 7550 5350
+Wire Wire Line
+	8400 4850 8400 5450
+$Comp
+L Device:R R-SDOT&STB-81
+U 1 1 642CBAE8
+P 7400 5550
+F 0 "R-SDOT&STB-81" V 7650 5550 50  0000 C CNN
+F 1 "470" V 7550 5550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7330 5550 50  0001 C CNN
+F 3 "~" H 7400 5550 50  0001 C CNN
+	1    7400 5550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 5550 6900 5650
+$Comp
+L Device:R R-SDOT&STB-75
+U 1 1 642D232B
+P 6900 5800
+F 0 "R-SDOT&STB-75" H 6800 5750 50  0000 R CNN
+F 1 "220K" H 6800 5800 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6830 5800 50  0001 C CNN
+F 3 "~" H 6900 5800 50  0001 C CNN
+	1    6900 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 5950 6900 6200
+Text Label 6900 6200 0    50   ~ 0
+GND
+Wire Wire Line
+	6800 5550 6800 5800
+$Comp
+L Device:R R-SDOT&STB-73
+U 1 1 642D2338
+P 6800 5950
+F 0 "R-SDOT&STB-73" H 6900 5900 50  0000 L CNN
+F 1 "1M" H 6900 5950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6730 5950 50  0001 C CNN
+F 3 "~" H 6800 5950 50  0001 C CNN
+	1    6800 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6800 6100 6800 6200
+Text Label 6800 6200 2    50   ~ 0
+-150
+$Comp
+L Device:R R-SDOT&STB-82
+U 1 1 645B8057
+P 7650 6300
+F 0 "R-SDOT&STB-82" H 7550 6250 50  0000 R CNN
+F 1 "15K 2W" H 7550 6300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7580 6300 50  0001 C CNN
+F 3 "~" H 7650 6300 50  0001 C CNN
+	1    7650 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 6450 7650 6550
+Text Label 7650 6550 2    50   ~ 0
+-150
+Wire Wire Line
+	7650 6150 7650 6100
+Wire Wire Line
+	6250 5550 5850 5550
+Connection ~ 6800 5550
+Wire Wire Line
+	6800 5550 6550 5550
+Connection ~ 6900 5550
+Wire Wire Line
+	6900 5550 6800 5550
+Wire Wire Line
+	6900 5550 7250 5550
+Wire Wire Line
+	7650 6100 8200 6100
+$Comp
+L Connector:Conn_01x01_Female J-SDOT&STB-3
+U 1 1 64A24A44
+P 8400 6100
+F 0 "J-SDOT&STB-3" H 8475 6150 50  0000 L CNN
+F 1 "STROBE" H 8475 6050 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 8400 6100 50  0001 C CNN
+F 3 "~" H 8400 6100 50  0001 C CNN
+	1    8400 6100
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 6100
+Wire Wire Line
+	7650 6100 7650 5650
+$Comp
+L Device:R R-SDOT&STB-80
+U 1 1 64A8893C
+P 7250 7250
+F 0 "R-SDOT&STB-80" H 7350 7300 50  0000 L CNN
+F 1 "220K" H 7350 7250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7180 7250 50  0001 C CNN
+F 3 "~" H 7250 7250 50  0001 C CNN
+	1    7250 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 7650 7250 7400
+Wire Wire Line
+	7250 7100 7250 7000
+Text Label 7250 7000 2    50   ~ 0
++200V
+Connection ~ 7250 7650
+Wire Wire Line
+	7250 7650 7150 7650
+Wire Wire Line
+	9250 7600 9250 7650
+Wire Wire Line
+	7650 7650 9250 7650
+$Comp
+L NEWValves:CV173 V-SDOT&STB-8
+U 1 1 64C22480
+P 13100 5100
+F 0 "V-SDOT&STB-8" H 13150 4700 50  0000 C CNN
+F 1 "CV173" H 13150 4600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 14100 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 13100 5100 50  0001 C CNN
+	1    13100 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 5050 13450 5050
+Wire Wire Line
+	12800 4950 12700 4950
+Wire Wire Line
+	12700 5150 12800 5150
+NoConn ~ 13400 5200
+NoConn ~ 13400 5300
+$Comp
+L Device:C C-SDOT&STB-40
+U 1 1 64C23487
+P 11250 5150
+F 0 "C-SDOT&STB-40" V 11550 5150 50  0000 C CNN
+F 1 "0.01" V 11450 5150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11288 5000 50  0001 C CNN
+F 3 "~" H 11250 5150 50  0001 C CNN
+	1    11250 5150
+	0    -1   -1   0   
+$EndComp
+Text Label 13100 4350 2    50   ~ 0
++300V
+Wire Wire Line
+	13100 4650 13100 4450
+Wire Wire Line
+	13100 4450 13550 4450
+Wire Wire Line
+	13100 4450 13100 4350
+Connection ~ 13100 4450
+Wire Wire Line
+	12700 4450 13100 4450
+Wire Wire Line
+	12700 4450 12700 4950
+Wire Wire Line
+	13550 4450 13550 5050
+$Comp
+L Device:R R-SDOT&STB-91
+U 1 1 64C23499
+P 12550 5150
+F 0 "R-SDOT&STB-91" V 12800 5150 50  0000 C CNN
+F 1 "470" V 12700 5150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12480 5150 50  0001 C CNN
+F 3 "~" H 12550 5150 50  0001 C CNN
+	1    12550 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11750 5150 11750 5250
+$Comp
+L Device:R R-SDOT&STB-90
+U 1 1 64C234A4
+P 11750 5400
+F 0 "R-SDOT&STB-90" H 11650 5350 50  0000 R CNN
+F 1 "220K" H 11650 5400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11680 5400 50  0001 C CNN
+F 3 "~" H 11750 5400 50  0001 C CNN
+	1    11750 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11750 5550 11750 5800
+Text Label 11750 5800 0    50   ~ 0
+GND
+Wire Wire Line
+	11650 5150 11650 5400
+$Comp
+L Device:R R-SDOT&STB-89
+U 1 1 64C234B1
+P 11650 5550
+F 0 "R-SDOT&STB-89" H 11750 5500 50  0000 L CNN
+F 1 "1M" H 11750 5550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11580 5550 50  0001 C CNN
+F 3 "~" H 11650 5550 50  0001 C CNN
+	1    11650 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11650 5700 11650 5800
+$Comp
+L Device:R R-SDOT&STB-92
+U 1 1 64C234BD
+P 12800 5900
+F 0 "R-SDOT&STB-92" H 12900 5850 50  0000 L CNN
+F 1 "15K 2W" H 12900 5900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12730 5900 50  0001 C CNN
+F 3 "~" H 12800 5900 50  0001 C CNN
+	1    12800 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12800 6050 12800 6150
+Text Label 12800 6150 2    50   ~ 0
+-150
+Wire Wire Line
+	12800 5750 12800 5700
+Connection ~ 11650 5150
+Wire Wire Line
+	11650 5150 11400 5150
+Connection ~ 11750 5150
+Wire Wire Line
+	11750 5150 11650 5150
+Wire Wire Line
+	11750 5150 12400 5150
+Wire Wire Line
+	12800 5700 13050 5700
+$Comp
+L Connector:Conn_01x01_Female J-SDOT&STB-8
+U 1 1 64C234D0
+P 13950 5700
+F 0 "J-SDOT&STB-8" H 14025 5750 50  0000 L CNN
+F 1 "BO.CF" H 14025 5650 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 13950 5700 50  0001 C CNN
+F 3 "~" H 13950 5700 50  0001 C CNN
+	1    13950 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 12800 5700
+Wire Wire Line
+	12800 5700 12800 5250
+Wire Wire Line
+	11750 5800 11650 5800
+$Comp
+L Connector:Conn_01x01_Female J-SDOT&STB-6
+U 1 1 64D57364
+P 10800 5150
+F 0 "J-SDOT&STB-6" H 10875 5200 50  0000 L CNN
+F 1 "BO" H 10875 5100 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 10800 5150 50  0001 C CNN
+F 3 "~" H 10800 5150 50  0001 C CNN
+	1    10800 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11100 5150 11000 5150
+Wire Wire Line
+	13050 5700 13050 6150
+Wire Wire Line
+	13050 6150 13350 6150
+Connection ~ 13050 5700
+Wire Wire Line
+	13050 5700 13350 5700
+$Comp
+L Device:C C-SDOT&STB-41
+U 1 1 64E8433D
+P 13500 5700
+F 0 "C-SDOT&STB-41" V 13300 5700 50  0000 C CNN
+F 1 "0.5" V 13200 5700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 13538 5550 50  0001 C CNN
+F 3 "~" H 13500 5700 50  0001 C CNN
+	1    13500 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-SDOT&STB-42
+U 1 1 64E849EB
+P 13500 6150
+F 0 "C-SDOT&STB-42" V 13300 6150 50  0000 C CNN
+F 1 "0.1" V 13200 6150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 13538 6000 50  0001 C CNN
+F 3 "~" H 13500 6150 50  0001 C CNN
+	1    13500 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13750 5700 13650 5700
+$Comp
+L Connector:Conn_01x01_Female J-SDOT&STB-9
+U 1 1 64F54056
+P 13950 6150
+F 0 "J-SDOT&STB-9" H 14025 6200 50  0000 L CNN
+F 1 "XBO" H 14025 6100 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 13950 6150 50  0001 C CNN
+F 3 "~" H 13950 6150 50  0001 C CNN
+	1    13950 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 6150 13700 6150
+Wire Wire Line
+	13700 6150 13700 6300
+$Comp
+L Device:R R-SDOT&STB-93
+U 1 1 65025BC0
+P 13700 6450
+F 0 "R-SDOT&STB-93" H 13600 6400 50  0000 R CNN
+F 1 "330K" H 13600 6450 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13630 6450 50  0001 C CNN
+F 3 "~" H 13700 6450 50  0001 C CNN
+	1    13700 6450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13700 6600 13700 6800
+Text Label 13700 6800 0    50   ~ 0
+GND
+Connection ~ 13700 6150
+Wire Wire Line
+	13700 6150 13650 6150
+$Comp
+L NEWValves:CV173 V-SDOT&STB-12
+U 2 1 6509597D
+P 6250 10500
+F 0 "V-SDOT&STB-12" H 6250 11075 50  0000 C CNN
+F 1 "CV173" H 6250 10975 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7250 10750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 6250 10500 50  0001 C CNN
+	2    6250 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 10850 6150 10900
+Wire Wire Line
+	6350 10850 6350 11150
+Wire Wire Line
+	5450 10900 6150 10900
+Connection ~ 5450 10900
+Wire Wire Line
+	5650 11150 6350 11150
+Connection ~ 5650 11150
+$EndSCHEMATC

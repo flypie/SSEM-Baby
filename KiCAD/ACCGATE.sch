@@ -3,8 +3,8 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 34
-Title "Control Gate Posn 6.3"
+Sheet 8 35
+Title "Dot and Strobe Position 2.3"
 Date "2020-10-08"
 Rev "Alpha"
 Comp "John Bradley"

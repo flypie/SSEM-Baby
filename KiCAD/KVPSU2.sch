@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 25 34
+Sheet 25 35
 Title "STABILISED KV PSU type 2 (For Monitor CRT) Position 4.8"
 Date "2020-10-08"
 Rev "Alpha"
