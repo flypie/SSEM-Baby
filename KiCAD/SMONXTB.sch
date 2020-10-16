@@ -1,0 +1,1146 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 36 38
+Title "Monitor X Timebase 2.5"
+Date "2020-10-15"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-SMONXTB-1
+U 2 1 60752DED
+P 1600 7000
+F 0 "V-SMONXTB-1" H 1600 7575 50  0000 C CNN
+F 1 "VR91" H 1600 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2600 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1600 7000 50  0001 C CNN
+	2    1600 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SMONXTB-9
+U 2 1 651E4C90
+P 1600 5550
+F 0 "D-SMONXTB-9" H 1600 5850 50  0000 C CNN
+F 1 "EA50" H 1600 5750 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2200 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1600 5550 50  0001 C CNN
+	2    1600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7400 1500 7400
+Wire Wire Line
+	1350 7650 1700 7650
+Wire Wire Line
+	1500 7350 1500 7400
+Connection ~ 1500 7400
+Wire Wire Line
+	1700 7350 1700 7650
+Connection ~ 1700 7650
+Wire Wire Line
+	1350 6050 1500 6050
+Wire Wire Line
+	1350 6300 1700 6300
+Wire Wire Line
+	1500 6000 1500 6050
+Wire Wire Line
+	1700 6000 1700 6300
+Wire Wire Line
+	2125 7350 2125 7400
+Connection ~ 2125 7400
+Wire Wire Line
+	2325 7350 2325 7650
+Connection ~ 2325 7650
+Wire Wire Line
+	1500 7400 2125 7400
+Wire Wire Line
+	1700 7650 2325 7650
+Text Label 1350 6050 2    50   ~ 0
+Heater-6.3V
+Text Label 1350 6300 2    50   ~ 0
+Heater-GND
+Text Label 1350 7400 2    50   ~ 0
+Heater-6.3V
+Text Label 1350 7650 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:C C-SMONXTB-7
+U 1 1 6064964E
+P 5400 7200
+F 0 "C-SMONXTB-7" H 5275 7125 50  0000 R CNN
+F 1 "0.5" H 5275 7225 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5438 7050 50  0001 C CNN
+F 3 "~" H 5400 7200 50  0001 C CNN
+	1    5400 7200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-SMONXTB-4
+U 1 1 6064964F
+P 3900 7200
+F 0 "C-SMONXTB-4" H 4050 7275 50  0000 L CNN
+F 1 "0.5" H 4050 7200 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3938 7050 50  0001 C CNN
+F 3 "~" H 3900 7200 50  0001 C CNN
+	1    3900 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SMONXTB-5
+U 1 1 60649650
+P 4650 7200
+F 0 "C-SMONXTB-5" H 4775 7275 50  0000 L CNN
+F 1 "0.5" H 4775 7175 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4688 7050 50  0001 C CNN
+F 3 "~" H 4650 7200 50  0001 C CNN
+	1    4650 7200
+	1    0    0    -1  
+$EndComp
+Connection ~ 1700 6300
+Connection ~ 1500 6050
+Wire Wire Line
+	1500 6050 2125 6050
+Connection ~ 2125 6050
+Wire Wire Line
+	2125 6050 2125 6000
+Wire Wire Line
+	2825 6050 2825 6000
+Wire Wire Line
+	3025 6000 3025 6300
+$Comp
+L NEWValves:EA50 D-SMONXTB-12
+U 2 1 60D69533
+P 2925 5550
+F 0 "D-SMONXTB-12" H 2925 5850 50  0000 C CNN
+F 1 "EA50" H 2925 5750 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3525 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2925 5550 50  0001 C CNN
+	2    2925 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 6300 2325 6300
+Connection ~ 2325 6300
+Wire Wire Line
+	2325 6000 2325 6300
+$Comp
+L NEWValves:EA50 D-SMONXTB-11
+U 2 1 60752DF5
+P 2225 5550
+F 0 "D-SMONXTB-11" H 2250 5850 50  0000 C CNN
+F 1 "EA50" H 2250 5750 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2825 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2225 5550 50  0001 C CNN
+	2    2225 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SMONXTB-2
+U 2 1 651E4C97
+P 2225 7000
+F 0 "V-SMONXTB-2" H 2250 7575 50  0000 C CNN
+F 1 "CV173" H 2250 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3225 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 2225 7000 50  0001 C CNN
+	2    2225 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SMONXTB-3
+U 2 1 60D69552
+P 2900 7000
+F 0 "V-SMONXTB-3" H 2900 7575 50  0000 C CNN
+F 1 "CV173" H 2900 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3900 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 2900 7000 50  0001 C CNN
+	2    2900 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 7350 2800 7400
+Wire Wire Line
+	3000 7350 3000 7650
+Wire Wire Line
+	2325 7650 3000 7650
+Wire Wire Line
+	2125 7400 2800 7400
+Wire Wire Line
+	3900 7350 3900 7450
+Text Label 3900 7450 3    50   ~ 0
+GND
+Wire Wire Line
+	4650 7350 4650 7450
+Text Label 4650 7450 3    50   ~ 0
+GND
+Wire Wire Line
+	5400 7350 5400 7450
+Text Label 5400 7450 3    50   ~ 0
+GND
+Text Label 3900 7050 1    50   ~ 0
++300V
+Text Label 4650 7050 1    50   ~ 0
++200V
+Text Label 6150 7050 1    50   ~ 0
++50V
+Text Label 5400 7050 1    50   ~ 0
+-150V
+Text Label 6150 7450 3    50   ~ 0
+GND
+Wire Wire Line
+	6150 7350 6150 7450
+$Comp
+L Device:C C-SMONXTB-8
+U 1 1 651E4C77
+P 6150 7200
+F 0 "C-SMONXTB-8" H 6275 7275 50  0000 L CNN
+F 1 "0.5" H 6275 7175 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6188 7050 50  0001 C CNN
+F 3 "~" H 6150 7200 50  0001 C CNN
+	1    6150 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60752DEA
+P 7850 4400
+AR Path="/5F868E46/60752DEA" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60752DEA" Ref="#FLG0115"  Part="1" 
+AR Path="/60BC2C2A/60752DEA" Ref="#FLG0164"  Part="1" 
+AR Path="/5F89117E/60752DEA" Ref="#FLG0166"  Part="1" 
+AR Path="/5F88E8BA/60752DEA" Ref="#FLG0170"  Part="1" 
+F 0 "#FLG0170" H 7850 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 7875 4600 50  0000 C CNN
+F 2 "" H 7850 4400 50  0001 C CNN
+F 3 "~" H 7850 4400 50  0001 C CNN
+	1    7850 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SCFOLLWS-?
+U 1 1 60D69558
+P 7500 4050
+AR Path="/5F868E46/60D69558" Ref="J-SCFOLLWS-?"  Part="1" 
+AR Path="/5F2DDAEA/60D69558" Ref="J-SMONXTB-5"  Part="1" 
+AR Path="/60BC2C2A/60D69558" Ref="J-SMONXTB-5"  Part="1" 
+AR Path="/5F89117E/60D69558" Ref="J-SMONXTB-5"  Part="1" 
+AR Path="/5F88E8BA/60D69558" Ref="J-SMONXTB-5"  Part="1" 
+F 0 "J-SMONXTB-5" H 7550 4500 50  0000 C CNN
+F 1 "HIGH Voltage." H 7550 4400 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 7500 4050 50  0001 C CNN
+F 3 "~" H 7500 4050 50  0001 C CNN
+	1    7500 4050
+	1    0    0    -1  
+$EndComp
+Text Label 7200 3850 2    50   ~ 0
++300V
+Text Label 7900 3950 0    50   ~ 0
+-150V
+Text Label 7200 3950 2    50   ~ 0
++50V
+Text Label 7200 4050 2    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60D69559
+P 7250 4400
+AR Path="/5F868E46/60D69559" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60D69559" Ref="#FLG0116"  Part="1" 
+AR Path="/60BC2C2A/60D69559" Ref="#FLG0165"  Part="1" 
+AR Path="/5F89117E/60D69559" Ref="#FLG0167"  Part="1" 
+AR Path="/5F88E8BA/60D69559" Ref="#FLG0171"  Part="1" 
+F 0 "#FLG0171" H 7250 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 7275 4600 50  0000 C CNN
+F 2 "" H 7250 4400 50  0001 C CNN
+F 3 "~" H 7250 4400 50  0001 C CNN
+	1    7250 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 4350 7250 4350
+Wire Wire Line
+	7250 4400 7250 4350
+Connection ~ 7250 4350
+Wire Wire Line
+	7250 4350 7200 4350
+Wire Wire Line
+	7800 4350 7850 4350
+Text Label 7900 4350 0    50   ~ 0
+Heater-6.3V
+Connection ~ 7850 4350
+Wire Wire Line
+	7850 4350 7900 4350
+Wire Wire Line
+	7900 3850 7800 3850
+Wire Wire Line
+	7900 3950 7800 3950
+Wire Wire Line
+	7900 4050 7800 4050
+Wire Wire Line
+	7300 3850 7200 3850
+Wire Wire Line
+	7300 3950 7200 3950
+Wire Wire Line
+	7300 4050 7200 4050
+Wire Wire Line
+	7850 4400 7850 4350
+Text Label 7900 3850 0    50   ~ 0
++200V
+Text Label 7900 4050 0    50   ~ 0
+GND
+Text Label 7200 4350 2    50   ~ 0
+Heater-GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60752DF0
+P 10300 4400
+AR Path="/5F868E46/60752DF0" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60752DF0" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/60752DF0" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/60752DF0" Ref="#FLG0168"  Part="1" 
+AR Path="/5F88E8BA/60752DF0" Ref="#FLG0172"  Part="1" 
+F 0 "#FLG0172" H 10300 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 10325 4600 50  0000 C CNN
+F 2 "" H 10300 4400 50  0001 C CNN
+F 3 "~" H 10300 4400 50  0001 C CNN
+	1    10300 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SMONXTB-?
+U 1 1 60752DF1
+P 9950 4050
+AR Path="/5F868E46/60752DF1" Ref="J-SMONXTB-?"  Part="1" 
+AR Path="/5F2DDAEA/60752DF1" Ref="J-SMONXTB-?"  Part="1" 
+AR Path="/60BC2C2A/60752DF1" Ref="J-SMONXTB-?"  Part="1" 
+AR Path="/5F89117E/60752DF1" Ref="J-SMONXTB-7"  Part="1" 
+AR Path="/5F88E8BA/60752DF1" Ref="J-SMONXTB-7"  Part="1" 
+F 0 "J-SMONXTB-7" H 10000 4500 50  0000 C CNN
+F 1 "HIGH Voltage." H 10000 4400 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 9950 4050 50  0001 C CNN
+F 3 "~" H 9950 4050 50  0001 C CNN
+	1    9950 4050
+	1    0    0    -1  
+$EndComp
+Text Label 9650 3850 2    50   ~ 0
++300V
+Text Label 10350 3950 0    50   ~ 0
+-150V
+Text Label 9650 3950 2    50   ~ 0
++50V
+Text Label 9650 4050 2    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 62132C18
+P 9700 4400
+AR Path="/5F868E46/62132C18" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/62132C18" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/62132C18" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/62132C18" Ref="#FLG0169"  Part="1" 
+AR Path="/5F88E8BA/62132C18" Ref="#FLG0173"  Part="1" 
+F 0 "#FLG0173" H 9700 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 9725 4600 50  0000 C CNN
+F 2 "" H 9700 4400 50  0001 C CNN
+F 3 "~" H 9700 4400 50  0001 C CNN
+	1    9700 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9750 4350 9700 4350
+Wire Wire Line
+	9700 4400 9700 4350
+Connection ~ 9700 4350
+Wire Wire Line
+	9700 4350 9650 4350
+Wire Wire Line
+	10250 4350 10300 4350
+Text Label 10350 4350 0    50   ~ 0
+Heater-6.3V@100
+Connection ~ 10300 4350
+Wire Wire Line
+	10300 4350 10350 4350
+Wire Wire Line
+	10350 3850 10250 3850
+Wire Wire Line
+	10350 3950 10250 3950
+Wire Wire Line
+	10350 4050 10250 4050
+Wire Wire Line
+	9750 3850 9650 3850
+Wire Wire Line
+	9750 3950 9650 3950
+Wire Wire Line
+	9750 4050 9650 4050
+Wire Wire Line
+	9650 4250 9750 4250
+Wire Wire Line
+	10350 4250 10250 4250
+Wire Wire Line
+	10300 4400 10300 4350
+Text Label 10350 3850 0    50   ~ 0
++200V
+Text Label 10350 4050 0    50   ~ 0
+GND
+Text Label 9650 4350 2    50   ~ 0
+Heater-GND@100
+Text Label 9650 4250 2    50   ~ 0
+Heater-GND@200
+Text Label 10350 4250 0    50   ~ 0
+Heater-6.3V@200
+Wire Wire Line
+	9650 4150 9750 4150
+Text Label 9650 4150 2    50   ~ 0
+Heater-GND_Bal
+Text Label 10350 4150 0    50   ~ 0
+Heater-6.3V+Bal
+Wire Wire Line
+	10350 4150 10250 4150
+Wire Wire Line
+	2125 6050 2825 6050
+Wire Wire Line
+	2325 6300 3025 6300
+Text Notes 7200 3500 0    50   ~ 0
+From bus bars
+Text Notes 9850 3500 0    50   ~ 0
+From Dot&Strobe
+$Comp
+L Device:C C-SMONXTB-1
+U 1 1 5F9D71B4
+P 3000 2300
+F 0 "C-SMONXTB-1" H 3150 2350 50  0000 L CNN
+F 1 "0.1" H 3150 2300 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3038 2150 50  0001 C CNN
+F 3 "~" H 3000 2300 50  0001 C CNN
+	1    3000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SMONXTB-9
+U 1 1 5F9D76CD
+P 2200 1550
+F 0 "D-SMONXTB-9" V 1800 1450 50  0000 C CNN
+F 1 "EA50" V 1900 1450 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2800 1350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2200 1550 50  0001 C CNN
+	1    2200 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV-SMONXTB-1
+U 1 1 5F9D76D8
+P 3500 3600
+F 0 "RV-SMONXTB-1" H 3400 3650 50  0000 R CNN
+F 1 "50K" H 3400 3600 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 3500 3600 50  0001 C CNN
+F 3 "~" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 800  1400 0    50   ~ 0
+DOT WIDTH
+Text Label 1600 1550 2    50   ~ 0
++200V
+Wire Wire Line
+	1600 1550 1700 1550
+Wire Wire Line
+	2550 1100 2550 1150
+$Comp
+L Device:R R-SMONXTB-3
+U 1 1 5FA71C5A
+P 2550 1300
+F 0 "R-SMONXTB-3" H 2650 1350 50  0000 L CNN
+F 1 "27k 2W" H 2650 1300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2480 1300 50  0001 C CNN
+F 3 "~" H 2550 1300 50  0001 C CNN
+	1    2550 1300
+	1    0    0    -1  
+$EndComp
+Text Label 2550 1100 2    50   ~ 0
++300V
+Wire Wire Line
+	2550 1450 2550 1550
+Wire Wire Line
+	2450 1550 2550 1550
+$Comp
+L NEWValves:VR91 V-SMONXTB-1
+U 1 1 5FAE2E03
+P 2550 2100
+F 0 "V-SMONXTB-1" H 2600 1700 50  0000 C CNN
+F 1 "VR91" H 2600 1600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3550 2350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2550 2100 50  0001 C CNN
+	1    2550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2050 2900 2050
+NoConn ~ 2850 2200
+NoConn ~ 2850 2300
+Wire Wire Line
+	2250 2350 2250 2250
+Wire Wire Line
+	2550 1650 2550 1550
+Connection ~ 2550 1550
+Text Label 2250 2350 2    50   ~ 0
+GND
+Wire Wire Line
+	3000 2050 3000 2150
+Wire Wire Line
+	3000 2450 3000 2550
+Text Label 3000 2550 2    50   ~ 0
+GND
+$Comp
+L Device:R R-SMONXTB-1
+U 1 1 5FC62EBA
+P 2000 1950
+F 0 "R-SMONXTB-1" V 1750 1950 50  0000 C CNN
+F 1 "470" V 1850 1950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1930 1950 50  0001 C CNN
+F 3 "~" H 2000 1950 50  0001 C CNN
+	1    2000 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 1950 2150 1950
+Wire Wire Line
+	1850 1950 1750 1950
+$Comp
+L Connector:Conn_01x01_Female J-SMONXTB-1
+U 1 1 5FC99B03
+P 1550 1950
+F 0 "J-SMONXTB-1" H 1625 2000 50  0000 L CNN
+F 1 "DASH" H 1625 1900 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1550 1950 50  0001 C CNN
+F 3 "~" H 1550 1950 50  0001 C CNN
+	1    1550 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 2150 2050 2150
+Wire Wire Line
+	2050 2150 2050 2700
+Wire Wire Line
+	2050 2700 3250 2700
+Wire Wire Line
+	3250 2700 3250 2150
+$Comp
+L Device:R R-SMONXTB-5
+U 1 1 5FCB8712
+P 3500 2150
+F 0 "R-SMONXTB-5" V 3250 2150 50  0000 C CNN
+F 1 "470" V 3350 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3430 2150 50  0001 C CNN
+F 3 "~" H 3500 2150 50  0001 C CNN
+	1    3500 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2150 3650 2150
+Wire Wire Line
+	3350 2150 3250 2150
+Wire Wire Line
+	3750 2150 3750 2000
+$Comp
+L Device:C C-SMONXTB-2
+U 1 1 5FD0E39E
+P 3750 1850
+F 0 "C-SMONXTB-2" H 3150 2050 50  0000 L CNN
+F 1 "100" H 3450 1950 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3788 1700 50  0001 C CNN
+F 3 "~" H 3750 1850 50  0001 C CNN
+	1    3750 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1550 3750 1550
+Wire Wire Line
+	3750 1550 3750 1700
+$Comp
+L NEWValves:EA50 D-SMONXTB-11
+U 1 1 5FD493A0
+P 3750 2750
+F 0 "D-SMONXTB-11" H 3600 2400 50  0000 R CNN
+F 1 "EA50" H 3600 2500 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 4350 2550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3750 2750 50  0001 C CNN
+	1    3750 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 2250 3750 2150
+Connection ~ 3750 2150
+Wire Wire Line
+	3750 3000 3750 3100
+$Comp
+L Device:R R-SMONXTB-6
+U 1 1 5FD6807C
+P 3750 3350
+F 0 "R-SMONXTB-6" H 3850 3400 50  0000 L CNN
+F 1 "220k*" H 3850 3350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3680 3350 50  0001 C CNN
+F 3 "~" H 3750 3350 50  0001 C CNN
+	1    3750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3500 3750 3600
+Wire Wire Line
+	3750 3600 3650 3600
+Wire Wire Line
+	3500 3450 3500 3350
+Wire Wire Line
+	3500 3750 3500 3850
+Text Label 3500 3350 2    50   ~ 0
++200V
+Text Label 3500 3850 2    50   ~ 0
+GND
+Wire Wire Line
+	3750 3100 2750 3100
+Wire Wire Line
+	2750 3100 2750 3800
+Connection ~ 3750 3100
+Wire Wire Line
+	3750 3100 3750 3200
+$Comp
+L NEWValves:EA50 D-SMONXTB-12
+U 1 1 5FE5DA64
+P 2750 4050
+F 0 "D-SMONXTB-12" H 3000 4000 50  0000 L CNN
+F 1 "EA50" H 3000 3900 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 3350 3850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2750 4050 50  0001 C CNN
+	1    2750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SMONXTB-4
+U 1 1 5FE6078D
+P 3000 4650
+F 0 "R-SMONXTB-4" V 3250 4650 50  0000 C CNN
+F 1 "22k" V 3150 4650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2930 4650 50  0001 C CNN
+F 3 "~" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 4650 3250 4650
+$Comp
+L Device:R R-SMONXTB-2
+U 1 1 5FE81040
+P 2500 4650
+F 0 "R-SMONXTB-2" V 2350 4650 50  0000 C CNN
+F 1 "22k" V 2250 4650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2430 4650 50  0001 C CNN
+F 3 "~" H 2500 4650 50  0001 C CNN
+	1    2500 4650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 4650 2350 4650
+Wire Wire Line
+	2650 4650 2750 4650
+Wire Wire Line
+	2750 4650 2750 4550
+Connection ~ 2750 4650
+Wire Wire Line
+	2750 4650 2850 4650
+Text Label 3250 4650 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01_Female J-SMONXTB-2
+U 1 1 5FEC1E0C
+P 2050 4650
+F 0 "J-SMONXTB-2" H 2125 4700 50  0000 L CNN
+F 1 "DOT" H 2125 4600 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 2050 4650 50  0001 C CNN
+F 3 "~" H 2050 4650 50  0001 C CNN
+	1    2050 4650
+	-1   0    0    1   
+$EndComp
+Text Notes 2200 4450 0    50   ~ 0
+Dot {+5,-15}
+Text Notes 1650 4800 0    50   ~ 0
+Dot {+10,-60}
+Wire Wire Line
+	3750 1550 4400 1550
+Connection ~ 3750 1550
+$Comp
+L Device:R R-SMONXTB-7
+U 1 1 5FF08BE6
+P 4650 1550
+F 0 "R-SMONXTB-7" V 4800 1450 50  0000 C CNN
+F 1 "4K7" V 4900 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4580 1550 50  0001 C CNN
+F 3 "~" H 4650 1550 50  0001 C CNN
+	1    4650 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-SMONXTB-3
+U 1 1 5FF09DA6
+P 4650 1300
+F 0 "C-SMONXTB-3" V 4350 1300 50  0000 C CNN
+F 1 "100" V 4450 1300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4688 1150 50  0001 C CNN
+F 3 "~" H 4650 1300 50  0001 C CNN
+	1    4650 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 1300 4400 1550
+Connection ~ 4400 1550
+Wire Wire Line
+	4400 1550 4500 1550
+Wire Wire Line
+	4400 1300 4500 1300
+Wire Wire Line
+	4800 1550 4900 1550
+Wire Wire Line
+	4900 1550 4900 1300
+Wire Wire Line
+	4900 1300 4800 1300
+$Comp
+L Device:R R-SMONXTB-10
+U 1 1 5FF93057
+P 5150 1550
+F 0 "R-SMONXTB-10" V 5300 1700 50  0000 C CNN
+F 1 "4K7" V 5400 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5080 1550 50  0001 C CNN
+F 3 "~" H 5150 1550 50  0001 C CNN
+	1    5150 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-SMONXTB-6
+U 1 1 5FF933AF
+P 5150 1300
+F 0 "C-SMONXTB-6" V 4850 1300 50  0000 C CNN
+F 1 "100" V 4950 1300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5188 1150 50  0001 C CNN
+F 3 "~" H 5150 1300 50  0001 C CNN
+	1    5150 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 1550 5000 1550
+Wire Wire Line
+	4900 1300 5000 1300
+Wire Wire Line
+	5300 1550 5400 1550
+Wire Wire Line
+	5400 1550 5400 1300
+Wire Wire Line
+	5400 1300 5300 1300
+Connection ~ 4900 1300
+Connection ~ 4900 1550
+Wire Wire Line
+	6650 2050 6550 2050
+NoConn ~ 6500 2300
+NoConn ~ 6500 2200
+$Comp
+L NEWValves:CV173 V-SMONXTB-2
+U 1 1 5FFDDFE1
+P 6200 2100
+F 0 "V-SMONXTB-2" H 6250 1700 50  0000 C CNN
+F 1 "CV173" H 6250 1600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7200 2350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 6200 2100 50  0001 C CNN
+	1    6200 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SMONXTB-11
+U 1 1 60004900
+P 5650 2150
+F 0 "R-SMONXTB-11" V 5400 2150 50  0000 C CNN
+F 1 "470" V 5500 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5580 2150 50  0001 C CNN
+F 3 "~" H 5650 2150 50  0001 C CNN
+	1    5650 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 2150 5800 2150
+Wire Wire Line
+	5900 2250 5900 2350
+Text Label 5900 2350 2    50   ~ 0
+GND
+Wire Wire Line
+	4650 2800 4650 2900
+Text Label 4650 2000 2    50   ~ 0
+GND
+Wire Wire Line
+	4900 2650 4800 2650
+$Comp
+L Device:R_POT RV-SMONXTB-2
+U 1 1 600BDC0E
+P 4650 2650
+F 0 "RV-SMONXTB-2" H 5350 2550 50  0000 R CNN
+F 1 "50K" H 4900 2450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4650 2650 50  0001 C CNN
+F 3 "~" H 4650 2650 50  0001 C CNN
+	1    4650 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SMONXTB-8
+U 1 1 5FFDA0EF
+P 4650 2250
+F 0 "R-SMONXTB-8" H 4550 2300 50  0000 R CNN
+F 1 "22k 2W" H 4550 2250 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4580 2250 50  0001 C CNN
+F 3 "~" H 4650 2250 50  0001 C CNN
+	1    4650 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2500 4650 2400
+Wire Wire Line
+	4650 2100 4650 2000
+Wire Wire Line
+	6200 1550 6200 1650
+Wire Wire Line
+	6200 1550 5400 1550
+Connection ~ 5400 1550
+Wire Wire Line
+	4900 1550 4900 2150
+Wire Wire Line
+	4900 2150 5500 2150
+$Comp
+L Device:R R-SMONXTB-9
+U 1 1 602B2B34
+P 4900 2400
+F 0 "R-SMONXTB-9" H 5000 2450 50  0000 L CNN
+F 1 "27k 2W" H 5000 2400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4830 2400 50  0001 C CNN
+F 3 "~" H 4900 2400 50  0001 C CNN
+	1    4900 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2250 4900 2150
+Connection ~ 4900 2150
+Wire Wire Line
+	4900 2650 4900 2550
+Text Label 4650 2900 2    50   ~ 0
+150v*
+Wire Wire Line
+	5900 1950 5800 1950
+Text Label 5800 1950 2    50   ~ 0
+GND
+$Comp
+L Device:C C-SMONXTB-9
+U 1 1 60359DC5
+P 6650 2300
+F 0 "C-SMONXTB-9" H 6800 2350 50  0000 L CNN
+F 1 "0.1" H 6800 2300 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6688 2150 50  0001 C CNN
+F 3 "~" H 6650 2300 50  0001 C CNN
+	1    6650 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2050 6650 2150
+Wire Wire Line
+	6650 2450 6650 2550
+Text Label 6650 2550 2    50   ~ 0
+GND
+Wire Wire Line
+	6200 1100 6200 1150
+$Comp
+L Device:R R-SMONXTB-12
+U 1 1 60388334
+P 6200 1300
+F 0 "R-SMONXTB-12" H 6300 1350 50  0000 L CNN
+F 1 "3k3 6W" H 6300 1300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6130 1300 50  0001 C CNN
+F 3 "~" H 6200 1300 50  0001 C CNN
+	1    6200 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1450 6200 1550
+Connection ~ 6200 1550
+Text Label 6200 1100 2    50   ~ 0
++300V
+$Comp
+L Device:R R-SMONXTB-13
+U 1 1 603B5775
+P 8050 1550
+F 0 "R-SMONXTB-13" V 8200 1450 50  0000 C CNN
+F 1 "4K7" V 8300 1450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7980 1550 50  0001 C CNN
+F 3 "~" H 8050 1550 50  0001 C CNN
+	1    8050 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-SMONXTB-10
+U 1 1 603B577F
+P 8050 1300
+F 0 "C-SMONXTB-10" V 7750 1300 50  0000 C CNN
+F 1 "100" V 7850 1300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8088 1150 50  0001 C CNN
+F 3 "~" H 8050 1300 50  0001 C CNN
+	1    8050 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7800 1300 7800 1550
+Connection ~ 7800 1550
+Wire Wire Line
+	7800 1550 7900 1550
+Wire Wire Line
+	7800 1300 7900 1300
+Wire Wire Line
+	8200 1550 8300 1550
+Wire Wire Line
+	8300 1550 8300 1300
+Wire Wire Line
+	8300 1300 8200 1300
+$Comp
+L Device:R R-SMONXTB-16
+U 1 1 603B5790
+P 8550 1550
+F 0 "R-SMONXTB-16" V 8700 1700 50  0000 C CNN
+F 1 "4K7" V 8800 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8480 1550 50  0001 C CNN
+F 3 "~" H 8550 1550 50  0001 C CNN
+	1    8550 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-SMONXTB-11
+U 1 1 603B579A
+P 8550 1300
+F 0 "C-SMONXTB-11" V 8250 1300 50  0000 C CNN
+F 1 "100" V 8350 1300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8588 1150 50  0001 C CNN
+F 3 "~" H 8550 1300 50  0001 C CNN
+	1    8550 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8300 1550 8400 1550
+Wire Wire Line
+	8300 1300 8400 1300
+Wire Wire Line
+	8700 1550 8800 1550
+Wire Wire Line
+	8800 1550 8800 1300
+Wire Wire Line
+	8800 1300 8700 1300
+Connection ~ 8300 1300
+Connection ~ 8300 1550
+NoConn ~ 9900 2300
+NoConn ~ 9900 2200
+$Comp
+L NEWValves:CV173 V-SMONXTB-3
+U 1 1 603B57AE
+P 9600 2100
+F 0 "V-SMONXTB-3" H 9650 1700 50  0000 C CNN
+F 1 "CV173" H 9650 1600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 10600 2350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 9600 2100 50  0001 C CNN
+	1    9600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SMONXTB-17
+U 1 1 603B57B8
+P 9050 2150
+F 0 "R-SMONXTB-17" V 8800 2150 50  0000 C CNN
+F 1 "470" V 8900 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8980 2150 50  0001 C CNN
+F 3 "~" H 9050 2150 50  0001 C CNN
+	1    9050 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 2150 9200 2150
+Wire Wire Line
+	9300 2250 9300 2350
+Text Label 9300 2350 2    50   ~ 0
+GND
+Text Label 8050 2150 2    50   ~ 0
+GND
+Wire Wire Line
+	8300 2800 8200 2800
+$Comp
+L Device:R_POT RV-SMONXTB-3
+U 1 1 603B57C8
+P 8050 2800
+F 0 "RV-SMONXTB-3" H 8750 2700 50  0000 R CNN
+F 1 "50K" H 8300 2600 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 8050 2800 50  0001 C CNN
+F 3 "~" H 8050 2800 50  0001 C CNN
+	1    8050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SMONXTB-14
+U 1 1 603B57D2
+P 8050 2400
+F 0 "R-SMONXTB-14" H 7950 2450 50  0000 R CNN
+F 1 "22k 2W" H 7950 2400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7980 2400 50  0001 C CNN
+F 3 "~" H 8050 2400 50  0001 C CNN
+	1    8050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2650 8050 2550
+Wire Wire Line
+	8050 2250 8050 2150
+Wire Wire Line
+	9600 1550 9600 1650
+Wire Wire Line
+	9600 1550 8800 1550
+Connection ~ 8800 1550
+Wire Wire Line
+	8300 1550 8300 2150
+Wire Wire Line
+	8300 2150 8900 2150
+$Comp
+L Device:R R-SMONXTB-15
+U 1 1 603B57E3
+P 8300 2550
+F 0 "R-SMONXTB-15" H 8400 2600 50  0000 L CNN
+F 1 "150K" H 8400 2550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8230 2550 50  0001 C CNN
+F 3 "~" H 8300 2550 50  0001 C CNN
+	1    8300 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2400 8300 2150
+Connection ~ 8300 2150
+Wire Wire Line
+	8300 2800 8300 2700
+Wire Wire Line
+	9300 1950 9200 1950
+Text Label 9200 1950 2    50   ~ 0
+GND
+Wire Wire Line
+	9600 1100 9600 1150
+$Comp
+L Device:R R-SMONXTB-18
+U 1 1 603B5801
+P 9600 1300
+F 0 "R-SMONXTB-18" H 9700 1350 50  0000 L CNN
+F 1 "3k3 6W" H 9700 1300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9530 1300 50  0001 C CNN
+F 3 "~" H 9600 1300 50  0001 C CNN
+	1    9600 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1450 9600 1550
+Connection ~ 9600 1550
+Text Label 9600 1100 2    50   ~ 0
++300V
+Wire Wire Line
+	6650 2050 9950 2050
+Connection ~ 6650 2050
+Connection ~ 9950 2050
+Wire Wire Line
+	9950 2050 10050 2050
+Wire Wire Line
+	10050 1600 10050 1650
+$Comp
+L Device:R R-SMONXTB-19
+U 1 1 604A11E9
+P 10050 1800
+F 0 "R-SMONXTB-19" H 10150 1850 50  0000 L CNN
+F 1 "3k9 3W" H 10150 1800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9980 1800 50  0001 C CNN
+F 3 "~" H 10050 1800 50  0001 C CNN
+	1    10050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1950 10050 2050
+Text Label 10050 1600 2    50   ~ 0
++300V
+Wire Wire Line
+	6200 1550 7800 1550
+Text Label 8050 3050 2    50   ~ 0
+150v*
+Wire Wire Line
+	8050 2950 8050 3050
+Wire Wire Line
+	6200 1550 7000 1000
+Wire Wire Line
+	9600 1550 8500 1000
+$Comp
+L Connector:Conn_01x01_Female J-SMONXTB-3
+U 1 1 605F5745
+P 7000 800
+F 0 "J-SMONXTB-3" V 6950 700 50  0000 R CNN
+F 1 "MX2" V 6850 700 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 7000 800 50  0001 C CNN
+F 3 "~" H 7000 800 50  0001 C CNN
+	1    7000 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-SMONXTB-4
+U 1 1 605F8B7D
+P 8500 800
+F 0 "J-SMONXTB-4" V 8700 750 50  0000 C CNN
+F 1 "MX1" V 8600 750 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 8500 800 50  0001 C CNN
+F 3 "~" H 8500 800 50  0001 C CNN
+	1    8500 800 
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7800 4150
+NoConn ~ 7800 4250
+NoConn ~ 7300 4250
+NoConn ~ 7300 4150
+Wire Notes Line style solid
+	8350 3850 8800 3850
+Wire Notes Line
+	8750 3800 8800 3850
+Wire Notes Line
+	8750 3900 8800 3850
+Wire Notes Line style solid
+	8350 3950 8800 3950
+Wire Notes Line
+	8750 3900 8800 3950
+Wire Notes Line
+	8750 4000 8800 3950
+Wire Notes Line style solid
+	8350 4050 8800 4050
+Wire Notes Line
+	8750 4000 8800 4050
+Wire Notes Line
+	8750 4100 8800 4050
+Wire Notes Line style solid
+	8800 4250 8350 4250
+Wire Notes Line
+	8400 4300 8350 4250
+Wire Notes Line
+	8400 4200 8350 4250
+Wire Notes Line style solid
+	8800 4150 8350 4150
+Wire Notes Line
+	8400 4200 8350 4150
+Wire Notes Line
+	8400 4100 8350 4150
+Wire Notes Line style solid
+	8350 4350 8800 4350
+Wire Notes Line
+	8750 4300 8800 4350
+Wire Notes Line
+	8750 4400 8800 4350
+$EndSCHEMATC

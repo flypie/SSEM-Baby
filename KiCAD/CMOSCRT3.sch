@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 35
+Sheet 6 38
 Title "Control Gate Posn 6.3"
 Date "2020-10-08"
 Rev "Alpha"

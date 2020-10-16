@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 35
+Sheet 1 38
 Title "Control Adder Position 6.4"
 Date "2020-10-08"
 Rev "Alpha"
@@ -216,5 +216,23 @@ S 5500 5500 750  500
 U 5F89117E
 F0 "SDOT&STB" 50
 F1 "SDOT&STB.sch" 50
+$EndSheet
+$Sheet
+S 5500 6250 750  500 
+U 5F88E8BA
+F0 "SMONXTB" 50
+F1 "SMONXTB.sch" 50
+$EndSheet
+$Sheet
+S 5500 7000 750  500 
+U 6077FCA5
+F0 "STAB200" 50
+F1 "STAB200.sch" 50
+$EndSheet
+$Sheet
+S 7000 1000 750  500 
+U 5F89590E
+F0 "STOP" 50
+F1 "STOP.sch" 50
 $EndSheet
 $EndSCHEMATC

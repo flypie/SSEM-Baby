@@ -1,0 +1,1346 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 38 38
+Title "Stabilised 200V PSU 1.6"
+Date "2020-10-15"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-STOP-1
+U 2 1 60752DED
+P 1600 7000
+F 0 "V-STOP-1" H 1600 7575 50  0000 C CNN
+F 1 "VR91" H 1600 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2600 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1600 7000 50  0001 C CNN
+	2    1600 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7400 1500 7400
+Wire Wire Line
+	1500 7350 1500 7400
+Wire Wire Line
+	1700 7350 1700 7650
+Wire Wire Line
+	1350 6050 1500 6050
+Wire Wire Line
+	1350 6300 1700 6300
+Wire Wire Line
+	1500 6000 1500 6050
+Wire Wire Line
+	1700 6000 1700 6300
+Text Label 1350 6050 2    50   ~ 0
+Heater-6.3V
+Text Label 1350 6300 2    50   ~ 0
+Heater-GND
+Text Label 1350 7400 2    50   ~ 0
+Heater-6.3V
+Text Label 1350 7650 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:C C-STOP-7
+U 1 1 6064964E
+P 5450 7050
+F 0 "C-STOP-7" H 5325 6975 50  0000 R CNN
+F 1 "0.5" H 5325 7075 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5488 6900 50  0001 C CNN
+F 3 "~" H 5450 7050 50  0001 C CNN
+	1    5450 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-STOP-4
+U 1 1 6064964F
+P 3950 7050
+F 0 "C-STOP-4" H 4100 7125 50  0000 L CNN
+F 1 "0.5" H 4100 7050 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3988 6900 50  0001 C CNN
+F 3 "~" H 3950 7050 50  0001 C CNN
+	1    3950 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-STOP-5
+U 1 1 60649650
+P 4700 7050
+F 0 "C-STOP-5" H 4825 7125 50  0000 L CNN
+F 1 "0.5" H 4825 7025 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4738 6900 50  0001 C CNN
+F 3 "~" H 4700 7050 50  0001 C CNN
+	1    4700 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 7200 3950 7300
+Text Label 3950 7300 3    50   ~ 0
+GND
+Wire Wire Line
+	4700 7200 4700 7300
+Text Label 4700 7300 3    50   ~ 0
+GND
+Wire Wire Line
+	5450 7200 5450 7300
+Text Label 5450 7300 3    50   ~ 0
+GND
+Text Label 3950 6900 1    50   ~ 0
++300V
+Text Label 4700 6900 1    50   ~ 0
++200V
+Text Label 6200 6900 1    50   ~ 0
++50V
+Text Label 5450 6900 1    50   ~ 0
+-150V
+Text Label 6200 7300 3    50   ~ 0
+GND
+Wire Wire Line
+	6200 7200 6200 7300
+$Comp
+L Device:C C-STOP-8
+U 1 1 651E4C77
+P 6200 7050
+F 0 "C-STOP-8" H 6325 7125 50  0000 L CNN
+F 1 "0.5" H 6325 7025 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6238 6900 50  0001 C CNN
+F 3 "~" H 6200 7050 50  0001 C CNN
+	1    6200 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60752DEA
+P 6750 7850
+AR Path="/5F868E46/60752DEA" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60752DEA" Ref="#FLG0115"  Part="1" 
+AR Path="/60BC2C2A/60752DEA" Ref="#FLG0164"  Part="1" 
+AR Path="/5F89117E/60752DEA" Ref="#FLG0166"  Part="1" 
+AR Path="/5F88E8BA/60752DEA" Ref="#FLG0170"  Part="1" 
+AR Path="/6077FCA5/60752DEA" Ref="#FLG0170"  Part="1" 
+AR Path="/5F89590E/60752DEA" Ref="#FLG0170"  Part="1" 
+F 0 "#FLG0170" H 6750 7925 50  0001 C CNN
+F 1 "PWR_FLAG" H 6775 8050 50  0000 C CNN
+F 2 "" H 6750 7850 50  0001 C CNN
+F 3 "~" H 6750 7850 50  0001 C CNN
+	1    6750 7850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SCFOLLWS-?
+U 1 1 60D69558
+P 6400 7500
+AR Path="/5F868E46/60D69558" Ref="J-SCFOLLWS-?"  Part="1" 
+AR Path="/5F2DDAEA/60D69558" Ref="J-STOP-5"  Part="1" 
+AR Path="/60BC2C2A/60D69558" Ref="J-STOP-5"  Part="1" 
+AR Path="/5F89117E/60D69558" Ref="J-STOP-5"  Part="1" 
+AR Path="/5F88E8BA/60D69558" Ref="J-STOP-5"  Part="1" 
+AR Path="/6077FCA5/60D69558" Ref="J-STOP-5"  Part="1" 
+AR Path="/5F89590E/60D69558" Ref="J-STOP-5"  Part="1" 
+F 0 "J-STOP-5" H 6450 7950 50  0000 C CNN
+F 1 "HIGH Voltage." H 6450 7850 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 6400 7500 50  0001 C CNN
+F 3 "~" H 6400 7500 50  0001 C CNN
+	1    6400 7500
+	1    0    0    -1  
+$EndComp
+Text Label 6100 7300 2    50   ~ 0
++300V
+Text Label 6800 7400 0    50   ~ 0
+-150V
+Text Label 6100 7400 2    50   ~ 0
++50V
+Text Label 6100 7500 2    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60D69559
+P 6150 7850
+AR Path="/5F868E46/60D69559" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60D69559" Ref="#FLG0116"  Part="1" 
+AR Path="/60BC2C2A/60D69559" Ref="#FLG0165"  Part="1" 
+AR Path="/5F89117E/60D69559" Ref="#FLG0167"  Part="1" 
+AR Path="/5F88E8BA/60D69559" Ref="#FLG0171"  Part="1" 
+AR Path="/6077FCA5/60D69559" Ref="#FLG0171"  Part="1" 
+AR Path="/5F89590E/60D69559" Ref="#FLG0171"  Part="1" 
+F 0 "#FLG0171" H 6150 7925 50  0001 C CNN
+F 1 "PWR_FLAG" H 6175 8050 50  0000 C CNN
+F 2 "" H 6150 7850 50  0001 C CNN
+F 3 "~" H 6150 7850 50  0001 C CNN
+	1    6150 7850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 7800 6150 7800
+Wire Wire Line
+	6150 7850 6150 7800
+Connection ~ 6150 7800
+Wire Wire Line
+	6150 7800 6100 7800
+Wire Wire Line
+	6700 7800 6750 7800
+Text Label 6800 7800 0    50   ~ 0
+Heater-6.3V
+Connection ~ 6750 7800
+Wire Wire Line
+	6750 7800 6800 7800
+Wire Wire Line
+	6800 7300 6700 7300
+Wire Wire Line
+	6800 7400 6700 7400
+Wire Wire Line
+	6800 7500 6700 7500
+Wire Wire Line
+	6200 7300 6100 7300
+Wire Wire Line
+	6200 7400 6100 7400
+Wire Wire Line
+	6200 7500 6100 7500
+Wire Wire Line
+	6750 7850 6750 7800
+Text Label 6800 7300 0    50   ~ 0
++200V
+Text Label 6800 7500 0    50   ~ 0
+GND
+Text Label 6100 7800 2    50   ~ 0
+Heater-GND
+$Comp
+L NEWValves:VR91 V-STOP-2
+U 1 1 5FAE2E03
+P 4950 -1850
+F 0 "V-STOP-2" H 5000 -2300 50  0000 C CNN
+F 1 "VR91" H 5000 -2400 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5950 -1600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 4950 -1850 50  0001 C CNN
+	1    4950 -1850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5250 -1750
+NoConn ~ 5250 -1650
+Wire Wire Line
+	4650 -1800 4550 -1800
+NoConn ~ 6700 7600
+NoConn ~ 6700 7700
+NoConn ~ 6200 7700
+NoConn ~ 6200 7600
+$Comp
+L NEWValves:807 V-STOP-1
+U 1 1 607B7AF9
+P 3000 -3200
+F 0 "V-STOP-1" H 3050 -3600 50  0000 C CNN
+F 1 "807" H 3050 -3700 50  0000 C CNN
+F 2 "NewValves:USM5+1" H 4000 -2950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/807.pdf" H 3000 -3200 50  0001 C CNN
+	1    3000 -3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 -3200 2050 -3200
+$Comp
+L Device:R R-STOP-1
+U 1 1 607E7234
+P 2300 -3200
+F 0 "R-STOP-1" V 2550 -3200 50  0000 C CNN
+F 1 "68" V 2450 -3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2230 -3200 50  0001 C CNN
+F 3 "~" H 2300 -3200 50  0001 C CNN
+	1    2300 -3200
+	0    -1   -1   0   
+$EndComp
+Text Label 1950 -3200 2    50   ~ 0
++300V
+Wire Wire Line
+	2450 -3200 2550 -3200
+Wire Wire Line
+	2900 -3550 2900 -3650
+Wire Wire Line
+	2900 -3650 2050 -3650
+Wire Wire Line
+	2050 -3650 2050 -3200
+Connection ~ 2050 -3200
+Wire Wire Line
+	2050 -3200 2150 -3200
+Wire Wire Line
+	3150 -2900 3400 -2900
+Wire Wire Line
+	3050 -3550 3050 -3750
+Wire Wire Line
+	3050 -3750 2600 -3750
+Wire Wire Line
+	2600 -3750 2600 -2900
+Wire Wire Line
+	2600 -2900 3050 -2900
+Wire Wire Line
+	3050 -2900 3050 -2800
+$Comp
+L Device:R R-STOP-2
+U 1 1 608265E1
+P 3050 -2650
+F 0 "R-STOP-2" H 2950 -2600 50  0000 R CNN
+F 1 "470" H 2950 -2650 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2980 -2650 50  0001 C CNN
+F 3 "~" H 3050 -2650 50  0001 C CNN
+	1    3050 -2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 -2900 3400 -2800
+$Comp
+L Device:R R-STOP-3
+U 1 1 6082700C
+P 3400 -2650
+F 0 "R-STOP-3" H 3500 -2600 50  0000 L CNN
+F 1 "47k 1W" H 3500 -2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3330 -2650 50  0001 C CNN
+F 3 "~" H 3400 -2650 50  0001 C CNN
+	1    3400 -2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 -2900
+Wire Wire Line
+	3400 -2900 4150 -2900
+$Comp
+L Device:C C-STOP-1
+U 1 1 60839BA8
+P 4150 -2650
+F 0 "C-STOP-1" H 4000 -2700 50  0000 R CNN
+F 1 "0.01" H 4000 -2650 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4188 -2800 50  0001 C CNN
+F 3 "~" H 4150 -2650 50  0001 C CNN
+	1    4150 -2650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 -2900 4150 -2800
+Connection ~ 4150 -2900
+Wire Wire Line
+	4150 -2900 4950 -2900
+Wire Wire Line
+	4950 -2900 4950 -2800
+$Comp
+L Device:R R-STOP-7
+U 1 1 608472D2
+P 4950 -2650
+F 0 "R-STOP-7" H 5050 -2600 50  0000 L CNN
+F 1 "100K" H 5050 -2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4880 -2650 50  0001 C CNN
+F 3 "~" H 4950 -2650 50  0001 C CNN
+	1    4950 -2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 -2900
+Wire Wire Line
+	4950 -2900 5700 -2900
+Wire Wire Line
+	4950 -2500 4950 -2400
+Wire Wire Line
+	3050 -2500 3050 -2400
+Wire Wire Line
+	3050 -2400 4950 -2400
+Connection ~ 4950 -2400
+Wire Wire Line
+	4950 -2400 4950 -2300
+$Comp
+L Device:R R-STOP-5
+U 1 1 6089A0F5
+P 4400 -1800
+F 0 "R-STOP-5" V 4650 -1800 50  0000 C CNN
+F 1 "470" V 4550 -1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4330 -1800 50  0001 C CNN
+F 3 "~" H 4400 -1800 50  0001 C CNN
+	1    4400 -1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4250 -1800 4150 -1800
+Wire Wire Line
+	4150 -1800 4150 -2500
+$Comp
+L Device:R_POT RV-STOP-1
+U 1 1 608B77A4
+P 3400 -1800
+F 0 "RV-STOP-1" H 3300 -1750 50  0000 R CNN
+F 1 "25K" H 3300 -1800 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 3400 -1800 50  0001 C CNN
+F 3 "~" H 3400 -1800 50  0001 C CNN
+	1    3400 -1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 -1700 4650 -1550
+Wire Wire Line
+	3400 -2500 3400 -1950
+Wire Wire Line
+	3550 -1800 4150 -1800
+Connection ~ 4150 -1800
+Wire Wire Line
+	3400 -1650 3400 -1450
+$Comp
+L Device:R R-STOP-4
+U 1 1 6091799F
+P 3400 -1300
+F 0 "R-STOP-4" H 3300 -1250 50  0000 R CNN
+F 1 "47k 1W" H 3300 -1300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3330 -1300 50  0001 C CNN
+F 3 "~" H 3400 -1300 50  0001 C CNN
+	1    3400 -1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR105_30 V-STOP-3
+U 1 1 6091F940
+P 4350 -1400
+F 0 "V-STOP-3" H 4600 -1400 50  0000 L CNN
+F 1 "VR105_30" H 4600 -1300 50  0000 L CNN
+F 2 "Valve:Valve_Octal" H 4950 -1100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/vr105-30.pdf" H 4350 -1400 50  0001 C CNN
+	1    4350 -1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4350 -950 4350 -850
+Wire Wire Line
+	4350 -850 3400 -850
+Wire Wire Line
+	3400 -850 3400 -1150
+$Comp
+L Device:R R-STOP-9
+U 1 1 60962949
+P 5700 -2650
+F 0 "R-STOP-9" H 5800 -2600 50  0000 L CNN
+F 1 "22k 1W" H 5800 -2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5630 -2650 50  0001 C CNN
+F 3 "~" H 5700 -2650 50  0001 C CNN
+	1    5700 -2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 -2800 5700 -2900
+Connection ~ 5700 -2900
+Wire Wire Line
+	5700 -2900 6450 -2900
+Wire Wire Line
+	5700 -1900 5700 -2500
+Wire Wire Line
+	5300 -1900 5700 -1900
+Wire Wire Line
+	8200 -1150 8700 -1150
+$Comp
+L Device:R R-STOP-10
+U 1 1 60985FB8
+P 5700 -1100
+F 0 "R-STOP-10" H 5800 -1050 50  0000 L CNN
+F 1 "68k 1W" H 5800 -1100 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5630 -1100 50  0001 C CNN
+F 3 "~" H 5700 -1100 50  0001 C CNN
+	1    5700 -1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 -1250 5700 -1900
+Connection ~ 5700 -1900
+Wire Wire Line
+	5700 -950 5700 -850
+Wire Wire Line
+	5700 -850 6450 -850
+$Comp
+L Device:R R-STOP-11
+U 1 1 60997E6D
+P 6450 -2650
+F 0 "R-STOP-11" H 6550 -2600 50  0000 L CNN
+F 1 "68k 1W" H 6550 -2650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6380 -2650 50  0001 C CNN
+F 3 "~" H 6450 -2650 50  0001 C CNN
+	1    6450 -2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 -2900 6450 -2800
+Connection ~ 6450 -2900
+Wire Wire Line
+	6450 -2900 7150 -2900
+Wire Wire Line
+	4650 -1550 6450 -1550
+Wire Wire Line
+	6450 -1550 6450 -2500
+Connection ~ 4650 -1550
+Connection ~ 4650 -1700
+Wire Wire Line
+	4450 -1700 4450 -2000
+Wire Wire Line
+	4450 -2000 4650 -2000
+Wire Wire Line
+	4450 -1700 4650 -1700
+$Comp
+L Device:C C-STOP-2
+U 1 1 609ED273
+P 6450 -1100
+F 0 "C-STOP-2" H 6600 -1050 50  0000 L CNN
+F 1 "0.1" H 6600 -1100 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6488 -1250 50  0001 C CNN
+F 3 "~" H 6450 -1100 50  0001 C CNN
+	1    6450 -1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 -950 6450 -850
+Connection ~ 6450 -850
+Wire Wire Line
+	6450 -850 7150 -850
+Wire Wire Line
+	6450 -1550 6450 -1250
+Connection ~ 6450 -1550
+$Comp
+L Device:C C-STOP-3
+U 1 1 60A23443
+P 7150 -1900
+F 0 "C-STOP-3" H 7300 -1850 50  0000 L CNN
+F 1 "0.1" H 7300 -1900 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7188 -2050 50  0001 C CNN
+F 3 "~" H 7150 -1900 50  0001 C CNN
+	1    7150 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 -1750 7150 -850
+Wire Wire Line
+	7150 -2900 7150 -2050
+Connection ~ 7150 -2900
+Connection ~ 7150 -850
+Wire Wire Line
+	7150 -2900 8050 -2900
+$Comp
+L Device:R R-STOP-13
+U 1 1 60A75D78
+P 8050 -2150
+F 0 "R-STOP-13" H 7950 -2100 50  0000 R CNN
+F 1 "51k" H 7950 -2150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7980 -2150 50  0001 C CNN
+F 3 "~" H 8050 -2150 50  0001 C CNN
+	1    8050 -2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 -2000 8050 -1900
+$Comp
+L Device:R R-STOP-12
+U 1 1 60A8B8C1
+P 8050 -2550
+F 0 "R-STOP-12" H 7950 -2500 50  0000 R CNN
+F 1 "51k" H 7950 -2550 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7980 -2550 50  0001 C CNN
+F 3 "~" H 8050 -2550 50  0001 C CNN
+	1    8050 -2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 -2400 8050 -2300
+Wire Wire Line
+	8050 -2700 8050 -2800
+$Comp
+L Device:R R-STOP-14
+U 1 1 60AADC10
+P 8150 -2350
+F 0 "R-STOP-14" H 8250 -2300 50  0000 L CNN
+F 1 "1.5" H 8250 -2350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8080 -2350 50  0001 C CNN
+F 3 "~" H 8150 -2350 50  0001 C CNN
+	1    8150 -2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 -2500 8150 -2800
+Wire Wire Line
+	8150 -2800 8050 -2800
+Connection ~ 8050 -2800
+Wire Wire Line
+	8050 -2800 8050 -2900
+Wire Wire Line
+	8150 -2200 8150 -1900
+Wire Wire Line
+	8150 -1900 8050 -1900
+Wire Wire Line
+	7150 -850 8050 -850
+$Comp
+L Device:Voltmeter_AC MES-STOP-2
+U 1 1 60B25CD0
+P 8050 -1450
+F 0 "MES-STOP-2" H 8250 -1400 50  0000 L CNN
+F 1 "0-300" H 8250 -1450 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 8050 -1350 50  0001 C CNN
+F 3 "~" V 8050 -1350 50  0001 C CNN
+	1    8050 -1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 -1250 8050 -850
+Connection ~ 8050 -1900
+Wire Wire Line
+	8050 -1900 8050 -1650
+$Comp
+L Device:R R-STOP-6
+U 1 1 60B68B57
+P 8700 -900
+F 0 "R-STOP-6" H 8600 -850 50  0000 R CNN
+F 1 "51k" H 8600 -900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8630 -900 50  0001 C CNN
+F 3 "~" H 8700 -900 50  0001 C CNN
+	1    8700 -900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 -750 8700 -650
+$Comp
+L Device:R R-STOP-8
+U 1 1 60B68B63
+P 8900 -900
+F 0 "R-STOP-8" H 9000 -850 50  0000 L CNN
+F 1 "1.5" H 9000 -900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8830 -900 50  0001 C CNN
+F 3 "~" H 8900 -900 50  0001 C CNN
+	1    8900 -900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 -750 8900 -650
+$Comp
+L Device:Voltmeter_AC MES-STOP-1
+U 1 1 60B68B73
+P 8750 -350
+F 0 "MES-STOP-1" H 8950 -300 50  0000 L CNN
+F 1 "0-300" H 8950 -350 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 8750 -250 50  0001 C CNN
+F 3 "~" V 8750 -250 50  0001 C CNN
+	1    8750 -350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 -150 8700 -50 
+Connection ~ 8700 -1150
+Wire Wire Line
+	8700 -1150 8900 -1150
+Wire Wire Line
+	8700 -1150 8700 -1050
+Connection ~ 8900 -1150
+Wire Wire Line
+	8900 -1150 9550 -1150
+Wire Wire Line
+	8900 -1150 8900 -1050
+Wire Wire Line
+	8700 -650 8900 -650
+Connection ~ 8700 -650
+Wire Wire Line
+	8700 -650 8700 -550
+Text Label 8750 -50  0    50   ~ 0
+-150V*
+Wire Wire Line
+	8150 -2900 8050 -2900
+Text Label 8150 -2900 0    50   ~ 0
++200V*
+Connection ~ 8050 -2900
+Wire Wire Line
+	8150 -850 8050 -850
+Text Label 8150 -850 0    50   ~ 0
++0V
+Connection ~ 8050 -850
+Connection ~ 3400 -850
+$Comp
+L Device:Transformer_1P_2S T-STOP-1
+U 1 1 60C5F6A1
+P 2400 -1850
+F 0 "T-STOP-1" H 2400 -1250 50  0000 C CNN
+F 1 "Transformer_1P_2S" H 2400 -1350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 2400 -1850 50  0001 C CNN
+F 3 "~" H 2400 -1850 50  0001 C CNN
+	1    2400 -1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_WallPlug_Earth P-STOP-1
+U 1 1 60C683B3
+P 1600 -1950
+F 0 "P-STOP-1" H 1700 -1600 50  0000 C CNN
+F 1 "Conn_WallPlug_Earth" H 1700 -1700 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2000 -1950 50  0001 C CNN
+F 3 "~" H 2000 -1950 50  0001 C CNN
+	1    1600 -1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 -2050 1900 -2050
+Wire Wire Line
+	2000 -1650 1900 -1650
+Wire Wire Line
+	1900 -1850 1950 -1850
+Wire Wire Line
+	1950 -1850 1950 -850
+Wire Wire Line
+	1950 -850 3400 -850
+Text Label 1950 -850 2    50   ~ 0
+GND
+$Comp
+L NEWValves:VR91 V-STOP-2
+U 2 1 60D2C272
+P 2250 7000
+F 0 "V-STOP-2" H 2250 7575 50  0000 C CNN
+F 1 "VR91" H 2250 7475 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3250 7250 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2250 7000 50  0001 C CNN
+	2    2250 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7350 2150 7400
+Wire Wire Line
+	2350 7350 2350 7650
+Wire Wire Line
+	1500 7400 2150 7400
+Connection ~ 1500 7400
+Wire Wire Line
+	1350 7650 1700 7650
+Connection ~ 1700 7650
+Wire Wire Line
+	1700 7650 2350 7650
+NoConn ~ 3100 5300
+NoConn ~ 3100 5200
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 1 1 5F92F7D1
+P 3200 5700
+AR Path="/5F868E46/5F92F7D1" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F92F7D1" Ref="D-STOP-1"  Part="1" 
+F 0 "D-STOP-1" H 2950 5650 50  0000 R CNN
+F 1 "EA50" H 2950 5550 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 3800 5500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3200 5700 50  0001 C CNN
+	1    3200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5F9334CE
+P 1600 5550
+AR Path="/5F868E46/5F9334CE" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F9334CE" Ref="D-STOP-1"  Part="2" 
+F 0 "D-STOP-1" H 1350 5500 50  0000 R CNN
+F 1 "EA50" H 1350 5400 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 2200 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1600 5550 50  0001 C CNN
+	2    1600 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 5150 2400 5150
+$Comp
+L Device:R R-STOP-?
+U 1 1 5F983EB4
+P 2250 5150
+F 0 "R-STOP-?" V 2500 5150 50  0000 C CNN
+F 1 "10K" V 2400 5150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2180 5150 50  0001 C CNN
+F 3 "~" H 2250 5150 50  0001 C CNN
+	1    2250 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1450 5150 2000 5150
+Wire Wire Line
+	2000 5150 2000 5050
+Connection ~ 2000 5150
+Wire Wire Line
+	2000 5150 2100 5150
+$Comp
+L Device:R R-STOP-?
+U 1 1 5F98EF9F
+P 2000 4900
+F 0 "R-STOP-?" H 1900 4950 50  0000 R CNN
+F 1 "1M2" H 1900 4900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1930 4900 50  0001 C CNN
+F 3 "~" H 2000 4900 50  0001 C CNN
+	1    2000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5150 1450 5050
+$Comp
+L Device:R R-STOP-?
+U 1 1 5F994876
+P 1450 4900
+F 0 "R-STOP-?" H 1350 4950 50  0000 R CNN
+F 1 "1M2" H 1350 4900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1380 4900 50  0001 C CNN
+F 3 "~" H 1450 4900 50  0001 C CNN
+	1    1450 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  5150 1450 5150
+Wire Wire Line
+	900  5150 900  5050
+$Comp
+L Device:R R-STOP-?
+U 1 1 5F9989F4
+P 900 4900
+F 0 "R-STOP-?" H 800 4950 50  0000 R CNN
+F 1 "1M2" H 800 4900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 830 4900 50  0001 C CNN
+F 3 "~" H 900 4900 50  0001 C CNN
+	1    900  4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 5150
+Wire Wire Line
+	2000 4750 2000 4650
+Wire Wire Line
+	1450 4750 1450 4650
+Wire Wire Line
+	900  4750 900  4650
+$Comp
+L Connector:Conn_01x01_Female J-SMONXTB-?
+U 1 1 5F9B3AE8
+P 900 4450
+AR Path="/5F88E8BA/5F9B3AE8" Ref="J-SMONXTB-?"  Part="1" 
+AR Path="/5F89590E/5F9B3AE8" Ref="J-STOP-?"  Part="1" 
+F 0 "J-STOP-?" V 850 4350 50  0000 R CNN
+F 1 "FN13.1" V 750 4350 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 900 4450 50  0001 C CNN
+F 3 "~" H 900 4450 50  0001 C CNN
+	1    900  4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-STOP-?
+U 1 1 5F9C08A3
+P 1450 4450
+AR Path="/5F88E8BA/5F9C08A3" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89590E/5F9C08A3" Ref="J-STOP-?"  Part="1" 
+F 0 "J-STOP-?" V 1400 4350 50  0000 R CNN
+F 1 "FN14.1" V 1300 4350 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 1450 4450 50  0001 C CNN
+F 3 "~" H 1450 4450 50  0001 C CNN
+	1    1450 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-STOP-?
+U 1 1 5F9C0C65
+P 2000 4450
+AR Path="/5F88E8BA/5F9C0C65" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89590E/5F9C0C65" Ref="J-STOP-?"  Part="1" 
+F 0 "J-STOP-?" V 2200 4400 50  0000 C CNN
+F 1 "FN15.1" V 2100 4400 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 2000 4450 50  0001 C CNN
+F 3 "~" H 2000 4450 50  0001 C CNN
+	1    2000 4450
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3150 5050
+Wire Wire Line
+	2500 4900 3150 4900
+Wire Wire Line
+	3150 4900 3150 4950
+Wire Wire Line
+	2500 4950 2500 4900
+$Comp
+L Device:R R-STOP-?
+U 1 1 5F9D7100
+P 3300 4950
+F 0 "R-STOP-?" V 3550 4950 50  0000 C CNN
+F 1 "R" V 3450 4950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3230 4950 50  0001 C CNN
+F 3 "~" H 3300 4950 50  0001 C CNN
+	1    3300 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-STOP-?
+U 1 1 5F9D7573
+P 2800 3550
+F 0 "R-STOP-?" H 2900 3600 50  0000 L CNN
+F 1 "47K 2W" H 2900 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2730 3550 50  0001 C CNN
+F 3 "~" H 2800 3550 50  0001 C CNN
+	1    2800 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3400 2800 3300
+Text Label 2800 3300 0    50   ~ 0
++300V
+Wire Wire Line
+	3450 4950 3550 4950
+Wire Wire Line
+	3550 4950 3550 5350
+Wire Wire Line
+	3550 5350 3200 5350
+Wire Wire Line
+	3200 5350 3200 5450
+Connection ~ 3550 5350
+$Comp
+L Device:R R-STOP-?
+U 1 1 5F9EEE87
+P 3550 5750
+F 0 "R-STOP-?" H 3650 5800 50  0000 L CNN
+F 1 "330K" H 3650 5750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3480 5750 50  0001 C CNN
+F 3 "~" H 3550 5750 50  0001 C CNN
+	1    3550 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5350 3550 5600
+Wire Wire Line
+	2500 5350 2500 5250
+Text Label 2500 5350 2    50   ~ 0
+GND
+$Comp
+L NEWValves:VR91 V-STOP-1
+U 1 1 5F8E5DA0
+P 2800 5100
+F 0 "V-STOP-1" H 2850 4700 50  0000 C CNN
+F 1 "VR91" H 2850 4600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3800 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2800 5100 50  0001 C CNN
+	1    2800 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6300 3200 6200
+Text Label 3200 6300 2    50   ~ 0
+GND
+Text Label 3550 6000 0    50   ~ 0
+-150V
+Wire Wire Line
+	3550 5900 3550 6000
+$Comp
+L Device:C C-STOP-?
+U 1 1 5FA1D9E7
+P 3050 4550
+F 0 "C-STOP-?" V 3350 4550 50  0000 C CNN
+F 1 "100p" V 3250 4550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3088 4400 50  0001 C CNN
+F 3 "~" H 3050 4550 50  0001 C CNN
+	1    3050 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 4550 2900 4550
+Connection ~ 2800 4550
+Wire Wire Line
+	2800 4550 2800 4150
+Wire Wire Line
+	2800 4550 2800 4650
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA3C53C
+P 3050 4150
+F 0 "R-STOP-?" V 3300 4150 50  0000 C CNN
+F 1 "180K" V 3200 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2980 4150 50  0001 C CNN
+F 3 "~" H 3050 4150 50  0001 C CNN
+	1    3050 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2800 4150 2900 4150
+Connection ~ 2800 4150
+Wire Wire Line
+	2800 4150 2800 3700
+Wire Wire Line
+	3800 4150 3700 4150
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA439C2
+P 3550 4150
+F 0 "R-STOP-?" V 3800 4150 50  0000 C CNN
+F 1 "39K" V 3700 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3480 4150 50  0001 C CNN
+F 3 "~" H 3550 4150 50  0001 C CNN
+	1    3550 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 4150 3300 4150
+Wire Wire Line
+	3200 4550 3800 4550
+Wire Wire Line
+	3800 4550 3800 4150
+NoConn ~ 5050 5300
+NoConn ~ 5050 5200
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 1 1 5FA521CE
+P 4950 5700
+AR Path="/5F868E46/5FA521CE" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5FA521CE" Ref="D-SCFOLLWS-?"  Part="1" 
+F 0 "D-SCFOLLWS-?" H 4700 5650 50  0000 R CNN
+F 1 "EA50" H 4700 5550 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 5550 5500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4950 5700 50  0001 C CNN
+	1    4950 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5150 5750 5150
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA521D9
+P 5900 5150
+F 0 "R-STOP-?" V 6150 5150 50  0000 C CNN
+F 1 "10K" V 6050 5150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5830 5150 50  0001 C CNN
+F 3 "~" H 5900 5150 50  0001 C CNN
+	1    5900 5150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5650 4900 5000 4900
+Wire Wire Line
+	5000 4900 5000 4950
+Wire Wire Line
+	5650 4950 5650 4900
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA521E7
+P 4850 4950
+F 0 "R-STOP-?" V 5100 4950 50  0000 C CNN
+F 1 "R" V 5000 4950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4780 4950 50  0001 C CNN
+F 3 "~" H 4850 4950 50  0001 C CNN
+	1    4850 4950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA521F1
+P 5350 3550
+F 0 "R-STOP-?" H 5450 3600 50  0000 L CNN
+F 1 "47K 2W" H 5450 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5280 3550 50  0001 C CNN
+F 3 "~" H 5350 3550 50  0001 C CNN
+	1    5350 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3400 5350 3300
+Text Label 5350 3300 2    50   ~ 0
++300V
+Wire Wire Line
+	4700 4950 4600 4950
+Wire Wire Line
+	4600 4950 4600 5350
+Wire Wire Line
+	4600 5350 4950 5350
+Wire Wire Line
+	4950 5350 4950 5450
+Connection ~ 4600 5350
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA52202
+P 4600 5750
+F 0 "R-STOP-?" H 4700 5800 50  0000 L CNN
+F 1 "330K" H 4700 5750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4530 5750 50  0001 C CNN
+F 3 "~" H 4600 5750 50  0001 C CNN
+	1    4600 5750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5350 4600 5600
+Wire Wire Line
+	5650 5350 5650 5250
+Text Label 5650 5350 0    50   ~ 0
+GND
+$Comp
+L NEWValves:VR91 V-STOP-2
+U 1 1 5FA5220F
+P 5350 5100
+F 0 "V-STOP-2" H 5400 4700 50  0000 C CNN
+F 1 "VR91" H 5400 4600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6350 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 5350 5100 50  0001 C CNN
+	1    5350 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 6300 4950 6200
+Text Label 4950 6300 0    50   ~ 0
+GND
+Text Label 4600 6000 2    50   ~ 0
+-150V
+Wire Wire Line
+	4600 5900 4600 6000
+$Comp
+L Device:C C-STOP-?
+U 1 1 5FA5221D
+P 5100 4550
+F 0 "C-STOP-?" V 5400 4550 50  0000 C CNN
+F 1 "100p" V 5300 4550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5138 4400 50  0001 C CNN
+F 3 "~" H 5100 4550 50  0001 C CNN
+	1    5100 4550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5350 4550 5250 4550
+Connection ~ 5350 4550
+Wire Wire Line
+	5350 4550 5350 4150
+Wire Wire Line
+	5350 4550 5350 4650
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA5222B
+P 5100 4150
+F 0 "R-STOP-?" V 5350 4150 50  0000 C CNN
+F 1 "390K" V 5250 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5030 4150 50  0001 C CNN
+F 3 "~" H 5100 4150 50  0001 C CNN
+	1    5100 4150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5350 4150 5250 4150
+Connection ~ 5350 4150
+Wire Wire Line
+	5350 4150 5350 3700
+Wire Wire Line
+	4350 4150 4450 4150
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA52239
+P 4600 4150
+F 0 "R-STOP-?" V 4850 4150 50  0000 C CNN
+F 1 "56K" V 4750 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4530 4150 50  0001 C CNN
+F 3 "~" H 4600 4150 50  0001 C CNN
+	1    4600 4150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4950 4150 4850 4150
+Wire Wire Line
+	4950 4550 4350 4550
+Wire Wire Line
+	4350 4550 4350 4150
+Wire Wire Line
+	3550 4950 4350 4550
+Connection ~ 3550 4950
+Connection ~ 4350 4550
+Wire Wire Line
+	4600 4950 3800 4550
+Connection ~ 4600 4950
+Connection ~ 3800 4550
+$Comp
+L Connector:Conn_01x01_Female J-STOP-?
+U 1 1 5FA8B0E9
+P 6350 5150
+AR Path="/5F88E8BA/5FA8B0E9" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89590E/5FA8B0E9" Ref="J-STOP-?"  Part="1" 
+F 0 "J-STOP-?" H 6400 5200 50  0000 L CNN
+F 1 "COMPLETION" H 6400 5100 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 6350 5150 50  0001 C CNN
+F 3 "~" H 6350 5150 50  0001 C CNN
+	1    6350 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5150 6050 5150
+Wire Wire Line
+	5350 4150 5450 4150
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FA95AA8
+P 5600 4150
+F 0 "R-STOP-?" V 5850 4150 50  0000 C CNN
+F 1 "270K" V 5750 4150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5530 4150 50  0001 C CNN
+F 3 "~" H 5600 4150 50  0001 C CNN
+	1    5600 4150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5850 4150 5750 4150
+Text Label 5850 4150 0    50   ~ 0
+StopLamp
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FAAA064
+P 6300 4450
+F 0 "R-STOP-?" H 6200 4500 50  0000 R CNN
+F 1 "12K 2W" H 6200 4450 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6230 4450 50  0001 C CNN
+F 3 "~" H 6300 4450 50  0001 C CNN
+	1    6300 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4300 6300 4200
+Text Label 6300 4200 2    50   ~ 0
++300V
+Wire Wire Line
+	5000 5050 6300 5050
+$Comp
+L Device:C C-STOP-?
+U 1 1 5FACC784
+P 6550 4700
+F 0 "C-STOP-?" V 6350 4700 50  0000 C CNN
+F 1 "0.1" V 6250 4700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6588 4550 50  0001 C CNN
+F 3 "~" H 6550 4700 50  0001 C CNN
+	1    6550 4700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6300 4600 6300 4700
+Wire Wire Line
+	6400 4700 6300 4700
+Connection ~ 6300 4700
+Wire Wire Line
+	6300 4700 6300 5050
+Wire Wire Line
+	6700 4700 6700 4800
+Text Label 6700 4800 0    50   ~ 0
+GND
+Wire Wire Line
+	4850 4150 4850 3150
+Wire Wire Line
+	4850 3150 7000 3150
+Connection ~ 4850 4150
+Wire Wire Line
+	4850 4150 4750 4150
+$Comp
+L NEWValves:VR91 V-STOP-?
+U 1 1 5FB01390
+P 7500 5100
+F 0 "V-STOP-?" H 7550 4700 50  0000 C CNN
+F 1 "VR91" H 7550 4600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8500 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 7500 5100 50  0001 C CNN
+	1    7500 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5150 7800 5100
+Wire Wire Line
+	7800 5100 7000 5100
+Wire Wire Line
+	7000 3150 7000 5100
+Wire Wire Line
+	7150 4550 7500 4550
+Wire Wire Line
+	7800 4550 7800 4950
+Wire Wire Line
+	7150 4550 7150 5050
+Wire Wire Line
+	7500 4650 7500 4550
+Connection ~ 7500 4550
+Wire Wire Line
+	7500 4550 7800 4550
+Wire Wire Line
+	7500 4550 7500 4450
+Text Label 7500 4450 0    50   ~ 0
++200V
+NoConn ~ 7200 5200
+NoConn ~ 7200 5300
+Wire Wire Line
+	7800 5250 7800 5350
+Wire Wire Line
+	7800 5350 8100 5350
+Wire Wire Line
+	7800 5350 7800 5450
+Connection ~ 7800 5350
+$Comp
+L Device:R R-STOP-?
+U 1 1 5FB935FE
+P 7800 5600
+F 0 "R-STOP-?" H 7700 5650 50  0000 R CNN
+F 1 "15K 3w" H 7700 5600 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7730 5600 50  0001 C CNN
+F 3 "~" H 7800 5600 50  0001 C CNN
+	1    7800 5600
+	-1   0    0    -1  
+$EndComp
+Text Label 7800 5850 2    50   ~ 0
+-150V
+Wire Wire Line
+	7800 5750 7800 5850
+$Comp
+L Connector:Conn_01x01_Female J-STOP-?
+U 1 1 5FB9F432
+P 8300 5350
+AR Path="/5F88E8BA/5FB9F432" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89590E/5FB9F432" Ref="J-STOP-?"  Part="1" 
+F 0 "J-STOP-?" H 8350 5400 50  0000 L CNN
+F 1 "C.S.Inhibit" H 8350 5300 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 8300 5350 50  0001 C CNN
+F 3 "~" H 8300 5350 50  0001 C CNN
+	1    8300 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6200 7300
+Wire Wire Line
+	3300 4150 3300 800 
+Connection ~ 3300 4150
+Wire Wire Line
+	3300 4150 3400 4150
+$Comp
+L Switch:SW_SPDT L-KEYSW2-?
+U 1 1 5FBCD77E
+P 4550 1400
+AR Path="/5F6D0098/5FBCD77E" Ref="L-KEYSW2-?"  Part="1" 
+AR Path="/5F89590E/5FBCD77E" Ref="L-KEYSW2-?"  Part="1" 
+F 0 "L-KEYSW2-?" H 4550 1050 50  0000 C CNN
+F 1 "SW_SPDT" H 4550 1150 50  0000 C CNN
+F 2 "SamacSys_Parts_m:A101SYCQ04" H 4550 1400 50  0001 C CNN
+F 3 "~" H 4550 1400 50  0001 C CNN
+	1    4550 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_SPDT L-KEYSW2-?
+U 1 1 5FC1E7DD
+P 4600 2050
+AR Path="/5F6D0098/5FC1E7DD" Ref="L-KEYSW2-?"  Part="1" 
+AR Path="/5F89590E/5FC1E7DD" Ref="L-KEYSW2-?"  Part="1" 
+F 0 "L-KEYSW2-?" H 4600 1700 50  0000 C CNN
+F 1 "SW_SPDT" H 4600 1800 50  0000 C CNN
+F 2 "SamacSys_Parts_m:A101SYCQ04" H 4600 2050 50  0001 C CNN
+F 3 "~" H 4600 2050 50  0001 C CNN
+	1    4600 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 2050 4900 2050
+Wire Wire Line
+	4300 2150 4400 2150
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 1 1 5FC29B45
+P 4850 800
+AR Path="/5F868E46/5FC29B45" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5FC29B45" Ref="D-SCFOLLWS-?"  Part="1" 
+F 0 "D-SCFOLLWS-?" V 4450 700 50  0000 C CNN
+F 1 "EA50" V 4550 700 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5450 600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4850 800 50  0001 C CNN
+	1    4850 800 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 800  3300 800 
+Wire Wire Line
+	5100 800  5100 1400
+Wire Wire Line
+	4750 1400 5100 1400
+Wire Wire Line
+	4350 1500 4350 1550
+Wire Wire Line
+	4350 1550 5350 1550
+$EndSCHEMATC
