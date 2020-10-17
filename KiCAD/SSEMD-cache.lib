@@ -1975,6 +1975,35 @@ X F1 9 -100 -350 100 U 50 50 2 1 W
 ENDDRAW
 ENDDEF
 #
+# NEWValves_SW_DPDT
+#
+DEF NEWValves_SW_DPDT SW 0 0 Y N 1 F N
+F0 "SW" 100 170 50 H V C CNN
+F1 "NEWValves_SW_DPDT" 100 -600 50 H V C CNN
+F2 "" 100 0 50 H I C CNN
+F3 "" 100 0 50 H I C CNN
+$FPLIST
+ SW*DPDT*
+$ENDFPLIST
+DRAW
+C 20 -400 20 0 0 0 N
+C 20 0 20 0 0 0 N
+C 180 -500 20 0 0 0 N
+C 180 -100 20 0 0 0 N
+C 180 -300 20 0 1 0 N
+C 180 100 20 0 1 0 N
+P 2 0 1 0 40 -390 165 -310 N
+P 2 0 1 0 40 10 165 90 N
+P 2 0 1 0 100 150 100 -550 N
+X A 1 300 100 100 L 50 50 1 1 P
+X B 2 -100 0 100 R 50 50 1 1 P
+X C 3 300 -100 100 L 50 50 1 1 P
+X A 4 300 -300 100 L 50 50 1 1 P
+X B 5 -100 -400 100 R 50 50 1 1 P
+X C 6 300 -500 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # NEWValves_SW_Double_Acting_Push
 #
 DEF NEWValves_SW_Double_Acting_Push SW 0 40 Y N 1 F N
@@ -2371,6 +2400,27 @@ X A3 3 -100 -500 100 R 50 50 0 0 W
 X B1 4 750 -100 100 L 50 50 0 0 w
 X B2 5 750 -300 100 L 50 50 0 0 w
 X B3 6 750 -500 100 L 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_105-0852-001
+#
+DEF SamacSys_Parts_105-0852-001 J 0 30 Y Y 1 F N
+F0 "J" 650 300 50 H V L CNN
+F1 "SamacSys_Parts_105-0852-001" 650 200 50 H V L CNN
+F2 "1050852001" 650 100 50 H I L CNN
+F3 "http://uk.rs-online.com/web/p/products/8861024" 650 0 50 H I L CNN
+F4 "Test Plugs & Test Jacks TEST JACK RED" 650 -100 50 H I L CNN "Description"
+F5 "7.92" 650 -200 50 H I L CNN "Height"
+F6 "Cinch Connectivity Solutions" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "105-0852-001" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "105-0852-001" 650 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/105-0852-001/cinch-connectivity-solutions" 650 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "530-105-0852-1" 650 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Johnson-Cinch-Connectivity-Solutions/105-0852-001?qs=mXFFu1Tk4DXqOoMTUlp7Bw%3D%3D" 650 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -100 200 -100 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

@@ -1,0 +1,1585 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 39 39
+Title "Store Gate Position 6.6"
+Date "2020-10-15"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-STORGATE-1
+U 2 1 5FFCCC3B
+P 1300 10450
+F 0 "V-STORGATE-1" H 1300 11025 50  0000 C CNN
+F 1 "VR91" H 1300 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2300 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1300 10450 50  0001 C CNN
+	2    1300 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 10850 1200 10850
+Wire Wire Line
+	1200 10800 1200 10850
+Wire Wire Line
+	1400 10800 1400 11100
+Text Label 1050 10850 2    50   ~ 0
+Heater-6.3V
+Text Label 1050 11100 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:C C-STORGATE-7
+U 1 1 5FE38DFC
+P 10250 10550
+F 0 "C-STORGATE-7" H 10125 10475 50  0000 R CNN
+F 1 "0.5" H 10125 10575 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10288 10400 50  0001 C CNN
+F 3 "~" H 10250 10550 50  0001 C CNN
+	1    10250 10550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-STORGATE-4
+U 1 1 5FFCCC34
+P 8750 10550
+F 0 "C-STORGATE-4" H 8900 10625 50  0000 L CNN
+F 1 "0.5" H 8900 10550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8788 10400 50  0001 C CNN
+F 3 "~" H 8750 10550 50  0001 C CNN
+	1    8750 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-STORGATE-5
+U 1 1 60649650
+P 9500 10550
+F 0 "C-STORGATE-5" H 9625 10625 50  0000 L CNN
+F 1 "0.5" H 9625 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9538 10400 50  0001 C CNN
+F 3 "~" H 9500 10550 50  0001 C CNN
+	1    9500 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 10700 8750 10800
+Text Label 8750 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	9500 10700 9500 10800
+Text Label 9500 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	10250 10700 10250 10800
+Text Label 10250 10800 3    50   ~ 0
+GND
+Text Label 8750 10400 1    50   ~ 0
++300V
+Text Label 9500 10400 1    50   ~ 0
++200V
+Text Label 11000 10400 1    50   ~ 0
++50V
+Text Label 10250 10400 1    50   ~ 0
+-150V
+$Comp
+L Device:C C-STORGATE-8
+U 1 1 5FE38E02
+P 11000 10550
+F 0 "C-STORGATE-8" H 11125 10625 50  0000 L CNN
+F 1 "0.5" H 11125 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11038 10400 50  0001 C CNN
+F 3 "~" H 11000 10550 50  0001 C CNN
+	1    11000 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-STORGATE-2
+U 2 1 60D2C272
+P 1950 10450
+F 0 "V-STORGATE-2" H 1950 11025 50  0000 C CNN
+F 1 "CV173" H 1950 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2950 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 1950 10450 50  0001 C CNN
+	2    1950 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 10800 1850 10850
+Wire Wire Line
+	2050 10800 2050 11100
+Wire Wire Line
+	1200 10850 1850 10850
+Connection ~ 1200 10850
+Wire Wire Line
+	1050 11100 1400 11100
+Connection ~ 1400 11100
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 1 1 5F92F7D1
+P 3350 2750
+AR Path="/5F868E46/5F92F7D1" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F92F7D1" Ref="D-STORGATE-1"  Part="1" 
+AR Path="/5FFFB333/5F92F7D1" Ref="D-STORGATE-1"  Part="1" 
+F 0 "D-STORGATE-1" H 3600 2700 50  0000 L CNN
+F 1 "EA50" H 3600 2600 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 3950 2550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3350 2750 50  0001 C CNN
+	1    3350 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-STORGATE-3
+U 2 1 5FE20AD4
+P 2600 10450
+F 0 "V-STORGATE-3" H 2600 11025 50  0000 C CNN
+F 1 "VR91" H 2600 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3600 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2600 10450 50  0001 C CNN
+	2    2600 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 10800 2500 10850
+Wire Wire Line
+	2700 10800 2700 11100
+$Comp
+L NEWValves:VR91 V-STORGATE-4
+U 2 1 5FE38DF8
+P 3250 10450
+F 0 "V-STORGATE-4" H 3250 11025 50  0000 C CNN
+F 1 "VR91" H 3250 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4250 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 3250 10450 50  0001 C CNN
+	2    3250 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 10800 3150 10850
+Wire Wire Line
+	3350 10800 3350 11100
+Wire Wire Line
+	2500 10850 3150 10850
+Connection ~ 2500 10850
+Connection ~ 2700 11100
+Wire Wire Line
+	2700 11100 3350 11100
+Wire Wire Line
+	1850 10850 2500 10850
+Connection ~ 1850 10850
+Wire Wire Line
+	1400 11100 2050 11100
+Connection ~ 2050 11100
+Wire Wire Line
+	2050 11100 2700 11100
+Connection ~ 2700 9800
+Connection ~ 2500 9550
+Wire Wire Line
+	2700 9800 3350 9800
+Wire Wire Line
+	2500 9550 3150 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5FE38DFB
+P 3250 9050
+AR Path="/5F868E46/5FE38DFB" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5FE38DFB" Ref="D-SCFOLLWS-7"  Part="2" 
+AR Path="/5FFFB333/5FE38DFB" Ref="D-STORGATE-5"  Part="2" 
+F 0 "D-STORGATE-5" H 3250 9350 50  0000 C CNN
+F 1 "EA50" H 3250 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3850 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3250 9050 50  0001 C CNN
+	2    3250 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 9500 3350 9800
+Wire Wire Line
+	3150 9500 3150 9550
+Connection ~ 2050 9800
+Connection ~ 1850 9550
+Wire Wire Line
+	2050 9800 2700 9800
+Wire Wire Line
+	1850 9550 2500 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5FE38DFA
+P 2600 9050
+AR Path="/5F868E46/5FE38DFA" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5FE38DFA" Ref="D-SCFOLLWS-6"  Part="2" 
+AR Path="/5FFFB333/5FE38DFA" Ref="D-STORGATE-4"  Part="2" 
+F 0 "D-STORGATE-4" H 2600 9350 50  0000 C CNN
+F 1 "EA50" H 2600 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3200 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2600 9050 50  0001 C CNN
+	2    2600 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 9500 2700 9800
+Wire Wire Line
+	2500 9500 2500 9550
+Connection ~ 1400 9800
+Wire Wire Line
+	1400 9800 2050 9800
+Connection ~ 1200 9550
+Wire Wire Line
+	1200 9550 1850 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5FE38DF9
+P 1950 9050
+AR Path="/5F868E46/5FE38DF9" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5FE38DF9" Ref="D-SCFOLLWS-5"  Part="2" 
+AR Path="/5FFFB333/5FE38DF9" Ref="D-STORGATE-3"  Part="2" 
+F 0 "D-STORGATE-3" H 1950 9350 50  0000 C CNN
+F 1 "EA50" H 1950 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2550 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1950 9050 50  0001 C CNN
+	2    1950 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 9500 2050 9800
+Wire Wire Line
+	1850 9500 1850 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5F9334CE
+P 1300 9050
+AR Path="/5F868E46/5F9334CE" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F9334CE" Ref="D-STORGATE-1"  Part="2" 
+AR Path="/5FFFB333/5F9334CE" Ref="D-STORGATE-1"  Part="2" 
+F 0 "D-STORGATE-1" H 1300 9350 50  0000 C CNN
+F 1 "EA50" H 1300 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1900 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1300 9050 50  0001 C CNN
+	2    1300 9050
+	1    0    0    -1  
+$EndComp
+Text Label 1050 9800 2    50   ~ 0
+Heater-GND
+Text Label 1050 9550 2    50   ~ 0
+Heater-6.3V
+Wire Wire Line
+	1400 9500 1400 9800
+Wire Wire Line
+	1200 9500 1200 9550
+Wire Wire Line
+	1050 9800 1400 9800
+Wire Wire Line
+	1050 9550 1200 9550
+Text Label 11000 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	11000 10800 11000 10700
+$Comp
+L Switch:SW_SPDT SW-STORGATE-?
+U 1 1 600456EE
+P 1800 4000
+F 0 "SW-STORGATE-?" H 1800 4300 50  0000 C CNN
+F 1 "SW_SPDT" H 1800 4200 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1800 4000 50  0001 C CNN
+F 3 "~" H 1800 4000 50  0001 C CNN
+	1    1800 4000
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1700 4200 1700 4350
+Wire Wire Line
+	1700 4350 1450 4350
+Wire Wire Line
+	1900 4200 1900 4550
+Wire Wire Line
+	1900 4550 1450 4550
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 600746EC
+P 2650 2400
+AR Path="/5F88E8BA/600746EC" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/600746EC" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/600746EC" Ref="J-STORGATE-14"  Part="1" 
+F 0 "J-STORGATE-14" H 2500 2150 50  0000 C CNN
+F 1 "S.Amp.Sig" H 2500 2250 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 2650 2400 50  0001 C CNN
+F 3 "~" H 2650 2400 50  0001 C CNN
+	1    2650 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 6007891E
+P 1250 4550
+AR Path="/5F88E8BA/6007891E" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/6007891E" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/6007891E" Ref="J-STORGATE-11"  Part="1" 
+F 0 "J-STORGATE-11" H 1300 4450 50  0000 L CNN
+F 1 "S.Dummy.Sig" H 1300 4550 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1250 4550 50  0001 C CNN
+F 3 "~" H 1250 4550 50  0001 C CNN
+	1    1250 4550
+	-1   0    0    1   
+$EndComp
+Text Notes 8300 9850 0    50   ~ 0
+Resistor added in series with DASH input. This does not appear in Dai's drawings but does appear in Alec's. Current through diodes when DASH is positive could be catastrophic! (\AiHP, 3/2/97)\nCarry Suppress circuit added - no evidence of this is any original drawings, but it is essential for correct operation of Subtractor. (V\iHP, 24/3/98)
+Wire Wire Line
+	1800 3800 1800 2400
+Wire Wire Line
+	1800 2400 1950 2400
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 600A8E3F
+P 1250 4350
+AR Path="/5F88E8BA/600A8E3F" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/600A8E3F" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/600A8E3F" Ref="J-STORGATE-10"  Part="1" 
+F 0 "J-STORGATE-10" H 1300 4250 50  0000 L CNN
+F 1 "S.Amp.Sig" H 1300 4350 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1250 4350 50  0001 C CNN
+F 3 "~" H 1250 4350 50  0001 C CNN
+	1    1250 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:105-0852-001 J-STORGATE-12
+U 1 1 600A9989
+P 1950 2400
+F 0 "J-STORGATE-12" H 2250 2200 50  0000 C CNN
+F 1 "105-0852-001" H 2250 2100 50  0000 C CNN
+F 2 "1050852001" H 2600 2500 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/8861024" H 2600 2400 50  0001 L CNN
+F 4 "Test Plugs & Test Jacks TEST JACK RED" H 2600 2300 50  0001 L CNN "Description"
+F 5 "7.92" H 2600 2200 50  0001 L CNN "Height"
+F 6 "Cinch Connectivity Solutions" H 2600 2100 50  0001 L CNN "Manufacturer_Name"
+F 7 "105-0852-001" H 2600 2000 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "105-0852-001" H 2600 1900 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/105-0852-001/cinch-connectivity-solutions" H 2600 1800 50  0001 L CNN "Arrow Price/Stock"
+F 10 "530-105-0852-1" H 2600 1700 50  0001 L CNN "Mouser Part Number"
+F 11 "https://www.mouser.co.uk/ProductDetail/Johnson-Cinch-Connectivity-Solutions/105-0852-001?qs=mXFFu1Tk4DXqOoMTUlp7Bw%3D%3D" H 2600 1600 50  0001 L CNN "Mouser Price/Stock"
+	1    1950 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2400 2950 2400
+$Comp
+L Device:R R-STORGATE-28
+U 1 1 600CDEC4
+P 3100 2400
+F 0 "R-STORGATE-28" V 2950 2400 50  0000 C CNN
+F 1 "5.6k" V 2850 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3030 2400 50  0001 C CNN
+F 3 "~" H 3100 2400 50  0001 C CNN
+	1    3100 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 2400 3350 2400
+Wire Wire Line
+	3350 2500 3350 2400
+Wire Wire Line
+	3350 3250 3350 3350
+Wire Wire Line
+	3350 3350 2850 3350
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 60114ABD
+P 2650 3350
+AR Path="/5F88E8BA/60114ABD" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/60114ABD" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/60114ABD" Ref="J-STORGATE-15"  Part="1" 
+F 0 "J-STORGATE-15" H 2500 3100 50  0000 C CNN
+F 1 "S.Amp.Sig" H 2500 3200 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 2650 3350 50  0001 C CNN
+F 3 "~" H 2650 3350 50  0001 C CNN
+	1    2650 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 2400 3450 2400
+$Comp
+L Device:R R-STORGATE-30
+U 1 1 60115917
+P 3600 2400
+F 0 "R-STORGATE-30" V 3850 2400 50  0000 C CNN
+F 1 "470" V 3750 2400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3530 2400 50  0001 C CNN
+F 3 "~" H 3600 2400 50  0001 C CNN
+	1    3600 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 2400 3850 2400
+Connection ~ 3350 2400
+NoConn ~ 4450 2550
+NoConn ~ 4450 2450
+$Comp
+L NEWValves:VR91 V-STORGATE-7
+U 1 1 601255C1
+P 4150 2350
+F 0 "V-STORGATE-7" H 4200 1950 50  0000 C CNN
+F 1 "VR91" H 4200 1850 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5150 2600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 4150 2350 50  0001 C CNN
+	1    4150 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2500 3850 2600
+Text Label 3850 2600 2    50   ~ 0
+GND
+$Comp
+L Device:R R-STORGATE-29
+U 1 1 601BA92F
+P 3600 2000
+F 0 "R-STORGATE-29" V 3850 2000 50  0000 C CNN
+F 1 "470" V 3750 2000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3530 2000 50  0001 C CNN
+F 3 "~" H 3600 2000 50  0001 C CNN
+	1    3600 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 2200 3850 2200
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 601D49B4
+P 2650 2000
+AR Path="/5F88E8BA/601D49B4" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/601D49B4" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/601D49B4" Ref="J-STORGATE-13"  Part="1" 
+F 0 "J-STORGATE-13" H 2500 1750 50  0000 C CNN
+F 1 "S.Amp.Sig" H 2500 1850 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 2650 2000 50  0001 C CNN
+F 3 "~" H 2650 2000 50  0001 C CNN
+	1    2650 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 2200 3750 2000
+Wire Wire Line
+	2850 2000 3450 2000
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 6021A4B9
+P 3600 1150
+AR Path="/5F868E46/6021A4B9" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/6021A4B9" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/6021A4B9" Ref="D-STORGATE-2"  Part="1" 
+F 0 "D-STORGATE-2" V 3200 1050 50  0000 C CNN
+F 1 "EA50" V 3300 1050 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4200 950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3600 1150 50  0001 C CNN
+	1    3600 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 1150 3000 1150
+Text Label 3000 1150 2    50   ~ 0
++50V
+Wire Wire Line
+	4150 1150 4150 1500
+Wire Wire Line
+	3850 1150 4150 1150
+Wire Wire Line
+	4150 1150 4150 1050
+Connection ~ 4150 1150
+$Comp
+L Device:R R-STORGATE-32
+U 1 1 602475BD
+P 4150 900
+F 0 "R-STORGATE-32" H 4250 950 50  0000 L CNN
+F 1 "56K 2w" H 4250 900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4080 900 50  0001 C CNN
+F 3 "~" H 4150 900 50  0001 C CNN
+	1    4150 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 750  4150 650 
+Text Label 4150 650  0    50   ~ 0
++300V
+Wire Wire Line
+	4500 2300 4600 2300
+Wire Wire Line
+	4600 2300 4600 2200
+$Comp
+L Device:R R-STORGATE-34
+U 1 1 6026904F
+P 4600 2050
+F 0 "R-STORGATE-34" H 4700 2100 50  0000 L CNN
+F 1 "56K 2w" H 4700 2050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4530 2050 50  0001 C CNN
+F 3 "~" H 4600 2050 50  0001 C CNN
+	1    4600 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1900 4600 1800
+Text Label 4600 1800 0    50   ~ 0
++300V
+Wire Wire Line
+	4600 2300 4600 2400
+Connection ~ 4600 2300
+$Comp
+L Device:C C-STORGATE-18
+U 1 1 60288212
+P 4600 2550
+F 0 "C-STORGATE-18" H 4750 2600 50  0000 L CNN
+F 1 "0.1" H 4750 2550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4638 2400 50  0001 C CNN
+F 3 "~" H 4600 2550 50  0001 C CNN
+	1    4600 2550
+	1    0    0    -1  
+$EndComp
+Text Label 4600 2800 2    50   ~ 0
+GND
+Wire Wire Line
+	4600 2700 4600 2800
+Wire Wire Line
+	4150 1500 4250 1500
+Connection ~ 4150 1500
+Wire Wire Line
+	4150 1500 4150 1900
+$Comp
+L Device:C C-STORGATE-16
+U 1 1 602A8251
+P 4400 1500
+F 0 "C-STORGATE-16" V 4100 1500 50  0000 C CNN
+F 1 "470pf" V 4200 1500 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4438 1350 50  0001 C CNN
+F 3 "~" H 4400 1500 50  0001 C CNN
+	1    4400 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 602A8D6C
+P 6000 2300
+AR Path="/5F868E46/602A8D6C" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/602A8D6C" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/602A8D6C" Ref="D-STORGATE-5"  Part="1" 
+F 0 "D-STORGATE-5" V 5600 2200 50  0000 C CNN
+F 1 "EA50" V 5700 2200 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6600 2100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6000 2300 50  0001 C CNN
+	1    6000 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 602D6BF7
+P 5400 2650
+AR Path="/5F868E46/602D6BF7" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/602D6BF7" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/602D6BF7" Ref="D-STORGATE-4"  Part="1" 
+F 0 "D-STORGATE-4" H 5650 2600 50  0000 L CNN
+F 1 "EA50" H 5650 2500 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 6000 2450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5400 2650 50  0001 C CNN
+	1    5400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3150 5400 3250
+Text Label 5400 3250 2    50   ~ 0
+GND
+Wire Wire Line
+	6250 2300 6350 2300
+Wire Wire Line
+	4600 2300 5400 2300
+Wire Wire Line
+	5400 2400 5400 2300
+Connection ~ 5400 2300
+Wire Wire Line
+	5400 2300 5500 2300
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 60319200
+P 6350 2900
+AR Path="/5F868E46/60319200" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/60319200" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/60319200" Ref="D-STORGATE-6"  Part="1" 
+F 0 "D-STORGATE-6" H 6100 2700 50  0000 R CNN
+F 1 "EA50" H 6100 2800 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 6950 2700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6350 2900 50  0001 C CNN
+	1    6350 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6350 2400 6350 2300
+Wire Wire Line
+	6350 3650 6350 3550
+$Comp
+L Device:R R-STORGATE-38
+U 1 1 6035C08F
+P 6350 3400
+F 0 "R-STORGATE-38" H 6450 3450 50  0000 L CNN
+F 1 "4.7K" H 6450 3400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6280 3400 50  0001 C CNN
+F 3 "~" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3250 6350 3150
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 60374458
+P 6350 3850
+AR Path="/5F88E8BA/60374458" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/60374458" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/60374458" Ref="J-STORGATE-18"  Part="1" 
+F 0 "J-STORGATE-18" V 6150 3900 50  0000 L CNN
+F 1 "NAR.DASH.CF" V 6250 3900 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 6350 3850 50  0001 C CNN
+F 3 "~" H 6350 3850 50  0001 C CNN
+	1    6350 3850
+	0    1    1    0   
+$EndComp
+Connection ~ 6350 2300
+Wire Wire Line
+	6350 2300 6350 2200
+$Comp
+L Device:C C-STORGATE-19
+U 1 1 6038C8A9
+P 6350 2050
+F 0 "C-STORGATE-19" H 6200 2100 50  0000 R CNN
+F 1 "100pF" H 6200 2050 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6388 1900 50  0001 C CNN
+F 3 "~" H 6350 2050 50  0001 C CNN
+	1    6350 2050
+	-1   0    0    1   
+$EndComp
+Text Label 6350 1800 0    50   ~ 0
+GND
+Wire Wire Line
+	6350 1900 6350 1800
+$Comp
+L Device:R R-STORGATE-44
+U 1 1 603C1D8C
+P 7550 2300
+F 0 "R-STORGATE-44" V 7800 2300 50  0000 C CNN
+F 1 "470" V 7700 2300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7480 2300 50  0001 C CNN
+F 3 "~" H 7550 2300 50  0001 C CNN
+	1    7550 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:CV173 V-STORGATE-2
+U 1 1 603CDCD0
+P 8100 2250
+F 0 "V-STORGATE-2" H 8800 2350 50  0000 C CNN
+F 1 "CV173" H 8750 2200 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9100 2500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 8100 2250 50  0001 C CNN
+	1    8100 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2300 7700 2300
+Wire Wire Line
+	7800 2100 7800 1700
+Wire Wire Line
+	7800 1700 8100 1700
+Wire Wire Line
+	8100 1700 8100 1800
+Wire Wire Line
+	8450 2200 8450 1700
+Wire Wire Line
+	8450 1700 8100 1700
+Connection ~ 8100 1700
+Wire Wire Line
+	8100 1700 8100 1600
+Text Label 8100 1600 1    50   ~ 0
++200V
+NoConn ~ 8400 2350
+NoConn ~ 8400 2450
+Text Label 7800 3100 2    50   ~ 0
+GND
+$Comp
+L Device:R R-STORGATE-45
+U 1 1 6046300B
+P 7800 2850
+F 0 "R-STORGATE-45" H 7700 2900 50  0000 R CNN
+F 1 "4.7K" H 7700 2850 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7730 2850 50  0001 C CNN
+F 3 "~" H 7800 2850 50  0001 C CNN
+	1    7800 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3000 7800 3100
+Wire Wire Line
+	7800 2600 7950 2600
+Wire Wire Line
+	7800 2400 7800 2600
+Wire Wire Line
+	7800 2600 7800 2700
+Connection ~ 7800 2600
+Wire Wire Line
+	7950 2700 7950 2600
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 604B1F3F
+P 7950 2900
+AR Path="/5F88E8BA/604B1F3F" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/604B1F3F" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/604B1F3F" Ref="J-STORGATE-19"  Part="1" 
+F 0 "J-STORGATE-19" V 7750 2950 50  0000 L CNN
+F 1 "S.READ" V 7850 2950 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7950 2900 50  0001 C CNN
+F 3 "~" H 7950 2900 50  0001 C CNN
+	1    7950 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 604DBFAD
+P 8750 2950
+AR Path="/5F868E46/604DBFAD" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/604DBFAD" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/604DBFAD" Ref="D-STORGATE-8"  Part="1" 
+F 0 "D-STORGATE-8" H 8500 2900 50  0000 R CNN
+F 1 "EA50" H 8500 2800 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 9350 2750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8750 2950 50  0001 C CNN
+	1    8750 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2600 8750 2600
+Connection ~ 7950 2600
+Wire Wire Line
+	8750 2700 8750 2600
+Connection ~ 8750 2600
+Wire Wire Line
+	8750 2600 9250 2600
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 60519023
+P 9250 2950
+AR Path="/5F868E46/60519023" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/60519023" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/60519023" Ref="D-STORGATE-9"  Part="1" 
+F 0 "D-STORGATE-9" H 8950 3150 50  0000 L CNN
+F 1 "EA50" H 9000 3050 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 9850 2750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9250 2950 50  0001 C CNN
+	1    9250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2700 9250 2600
+Connection ~ 9250 2600
+Wire Wire Line
+	9250 2600 9750 2600
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 6052E69B
+P 9750 2950
+AR Path="/5F868E46/6052E69B" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/6052E69B" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/6052E69B" Ref="D-STORGATE-10"  Part="1" 
+F 0 "D-STORGATE-10" H 10000 2900 50  0000 L CNN
+F 1 "EA50" H 10000 2800 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 10350 2750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9750 2950 50  0001 C CNN
+	1    9750 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2700 9750 2600
+Connection ~ 9750 2600
+Wire Wire Line
+	9750 2600 9850 2600
+Wire Wire Line
+	6350 2300 7400 2300
+$Comp
+L Device:R R-STORGATE-46
+U 1 1 605C6CB8
+P 10000 2600
+F 0 "R-STORGATE-46" V 10250 2600 50  0000 C CNN
+F 1 "470" V 10150 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9930 2600 50  0001 C CNN
+F 3 "~" H 10000 2600 50  0001 C CNN
+	1    10000 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-STORGATE-3
+U 1 1 605C908E
+P 10550 2550
+F 0 "V-STORGATE-3" H 10600 2150 50  0000 C CNN
+F 1 "VR91" H 10600 2050 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 11550 2800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 10550 2550 50  0001 C CNN
+	1    10550 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2600 10150 2600
+Wire Wire Line
+	10550 2100 10550 2000
+$Comp
+L Device:R R-STORGATE-48
+U 1 1 6060E8DA
+P 10550 1850
+F 0 "R-STORGATE-48" H 10650 1900 50  0000 L CNN
+F 1 "2.2K" H 10650 1850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10480 1850 50  0001 C CNN
+F 3 "~" H 10550 1850 50  0001 C CNN
+	1    10550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 1700 10550 1600
+Wire Wire Line
+	10550 1600 10450 1600
+Wire Wire Line
+	10550 1600 10550 1350
+$Comp
+L Device:R R-STORGATE-47
+U 1 1 606519D8
+P 10550 1200
+F 0 "R-STORGATE-47" H 10650 1250 50  0000 L CNN
+F 1 "2.2K" H 10650 1200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10480 1200 50  0001 C CNN
+F 3 "~" H 10550 1200 50  0001 C CNN
+	1    10550 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 1050 10550 950 
+Connection ~ 10550 1600
+$Comp
+L Device:R R-STORGATE-49
+U 1 1 60667180
+P 11000 1600
+F 0 "R-STORGATE-49" V 11250 1600 50  0000 C CNN
+F 1 "470" V 11150 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10930 1600 50  0001 C CNN
+F 3 "~" H 11000 1600 50  0001 C CNN
+	1    11000 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:CV173 V-STORGATE-5
+U 1 1 60667532
+P 11550 1550
+F 0 "V-STORGATE-5" H 12250 1650 50  0000 C CNN
+F 1 "CV173" H 12200 1500 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 12550 1800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 11550 1550 50  0001 C CNN
+	1    11550 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 1600 11150 1600
+Wire Wire Line
+	11250 1400 11250 1000
+Wire Wire Line
+	11250 1000 11550 1000
+Wire Wire Line
+	11550 1000 11550 1100
+Wire Wire Line
+	11900 1500 11900 1000
+Wire Wire Line
+	11900 1000 11550 1000
+Connection ~ 11550 1000
+Wire Wire Line
+	11550 1000 11550 900 
+Text Label 11550 900  0    50   ~ 0
++200V
+NoConn ~ 11850 1650
+NoConn ~ 11850 1750
+Wire Wire Line
+	10550 1600 10850 1600
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 6063C18E
+P 10200 1600
+AR Path="/5F868E46/6063C18E" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/6063C18E" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/6063C18E" Ref="D-STORGATE-11"  Part="1" 
+F 0 "D-STORGATE-11" V 10500 1500 50  0000 C CNN
+F 1 "EA50" V 10600 1500 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 10800 1400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10200 1600 50  0001 C CNN
+	1    10200 1600
+	0    1    1    0   
+$EndComp
+NoConn ~ 10850 2650
+NoConn ~ 10850 2750
+Text Label 10550 950  0    50   ~ 0
++300V
+Text Label 9600 1600 2    50   ~ 0
++50V
+Wire Wire Line
+	9700 1600 9600 1600
+$Comp
+L Device:R R-STORGATE-50
+U 1 1 60710112
+P 11000 2250
+F 0 "R-STORGATE-50" H 11100 2300 50  0000 L CNN
+F 1 "15K 3W" H 11100 2250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10930 2250 50  0001 C CNN
+F 3 "~" H 11000 2250 50  0001 C CNN
+	1    11000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 2100 11000 2000
+Text Label 11000 2000 2    50   ~ 0
++300V
+Wire Wire Line
+	11000 2400 11000 2500
+Wire Wire Line
+	11000 2500 10900 2500
+$Comp
+L Device:C C-STORGATE-20
+U 1 1 60740C90
+P 11000 2750
+F 0 "C-STORGATE-20" H 10850 2800 50  0000 R CNN
+F 1 "100pF" H 10850 2750 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11038 2600 50  0001 C CNN
+F 3 "~" H 11000 2750 50  0001 C CNN
+	1    11000 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11000 2600 11000 2500
+Connection ~ 11000 2500
+Wire Wire Line
+	11000 2900 11000 3000
+Text Label 11000 3000 2    50   ~ 0
+GND
+Wire Wire Line
+	8750 3550 8750 3450
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 60772181
+P 8750 3750
+AR Path="/5F88E8BA/60772181" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/60772181" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/60772181" Ref="J-STORGATE-20"  Part="1" 
+F 0 "J-STORGATE-20" V 8550 3650 50  0000 R CNN
+F 1 "DOT.CF" V 8650 3650 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 8750 3750 50  0001 C CNN
+F 3 "~" H 8750 3750 50  0001 C CNN
+	1    8750 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 3550 9250 3450
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 6078DA8D
+P 9250 3750
+AR Path="/5F88E8BA/6078DA8D" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/6078DA8D" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/6078DA8D" Ref="J-STORGATE-21"  Part="1" 
+F 0 "J-STORGATE-21" V 9350 3750 50  0000 C CNN
+F 1 "S.WRITE" V 9450 3750 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 9250 3750 50  0001 C CNN
+F 3 "~" H 9250 3750 50  0001 C CNN
+	1    9250 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9750 3550 9750 3450
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 607A4C18
+P 9750 3750
+AR Path="/5F88E8BA/607A4C18" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/607A4C18" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/607A4C18" Ref="J-STORGATE-22"  Part="1" 
+F 0 "J-STORGATE-22" V 9550 3800 50  0000 L CNN
+F 1 "PC.UPLOAD" V 9650 3800 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 9750 3750 50  0001 C CNN
+F 3 "~" H 9750 3750 50  0001 C CNN
+	1    9750 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 2700 10250 2800
+Text Label 10250 2800 2    50   ~ 0
+GND
+$Comp
+L NEWValves:VR91 V-STORGATE-4
+U 1 1 60876FB6
+P 4100 6550
+F 0 "V-STORGATE-4" H 4150 6150 50  0000 C CNN
+F 1 "VR91" H 4150 6050 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5100 6800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 4100 6550 50  0001 C CNN
+	1    4100 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6600 3700 6600
+Wire Wire Line
+	4100 6100 4100 6000
+$Comp
+L Device:R R-STORGATE-31
+U 1 1 608778A2
+P 4100 5750
+F 0 "R-STORGATE-31" H 4000 5800 50  0000 R CNN
+F 1 "47K 3W" H 4000 5750 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4030 5750 50  0001 C CNN
+F 3 "~" H 4100 5750 50  0001 C CNN
+	1    4100 5750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4400 6650
+NoConn ~ 4400 6750
+$Comp
+L Device:R R-STORGATE-33
+U 1 1 608778AF
+P 4550 5750
+F 0 "R-STORGATE-33" H 4650 5800 50  0000 L CNN
+F 1 "15K 3W" H 4650 5750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4480 5750 50  0001 C CNN
+F 3 "~" H 4550 5750 50  0001 C CNN
+	1    4550 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5600 4550 5500
+Text Label 4550 5500 0    50   ~ 0
++300V
+Wire Wire Line
+	4550 5900 4550 6000
+Wire Wire Line
+	4550 6500 4450 6500
+$Comp
+L Device:C C-STORGATE-17
+U 1 1 608778BD
+P 4550 6750
+F 0 "C-STORGATE-17" H 4400 6700 50  0000 R CNN
+F 1 "0.1" H 4400 6750 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4588 6600 50  0001 C CNN
+F 3 "~" H 4550 6750 50  0001 C CNN
+	1    4550 6750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 6600 4550 6500
+Connection ~ 4550 6500
+Wire Wire Line
+	4550 6900 4550 7000
+Text Label 4550 7000 2    50   ~ 0
+GND
+Wire Wire Line
+	3800 6700 3800 6800
+Text Label 3800 6800 2    50   ~ 0
+GND
+Wire Wire Line
+	4100 5600 4100 5500
+Text Label 4100 5500 0    50   ~ 0
++300V
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 5F8DCF7E
+P 5600 6950
+AR Path="/5F868E46/5F8DCF7E" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5F8DCF7E" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/5F8DCF7E" Ref="D-STORGATE-7"  Part="1" 
+F 0 "D-STORGATE-7" V 5300 6800 50  0000 C CNN
+F 1 "EA50" V 5200 6800 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6200 6750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5600 6950 50  0001 C CNN
+	1    5600 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 1 1 5F8DC6E0
+P 5600 6500
+AR Path="/5F868E46/5F8DC6E0" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5F8DC6E0" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/5F8DC6E0" Ref="D-STORGATE-3"  Part="1" 
+F 0 "D-STORGATE-3" V 5200 6400 50  0000 C CNN
+F 1 "EA50" V 5300 6400 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6200 6300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5600 6500 50  0001 C CNN
+	1    5600 6500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4100 6000 4550 6000
+Connection ~ 4100 6000
+Wire Wire Line
+	4100 6000 4100 5900
+Connection ~ 4550 6000
+Wire Wire Line
+	4550 6000 4550 6500
+Wire Wire Line
+	4550 6000 5000 6000
+Wire Wire Line
+	5000 6000 5000 6100
+$Comp
+L Device:R R-STORGATE-35
+U 1 1 5FA01310
+P 5000 6250
+F 0 "R-STORGATE-35" H 5100 6300 50  0000 L CNN
+F 1 "15K 3W" H 5100 6250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4930 6250 50  0001 C CNN
+F 3 "~" H 5000 6250 50  0001 C CNN
+	1    5000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-STORGATE-36
+U 1 1 5FA020D1
+P 5000 6750
+F 0 "R-STORGATE-36" H 5100 6800 50  0000 L CNN
+F 1 "15K 3W" H 5100 6750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4930 6750 50  0001 C CNN
+F 3 "~" H 5000 6750 50  0001 C CNN
+	1    5000 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6500 5000 6500
+Wire Wire Line
+	5000 6500 5000 6400
+Wire Wire Line
+	5000 6600 5000 6500
+Connection ~ 5000 6500
+Wire Wire Line
+	5000 6900 5000 7000
+Text Label 5000 7000 2    50   ~ 0
+-150
+Wire Wire Line
+	5350 6950 5250 6950
+Wire Wire Line
+	5250 6950 5250 7150
+Wire Wire Line
+	5250 7150 5150 7150
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 5FA924B0
+P 3500 6600
+AR Path="/5F88E8BA/5FA924B0" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FA924B0" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/5FA924B0" Ref="J-STORGATE-16"  Part="1" 
+F 0 "J-STORGATE-16" H 3550 6500 50  0000 L CNN
+F 1 "XBO.CF" H 3550 6600 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 3500 6600 50  0001 C CNN
+F 3 "~" H 3500 6600 50  0001 C CNN
+	1    3500 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 6700 3750 6700
+Wire Wire Line
+	3750 6700 3750 6400
+Wire Wire Line
+	3750 6400 3800 6400
+Connection ~ 3800 6700
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 5FAB0A6B
+P 4950 7150
+AR Path="/5F88E8BA/5FAB0A6B" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FAB0A6B" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/5FAB0A6B" Ref="J-STORGATE-17"  Part="1" 
+F 0 "J-STORGATE-17" H 5000 7050 50  0000 L CNN
+F 1 "STROBE.CF" H 5000 7150 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 4950 7150 50  0001 C CNN
+F 3 "~" H 4950 7150 50  0001 C CNN
+	1    4950 7150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 6500 6200 6500
+Wire Wire Line
+	6200 6500 6200 6700
+Wire Wire Line
+	6200 6950 6100 6950
+Wire Wire Line
+	6200 6950 6200 7050
+Text Label 6200 7450 2    50   ~ 0
+-150
+Connection ~ 6200 6950
+$Comp
+L Device:R R-STORGATE-39
+U 1 1 5FB40D10
+P 6450 6700
+F 0 "R-STORGATE-39" V 6200 6700 50  0000 C CNN
+F 1 "470 3W" V 6300 6700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6380 6700 50  0001 C CNN
+F 3 "~" H 6450 6700 50  0001 C CNN
+	1    6450 6700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 6700 6200 6700
+Connection ~ 6200 6700
+Wire Wire Line
+	6200 6700 6200 6950
+$Comp
+L NEWValves:VR91 V-STORGATE-6
+U 1 1 5FB5E417
+P 7000 6650
+F 0 "V-STORGATE-6" H 7050 6250 50  0000 C CNN
+F 1 "VR91" H 7050 6150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8000 6900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 7000 6650 50  0001 C CNN
+	1    7000 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 6700 6700 6700
+Wire Wire Line
+	6700 6500 6700 6100
+$Comp
+L Device:R R-STORGATE-37
+U 1 1 5FB9ABDA
+P 6200 7200
+F 0 "R-STORGATE-37" H 6350 7500 50  0000 R CNN
+F 1 "470K" H 6350 7600 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6130 7200 50  0001 C CNN
+F 3 "~" H 6200 7200 50  0001 C CNN
+	1    6200 7200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 7350 6200 7450
+Text Label 6700 8050 2    50   ~ 0
+-150
+$Comp
+L Device:R R-STORGATE-41
+U 1 1 5FBDB007
+P 6700 7800
+F 0 "R-STORGATE-41" H 6600 7750 50  0000 R CNN
+F 1 "22K 3W" H 6600 7800 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6630 7800 50  0001 C CNN
+F 3 "~" H 6700 7800 50  0001 C CNN
+	1    6700 7800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6700 7950 6700 8050
+Wire Wire Line
+	6700 6800 6700 6950
+$Comp
+L Device:R R-STORGATE-40
+U 1 1 5FBFC41A
+P 6700 5950
+F 0 "R-STORGATE-40" H 6800 5900 50  0000 L CNN
+F 1 "470 3W" H 6800 5950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6630 5950 50  0001 C CNN
+F 3 "~" H 6700 5950 50  0001 C CNN
+	1    6700 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-STORGATE-42
+U 1 1 5FC1C9DF
+P 7000 5950
+F 0 "R-STORGATE-42" V 6750 5950 50  0000 C CNN
+F 1 "470 3W" V 6850 5950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6930 5950 50  0001 C CNN
+F 3 "~" H 7000 5950 50  0001 C CNN
+	1    7000 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 6100 7000 6200
+Wire Wire Line
+	7350 6600 7450 6600
+Wire Wire Line
+	7450 6600 7450 6100
+$Comp
+L Device:R R-STORGATE-43
+U 1 1 5FC9B467
+P 7450 5950
+F 0 "R-STORGATE-43" H 7350 5900 50  0000 R CNN
+F 1 "470 3W" H 7350 5950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7380 5950 50  0001 C CNN
+F 3 "~" H 7450 5950 50  0001 C CNN
+	1    7450 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7450 5800 7450 5700
+Wire Wire Line
+	7000 5800 7000 5700
+Wire Wire Line
+	6700 5800 6700 5700
+Wire Wire Line
+	6700 5700 7000 5700
+Connection ~ 7000 5700
+Wire Wire Line
+	7000 5700 7450 5700
+Text Label 7000 5600 0    50   ~ 0
++200V
+Wire Wire Line
+	7000 5700 7000 5600
+Wire Wire Line
+	5400 2300 5400 1500
+Wire Wire Line
+	5400 1500 4550 1500
+Wire Wire Line
+	11250 1700 11250 1900
+Text Label 11250 2050 0    50   ~ 0
+-150V
+Wire Wire Line
+	11250 1900 12000 1900
+Connection ~ 11250 1900
+Wire Wire Line
+	11250 1900 11250 2050
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 5FDB23C8
+P 12200 1900
+AR Path="/5F88E8BA/5FDB23C8" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FDB23C8" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/5FDB23C8" Ref="J-STORGATE-23"  Part="1" 
+F 0 "J-STORGATE-23" H 12250 1950 50  0000 L CNN
+F 1 "S.GRID" H 12250 1850 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 12200 1900 50  0001 C CNN
+F 3 "~" H 12200 1900 50  0001 C CNN
+	1    12200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:CV173 V-STORGATE-5
+U 2 1 5FDBE41C
+P 3900 10450
+F 0 "V-STORGATE-5" H 3900 11025 50  0000 C CNN
+F 1 "CV173" H 3900 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4900 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3900 10450 50  0001 C CNN
+	2    3900 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 10800 3800 10850
+Wire Wire Line
+	4000 10800 4000 11100
+$Comp
+L NEWValves:VR91 V-STORGATE-6
+U 2 1 5FDBE8C2
+P 4550 10450
+F 0 "V-STORGATE-6" H 4550 11025 50  0000 C CNN
+F 1 "VR91" H 4550 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5550 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 4550 10450 50  0001 C CNN
+	2    4550 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 10800 4450 10850
+Wire Wire Line
+	4650 10800 4650 11100
+Wire Wire Line
+	3800 10850 4450 10850
+Connection ~ 3800 10850
+Connection ~ 4000 11100
+Wire Wire Line
+	4000 11100 4650 11100
+Wire Wire Line
+	3150 10850 3800 10850
+Wire Wire Line
+	3350 11100 4000 11100
+Connection ~ 3150 10850
+Connection ~ 3350 11100
+Connection ~ 4650 9800
+Connection ~ 4450 9550
+Wire Wire Line
+	4650 9800 5300 9800
+Wire Wire Line
+	4450 9550 5100 9550
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 2 1 5FE6039A
+P 5200 9050
+AR Path="/5F868E46/5FE6039A" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FE6039A" Ref="D-STORGATE-?"  Part="2" 
+AR Path="/5FFFB333/5FE6039A" Ref="D-STORGATE-8"  Part="2" 
+F 0 "D-STORGATE-8" H 5200 9350 50  0000 C CNN
+F 1 "EA50" H 5200 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5800 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5200 9050 50  0001 C CNN
+	2    5200 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 9500 5300 9800
+Wire Wire Line
+	5100 9500 5100 9550
+Connection ~ 4000 9800
+Connection ~ 3800 9550
+Wire Wire Line
+	4000 9800 4650 9800
+Wire Wire Line
+	3800 9550 4450 9550
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 2 1 5FE603AA
+P 4550 9050
+AR Path="/5F868E46/5FE603AA" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FE603AA" Ref="D-STORGATE-?"  Part="2" 
+AR Path="/5FFFB333/5FE603AA" Ref="D-STORGATE-7"  Part="2" 
+F 0 "D-STORGATE-7" H 4550 9350 50  0000 C CNN
+F 1 "EA50" H 4550 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5150 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4550 9050 50  0001 C CNN
+	2    4550 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 9500 4650 9800
+Wire Wire Line
+	4450 9500 4450 9550
+Wire Wire Line
+	3350 9800 4000 9800
+Wire Wire Line
+	3150 9550 3800 9550
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 2 1 5FE603B8
+P 3900 9050
+AR Path="/5F868E46/5FE603B8" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FE603B8" Ref="D-STORGATE-?"  Part="2" 
+AR Path="/5FFFB333/5FE603B8" Ref="D-STORGATE-6"  Part="2" 
+F 0 "D-STORGATE-6" H 3900 9350 50  0000 C CNN
+F 1 "EA50" H 3900 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4500 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3900 9050 50  0001 C CNN
+	2    3900 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 9500 4000 9800
+Wire Wire Line
+	3800 9500 3800 9550
+Connection ~ 3150 9550
+Connection ~ 3350 9800
+Connection ~ 5950 9800
+Connection ~ 5750 9550
+Wire Wire Line
+	5950 9800 6600 9800
+Wire Wire Line
+	5750 9550 6400 9550
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 2 1 5FE76AA6
+P 6500 9050
+AR Path="/5F868E46/5FE76AA6" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FE76AA6" Ref="D-STORGATE-?"  Part="2" 
+AR Path="/5FFFB333/5FE76AA6" Ref="D-STORGATE-10"  Part="2" 
+F 0 "D-STORGATE-10" H 6500 9350 50  0000 C CNN
+F 1 "EA50" H 6500 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7100 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6500 9050 50  0001 C CNN
+	2    6500 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 9500 6600 9800
+Wire Wire Line
+	6400 9500 6400 9550
+Wire Wire Line
+	5300 9800 5950 9800
+Wire Wire Line
+	5100 9550 5750 9550
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 2 1 5FE76AB4
+P 5850 9050
+AR Path="/5F868E46/5FE76AB4" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FE76AB4" Ref="D-STORGATE-?"  Part="2" 
+AR Path="/5FFFB333/5FE76AB4" Ref="D-STORGATE-9"  Part="2" 
+F 0 "D-STORGATE-9" H 5850 9350 50  0000 C CNN
+F 1 "EA50" H 5850 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6450 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5850 9050 50  0001 C CNN
+	2    5850 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 9500 5950 9800
+Wire Wire Line
+	5750 9500 5750 9550
+Connection ~ 5100 9550
+Connection ~ 5300 9800
+Connection ~ 7250 9800
+Connection ~ 7050 9550
+Wire Wire Line
+	7250 9800 7900 9800
+Wire Wire Line
+	7050 9550 7700 9550
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 2 1 5FE8663C
+P 7800 9050
+AR Path="/5F868E46/5FE8663C" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FE8663C" Ref="D-STORGATE-?"  Part="2" 
+AR Path="/5FFFB333/5FE8663C" Ref="D-STORGATE-16"  Part="2" 
+F 0 "D-STORGATE-16" H 7800 9350 50  0000 C CNN
+F 1 "EA50" H 7800 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8400 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7800 9050 50  0001 C CNN
+	2    7800 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 9500 7900 9800
+Wire Wire Line
+	7700 9500 7700 9550
+Wire Wire Line
+	6600 9800 7250 9800
+Wire Wire Line
+	6400 9550 7050 9550
+$Comp
+L NEWValves:EA50 D-STORGATE-?
+U 2 1 5FE8664A
+P 7150 9050
+AR Path="/5F868E46/5FE8664A" Ref="D-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FE8664A" Ref="D-STORGATE-?"  Part="2" 
+AR Path="/5FFFB333/5FE8664A" Ref="D-STORGATE-15"  Part="2" 
+F 0 "D-STORGATE-15" H 7150 9350 50  0000 C CNN
+F 1 "EA50" H 7150 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7750 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7150 9050 50  0001 C CNN
+	2    7150 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 9500 7250 9800
+Wire Wire Line
+	7050 9500 7050 9550
+Connection ~ 6400 9550
+Connection ~ 6600 9800
+Wire Wire Line
+	6700 6950 7450 6950
+$Comp
+L Connector:Conn_01x01_Female J-STORGATE-?
+U 1 1 5FE99277
+P 7650 6950
+AR Path="/5F88E8BA/5FE99277" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5F89590E/5FE99277" Ref="J-STORGATE-?"  Part="1" 
+AR Path="/5FFFB333/5FE99277" Ref="J-STORGATE-1"  Part="1" 
+F 0 "J-STORGATE-1" H 7700 7000 50  0000 L CNN
+F 1 "CARRY.INH" H 7700 6900 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7650 6950 50  0001 C CNN
+F 3 "~" H 7650 6950 50  0001 C CNN
+	1    7650 6950
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 6950
+Wire Wire Line
+	6700 6950 6700 7650
+$EndSCHEMATC

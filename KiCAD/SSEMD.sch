@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 38
+Sheet 1 39
 Title "Control Adder Position 6.4"
 Date "2020-10-08"
 Rev "Alpha"
@@ -234,5 +234,11 @@ S 7000 1000 750  500
 U 5F89590E
 F0 "STOP" 50
 F1 "STOP.sch" 50
+$EndSheet
+$Sheet
+S 7000 1750 750  450 
+U 5FFFB333
+F0 "STORGATE" 50
+F1 "STORGATE.sch" 50
 $EndSheet
 $EndSCHEMATC

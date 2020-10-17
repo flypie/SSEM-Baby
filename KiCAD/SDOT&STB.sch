@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 35 38
+Sheet 35 39
 Title "Dot and Strobe 2.3"
 Date "2020-10-15"
 Rev "Alpha"
