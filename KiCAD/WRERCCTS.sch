@@ -1,0 +1,2690 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 44 45
+Title "Write/Erase and Conditional Transfer Circuits Position 6.7"
+Date "2020-10-17"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-WRERCCTS-1
+U 2 1 62079BB4
+P 1300 10450
+F 0 "V-WRERCCTS-1" H 1300 11025 50  0000 C CNN
+F 1 "VR91" H 1300 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2300 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1300 10450 50  0001 C CNN
+	2    1300 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 10850 1200 10850
+Wire Wire Line
+	1200 10800 1200 10850
+Wire Wire Line
+	1400 10800 1400 11100
+Text Label 1050 10850 2    50   ~ 0
+Heater-6.3V
+Text Label 1050 11100 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:C C-WRERCCTS-7
+U 1 1 6421F0DB
+P 10250 10550
+F 0 "C-WRERCCTS-7" H 10125 10475 50  0000 R CNN
+F 1 "0.5" H 10125 10575 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10288 10400 50  0001 C CNN
+F 3 "~" H 10250 10550 50  0001 C CNN
+	1    10250 10550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-WRERCCTS-4
+U 1 1 5FFCCC34
+P 8750 10550
+F 0 "C-WRERCCTS-4" H 8900 10625 50  0000 L CNN
+F 1 "0.5" H 8900 10550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8788 10400 50  0001 C CNN
+F 3 "~" H 8750 10550 50  0001 C CNN
+	1    8750 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-WRERCCTS-5
+U 1 1 6421F0EE
+P 9500 10550
+F 0 "C-WRERCCTS-5" H 9625 10625 50  0000 L CNN
+F 1 "0.5" H 9625 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9538 10400 50  0001 C CNN
+F 3 "~" H 9500 10550 50  0001 C CNN
+	1    9500 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 10700 8750 10800
+Text Label 8750 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	9500 10700 9500 10800
+Text Label 9500 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	10250 10700 10250 10800
+Text Label 10250 10800 3    50   ~ 0
+GND
+Text Label 8750 10400 1    50   ~ 0
++300V
+Text Label 9500 10400 1    50   ~ 0
++200V
+Text Label 11000 10400 1    50   ~ 0
++50V
+Text Label 10250 10400 1    50   ~ 0
+-150V
+$Comp
+L Device:C C-WRERCCTS-8
+U 1 1 62079B9A
+P 11000 10550
+F 0 "C-WRERCCTS-8" H 11125 10625 50  0000 L CNN
+F 1 "0.5" H 11125 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11038 10400 50  0001 C CNN
+F 3 "~" H 11000 10550 50  0001 C CNN
+	1    11000 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-WRERCCTS-2
+U 2 1 6421F0EF
+P 1950 10450
+F 0 "V-WRERCCTS-2" H 1950 11025 50  0000 C CNN
+F 1 "VR91" H 1950 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2950 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1950 10450 50  0001 C CNN
+	2    1950 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 10800 1850 10850
+Wire Wire Line
+	2050 10800 2050 11100
+Wire Wire Line
+	1200 10850 1850 10850
+Connection ~ 1200 10850
+Wire Wire Line
+	1050 11100 1400 11100
+Connection ~ 1400 11100
+$Comp
+L NEWValves:VR91 V-WRERCCTS-3
+U 2 1 5FE20AD4
+P 2600 10450
+F 0 "V-WRERCCTS-3" H 2600 11025 50  0000 C CNN
+F 1 "VR91" H 2600 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3600 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2600 10450 50  0001 C CNN
+	2    2600 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 10800 2500 10850
+Wire Wire Line
+	2700 10800 2700 11100
+$Comp
+L NEWValves:VR91 V-WRERCCTS-4
+U 2 1 6421F0EB
+P 3250 10450
+F 0 "V-WRERCCTS-4" H 3250 11025 50  0000 C CNN
+F 1 "VR91" H 3250 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4250 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 3250 10450 50  0001 C CNN
+	2    3250 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 10800 3150 10850
+Wire Wire Line
+	3350 10800 3350 11100
+Wire Wire Line
+	2500 10850 3150 10850
+Connection ~ 2500 10850
+Connection ~ 2700 11100
+Wire Wire Line
+	2700 11100 3350 11100
+Wire Wire Line
+	1850 10850 2500 10850
+Connection ~ 1850 10850
+Wire Wire Line
+	1400 11100 2050 11100
+Connection ~ 2050 11100
+Wire Wire Line
+	2050 11100 2700 11100
+Connection ~ 3350 9800
+Connection ~ 3150 9550
+Wire Wire Line
+	3350 9800 4000 9800
+Wire Wire Line
+	3150 9550 3800 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 6421F0EC
+P 3900 9050
+AR Path="/5F868E46/6421F0EC" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/6421F0EC" Ref="D-SCFOLLWS-7"  Part="2" 
+AR Path="/5FFFB333/6421F0EC" Ref="D-WRERCCTS-5"  Part="2" 
+AR Path="/5FEEBA24/6421F0EC" Ref="D-WRERCCTS-5"  Part="2" 
+AR Path="/5F9BDCBE/6421F0EC" Ref="D-WRERCCTS-5"  Part="2" 
+F 0 "D-WRERCCTS-5" H 3900 9350 50  0000 C CNN
+F 1 "EA50" H 3900 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4500 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3900 9050 50  0001 C CNN
+	2    3900 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 9500 4000 9800
+Wire Wire Line
+	3800 9500 3800 9550
+Connection ~ 2700 9800
+Connection ~ 2500 9550
+Wire Wire Line
+	2700 9800 3350 9800
+Wire Wire Line
+	2500 9550 3150 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 62079B97
+P 3250 9050
+AR Path="/5F868E46/62079B97" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/62079B97" Ref="D-SCFOLLWS-6"  Part="2" 
+AR Path="/5FFFB333/62079B97" Ref="D-WRERCCTS-4"  Part="2" 
+AR Path="/5FEEBA24/62079B97" Ref="D-WRERCCTS-4"  Part="2" 
+AR Path="/5F9BDCBE/62079B97" Ref="D-WRERCCTS-4"  Part="2" 
+F 0 "D-WRERCCTS-4" H 3250 9350 50  0000 C CNN
+F 1 "EA50" H 3250 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3850 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3250 9050 50  0001 C CNN
+	2    3250 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 9500 3350 9800
+Wire Wire Line
+	3150 9500 3150 9550
+Wire Wire Line
+	2050 9800 2700 9800
+Wire Wire Line
+	1850 9550 2500 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5F8CD18F
+P 2600 9050
+AR Path="/5F868E46/5F8CD18F" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F8CD18F" Ref="D-SCFOLLWS-5"  Part="2" 
+AR Path="/5FFFB333/5F8CD18F" Ref="D-WRERCCTS-3"  Part="2" 
+AR Path="/5FEEBA24/5F8CD18F" Ref="D-WRERCCTS-3"  Part="2" 
+AR Path="/5F9BDCBE/5F8CD18F" Ref="D-WRERCCTS-3"  Part="2" 
+F 0 "D-WRERCCTS-3" H 2600 9350 50  0000 C CNN
+F 1 "EA50" H 2600 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3200 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2600 9050 50  0001 C CNN
+	2    2600 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 9500 2700 9800
+Wire Wire Line
+	2500 9500 2500 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5F9334CE
+P 1300 9050
+AR Path="/5F868E46/5F9334CE" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F9334CE" Ref="D-WRERCCTS-1"  Part="2" 
+AR Path="/5FFFB333/5F9334CE" Ref="D-WRERCCTS-1"  Part="2" 
+AR Path="/5FEEBA24/5F9334CE" Ref="D-WRERCCTS-1"  Part="2" 
+AR Path="/5F9BDCBE/5F9334CE" Ref="D-WRERCCTS-1"  Part="2" 
+F 0 "D-WRERCCTS-1" H 1300 9350 50  0000 C CNN
+F 1 "EA50" H 1300 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1900 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1300 9050 50  0001 C CNN
+	2    1300 9050
+	1    0    0    -1  
+$EndComp
+Text Label 1050 9800 2    50   ~ 0
+Heater-GND
+Text Label 1050 9550 2    50   ~ 0
+Heater-6.3V
+Wire Wire Line
+	1400 9500 1400 9800
+Wire Wire Line
+	1200 9500 1200 9550
+Wire Wire Line
+	1050 9800 1400 9800
+Wire Wire Line
+	1050 9550 1200 9550
+Text Label 11000 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	11000 10800 11000 10700
+$Comp
+L NEWValves:VR91 V-WRERCCTS-5
+U 2 1 5FDBE41C
+P 3900 10450
+F 0 "V-WRERCCTS-5" H 3900 11025 50  0000 C CNN
+F 1 "VR91" H 3900 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4900 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 3900 10450 50  0001 C CNN
+	2    3900 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 10800 3800 10850
+Wire Wire Line
+	4000 10800 4000 11100
+$Comp
+L NEWValves:VR91 V-WRERCCTS-6
+U 2 1 6421F0E3
+P 4550 10450
+F 0 "V-WRERCCTS-6" H 4550 11025 50  0000 C CNN
+F 1 "VR91" H 4550 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5550 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 4550 10450 50  0001 C CNN
+	2    4550 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 10800 4450 10850
+Wire Wire Line
+	4650 10800 4650 11100
+Wire Wire Line
+	3800 10850 4450 10850
+Connection ~ 3800 10850
+Connection ~ 4000 11100
+Wire Wire Line
+	4000 11100 4650 11100
+Wire Wire Line
+	3150 10850 3800 10850
+Wire Wire Line
+	3350 11100 4000 11100
+Connection ~ 3150 10850
+Connection ~ 3350 11100
+Connection ~ 5300 9800
+Connection ~ 5100 9550
+Wire Wire Line
+	5300 9800 5950 9800
+Wire Wire Line
+	5100 9550 5750 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 62079BAF
+P 5850 9050
+AR Path="/5F868E46/62079BAF" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/62079BAF" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/62079BAF" Ref="D-WRERCCTS-8"  Part="2" 
+AR Path="/5FEEBA24/62079BAF" Ref="D-WRERCCTS-8"  Part="2" 
+AR Path="/5F9BDCBE/62079BAF" Ref="D-WRERCCTS-8"  Part="2" 
+F 0 "D-WRERCCTS-8" H 5850 9350 50  0000 C CNN
+F 1 "EA50" H 5850 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6450 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5850 9050 50  0001 C CNN
+	2    5850 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 9500 5950 9800
+Wire Wire Line
+	5750 9500 5750 9550
+Connection ~ 4650 9800
+Connection ~ 4450 9550
+Wire Wire Line
+	4650 9800 5300 9800
+Wire Wire Line
+	4450 9550 5100 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 62079BB0
+P 5200 9050
+AR Path="/5F868E46/62079BB0" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/62079BB0" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/62079BB0" Ref="D-WRERCCTS-7"  Part="2" 
+AR Path="/5FEEBA24/62079BB0" Ref="D-WRERCCTS-7"  Part="2" 
+AR Path="/5F9BDCBE/62079BB0" Ref="D-WRERCCTS-7"  Part="2" 
+F 0 "D-WRERCCTS-7" H 5200 9350 50  0000 C CNN
+F 1 "EA50" H 5200 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5800 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5200 9050 50  0001 C CNN
+	2    5200 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 9500 5300 9800
+Wire Wire Line
+	5100 9500 5100 9550
+Wire Wire Line
+	4000 9800 4650 9800
+Wire Wire Line
+	3800 9550 4450 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 5F8CD196
+P 4550 9050
+AR Path="/5F868E46/5F8CD196" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/5F8CD196" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/5F8CD196" Ref="D-WRERCCTS-6"  Part="2" 
+AR Path="/5FEEBA24/5F8CD196" Ref="D-WRERCCTS-6"  Part="2" 
+AR Path="/5F9BDCBE/5F8CD196" Ref="D-WRERCCTS-6"  Part="2" 
+F 0 "D-WRERCCTS-6" H 4550 9350 50  0000 C CNN
+F 1 "EA50" H 4550 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5150 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4550 9050 50  0001 C CNN
+	2    4550 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 9500 4650 9800
+Wire Wire Line
+	4450 9500 4450 9550
+Connection ~ 3800 9550
+Connection ~ 4000 9800
+Connection ~ 6600 9800
+Connection ~ 6400 9550
+Wire Wire Line
+	6600 9800 7250 9800
+Wire Wire Line
+	6400 9550 7050 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 62079B9C
+P 7150 9050
+AR Path="/5F868E46/62079B9C" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/62079B9C" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/62079B9C" Ref="D-WRERCCTS-10"  Part="2" 
+AR Path="/5FEEBA24/62079B9C" Ref="D-WRERCCTS-10"  Part="2" 
+AR Path="/5F9BDCBE/62079B9C" Ref="D-WRERCCTS-10"  Part="2" 
+F 0 "D-WRERCCTS-10" H 7150 9350 50  0000 C CNN
+F 1 "EA50" H 7150 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7750 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7150 9050 50  0001 C CNN
+	2    7150 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 9500 7250 9800
+Wire Wire Line
+	7050 9500 7050 9550
+Wire Wire Line
+	5950 9800 6600 9800
+Wire Wire Line
+	5750 9550 6400 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 62079B9D
+P 6500 9050
+AR Path="/5F868E46/62079B9D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/62079B9D" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/62079B9D" Ref="D-WRERCCTS-9"  Part="2" 
+AR Path="/5FEEBA24/62079B9D" Ref="D-WRERCCTS-9"  Part="2" 
+AR Path="/5F9BDCBE/62079B9D" Ref="D-WRERCCTS-9"  Part="2" 
+F 0 "D-WRERCCTS-9" H 6500 9350 50  0000 C CNN
+F 1 "EA50" H 6500 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7100 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6500 9050 50  0001 C CNN
+	2    6500 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 9500 6600 9800
+Wire Wire Line
+	6400 9500 6400 9550
+Connection ~ 5750 9550
+Connection ~ 5950 9800
+Connection ~ 10500 9800
+Connection ~ 10300 9550
+Wire Wire Line
+	10500 9800 11150 9800
+Wire Wire Line
+	10300 9550 10950 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 5FE8663C
+P 11050 9050
+AR Path="/5F868E46/5FE8663C" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/5FE8663C" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/5FE8663C" Ref="D-WRERCCTS-16"  Part="2" 
+AR Path="/5FEEBA24/5FE8663C" Ref="D-WRERCCTS-16"  Part="2" 
+AR Path="/5F9BDCBE/5FE8663C" Ref="D-WRERCCTS-16"  Part="2" 
+F 0 "D-WRERCCTS-16" H 11050 9350 50  0000 C CNN
+F 1 "EA50" H 11050 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 11650 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11050 9050 50  0001 C CNN
+	2    11050 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 9500 11150 9800
+Wire Wire Line
+	10950 9500 10950 9550
+Wire Wire Line
+	9850 9800 10500 9800
+Wire Wire Line
+	9650 9550 10300 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 62079BB2
+P 10400 9050
+AR Path="/5F868E46/62079BB2" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/62079BB2" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/62079BB2" Ref="D-WRERCCTS-15"  Part="2" 
+AR Path="/5FEEBA24/62079BB2" Ref="D-WRERCCTS-15"  Part="2" 
+AR Path="/5F9BDCBE/62079BB2" Ref="D-WRERCCTS-15"  Part="2" 
+F 0 "D-WRERCCTS-15" H 10400 9350 50  0000 C CNN
+F 1 "EA50" H 10400 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 11000 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10400 9050 50  0001 C CNN
+	2    10400 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 9500 10500 9800
+Wire Wire Line
+	10300 9500 10300 9550
+$Comp
+L NEWValves:VR91 V-WRERCCTS-9
+U 1 1 5FCF4E42
+P 2450 1900
+F 0 "V-WRERCCTS-9" H 2500 1500 50  0000 C CNN
+F 1 "VR91" H 2500 1400 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3450 2150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2450 1900 50  0001 C CNN
+	1    2450 1900
+	1    0    0    -1  
+$EndComp
+Text Label 2150 2350 2    50   ~ 0
+GND
+Wire Wire Line
+	2800 1850 2900 1850
+Text Label 1650 1300 0    50   ~ 0
++300V
+Wire Wire Line
+	2900 1850 2900 1750
+$Comp
+L Device:R R-WRERCCTS-30
+U 1 1 62079BAA
+P 2900 1600
+F 0 "R-WRERCCTS-30" H 2800 1550 50  0000 R CNN
+F 1 "15K 3W" H 2800 1600 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2830 1600 50  0001 C CNN
+F 3 "~" H 2900 1600 50  0001 C CNN
+	1    2900 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 1450 2900 1350
+$Comp
+L Device:C C-WRERCCTS-9
+U 1 1 5FD7C113
+P 2900 2100
+F 0 "C-WRERCCTS-9" H 2750 2050 50  0000 R CNN
+F 1 "0.1" H 2750 2100 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2938 1950 50  0001 C CNN
+F 3 "~" H 2900 2100 50  0001 C CNN
+	1    2900 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 1950 2900 1850
+Connection ~ 2900 1850
+Text Label 2900 2350 0    50   ~ 0
+GND
+Wire Wire Line
+	2900 2250 2900 2350
+Text Label 2900 1350 0    50   ~ 0
++200V
+Wire Wire Line
+	1400 9800 2050 9800
+Wire Wire Line
+	1200 9550 1850 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 62079BB5
+P 1950 9050
+AR Path="/5F868E46/62079BB5" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/62079BB5" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/62079BB5" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FEEBA24/62079BB5" Ref="D-WRERCCTS-2"  Part="2" 
+AR Path="/5F9BDCBE/62079BB5" Ref="D-WRERCCTS-2"  Part="2" 
+F 0 "D-WRERCCTS-2" H 1950 9350 50  0000 C CNN
+F 1 "EA50" H 1950 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2550 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1950 9050 50  0001 C CNN
+	2    1950 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 9500 2050 9800
+Wire Wire Line
+	1850 9500 1850 9550
+Wire Wire Line
+	7900 9800 8550 9800
+Wire Wire Line
+	7700 9550 8350 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 62079BB6
+P 8450 9050
+AR Path="/5F868E46/62079BB6" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/62079BB6" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/62079BB6" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FEEBA24/62079BB6" Ref="D-WRERCCTS-12"  Part="2" 
+AR Path="/5F9BDCBE/62079BB6" Ref="D-WRERCCTS-12"  Part="2" 
+F 0 "D-WRERCCTS-12" H 8450 9350 50  0000 C CNN
+F 1 "EA50" H 8450 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9050 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8450 9050 50  0001 C CNN
+	2    8450 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 9500 8550 9800
+Wire Wire Line
+	8350 9500 8350 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 5F8E6FD4
+P 7800 9050
+AR Path="/5F868E46/5F8E6FD4" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/5F8E6FD4" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/5F8E6FD4" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FEEBA24/5F8E6FD4" Ref="D-WRERCCTS-11"  Part="2" 
+AR Path="/5F9BDCBE/5F8E6FD4" Ref="D-WRERCCTS-11"  Part="2" 
+F 0 "D-WRERCCTS-11" H 7800 9350 50  0000 C CNN
+F 1 "EA50" H 7800 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8400 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7800 9050 50  0001 C CNN
+	2    7800 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 9500 7700 9550
+Wire Wire Line
+	8550 9800 9200 9800
+Wire Wire Line
+	8350 9550 9000 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 5F8E6FE2
+P 9750 9050
+AR Path="/5F868E46/5F8E6FE2" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/5F8E6FE2" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/5F8E6FE2" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FEEBA24/5F8E6FE2" Ref="D-WRERCCTS-14"  Part="2" 
+AR Path="/5F9BDCBE/5F8E6FE2" Ref="D-WRERCCTS-14"  Part="2" 
+F 0 "D-WRERCCTS-14" H 9750 9350 50  0000 C CNN
+F 1 "EA50" H 9750 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 10350 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9750 9050 50  0001 C CNN
+	2    9750 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 9500 9850 9800
+Wire Wire Line
+	9650 9500 9650 9550
+Connection ~ 8350 9550
+Connection ~ 8550 9800
+Wire Wire Line
+	7700 9550 7050 9550
+Connection ~ 7700 9550
+Connection ~ 7050 9550
+Wire Wire Line
+	7250 9800 7900 9800
+Connection ~ 7250 9800
+Connection ~ 7900 9800
+Wire Wire Line
+	9200 9800 9850 9800
+Wire Wire Line
+	9000 9550 9650 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 5FA5D1F9
+P 9100 9050
+AR Path="/5F868E46/5FA5D1F9" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/5FA5D1F9" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/5FA5D1F9" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FEEBA24/5FA5D1F9" Ref="D-WRERCCTS-13"  Part="2" 
+AR Path="/5F9BDCBE/5FA5D1F9" Ref="D-WRERCCTS-13"  Part="2" 
+F 0 "D-WRERCCTS-13" H 9100 9350 50  0000 C CNN
+F 1 "EA50" H 9100 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9700 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9100 9050 50  0001 C CNN
+	2    9100 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 9500 9200 9800
+Wire Wire Line
+	9000 9500 9000 9550
+Wire Wire Line
+	11150 9800 11800 9800
+Wire Wire Line
+	10950 9550 11600 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 5FA5D207
+P 11700 9050
+AR Path="/5F868E46/5FA5D207" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/5FA5D207" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/5FA5D207" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FEEBA24/5FA5D207" Ref="D-WRERCCTS-17"  Part="2" 
+AR Path="/5F9BDCBE/5FA5D207" Ref="D-WRERCCTS-17"  Part="2" 
+F 0 "D-WRERCCTS-17" H 11700 9350 50  0000 C CNN
+F 1 "EA50" H 11700 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 12300 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11700 9050 50  0001 C CNN
+	2    11700 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 9500 11800 9800
+Wire Wire Line
+	11600 9500 11600 9550
+Connection ~ 9000 9550
+Connection ~ 9200 9800
+Connection ~ 9650 9550
+Connection ~ 9850 9800
+Connection ~ 10950 9550
+Connection ~ 11150 9800
+Connection ~ 1200 9550
+Connection ~ 1400 9800
+Connection ~ 1850 9550
+Connection ~ 2050 9800
+Wire Wire Line
+	11800 9800 12450 9800
+Wire Wire Line
+	11600 9550 12250 9550
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 2 1 62079BA5
+P 12350 9050
+AR Path="/5F868E46/62079BA5" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/62079BA5" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FFFB333/62079BA5" Ref="D-WRERCCTS-?"  Part="2" 
+AR Path="/5FEEBA24/62079BA5" Ref="D-WRERCCTS-18"  Part="2" 
+AR Path="/5F9BDCBE/62079BA5" Ref="D-WRERCCTS-18"  Part="2" 
+F 0 "D-WRERCCTS-18" H 12350 9350 50  0000 C CNN
+F 1 "EA50" H 12350 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 12950 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 12350 9050 50  0001 C CNN
+	2    12350 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 9500 12450 9800
+Wire Wire Line
+	12250 9500 12250 9550
+Wire Wire Line
+	7900 9750 7900 9800
+Wire Wire Line
+	7900 9500 7900 9800
+Connection ~ 11600 9550
+Connection ~ 11800 9800
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FCF0E30
+P 15150 2600
+AR Path="/5F868E46/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5F88E8BA/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/6077FCA5/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5F89590E/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5FEEBA24/5FCF0E30" Ref="#FLG0180"  Part="1" 
+AR Path="/5F9BDCBE/5FCF0E30" Ref="#FLG0190"  Part="1" 
+F 0 "#FLG0190" H 15150 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 15175 2800 50  0000 C CNN
+F 2 "" H 15150 2600 50  0001 C CNN
+F 3 "~" H 15150 2600 50  0001 C CNN
+	1    15150 2600
+	-1   0    0    1   
+$EndComp
+Text Label 15200 2150 0    50   ~ 0
+-150V
+Wire Wire Line
+	15100 2550 15150 2550
+Text Label 15200 2550 0    50   ~ 0
+Heater-6.3V
+Connection ~ 15150 2550
+Wire Wire Line
+	15150 2550 15200 2550
+Wire Wire Line
+	15150 2600 15150 2550
+Text Label 15200 2050 0    50   ~ 0
++200V
+NoConn ~ 15100 2350
+NoConn ~ 15100 2450
+Wire Wire Line
+	15200 2050 15100 2050
+Text Label 15200 2250 0    50   ~ 0
+GND
+Wire Wire Line
+	15200 2250 15100 2250
+Wire Wire Line
+	15200 2150 15100 2150
+NoConn ~ 14600 2350
+NoConn ~ 14600 2450
+Text Label 14500 2550 2    50   ~ 0
+Heater-GND
+Wire Wire Line
+	14600 2250 14500 2250
+Wire Wire Line
+	14600 2150 14500 2150
+Wire Wire Line
+	14600 2050 14500 2050
+Wire Wire Line
+	14550 2550 14500 2550
+Connection ~ 14550 2550
+Wire Wire Line
+	14550 2600 14550 2550
+Wire Wire Line
+	14600 2550 14550 2550
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FCF0E4D
+P 14550 2600
+AR Path="/5F868E46/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5F88E8BA/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/6077FCA5/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5F89590E/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5FEEBA24/5FCF0E4D" Ref="#FLG0181"  Part="1" 
+AR Path="/5F9BDCBE/5FCF0E4D" Ref="#FLG0191"  Part="1" 
+F 0 "#FLG0191" H 14550 2675 50  0001 C CNN
+F 1 "PWR_FLAG" H 14575 2800 50  0000 C CNN
+F 2 "" H 14550 2600 50  0001 C CNN
+F 3 "~" H 14550 2600 50  0001 C CNN
+	1    14550 2600
+	-1   0    0    1   
+$EndComp
+Text Label 14500 2250 2    50   ~ 0
+GND
+Text Label 14500 2150 2    50   ~ 0
++50V
+Text Label 14500 2050 2    50   ~ 0
++300V
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-STOP-?
+U 1 1 5FCF0E56
+P 14800 2250
+AR Path="/5F868E46/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F2DDAEA/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/60BC2C2A/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89117E/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F88E8BA/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/6077FCA5/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89590E/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5FEEBA24/5FCF0E56" Ref="J-WRERCCTS-7"  Part="1" 
+AR Path="/5F9BDCBE/5FCF0E56" Ref="J-WRERCCTS-7"  Part="1" 
+F 0 "J-WRERCCTS-7" H 14850 2700 50  0000 C CNN
+F 1 "HIGH Voltage." H 14850 2600 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 14800 2250 50  0001 C CNN
+F 3 "~" H 14800 2250 50  0001 C CNN
+	1    14800 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6421F0DD
+P 600 1750
+AR Path="/5F88E8BA/6421F0DD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6421F0DD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6421F0DD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6421F0DD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6421F0DD" Ref="J-WRERCCTS-1"  Part="1" 
+F 0 "J-WRERCCTS-1" H 650 1650 50  0000 L CNN
+F 1 "A.READ" H 650 1750 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 600 1750 50  0001 C CNN
+F 3 "~" H 600 1750 50  0001 C CNN
+	1    600  1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 5FA645B7
+P 1300 1950
+AR Path="/5F868E46/5FA645B7" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/5FA645B7" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/5FA645B7" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/5FA645B7" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/5FA645B7" Ref="D-WRERCCTS-18"  Part="1" 
+F 0 "D-WRERCCTS-18" V 1600 1850 50  0000 C CNN
+F 1 "EA50" V 1700 1850 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1900 1750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1300 1950 50  0001 C CNN
+	1    1300 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	600  1950 800  1950
+$Comp
+L Device:R R-WRERCCTS-1
+U 1 1 5FA99118
+P 1650 1550
+F 0 "R-WRERCCTS-1" H 1750 1500 50  0000 L CNN
+F 1 "560K" H 1750 1550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1580 1550 50  0001 C CNN
+F 3 "~" H 1650 1550 50  0001 C CNN
+	1    1650 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 1950 1650 1700
+Wire Wire Line
+	1550 1950 1650 1950
+Wire Wire Line
+	1650 1400 1650 1300
+$Comp
+L Device:R R-WRERCCTS-2
+U 1 1 5FB711F7
+P 1900 1950
+F 0 "R-WRERCCTS-2" V 1750 2050 50  0000 C CNN
+F 1 "470" V 1650 2050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1830 1950 50  0001 C CNN
+F 3 "~" H 1900 1950 50  0001 C CNN
+	1    1900 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1650 1950 1750 1950
+Wire Wire Line
+	2050 1950 2150 1950
+Connection ~ 1650 1950
+Wire Wire Line
+	2150 2050 2150 2350
+NoConn ~ 2750 2100
+NoConn ~ 2750 2000
+Text Label 1850 1750 3    50   ~ 0
+GND
+Wire Wire Line
+	2150 1750 1850 1750
+Text Label 2450 800  0    50   ~ 0
++300V
+$Comp
+L Device:R R-WRERCCTS-4
+U 1 1 5FC56122
+P 2450 1050
+F 0 "R-WRERCCTS-4" H 2350 1000 50  0000 R CNN
+F 1 "47K" H 2350 1050 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2380 1050 50  0001 C CNN
+F 3 "~" H 2450 1050 50  0001 C CNN
+	1    2450 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 900  2450 800 
+Wire Wire Line
+	2450 1200 2450 1250
+Wire Wire Line
+	4300 1950 4000 1950
+Wire Wire Line
+	4000 2450 4000 2350
+$Comp
+L Device:R R-WRERCCTS-7
+U 1 1 5FCA74F5
+P 4000 2200
+F 0 "R-WRERCCTS-7" H 4100 2250 50  0000 L CNN
+F 1 "56K" H 4100 2200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3930 2200 50  0001 C CNN
+F 3 "~" H 4000 2200 50  0001 C CNN
+	1    4000 2200
+	-1   0    0    -1  
+$EndComp
+Text Label 4000 2450 0    50   ~ 0
+-150V
+Wire Wire Line
+	4000 1450 4000 1550
+$Comp
+L Device:R R-WRERCCTS-6
+U 1 1 5FCA7501
+P 4000 1700
+F 0 "R-WRERCCTS-6" H 3900 1750 50  0000 R CNN
+F 1 "15K" H 3900 1700 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3930 1700 50  0001 C CNN
+F 3 "~" H 4000 1700 50  0001 C CNN
+	1    4000 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1850 4000 1950
+Connection ~ 4000 1950
+Wire Wire Line
+	4000 1950 4000 2050
+Wire Wire Line
+	3800 1550 3800 1450
+Wire Wire Line
+	4000 1450 3800 1450
+Wire Wire Line
+	4000 1950 3800 1950
+Wire Wire Line
+	3800 1950 3800 1850
+$Comp
+L Device:C C-WRERCCTS-1
+U 1 1 5FCA750C
+P 3800 1700
+F 0 "C-WRERCCTS-1" H 3650 1650 50  0000 R CNN
+F 1 "100pf" H 3650 1700 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3838 1550 50  0001 C CNN
+F 3 "~" H 3800 1700 50  0001 C CNN
+	1    3800 1700
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2450 1250 4000 1250
+Connection ~ 2450 1250
+Wire Wire Line
+	2450 1250 2450 1450
+Wire Wire Line
+	4000 1450 4000 1250
+Connection ~ 4000 1450
+$Comp
+L NEWValves:VR91 V-WRERCCTS-8
+U 1 1 5FE577E6
+P 5000 1900
+F 0 "V-WRERCCTS-8" H 5050 1500 50  0000 C CNN
+F 1 "VR91" H 5050 1400 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6000 2150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	1    0    0    -1  
+$EndComp
+Text Label 4700 2350 2    50   ~ 0
+GND
+Wire Wire Line
+	5350 1850 5450 1850
+$Comp
+L Device:R R-WRERCCTS-9
+U 1 1 5FE57B18
+P 4450 1950
+F 0 "R-WRERCCTS-9" V 4300 2050 50  0000 C CNN
+F 1 "470" V 4200 2050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4380 1950 50  0001 C CNN
+F 3 "~" H 4450 1950 50  0001 C CNN
+	1    4450 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 1950 4700 1950
+Wire Wire Line
+	4700 2050 4700 2350
+NoConn ~ 5300 2100
+NoConn ~ 5300 2000
+$Comp
+L Device:R R-WRERCCTS-8
+U 1 1 5FF0970B
+P 4450 1750
+F 0 "R-WRERCCTS-8" V 4300 1850 50  0000 C CNN
+F 1 "470" V 4200 1850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4380 1750 50  0001 C CNN
+F 3 "~" H 4450 1750 50  0001 C CNN
+	1    4450 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4600 1750 4700 1750
+Wire Wire Line
+	4200 1750 4300 1750
+Wire Wire Line
+	4200 1750 4200 1650
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 5FF7CC5F
+P 4200 1450
+AR Path="/5F88E8BA/5FF7CC5F" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/5FF7CC5F" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/5FF7CC5F" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/5FF7CC5F" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/5FF7CC5F" Ref="J-WRERCCTS-9"  Part="1" 
+F 0 "J-WRERCCTS-9" V 4150 1350 50  0000 R CNN
+F 1 "HA" V 4050 1350 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 4200 1450 50  0001 C CNN
+F 3 "~" H 4200 1450 50  0001 C CNN
+	1    4200 1450
+	0    -1   -1   0   
+$EndComp
+Text Label 5000 800  0    50   ~ 0
++300V
+$Comp
+L Device:R R-WRERCCTS-12
+U 1 1 5FF7F02B
+P 5000 1050
+F 0 "R-WRERCCTS-12" H 5100 1000 50  0000 L CNN
+F 1 "39K" H 5100 1050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4930 1050 50  0001 C CNN
+F 3 "~" H 5000 1050 50  0001 C CNN
+	1    5000 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 900  5000 800 
+Wire Wire Line
+	5000 1200 5000 1450
+Text Label 5450 800  0    50   ~ 0
++200V
+$Comp
+L Device:R R-WRERCCTS-13
+U 1 1 60017ED6
+P 5450 1050
+F 0 "R-WRERCCTS-13" H 5350 1050 50  0000 R CNN
+F 1 "56K" H 5350 1150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5380 1050 50  0001 C CNN
+F 3 "~" H 5450 1050 50  0001 C CNN
+	1    5450 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5450 900  5450 800 
+Wire Wire Line
+	5450 1200 5450 1300
+Wire Wire Line
+	5650 1400 5650 1300
+Wire Wire Line
+	5450 1300 5650 1300
+Wire Wire Line
+	5650 1800 5650 1700
+$Comp
+L Device:C C-WRERCCTS-2
+U 1 1 600565FF
+P 5650 1550
+F 0 "C-WRERCCTS-2" H 5500 1500 50  0000 R CNN
+F 1 "0.01uf" H 5500 1550 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5688 1400 50  0001 C CNN
+F 3 "~" H 5650 1550 50  0001 C CNN
+	1    5650 1550
+	-1   0    0    1   
+$EndComp
+Connection ~ 5450 1300
+Wire Wire Line
+	5450 1300 5450 1850
+Text Label 5650 1800 2    50   ~ 0
+GND
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 600D8998
+P 7100 1200
+AR Path="/5F868E46/600D8998" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/600D8998" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/600D8998" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/600D8998" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/600D8998" Ref="D-WRERCCTS-12"  Part="1" 
+F 0 "D-WRERCCTS-12" V 6700 1100 50  0000 C CNN
+F 1 "EA50" V 6800 1100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7700 1000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7100 1200 50  0001 C CNN
+	1    7100 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-WRERCCTS-3
+U 1 1 6009820D
+P 6250 1200
+F 0 "C-WRERCCTS-3" V 6550 1200 50  0000 C CNN
+F 1 "0.1" V 6450 1200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6288 1050 50  0001 C CNN
+F 3 "~" H 6250 1200 50  0001 C CNN
+	1    6250 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 1200 6500 1200
+Wire Wire Line
+	6500 2450 6500 2350
+$Comp
+L Device:R R-WRERCCTS-16
+U 1 1 6019D79F
+P 6500 2200
+F 0 "R-WRERCCTS-16" H 6600 2250 50  0000 L CNN
+F 1 "1M" H 6600 2200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6430 2200 50  0001 C CNN
+F 3 "~" H 6500 2200 50  0001 C CNN
+	1    6500 2200
+	-1   0    0    -1  
+$EndComp
+Text Label 6500 2450 0    50   ~ 0
+-150V
+Wire Wire Line
+	6500 1200 6500 2050
+Connection ~ 6500 1200
+Wire Wire Line
+	6500 1200 6600 1200
+Wire Wire Line
+	7350 1200 7500 1200
+Wire Wire Line
+	5000 1450 5900 1450
+Wire Wire Line
+	5900 1450 5900 1200
+Connection ~ 5000 1450
+Wire Wire Line
+	5900 1200 6100 1200
+Text Label 7500 700  0    50   ~ 0
++200V
+$Comp
+L Device:R R-WRERCCTS-17
+U 1 1 602674C8
+P 7500 950
+F 0 "R-WRERCCTS-17" H 7400 950 50  0000 R CNN
+F 1 "56K" H 7400 1050 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7430 950 50  0001 C CNN
+F 3 "~" H 7500 950 50  0001 C CNN
+	1    7500 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 800  7500 700 
+Wire Wire Line
+	7500 1100 7500 1200
+Wire Wire Line
+	7600 1700 7500 1700
+Wire Wire Line
+	8000 1700 7900 1700
+NoConn ~ 8600 1750
+NoConn ~ 8600 1850
+$Comp
+L NEWValves:CV173 V-WRERCCTS-7
+U 1 1 602DA2E5
+P 8300 1650
+F 0 "V-WRERCCTS-7" H 8350 1250 50  0000 C CNN
+F 1 "CV173" H 8350 1150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9300 1900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 8300 1650 50  0001 C CNN
+	1    8300 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1500 7900 1500
+$Comp
+L Device:R R-WRERCCTS-18
+U 1 1 602DA2F0
+P 7750 1700
+F 0 "R-WRERCCTS-18" V 7500 1700 50  0000 C CNN
+F 1 "470 3W" V 7600 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7680 1700 50  0001 C CNN
+F 3 "~" H 7750 1700 50  0001 C CNN
+	1    7750 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 602DA2FA
+P 8900 2000
+AR Path="/5F88E8BA/602DA2FA" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/602DA2FA" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/602DA2FA" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/602DA2FA" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/602DA2FA" Ref="J-WRERCCTS-16"  Part="1" 
+F 0 "J-WRERCCTS-16" H 8950 1900 50  0000 L CNN
+F 1 "S.Erase" H 8950 2000 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 8900 2000 50  0001 C CNN
+F 3 "~" H 8900 2000 50  0001 C CNN
+	1    8900 2000
+	1    0    0    -1  
+$EndComp
+Text Label 8300 950  0    50   ~ 0
++200V
+Wire Wire Line
+	7900 1500 7900 1100
+Wire Wire Line
+	7900 1100 8300 1100
+Connection ~ 8300 1100
+Wire Wire Line
+	8300 1100 8300 1200
+Wire Wire Line
+	8650 1600 8750 1600
+Wire Wire Line
+	8750 1600 8750 1100
+Wire Wire Line
+	8750 1100 8300 1100
+Wire Wire Line
+	8300 950  8300 1100
+$Comp
+L Device:R R-WRERCCTS-19
+U 1 1 602DA30D
+P 8000 2450
+F 0 "R-WRERCCTS-19" H 7900 2400 50  0000 R CNN
+F 1 "10K//10K" H 7900 2450 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7930 2450 50  0001 C CNN
+F 3 "~" H 8000 2450 50  0001 C CNN
+	1    8000 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 2700 8000 2600
+Text Label 8000 2700 0    50   ~ 0
+-150V
+Wire Wire Line
+	8000 1800 8000 2000
+Wire Wire Line
+	8000 2000 8700 2000
+Connection ~ 8000 2000
+Wire Wire Line
+	8000 2000 8000 2300
+Wire Wire Line
+	7500 1200 7500 1700
+Connection ~ 7500 1200
+Connection ~ 7500 1700
+Text Notes 8950 1900 0    50   ~ 0
+To Write/Erase and KSC Switches
+Wire Wire Line
+	7550 4400 7250 4400
+Wire Wire Line
+	7500 1700 7550 4400
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6039C779
+P 7250 4750
+AR Path="/5F868E46/6039C779" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6039C779" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6039C779" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6039C779" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6039C779" Ref="D-WRERCCTS-13"  Part="1" 
+F 0 "D-WRERCCTS-13" H 7500 4700 50  0000 L CNN
+F 1 "EA50" H 7500 4600 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 7850 4550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7250 4750 50  0001 C CNN
+	1    7250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4500 7250 4400
+Connection ~ 7250 4400
+Wire Wire Line
+	7250 5250 7250 5350
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 603E9851
+P 6800 4400
+AR Path="/5F868E46/603E9851" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/603E9851" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/603E9851" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/603E9851" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/603E9851" Ref="D-WRERCCTS-11"  Part="1" 
+F 0 "D-WRERCCTS-11" V 6400 4300 50  0000 C CNN
+F 1 "EA50" V 6500 4300 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7400 4200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6800 4400 50  0001 C CNN
+	1    6800 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 4400 6200 4400
+Wire Wire Line
+	7050 4400 7250 4400
+$Comp
+L Device:R R-WRERCCTS-15
+U 1 1 6043C918
+P 6200 4850
+F 0 "R-WRERCCTS-15" H 6100 4800 50  0000 R CNN
+F 1 "10K//10K" H 6100 4850 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6130 4850 50  0001 C CNN
+F 3 "~" H 6200 4850 50  0001 C CNN
+	1    6200 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6200 5100 6200 5000
+Text Label 6200 5100 0    50   ~ 0
+-150V
+Wire Wire Line
+	6200 4400 6200 4700
+Wire Wire Line
+	6200 3750 6100 3750
+NoConn ~ 6800 3800
+NoConn ~ 6800 3900
+$Comp
+L NEWValves:VR91 V-WRERCCTS-6
+U 1 1 604BBC57
+P 6500 3700
+F 0 "V-WRERCCTS-6" H 6550 3300 50  0000 C CNN
+F 1 "VR91" H 6550 3200 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7500 3950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 6500 3700 50  0001 C CNN
+	1    6500 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3550 6100 3550
+$Comp
+L Device:R R-WRERCCTS-14
+U 1 1 604BBC62
+P 5950 3750
+F 0 "R-WRERCCTS-14" V 5700 3750 50  0000 C CNN
+F 1 "470 3W" V 5800 3750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5880 3750 50  0001 C CNN
+F 3 "~" H 5950 3750 50  0001 C CNN
+	1    5950 3750
+	0    1    1    0   
+$EndComp
+Text Label 6500 3000 0    50   ~ 0
++200V
+Wire Wire Line
+	6100 3550 6100 3150
+Wire Wire Line
+	6100 3150 6500 3150
+Connection ~ 6500 3150
+Wire Wire Line
+	6500 3150 6500 3250
+Wire Wire Line
+	6850 3650 6950 3650
+Wire Wire Line
+	6950 3650 6950 3150
+Wire Wire Line
+	6950 3150 6500 3150
+Wire Wire Line
+	6500 3000 6500 3150
+$Comp
+L Device:R R-WRERCCTS-5
+U 1 1 604BBC7F
+P 3400 4000
+F 0 "R-WRERCCTS-5" H 3300 3950 50  0000 R CNN
+F 1 "150K" H 3300 4000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3330 4000 50  0001 C CNN
+F 3 "~" H 3400 4000 50  0001 C CNN
+	1    3400 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3400 3750 3400 3850
+Wire Wire Line
+	3400 4250 3400 4150
+Text Label 3400 4250 0    50   ~ 0
+-150V
+Wire Wire Line
+	6200 4400 6200 3850
+Connection ~ 6200 4400
+Wire Wire Line
+	5800 3750 5150 3750
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6066DA21
+P 5150 3150
+AR Path="/5F868E46/6066DA21" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6066DA21" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6066DA21" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6066DA21" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6066DA21" Ref="D-WRERCCTS-14"  Part="1" 
+F 0 "D-WRERCCTS-14" H 5400 3100 50  0000 L CNN
+F 1 "EA50" H 5400 3000 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 5750 2950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5150 3150 50  0001 C CNN
+	1    5150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2900 5150 2800
+Wire Wire Line
+	5150 3650 5150 3750
+Connection ~ 5150 3750
+Wire Wire Line
+	5150 3750 4000 3750
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6069B02D
+P 4000 3150
+AR Path="/5F868E46/6069B02D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6069B02D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6069B02D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6069B02D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6069B02D" Ref="D-WRERCCTS-15"  Part="1" 
+F 0 "D-WRERCCTS-15" H 4250 3100 50  0000 L CNN
+F 1 "EA50" H 4250 3000 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 4600 2950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4000 3150 50  0001 C CNN
+	1    4000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2900 4000 2800
+Wire Wire Line
+	4000 3650 4000 3750
+Connection ~ 4000 3750
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 606C97BD
+P 2850 3150
+AR Path="/5F868E46/606C97BD" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/606C97BD" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/606C97BD" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/606C97BD" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/606C97BD" Ref="D-WRERCCTS-16"  Part="1" 
+F 0 "D-WRERCCTS-16" H 3100 3100 50  0000 L CNN
+F 1 "EA50" H 3100 3000 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 3450 2950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2850 3150 50  0001 C CNN
+	1    2850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2900 2850 2800
+Wire Wire Line
+	2850 3650 2850 3750
+Connection ~ 2850 3750
+Wire Wire Line
+	2850 3750 1700 3750
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 606C97CB
+P 1700 3150
+AR Path="/5F868E46/606C97CB" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/606C97CB" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/606C97CB" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/606C97CB" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/606C97CB" Ref="D-WRERCCTS-17"  Part="1" 
+F 0 "D-WRERCCTS-17" H 1950 3100 50  0000 L CNN
+F 1 "EA50" H 1950 3000 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 2300 2950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1700 3150 50  0001 C CNN
+	1    1700 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2900 1700 2800
+Wire Wire Line
+	1700 3650 1700 3750
+Wire Wire Line
+	2850 3750 3400 3750
+Connection ~ 3400 3750
+Wire Wire Line
+	3400 3750 4000 3750
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6081CC78
+P 1700 2600
+AR Path="/5F88E8BA/6081CC78" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6081CC78" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6081CC78" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6081CC78" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6081CC78" Ref="J-WRERCCTS-3"  Part="1" 
+F 0 "J-WRERCCTS-3" V 1650 2500 50  0000 R CNN
+F 1 "FNS13.1" V 1550 2500 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 1700 2600 50  0001 C CNN
+F 3 "~" H 1700 2600 50  0001 C CNN
+	1    1700 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6421F0E6
+P 2850 2600
+AR Path="/5F88E8BA/6421F0E6" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6421F0E6" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6421F0E6" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6421F0E6" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6421F0E6" Ref="J-WRERCCTS-5"  Part="1" 
+F 0 "J-WRERCCTS-5" V 2800 2500 50  0000 R CNN
+F 1 "FNS14.1" V 2700 2500 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 2850 2600 50  0001 C CNN
+F 3 "~" H 2850 2600 50  0001 C CNN
+	1    2850 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 608209AD
+P 4000 2600
+AR Path="/5F88E8BA/608209AD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/608209AD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/608209AD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/608209AD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/608209AD" Ref="J-WRERCCTS-8"  Part="1" 
+F 0 "J-WRERCCTS-8" V 3950 2500 50  0000 R CNN
+F 1 "FNS15.0" V 3850 2500 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 4000 2600 50  0001 C CNN
+F 3 "~" H 4000 2600 50  0001 C CNN
+	1    4000 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 608222EF
+P 5150 2600
+AR Path="/5F88E8BA/608222EF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/608222EF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/608222EF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/608222EF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/608222EF" Ref="J-WRERCCTS-10"  Part="1" 
+F 0 "J-WRERCCTS-10" V 5100 2500 50  0000 R CNN
+F 1 "Para Action W/F" V 5000 2500 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 5150 2600 50  0001 C CNN
+F 3 "~" H 5150 2600 50  0001 C CNN
+	1    5150 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 60823F73
+P 7250 5550
+AR Path="/5F88E8BA/60823F73" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/60823F73" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/60823F73" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/60823F73" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/60823F73" Ref="J-WRERCCTS-13"  Part="1" 
+F 0 "J-WRERCCTS-13" V 7050 5600 50  0000 L CNN
+F 1 "KLC" V 7150 5600 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7250 5550 50  0001 C CNN
+F 3 "~" H 7250 5550 50  0001 C CNN
+	1    7250 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-WRERCCTS-20
+U 1 1 6092DF75
+P 8850 6400
+F 0 "R-WRERCCTS-20" H 8750 6350 50  0000 R CNN
+F 1 "560K 3W" H 8750 6400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8780 6400 50  0001 C CNN
+F 3 "~" H 8850 6400 50  0001 C CNN
+	1    8850 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8850 6150 8850 6250
+Wire Wire Line
+	10100 6150 9450 6150
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6092F175
+P 9450 5550
+AR Path="/5F868E46/6092F175" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6092F175" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6092F175" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6092F175" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6092F175" Ref="D-WRERCCTS-4"  Part="1" 
+F 0 "D-WRERCCTS-4" H 9700 5500 50  0000 L CNN
+F 1 "EA50" H 9700 5400 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 10050 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9450 5550 50  0001 C CNN
+	1    9450 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 5300 9450 5200
+Wire Wire Line
+	9450 6050 9450 6150
+Connection ~ 9450 6150
+Wire Wire Line
+	9450 6150 8850 6150
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6092F183
+P 8300 5550
+AR Path="/5F868E46/6092F183" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6092F183" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6092F183" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6092F183" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6092F183" Ref="D-WRERCCTS-2"  Part="1" 
+F 0 "D-WRERCCTS-2" H 8550 5500 50  0000 L CNN
+F 1 "EA50" H 8550 5400 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 8900 5350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8300 5550 50  0001 C CNN
+	1    8300 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5300 8300 5200
+Wire Wire Line
+	8300 6050 8300 6150
+Connection ~ 8300 6150
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6092F190
+P 7650 6150
+AR Path="/5F868E46/6092F190" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6092F190" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6092F190" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6092F190" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6092F190" Ref="D-WRERCCTS-1"  Part="1" 
+F 0 "D-WRERCCTS-1" V 8050 6000 50  0000 C CNN
+F 1 "EA50" V 7950 6000 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8250 5950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7650 6150 50  0001 C CNN
+	1    7650 6150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 6150 7300 6150
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6092F1B7
+P 7100 6150
+AR Path="/5F88E8BA/6092F1B7" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6092F1B7" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6092F1B7" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6092F1B7" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6092F1B7" Ref="J-WRERCCTS-12"  Part="1" 
+F 0 "J-WRERCCTS-12" H 7150 6050 50  0000 L CNN
+F 1 "A.WRITE" H 7150 6150 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 7100 6150 50  0001 C CNN
+F 3 "~" H 7100 6150 50  0001 C CNN
+	1    7100 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6092F1C1
+P 8300 5000
+AR Path="/5F88E8BA/6092F1C1" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6092F1C1" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6092F1C1" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6092F1C1" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6092F1C1" Ref="J-WRERCCTS-14"  Part="1" 
+F 0 "J-WRERCCTS-14" V 8250 4900 50  0000 R CNN
+F 1 "P31" V 8150 4900 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 8300 5000 50  0001 C CNN
+F 3 "~" H 8300 5000 50  0001 C CNN
+	1    8300 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6092F1CB
+P 9450 5000
+AR Path="/5F88E8BA/6092F1CB" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6092F1CB" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6092F1CB" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6092F1CB" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6092F1CB" Ref="J-WRERCCTS-17"  Part="1" 
+F 0 "J-WRERCCTS-17" V 9400 4900 50  0000 R CNN
+F 1 "FNS14.1" V 9300 4900 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 9450 5000 50  0001 C CNN
+F 3 "~" H 9450 5000 50  0001 C CNN
+	1    9450 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 60969050
+P 8300 6750
+AR Path="/5F868E46/60969050" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/60969050" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/60969050" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/60969050" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/60969050" Ref="D-WRERCCTS-3"  Part="1" 
+F 0 "D-WRERCCTS-3" H 8550 6550 50  0000 L CNN
+F 1 "EA50" H 8550 6650 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 8900 6550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8300 6750 50  0001 C CNN
+	1    8300 6750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 7000 8300 7100
+Wire Wire Line
+	8300 6250 8300 6150
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 60969754
+P 9450 6750
+AR Path="/5F868E46/60969754" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/60969754" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/60969754" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/60969754" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/60969754" Ref="D-WRERCCTS-5"  Part="1" 
+F 0 "D-WRERCCTS-5" H 9200 6550 50  0000 R CNN
+F 1 "EA50" H 9200 6650 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 10050 6550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9450 6750 50  0001 C CNN
+	1    9450 6750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 7000 9450 7100
+Wire Wire Line
+	9450 6250 9450 6150
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 60969760
+P 9450 7300
+AR Path="/5F88E8BA/60969760" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/60969760" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/60969760" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/60969760" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/60969760" Ref="J-WRERCCTS-18"  Part="1" 
+F 0 "J-WRERCCTS-18" V 9250 7350 50  0000 L CNN
+F 1 "FNS13.0" V 9350 7350 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 9450 7300 50  0001 C CNN
+F 3 "~" H 9450 7300 50  0001 C CNN
+	1    9450 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6096976A
+P 8300 7300
+AR Path="/5F88E8BA/6096976A" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6096976A" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6096976A" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6096976A" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6096976A" Ref="J-WRERCCTS-15"  Part="1" 
+F 0 "J-WRERCCTS-15" V 8100 7200 50  0000 R CNN
+F 1 "FNS15.1" V 8200 7200 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 8300 7300 50  0001 C CNN
+F 3 "~" H 8300 7300 50  0001 C CNN
+	1    8300 7300
+	0    1    1    0   
+$EndComp
+Connection ~ 8850 6150
+Wire Wire Line
+	8850 6150 8300 6150
+Wire Wire Line
+	8150 6150 8300 6150
+Wire Wire Line
+	10500 6150 10400 6150
+NoConn ~ 11100 6200
+NoConn ~ 11100 6300
+$Comp
+L NEWValves:VR91 V-WRERCCTS-3
+U 1 1 60AE57CE
+P 10800 6100
+F 0 "V-WRERCCTS-3" H 10850 5700 50  0000 C CNN
+F 1 "VR91" H 10850 5600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 11800 6350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 10800 6100 50  0001 C CNN
+	1    10800 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 5950 10400 5950
+$Comp
+L Device:R R-WRERCCTS-21
+U 1 1 60AE57D9
+P 10250 6150
+F 0 "R-WRERCCTS-21" V 10000 6150 50  0000 C CNN
+F 1 "10K" V 10100 6150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10180 6150 50  0001 C CNN
+F 3 "~" H 10250 6150 50  0001 C CNN
+	1    10250 6150
+	0    1    1    0   
+$EndComp
+Text Label 10800 5000 0    50   ~ 0
++300V
+Wire Wire Line
+	10500 6800 10500 6250
+Wire Wire Line
+	10800 5000 10800 5050
+Wire Wire Line
+	10400 5950 10400 5900
+Wire Wire Line
+	10400 5900 11150 5900
+Wire Wire Line
+	11150 5900 11150 5950
+Wire Wire Line
+	10800 5650 10800 5600
+$Comp
+L Device:R R-WRERCCTS-23
+U 1 1 60C74AAF
+P 10800 5200
+F 0 "R-WRERCCTS-23" H 10900 5150 50  0000 L CNN
+F 1 "10K" H 10900 5200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10730 5200 50  0001 C CNN
+F 3 "~" H 10800 5200 50  0001 C CNN
+	1    10800 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8850 6650 8850 6550
+Text Label 8850 6650 0    50   ~ 0
+-150V
+$Comp
+L Device:R R-WRERCCTS-26
+U 1 1 60CE4ABD
+P 11300 5950
+F 0 "R-WRERCCTS-26" V 11450 6100 50  0000 C CNN
+F 1 "470" V 11400 6000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11230 5950 50  0001 C CNN
+F 3 "~" H 11300 5950 50  0001 C CNN
+	1    11300 5950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R-WRERCCTS-25
+U 1 1 60D4B35B
+P 11050 5600
+F 0 "R-WRERCCTS-25" V 11150 5650 50  0000 C CNN
+F 1 "470K" V 11250 5600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10980 5600 50  0001 C CNN
+F 3 "~" H 11050 5600 50  0001 C CNN
+	1    11050 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10900 5600 10800 5600
+Connection ~ 10800 5600
+Wire Wire Line
+	10800 5600 10800 5450
+$Comp
+L Device:C C-WRERCCTS-6
+U 1 1 60D7E9EB
+P 11050 5450
+F 0 "C-WRERCCTS-6" V 11350 5450 50  0000 C CNN
+F 1 "0.01uf" V 11250 5450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11088 5300 50  0001 C CNN
+F 3 "~" H 11050 5450 50  0001 C CNN
+	1    11050 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10900 5450 10800 5450
+Wire Wire Line
+	10800 5450 10800 5350
+Wire Wire Line
+	11200 5600 11300 5600
+Wire Wire Line
+	11300 5600 11300 5450
+Wire Wire Line
+	11300 5450 11200 5450
+NoConn ~ 11150 6050
+Text Label 10500 6800 0    50   ~ 0
+GND
+Wire Wire Line
+	11450 5950 11550 5950
+Wire Wire Line
+	11550 5950 11550 6700
+Wire Wire Line
+	11550 6700 11250 6700
+Connection ~ 11550 6700
+Wire Wire Line
+	11550 6700 11550 7150
+$Comp
+L Device:R R-WRERCCTS-27
+U 1 1 60ECEC8B
+P 11550 7300
+F 0 "R-WRERCCTS-27" H 11450 7250 50  0000 R CNN
+F 1 "330K" H 11450 7300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11480 7300 50  0001 C CNN
+F 3 "~" H 11550 7300 50  0001 C CNN
+	1    11550 7300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11550 7550 11550 7450
+Text Label 11550 7550 0    50   ~ 0
+-150V
+Wire Wire Line
+	11250 7600 11250 7450
+Text Label 11250 7600 0    50   ~ 0
+GND
+Text Label 10350 7000 2    50   ~ 0
++200V
+Wire Wire Line
+	10350 7150 10000 7150
+Wire Wire Line
+	10650 7150 10650 7500
+Wire Wire Line
+	10000 7150 10000 7600
+Wire Wire Line
+	10650 7150 10350 7150
+Wire Wire Line
+	10350 7150 10350 7000
+Connection ~ 10350 7150
+Wire Wire Line
+	10350 7200 10350 7150
+Wire Wire Line
+	10650 8450 10650 8350
+$Comp
+L Device:R R-WRERCCTS-24
+U 1 1 60F7C17D
+P 10900 7700
+F 0 "R-WRERCCTS-24" V 10650 7700 50  0000 C CNN
+F 1 "470" V 10750 7700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10830 7700 50  0001 C CNN
+F 3 "~" H 10900 7700 50  0001 C CNN
+	1    10900 7700
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-WRERCCTS-1
+U 1 1 60F7C172
+P 10350 7650
+F 0 "V-WRERCCTS-1" H 10400 7250 50  0000 C CNN
+F 1 "VR91" H 10400 7150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 11350 7900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 10350 7650 50  0001 C CNN
+	1    10350 7650
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 10050 7850
+NoConn ~ 10050 7750
+Wire Wire Line
+	10650 7700 10750 7700
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 60E9A6E7
+P 11250 6950
+AR Path="/5F868E46/60E9A6E7" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/60E9A6E7" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/60E9A6E7" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/60E9A6E7" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/60E9A6E7" Ref="D-WRERCCTS-6"  Part="1" 
+F 0 "D-WRERCCTS-6" H 11500 6900 50  0000 L CNN
+F 1 "EA50" H 11500 6800 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 11850 6750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11250 6950 50  0001 C CNN
+	1    11250 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 6700 11050 6700
+Wire Wire Line
+	11050 6700 11050 7700
+Connection ~ 11250 6700
+Text Label 10650 8450 0    50   ~ 0
+-150V
+Wire Wire Line
+	10650 7800 10650 7950
+$Comp
+L Device:R R-WRERCCTS-22
+U 1 1 6136CB77
+P 10650 8200
+F 0 "R-WRERCCTS-22" H 10550 8150 50  0000 R CNN
+F 1 "15K 3W" H 10550 8200 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10580 8200 50  0001 C CNN
+F 3 "~" H 10650 8200 50  0001 C CNN
+	1    10650 8200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 61418560
+P 10950 7950
+AR Path="/5F88E8BA/61418560" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/61418560" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/61418560" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/61418560" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/61418560" Ref="J-WRERCCTS-19"  Part="1" 
+F 0 "J-WRERCCTS-19" H 11000 8000 50  0000 L CNN
+F 1 "Plus2" H 11000 7900 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 10950 7950 50  0001 C CNN
+F 3 "~" H 10950 7950 50  0001 C CNN
+	1    10950 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 7950 10650 7950
+Connection ~ 10650 7950
+Wire Wire Line
+	10650 7950 10650 8050
+Wire Wire Line
+	14050 6150 14150 6150
+NoConn ~ 13450 6200
+NoConn ~ 13450 6300
+$Comp
+L NEWValves:VR91 V-WRERCCTS-2
+U 1 1 6149670F
+P 13750 6100
+F 0 "V-WRERCCTS-2" H 13800 5700 50  0000 C CNN
+F 1 "VR91" H 13800 5600 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 14750 6350 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 13750 6100 50  0001 C CNN
+	1    13750 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 5950 14150 5950
+$Comp
+L Device:R R-WRERCCTS-37
+U 1 1 6149671A
+P 14300 6150
+F 0 "R-WRERCCTS-37" V 14050 6150 50  0000 C CNN
+F 1 "15K" V 14150 6150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 14230 6150 50  0001 C CNN
+F 3 "~" H 14300 6150 50  0001 C CNN
+	1    14300 6150
+	0    -1   1    0   
+$EndComp
+Text Label 13750 5000 2    50   ~ 0
++300V
+Wire Wire Line
+	14050 6800 14050 6250
+Wire Wire Line
+	13750 5000 13750 5050
+Wire Wire Line
+	14150 5950 14150 5900
+Wire Wire Line
+	14150 5900 13400 5900
+Wire Wire Line
+	13400 5900 13400 5950
+Wire Wire Line
+	13750 5650 13750 5600
+$Comp
+L Device:R R-WRERCCTS-35
+U 1 1 6149672B
+P 13750 5200
+F 0 "R-WRERCCTS-35" H 13850 5150 50  0000 L CNN
+F 1 "10K" H 13850 5200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13680 5200 50  0001 C CNN
+F 3 "~" H 13750 5200 50  0001 C CNN
+	1    13750 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R-WRERCCTS-32
+U 1 1 61496735
+P 13250 5950
+F 0 "R-WRERCCTS-32" V 13400 6100 50  0000 C CNN
+F 1 "470" V 13350 6000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13180 5950 50  0001 C CNN
+F 3 "~" H 13250 5950 50  0001 C CNN
+	1    13250 5950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-WRERCCTS-33
+U 1 1 6149673F
+P 13500 5600
+F 0 "R-WRERCCTS-33" V 13600 5650 50  0000 C CNN
+F 1 "470K" V 13700 5600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13430 5600 50  0001 C CNN
+F 3 "~" H 13500 5600 50  0001 C CNN
+	1    13500 5600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	13650 5600 13750 5600
+Connection ~ 13750 5600
+Wire Wire Line
+	13750 5600 13750 5450
+$Comp
+L Device:C C-WRERCCTS-11
+U 1 1 6149674C
+P 13500 5450
+F 0 "C-WRERCCTS-11" V 13800 5450 50  0000 C CNN
+F 1 "0.01uf" V 13700 5450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 13538 5300 50  0001 C CNN
+F 3 "~" H 13500 5450 50  0001 C CNN
+	1    13500 5450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	13650 5450 13750 5450
+Wire Wire Line
+	13750 5450 13750 5350
+Wire Wire Line
+	13350 5600 13250 5600
+Wire Wire Line
+	13250 5600 13250 5450
+Wire Wire Line
+	13250 5450 13350 5450
+NoConn ~ 13400 6050
+Text Label 14050 6800 2    50   ~ 0
+GND
+Wire Wire Line
+	13100 5950 13000 5950
+Wire Wire Line
+	13000 5950 13000 6700
+Wire Wire Line
+	13000 6700 13300 6700
+Connection ~ 13000 6700
+Wire Wire Line
+	13000 6700 13000 7150
+$Comp
+L Device:R R-WRERCCTS-31
+U 1 1 61496763
+P 13000 7300
+F 0 "R-WRERCCTS-31" H 12900 7250 50  0000 R CNN
+F 1 "330K" H 12900 7300 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12930 7300 50  0001 C CNN
+F 3 "~" H 13000 7300 50  0001 C CNN
+	1    13000 7300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13000 7550 13000 7450
+Text Label 13000 7550 2    50   ~ 0
+-150V
+Wire Wire Line
+	13300 7600 13300 7450
+Text Label 13300 7600 2    50   ~ 0
+GND
+Text Label 14200 7000 0    50   ~ 0
++200V
+Wire Wire Line
+	14200 7150 14550 7150
+Wire Wire Line
+	13900 7150 13900 7500
+Wire Wire Line
+	14550 7150 14550 7600
+Wire Wire Line
+	13900 7150 14200 7150
+Wire Wire Line
+	14200 7150 14200 7000
+Connection ~ 14200 7150
+Wire Wire Line
+	14200 7200 14200 7150
+Wire Wire Line
+	13900 8450 13900 8350
+$Comp
+L Device:R R-WRERCCTS-34
+U 1 1 6149677A
+P 13650 7700
+F 0 "R-WRERCCTS-34" V 13400 7700 50  0000 C CNN
+F 1 "470" V 13500 7700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13580 7700 50  0001 C CNN
+F 3 "~" H 13650 7700 50  0001 C CNN
+	1    13650 7700
+	0    -1   1    0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-WRERCCTS-4
+U 1 1 61496784
+P 14200 7650
+F 0 "V-WRERCCTS-4" H 14250 7250 50  0000 C CNN
+F 1 "VR91" H 14250 7150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 15200 7900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 14200 7650 50  0001 C CNN
+	1    14200 7650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 14500 7850
+NoConn ~ 14500 7750
+Wire Wire Line
+	13900 7700 13800 7700
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 61496791
+P 13300 6950
+AR Path="/5F868E46/61496791" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/61496791" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/61496791" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/61496791" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/61496791" Ref="D-WRERCCTS-7"  Part="1" 
+F 0 "D-WRERCCTS-7" H 13050 6900 50  0000 R CNN
+F 1 "EA50" H 13050 6800 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 13900 6750 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 13300 6950 50  0001 C CNN
+	1    13300 6950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 6700 13500 6700
+Wire Wire Line
+	13500 6700 13500 7700
+Connection ~ 13300 6700
+Text Label 13900 8450 2    50   ~ 0
+-150V
+Wire Wire Line
+	13900 7800 13900 7950
+$Comp
+L Device:R R-WRERCCTS-36
+U 1 1 614967A0
+P 13900 8200
+F 0 "R-WRERCCTS-36" H 13800 8150 50  0000 R CNN
+F 1 "15K 3W" H 13800 8200 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13830 8200 50  0001 C CNN
+F 3 "~" H 13900 8200 50  0001 C CNN
+	1    13900 8200
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 614967AA
+P 13600 7950
+AR Path="/5F88E8BA/614967AA" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/614967AA" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/614967AA" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/614967AA" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/614967AA" Ref="J-WRERCCTS-20"  Part="1" 
+F 0 "J-WRERCCTS-20" H 13650 8000 50  0000 L CNN
+F 1 "Plus1" H 13650 7900 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 13600 7950 50  0001 C CNN
+F 3 "~" H 13600 7950 50  0001 C CNN
+	1    13600 7950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 7950 13900 7950
+Connection ~ 13900 7950
+Wire Wire Line
+	13900 7950 13900 8050
+Wire Wire Line
+	11550 5950 13250 5600
+Connection ~ 11550 5950
+Connection ~ 13250 5600
+Wire Wire Line
+	13000 5950 11300 5600
+Connection ~ 13000 5950
+Connection ~ 11300 5600
+$Comp
+L Device:C C-WRERCCTS-12
+U 1 1 61683973
+P 14800 6150
+F 0 "C-WRERCCTS-12" V 14600 6150 50  0000 C CNN
+F 1 "47pf" V 14500 6150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 14838 6000 50  0001 C CNN
+F 3 "~" H 14800 6150 50  0001 C CNN
+	1    14800 6150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	14950 6150 15050 6150
+Wire Wire Line
+	14450 6150 14550 6150
+Text Label 14550 5700 2    50   ~ 0
++300V
+Wire Wire Line
+	14550 5700 14550 5750
+$Comp
+L Device:R R-WRERCCTS-38
+U 1 1 617057CE
+P 14550 5900
+F 0 "R-WRERCCTS-38" H 14650 5850 50  0000 L CNN
+F 1 "1.2M" H 14650 5900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 14480 5900 50  0001 C CNN
+F 3 "~" H 14550 5900 50  0001 C CNN
+	1    14550 5900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	14550 6150 14550 6050
+Connection ~ 14550 6150
+Wire Wire Line
+	14550 6150 14650 6150
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 617C9DAF
+P 15250 6150
+AR Path="/5F88E8BA/617C9DAF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/617C9DAF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/617C9DAF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/617C9DAF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/617C9DAF" Ref="J-WRERCCTS-21"  Part="1" 
+F 0 "J-WRERCCTS-21" H 15300 6200 50  0000 L CNN
+F 1 " Action Trigger" H 15300 6100 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 15250 6150 50  0001 C CNN
+F 3 "~" H 15250 6150 50  0001 C CNN
+	1    15250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-WRERCCTS-11
+U 1 1 6183AB5F
+P 4850 7050
+F 0 "R-WRERCCTS-11" H 4750 7000 50  0000 R CNN
+F 1 "10K//10K" H 4750 7050 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4780 7050 50  0001 C CNN
+F 3 "~" H 4850 7050 50  0001 C CNN
+	1    4850 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 7300 4850 7200
+Text Label 4850 7300 0    50   ~ 0
+-150V
+Wire Wire Line
+	4850 6600 4850 6900
+Wire Wire Line
+	4850 5950 4750 5950
+NoConn ~ 5450 6000
+NoConn ~ 5450 6100
+$Comp
+L NEWValves:VR91 V-WRERCCTS-5
+U 1 1 6183AB6F
+P 5150 5900
+F 0 "V-WRERCCTS-5" H 5200 5500 50  0000 C CNN
+F 1 "VR91" H 5200 5400 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6150 6150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 5150 5900 50  0001 C CNN
+	1    5150 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5750 4750 5750
+$Comp
+L Device:R R-WRERCCTS-10
+U 1 1 6183AB7A
+P 4600 5950
+F 0 "R-WRERCCTS-10" V 4350 5950 50  0000 C CNN
+F 1 "470 3W" V 4450 5950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4530 5950 50  0001 C CNN
+F 3 "~" H 4600 5950 50  0001 C CNN
+	1    4600 5950
+	0    1    1    0   
+$EndComp
+Text Label 5150 5200 0    50   ~ 0
++200V
+Wire Wire Line
+	4750 5750 4750 5350
+Wire Wire Line
+	4750 5350 5150 5350
+Connection ~ 5150 5350
+Wire Wire Line
+	5150 5350 5150 5450
+Wire Wire Line
+	5500 5850 5600 5850
+Wire Wire Line
+	5600 5850 5600 5350
+Wire Wire Line
+	5600 5350 5150 5350
+Wire Wire Line
+	5150 5200 5150 5350
+$Comp
+L Device:R R-WRERCCTS-3
+U 1 1 6183AB8D
+P 2050 6200
+F 0 "R-WRERCCTS-3" H 1950 6150 50  0000 R CNN
+F 1 "150K 3W" H 1950 6200 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1980 6200 50  0001 C CNN
+F 3 "~" H 2050 6200 50  0001 C CNN
+	1    2050 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2050 5950 2050 6050
+Wire Wire Line
+	2050 6450 2050 6350
+Text Label 2050 6450 0    50   ~ 0
+-150V
+Wire Wire Line
+	4850 6600 4850 6050
+Connection ~ 4850 6600
+Wire Wire Line
+	4450 5950 3800 5950
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6183AB9D
+P 3800 5350
+AR Path="/5F868E46/6183AB9D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6183AB9D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6183AB9D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6183AB9D" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6183AB9D" Ref="D-WRERCCTS-10"  Part="1" 
+F 0 "D-WRERCCTS-10" H 4050 5300 50  0000 L CNN
+F 1 "EA50" H 4050 5200 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 4400 5150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3800 5350 50  0001 C CNN
+	1    3800 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 5100 3800 5000
+Wire Wire Line
+	3800 5850 3800 5950
+Connection ~ 3800 5950
+Wire Wire Line
+	3800 5950 2650 5950
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6183ABAB
+P 2650 5350
+AR Path="/5F868E46/6183ABAB" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6183ABAB" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6183ABAB" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6183ABAB" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6183ABAB" Ref="D-WRERCCTS-8"  Part="1" 
+F 0 "D-WRERCCTS-8" H 2900 5300 50  0000 L CNN
+F 1 "EA50" H 2900 5200 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 3250 5150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2650 5350 50  0001 C CNN
+	1    2650 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5100 2650 5000
+Wire Wire Line
+	2650 5850 2650 5950
+Connection ~ 2650 5950
+$Comp
+L NEWValves:EA50 D-WRERCCTS-?
+U 1 1 6183ABB8
+P 1500 5350
+AR Path="/5F868E46/6183ABB8" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6183ABB8" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6183ABB8" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6183ABB8" Ref="D-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6183ABB8" Ref="D-WRERCCTS-9"  Part="1" 
+F 0 "D-WRERCCTS-9" H 1750 5300 50  0000 L CNN
+F 1 "EA50" H 1750 5200 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 2100 5150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1500 5350 50  0001 C CNN
+	1    1500 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5100 1500 5000
+Wire Wire Line
+	1500 5850 1500 5950
+Wire Wire Line
+	1500 5950 2050 5950
+Connection ~ 2050 5950
+Wire Wire Line
+	2050 5950 2650 5950
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6183ABDF
+P 1500 4800
+AR Path="/5F88E8BA/6183ABDF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6183ABDF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6183ABDF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6183ABDF" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6183ABDF" Ref="J-WRERCCTS-2"  Part="1" 
+F 0 "J-WRERCCTS-2" V 1450 4700 50  0000 R CNN
+F 1 "FNS13.0" V 1350 4700 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 1500 4800 50  0001 C CNN
+F 3 "~" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6183ABE9
+P 2650 4800
+AR Path="/5F88E8BA/6183ABE9" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6183ABE9" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6183ABE9" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6183ABE9" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6183ABE9" Ref="J-WRERCCTS-4"  Part="1" 
+F 0 "J-WRERCCTS-4" V 2600 4700 50  0000 R CNN
+F 1 "FNS15.0" V 2500 4700 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 2650 4800 50  0001 C CNN
+F 3 "~" H 2650 4800 50  0001 C CNN
+	1    2650 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6183ABF3
+P 3800 4800
+AR Path="/5F88E8BA/6183ABF3" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6183ABF3" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6183ABF3" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6183ABF3" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6183ABF3" Ref="J-WRERCCTS-6"  Part="1" 
+F 0 "J-WRERCCTS-6" V 3750 4700 50  0000 R CNN
+F 1 "Para Action W/F" V 3650 4700 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 3800 4800 50  0001 C CNN
+F 3 "~" H 3800 4800 50  0001 C CNN
+	1    3800 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-WRERCCTS-?
+U 1 1 6183ABFD
+P 5250 6600
+AR Path="/5F88E8BA/6183ABFD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F89590E/6183ABFD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FFFB333/6183ABFD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5FEEBA24/6183ABFD" Ref="J-WRERCCTS-?"  Part="1" 
+AR Path="/5F9BDCBE/6183ABFD" Ref="J-WRERCCTS-11"  Part="1" 
+F 0 "J-WRERCCTS-11" H 5300 6650 50  0000 L CNN
+F 1 "AC.Erase" H 5300 6550 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 5250 6600 50  0001 C CNN
+F 3 "~" H 5250 6600 50  0001 C CNN
+	1    5250 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6600 5050 6600
+Text Notes 5050 6800 0    50   ~ 0
+To KAC & KCC Switches
+Connection ~ 10800 5450
+Connection ~ 13750 5450
+Wire Wire Line
+	11600 3150 11600 3050
+$Comp
+L Device:R R-WRERCCTS-29
+U 1 1 61D5036A
+P 11600 2900
+F 0 "R-WRERCCTS-29" H 11700 2950 50  0000 L CNN
+F 1 "27k" H 11700 2900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11530 2900 50  0001 C CNN
+F 3 "~" H 11600 2900 50  0001 C CNN
+	1    11600 2900
+	-1   0    0    -1  
+$EndComp
+Text Label 11600 3150 0    50   ~ 0
+-150V
+Wire Wire Line
+	11600 2550 11600 2650
+$Comp
+L Device:R R-WRERCCTS-28
+U 1 1 6421F0E8
+P 11600 2400
+F 0 "R-WRERCCTS-28" H 11700 2450 50  0000 L CNN
+F 1 "22k" H 11700 2400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11530 2400 50  0001 C CNN
+F 3 "~" H 11600 2400 50  0001 C CNN
+	1    11600 2400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C-WRERCCTS-10
+U 1 1 6421F0E9
+P 11800 2400
+F 0 "C-WRERCCTS-10" H 11950 2450 50  0000 L CNN
+F 1 "0.1uf" H 11950 2400 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11838 2250 50  0001 C CNN
+F 3 "~" H 11800 2400 50  0001 C CNN
+	1    11800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11600 2150 11800 2150
+Wire Wire Line
+	11800 2150 11800 2250
+Wire Wire Line
+	11600 2150 11600 2250
+Wire Wire Line
+	11800 2650 11600 2650
+Connection ~ 11600 2650
+Wire Wire Line
+	11600 2650 11600 2750
+Wire Wire Line
+	11800 2550 11800 2650
+Wire Wire Line
+	11800 2150 11900 2150
+Connection ~ 11800 2150
+Text Label 11900 2150 0    50   ~ 0
+GND
+Wire Wire Line
+	11800 2650 11950 2650
+Connection ~ 11800 2650
+Text Label 11950 2650 0    50   ~ 0
+-65V
+Text Notes 12000 2750 0    50   ~ 0
+To the control panel keyswitches
+$Comp
+L NEWValves:VR91 V-WRERCCTS-9
+U 2 1 61F8B18D
+P 6500 10450
+F 0 "V-WRERCCTS-9" H 6500 11025 50  0000 C CNN
+F 1 "VR91" H 6500 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7500 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 6500 10450 50  0001 C CNN
+	2    6500 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 10800 6400 10850
+Wire Wire Line
+	6600 10800 6600 11100
+$Comp
+L NEWValves:VR91 V-WRERCCTS-10
+U 2 1 61F8B823
+P 7150 10450
+F 0 "V-WRERCCTS-10" H 7150 11025 50  0000 C CNN
+F 1 "VR91" H 7150 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8150 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 7150 10450 50  0001 C CNN
+	2    7150 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 10800 7050 10850
+Wire Wire Line
+	7250 10800 7250 11100
+Wire Wire Line
+	6400 10850 7050 10850
+Connection ~ 6400 10850
+Connection ~ 6600 11100
+Wire Wire Line
+	6600 11100 7250 11100
+Wire Wire Line
+	5750 10850 6400 10850
+Wire Wire Line
+	5950 11100 6600 11100
+$Comp
+L NEWValves:CV173 V-WRERCCTS-7
+U 2 1 61F8B835
+P 5200 10450
+F 0 "V-WRERCCTS-7" H 5200 11025 50  0000 C CNN
+F 1 "CV173" H 5200 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6200 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5200 10450 50  0001 C CNN
+	2    5200 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 10800 5100 10850
+Wire Wire Line
+	5300 10800 5300 11100
+$Comp
+L NEWValves:VR91 V-WRERCCTS-8
+U 2 1 61F8B841
+P 5850 10450
+F 0 "V-WRERCCTS-8" H 5850 11025 50  0000 C CNN
+F 1 "VR91" H 5850 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6850 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 5850 10450 50  0001 C CNN
+	2    5850 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 10800 5750 10850
+Wire Wire Line
+	5950 10800 5950 11100
+Wire Wire Line
+	5100 10850 5750 10850
+Wire Wire Line
+	5300 11100 5950 11100
+Wire Wire Line
+	7050 10850 7700 10850
+Wire Wire Line
+	7250 11100 7900 11100
+Connection ~ 7050 10850
+Connection ~ 7250 11100
+Connection ~ 5750 10850
+Connection ~ 5950 11100
+Wire Wire Line
+	5100 10850 4450 10850
+Connection ~ 5100 10850
+Connection ~ 4450 10850
+Wire Wire Line
+	4650 11100 5300 11100
+Connection ~ 4650 11100
+Connection ~ 5300 11100
+$EndSCHEMATC

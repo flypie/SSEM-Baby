@@ -1,0 +1,1555 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 45 45
+Title "Y-Amplifier & Halver Position 3.3"
+Date "2020-10-17"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+Text Label 1050 7450 2    50   ~ 0
+Heater-6.3V
+Text Label 1050 7700 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:C C-YAMP&HVR-7
+U 1 1 5F8CD192
+P 9900 6000
+F 0 "C-YAMP&HVR-7" H 9775 5925 50  0000 R CNN
+F 1 "0.5" H 9775 6025 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9938 5850 50  0001 C CNN
+F 3 "~" H 9900 6000 50  0001 C CNN
+	1    9900 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-YAMP&HVR-4
+U 1 1 6421F0E5
+P 8400 6000
+F 0 "C-YAMP&HVR-4" H 8550 6075 50  0000 L CNN
+F 1 "0.5" H 8550 6000 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8438 5850 50  0001 C CNN
+F 3 "~" H 8400 6000 50  0001 C CNN
+	1    8400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-YAMP&HVR-5
+U 1 1 62079B9E
+P 9150 6000
+F 0 "C-YAMP&HVR-5" H 9275 6075 50  0000 L CNN
+F 1 "0.5" H 9275 5975 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9188 5850 50  0001 C CNN
+F 3 "~" H 9150 6000 50  0001 C CNN
+	1    9150 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 6150 8400 6250
+Text Label 8400 6250 3    50   ~ 0
+GND
+Wire Wire Line
+	9150 6150 9150 6250
+Text Label 9150 6250 3    50   ~ 0
+GND
+Wire Wire Line
+	9900 6150 9900 6250
+Text Label 9900 6250 3    50   ~ 0
+GND
+Text Label 8400 5850 1    50   ~ 0
++300V
+Text Label 9150 5850 1    50   ~ 0
++200V
+Text Label 10650 5850 1    50   ~ 0
++50V
+Text Label 9900 5850 1    50   ~ 0
+-150V
+$Comp
+L Device:C C-YAMP&HVR-8
+U 1 1 6421F0ED
+P 10650 6000
+F 0 "C-YAMP&HVR-8" H 10775 6075 50  0000 L CNN
+F 1 "0.5" H 10775 5975 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10688 5850 50  0001 C CNN
+F 3 "~" H 10650 6000 50  0001 C CNN
+	1    10650 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:6SN7GT V-YAMP&HVR-2
+U 3 1 62079B9F
+P 1100 6700
+F 0 "V-YAMP&HVR-2" H 1450 6900 50  0000 C CNN
+F 1 "6SN7GT" H 1450 6800 50  0000 C CNN
+F 2 "Valve:Valve_Octal" H 2100 6950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/6sn7gt-1.pdf" H 1100 6700 50  0001 C CNN
+	3    1100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-YAMP&HVR-3
+U 2 1 6421F0E4
+P 2250 7050
+F 0 "V-YAMP&HVR-3" H 2250 7625 50  0000 C CNN
+F 1 "VR91" H 2250 7525 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3250 7300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2250 7050 50  0001 C CNN
+	2    2250 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7400 2150 7450
+Wire Wire Line
+	2350 7400 2350 7700
+$Comp
+L NEWValves:VR91 V-YAMP&HVR-4
+U 2 1 62079B95
+P 2950 7050
+F 0 "V-YAMP&HVR-4" H 2950 7625 50  0000 C CNN
+F 1 "VR91" H 2950 7525 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3950 7300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2950 7050 50  0001 C CNN
+	2    2950 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 7400 2850 7450
+Wire Wire Line
+	3050 7400 3050 7700
+Wire Wire Line
+	2150 7450 2850 7450
+Connection ~ 2150 7450
+Connection ~ 2350 7700
+Wire Wire Line
+	2350 7700 3050 7700
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 62079B98
+P 5650 5600
+AR Path="/5F868E46/62079B98" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/62079B98" Ref="D-SCFOLLWS-7"  Part="2" 
+AR Path="/5FFFB333/62079B98" Ref="D-YAMP&HVR-5"  Part="2" 
+AR Path="/5FEEBA24/62079B98" Ref="D-YAMP&HVR-5"  Part="2" 
+AR Path="/5F9BDCBE/62079B98" Ref="D-YAMP&HVR-5"  Part="2" 
+AR Path="/62085011/62079B98" Ref="D-YAMP&HVR-5"  Part="2" 
+F 0 "D-YAMP&HVR-5" H 5650 5900 50  0000 C CNN
+F 1 "EA50" H 5650 5800 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6250 5400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5650 5600 50  0001 C CNN
+	2    5650 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6050 5750 6350
+Wire Wire Line
+	5550 6050 5550 6100
+Text Label 5400 6350 2    50   ~ 0
+Heater-GND
+Text Label 5400 6100 2    50   ~ 0
+Heater-6.3V
+Wire Wire Line
+	5400 6100 5550 6100
+Text Label 10650 6250 3    50   ~ 0
+GND
+Wire Wire Line
+	10650 6250 10650 6150
+$Comp
+L NEWValves:VR91 V-YAMP&HVR-5
+U 2 1 6421F0E2
+P 3650 7050
+F 0 "V-YAMP&HVR-5" H 3650 7625 50  0000 C CNN
+F 1 "VR91" H 3650 7525 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4650 7300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 3650 7050 50  0001 C CNN
+	2    3650 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 7400 3550 7450
+Wire Wire Line
+	3750 7400 3750 7700
+$Comp
+L NEWValves:CV1091 V-YAMP&HVR-6
+U 2 1 5FDBE8C2
+P 4350 7050
+F 0 "V-YAMP&HVR-6" H 4350 7625 50  0000 C CNN
+F 1 "CV1091" H 4350 7525 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5350 7300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 4350 7050 50  0001 C CNN
+	2    4350 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 7400 4250 7450
+Wire Wire Line
+	4450 7400 4450 7700
+Wire Wire Line
+	3550 7450 4250 7450
+Connection ~ 3550 7450
+Connection ~ 3750 7700
+Wire Wire Line
+	3750 7700 4450 7700
+Wire Wire Line
+	2850 7450 3550 7450
+Wire Wire Line
+	3050 7700 3750 7700
+Connection ~ 2850 7450
+Connection ~ 3050 7700
+Wire Wire Line
+	5750 6350 6400 6350
+Wire Wire Line
+	5550 6100 6200 6100
+$Comp
+L NEWValves:EA50 D-YAMP&HVR-?
+U 2 1 6421F0DC
+P 6300 5600
+AR Path="/5F868E46/6421F0DC" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/6421F0DC" Ref="D-YAMP&HVR-?"  Part="2" 
+AR Path="/5FFFB333/6421F0DC" Ref="D-YAMP&HVR-6"  Part="2" 
+AR Path="/5FEEBA24/6421F0DC" Ref="D-YAMP&HVR-6"  Part="2" 
+AR Path="/5F9BDCBE/6421F0DC" Ref="D-YAMP&HVR-6"  Part="2" 
+AR Path="/62085011/6421F0DC" Ref="D-YAMP&HVR-6"  Part="2" 
+F 0 "D-YAMP&HVR-6" H 6300 5900 50  0000 C CNN
+F 1 "EA50" H 6300 5800 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6900 5400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6300 5600 50  0001 C CNN
+	2    6300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 6050 6400 6350
+Wire Wire Line
+	6200 6050 6200 6100
+$Comp
+L NEWValves:VR91 V-YAMP&HVR-5
+U 1 1 6421F0E1
+P 2300 1650
+F 0 "V-YAMP&HVR-5" H 2350 1250 50  0000 C CNN
+F 1 "VR91" H 2350 1150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3300 1900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2300 1650 50  0001 C CNN
+	1    2300 1650
+	1    0    0    -1  
+$EndComp
+Text Label 2000 2100 2    50   ~ 0
+GND
+Wire Wire Line
+	2650 1600 2750 1600
+Text Label 1500 1200 0    50   ~ 0
++200V
+Wire Wire Line
+	2750 1600 2750 1500
+Text Label 2750 1500 0    50   ~ 0
++200V
+$Comp
+L Connector:Conn_01x01_Female J-YAMP&HVR-?
+U 1 1 5FA63EF5
+P 1200 1700
+AR Path="/5F88E8BA/5FA63EF5" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/5FA63EF5" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FFFB333/5FA63EF5" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FEEBA24/5FA63EF5" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F9BDCBE/5FA63EF5" Ref="J-YAMP&HVR-1"  Part="1" 
+AR Path="/62085011/5FA63EF5" Ref="J-YAMP&HVR-1"  Part="1" 
+F 0 "J-YAMP&HVR-1" H 1250 1600 50  0000 L CNN
+F 1 "YSHIFT" H 1250 1700 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1200 1700 50  0001 C CNN
+F 3 "~" H 1200 1700 50  0001 C CNN
+	1    1200 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-YAMP&HVR-1
+U 1 1 6421F0DE
+P 1500 1450
+F 0 "R-YAMP&HVR-1" H 1600 1400 50  0000 L CNN
+F 1 "100K" H 1600 1450 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1430 1450 50  0001 C CNN
+F 3 "~" H 1500 1450 50  0001 C CNN
+	1    1500 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 1700 1500 1600
+Wire Wire Line
+	1500 1300 1500 1200
+$Comp
+L Device:R R-YAMP&HVR-2
+U 1 1 6421F0DF
+P 1750 1700
+F 0 "R-YAMP&HVR-2" V 1600 1800 50  0000 C CNN
+F 1 "470" V 1500 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1680 1700 50  0001 C CNN
+F 3 "~" H 1750 1700 50  0001 C CNN
+	1    1750 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1900 1700 2000 1700
+Wire Wire Line
+	2000 1800 2000 2100
+NoConn ~ 2600 1850
+NoConn ~ 2600 1750
+Text Label 1700 1500 3    50   ~ 0
+GND
+Wire Wire Line
+	2000 1500 1700 1500
+Text Label 2300 600  0    50   ~ 0
++300V
+$Comp
+L Device:R R-YAMP&HVR-4
+U 1 1 6421F0E0
+P 2300 850
+F 0 "R-YAMP&HVR-4" H 2200 800 50  0000 R CNN
+F 1 "47K" H 2200 850 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2230 850 50  0001 C CNN
+F 3 "~" H 2300 850 50  0001 C CNN
+	1    2300 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 700  2300 600 
+$Comp
+L Connector:Conn_01x01_Female J-YAMP&HVR-?
+U 1 1 6081EE69
+P 1000 4900
+AR Path="/5F88E8BA/6081EE69" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/6081EE69" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FFFB333/6081EE69" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FEEBA24/6081EE69" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F9BDCBE/6081EE69" Ref="J-YAMP&HVR-5"  Part="1" 
+AR Path="/62085011/6081EE69" Ref="J-YAMP&HVR-5"  Part="1" 
+F 0 "J-YAMP&HVR-5" H 850 4650 50  0000 C CNN
+F 1 "Hs" H 850 4750 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 1000 4900 50  0001 C CNN
+F 3 "~" H 1000 4900 50  0001 C CNN
+	1    1000 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 2200 3950 2100
+$Comp
+L Device:R R-YAMP&HVR-29
+U 1 1 6421F0E7
+P 3950 1950
+F 0 "R-YAMP&HVR-29" H 3100 1950 50  0000 L CNN
+F 1 "470k" H 3750 1900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3880 1950 50  0001 C CNN
+F 3 "~" H 3950 1950 50  0001 C CNN
+	1    3950 1950
+	1    0    0    -1  
+$EndComp
+Text Label 3950 2200 2    50   ~ 0
+-150V
+Wire Wire Line
+	3950 1600 3950 1700
+$Comp
+L Device:R R-YAMP&HVR-28
+U 1 1 61DCDFB7
+P 3950 1450
+F 0 "R-YAMP&HVR-28" H 4050 1500 50  0000 L CNN
+F 1 "470K" H 4050 1450 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3880 1450 50  0001 C CNN
+F 3 "~" H 3950 1450 50  0001 C CNN
+	1    3950 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-YAMP&HVR-10
+U 1 1 61DCFD71
+P 3750 1450
+F 0 "C-YAMP&HVR-10" H 3900 1500 50  0000 L CNN
+F 1 "33pf" H 3900 1450 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3788 1300 50  0001 C CNN
+F 3 "~" H 3750 1450 50  0001 C CNN
+	1    3750 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1100 3750 1100
+Wire Wire Line
+	3750 1100 3750 1300
+Wire Wire Line
+	3950 1100 3950 1300
+Wire Wire Line
+	3750 1700 3950 1700
+Connection ~ 3950 1700
+Wire Wire Line
+	3950 1700 3950 1800
+Wire Wire Line
+	3750 1600 3750 1700
+Connection ~ 3750 1100
+$Comp
+L NEWValves:CV173 V-YAMP&HVR-7
+U 2 1 6421F0EA
+P 5050 7050
+F 0 "V-YAMP&HVR-7" H 5050 7625 50  0000 C CNN
+F 1 "CV173" H 5050 7525 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6050 7300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 5050 7050 50  0001 C CNN
+	2    5050 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 7400 4950 7450
+Wire Wire Line
+	5150 7400 5150 7700
+Wire Wire Line
+	4950 7450 4250 7450
+Connection ~ 4250 7450
+Wire Wire Line
+	4450 7700 5150 7700
+Connection ~ 4450 7700
+Wire Wire Line
+	1400 1700 1500 1700
+Connection ~ 1500 1700
+Wire Wire Line
+	1500 1700 1600 1700
+$Comp
+L NEWValves:CV1091 V-YAMP&HVR-6
+U 1 1 62445AE9
+P 4750 1650
+F 0 "V-YAMP&HVR-6" H 4800 1250 50  0000 C CNN
+F 1 "CV1091" H 4800 1150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5750 1900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 4750 1650 50  0001 C CNN
+	1    4750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-YAMP&HVR-9
+U 1 1 62445DD7
+P 4200 1700
+F 0 "R-YAMP&HVR-9" V 4050 1800 50  0000 C CNN
+F 1 "470" V 3950 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4130 1700 50  0001 C CNN
+F 3 "~" H 4200 1700 50  0001 C CNN
+	1    4200 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 1700 4450 1700
+Wire Wire Line
+	4050 1700 3950 1700
+Wire Wire Line
+	2300 1000 2300 1100
+Wire Wire Line
+	2300 1100 3750 1100
+Connection ~ 2300 1100
+Wire Wire Line
+	2300 1100 2300 1200
+Text Label 4750 600  0    50   ~ 0
++300V
+Wire Wire Line
+	4750 600  4750 1100
+Wire Wire Line
+	5100 1600 5100 1100
+Wire Wire Line
+	5100 1100 4750 1100
+Wire Wire Line
+	4750 1100 4450 1100
+Wire Wire Line
+	4450 1100 4450 1500
+Connection ~ 4750 1100
+Wire Wire Line
+	4450 1800 4450 2500
+Wire Wire Line
+	1500 1700 1500 2500
+Wire Wire Line
+	1500 2500 2350 2500
+$Comp
+L Device:R R-YAMP&HVR-6
+U 1 1 6278A154
+P 2500 2500
+F 0 "R-YAMP&HVR-6" V 2350 2600 50  0000 C CNN
+F 1 "4k7" V 2250 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2430 2500 50  0001 C CNN
+F 3 "~" H 2500 2500 50  0001 C CNN
+	1    2500 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 2500 2750 2500
+$Comp
+L Device:RTRIM R-YAMP&HVR-8
+U 1 1 627AAB18
+P 2900 2500
+F 0 "R-YAMP&HVR-8" V 3200 2500 50  0000 C CNN
+F 1 "20K" V 3100 2500 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 2830 2500 50  0001 C CNN
+F 3 "~" H 2900 2500 50  0001 C CNN
+	1    2900 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 2500 3050 2500
+Wire Wire Line
+	4450 3000 4450 2900
+$Comp
+L Device:R R-YAMP&HVR-11
+U 1 1 627CD694
+P 4450 2750
+F 0 "R-YAMP&HVR-11" H 3600 2750 50  0000 L CNN
+F 1 "15k 3W" H 4250 2700 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4380 2750 50  0001 C CNN
+F 3 "~" H 4450 2750 50  0001 C CNN
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+Text Label 4450 3000 2    50   ~ 0
+-150V
+Wire Wire Line
+	4450 2500 4450 2600
+Connection ~ 4450 2500
+NoConn ~ 5050 1850
+NoConn ~ 5050 1750
+Wire Wire Line
+	6750 1700 6650 1700
+NoConn ~ 7350 1750
+NoConn ~ 7350 1850
+$Comp
+L NEWValves:CV173 V-YAMP&HVR-7
+U 1 1 628356B4
+P 7050 1650
+F 0 "V-YAMP&HVR-7" H 7100 1250 50  0000 C CNN
+F 1 "CV173" H 7100 1150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 8050 1900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 7050 1650 50  0001 C CNN
+	1    7050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-YAMP&HVR-21
+U 1 1 628356BF
+P 6500 1700
+F 0 "R-YAMP&HVR-21" V 6250 1700 50  0000 C CNN
+F 1 "470 3W" V 6350 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6430 1700 50  0001 C CNN
+F 3 "~" H 6500 1700 50  0001 C CNN
+	1    6500 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-YAMP&HVR-?
+U 1 1 628356C9
+P 6750 700
+AR Path="/5F88E8BA/628356C9" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/628356C9" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FFFB333/628356C9" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FEEBA24/628356C9" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F9BDCBE/628356C9" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/62085011/628356C9" Ref="J-YAMP&HVR-3"  Part="1" 
+F 0 "J-YAMP&HVR-3" H 6800 600 50  0000 L CNN
+F 1 "Y1" H 6800 700 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 6750 700 50  0001 C CNN
+F 3 "~" H 6750 700 50  0001 C CNN
+	1    6750 700 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 1200 4750 1100
+Wire Wire Line
+	7050 600  7050 700 
+Wire Wire Line
+	7400 1600 7500 1600
+$Comp
+L Device:R R-YAMP&HVR-27
+U 1 1 628C964B
+P 7650 1600
+F 0 "R-YAMP&HVR-27" V 7900 1600 50  0000 C CNN
+F 1 "47" V 7800 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7580 1600 50  0001 C CNN
+F 3 "~" H 7650 1600 50  0001 C CNN
+	1    7650 1600
+	0    -1   -1   0   
+$EndComp
+Text Label 7050 600  0    50   ~ 0
++300V
+Wire Wire Line
+	7050 1100 7500 1100
+$Comp
+L Device:R R-YAMP&HVR-26
+U 1 1 62956CBD
+P 7650 1100
+F 0 "R-YAMP&HVR-26" V 7900 1100 50  0000 C CNN
+F 1 "1M" V 7800 1100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7580 1100 50  0001 C CNN
+F 3 "~" H 7650 1100 50  0001 C CNN
+	1    7650 1100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7050 1100
+Wire Wire Line
+	7050 1100 7050 1200
+Wire Wire Line
+	6350 1700 6250 1700
+Wire Wire Line
+	6250 1700 6250 1600
+Wire Wire Line
+	6750 1800 6750 2000
+Wire Wire Line
+	6950 700  7050 700 
+Text Label 6750 2000 2    50   ~ 0
+GND
+$Comp
+L Device:R R-YAMP&HVR-20
+U 1 1 62ABDF60
+P 6250 1950
+F 0 "R-YAMP&HVR-20" H 6150 2000 50  0000 R CNN
+F 1 "68K" H 6150 1950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6180 1950 50  0001 C CNN
+F 3 "~" H 6250 1950 50  0001 C CNN
+	1    6250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1800 6250 1700
+Connection ~ 6250 1700
+$Comp
+L Device:R_POT RV-YAMP&HVR-1
+U 1 1 62AE24F0
+P 6500 2750
+F 0 "RV-YAMP&HVR-1" H 6400 2700 50  0000 R CNN
+F 1 "100K" H 6400 2750 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6500 2750 50  0001 C CNN
+F 3 "~" H 6500 2750 50  0001 C CNN
+	1    6500 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6500 2900 6500 3000
+Wire Wire Line
+	6500 2600 6500 2500
+$Comp
+L Device:R R-YAMP&HVR-22
+U 1 1 62B29B79
+P 6500 2350
+F 0 "R-YAMP&HVR-22" H 6600 2400 50  0000 L CNN
+F 1 "22K" H 6600 2350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6430 2350 50  0001 C CNN
+F 3 "~" H 6500 2350 50  0001 C CNN
+	1    6500 2350
+	1    0    0    -1  
+$EndComp
+Text Label 6500 3000 2    50   ~ 0
+-150V
+Wire Wire Line
+	6500 2200 6500 2100
+Text Label 6500 2100 2    50   ~ 0
+GND
+Wire Wire Line
+	6250 2100 6250 2500
+Wire Wire Line
+	6250 2750 6350 2750
+Wire Wire Line
+	7800 1100 7900 1100
+Wire Wire Line
+	7800 1600 8000 1600
+Wire Wire Line
+	9050 1700 9150 1700
+NoConn ~ 8450 1750
+NoConn ~ 8450 1850
+$Comp
+L NEWValves:CV173 V-YAMP&HVR-8
+U 1 1 62C9C2BB
+P 8750 1650
+F 0 "V-YAMP&HVR-8" H 8800 1250 50  0000 C CNN
+F 1 "CV1091" H 8800 1150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9750 1900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 8750 1650 50  0001 C CNN
+	1    8750 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R-YAMP&HVR-33
+U 1 1 62C9C2C5
+P 9300 1700
+F 0 "R-YAMP&HVR-33" V 9050 1700 50  0000 C CNN
+F 1 "R" V 9150 1700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9230 1700 50  0001 C CNN
+F 3 "~" H 9300 1700 50  0001 C CNN
+	1    9300 1700
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-YAMP&HVR-?
+U 1 1 62C9C2CF
+P 9050 700
+AR Path="/5F88E8BA/62C9C2CF" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/62C9C2CF" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FFFB333/62C9C2CF" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FEEBA24/62C9C2CF" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F9BDCBE/62C9C2CF" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/62085011/62C9C2CF" Ref="J-YAMP&HVR-4"  Part="1" 
+F 0 "J-YAMP&HVR-4" H 9100 600 50  0000 L CNN
+F 1 "Y2" H 9100 700 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 9050 700 50  0001 C CNN
+F 3 "~" H 9050 700 50  0001 C CNN
+	1    9050 700 
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8750 600  8750 700 
+Wire Wire Line
+	8400 1600 8300 1600
+$Comp
+L Device:R R-YAMP&HVR-31
+U 1 1 62C9C2DB
+P 8150 1600
+F 0 "R-YAMP&HVR-31" V 8400 1600 50  0000 C CNN
+F 1 "47" V 8300 1600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8080 1600 50  0001 C CNN
+F 3 "~" H 8150 1600 50  0001 C CNN
+	1    8150 1600
+	0    1    -1   0   
+$EndComp
+Text Label 8750 600  2    50   ~ 0
++300V
+Wire Wire Line
+	8750 1100 8300 1100
+$Comp
+L Device:R R-YAMP&HVR-30
+U 1 1 62C9C2E7
+P 8150 1100
+F 0 "R-YAMP&HVR-30" V 8400 1100 50  0000 C CNN
+F 1 "1M" V 8300 1100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8080 1100 50  0001 C CNN
+F 3 "~" H 8150 1100 50  0001 C CNN
+	1    8150 1100
+	0    1    -1   0   
+$EndComp
+Connection ~ 8750 1100
+Wire Wire Line
+	8750 1100 8750 1200
+Wire Wire Line
+	9450 1700 9550 1700
+Wire Wire Line
+	9050 1800 9050 2000
+Wire Wire Line
+	8850 700  8750 700 
+Text Label 9050 2000 0    50   ~ 0
+GND
+$Comp
+L Device:R R-YAMP&HVR-36
+U 1 1 62C9C2FB
+P 9550 1950
+F 0 "R-YAMP&HVR-36" H 9450 2000 50  0000 R CNN
+F 1 "330K" H 9450 1950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9480 1950 50  0001 C CNN
+F 3 "~" H 9550 1950 50  0001 C CNN
+	1    9550 1950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 1800 9550 1700
+Connection ~ 9550 1700
+$Comp
+L Device:R_POT RV-YAMP&HVR-2
+U 1 1 62C9C307
+P 9300 2750
+F 0 "RV-YAMP&HVR-2" H 9200 2700 50  0000 R CNN
+F 1 "100K" H 9200 2750 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9300 2750 50  0001 C CNN
+F 3 "~" H 9300 2750 50  0001 C CNN
+	1    9300 2750
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9300 2900 9300 3000
+Wire Wire Line
+	9300 2600 9300 2500
+$Comp
+L Device:R R-YAMP&HVR-34
+U 1 1 62C9C313
+P 9300 2350
+F 0 "R-YAMP&HVR-34" H 9400 2400 50  0000 L CNN
+F 1 "22K" H 9400 2350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9230 2350 50  0001 C CNN
+F 3 "~" H 9300 2350 50  0001 C CNN
+	1    9300 2350
+	-1   0    0    -1  
+$EndComp
+Text Label 9300 3000 0    50   ~ 0
+-150V
+Wire Wire Line
+	9300 2200 9300 2100
+Text Label 9300 2100 0    50   ~ 0
+GND
+Wire Wire Line
+	9550 2100 9550 2750
+Wire Wire Line
+	9550 2750 9450 2750
+Connection ~ 8750 700 
+Wire Wire Line
+	8750 700  8750 1100
+Connection ~ 7050 700 
+Wire Wire Line
+	7050 700  7050 1100
+Wire Wire Line
+	9550 1000 7900 1000
+Wire Wire Line
+	7900 1000 7900 1100
+Wire Wire Line
+	9550 1000 9550 1700
+Connection ~ 7900 1100
+Wire Wire Line
+	7900 1100 8000 1100
+$Comp
+L Device:R R-YAMP&HVR-18
+U 1 1 62DC7A79
+P 6100 1350
+F 0 "R-YAMP&HVR-18" H 6450 1700 50  0000 R CNN
+F 1 "330K" H 6200 1650 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6030 1350 50  0001 C CNN
+F 3 "~" H 6100 1350 50  0001 C CNN
+	1    6100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-YAMP&HVR-17
+U 1 1 62DF10CD
+P 5950 1350
+F 0 "R-YAMP&HVR-17" H 5850 1400 50  0000 R CNN
+F 1 "220K" H 5850 1350 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5880 1350 50  0001 C CNN
+F 3 "~" H 5950 1350 50  0001 C CNN
+	1    5950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1100 6100 1100
+Wire Wire Line
+	5950 1100 5950 1200
+Wire Wire Line
+	6250 1600 6100 1600
+Wire Wire Line
+	5950 1600 5950 1500
+Wire Wire Line
+	6100 1500 6100 1600
+Connection ~ 6100 1600
+Wire Wire Line
+	6100 1600 5950 1600
+Wire Wire Line
+	6100 1200 6100 1100
+Connection ~ 6100 1100
+Wire Wire Line
+	6100 1100 6250 1100
+$Comp
+L Device:R R-YAMP&HVR-19
+U 1 1 62EEE970
+P 6250 1350
+F 0 "R-YAMP&HVR-19" H 6350 1400 50  0000 L CNN
+F 1 "1M" H 6350 1350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6180 1350 50  0001 C CNN
+F 3 "~" H 6250 1350 50  0001 C CNN
+	1    6250 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1500 6250 1600
+Wire Wire Line
+	6250 1200 6250 1100
+Connection ~ 6250 1100
+Wire Wire Line
+	6250 1100 7050 1100
+Connection ~ 6250 1600
+$Comp
+L Device:R R-YAMP&HVR-14
+U 1 1 62F73E42
+P 5150 2500
+F 0 "R-YAMP&HVR-14" V 5000 2600 50  0000 C CNN
+F 1 "47l*" V 4900 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5080 2500 50  0001 C CNN
+F 3 "~" H 5150 2500 50  0001 C CNN
+	1    5150 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 2500 5400 2500
+$Comp
+L Device:RTRIM R-YAMP&HVR-15
+U 1 1 62F74275
+P 5550 2500
+F 0 "R-YAMP&HVR-15" V 5850 2500 50  0000 C CNN
+F 1 "100K" V 5750 2500 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 5480 2500 50  0001 C CNN
+F 3 "~" H 5550 2500 50  0001 C CNN
+	1    5550 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 2500 5000 2500
+Wire Wire Line
+	5700 2500 6250 2500
+Connection ~ 6250 2500
+Wire Wire Line
+	6250 2500 6250 2750
+$Comp
+L NEWValves:EA50 D-YAMP&HVR-?
+U 1 1 630043E7
+P 3550 4600
+AR Path="/5F868E46/630043E7" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/630043E7" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5FFFB333/630043E7" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5FEEBA24/630043E7" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5F9BDCBE/630043E7" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/62085011/630043E7" Ref="D-YAMP&HVR-5"  Part="1" 
+F 0 "D-YAMP&HVR-5" H 3800 4550 50  0000 L CNN
+F 1 "EA50" H 3800 4450 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 4150 4400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3550 4600 50  0001 C CNN
+	1    3550 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4350 3550 4250
+$Comp
+L Device:R R-YAMP&HVR-7
+U 1 1 630043FF
+P 2600 4500
+F 0 "R-YAMP&HVR-7" H 2700 4450 50  0000 L CNN
+F 1 "1M" H 2700 4500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2530 4500 50  0001 C CNN
+F 3 "~" H 2600 4500 50  0001 C CNN
+	1    2600 4500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2100 5400 2100 5300
+Text Label 2100 5400 2    50   ~ 0
+-150V
+Wire Wire Line
+	2600 4250 2600 4350
+Wire Wire Line
+	2100 4250 2200 4250
+NoConn ~ 1500 4300
+NoConn ~ 1500 4400
+$Comp
+L NEWValves:VR91 V-YAMP&HVR-1
+U 1 1 6300440F
+P 1800 4200
+F 0 "V-YAMP&HVR-1" H 1850 3800 50  0000 C CNN
+F 1 "VR91" H 1850 3700 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2800 4450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1800 4200 50  0001 C CNN
+	1    1800 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4050 2200 4050
+$Comp
+L Device:R R-YAMP&HVR-5
+U 1 1 6300441A
+P 2350 4250
+F 0 "R-YAMP&HVR-5" V 2100 4250 50  0000 C CNN
+F 1 "470 3W" V 2200 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2280 4250 50  0001 C CNN
+F 3 "~" H 2350 4250 50  0001 C CNN
+	1    2350 4250
+	0    -1   1    0   
+$EndComp
+Text Label 1800 3500 2    50   ~ 0
++200V
+Wire Wire Line
+	2200 4050 2200 3650
+Wire Wire Line
+	2200 3650 1800 3650
+Connection ~ 1800 3650
+Wire Wire Line
+	1800 3650 1800 3750
+Wire Wire Line
+	1450 4150 1350 4150
+Wire Wire Line
+	1350 4150 1350 3650
+Wire Wire Line
+	1350 3650 1800 3650
+Wire Wire Line
+	1800 3500 1800 3650
+Wire Wire Line
+	2100 4900 2100 4350
+Wire Wire Line
+	2500 4250 2600 4250
+Connection ~ 2600 4250
+Wire Wire Line
+	1200 4900 2100 4900
+Wire Wire Line
+	2100 4900 2100 5000
+Connection ~ 2100 4900
+$Comp
+L Device:R R-YAMP&HVR-3
+U 1 1 631EEBF0
+P 2100 5150
+F 0 "R-YAMP&HVR-3" H 2000 5100 50  0000 R CNN
+F 1 "15k 2W" H 2000 5150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2030 5150 50  0001 C CNN
+F 3 "~" H 2100 5150 50  0001 C CNN
+	1    2100 5150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2600 4650 2600 4750
+Text Label 2600 4750 2    50   ~ 0
+GND
+Wire Wire Line
+	2600 4250 3550 4250
+Wire Wire Line
+	3550 5100 3550 5200
+Text Label 3550 5200 2    50   ~ 0
+GND
+$Comp
+L Device:C C-YAMP&HVR-1
+U 1 1 6335D4C5
+P 3800 4250
+F 0 "C-YAMP&HVR-1" V 4000 3950 50  0000 C CNN
+F 1 "0.01" V 3900 4100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3838 4100 50  0001 C CNN
+F 3 "~" H 3800 4250 50  0001 C CNN
+	1    3800 4250
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3650 4250 3550 4250
+Connection ~ 3550 4250
+Wire Wire Line
+	4600 4250 4500 4250
+$Comp
+L Device:R R-YAMP&HVR-12
+U 1 1 63395A1F
+P 4750 4250
+F 0 "R-YAMP&HVR-12" V 4850 4250 50  0000 C CNN
+F 1 "360K" V 4950 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4680 4250 50  0001 C CNN
+F 3 "~" H 4750 4250 50  0001 C CNN
+	1    4750 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C-YAMP&HVR-3
+U 1 1 63395A29
+P 4750 4050
+F 0 "C-YAMP&HVR-3" V 5050 4050 50  0000 C CNN
+F 1 "100pf" V 4950 4050 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4788 3900 50  0001 C CNN
+F 3 "~" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5100 4250 5100 4050
+Wire Wire Line
+	5100 4050 4900 4050
+Wire Wire Line
+	5100 4250 4900 4250
+Wire Wire Line
+	4500 4050 4500 4250
+Wire Wire Line
+	4600 4050 4500 4050
+$Comp
+L NEWValves:6SN7GT V-YAMP&HVR-2
+U 1 1 634A20AE
+P 4600 4450
+F 0 "V-YAMP&HVR-2" H 4850 3750 50  0000 C CNN
+F 1 "6SN7GT" H 4850 3650 50  0000 C CNN
+F 2 "Valve:Valve_Octal" H 6225 4075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/6sn7gt-1.pdf" H 2975 4325 50  0001 C CNN
+	1    4600 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4250 4400 4250
+Wire Wire Line
+	4400 4250 4400 4350
+Connection ~ 4400 4250
+Wire Wire Line
+	4400 4250 4500 4250
+Connection ~ 4500 4250
+Wire Wire Line
+	4700 4850 4700 4950
+Text Label 4700 4950 0    50   ~ 0
+GND
+Wire Wire Line
+	4700 4650 5100 4650
+Wire Wire Line
+	5100 5150 5100 5050
+Text Label 5100 5150 2    50   ~ 0
+-150V
+Wire Wire Line
+	5100 4650 5100 4750
+$Comp
+L Device:R R-YAMP&HVR-13
+U 1 1 63621AE4
+P 5100 4900
+F 0 "R-YAMP&HVR-13" H 5200 4850 50  0000 L CNN
+F 1 "560k" H 5200 4900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5030 4900 50  0001 C CNN
+F 3 "~" H 5100 4900 50  0001 C CNN
+	1    5100 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R-YAMP&HVR-10
+U 1 1 6365D5B3
+P 4400 4000
+F 0 "R-YAMP&HVR-10" H 4300 3950 50  0000 R CNN
+F 1 "18k" H 4300 4000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4330 4000 50  0001 C CNN
+F 3 "~" H 4400 4000 50  0001 C CNN
+	1    4400 4000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4400 4250 4400 4150
+Wire Wire Line
+	4400 3850 4400 3700
+$Comp
+L Connector:Conn_01x01_Female J-YAMP&HVR-?
+U 1 1 636CE18F
+P 10700 4900
+AR Path="/5F88E8BA/636CE18F" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/636CE18F" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FFFB333/636CE18F" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FEEBA24/636CE18F" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F9BDCBE/636CE18F" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/62085011/636CE18F" Ref="J-YAMP&HVR-6"  Part="1" 
+F 0 "J-YAMP&HVR-6" H 10600 4650 50  0000 C CNN
+F 1 "Ha" H 10600 4750 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 10700 4900 50  0001 C CNN
+F 3 "~" H 10700 4900 50  0001 C CNN
+	1    10700 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L NEWValves:EA50 D-YAMP&HVR-?
+U 1 1 636CE8EF
+P 8150 4600
+AR Path="/5F868E46/636CE8EF" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/636CE8EF" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5FFFB333/636CE8EF" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5FEEBA24/636CE8EF" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/5F9BDCBE/636CE8EF" Ref="D-YAMP&HVR-?"  Part="1" 
+AR Path="/62085011/636CE8EF" Ref="D-YAMP&HVR-6"  Part="1" 
+F 0 "D-YAMP&HVR-6" H 8400 4550 50  0000 L CNN
+F 1 "EA50" H 8400 4450 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 8750 4400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8150 4600 50  0001 C CNN
+	1    8150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4350 8150 4250
+$Comp
+L Device:R R-YAMP&HVR-32
+U 1 1 636CE8FA
+P 9100 4500
+F 0 "R-YAMP&HVR-32" H 9200 4450 50  0000 L CNN
+F 1 "1M" H 9200 4500 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9030 4500 50  0001 C CNN
+F 3 "~" H 9100 4500 50  0001 C CNN
+	1    9100 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9600 5400 9600 5300
+Text Label 9600 5400 0    50   ~ 0
+-150V
+Wire Wire Line
+	9100 4250 9100 4350
+Wire Wire Line
+	9600 4250 9500 4250
+NoConn ~ 10200 4300
+NoConn ~ 10200 4400
+$Comp
+L NEWValves:VR91 V-YAMP&HVR-4
+U 1 1 636CE90A
+P 9900 4200
+F 0 "V-YAMP&HVR-4" H 9950 3800 50  0000 C CNN
+F 1 "VR91" H 9950 3700 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 10900 4450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 9900 4200 50  0001 C CNN
+	1    9900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4050 9500 4050
+$Comp
+L Device:R R-YAMP&HVR-35
+U 1 1 636CE915
+P 9350 4250
+F 0 "R-YAMP&HVR-35" V 9100 4250 50  0000 C CNN
+F 1 "470 3W" V 9200 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9280 4250 50  0001 C CNN
+F 3 "~" H 9350 4250 50  0001 C CNN
+	1    9350 4250
+	0    1    1    0   
+$EndComp
+Text Label 9900 3500 0    50   ~ 0
++200V
+Wire Wire Line
+	9500 4050 9500 3650
+Wire Wire Line
+	9500 3650 9900 3650
+Connection ~ 9900 3650
+Wire Wire Line
+	9900 3650 9900 3750
+Wire Wire Line
+	10250 4150 10350 4150
+Wire Wire Line
+	10350 4150 10350 3650
+Wire Wire Line
+	10350 3650 9900 3650
+Wire Wire Line
+	9900 3500 9900 3650
+Wire Wire Line
+	9600 4900 9600 4350
+Wire Wire Line
+	9200 4250 9100 4250
+Connection ~ 9100 4250
+Wire Wire Line
+	10500 4900 9600 4900
+Wire Wire Line
+	9600 4900 9600 5000
+Connection ~ 9600 4900
+$Comp
+L Device:R R-YAMP&HVR-37
+U 1 1 636CE92E
+P 9600 5150
+F 0 "R-YAMP&HVR-37" H 9500 5100 50  0000 R CNN
+F 1 "15k 2W" H 9500 5150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9530 5150 50  0001 C CNN
+F 3 "~" H 9600 5150 50  0001 C CNN
+	1    9600 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 4650 9100 4750
+Text Label 9100 4750 0    50   ~ 0
+GND
+Wire Wire Line
+	9100 4250 8150 4250
+Wire Wire Line
+	8150 5100 8150 5200
+Text Label 8150 5200 0    50   ~ 0
+GND
+$Comp
+L Device:C C-YAMP&HVR-9
+U 1 1 636CE93D
+P 7900 4250
+F 0 "C-YAMP&HVR-9" V 8100 3950 50  0000 C CNN
+F 1 "0.01" V 8000 4100 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7938 4100 50  0001 C CNN
+F 3 "~" H 7900 4250 50  0001 C CNN
+	1    7900 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8050 4250 8150 4250
+Connection ~ 8150 4250
+Wire Wire Line
+	7100 4250 7200 4250
+$Comp
+L Device:R R-YAMP&HVR-24
+U 1 1 636CE94A
+P 6950 4250
+F 0 "R-YAMP&HVR-24" V 7050 4250 50  0000 C CNN
+F 1 "360K" V 7150 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6880 4250 50  0001 C CNN
+F 3 "~" H 6950 4250 50  0001 C CNN
+	1    6950 4250
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C C-YAMP&HVR-6
+U 1 1 636CE954
+P 6950 4050
+F 0 "C-YAMP&HVR-6" V 7250 4050 50  0000 C CNN
+F 1 "100pf" V 7150 4050 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6988 3900 50  0001 C CNN
+F 3 "~" H 6950 4050 50  0001 C CNN
+	1    6950 4050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6600 4250 6600 4050
+Wire Wire Line
+	6600 4050 6800 4050
+Wire Wire Line
+	6600 4250 6800 4250
+Wire Wire Line
+	7200 4050 7200 4250
+Wire Wire Line
+	7100 4050 7200 4050
+$Comp
+L NEWValves:6SN7GT V-YAMP&HVR-2
+U 2 1 636CE963
+P 7800 4450
+F 0 "V-YAMP&HVR-2" H 8200 3750 50  0000 C CNN
+F 1 "6SN7GT" H 8200 3650 50  0000 C CNN
+F 2 "Valve:Valve_Octal" H 9425 4075 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/6sn7gt-1.pdf" H 6175 4325 50  0001 C CNN
+	2    7800 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4250 7300 4250
+Wire Wire Line
+	7300 4250 7300 4350
+Connection ~ 7300 4250
+Wire Wire Line
+	7300 4250 7200 4250
+Connection ~ 7200 4250
+Wire Wire Line
+	7000 4850 7000 4950
+Text Label 7000 4950 2    50   ~ 0
+GND
+Wire Wire Line
+	7000 4650 6600 4650
+Wire Wire Line
+	6600 5150 6600 5050
+Text Label 6600 5150 0    50   ~ 0
+-150V
+Wire Wire Line
+	6600 4650 6600 4750
+$Comp
+L Device:R R-YAMP&HVR-23
+U 1 1 636CE978
+P 6600 4900
+F 0 "R-YAMP&HVR-23" H 6700 4850 50  0000 L CNN
+F 1 "560k" H 6700 4900 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6530 4900 50  0001 C CNN
+F 3 "~" H 6600 4900 50  0001 C CNN
+	1    6600 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R-YAMP&HVR-25
+U 1 1 636CE982
+P 7300 4000
+F 0 "R-YAMP&HVR-25" H 7200 3950 50  0000 R CNN
+F 1 "18k" H 7200 4000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7230 4000 50  0001 C CNN
+F 3 "~" H 7300 4000 50  0001 C CNN
+	1    7300 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 4250 7300 4150
+Wire Wire Line
+	7300 3850 7300 3700
+Wire Wire Line
+	4400 3700 5850 3700
+$Comp
+L Device:R R-YAMP&HVR-16
+U 1 1 637DB304
+P 5850 3450
+F 0 "R-YAMP&HVR-16" H 5750 3400 50  0000 R CNN
+F 1 "4k7 1W" H 5750 3450 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5780 3450 50  0001 C CNN
+F 3 "~" H 5850 3450 50  0001 C CNN
+	1    5850 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 3700 5850 3600
+Wire Wire Line
+	5850 3300 5850 3200
+Connection ~ 5850 3700
+Wire Wire Line
+	5850 3700 7300 3700
+Text Label 5850 3200 0    50   ~ 0
++200V
+Wire Wire Line
+	5100 4250 6600 4650
+Connection ~ 5100 4250
+Connection ~ 6600 4650
+Wire Wire Line
+	6600 4250 5100 4650
+Connection ~ 5100 4650
+$Comp
+L Device:C C-YAMP&HVR-2
+U 1 1 638E565F
+P 4050 3700
+F 0 "C-YAMP&HVR-2" V 4350 3700 50  0000 C CNN
+F 1 "75pf" V 4250 3700 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4088 3550 50  0001 C CNN
+F 3 "~" H 4050 3700 50  0001 C CNN
+	1    4050 3700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4400 3700 4200 3700
+Connection ~ 4400 3700
+Connection ~ 6600 4250
+Wire Wire Line
+	3900 3700 3800 3700
+$Comp
+L Connector:Conn_01x01_Female J-YAMP&HVR-?
+U 1 1 639AA8DE
+P 3600 3700
+AR Path="/5F88E8BA/639AA8DE" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F89590E/639AA8DE" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FFFB333/639AA8DE" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5FEEBA24/639AA8DE" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/5F9BDCBE/639AA8DE" Ref="J-YAMP&HVR-?"  Part="1" 
+AR Path="/62085011/639AA8DE" Ref="J-YAMP&HVR-2"  Part="1" 
+F 0 "J-YAMP&HVR-2" H 3650 3600 50  0000 L CNN
+F 1 "BO.CF" H 3650 3700 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 3600 3700 50  0001 C CNN
+F 3 "~" H 3600 3700 50  0001 C CNN
+	1    3600 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 7350 1200 7450
+Connection ~ 1200 7450
+Wire Wire Line
+	1700 7350 1700 7700
+Connection ~ 5550 6100
+Wire Wire Line
+	5400 6350 5750 6350
+Connection ~ 5750 6350
+Wire Wire Line
+	1200 7450 2150 7450
+Wire Wire Line
+	1700 7700 2350 7700
+Connection ~ 1700 7700
+Wire Wire Line
+	1050 7700 1700 7700
+Wire Wire Line
+	1050 7450 1200 7450
+$Comp
+L NEWValves:CV173 V-YAMP&HVR-8
+U 2 1 63F98384
+P 5750 7050
+F 0 "V-YAMP&HVR-8" H 5750 7625 50  0000 C CNN
+F 1 "CV1091" H 5750 7525 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 6750 7300 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 5750 7050 50  0001 C CNN
+	2    5750 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 7400 5650 7450
+Wire Wire Line
+	5850 7400 5850 7700
+Wire Wire Line
+	5650 7450 4950 7450
+Wire Wire Line
+	5150 7700 5850 7700
+Connection ~ 4950 7450
+Connection ~ 5150 7700
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 64210119
+P 10750 3100
+AR Path="/5F868E46/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/5F88E8BA/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/6077FCA5/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/5F89590E/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/5FEEBA24/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/5F9BDCBE/64210119" Ref="#FLG?"  Part="1" 
+AR Path="/62085011/64210119" Ref="#FLG0192"  Part="1" 
+F 0 "#FLG0192" H 10750 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 10775 3300 50  0000 C CNN
+F 2 "" H 10750 3100 50  0001 C CNN
+F 3 "~" H 10750 3100 50  0001 C CNN
+	1    10750 3100
+	-1   0    0    1   
+$EndComp
+Text Label 10800 2650 0    50   ~ 0
+-150V
+Wire Wire Line
+	10700 3050 10750 3050
+Text Label 10800 3050 0    50   ~ 0
+Heater-6.3V
+Connection ~ 10750 3050
+Wire Wire Line
+	10750 3050 10800 3050
+Wire Wire Line
+	10750 3100 10750 3050
+Text Label 10800 2550 0    50   ~ 0
++200V
+NoConn ~ 10700 2850
+NoConn ~ 10700 2950
+Wire Wire Line
+	10800 2550 10700 2550
+Text Label 10800 2750 0    50   ~ 0
+GND
+Wire Wire Line
+	10800 2750 10700 2750
+Wire Wire Line
+	10800 2650 10700 2650
+NoConn ~ 10200 2850
+NoConn ~ 10200 2950
+Text Label 10100 3050 2    50   ~ 0
+Heater-GND
+Wire Wire Line
+	10200 2750 10100 2750
+Wire Wire Line
+	10200 2650 10100 2650
+Wire Wire Line
+	10200 2550 10100 2550
+Wire Wire Line
+	10150 3050 10100 3050
+Connection ~ 10150 3050
+Wire Wire Line
+	10150 3100 10150 3050
+Wire Wire Line
+	10200 3050 10150 3050
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 64210136
+P 10150 3100
+AR Path="/5F868E46/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/5F88E8BA/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/6077FCA5/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/5F89590E/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/5FEEBA24/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/5F9BDCBE/64210136" Ref="#FLG?"  Part="1" 
+AR Path="/62085011/64210136" Ref="#FLG0193"  Part="1" 
+F 0 "#FLG0193" H 10150 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 10175 3300 50  0000 C CNN
+F 2 "" H 10150 3100 50  0001 C CNN
+F 3 "~" H 10150 3100 50  0001 C CNN
+	1    10150 3100
+	-1   0    0    1   
+$EndComp
+Text Label 10100 2750 2    50   ~ 0
+GND
+Text Label 10100 2650 2    50   ~ 0
++50V
+Text Label 10100 2550 2    50   ~ 0
++300V
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-STOP-?
+U 1 1 6421013F
+P 10400 2750
+AR Path="/5F868E46/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F2DDAEA/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/60BC2C2A/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89117E/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F88E8BA/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/6077FCA5/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89590E/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/5FEEBA24/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F9BDCBE/6421013F" Ref="J-STOP-?"  Part="1" 
+AR Path="/62085011/6421013F" Ref="J-STOP-10"  Part="1" 
+F 0 "J-STOP-10" H 10450 3200 50  0000 C CNN
+F 1 "HIGH Voltage." H 10450 3100 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 10400 2750 50  0001 C CNN
+F 3 "~" H 10400 2750 50  0001 C CNN
+	1    10400 2750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 42
+Sheet 1 45
 Title "Control Adder Position 6.4"
 Date "2020-10-08"
 Rev "Alpha"
@@ -258,5 +258,23 @@ S 7000 4000 750  500
 U 642F1647
 F0 "TRANSFER" 50
 F1 "TRANSFER.sch" 50
+$EndSheet
+$Sheet
+S 7000 4750 800  500 
+U 5F8FF235
+F0 "TYPEWR" 50
+F1 "TYPEWR.sch" 50
+$EndSheet
+$Sheet
+S 7000 5500 800  500 
+U 5F9BDCBE
+F0 "WRERCCTS" 50
+F1 "WRERCCTS.sch" 50
+$EndSheet
+$Sheet
+S 8500 1000 750  500 
+U 62085011
+F0 "YAMP&HVR" 50
+F1 "YAMP&HVR.sch" 50
 $EndSheet
 $EndSCHEMATC
