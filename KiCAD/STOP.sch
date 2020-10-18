@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 38 39
+Sheet 38 42
 Title "Stabilised 200V PSU 1.6"
 Date "2020-10-15"
 Rev "Alpha"

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 23 39
+Sheet 23 42
 Title "Key Switches 2 Position 4.7"
 Date "2020-10-08"
 Rev "Alpha"

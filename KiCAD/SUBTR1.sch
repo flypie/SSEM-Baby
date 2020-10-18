@@ -1,0 +1,2310 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 40 42
+Title "Subtractor Position 6.7"
+Date "2020-10-17"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-SUBTR1-1
+U 2 1 5FFCCC3B
+P 1300 10450
+F 0 "V-SUBTR1-1" H 1300 11025 50  0000 C CNN
+F 1 "VR91" H 1300 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2300 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1300 10450 50  0001 C CNN
+	2    1300 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 10850 1200 10850
+Wire Wire Line
+	1200 10800 1200 10850
+Wire Wire Line
+	1400 10800 1400 11100
+Text Label 1050 10850 2    50   ~ 0
+Heater-6.3V
+Text Label 1050 11100 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:C C-SUBTR1-7
+U 1 1 5F8CD192
+P 10250 10550
+F 0 "C-SUBTR1-7" H 10125 10475 50  0000 R CNN
+F 1 "0.5" H 10125 10575 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10288 10400 50  0001 C CNN
+F 3 "~" H 10250 10550 50  0001 C CNN
+	1    10250 10550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-SUBTR1-4
+U 1 1 5FFCCC34
+P 8750 10550
+F 0 "C-SUBTR1-4" H 8900 10625 50  0000 L CNN
+F 1 "0.5" H 8900 10550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8788 10400 50  0001 C CNN
+F 3 "~" H 8750 10550 50  0001 C CNN
+	1    8750 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SUBTR1-5
+U 1 1 5F8CD1A0
+P 9500 10550
+F 0 "C-SUBTR1-5" H 9625 10625 50  0000 L CNN
+F 1 "0.5" H 9625 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9538 10400 50  0001 C CNN
+F 3 "~" H 9500 10550 50  0001 C CNN
+	1    9500 10550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 10700 8750 10800
+Text Label 8750 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	9500 10700 9500 10800
+Text Label 9500 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	10250 10700 10250 10800
+Text Label 10250 10800 3    50   ~ 0
+GND
+Text Label 8750 10400 1    50   ~ 0
++300V
+Text Label 9500 10400 1    50   ~ 0
++200V
+Text Label 11000 10400 1    50   ~ 0
++50V
+Text Label 10250 10400 1    50   ~ 0
+-150V
+$Comp
+L Device:C C-SUBTR1-8
+U 1 1 5F8CD193
+P 11000 10550
+F 0 "C-SUBTR1-8" H 11125 10625 50  0000 L CNN
+F 1 "0.5" H 11125 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11038 10400 50  0001 C CNN
+F 3 "~" H 11000 10550 50  0001 C CNN
+	1    11000 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SUBTR1-2
+U 2 1 5F8CD1A1
+P 1950 10450
+F 0 "V-SUBTR1-2" H 1950 11025 50  0000 C CNN
+F 1 "CV173" H 1950 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2950 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 1950 10450 50  0001 C CNN
+	2    1950 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 10800 1850 10850
+Wire Wire Line
+	2050 10800 2050 11100
+Wire Wire Line
+	1200 10850 1850 10850
+Connection ~ 1200 10850
+Wire Wire Line
+	1050 11100 1400 11100
+Connection ~ 1400 11100
+$Comp
+L NEWValves:VR91 V-SUBTR1-3
+U 2 1 5FE20AD4
+P 2600 10450
+F 0 "V-SUBTR1-3" H 2600 11025 50  0000 C CNN
+F 1 "VR91" H 2600 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3600 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2600 10450 50  0001 C CNN
+	2    2600 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 10800 2500 10850
+Wire Wire Line
+	2700 10800 2700 11100
+$Comp
+L NEWValves:VR91 V-SUBTR1-4
+U 2 1 5F8CD18E
+P 3250 10450
+F 0 "V-SUBTR1-4" H 3250 11025 50  0000 C CNN
+F 1 "VR91" H 3250 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4250 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 3250 10450 50  0001 C CNN
+	2    3250 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 10800 3150 10850
+Wire Wire Line
+	3350 10800 3350 11100
+Wire Wire Line
+	2500 10850 3150 10850
+Connection ~ 2500 10850
+Connection ~ 2700 11100
+Wire Wire Line
+	2700 11100 3350 11100
+Wire Wire Line
+	1850 10850 2500 10850
+Connection ~ 1850 10850
+Wire Wire Line
+	1400 11100 2050 11100
+Connection ~ 2050 11100
+Wire Wire Line
+	2050 11100 2700 11100
+Connection ~ 3350 9800
+Connection ~ 3150 9550
+Wire Wire Line
+	3350 9800 4000 9800
+Wire Wire Line
+	3150 9550 3800 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5F8CD191
+P 3900 9050
+AR Path="/5F868E46/5F8CD191" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F8CD191" Ref="D-SCFOLLWS-7"  Part="2" 
+AR Path="/5FFFB333/5F8CD191" Ref="D-SUBTR1-5"  Part="2" 
+AR Path="/5FEEBA24/5F8CD191" Ref="D-SUBTR1-5"  Part="2" 
+F 0 "D-SUBTR1-5" H 3900 9350 50  0000 C CNN
+F 1 "EA50" H 3900 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4500 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3900 9050 50  0001 C CNN
+	2    3900 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 9500 4000 9800
+Wire Wire Line
+	3800 9500 3800 9550
+Connection ~ 2700 9800
+Connection ~ 2500 9550
+Wire Wire Line
+	2700 9800 3350 9800
+Wire Wire Line
+	2500 9550 3150 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5F8CD190
+P 3250 9050
+AR Path="/5F868E46/5F8CD190" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F8CD190" Ref="D-SCFOLLWS-6"  Part="2" 
+AR Path="/5FFFB333/5F8CD190" Ref="D-SUBTR1-4"  Part="2" 
+AR Path="/5FEEBA24/5F8CD190" Ref="D-SUBTR1-4"  Part="2" 
+F 0 "D-SUBTR1-4" H 3250 9350 50  0000 C CNN
+F 1 "EA50" H 3250 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3850 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3250 9050 50  0001 C CNN
+	2    3250 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 9500 3350 9800
+Wire Wire Line
+	3150 9500 3150 9550
+Wire Wire Line
+	2050 9800 2700 9800
+Wire Wire Line
+	1850 9550 2500 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5F8CD18F
+P 2600 9050
+AR Path="/5F868E46/5F8CD18F" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F8CD18F" Ref="D-SCFOLLWS-5"  Part="2" 
+AR Path="/5FFFB333/5F8CD18F" Ref="D-SUBTR1-3"  Part="2" 
+AR Path="/5FEEBA24/5F8CD18F" Ref="D-SUBTR1-3"  Part="2" 
+F 0 "D-SUBTR1-3" H 2600 9350 50  0000 C CNN
+F 1 "EA50" H 2600 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3200 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2600 9050 50  0001 C CNN
+	2    2600 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 9500 2700 9800
+Wire Wire Line
+	2500 9500 2500 9550
+$Comp
+L NEWValves:EA50 D-SCFOLLWS-?
+U 2 1 5F9334CE
+P 1300 9050
+AR Path="/5F868E46/5F9334CE" Ref="D-SCFOLLWS-?"  Part="1" 
+AR Path="/5F89590E/5F9334CE" Ref="D-SUBTR1-1"  Part="2" 
+AR Path="/5FFFB333/5F9334CE" Ref="D-SUBTR1-1"  Part="2" 
+AR Path="/5FEEBA24/5F9334CE" Ref="D-SUBTR1-1"  Part="2" 
+F 0 "D-SUBTR1-1" H 1300 9350 50  0000 C CNN
+F 1 "EA50" H 1300 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1900 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1300 9050 50  0001 C CNN
+	2    1300 9050
+	1    0    0    -1  
+$EndComp
+Text Label 1050 9800 2    50   ~ 0
+Heater-GND
+Text Label 1050 9550 2    50   ~ 0
+Heater-6.3V
+Wire Wire Line
+	1400 9500 1400 9800
+Wire Wire Line
+	1200 9500 1200 9550
+Wire Wire Line
+	1050 9800 1400 9800
+Wire Wire Line
+	1050 9550 1200 9550
+Text Label 11000 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	11000 10800 11000 10700
+$Comp
+L Connector:Conn_01x01_Female J-SUBTR1-?
+U 1 1 6007891E
+P 1450 3200
+AR Path="/5F88E8BA/6007891E" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/6007891E" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/6007891E" Ref="J-SUBTR1-11"  Part="1" 
+AR Path="/5FEEBA24/6007891E" Ref="J-SUBTR1-11"  Part="1" 
+F 0 "J-SUBTR1-11" H 1500 3100 50  0000 L CNN
+F 1 "OTG.Sig" H 1500 3200 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1450 3200 50  0001 C CNN
+F 3 "~" H 1450 3200 50  0001 C CNN
+	1    1450 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-SUBTR1-?
+U 1 1 5F8CD19E
+P 1450 1750
+AR Path="/5F88E8BA/5F8CD19E" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5F8CD19E" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5F8CD19E" Ref="J-SUBTR1-10"  Part="1" 
+AR Path="/5FEEBA24/5F8CD19E" Ref="J-SUBTR1-10"  Part="1" 
+F 0 "J-SUBTR1-10" H 1500 1650 50  0000 L CNN
+F 1 "A.READ" H 1500 1750 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1450 1750 50  0001 C CNN
+F 3 "~" H 1450 1750 50  0001 C CNN
+	1    1450 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L NEWValves:CV173 V-SUBTR1-5
+U 2 1 5FDBE41C
+P 3900 10450
+F 0 "V-SUBTR1-5" H 3900 11025 50  0000 C CNN
+F 1 "CV173" H 3900 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4900 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3900 10450 50  0001 C CNN
+	2    3900 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 10800 3800 10850
+Wire Wire Line
+	4000 10800 4000 11100
+$Comp
+L NEWValves:VR91 V-SUBTR1-6
+U 2 1 5FDBE8C2
+P 4550 10450
+F 0 "V-SUBTR1-6" H 4550 11025 50  0000 C CNN
+F 1 "CV173" H 4550 10925 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5550 10700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4550 10450 50  0001 C CNN
+	2    4550 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 10800 4450 10850
+Wire Wire Line
+	4650 10800 4650 11100
+Wire Wire Line
+	3800 10850 4450 10850
+Connection ~ 3800 10850
+Connection ~ 4000 11100
+Wire Wire Line
+	4000 11100 4650 11100
+Wire Wire Line
+	3150 10850 3800 10850
+Wire Wire Line
+	3350 11100 4000 11100
+Connection ~ 3150 10850
+Connection ~ 3350 11100
+Connection ~ 5300 9800
+Connection ~ 5100 9550
+Wire Wire Line
+	5300 9800 5950 9800
+Wire Wire Line
+	5100 9550 5750 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5FE6039A
+P 5850 9050
+AR Path="/5F868E46/5FE6039A" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FE6039A" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5FE6039A" Ref="D-SUBTR1-8"  Part="2" 
+AR Path="/5FEEBA24/5FE6039A" Ref="D-SUBTR1-8"  Part="2" 
+F 0 "D-SUBTR1-8" H 5850 9350 50  0000 C CNN
+F 1 "EA50" H 5850 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6450 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5850 9050 50  0001 C CNN
+	2    5850 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 9500 5950 9800
+Wire Wire Line
+	5750 9500 5750 9550
+Connection ~ 4650 9800
+Connection ~ 4450 9550
+Wire Wire Line
+	4650 9800 5300 9800
+Wire Wire Line
+	4450 9550 5100 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5FE603AA
+P 5200 9050
+AR Path="/5F868E46/5FE603AA" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FE603AA" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5FE603AA" Ref="D-SUBTR1-7"  Part="2" 
+AR Path="/5FEEBA24/5FE603AA" Ref="D-SUBTR1-7"  Part="2" 
+F 0 "D-SUBTR1-7" H 5200 9350 50  0000 C CNN
+F 1 "EA50" H 5200 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5800 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5200 9050 50  0001 C CNN
+	2    5200 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 9500 5300 9800
+Wire Wire Line
+	5100 9500 5100 9550
+Wire Wire Line
+	4000 9800 4650 9800
+Wire Wire Line
+	3800 9550 4450 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5F8CD196
+P 4550 9050
+AR Path="/5F868E46/5F8CD196" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5F8CD196" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5F8CD196" Ref="D-SUBTR1-6"  Part="2" 
+AR Path="/5FEEBA24/5F8CD196" Ref="D-SUBTR1-6"  Part="2" 
+F 0 "D-SUBTR1-6" H 4550 9350 50  0000 C CNN
+F 1 "EA50" H 4550 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5150 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4550 9050 50  0001 C CNN
+	2    4550 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 9500 4650 9800
+Wire Wire Line
+	4450 9500 4450 9550
+Connection ~ 3800 9550
+Connection ~ 4000 9800
+Connection ~ 6600 9800
+Connection ~ 6400 9550
+Wire Wire Line
+	6600 9800 7250 9800
+Wire Wire Line
+	6400 9550 7050 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5F8CD197
+P 7150 9050
+AR Path="/5F868E46/5F8CD197" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5F8CD197" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5F8CD197" Ref="D-SUBTR1-10"  Part="2" 
+AR Path="/5FEEBA24/5F8CD197" Ref="D-SUBTR1-10"  Part="2" 
+F 0 "D-SUBTR1-10" H 7150 9350 50  0000 C CNN
+F 1 "EA50" H 7150 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7750 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7150 9050 50  0001 C CNN
+	2    7150 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 9500 7250 9800
+Wire Wire Line
+	7050 9500 7050 9550
+Wire Wire Line
+	5950 9800 6600 9800
+Wire Wire Line
+	5750 9550 6400 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5F8CD198
+P 6500 9050
+AR Path="/5F868E46/5F8CD198" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5F8CD198" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5F8CD198" Ref="D-SUBTR1-9"  Part="2" 
+AR Path="/5FEEBA24/5F8CD198" Ref="D-SUBTR1-9"  Part="2" 
+F 0 "D-SUBTR1-9" H 6500 9350 50  0000 C CNN
+F 1 "EA50" H 6500 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7100 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6500 9050 50  0001 C CNN
+	2    6500 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 9500 6600 9800
+Wire Wire Line
+	6400 9500 6400 9550
+Connection ~ 5750 9550
+Connection ~ 5950 9800
+Connection ~ 10500 9800
+Connection ~ 10300 9550
+Wire Wire Line
+	10500 9800 11150 9800
+Wire Wire Line
+	10300 9550 10950 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5FE8663C
+P 11050 9050
+AR Path="/5F868E46/5FE8663C" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FE8663C" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5FE8663C" Ref="D-SUBTR1-16"  Part="2" 
+AR Path="/5FEEBA24/5FE8663C" Ref="D-SUBTR1-16"  Part="2" 
+F 0 "D-SUBTR1-16" H 11050 9350 50  0000 C CNN
+F 1 "EA50" H 11050 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 11650 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11050 9050 50  0001 C CNN
+	2    11050 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11150 9500 11150 9800
+Wire Wire Line
+	10950 9500 10950 9550
+Wire Wire Line
+	9850 9800 10500 9800
+Wire Wire Line
+	9650 9550 10300 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5FE8664A
+P 10400 9050
+AR Path="/5F868E46/5FE8664A" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FE8664A" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5FE8664A" Ref="D-SUBTR1-15"  Part="2" 
+AR Path="/5FEEBA24/5FE8664A" Ref="D-SUBTR1-15"  Part="2" 
+F 0 "D-SUBTR1-15" H 10400 9350 50  0000 C CNN
+F 1 "EA50" H 10400 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 11000 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10400 9050 50  0001 C CNN
+	2    10400 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 9500 10500 9800
+Wire Wire Line
+	10300 9500 10300 9550
+Text Notes 9700 8150 0    50   ~ 0
+Circuit based on Dai's drawing of Accumulator Gate and Subtractor,\ndated 18/12/48, but split into separate gate and subtractor drawings\nas suggested by Alec's drawings of 20/8/48.\nNote: the valves are numbered 7..13 as in Dai's drawing. Valves 1 to 5 are\nshown in the Accumulator gate drawing.\nPuzzle here: Valve 10 is shown in Dai's diagram as being between valves 1\nand 2. This seems rather odd - it has also been moved to the gate drawing.\nMod: Suppressor of V9 to BO. Prevents spurious bits (during BO) from reaching\nthe Tube and corrupting valid bits. (6/5/97)
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5F8C31E3
+P 2350 1750
+AR Path="/5F868E46/5F8C31E3" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5F8C31E3" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5F8C31E3" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5F8C31E3" Ref="D-SUBTR1-1"  Part="1" 
+F 0 "D-SUBTR1-1" V 1950 1650 50  0000 C CNN
+F 1 "EA50" V 2050 1650 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2950 1550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2350 1750 50  0001 C CNN
+	1    2350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5F8C3505
+P 4100 1050
+AR Path="/5F868E46/5F8C3505" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5F8C3505" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5F8C3505" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5F8C3505" Ref="D-SUBTR1-3"  Part="1" 
+F 0 "D-SUBTR1-3" V 4450 950 50  0000 C CNN
+F 1 "EA50" V 4400 950 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4700 850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4100 1050 50  0001 C CNN
+	1    4100 1050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2700 1250 2700 1350
+$Comp
+L Device:R R-SUBTR1-2
+U 1 1 5F8C3524
+P 2700 1500
+F 0 "R-SUBTR1-2" H 2600 1450 50  0000 R CNN
+F 1 "280K" H 2600 1500 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2630 1500 50  0001 C CNN
+F 3 "~" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 1750 2700 1750
+Wire Wire Line
+	2700 1750 2700 1650
+Connection ~ 2700 1750
+Wire Wire Line
+	2700 1750 2800 1750
+Text Label 2700 1250 0    50   ~ 0
++200V
+Wire Wire Line
+	1650 1750 1750 1750
+Wire Wire Line
+	4150 1750 4050 1750
+Wire Wire Line
+	3750 1750 3650 1750
+NoConn ~ 4750 1800
+NoConn ~ 4750 1900
+$Comp
+L NEWValves:VR91 V-SUBTR1-7
+U 1 1 5F8CD19F
+P 4450 1700
+F 0 "V-SUBTR1-7" H 4500 1300 50  0000 C CNN
+F 1 "VR91" H 4500 1200 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5450 1950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 4450 1700 50  0001 C CNN
+	1    4450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1550 4050 1550
+Text Label 4050 1550 2    50   ~ 0
+GND
+Wire Wire Line
+	4150 1850 4150 1950
+Text Label 4150 1950 0    50   ~ 0
+GND
+Wire Wire Line
+	4800 1650 4900 1650
+Wire Wire Line
+	4900 1650 4900 1550
+$Comp
+L Device:R R-SUBTR1-10
+U 1 1 5FAB1A3B
+P 4900 1400
+F 0 "R-SUBTR1-10" H 4800 1350 50  0000 R CNN
+F 1 "15K 3W" H 4800 1400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4830 1400 50  0001 C CNN
+F 3 "~" H 4900 1400 50  0001 C CNN
+	1    4900 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 1250 4900 1150
+$Comp
+L Device:C C-SUBTR1-2
+U 1 1 5FABF550
+P 4900 1900
+F 0 "C-SUBTR1-2" H 4750 1850 50  0000 R CNN
+F 1 "0.1" H 4750 1900 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4938 1750 50  0001 C CNN
+F 3 "~" H 4900 1900 50  0001 C CNN
+	1    4900 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 1750 4900 1650
+Connection ~ 4900 1650
+Text Label 4900 2150 0    50   ~ 0
+GND
+Wire Wire Line
+	4900 2050 4900 2150
+Text Label 4900 1150 0    50   ~ 0
++300V
+Wire Wire Line
+	4450 1250 4450 1050
+Wire Wire Line
+	4450 1050 4350 1050
+Wire Wire Line
+	3600 1050 3500 1050
+Text Label 3500 1050 2    50   ~ 0
++50V
+Wire Wire Line
+	4450 1050 4450 950 
+$Comp
+L Device:R R-SUBTR1-9
+U 1 1 5FB2587F
+P 4450 800
+F 0 "R-SUBTR1-9" H 4350 750 50  0000 R CNN
+F 1 "470K" H 4350 800 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4380 800 50  0001 C CNN
+F 3 "~" H 4450 800 50  0001 C CNN
+	1    4450 800 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 650  4450 550 
+Text Label 4450 550  0    50   ~ 0
++300V
+Connection ~ 4450 1050
+$Comp
+L Device:R R-SUBTR1-7
+U 1 1 5F9C8227
+P 3900 1750
+F 0 "R-SUBTR1-7" V 4050 1700 50  0000 C CNN
+F 1 "470 3W" V 4200 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3830 1750 50  0001 C CNN
+F 3 "~" H 3900 1750 50  0001 C CNN
+	1    3900 1750
+	0    1    1    0   
+$EndComp
+Text Label 3650 1250 0    50   ~ 0
++200V
+Connection ~ 3650 1750
+Wire Wire Line
+	3650 1750 3550 1750
+$Comp
+L Device:R R-SUBTR1-3
+U 1 1 5FB7614D
+P 2700 2950
+F 0 "R-SUBTR1-3" H 2600 2900 50  0000 R CNN
+F 1 "47K" H 2600 2950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2630 2950 50  0001 C CNN
+F 3 "~" H 2700 2950 50  0001 C CNN
+	1    2700 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2600 3200 2700 3200
+Wire Wire Line
+	2700 3200 2700 3100
+Connection ~ 2700 3200
+Wire Wire Line
+	2700 3200 2800 3200
+Text Label 2700 2700 0    50   ~ 0
+-150V
+Wire Wire Line
+	1650 3200 1750 3200
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FB7615D
+P 2100 3200
+AR Path="/5F868E46/5FB7615D" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FB7615D" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FB7615D" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FB7615D" Ref="D-SUBTR1-4"  Part="1" 
+F 0 "D-SUBTR1-4" V 1700 3050 50  0000 C CNN
+F 1 "EA50" V 1800 3050 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2700 3000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2100 3200 50  0001 C CNN
+	1    2100 3200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3650 3200 3550 3200
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FB75E54
+P 3300 3200
+AR Path="/5F868E46/5FB75E54" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FB75E54" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FB75E54" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FB75E54" Ref="D-SUBTR1-5"  Part="1" 
+F 0 "D-SUBTR1-5" V 3600 3100 50  0000 C CNN
+F 1 "EA50" V 3700 3100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3900 3000 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3300 3200 50  0001 C CNN
+	1    3300 3200
+	0    1    1    0   
+$EndComp
+Connection ~ 3650 3200
+$Comp
+L Device:R R-SUBTR1-16
+U 1 1 5FBED204
+P 5950 1500
+F 0 "R-SUBTR1-16" V 6200 1500 50  0000 C CNN
+F 1 "470" V 6100 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5880 1500 50  0001 C CNN
+F 3 "~" H 5950 1500 50  0001 C CNN
+	1    5950 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:CV173 V-SUBTR1-2
+U 1 1 5FBED20A
+P 6500 1450
+F 0 "V-SUBTR1-2" H 7200 1550 50  0000 C CNN
+F 1 "CV173" H 7150 1400 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7500 1700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 6500 1450 50  0001 C CNN
+	1    6500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1500 6100 1500
+Wire Wire Line
+	6200 1300 6200 900 
+Wire Wire Line
+	6200 900  6500 900 
+Wire Wire Line
+	6500 900  6500 1000
+Wire Wire Line
+	6850 1400 6850 900 
+Wire Wire Line
+	6850 900  6500 900 
+Connection ~ 6500 900 
+Wire Wire Line
+	6500 900  6500 800 
+Text Label 6500 800  2    50   ~ 0
++200V
+NoConn ~ 6800 1550
+NoConn ~ 6800 1650
+Wire Wire Line
+	6200 1600 6200 1750
+Wire Wire Line
+	5700 1500 5700 1400
+$Comp
+L Device:R R-SUBTR1-14
+U 1 1 5FC11E0F
+P 5700 1250
+F 0 "R-SUBTR1-14" H 5600 1200 50  0000 R CNN
+F 1 "15K 3W" H 5600 1250 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5630 1250 50  0001 C CNN
+F 3 "~" H 5700 1250 50  0001 C CNN
+	1    5700 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5800 1500 5700 1500
+$Comp
+L Device:R R-SUBTR1-6
+U 1 1 5FB47B03
+P 3650 1500
+F 0 "R-SUBTR1-6" H 3550 1450 50  0000 R CNN
+F 1 "1300K" H 3550 1500 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3580 1500 50  0001 C CNN
+F 3 "~" H 3650 1500 50  0001 C CNN
+	1    3650 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 1250 3650 1350
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FB23C34
+P 3050 1750
+AR Path="/5F868E46/5FB23C34" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FB23C34" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FB23C34" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FB23C34" Ref="D-SUBTR1-2"  Part="1" 
+F 0 "D-SUBTR1-2" V 3350 1600 50  0000 C CNN
+F 1 "EA50" V 3450 1600 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3650 1550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3050 1750 50  0001 C CNN
+	1    3050 1750
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5700 2200 5700 2100
+$Comp
+L Device:R R-SUBTR1-15
+U 1 1 5FC4A677
+P 5700 1950
+F 0 "R-SUBTR1-15" H 5800 1900 50  0000 L CNN
+F 1 "56K" H 5800 1950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5630 1950 50  0001 C CNN
+F 3 "~" H 5700 1950 50  0001 C CNN
+	1    5700 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 1500 5700 1800
+Connection ~ 5700 1500
+Text Label 5700 2200 0    50   ~ 0
+-150V
+Wire Wire Line
+	6200 2200 6200 2100
+$Comp
+L Device:R R-SUBTR1-18
+U 1 1 5FC75FBD
+P 6200 1950
+F 0 "R-SUBTR1-18" H 6100 1900 50  0000 R CNN
+F 1 "10K 3W" H 6100 1950 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6130 1950 50  0001 C CNN
+F 3 "~" H 6200 1950 50  0001 C CNN
+	1    6200 1950
+	-1   0    0    1   
+$EndComp
+Text Label 6200 2200 0    50   ~ 0
+-150V
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FC9F38E
+P 7550 1750
+AR Path="/5F868E46/5FC9F38E" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FC9F38E" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FC9F38E" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FC9F38E" Ref="D-SUBTR1-8"  Part="1" 
+F 0 "D-SUBTR1-8" V 7150 1650 50  0000 C CNN
+F 1 "EA50" V 7250 1650 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8150 1550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7550 1750 50  0001 C CNN
+	1    7550 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 800  7900 900 
+$Comp
+L Device:R R-SUBTR1-21
+U 1 1 5FC9F7CD
+P 7900 1050
+F 0 "R-SUBTR1-21" H 7800 1000 50  0000 R CNN
+F 1 "50K" H 7800 1050 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7830 1050 50  0001 C CNN
+F 3 "~" H 7900 1050 50  0001 C CNN
+	1    7900 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 1750 7900 1750
+Wire Wire Line
+	7900 1750 7900 1200
+Connection ~ 7900 1750
+Wire Wire Line
+	7900 1750 8000 1750
+Text Label 7900 800  0    50   ~ 0
++200V
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FC9F7DD
+P 8250 1750
+AR Path="/5F868E46/5FC9F7DD" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FC9F7DD" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FC9F7DD" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FC9F7DD" Ref="D-SUBTR1-9"  Part="1" 
+F 0 "D-SUBTR1-9" V 7850 1600 50  0000 C CNN
+F 1 "EA50" V 7950 1600 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8850 1550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8250 1750 50  0001 C CNN
+	1    8250 1750
+	0    -1   1    0   
+$EndComp
+Connection ~ 6200 1750
+Wire Wire Line
+	6200 1750 6200 1800
+Wire Wire Line
+	9250 1750 9150 1750
+NoConn ~ 9850 1800
+NoConn ~ 9850 1900
+$Comp
+L NEWValves:VR91 V-SUBTR1-3
+U 1 1 5FCF4E42
+P 9550 1700
+F 0 "V-SUBTR1-3" H 9600 1300 50  0000 C CNN
+F 1 "VR91" H 9600 1200 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 10550 1950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 9550 1700 50  0001 C CNN
+	1    9550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1550 9150 1550
+Wire Wire Line
+	9250 1850 9250 1950
+Text Label 9250 1950 0    50   ~ 0
+GND
+Wire Wire Line
+	9900 1650 10000 1650
+$Comp
+L Device:R R-SUBTR1-26
+U 1 1 5FCF4E4E
+P 9000 1750
+F 0 "R-SUBTR1-26" V 9150 1700 50  0000 C CNN
+F 1 "470 3W" V 9300 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8930 1750 50  0001 C CNN
+F 3 "~" H 9000 1750 50  0001 C CNN
+	1    9000 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-SUBTR1-?
+U 1 1 5FD1E980
+P 8950 1550
+AR Path="/5F88E8BA/5FD1E980" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FD1E980" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FD1E980" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FD1E980" Ref="J-SUBTR1-4"  Part="1" 
+F 0 "J-SUBTR1-4" H 9000 1450 50  0000 L CNN
+F 1 "BO" H 9000 1550 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 8950 1550 50  0001 C CNN
+F 3 "~" H 8950 1550 50  0001 C CNN
+	1    8950 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9550 600  9550 700 
+$Comp
+L Device:R R-SUBTR1-27
+U 1 1 5FD35464
+P 9550 850
+F 0 "R-SUBTR1-27" H 9450 800 50  0000 R CNN
+F 1 "50K" H 9450 850 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9480 850 50  0001 C CNN
+F 3 "~" H 9550 850 50  0001 C CNN
+	1    9550 850 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9550 1250 9550 1100
+Text Label 9550 600  0    50   ~ 0
++300V
+Wire Wire Line
+	10000 1650 10000 1550
+$Comp
+L Device:R R-SUBTR1-30
+U 1 1 5FD7C108
+P 10000 1400
+F 0 "R-SUBTR1-30" H 9900 1350 50  0000 R CNN
+F 1 "15K 3W" H 9900 1400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9930 1400 50  0001 C CNN
+F 3 "~" H 10000 1400 50  0001 C CNN
+	1    10000 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 1250 10000 1150
+$Comp
+L Device:C C-SUBTR1-9
+U 1 1 5FD7C113
+P 10000 1900
+F 0 "C-SUBTR1-9" H 9850 1850 50  0000 R CNN
+F 1 "0.1" H 9850 1900 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10038 1750 50  0001 C CNN
+F 3 "~" H 10000 1900 50  0001 C CNN
+	1    10000 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10000 1750 10000 1650
+Connection ~ 10000 1650
+Text Label 10000 2150 0    50   ~ 0
+GND
+Wire Wire Line
+	10000 2050 10000 2150
+Text Label 10000 1150 0    50   ~ 0
++300V
+Wire Wire Line
+	9550 1100 9450 1100
+Connection ~ 9550 1100
+Wire Wire Line
+	9550 1100 9550 1000
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FDBC277
+P 9200 1100
+AR Path="/5F868E46/5FDBC277" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FDBC277" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FDBC277" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FDBC277" Ref="D-SUBTR1-17"  Part="1" 
+F 0 "D-SUBTR1-17" V 8800 1000 50  0000 C CNN
+F 1 "EA50" V 8900 1000 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9800 900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9200 1100 50  0001 C CNN
+	1    9200 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 1100 8600 1100
+Text Label 8600 1100 2    50   ~ 0
++50V
+Wire Wire Line
+	4450 1050 5700 1050
+Wire Wire Line
+	5700 1050 5700 1100
+Wire Wire Line
+	11700 1750 11600 1750
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FE8A9A5
+P 11600 2350
+AR Path="/5F868E46/5FE8A9A5" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FE8A9A5" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FE8A9A5" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FE8A9A5" Ref="D-SUBTR1-18"  Part="1" 
+F 0 "D-SUBTR1-18" H 11550 2000 50  0000 R CNN
+F 1 "EA50" H 11350 2250 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 12200 2150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11600 2350 50  0001 C CNN
+	1    11600 2350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	12100 1750 12000 1750
+NoConn ~ 12700 1800
+NoConn ~ 12700 1900
+$Comp
+L NEWValves:VR91 V-SUBTR1-4
+U 1 1 5FE8A9B2
+P 12400 1700
+F 0 "V-SUBTR1-4" H 12450 1300 50  0000 C CNN
+F 1 "VR91" H 12450 1200 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 13400 1950 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 12400 1700 50  0001 C CNN
+	1    12400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 1550 12000 1550
+$Comp
+L Device:R R-SUBTR1-33
+U 1 1 5FE8A9C0
+P 11850 1750
+F 0 "R-SUBTR1-33" V 11600 1750 50  0000 C CNN
+F 1 "470 3W" V 11700 1750 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11780 1750 50  0001 C CNN
+F 3 "~" H 11850 1750 50  0001 C CNN
+	1    11850 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J-SUBTR1-?
+U 1 1 5FE8A9CA
+P 13000 2050
+AR Path="/5F88E8BA/5FE8A9CA" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FE8A9CA" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FE8A9CA" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FE8A9CA" Ref="J-SUBTR1-6"  Part="1" 
+F 0 "J-SUBTR1-6" H 13050 1950 50  0000 L CNN
+F 1 "A.WRITE" H 13050 2050 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 13000 2050 50  0001 C CNN
+F 3 "~" H 13000 2050 50  0001 C CNN
+	1    13000 2050
+	1    0    0    -1  
+$EndComp
+Text Label 12400 1000 0    50   ~ 0
++200V
+Wire Wire Line
+	11600 1750 11600 1850
+$Comp
+L Device:R R-SUBTR1-31
+U 1 1 5FEFCF10
+P 10900 1500
+F 0 "R-SUBTR1-31" H 10800 1450 50  0000 R CNN
+F 1 "15K" H 10800 1500 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10830 1500 50  0001 C CNN
+F 3 "~" H 10900 1500 50  0001 C CNN
+	1    10900 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11600 1750 10900 1750
+Connection ~ 11600 1750
+Wire Wire Line
+	10900 1750 10900 1650
+$Comp
+L Device:R R-SUBTR1-32
+U 1 1 5FF468A4
+P 10900 2200
+F 0 "R-SUBTR1-32" H 11000 2150 50  0000 L CNN
+F 1 "56K" H 11000 2200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 10830 2200 50  0001 C CNN
+F 3 "~" H 10900 2200 50  0001 C CNN
+	1    10900 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10900 2450 10900 2350
+Wire Wire Line
+	10900 2050 10900 1750
+Connection ~ 10900 1750
+Wire Wire Line
+	10900 1350 10900 1100
+Wire Wire Line
+	10900 1100 9550 1100
+Wire Wire Line
+	11600 2600 11600 2700
+Text Label 10900 2450 2    50   ~ 0
+-150V
+$Comp
+L Connector:Conn_01x01_Female J-SUBTR1-?
+U 1 1 5FFC8C45
+P 11600 2900
+AR Path="/5F88E8BA/5FFC8C45" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FFC8C45" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FFC8C45" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FFC8C45" Ref="J-SUBTR1-5"  Part="1" 
+F 0 "J-SUBTR1-5" V 11400 2800 50  0000 R CNN
+F 1 "VAR.DASH" V 11500 2800 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 11600 2900 50  0001 C CNN
+F 3 "~" H 11600 2900 50  0001 C CNN
+	1    11600 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12000 1550 12000 1150
+Wire Wire Line
+	12000 1150 12400 1150
+Connection ~ 12400 1150
+Wire Wire Line
+	12400 1150 12400 1250
+Wire Wire Line
+	12750 1650 12850 1650
+Wire Wire Line
+	12850 1650 12850 1150
+Wire Wire Line
+	12850 1150 12400 1150
+Wire Wire Line
+	12400 1000 12400 1150
+$Comp
+L Device:R R-SUBTR1-34
+U 1 1 600A703B
+P 12100 2500
+F 0 "R-SUBTR1-34" H 12000 2450 50  0000 R CNN
+F 1 "15K 3W" H 12000 2500 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12030 2500 50  0001 C CNN
+F 3 "~" H 12100 2500 50  0001 C CNN
+	1    12100 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12100 2750 12100 2650
+Text Label 12100 2750 0    50   ~ 0
+-150V
+Wire Wire Line
+	12100 1850 12100 2050
+Wire Wire Line
+	12100 2050 12800 2050
+Connection ~ 12100 2050
+Wire Wire Line
+	12100 2050 12100 2350
+Wire Wire Line
+	1750 2600 1750 1750
+Connection ~ 1750 1750
+Wire Wire Line
+	1750 1750 1850 1750
+Wire Wire Line
+	7900 3150 7900 3250
+$Comp
+L Device:R R-SUBTR1-23
+U 1 1 601E1D70
+P 7900 3400
+F 0 "R-SUBTR1-23" H 7800 3350 50  0000 R CNN
+F 1 "47K" H 7800 3400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7830 3400 50  0001 C CNN
+F 3 "~" H 7900 3400 50  0001 C CNN
+	1    7900 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7800 3650 7900 3650
+Wire Wire Line
+	7900 3650 7900 3550
+Connection ~ 7900 3650
+Wire Wire Line
+	7900 3650 8000 3650
+Text Label 7900 3150 0    50   ~ 0
+-150V
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 601E1D80
+P 7300 3650
+AR Path="/5F868E46/601E1D80" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/601E1D80" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/601E1D80" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/601E1D80" Ref="D-SUBTR1-12"  Part="1" 
+F 0 "D-SUBTR1-12" V 6900 3500 50  0000 C CNN
+F 1 "EA50" V 7000 3500 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7900 3450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7300 3650 50  0001 C CNN
+	1    7300 3650
+	0    -1   1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 601E1D8B
+P 8500 3650
+AR Path="/5F868E46/601E1D8B" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/601E1D8B" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/601E1D8B" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/601E1D8B" Ref="D-SUBTR1-13"  Part="1" 
+F 0 "D-SUBTR1-13" V 8800 3550 50  0000 C CNN
+F 1 "EA50" V 8900 3550 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9100 3450 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8500 3650 50  0001 C CNN
+	1    8500 3650
+	0    1    1    0   
+$EndComp
+Connection ~ 1750 3200
+Wire Wire Line
+	1750 3200 1850 3200
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 6014900E
+P 8250 2600
+AR Path="/5F868E46/6014900E" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/6014900E" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/6014900E" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/6014900E" Ref="D-SUBTR1-11"  Part="1" 
+F 0 "D-SUBTR1-11" V 8550 2450 50  0000 C CNN
+F 1 "EA50" V 8650 2450 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8850 2400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8250 2600 50  0001 C CNN
+	1    8250 2600
+	0    -1   1    0   
+$EndComp
+Text Label 7900 2100 0    50   ~ 0
++200V
+Wire Wire Line
+	7900 2600 8000 2600
+Connection ~ 7900 2600
+Wire Wire Line
+	7900 2600 7900 2500
+Wire Wire Line
+	7800 2600 7900 2600
+$Comp
+L Device:R R-SUBTR1-22
+U 1 1 60148FFF
+P 7900 2350
+F 0 "R-SUBTR1-22" H 7800 2300 50  0000 R CNN
+F 1 "280K" H 7800 2350 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7830 2350 50  0001 C CNN
+F 3 "~" H 7900 2350 50  0001 C CNN
+	1    7900 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 2100 7900 2200
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 601487A4
+P 7550 2600
+AR Path="/5F868E46/601487A4" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/601487A4" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/601487A4" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/601487A4" Ref="D-SUBTR1-10"  Part="1" 
+F 0 "D-SUBTR1-10" V 7150 2500 50  0000 C CNN
+F 1 "EA50" V 7250 2500 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8150 2400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7550 2600 50  0001 C CNN
+	1    7550 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 2600 1750 2600
+Connection ~ 8750 1750
+Wire Wire Line
+	8750 1750 8850 1750
+Connection ~ 8750 3650
+Wire Wire Line
+	1750 3650 1750 3200
+Wire Wire Line
+	1750 3650 7050 3650
+Wire Wire Line
+	1750 4700 1750 4250
+Wire Wire Line
+	8750 3650 8750 4700
+Wire Wire Line
+	1750 4250 1850 4250
+Connection ~ 1750 4250
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 60226D7D
+P 8500 4700
+AR Path="/5F868E46/60226D7D" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/60226D7D" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/60226D7D" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/60226D7D" Ref="D-SUBTR1-15"  Part="1" 
+F 0 "D-SUBTR1-15" V 8800 4600 50  0000 C CNN
+F 1 "EA50" V 8900 4600 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9100 4500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8500 4700 50  0001 C CNN
+	1    8500 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 60226D72
+P 7300 4700
+AR Path="/5F868E46/60226D72" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/60226D72" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/60226D72" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/60226D72" Ref="D-SUBTR1-14"  Part="1" 
+F 0 "D-SUBTR1-14" V 6900 4550 50  0000 C CNN
+F 1 "EA50" V 7000 4550 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7900 4500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7300 4700 50  0001 C CNN
+	1    7300 4700
+	0    -1   1    0   
+$EndComp
+Text Label 7900 4200 0    50   ~ 0
+-150V
+Wire Wire Line
+	7900 4700 8000 4700
+Connection ~ 7900 4700
+Wire Wire Line
+	7900 4700 7900 4600
+Wire Wire Line
+	7800 4700 7900 4700
+$Comp
+L Device:R R-SUBTR1-24
+U 1 1 60226D63
+P 7900 4450
+F 0 "R-SUBTR1-24" H 7800 4400 50  0000 R CNN
+F 1 "47K" H 7800 4450 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7830 4450 50  0001 C CNN
+F 3 "~" H 7900 4450 50  0001 C CNN
+	1    7900 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 4200 7900 4300
+Wire Wire Line
+	3650 4250 3650 3200
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FB93D9F
+P 3300 4250
+AR Path="/5F868E46/5FB93D9F" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FB93D9F" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FB93D9F" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FB93D9F" Ref="D-SUBTR1-6"  Part="1" 
+F 0 "D-SUBTR1-6" V 3600 4150 50  0000 C CNN
+F 1 "EA50" V 3700 4150 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3900 4050 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3300 4250 50  0001 C CNN
+	1    3300 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 4250 3550 4250
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 5FB93D94
+P 2100 4250
+AR Path="/5F868E46/5FB93D94" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FB93D94" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FB93D94" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FB93D94" Ref="D-SUBTR1-7"  Part="1" 
+F 0 "D-SUBTR1-7" V 1700 4100 50  0000 C CNN
+F 1 "EA50" V 1800 4100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2700 4050 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2100 4250 50  0001 C CNN
+	1    2100 4250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	1650 4250 1750 4250
+Text Label 2700 3750 0    50   ~ 0
+-150V
+Wire Wire Line
+	2700 4250 2800 4250
+Connection ~ 2700 4250
+Wire Wire Line
+	2700 4250 2700 4150
+Wire Wire Line
+	2600 4250 2700 4250
+$Comp
+L Device:R R-SUBTR1-4
+U 1 1 5FB93D84
+P 2700 4000
+F 0 "R-SUBTR1-4" H 2600 3950 50  0000 R CNN
+F 1 "47K" H 2600 4000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2630 4000 50  0001 C CNN
+F 3 "~" H 2700 4000 50  0001 C CNN
+	1    2700 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 3750 2700 3850
+$Comp
+L Connector:Conn_01x01_Female J-SUBTR1-?
+U 1 1 5FB93A31
+P 1450 4250
+AR Path="/5F88E8BA/5FB93A31" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FB93A31" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/5FB93A31" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/5FB93A31" Ref="J-SUBTR1-1"  Part="1" 
+F 0 "J-SUBTR1-1" H 1500 4150 50  0000 L CNN
+F 1 "A.CARRY" H 1500 4250 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1450 4250 50  0001 C CNN
+F 3 "~" H 1450 4250 50  0001 C CNN
+	1    1450 4250
+	-1   0    0    1   
+$EndComp
+Connection ~ 8750 2600
+Wire Wire Line
+	8750 2600 8750 3050
+Wire Wire Line
+	3650 1750 3650 3200
+Wire Wire Line
+	3650 1650 3650 1750
+Wire Wire Line
+	2700 2800 2700 2700
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 60535D7F
+P 9350 3050
+AR Path="/5F868E46/60535D7F" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/60535D7F" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/60535D7F" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/60535D7F" Ref="D-SUBTR1-16"  Part="1" 
+F 0 "D-SUBTR1-16" V 8950 2950 50  0000 C CNN
+F 1 "EA50" V 9050 2950 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9950 2850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9350 3050 50  0001 C CNN
+	1    9350 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 3050 8750 3050
+Connection ~ 8750 3050
+Wire Wire Line
+	8750 3050 8750 3650
+Wire Wire Line
+	9600 3050 9750 3050
+Wire Wire Line
+	9750 3550 9750 3450
+$Comp
+L Device:R R-SUBTR1-29
+U 1 1 60574BC2
+P 9750 3300
+F 0 "R-SUBTR1-29" H 9850 3350 50  0000 L CNN
+F 1 "6.8K 3W" H 9850 3300 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9680 3300 50  0001 C CNN
+F 3 "~" H 9750 3300 50  0001 C CNN
+	1    9750 3300
+	1    0    0    -1  
+$EndComp
+Text Label 9750 3550 2    50   ~ 0
+-150V
+Wire Wire Line
+	9750 2550 9750 2650
+$Comp
+L Device:R R-SUBTR1-28
+U 1 1 605988B3
+P 9750 2800
+F 0 "R-SUBTR1-28" H 9850 2850 50  0000 L CNN
+F 1 "470 3W" H 9850 2800 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9680 2800 50  0001 C CNN
+F 3 "~" H 9750 2800 50  0001 C CNN
+	1    9750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2950 9750 3050
+$Comp
+L Device:C C-SUBTR1-10
+U 1 1 605BDF86
+P 10350 2900
+F 0 "C-SUBTR1-10" H 10200 2850 50  0000 R CNN
+F 1 "1.0" H 10200 2900 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 10388 2750 50  0001 C CNN
+F 3 "~" H 10350 2900 50  0001 C CNN
+	1    10350 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10350 3050 9750 3050
+Connection ~ 9750 3050
+Wire Wire Line
+	9750 3050 9750 3150
+Wire Wire Line
+	10350 2750 10350 2550
+Text Label 9750 2550 0    50   ~ 0
+GND
+Text Label 10350 2550 0    50   ~ 0
+GND
+Wire Wire Line
+	6950 1750 6950 5150
+$Comp
+L Device:C C-SUBTR1-6
+U 1 1 6066D4C6
+P 6950 5300
+F 0 "C-SUBTR1-6" H 6800 5250 50  0000 R CNN
+F 1 "270pf" H 6800 5300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6988 5150 50  0001 C CNN
+F 3 "~" H 6950 5300 50  0001 C CNN
+	1    6950 5300
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2550 6350
+NoConn ~ 2550 6450
+$Comp
+L NEWValves:VR91 V-SUBTR1-1
+U 1 1 6067519B
+P 2250 6250
+F 0 "V-SUBTR1-1" H 2300 5850 50  0000 C CNN
+F 1 "VR91" H 2300 5750 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3250 6500 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2250 6250 50  0001 C CNN
+	1    2250 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6100 1850 6100
+Text Label 2250 5550 0    50   ~ 0
++200V
+Wire Wire Line
+	1850 6100 1850 5700
+Wire Wire Line
+	1850 5700 2250 5700
+Connection ~ 2250 5700
+Wire Wire Line
+	2250 5700 2250 5800
+Wire Wire Line
+	2600 6200 2700 6200
+Wire Wire Line
+	2700 6200 2700 5700
+Wire Wire Line
+	2700 5700 2250 5700
+Wire Wire Line
+	2250 5550 2250 5700
+$Comp
+L Device:R R-SUBTR1-1
+U 1 1 606751C3
+P 1950 7050
+F 0 "R-SUBTR1-1" H 1850 7000 50  0000 R CNN
+F 1 "15K 3W" H 1850 7050 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1880 7050 50  0001 C CNN
+F 3 "~" H 1950 7050 50  0001 C CNN
+	1    1950 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1950 7300 1950 7200
+Text Label 1950 7300 0    50   ~ 0
+-150V
+Wire Wire Line
+	1750 4700 7050 4700
+Connection ~ 1950 6400
+Wire Wire Line
+	1950 6300 1850 6300
+Wire Wire Line
+	1850 6300 1850 6250
+Wire Wire Line
+	1850 6250 2600 6250
+Wire Wire Line
+	2600 6250 2600 6300
+Wire Wire Line
+	2600 6300 2700 6300
+$Comp
+L Device:R R-SUBTR1-5
+U 1 1 60777E5B
+P 2850 6300
+F 0 "R-SUBTR1-5" V 2600 6300 50  0000 C CNN
+F 1 "470 3W" V 2700 6300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2780 6300 50  0001 C CNN
+F 3 "~" H 2850 6300 50  0001 C CNN
+	1    2850 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 6300 3100 6300
+Wire Wire Line
+	1950 6400 1950 6900
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 607F03C3
+P 3450 6300
+AR Path="/5F868E46/607F03C3" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/607F03C3" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/607F03C3" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/607F03C3" Ref="D-SUBTR1-20"  Part="1" 
+F 0 "D-SUBTR1-20" V 3850 6150 50  0000 C CNN
+F 1 "EA50" V 3750 6150 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4050 6100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3450 6300 50  0001 C CNN
+	1    3450 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 607F11A4
+P 3100 6900
+AR Path="/5F868E46/607F11A4" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/607F11A4" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/607F11A4" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/607F11A4" Ref="D-SUBTR1-19"  Part="1" 
+F 0 "D-SUBTR1-19" H 2850 6700 50  0000 R CNN
+F 1 "EA50" H 2850 6800 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 3700 6700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3100 6900 50  0001 C CNN
+	1    3100 6900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 6400 3100 6300
+Connection ~ 3100 6300
+Wire Wire Line
+	3100 6300 3200 6300
+Wire Wire Line
+	3950 6300 4050 6300
+Wire Wire Line
+	4050 6300 4050 6400
+$Comp
+L Device:R R-SUBTR1-8
+U 1 1 6083C890
+P 4050 6550
+F 0 "R-SUBTR1-8" H 4150 6600 50  0000 L CNN
+F 1 "47K" H 4150 6550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3980 6550 50  0001 C CNN
+F 3 "~" H 4050 6550 50  0001 C CNN
+	1    4050 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6800 4050 6700
+$Comp
+L Connector:Conn_01x01_Female J-SUBTR1-?
+U 1 1 608B24A7
+P 3100 7350
+AR Path="/5F88E8BA/608B24A7" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/608B24A7" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/608B24A7" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/608B24A7" Ref="J-SUBTR1-2"  Part="1" 
+F 0 "J-SUBTR1-2" V 3200 7350 50  0000 C CNN
+F 1 "VAR.DASH" V 3300 7350 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 3100 7350 50  0001 C CNN
+F 3 "~" H 3100 7350 50  0001 C CNN
+	1    3100 7350
+	0    1    1    0   
+$EndComp
+Text Label 4050 6800 0    50   ~ 0
+GND
+$Comp
+L Device:C C-SUBTR1-1
+U 1 1 608E4EDE
+P 4300 6300
+F 0 "C-SUBTR1-1" V 4600 6300 50  0000 C CNN
+F 1 "270pf" V 4500 6300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4338 6150 50  0001 C CNN
+F 3 "~" H 4300 6300 50  0001 C CNN
+	1    4300 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 6300 4050 6300
+Connection ~ 4050 6300
+$Comp
+L NEWValves:CV173 V-SUBTR1-6
+U 1 1 60939AAC
+P 4900 6850
+F 0 "V-SUBTR1-6" H 4950 6450 50  0000 C CNN
+F 1 "CV173" H 4950 6350 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 5900 7100 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 4900 6850 50  0001 C CNN
+	1    4900 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6300 4900 6400
+Connection ~ 4900 6300
+Wire Wire Line
+	4900 6300 4900 6200
+NoConn ~ 5200 6950
+NoConn ~ 5200 7050
+Text Label 4500 6700 2    50   ~ 0
+GND
+Wire Wire Line
+	4600 6700 4500 6700
+Wire Wire Line
+	4450 6300 4900 6300
+Wire Wire Line
+	4600 7000 4600 7200
+Text Label 4600 7200 0    50   ~ 0
+GND
+$Comp
+L Device:R R-SUBTR1-11
+U 1 1 60B25BC3
+P 4900 6050
+F 0 "R-SUBTR1-11" H 5000 6100 50  0000 L CNN
+F 1 "10K" H 5000 6050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4830 6050 50  0001 C CNN
+F 3 "~" H 4900 6050 50  0001 C CNN
+	1    4900 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5900 4900 5800
+Text Label 4900 5800 0    50   ~ 0
++50V
+Wire Wire Line
+	5250 6800 5350 6800
+Wire Wire Line
+	5350 6800 5350 6550
+$Comp
+L Device:R R-SUBTR1-12
+U 1 1 60BA90ED
+P 5350 6400
+F 0 "R-SUBTR1-12" H 5250 6350 50  0000 R CNN
+F 1 "15K 3W" H 5250 6400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5280 6400 50  0001 C CNN
+F 3 "~" H 5350 6400 50  0001 C CNN
+	1    5350 6400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 6250 5350 6150
+$Comp
+L Device:C C-SUBTR1-3
+U 1 1 60BA90F8
+P 5350 7650
+F 0 "C-SUBTR1-3" H 5200 7600 50  0000 R CNN
+F 1 "0.1" H 5200 7650 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5388 7500 50  0001 C CNN
+F 3 "~" H 5350 7650 50  0001 C CNN
+	1    5350 7650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5350 7500 5350 6800
+Connection ~ 5350 6800
+Text Label 5350 7900 0    50   ~ 0
+GND
+Wire Wire Line
+	5350 7800 5350 7900
+Text Label 5350 6150 0    50   ~ 0
++300V
+$Comp
+L Device:R R-SUBTR1-13
+U 1 1 60BDB264
+P 5600 6800
+F 0 "R-SUBTR1-13" V 5350 6800 50  0000 C CNN
+F 1 "470 3W" V 5450 6800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5530 6800 50  0001 C CNN
+F 3 "~" H 5600 6800 50  0001 C CNN
+	1    5600 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 6800 6100 6800
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 60BDB409
+P 6450 6800
+AR Path="/5F868E46/60BDB409" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/60BDB409" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/60BDB409" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/60BDB409" Ref="D-SUBTR1-22"  Part="1" 
+F 0 "D-SUBTR1-22" V 6850 6650 50  0000 C CNN
+F 1 "EA50" V 6750 6650 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7050 6600 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6450 6800 50  0001 C CNN
+	1    6450 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 1 1 60BDB413
+P 6100 7400
+AR Path="/5F868E46/60BDB413" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/60BDB413" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/60BDB413" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/60BDB413" Ref="D-SUBTR1-21"  Part="1" 
+F 0 "D-SUBTR1-21" H 5850 7200 50  0000 R CNN
+F 1 "EA50" H 5850 7300 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 6700 7200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6100 7400 50  0001 C CNN
+	1    6100 7400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 6900 6100 6800
+Connection ~ 6100 6800
+Wire Wire Line
+	6100 6800 6200 6800
+$Comp
+L Connector:Conn_01x01_Female J-SUBTR1-?
+U 1 1 60BDB420
+P 6100 8350
+AR Path="/5F88E8BA/60BDB420" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/60BDB420" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FFFB333/60BDB420" Ref="J-SUBTR1-?"  Part="1" 
+AR Path="/5FEEBA24/60BDB420" Ref="J-SUBTR1-3"  Part="1" 
+F 0 "J-SUBTR1-3" V 5900 8400 50  0000 L CNN
+F 1 "CARRY.INH" V 6000 8400 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 6100 8350 50  0001 C CNN
+F 3 "~" H 6100 8350 50  0001 C CNN
+	1    6100 8350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5450 6800 5350 6800
+$Comp
+L Device:R R-SUBTR1-17
+U 1 1 60C5CF67
+P 6100 7900
+F 0 "R-SUBTR1-17" H 6000 7850 50  0000 R CNN
+F 1 "4.7K" H 6000 7900 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6030 7900 50  0001 C CNN
+F 3 "~" H 6100 7900 50  0001 C CNN
+	1    6100 7900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 8150 6100 8050
+Wire Wire Line
+	6100 7750 6100 7650
+Wire Wire Line
+	6950 6800 6950 5450
+Connection ~ 6950 1750
+Wire Wire Line
+	6950 1750 7050 1750
+Wire Wire Line
+	6200 1750 6950 1750
+Wire Wire Line
+	1750 4700 1750 6400
+Connection ~ 1750 4700
+Wire Wire Line
+	1750 6400 1950 6400
+$Comp
+L Device:R R-SUBTR1-19
+U 1 1 60F3EA11
+P 6950 7050
+F 0 "R-SUBTR1-19" H 6850 7000 50  0000 R CNN
+F 1 "4.7K" H 6850 7050 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6880 7050 50  0001 C CNN
+F 3 "~" H 6950 7050 50  0001 C CNN
+	1    6950 7050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6950 7300 6950 7200
+Wire Wire Line
+	6950 6900 6950 6800
+Connection ~ 6950 6800
+Text Label 6950 7300 0    50   ~ 0
+GND
+$Comp
+L Device:R R-SUBTR1-20
+U 1 1 60FCD25E
+P 7350 6800
+F 0 "R-SUBTR1-20" V 7100 6800 50  0000 C CNN
+F 1 "470 3W" V 7200 6800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7280 6800 50  0001 C CNN
+F 3 "~" H 7350 6800 50  0001 C CNN
+	1    7350 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 6800 7700 6800
+Wire Wire Line
+	7200 6800 6950 6800
+Text Label 7700 6800 0    50   ~ 0
++200V
+$Comp
+L Device:R R-SUBTR1-25
+U 1 1 6102833F
+P 8750 5350
+F 0 "R-SUBTR1-25" H 8650 5300 50  0000 R CNN
+F 1 "150K 3W" H 8650 5350 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8680 5350 50  0001 C CNN
+F 3 "~" H 8750 5350 50  0001 C CNN
+	1    8750 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 5600 8750 5500
+Text Label 8750 5600 0    50   ~ 0
+-150V
+Wire Wire Line
+	8750 4700 8750 5200
+Connection ~ 8750 4700
+Wire Wire Line
+	8750 2550 8750 2600
+Wire Wire Line
+	8750 1750 8750 2600
+Wire Wire Line
+	12450 9800 13100 9800
+Wire Wire Line
+	12250 9550 12900 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 611410E5
+P 13000 9050
+AR Path="/5F868E46/611410E5" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/611410E5" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/611410E5" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/611410E5" Ref="D-SUBTR1-19"  Part="2" 
+F 0 "D-SUBTR1-19" H 13000 9350 50  0000 C CNN
+F 1 "EA50" H 13000 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 13600 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 13000 9050 50  0001 C CNN
+	2    13000 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 9500 13100 9800
+Wire Wire Line
+	12900 9500 12900 9550
+Wire Wire Line
+	1400 9800 2050 9800
+Wire Wire Line
+	1200 9550 1850 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 611410F3
+P 1950 9050
+AR Path="/5F868E46/611410F3" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/611410F3" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/611410F3" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/611410F3" Ref="D-SUBTR1-2"  Part="2" 
+F 0 "D-SUBTR1-2" H 1950 9350 50  0000 C CNN
+F 1 "EA50" H 1950 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2550 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1950 9050 50  0001 C CNN
+	2    1950 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 9500 2050 9800
+Wire Wire Line
+	1850 9500 1850 9550
+Connection ~ 13750 9800
+Connection ~ 13550 9550
+Wire Wire Line
+	13750 9800 14400 9800
+Wire Wire Line
+	13550 9550 14200 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 61141103
+P 14300 9050
+AR Path="/5F868E46/61141103" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/61141103" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/61141103" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/61141103" Ref="D-SUBTR1-21"  Part="2" 
+F 0 "D-SUBTR1-21" H 14300 9350 50  0000 C CNN
+F 1 "EA50" H 14300 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 14900 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 14300 9050 50  0001 C CNN
+	2    14300 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14400 9500 14400 9800
+Wire Wire Line
+	14200 9500 14200 9550
+Wire Wire Line
+	13100 9800 13750 9800
+Wire Wire Line
+	12900 9550 13550 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 61141111
+P 13650 9050
+AR Path="/5F868E46/61141111" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/61141111" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/61141111" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/61141111" Ref="D-SUBTR1-20"  Part="2" 
+F 0 "D-SUBTR1-20" H 13650 9350 50  0000 C CNN
+F 1 "EA50" H 13650 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 14250 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 13650 9050 50  0001 C CNN
+	2    13650 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13750 9500 13750 9800
+Wire Wire Line
+	13550 9500 13550 9550
+Connection ~ 12900 9550
+Connection ~ 13100 9800
+Wire Wire Line
+	7900 9800 8550 9800
+Wire Wire Line
+	7700 9550 8350 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 61141123
+P 8450 9050
+AR Path="/5F868E46/61141123" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/61141123" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/61141123" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/61141123" Ref="D-SUBTR1-12"  Part="2" 
+F 0 "D-SUBTR1-12" H 8450 9350 50  0000 C CNN
+F 1 "EA50" H 8450 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9050 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 8450 9050 50  0001 C CNN
+	2    8450 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 9500 8550 9800
+Wire Wire Line
+	8350 9500 8350 9550
+Wire Wire Line
+	14400 9800 15050 9800
+Wire Wire Line
+	14200 9550 14850 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 61141131
+P 14950 9050
+AR Path="/5F868E46/61141131" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/61141131" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/61141131" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/61141131" Ref="D-SUBTR1-22"  Part="2" 
+F 0 "D-SUBTR1-22" H 14950 9350 50  0000 C CNN
+F 1 "EA50" H 14950 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 15550 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 14950 9050 50  0001 C CNN
+	2    14950 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15050 9500 15050 9800
+Wire Wire Line
+	14850 9500 14850 9550
+Connection ~ 14200 9550
+Connection ~ 14400 9800
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5F8E6FD4
+P 7800 9050
+AR Path="/5F868E46/5F8E6FD4" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5F8E6FD4" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5F8E6FD4" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/5F8E6FD4" Ref="D-SUBTR1-11"  Part="2" 
+F 0 "D-SUBTR1-11" H 7800 9350 50  0000 C CNN
+F 1 "EA50" H 7800 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 8400 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7800 9050 50  0001 C CNN
+	2    7800 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 9500 7700 9550
+Wire Wire Line
+	8550 9800 9200 9800
+Wire Wire Line
+	8350 9550 9000 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5F8E6FE2
+P 9750 9050
+AR Path="/5F868E46/5F8E6FE2" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5F8E6FE2" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5F8E6FE2" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/5F8E6FE2" Ref="D-SUBTR1-14"  Part="2" 
+F 0 "D-SUBTR1-14" H 9750 9350 50  0000 C CNN
+F 1 "EA50" H 9750 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 10350 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9750 9050 50  0001 C CNN
+	2    9750 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 9500 9850 9800
+Wire Wire Line
+	9650 9500 9650 9550
+Connection ~ 8350 9550
+Connection ~ 8550 9800
+Wire Wire Line
+	7700 9550 7050 9550
+Connection ~ 7700 9550
+Connection ~ 7050 9550
+Wire Wire Line
+	7250 9800 7900 9800
+Connection ~ 7250 9800
+Connection ~ 7900 9800
+Wire Wire Line
+	9200 9800 9850 9800
+Wire Wire Line
+	9000 9550 9650 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5FA5D1F9
+P 9100 9050
+AR Path="/5F868E46/5FA5D1F9" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FA5D1F9" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5FA5D1F9" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/5FA5D1F9" Ref="D-SUBTR1-13"  Part="2" 
+F 0 "D-SUBTR1-13" H 9100 9350 50  0000 C CNN
+F 1 "EA50" H 9100 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 9700 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9100 9050 50  0001 C CNN
+	2    9100 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 9500 9200 9800
+Wire Wire Line
+	9000 9500 9000 9550
+Wire Wire Line
+	11150 9800 11800 9800
+Wire Wire Line
+	10950 9550 11600 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5FA5D207
+P 11700 9050
+AR Path="/5F868E46/5FA5D207" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FA5D207" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5FA5D207" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/5FA5D207" Ref="D-SUBTR1-17"  Part="2" 
+F 0 "D-SUBTR1-17" H 11700 9350 50  0000 C CNN
+F 1 "EA50" H 11700 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 12300 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 11700 9050 50  0001 C CNN
+	2    11700 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 9500 11800 9800
+Wire Wire Line
+	11600 9500 11600 9550
+Connection ~ 9000 9550
+Connection ~ 9200 9800
+Connection ~ 9650 9550
+Connection ~ 9850 9800
+Connection ~ 10950 9550
+Connection ~ 11150 9800
+Connection ~ 1200 9550
+Connection ~ 1400 9800
+Connection ~ 1850 9550
+Connection ~ 2050 9800
+Wire Wire Line
+	11800 9800 12450 9800
+Wire Wire Line
+	11600 9550 12250 9550
+$Comp
+L NEWValves:EA50 D-SUBTR1-?
+U 2 1 5FC277E3
+P 12350 9050
+AR Path="/5F868E46/5FC277E3" Ref="D-SUBTR1-?"  Part="1" 
+AR Path="/5F89590E/5FC277E3" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FFFB333/5FC277E3" Ref="D-SUBTR1-?"  Part="2" 
+AR Path="/5FEEBA24/5FC277E3" Ref="D-SUBTR1-18"  Part="2" 
+F 0 "D-SUBTR1-18" H 12350 9350 50  0000 C CNN
+F 1 "EA50" H 12350 9250 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 12950 8850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 12350 9050 50  0001 C CNN
+	2    12350 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 9500 12450 9800
+Wire Wire Line
+	12250 9500 12250 9550
+Wire Wire Line
+	7900 9750 7900 9800
+Wire Wire Line
+	7900 9500 7900 9800
+Connection ~ 11600 9550
+Connection ~ 11800 9800
+Connection ~ 12250 9550
+Connection ~ 12450 9800
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FCF0E30
+P 14000 5950
+AR Path="/5F868E46/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5F88E8BA/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/6077FCA5/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5F89590E/5FCF0E30" Ref="#FLG?"  Part="1" 
+AR Path="/5FEEBA24/5FCF0E30" Ref="#FLG0180"  Part="1" 
+F 0 "#FLG0180" H 14000 6025 50  0001 C CNN
+F 1 "PWR_FLAG" H 14025 6150 50  0000 C CNN
+F 2 "" H 14000 5950 50  0001 C CNN
+F 3 "~" H 14000 5950 50  0001 C CNN
+	1    14000 5950
+	-1   0    0    1   
+$EndComp
+Text Label 14050 5500 0    50   ~ 0
+-150V
+Wire Wire Line
+	13950 5900 14000 5900
+Text Label 14050 5900 0    50   ~ 0
+Heater-6.3V
+Connection ~ 14000 5900
+Wire Wire Line
+	14000 5900 14050 5900
+Wire Wire Line
+	14000 5950 14000 5900
+Text Label 14050 5400 0    50   ~ 0
++200V
+NoConn ~ 13950 5700
+NoConn ~ 13950 5800
+Wire Wire Line
+	14050 5400 13950 5400
+Text Label 14050 5600 0    50   ~ 0
+GND
+Wire Wire Line
+	14050 5600 13950 5600
+Wire Wire Line
+	14050 5500 13950 5500
+NoConn ~ 13450 5700
+NoConn ~ 13450 5800
+Text Label 13350 5900 2    50   ~ 0
+Heater-GND
+Wire Wire Line
+	13450 5600 13350 5600
+Wire Wire Line
+	13450 5500 13350 5500
+Wire Wire Line
+	13450 5400 13350 5400
+Wire Wire Line
+	13400 5900 13350 5900
+Connection ~ 13400 5900
+Wire Wire Line
+	13400 5950 13400 5900
+Wire Wire Line
+	13450 5900 13400 5900
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FCF0E4D
+P 13400 5950
+AR Path="/5F868E46/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5F88E8BA/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/6077FCA5/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5F89590E/5FCF0E4D" Ref="#FLG?"  Part="1" 
+AR Path="/5FEEBA24/5FCF0E4D" Ref="#FLG0181"  Part="1" 
+F 0 "#FLG0181" H 13400 6025 50  0001 C CNN
+F 1 "PWR_FLAG" H 13425 6150 50  0000 C CNN
+F 2 "" H 13400 5950 50  0001 C CNN
+F 3 "~" H 13400 5950 50  0001 C CNN
+	1    13400 5950
+	-1   0    0    1   
+$EndComp
+Text Label 13350 5600 2    50   ~ 0
+GND
+Text Label 13350 5500 2    50   ~ 0
++50V
+Text Label 13350 5400 2    50   ~ 0
++300V
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-STOP-?
+U 1 1 5FCF0E56
+P 13650 5600
+AR Path="/5F868E46/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F2DDAEA/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/60BC2C2A/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89117E/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F88E8BA/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/6077FCA5/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5F89590E/5FCF0E56" Ref="J-STOP-?"  Part="1" 
+AR Path="/5FEEBA24/5FCF0E56" Ref="J-SUBTR1-7"  Part="1" 
+F 0 "J-SUBTR1-7" H 13700 6050 50  0000 C CNN
+F 1 "HIGH Voltage." H 13700 5950 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 13650 5600 50  0001 C CNN
+F 3 "~" H 13650 5600 50  0001 C CNN
+	1    13650 5600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

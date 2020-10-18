@@ -1,0 +1,2223 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 41 42
+Title "Dot and Strobe 2.3"
+Date "2020-10-15"
+Rev "Alpha"
+Comp "John Bradley"
+Comment1 "Small-Scale Experimental Machine Manchester Baby."
+Comment2 "https://computerconservationsociety.org/ssemvolunteers/volunteers/index.html"
+Comment3 "John Bradley"
+Comment4 "Copied from Computer Conservation Society https://computercon"
+$EndDescr
+$Comp
+L NEWValves:VR91 V-SXTMBASE-1
+U 2 1 642EEB17
+P 1250 10425
+F 0 "V-SXTMBASE-1" H 1250 11000 50  0000 C CNN
+F 1 "VR91" H 1250 10900 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2250 10675 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1250 10425 50  0001 C CNN
+	2    1250 10425
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SXTMBASE-1
+U 2 1 60752DF4
+P 1250 8900
+F 0 "D-SXTMBASE-1" H 1250 9200 50  0000 C CNN
+F 1 "EA50" H 1250 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 1850 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1250 8900 50  0001 C CNN
+	2    1250 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 10825 1150 10825
+Wire Wire Line
+	1000 11075 1350 11075
+Wire Wire Line
+	1150 10775 1150 10825
+Connection ~ 1150 10825
+Wire Wire Line
+	1350 10775 1350 11075
+Connection ~ 1350 11075
+Wire Wire Line
+	1000 9400 1150 9400
+Wire Wire Line
+	1000 9650 1350 9650
+Wire Wire Line
+	1150 9350 1150 9400
+Wire Wire Line
+	1350 9350 1350 9650
+Wire Wire Line
+	1775 10775 1775 10825
+Connection ~ 1775 10825
+Wire Wire Line
+	1975 10775 1975 11075
+Connection ~ 1975 11075
+Wire Wire Line
+	1150 10825 1775 10825
+Wire Wire Line
+	1350 11075 1975 11075
+Text Label 1000 9400 2    50   ~ 0
+Heater-6.3V
+Text Label 1000 9650 2    50   ~ 0
+Heater-GND
+Text Label 1000 10825 2    50   ~ 0
+Heater-6.3V
+Text Label 1000 11075 2    50   ~ 0
+Heater-GND
+$Comp
+L Device:C C-SXTMBASE-7
+U 1 1 658AB432
+P 8850 10550
+F 0 "C-SXTMBASE-7" H 8725 10475 50  0000 R CNN
+F 1 "0.5" H 8725 10575 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8888 10400 50  0001 C CNN
+F 3 "~" H 8850 10550 50  0001 C CNN
+	1    8850 10550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C-SXTMBASE-4
+U 1 1 658AB433
+P 7350 10550
+F 0 "C-SXTMBASE-4" H 7500 10625 50  0000 L CNN
+F 1 "0.5" H 7500 10550 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7388 10400 50  0001 C CNN
+F 3 "~" H 7350 10550 50  0001 C CNN
+	1    7350 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SXTMBASE-5
+U 1 1 642EEB09
+P 8100 10550
+F 0 "C-SXTMBASE-5" H 8225 10625 50  0000 L CNN
+F 1 "0.5" H 8225 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8138 10400 50  0001 C CNN
+F 3 "~" H 8100 10550 50  0001 C CNN
+	1    8100 10550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 9650
+Connection ~ 1150 9400
+Wire Wire Line
+	1150 9400 1775 9400
+Connection ~ 1775 9400
+Wire Wire Line
+	1775 9400 1775 9350
+Wire Wire Line
+	3150 9400 3150 9350
+Wire Wire Line
+	3350 9350 3350 9650
+$Comp
+L NEWValves:EA50 D-SXTMBASE-4
+U 2 1 60752DEB
+P 3250 8900
+F 0 "D-SXTMBASE-4" H 3250 9200 50  0000 C CNN
+F 1 "EA50" H 3250 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3850 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3250 8900 50  0001 C CNN
+	2    3250 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 9650 1975 9650
+Connection ~ 1975 9650
+Wire Wire Line
+	1975 9350 1975 9650
+$Comp
+L NEWValves:EA50 D-SXTMBASE-2
+U 2 1 642EEB1E
+P 1875 8900
+F 0 "D-SXTMBASE-2" H 1900 9200 50  0000 C CNN
+F 1 "EA50" H 1900 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2475 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 1875 8900 50  0001 C CNN
+	2    1875 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:VR91 V-SXTMBASE-2
+U 2 1 642EEB11
+P 1875 10425
+F 0 "V-SXTMBASE-2" H 1900 11000 50  0000 C CNN
+F 1 "VR91" H 1900 10900 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 2875 10675 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 1875 10425 50  0001 C CNN
+	2    1875 10425
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SXTMBASE-5
+U 2 1 651E4C8A
+P 3900 8900
+F 0 "D-SXTMBASE-5" H 3900 9200 50  0000 C CNN
+F 1 "EA50" H 3900 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 4500 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 3900 8900 50  0001 C CNN
+	2    3900 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 9350 3800 9400
+Wire Wire Line
+	4000 9350 4000 9650
+Connection ~ 4000 9650
+Connection ~ 3800 9400
+Wire Wire Line
+	3800 9400 4475 9400
+Wire Wire Line
+	4475 9400 5150 9400
+Connection ~ 4475 9400
+Wire Wire Line
+	4475 9400 4475 9350
+Wire Wire Line
+	4675 9650 5350 9650
+Wire Wire Line
+	5350 9350 5350 9650
+Wire Wire Line
+	5150 9350 5150 9400
+$Comp
+L NEWValves:EA50 D-SXTMBASE-7
+U 2 1 60D6951F
+P 5250 8900
+F 0 "D-SXTMBASE-7" H 5250 9200 50  0000 C CNN
+F 1 "EA50" H 5250 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5850 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5250 8900 50  0001 C CNN
+	2    5250 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 9650 4675 9650
+Connection ~ 4675 9650
+Wire Wire Line
+	4675 9350 4675 9650
+$Comp
+L NEWValves:EA50 D-SXTMBASE-6
+U 2 1 651E4C2C
+P 4575 8900
+F 0 "D-SXTMBASE-6" H 4600 9200 50  0000 C CNN
+F 1 "EA50" H 4600 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5175 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4575 8900 50  0001 C CNN
+	2    4575 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 9400 3800 9400
+Wire Wire Line
+	3350 9650 4000 9650
+$Comp
+L NEWValves:VR91 V-SXTMBASE-3
+U 2 1 658AB435
+P 2550 10425
+F 0 "V-SXTMBASE-3" H 2550 11000 50  0000 C CNN
+F 1 "VR91" H 2550 10900 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 3550 10675 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 2550 10425 50  0001 C CNN
+	2    2550 10425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 10775 2450 10825
+Connection ~ 2450 10825
+Wire Wire Line
+	2650 10775 2650 11075
+Connection ~ 2650 11075
+Wire Wire Line
+	3100 10775 3100 10825
+Connection ~ 3100 10825
+Connection ~ 3300 11075
+Wire Wire Line
+	2450 10825 3100 10825
+Wire Wire Line
+	2650 11075 3300 11075
+$Comp
+L NEWValves:CV173 V-SXTMBASE-4
+U 2 1 60D69553
+P 3200 10425
+F 0 "V-SXTMBASE-4" H 3225 11000 50  0000 C CNN
+F 1 "CV173" H 3225 10900 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4200 10675 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3200 10425 50  0001 C CNN
+	2    3200 10425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 10775 3800 10825
+Wire Wire Line
+	4000 10775 4000 11075
+$Comp
+L NEWValves:CV173 V-SXTMBASE-5
+U 2 1 658AB431
+P 3900 10425
+F 0 "V-SXTMBASE-5" H 3925 11000 50  0000 C CNN
+F 1 "CV173" H 3925 10900 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4900 10675 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3900 10425 50  0001 C CNN
+	2    3900 10425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 10825 3800 10825
+Wire Wire Line
+	3300 10775 3300 11075
+Wire Wire Line
+	1975 11075 2650 11075
+Wire Wire Line
+	1775 10825 2450 10825
+Wire Wire Line
+	7350 10700 7350 10800
+Text Label 7350 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	8100 10700 8100 10800
+Text Label 8100 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	8850 10700 8850 10800
+Text Label 8850 10800 3    50   ~ 0
+GND
+Text Label 7350 10400 1    50   ~ 0
++300V
+Text Label 8100 10400 1    50   ~ 0
++200V
+Text Label 9600 10400 1    50   ~ 0
++50V
+Text Label 8850 10400 1    50   ~ 0
+-150V
+Text Label 9600 10800 3    50   ~ 0
+GND
+Wire Wire Line
+	9600 10700 9600 10800
+$Comp
+L Device:C C-SXTMBASE-8
+U 1 1 642EEB0F
+P 9600 10550
+F 0 "C-SXTMBASE-8" H 9725 10625 50  0000 L CNN
+F 1 "0.5" H 9725 10525 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9638 10400 50  0001 C CNN
+F 3 "~" H 9600 10550 50  0001 C CNN
+	1    9600 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 658AB438
+P 11750 9600
+AR Path="/5F868E46/658AB438" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/658AB438" Ref="#FLG0115"  Part="1" 
+AR Path="/60BC2C2A/658AB438" Ref="#FLG0164"  Part="1" 
+AR Path="/5F89117E/658AB438" Ref="#FLG0166"  Part="1" 
+AR Path="/5FD26B52/658AB438" Ref="#FLG0182"  Part="1" 
+F 0 "#FLG0182" H 11750 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 11775 9800 50  0000 C CNN
+F 2 "" H 11750 9600 50  0001 C CNN
+F 3 "~" H 11750 9600 50  0001 C CNN
+	1    11750 9600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SCFOLLWS-?
+U 1 1 60752DEE
+P 11400 9250
+AR Path="/5F868E46/60752DEE" Ref="J-SCFOLLWS-?"  Part="1" 
+AR Path="/5F2DDAEA/60752DEE" Ref="J-SXTMBASE-5"  Part="1" 
+AR Path="/60BC2C2A/60752DEE" Ref="J-SXTMBASE-5"  Part="1" 
+AR Path="/5F89117E/60752DEE" Ref="J-SXTMBASE-5"  Part="1" 
+AR Path="/5FD26B52/60752DEE" Ref="J-SXTMBASE-5"  Part="1" 
+F 0 "J-SXTMBASE-5" H 11450 9700 50  0000 C CNN
+F 1 "HIGH Voltage." H 11450 9600 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 11400 9250 50  0001 C CNN
+F 3 "~" H 11400 9250 50  0001 C CNN
+	1    11400 9250
+	1    0    0    -1  
+$EndComp
+Text Label 11100 9050 2    50   ~ 0
++300V
+Text Label 11800 9150 0    50   ~ 0
+-150V
+Text Label 11100 9150 2    50   ~ 0
++50V
+Text Label 11100 9250 2    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 658AB426
+P 11150 9600
+AR Path="/5F868E46/658AB426" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/658AB426" Ref="#FLG0116"  Part="1" 
+AR Path="/60BC2C2A/658AB426" Ref="#FLG0165"  Part="1" 
+AR Path="/5F89117E/658AB426" Ref="#FLG0167"  Part="1" 
+AR Path="/5FD26B52/658AB426" Ref="#FLG0183"  Part="1" 
+F 0 "#FLG0183" H 11150 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 11175 9800 50  0000 C CNN
+F 2 "" H 11150 9600 50  0001 C CNN
+F 3 "~" H 11150 9600 50  0001 C CNN
+	1    11150 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11200 9550 11150 9550
+Wire Wire Line
+	11150 9600 11150 9550
+Connection ~ 11150 9550
+Wire Wire Line
+	11150 9550 11100 9550
+Wire Wire Line
+	11700 9550 11750 9550
+Text Label 11800 9550 0    50   ~ 0
+Heater-6.3V
+Connection ~ 11750 9550
+Wire Wire Line
+	11750 9550 11800 9550
+Wire Wire Line
+	11800 9050 11700 9050
+Wire Wire Line
+	11800 9150 11700 9150
+Wire Wire Line
+	11800 9250 11700 9250
+Wire Wire Line
+	11200 9050 11100 9050
+Wire Wire Line
+	11200 9150 11100 9150
+Wire Wire Line
+	11200 9250 11100 9250
+Wire Wire Line
+	11100 9450 11200 9450
+Wire Wire Line
+	11800 9450 11700 9450
+Wire Wire Line
+	11750 9600 11750 9550
+Text Label 11800 9050 0    50   ~ 0
++200V
+Text Label 11800 9250 0    50   ~ 0
+GND
+Text Label 11100 9550 2    50   ~ 0
+Heater-GND
+Wire Wire Line
+	3300 11075 4000 11075
+Text Label 11800 9450 0    50   ~ 0
+Heater-6.3V@200
+Wire Wire Line
+	11100 9350 11200 9350
+Text Label 11100 9350 2    50   ~ 0
+Heater-GND_Bal
+Text Label 11800 9350 0    50   ~ 0
+Heater-6.3V+Bal
+Wire Wire Line
+	11800 9350 11700 9350
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 658AB42D
+P 13850 9600
+AR Path="/5F868E46/658AB42D" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/658AB42D" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/658AB42D" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/658AB42D" Ref="#FLG0168"  Part="1" 
+AR Path="/5FD26B52/658AB42D" Ref="#FLG0184"  Part="1" 
+F 0 "#FLG0184" H 13850 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 13875 9800 50  0000 C CNN
+F 2 "" H 13850 9600 50  0001 C CNN
+F 3 "~" H 13850 9600 50  0001 C CNN
+	1    13850 9600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J-SXTMBASE-?
+U 1 1 658AB42E
+P 13500 9250
+AR Path="/5F868E46/658AB42E" Ref="J-SXTMBASE-?"  Part="1" 
+AR Path="/5F2DDAEA/658AB42E" Ref="J-SXTMBASE-?"  Part="1" 
+AR Path="/60BC2C2A/658AB42E" Ref="J-SXTMBASE-?"  Part="1" 
+AR Path="/5F89117E/658AB42E" Ref="J-SXTMBASE-7"  Part="1" 
+AR Path="/5FD26B52/658AB42E" Ref="J-SXTMBASE-7"  Part="1" 
+F 0 "J-SXTMBASE-7" H 13550 9700 50  0000 C CNN
+F 1 "HIGH Voltage." H 13550 9600 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770972-x_2x06_P4.14mm_Horizontal" H 13500 9250 50  0001 C CNN
+F 3 "~" H 13500 9250 50  0001 C CNN
+	1    13500 9250
+	1    0    0    -1  
+$EndComp
+Text Label 13200 9050 2    50   ~ 0
++300V
+Text Label 13900 9150 0    50   ~ 0
+-150V
+Text Label 13200 9150 2    50   ~ 0
++50V
+Text Label 13200 9250 2    50   ~ 0
+GND
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 60752DF2
+P 13250 9600
+AR Path="/5F868E46/60752DF2" Ref="#FLG?"  Part="1" 
+AR Path="/5F2DDAEA/60752DF2" Ref="#FLG?"  Part="1" 
+AR Path="/60BC2C2A/60752DF2" Ref="#FLG?"  Part="1" 
+AR Path="/5F89117E/60752DF2" Ref="#FLG0169"  Part="1" 
+AR Path="/5FD26B52/60752DF2" Ref="#FLG0185"  Part="1" 
+F 0 "#FLG0185" H 13250 9675 50  0001 C CNN
+F 1 "PWR_FLAG" H 13275 9800 50  0000 C CNN
+F 2 "" H 13250 9600 50  0001 C CNN
+F 3 "~" H 13250 9600 50  0001 C CNN
+	1    13250 9600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13300 9550 13250 9550
+Wire Wire Line
+	13250 9600 13250 9550
+Connection ~ 13250 9550
+Wire Wire Line
+	13250 9550 13200 9550
+Wire Wire Line
+	13800 9550 13850 9550
+Text Label 13900 9550 0    50   ~ 0
+Heater-6.3V@100
+Connection ~ 13850 9550
+Wire Wire Line
+	13850 9550 13900 9550
+Wire Wire Line
+	13900 9050 13800 9050
+Wire Wire Line
+	13900 9150 13800 9150
+Wire Wire Line
+	13900 9250 13800 9250
+Wire Wire Line
+	13300 9050 13200 9050
+Wire Wire Line
+	13300 9150 13200 9150
+Wire Wire Line
+	13300 9250 13200 9250
+Wire Wire Line
+	13200 9450 13300 9450
+Wire Wire Line
+	13900 9450 13800 9450
+Wire Wire Line
+	13850 9600 13850 9550
+Text Label 13900 9050 0    50   ~ 0
++200V
+Text Label 13900 9250 0    50   ~ 0
+GND
+Text Label 13200 9550 2    50   ~ 0
+Heater-GND@100
+Text Label 13200 9450 2    50   ~ 0
+Heater-GND@200
+Text Label 13900 9450 0    50   ~ 0
+Heater-6.3V@200
+Wire Wire Line
+	13200 9350 13300 9350
+Text Label 13200 9350 2    50   ~ 0
+Heater-GND_Bal
+Text Label 13900 9350 0    50   ~ 0
+Heater-6.3V+Bal
+Wire Wire Line
+	13900 9350 13800 9350
+Wire Wire Line
+	1775 9400 2475 9400
+Wire Wire Line
+	1975 9650 2675 9650
+$Comp
+L NEWValves:EA50 D-SXTMBASE-3
+U 2 1 60D69532
+P 2575 8900
+F 0 "D-SXTMBASE-3" H 2575 9200 50  0000 C CNN
+F 1 "EA50" H 2575 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3175 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2575 8900 50  0001 C CNN
+	2    2575 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2475 9350 2475 9400
+Wire Wire Line
+	2675 9350 2675 9650
+Wire Wire Line
+	9450 9350 9450 9300
+Wire Wire Line
+	9650 9300 9650 9600
+$Comp
+L NEWValves:EA50 D-SXTMBASE-11
+U 2 1 651E4C8B
+P 9550 8850
+F 0 "D-SXTMBASE-11" H 9575 9150 50  0000 C CNN
+F 1 "EA50" H 9575 9050 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 10150 8650 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 9550 8850 50  0001 C CNN
+	2    9550 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 9350 10150 9300
+Wire Wire Line
+	10350 9300 10350 9600
+$Comp
+L NEWValves:EA50 D-SXTMBASE-12
+U 2 1 60D29901
+P 10250 8850
+F 0 "D-SXTMBASE-12" H 10275 9150 50  0000 C CNN
+F 1 "EA50" H 10275 9050 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 10850 8650 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10250 8850 50  0001 C CNN
+	2    10250 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 9400 7175 9400
+Wire Wire Line
+	6725 9650 7375 9650
+Wire Wire Line
+	7175 9400 7175 9350
+Wire Wire Line
+	7375 9350 7375 9650
+$Comp
+L NEWValves:EA50 D-SXTMBASE-10
+U 2 1 6355ECC3
+P 7275 8900
+F 0 "D-SXTMBASE-10" H 7525 8800 50  0000 L CNN
+F 1 "EA50" H 7525 8700 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 7875 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 7275 8900 50  0001 C CNN
+	2    7275 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 9350 10150 9350
+Wire Wire Line
+	9650 9600 10350 9600
+Wire Wire Line
+	2475 9400 3150 9400
+Wire Wire Line
+	2675 9650 3350 9650
+Text Notes 11100 8700 0    50   ~ 0
+From X-Timebase
+Text Notes 13400 8700 0    50   ~ 0
+To Clock
+Wire Wire Line
+	1575 800  1575 1150
+$Comp
+L Device:R R-SXTMBASE-4
+U 1 1 5FE0F015
+P 2075 1150
+F 0 "R-SXTMBASE-4" V 2325 1150 50  0000 C CNN
+F 1 "5k6" V 2225 1150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2005 1150 50  0001 C CNN
+F 3 "~" H 2075 1150 50  0001 C CNN
+	1    2075 1150
+	0    -1   -1   0   
+$EndComp
+Text Label 1575 800  2    50   ~ 0
++200V
+$Comp
+L NEWValves:EA50 D-SXTMBASE-1
+U 1 1 5FE86068
+P 2175 1600
+F 0 "D-SXTMBASE-1" V 2475 1500 50  0000 C CNN
+F 1 "EA50" V 2575 1500 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 2775 1400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2175 1600 50  0001 C CNN
+	1    2175 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:EA50 D-SXTMBASE-2
+U 1 1 5FE86700
+P 2875 1600
+F 0 "D-SXTMBASE-2" V 3175 1500 50  0000 C CNN
+F 1 "EA50" V 3275 1500 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 3475 1400 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 2875 1600 50  0001 C CNN
+	1    2875 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2425 1600 2525 1600
+Wire Wire Line
+	2525 1600 2525 1150
+Wire Wire Line
+	2225 1150 2525 1150
+Connection ~ 2525 1600
+Wire Wire Line
+	2525 1600 2625 1600
+Wire Wire Line
+	1575 1600 1575 1150
+Wire Wire Line
+	1575 1600 1675 1600
+Connection ~ 1575 1150
+Wire Wire Line
+	1575 1150 1925 1150
+Wire Wire Line
+	3375 1600 3475 1600
+Wire Wire Line
+	3475 1000 3475 1200
+$Comp
+L Device:R R-SXTMBASE-10
+U 1 1 5FF93F4A
+P 3475 1350
+F 0 "R-SXTMBASE-10" H 3575 1400 50  0000 L CNN
+F 1 "56k 2W" H 3575 1350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3405 1350 50  0001 C CNN
+F 3 "~" H 3475 1350 50  0001 C CNN
+	1    3475 1350
+	1    0    0    -1  
+$EndComp
+Text Label 3475 1000 2    50   ~ 0
++300V
+Wire Wire Line
+	3475 1500 3475 1600
+$Comp
+L Device:R R-SXTMBASE-2
+U 1 1 5FFB8381
+P 1775 2450
+F 0 "R-SXTMBASE-2" V 1625 2450 50  0000 C CNN
+F 1 "4k7" V 1525 2450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1705 2450 50  0001 C CNN
+F 3 "~" H 1775 2450 50  0001 C CNN
+	1    1775 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C-SXTMBASE-2
+U 1 1 5FFB838B
+P 2275 2450
+F 0 "C-SXTMBASE-2" V 2575 2450 50  0000 C CNN
+F 1 "1000p" V 2475 2450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2313 2300 50  0001 C CNN
+F 3 "~" H 2275 2450 50  0001 C CNN
+	1    2275 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2425 2450 2525 2450
+Wire Wire Line
+	2525 2450 2525 1600
+Wire Wire Line
+	1625 2450 1525 2450
+$Comp
+L Connector:Conn_01x01_Female J-SXTMBASE-1
+U 1 1 6007A7EE
+P 1325 2450
+F 0 "J-SXTMBASE-1" H 1400 2500 50  0000 L CNN
+F 1 "PRF" H 1400 2400 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 1325 2450 50  0001 C CNN
+F 3 "~" H 1325 2450 50  0001 C CNN
+	1    1325 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1925 2450 2125 2450
+$Comp
+L NEWValves:VR91 V-SXTMBASE-1
+U 1 1 600A25A5
+P 3475 2650
+F 0 "V-SXTMBASE-1" H 3475 3250 50  0000 C CNN
+F 1 "VR91" H 3475 3150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4475 2900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 3475 2650 50  0001 C CNN
+	1    3475 2650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 2700 3775 2700
+NoConn ~ 3175 2850
+NoConn ~ 3175 2750
+Wire Wire Line
+	3775 2800 3775 2900
+Wire Wire Line
+	3475 1600 3475 2200
+Connection ~ 3475 1600
+Wire Wire Line
+	4175 2700 4275 2700
+Wire Wire Line
+	3875 2500 3775 2500
+$Comp
+L Device:R R-SXTMBASE-15
+U 1 1 6028B907
+P 4025 2500
+F 0 "R-SXTMBASE-15" V 4275 2500 50  0000 C CNN
+F 1 "R" V 4175 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3955 2500 50  0001 C CNN
+F 3 "~" H 4025 2500 50  0001 C CNN
+	1    4025 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R-SXTMBASE-16
+U 1 1 60269297
+P 4025 2700
+F 0 "R-SXTMBASE-16" V 3875 2650 50  0000 C CNN
+F 1 "R" V 3725 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3955 2700 50  0001 C CNN
+F 3 "~" H 4025 2700 50  0001 C CNN
+	1    4025 2700
+	0    -1   -1   0   
+$EndComp
+Text Label 3025 3100 2    50   ~ 0
+GND
+Wire Wire Line
+	3025 3000 3025 3100
+$Comp
+L Device:C C-SXTMBASE-6
+U 1 1 602B38E2
+P 3025 2850
+F 0 "C-SXTMBASE-6" H 3175 2900 50  0000 L CNN
+F 1 "0.1" H 3175 2850 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 3063 2700 50  0001 C CNN
+F 3 "~" H 3025 2850 50  0001 C CNN
+	1    3025 2850
+	-1   0    0    -1  
+$EndComp
+Text Label 3025 2150 2    50   ~ 0
++300V
+$Comp
+L Device:R R-SXTMBASE-7
+U 1 1 602B38D7
+P 3025 2350
+F 0 "R-SXTMBASE-7" H 3125 2400 50  0000 L CNN
+F 1 "12K 2W" H 3125 2350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2955 2350 50  0001 C CNN
+F 3 "~" H 3025 2350 50  0001 C CNN
+	1    3025 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3025 2150 3025 2200
+Wire Wire Line
+	3025 2700 3025 2600
+Wire Wire Line
+	3025 2500 3025 2600
+Connection ~ 3025 2600
+Wire Wire Line
+	3125 2600 3025 2600
+$Comp
+L Device:R R-SXTMBASE-12
+U 1 1 6038B034
+P 3775 3150
+F 0 "R-SXTMBASE-12" H 3875 3200 50  0000 L CNN
+F 1 "2K2" H 3875 3150 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3705 3150 50  0001 C CNN
+F 3 "~" H 3775 3150 50  0001 C CNN
+	1    3775 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 3300 3775 3400
+Text Label 3775 3400 0    50   ~ 0
+GND
+Wire Wire Line
+	3475 1600 4275 1600
+$Comp
+L Device:C C-SXTMBASE-10
+U 1 1 6041C94E
+P 4275 1850
+F 0 "C-SXTMBASE-10" H 4425 1900 50  0000 L CNN
+F 1 "150p" H 4425 1850 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4313 1700 50  0001 C CNN
+F 3 "~" H 4275 1850 50  0001 C CNN
+	1    4275 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 1700 4275 1600
+Connection ~ 4275 1600
+Wire Wire Line
+	4275 1600 4375 1600
+Wire Wire Line
+	4175 2500 4375 2500
+$Comp
+L NEWValves:EA50 D-SXTMBASE-5
+U 1 1 604B0849
+P 4275 3050
+F 0 "D-SXTMBASE-5" H 4525 3000 50  0000 L CNN
+F 1 "EA50" H 4525 2900 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 4875 2850 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 4275 3050 50  0001 C CNN
+	1    4275 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 2000 4275 2700
+Connection ~ 4275 2700
+Wire Wire Line
+	4275 2700 4275 2800
+Wire Wire Line
+	4275 3550 4275 3650
+Text Label 4275 3650 0    50   ~ 0
+GND
+Wire Wire Line
+	4375 2700 4275 2700
+Wire Wire Line
+	4675 2700 4775 2700
+$Comp
+L Device:R R-SXTMBASE-17
+U 1 1 6052147F
+P 4525 2700
+F 0 "R-SXTMBASE-17" V 4775 2700 50  0000 C CNN
+F 1 "1M5" V 4675 2700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4455 2700 50  0001 C CNN
+F 3 "~" H 4525 2700 50  0001 C CNN
+	1    4525 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV-SXTMBASE-2
+U 1 1 60548C50
+P 4925 2700
+F 0 "RV-SXTMBASE-2" H 4825 2750 50  0000 R CNN
+F 1 "50K" H 4825 2700 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 4925 2700 50  0001 C CNN
+F 3 "~" H 4925 2700 50  0001 C CNN
+	1    4925 2700
+	-1   0    0    -1  
+$EndComp
+Text Label 4925 2450 2    50   ~ 0
++200V
+Wire Wire Line
+	4925 2550 4925 2450
+$Comp
+L Device:R R-SXTMBASE-19
+U 1 1 6060C2B0
+P 4925 3050
+F 0 "R-SXTMBASE-19" H 4825 3100 50  0000 R CNN
+F 1 "68K" H 4825 3050 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4855 3050 50  0001 C CNN
+F 3 "~" H 4925 3050 50  0001 C CNN
+	1    4925 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 2850 4925 2900
+$Comp
+L Device:R R-SXTMBASE-20
+U 1 1 60681CD8
+P 4925 3550
+F 0 "R-SXTMBASE-20" H 4825 3600 50  0000 R CNN
+F 1 "68K" H 4825 3550 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4855 3550 50  0001 C CNN
+F 3 "~" H 4925 3550 50  0001 C CNN
+	1    4925 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 3700 4925 3800
+Wire Wire Line
+	4925 3200 4925 3300
+$Comp
+L Device:C C-SXTMBASE-13
+U 1 1 606D063D
+P 5125 3550
+F 0 "C-SXTMBASE-13" H 4975 3600 50  0000 R CNN
+F 1 "150p" H 4975 3550 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5163 3400 50  0001 C CNN
+F 3 "~" H 5125 3550 50  0001 C CNN
+	1    5125 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 3300 5125 3300
+Wire Wire Line
+	5125 3300 5125 3400
+Connection ~ 4925 3300
+Wire Wire Line
+	4925 3300 4925 3400
+Wire Wire Line
+	4925 3800 5125 3800
+Wire Wire Line
+	5125 3800 5125 3700
+Wire Wire Line
+	4925 3800 4925 3900
+Connection ~ 4925 3800
+Text Label 4925 3900 0    50   ~ 0
+GND
+$Comp
+L Device:C C-SXTMBASE-11
+U 1 1 608388F7
+P 4525 1600
+F 0 "C-SXTMBASE-11" V 4225 1600 50  0000 C CNN
+F 1 "150p" V 4325 1600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4563 1450 50  0001 C CNN
+F 3 "~" H 4525 1600 50  0001 C CNN
+	1    4525 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4925 3300 4825 3300
+Wire Wire Line
+	4375 2500 4375 2000
+Wire Wire Line
+	4375 2000 5525 2000
+$Comp
+L NEWValves:EA50 D-SXTMBASE-6
+U 1 1 608B5025
+P 5525 2350
+F 0 "D-SXTMBASE-6" H 5775 2300 50  0000 L CNN
+F 1 "EA50" H 5775 2200 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 6125 2150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5525 2350 50  0001 C CNN
+	1    5525 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 2100 5525 2000
+Wire Wire Line
+	5525 2950 5525 2850
+Text Label 5525 2950 0    50   ~ 0
+GND
+Wire Wire Line
+	4675 1600 6075 1600
+Wire Wire Line
+	6075 1600 6075 2100
+Text Label 4825 3300 2    50   ~ 0
++10
+$Comp
+L Device:R R-SXTMBASE-23
+U 1 1 6090BA36
+P 6075 2250
+F 0 "R-SXTMBASE-23" H 5975 2300 50  0000 R CNN
+F 1 "68K" H 5975 2250 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6005 2250 50  0001 C CNN
+F 3 "~" H 6075 2250 50  0001 C CNN
+	1    6075 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SXTMBASE-4
+U 1 1 609368C2
+P 6075 3750
+F 0 "D-SXTMBASE-4" H 5825 3550 50  0000 R CNN
+F 1 "EA50" H 5825 3650 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 6675 3550 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6075 3750 50  0001 C CNN
+	1    6075 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3775 2900 3975 2900
+Connection ~ 3775 2900
+Wire Wire Line
+	3775 2900 3775 3000
+$Comp
+L NEWValves:EA50 D-SXTMBASE-3
+U 1 1 6098ECB2
+P 5125 4400
+F 0 "D-SXTMBASE-3" V 4725 4300 50  0000 C CNN
+F 1 "EA50" V 4825 4300 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 5725 4200 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5125 4400 50  0001 C CNN
+	1    5125 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6075 4000 6075 4400
+Wire Wire Line
+	6075 4400 5375 4400
+Wire Wire Line
+	3975 2900 3975 4400
+$Comp
+L Device:R R-SXTMBASE-13
+U 1 1 609E79A5
+P 3975 4650
+F 0 "R-SXTMBASE-13" H 4075 4700 50  0000 L CNN
+F 1 "1K" H 4075 4650 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3905 4650 50  0001 C CNN
+F 3 "~" H 3975 4650 50  0001 C CNN
+	1    3975 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 4400 3975 4500
+Connection ~ 3975 4400
+$Comp
+L Device:R R-SXTMBASE-14
+U 1 1 60A98BA1
+P 3975 5150
+F 0 "R-SXTMBASE-14" H 3875 5200 50  0000 R CNN
+F 1 "10K" H 3875 5150 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3905 5150 50  0001 C CNN
+F 3 "~" H 3975 5150 50  0001 C CNN
+	1    3975 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 5300 3975 5400
+Wire Wire Line
+	3975 4800 3975 4900
+Connection ~ 3975 4900
+Wire Wire Line
+	3975 4900 3975 5000
+Wire Wire Line
+	3975 4400 4625 4400
+$Comp
+L Device:R R-SXTMBASE-21
+U 1 1 60B1FC16
+P 5025 4900
+F 0 "R-SXTMBASE-21" V 5275 4900 50  0000 C CNN
+F 1 "2K2" V 5175 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4955 4900 50  0001 C CNN
+F 3 "~" H 5025 4900 50  0001 C CNN
+	1    5025 4900
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3975 4900 4875 4900
+Wire Wire Line
+	6075 4900 6075 4400
+Connection ~ 6075 4400
+Text Label 3975 5400 2    50   ~ 0
+-150
+$Comp
+L Device:C C-SXTMBASE-15
+U 1 1 60BB091B
+P 6075 5150
+F 0 "C-SXTMBASE-15" H 5925 5200 50  0000 R CNN
+F 1 "100p" H 5925 5150 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6113 5000 50  0001 C CNN
+F 3 "~" H 6075 5150 50  0001 C CNN
+	1    6075 5150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 4900 6075 5000
+Wire Wire Line
+	6075 5400 6075 5300
+Connection ~ 6075 4900
+Wire Wire Line
+	5175 4900 6075 4900
+Connection ~ 5525 2000
+Wire Wire Line
+	6075 2600 6925 2600
+Text Label 6925 2150 2    50   ~ 0
++300V
+$Comp
+L Device:R R-SXTMBASE-26
+U 1 1 60D976E5
+P 6925 2350
+F 0 "R-SXTMBASE-26" H 6825 2400 50  0000 R CNN
+F 1 "1M" H 6825 2350 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6855 2350 50  0001 C CNN
+F 3 "~" H 6925 2350 50  0001 C CNN
+	1    6925 2350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 2150 6925 2200
+Wire Wire Line
+	6925 2500 6925 2600
+Connection ~ 6925 2600
+Wire Wire Line
+	6925 2600 7825 2600
+Connection ~ 6075 2600
+Wire Wire Line
+	6075 2600 6075 3250
+Wire Wire Line
+	6075 2400 6075 2600
+$Comp
+L Device:C C-SXTMBASE-16
+U 1 1 60E5D709
+P 6925 2850
+F 0 "C-SXTMBASE-16" H 6775 2900 50  0000 R CNN
+F 1 "56p" H 6775 2850 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 6963 2700 50  0001 C CNN
+F 3 "~" H 6925 2850 50  0001 C CNN
+	1    6925 2850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 2600 6925 2700
+Wire Wire Line
+	6925 3100 6925 3000
+Text Label 6925 3100 0    50   ~ 0
+GND
+$Comp
+L NEWValves:VR91 V-SXTMBASE-2
+U 1 1 60E9281E
+P 8525 2550
+F 0 "V-SXTMBASE-2" H 8575 2150 50  0000 C CNN
+F 1 "VR91" H 8575 2050 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 9525 2800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 8525 2550 50  0001 C CNN
+	1    8525 2550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8825 2750
+NoConn ~ 8825 2650
+$Comp
+L Device:R R-SXTMBASE-29
+U 1 1 60EC4610
+P 7975 2600
+F 0 "R-SXTMBASE-29" V 7775 2600 50  0000 C CNN
+F 1 "R" V 7875 2600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7905 2600 50  0001 C CNN
+F 3 "~" H 7975 2600 50  0001 C CNN
+	1    7975 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8225 2600 8125 2600
+Wire Wire Line
+	8125 2400 8225 2400
+Text Label 8125 2400 3    50   ~ 0
+GND
+Wire Wire Line
+	8525 2100 8525 2000
+Wire Wire Line
+	8525 2000 8425 2000
+$Comp
+L Device:C C-SXTMBASE-18
+U 1 1 60FF5D7D
+P 8275 2000
+F 0 "C-SXTMBASE-18" V 8375 1600 50  0000 C CNN
+F 1 "100p" V 8325 1600 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 8313 1850 50  0001 C CNN
+F 3 "~" H 8275 2000 50  0001 C CNN
+	1    8275 2000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5525 2000 7775 2000
+$Comp
+L Device:R R-SXTMBASE-28
+U 1 1 6102A875
+P 7775 2250
+F 0 "R-SXTMBASE-28" H 7675 2300 50  0000 R CNN
+F 1 "50K" H 7675 2250 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7705 2250 50  0001 C CNN
+F 3 "~" H 7775 2250 50  0001 C CNN
+	1    7775 2250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7775 2400 7775 2500
+Wire Wire Line
+	7775 2000 7775 2100
+Text Label 7775 2500 2    50   ~ 0
+-150
+Connection ~ 7775 2000
+Wire Wire Line
+	7775 2000 8025 2000
+$Comp
+L Device:R R-SXTMBASE-30
+U 1 1 61063626
+P 8275 1800
+F 0 "R-SXTMBASE-30" V 8525 1800 50  0000 C CNN
+F 1 "220k" V 8425 1800 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8205 1800 50  0001 C CNN
+F 3 "~" H 8275 1800 50  0001 C CNN
+	1    8275 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8525 2000 8525 1800
+Wire Wire Line
+	8525 1800 8425 1800
+Connection ~ 8525 2000
+Wire Wire Line
+	8125 1800 8025 1800
+Wire Wire Line
+	8025 1800 8025 2000
+Connection ~ 8025 2000
+Wire Wire Line
+	8025 2000 8125 2000
+$Comp
+L Device:C C-SXTMBASE-21
+U 1 1 610C97D2
+P 9625 2000
+F 0 "C-SXTMBASE-21" V 9925 2000 50  0000 C CNN
+F 1 "100p" V 9825 2000 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9663 1850 50  0001 C CNN
+F 3 "~" H 9625 2000 50  0001 C CNN
+	1    9625 2000
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9475 2000 8525 2000
+$Comp
+L Device:R R-SXTMBASE-32
+U 1 1 61163726
+P 8525 1550
+F 0 "R-SXTMBASE-32" H 8625 1600 50  0000 L CNN
+F 1 "12k 4W" H 8625 1550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8455 1550 50  0001 C CNN
+F 3 "~" H 8525 1550 50  0001 C CNN
+	1    8525 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8525 1800 8525 1700
+Connection ~ 8525 1800
+$Comp
+L Device:R R-SXTMBASE-31
+U 1 1 611FBFE0
+P 8525 1050
+F 0 "R-SXTMBASE-31" H 8625 1100 50  0000 L CNN
+F 1 "4k7" H 8625 1050 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8455 1050 50  0001 C CNN
+F 3 "~" H 8525 1050 50  0001 C CNN
+	1    8525 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8525 900  8525 800 
+Wire Wire Line
+	8525 1200 8525 1300
+Text Label 8525 800  2    50   ~ 0
++300V
+$Comp
+L Connector:Conn_01x01_Female J-SXTMBASE-6
+U 1 1 612CB301
+P 8225 1300
+F 0 "J-SXTMBASE-6" H 8300 1350 50  0000 L CNN
+F 1 "BO" H 8300 1250 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 8225 1300 50  0001 C CNN
+F 3 "~" H 8225 1300 50  0001 C CNN
+	1    8225 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8525 1300 8425 1300
+Connection ~ 8525 1300
+Wire Wire Line
+	8525 1300 8525 1400
+Text Notes 7425 1300 0    50   ~ 0
+to CF on Dot &\nStrobe Chassis
+Wire Wire Line
+	9025 2050 9025 2100
+Wire Wire Line
+	9025 2400 9025 2500
+$Comp
+L Device:R R-SXTMBASE-33
+U 1 1 6133EEC8
+P 9025 2250
+F 0 "R-SXTMBASE-33" H 9125 2300 50  0000 L CNN
+F 1 "18K 2W" H 9125 2250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 8955 2250 50  0001 C CNN
+F 3 "~" H 9025 2250 50  0001 C CNN
+	1    9025 2250
+	1    0    0    -1  
+$EndComp
+Text Label 9025 2050 0    50   ~ 0
++300V
+$Comp
+L Device:C C-SXTMBASE-19
+U 1 1 6133EED3
+P 9025 2750
+F 0 "C-SXTMBASE-19" H 9175 2800 50  0000 L CNN
+F 1 "0.1" H 9175 2750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9063 2600 50  0001 C CNN
+F 3 "~" H 9025 2750 50  0001 C CNN
+	1    9025 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9025 2600 9025 2500
+Connection ~ 9025 2500
+Wire Wire Line
+	9025 2900 9025 3000
+Wire Wire Line
+	8875 2500 9025 2500
+Text Label 9025 3000 0    50   ~ 0
+GND
+$Comp
+L Device:R R-SXTMBASE-35
+U 1 1 6145398A
+P 9875 2250
+F 0 "R-SXTMBASE-35" H 9975 2300 50  0000 L CNN
+F 1 "10K" H 9975 2250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9805 2250 50  0001 C CNN
+F 3 "~" H 9875 2250 50  0001 C CNN
+	1    9875 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9875 2100 9875 2000
+Wire Wire Line
+	9875 2000 9775 2000
+Wire Wire Line
+	9875 2400 9875 2500
+$Comp
+L Device:R R-SXTMBASE-36
+U 1 1 614BF102
+P 9875 2750
+F 0 "R-SXTMBASE-36" H 9975 2800 50  0000 L CNN
+F 1 "560K" H 9975 2750 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9805 2750 50  0001 C CNN
+F 3 "~" H 9875 2750 50  0001 C CNN
+	1    9875 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L NEWValves:EA50 D-SXTMBASE-7
+U 1 1 614F6E88
+P 10775 2850
+F 0 "D-SXTMBASE-7" H 11025 2800 50  0000 L CNN
+F 1 "EA50" H 11025 2700 50  0000 L CNN
+F 2 "NewValves:Valve_B3G" H 11375 2650 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 10775 2850 50  0001 C CNN
+	1    10775 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 9875 2500
+Wire Wire Line
+	9875 2500 9875 2600
+Wire Wire Line
+	10775 2600 10775 2500
+Wire Wire Line
+	9875 2500 10775 2500
+Wire Wire Line
+	10775 3350 10775 3450
+Wire Wire Line
+	10775 3450 9875 3450
+Wire Wire Line
+	9875 2900 9875 3450
+Text Label 9875 3450 2    50   ~ 0
+GND
+Connection ~ 10775 2500
+$Comp
+L Connector:Conn_01x01_Female J-SXTMBASE-8
+U 1 1 6167A8DC
+P 10775 700
+F 0 "J-SXTMBASE-8" V 10725 600 50  0000 R CNN
+F 1 "BO.Sup" V 10625 600 50  0000 R CNN
+F 2 "SamacSys_Parts_l:242431" H 10775 700 50  0001 C CNN
+F 3 "~" H 10775 700 50  0001 C CNN
+	1    10775 700 
+	0    -1   -1   0   
+$EndComp
+Text Notes 10875 1050 0    50   ~ 0
+to Dot & Strobe,\n& Mon X Timebase
+$Comp
+L NEWValves:VR91 V-SXTMBASE-3
+U 1 1 616B7577
+P 12375 2650
+F 0 "V-SXTMBASE-3" H 12425 2250 50  0000 C CNN
+F 1 "VR91" H 12425 2150 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 13375 2900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef50.pdf" H 12375 2650 50  0001 C CNN
+	1    12375 2650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 12675 2850
+NoConn ~ 12675 2750
+$Comp
+L Device:R R-SXTMBASE-38
+U 1 1 616B7BCD
+P 11825 2500
+F 0 "R-SXTMBASE-38" V 12075 2500 50  0000 C CNN
+F 1 "R" V 11975 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11755 2500 50  0001 C CNN
+F 3 "~" H 11825 2500 50  0001 C CNN
+	1    11825 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12075 2700 11975 2700
+Wire Wire Line
+	11975 2500 12075 2500
+Wire Wire Line
+	12725 2600 12875 2600
+Wire Wire Line
+	10775 900  10775 2500
+Wire Wire Line
+	10775 2500 11675 2500
+Text Label 8225 3000 0    50   ~ 0
+GND
+Wire Wire Line
+	8225 2700 8225 3000
+Text Label 12075 3100 0    50   ~ 0
+GND
+Wire Wire Line
+	12075 2800 12075 3100
+Wire Wire Line
+	12875 2500 12875 2600
+$Comp
+L Device:R R-SXTMBASE-40
+U 1 1 618BB714
+P 12875 2350
+F 0 "R-SXTMBASE-40" H 12975 2400 50  0000 L CNN
+F 1 "18K 2W" H 12975 2350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12805 2350 50  0001 C CNN
+F 3 "~" H 12875 2350 50  0001 C CNN
+	1    12875 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SXTMBASE-23
+U 1 1 618BB71E
+P 12875 2850
+F 0 "C-SXTMBASE-23" H 13025 2900 50  0000 L CNN
+F 1 "0.1" H 13025 2850 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 12913 2700 50  0001 C CNN
+F 3 "~" H 12875 2850 50  0001 C CNN
+	1    12875 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12875 2700 12875 2600
+Connection ~ 12875 2600
+Wire Wire Line
+	12875 3000 12875 3100
+Text Label 12875 3100 0    50   ~ 0
+GND
+Text Label 12875 2150 0    50   ~ 0
++300V
+Wire Wire Line
+	11975 2700 11975 2650
+Wire Wire Line
+	11975 2650 13825 2650
+$Comp
+L Device:R R-SXTMBASE-43
+U 1 1 6192FA08
+P 13975 2650
+F 0 "R-SXTMBASE-43" V 14225 2650 50  0000 C CNN
+F 1 "470" V 14125 2650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13905 2650 50  0001 C CNN
+F 3 "~" H 13975 2650 50  0001 C CNN
+	1    13975 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	14125 2650 14225 2650
+Wire Wire Line
+	14225 2650 14225 2550
+$Comp
+L Device:C C-SXTMBASE-24
+U 1 1 61969E14
+P 14225 2400
+F 0 "C-SXTMBASE-24" H 14375 2450 50  0000 L CNN
+F 1 "1000" H 14375 2400 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 14263 2250 50  0001 C CNN
+F 3 "~" H 14225 2400 50  0001 C CNN
+	1    14225 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12875 2150 12875 2200
+Wire Wire Line
+	12375 2200 12375 2100
+Wire Wire Line
+	12375 2100 14225 2100
+Wire Wire Line
+	14225 2100 14225 2250
+$Comp
+L NEWValves:EA50 D-SXTMBASE-9
+U 1 1 61A1B890
+P 12025 2100
+F 0 "D-SXTMBASE-9" V 11625 2000 50  0000 C CNN
+F 1 "EA50" V 11725 2000 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 12625 1900 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 12025 2100 50  0001 C CNN
+	1    12025 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12275 2100 12375 2100
+Connection ~ 12375 2100
+Wire Wire Line
+	11525 2100 11425 2100
+Wire Wire Line
+	11425 2100 11425 2000
+Text Label 11425 2000 0    50   ~ 0
++300V
+Wire Wire Line
+	12375 2000 12375 2100
+$Comp
+L Device:R R-SXTMBASE-39
+U 1 1 61ACFAF4
+P 12375 1850
+F 0 "R-SXTMBASE-39" H 12475 1900 50  0000 L CNN
+F 1 "27K 2W" H 12475 1850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12305 1850 50  0001 C CNN
+F 3 "~" H 12375 1850 50  0001 C CNN
+	1    12375 1850
+	1    0    0    -1  
+$EndComp
+Text Label 12375 1650 0    50   ~ 0
++300V
+Wire Wire Line
+	12375 1650 12375 1700
+$Comp
+L NEWValves:EA50 D-SXTMBASE-11
+U 1 1 61B106AC
+P 14225 3250
+F 0 "D-SXTMBASE-11" H 13975 3050 50  0000 R CNN
+F 1 "EA50" H 13975 3150 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 14825 3050 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 14225 3250 50  0001 C CNN
+	1    14225 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14225 2650 14225 2750
+Connection ~ 14225 2650
+Wire Wire Line
+	14225 4000 14225 4100
+$Comp
+L Device:R R-SXTMBASE-44
+U 1 1 61B4E782
+P 14225 3850
+F 0 "R-SXTMBASE-44" H 14325 3900 50  0000 L CNN
+F 1 "220K*" H 14325 3850 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 14155 3850 50  0001 C CNN
+F 3 "~" H 14225 3850 50  0001 C CNN
+	1    14225 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14225 3500 14225 3600
+$Comp
+L Device:R_POT RV-SXTMBASE-3
+U 1 1 61C08305
+P 13975 4100
+F 0 "RV-SXTMBASE-3" H 13875 4150 50  0000 R CNN
+F 1 "50K" H 13875 4100 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 13975 4100 50  0001 C CNN
+F 3 "~" H 13975 4100 50  0001 C CNN
+	1    13975 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13975 3950 13975 3850
+Wire Wire Line
+	14225 4100 14125 4100
+Text Label 13975 3850 2    50   ~ 0
++200V*
+Wire Wire Line
+	13975 4250 13975 4350
+Text Label 13975 4350 0    50   ~ 0
+GND
+Wire Wire Line
+	13175 3600 13175 4100
+Wire Wire Line
+	13175 3600 14225 3600
+Connection ~ 14225 3600
+Wire Wire Line
+	14225 3600 14225 3700
+$Comp
+L NEWValves:EA50 D-SXTMBASE-12
+U 1 1 61DC3C55
+P 13175 4350
+F 0 "D-SXTMBASE-12" H 12925 4300 50  0000 R CNN
+F 1 "EA50" H 12925 4200 50  0000 R CNN
+F 2 "NewValves:Valve_B3G" H 13775 4150 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 13175 4350 50  0001 C CNN
+	1    13175 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SXTMBASE-41
+U 1 1 61DC60C5
+P 12875 4850
+F 0 "R-SXTMBASE-41" V 13025 4850 50  0000 C CNN
+F 1 "22K" V 13125 4850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 12805 4850 50  0001 C CNN
+F 3 "~" H 12875 4850 50  0001 C CNN
+	1    12875 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13025 4850 13175 4850
+Connection ~ 13175 4850
+Wire Wire Line
+	13175 4850 13325 4850
+$Comp
+L Device:R R-SXTMBASE-42
+U 1 1 61E0566E
+P 13475 4850
+F 0 "R-SXTMBASE-42" V 13625 4850 50  0000 C CNN
+F 1 "22K" V 13725 4850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 13405 4850 50  0001 C CNN
+F 3 "~" H 13475 4850 50  0001 C CNN
+	1    13475 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12725 4850 12625 4850
+Wire Wire Line
+	13625 4850 13725 4850
+Text Label 13725 4850 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01_Female J-SXTMBASE-9
+U 1 1 61F42877
+P 12425 4850
+F 0 "J-SXTMBASE-9" H 12500 4900 50  0000 L CNN
+F 1 "Dot +10, -60" H 12500 4800 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 12425 4850 50  0001 C CNN
+F 3 "~" H 12425 4850 50  0001 C CNN
+	1    12425 4850
+	-1   0    0    1   
+$EndComp
+Text Notes 11325 3850 0    50   ~ 0
+V3, D11 and D12\nheaters on 6.3V Bal
+Wire Wire Line
+	12375 2100 12175 2300
+Text Label 12175 2300 0    50   ~ 0
+A
+$Comp
+L Connector:Conn_01x01_Female J-SXTMBASE-3
+U 1 1 60C118F8
+P 6075 5600
+F 0 "J-SXTMBASE-3" V 5875 5650 50  0000 L CNN
+F 1 "Div4" V 5975 5650 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 6075 5600 50  0001 C CNN
+F 3 "~" H 6075 5600 50  0001 C CNN
+	1    6075 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L NEWValves:VR91 V-SXTMBASE-4
+U 1 1 61FFA0FE
+P 3600 7550
+F 0 "V-SXTMBASE-4" H 3650 7150 50  0000 C CNN
+F 1 "CV173" H 3650 7050 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 4600 7800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 3600 7550 50  0001 C CNN
+	1    3600 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 7700 3300 8250
+Wire Wire Line
+	3300 7400 3200 7400
+Text Label 3200 7400 2    50   ~ 0
+GND
+NoConn ~ 3900 7750
+NoConn ~ 3900 7650
+Wire Wire Line
+	3950 7500 4050 7500
+$Comp
+L Device:C C-SXTMBASE-9
+U 1 1 61FFAE42
+P 4050 7750
+F 0 "C-SXTMBASE-9" H 4200 7800 50  0000 L CNN
+F 1 "0.1" H 4200 7750 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4088 7600 50  0001 C CNN
+F 3 "~" H 4050 7750 50  0001 C CNN
+	1    4050 7750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 7600 4050 7500
+Wire Wire Line
+	4050 7900 4050 8250
+$Comp
+L Device:R R-SXTMBASE-11
+U 1 1 61FFAE4F
+P 3600 6350
+F 0 "R-SXTMBASE-11" H 3500 6400 50  0000 R CNN
+F 1 "3k3 6W" H 3500 6350 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3530 6350 50  0001 C CNN
+F 3 "~" H 3600 6350 50  0001 C CNN
+	1    3600 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 7100 3600 6650
+Text Label 3300 8250 2    50   ~ 0
+GND
+Wire Wire Line
+	3300 7600 3200 7600
+$Comp
+L Device:R R-SXTMBASE-8
+U 1 1 621A067B
+P 3050 7600
+F 0 "R-SXTMBASE-8" V 3200 7450 50  0000 C CNN
+F 1 "R" V 2900 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2980 7600 50  0001 C CNN
+F 3 "~" H 3050 7600 50  0001 C CNN
+	1    3050 7600
+	0    1    1    0   
+$EndComp
+Text Label 4050 8250 2    50   ~ 0
+GND
+$Comp
+L Device:C C-SXTMBASE-3
+U 1 1 621EE4BB
+P 2650 6450
+F 0 "C-SXTMBASE-3" V 2350 6450 50  0000 C CNN
+F 1 "100p" V 2450 6450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2688 6300 50  0001 C CNN
+F 3 "~" H 2650 6450 50  0001 C CNN
+	1    2650 6450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-SXTMBASE-6
+U 1 1 62232647
+P 2650 6650
+F 0 "R-SXTMBASE-6" V 2500 6650 50  0000 C CNN
+F 1 "470K" V 2400 6650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2580 6650 50  0001 C CNN
+F 3 "~" H 2650 6650 50  0001 C CNN
+	1    2650 6650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2800 6450 2900 6450
+Wire Wire Line
+	2900 6450 2900 6650
+Wire Wire Line
+	2900 6650 2800 6650
+Wire Wire Line
+	2500 6650 2300 6650
+Wire Wire Line
+	2300 6650 2300 6450
+Wire Wire Line
+	2300 6450 2500 6450
+$Comp
+L Device:C C-SXTMBASE-1
+U 1 1 622BBF9C
+P 2000 6450
+F 0 "C-SXTMBASE-1" V 1700 6450 50  0000 C CNN
+F 1 "100p" V 1800 6450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 2038 6300 50  0001 C CNN
+F 3 "~" H 2000 6450 50  0001 C CNN
+	1    2000 6450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-SXTMBASE-3
+U 1 1 622BC580
+P 2000 6650
+F 0 "R-SXTMBASE-3" V 1850 6650 50  0000 C CNN
+F 1 "470K" V 1750 6650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1930 6650 50  0001 C CNN
+F 3 "~" H 2000 6650 50  0001 C CNN
+	1    2000 6650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2150 6450 2300 6450
+Wire Wire Line
+	2300 6650 2150 6650
+Wire Wire Line
+	1850 6650 1700 6650
+Wire Wire Line
+	1700 6650 1700 6450
+Wire Wire Line
+	1700 6450 1850 6450
+Connection ~ 2300 6450
+Connection ~ 2300 6650
+Wire Wire Line
+	1100 6650 1700 6650
+Connection ~ 1700 6650
+Wire Wire Line
+	1100 6650 1600 6150
+Text Label 1600 6150 0    50   ~ 0
+A
+$Comp
+L Device:R_POT RV-SXTMBASE-1
+U 1 1 623962D6
+P 1750 7600
+F 0 "RV-SXTMBASE-1" H 1650 7650 50  0000 R CNN
+F 1 "50K" H 1650 7600 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 1750 7600 50  0001 C CNN
+F 3 "~" H 1750 7600 50  0001 C CNN
+	1    1750 7600
+	1    0    0    1   
+$EndComp
+Text Label 1750 7850 0    50   ~ 0
+-150V
+Wire Wire Line
+	1750 7750 1750 7850
+$Comp
+L Device:R R-SXTMBASE-1
+U 1 1 6239679A
+P 1750 7200
+F 0 "R-SXTMBASE-1" H 1650 7150 50  0000 R CNN
+F 1 "22K" H 1650 7200 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 1680 7200 50  0001 C CNN
+F 3 "~" H 1750 7200 50  0001 C CNN
+	1    1750 7200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1750 7450 1750 7350
+Wire Wire Line
+	1750 7050 1750 6950
+Text Label 1750 6950 2    50   ~ 0
+GND
+Wire Wire Line
+	1900 7600 2300 7600
+Wire Wire Line
+	2300 7350 2300 7600
+$Comp
+L Device:R R-SXTMBASE-5
+U 1 1 62548EA2
+P 2300 7200
+F 0 "R-SXTMBASE-5" H 2400 7150 50  0000 L CNN
+F 1 "150K" H 2400 7200 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 2230 7200 50  0001 C CNN
+F 3 "~" H 2300 7200 50  0001 C CNN
+	1    2300 7200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2300 6650 2300 7050
+Wire Wire Line
+	2300 7600 2900 7600
+Connection ~ 2300 7600
+Wire Wire Line
+	2900 6650 3600 6650
+Connection ~ 2900 6650
+Connection ~ 3600 6650
+Wire Wire Line
+	3600 6050 3500 6050
+$Comp
+L Device:R R-SXTMBASE-9
+U 1 1 6298C3F5
+P 3350 6050
+F 0 "R-SXTMBASE-9" V 3600 6050 50  0000 C CNN
+F 1 "100" V 3500 6050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 3280 6050 50  0001 C CNN
+F 3 "~" H 3350 6050 50  0001 C CNN
+	1    3350 6050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3200 6050 3100 6050
+Text Label 3100 6050 2    50   ~ 0
++300V
+Wire Wire Line
+	3600 6650 4050 6400
+$Comp
+L Connector:Conn_01x01_Female J-SXTMBASE-2
+U 1 1 62A6EF36
+P 4250 6400
+F 0 "J-SXTMBASE-2" H 4300 6450 50  0000 L CNN
+F 1 "X2" H 4300 6350 50  0000 L CNN
+F 2 "SamacSys_Parts_l:242431" H 4250 6400 50  0001 C CNN
+F 3 "~" H 4250 6400 50  0001 C CNN
+	1    4250 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C-SXTMBASE-14
+U 1 1 62A7BBC9
+P 5550 6450
+F 0 "C-SXTMBASE-14" V 5250 6450 50  0000 C CNN
+F 1 "100p" V 5350 6450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 5588 6300 50  0001 C CNN
+F 3 "~" H 5550 6450 50  0001 C CNN
+	1    5550 6450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-SXTMBASE-22
+U 1 1 62A7C201
+P 5550 6650
+F 0 "R-SXTMBASE-22" V 5400 6650 50  0000 C CNN
+F 1 "470K" V 5300 6650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 5480 6650 50  0001 C CNN
+F 3 "~" H 5550 6650 50  0001 C CNN
+	1    5550 6650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5700 6450 5800 6450
+Wire Wire Line
+	5800 6450 5800 6650
+Wire Wire Line
+	5800 6650 5700 6650
+Wire Wire Line
+	5400 6650 5200 6650
+Wire Wire Line
+	5200 6650 5200 6450
+Wire Wire Line
+	5200 6450 5400 6450
+$Comp
+L Device:C C-SXTMBASE-12
+U 1 1 62A7C211
+P 4900 6450
+F 0 "C-SXTMBASE-12" V 4600 6450 50  0000 C CNN
+F 1 "100p" V 4700 6450 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 4938 6300 50  0001 C CNN
+F 3 "~" H 4900 6450 50  0001 C CNN
+	1    4900 6450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R-SXTMBASE-18
+U 1 1 62A7C21B
+P 4900 6650
+F 0 "R-SXTMBASE-18" V 4750 6650 50  0000 C CNN
+F 1 "470K" V 4650 6650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 4830 6650 50  0001 C CNN
+F 3 "~" H 4900 6650 50  0001 C CNN
+	1    4900 6650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5050 6450 5200 6450
+Wire Wire Line
+	5200 6650 5050 6650
+Wire Wire Line
+	4750 6650 4600 6650
+Wire Wire Line
+	4600 6650 4600 6450
+Wire Wire Line
+	4600 6450 4750 6450
+Connection ~ 5200 6450
+Connection ~ 5200 6650
+Wire Wire Line
+	3600 6650 4600 6650
+Connection ~ 4600 6650
+Wire Wire Line
+	5800 6650 6800 6650
+Connection ~ 5800 6650
+$Comp
+L NEWValves:VR91 V-SXTMBASE-5
+U 1 1 62B722E8
+P 6800 7550
+F 0 "V-SXTMBASE-5" H 6850 7150 50  0000 C CNN
+F 1 "CV173" H 6850 7050 50  0000 C CNN
+F 2 "NewValves:Valve_9Loctal" H 7800 7800 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ef55.pdf" H 6800 7550 50  0001 C CNN
+	1    6800 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 7400 6400 7400
+Text Label 6400 7400 2    50   ~ 0
+GND
+NoConn ~ 7100 7750
+NoConn ~ 7100 7650
+Wire Wire Line
+	7150 7500 7250 7500
+Wire Wire Line
+	6500 7600 6400 7600
+$Comp
+L Device:R R-SXTMBASE-24
+U 1 1 62B729BD
+P 6250 7600
+F 0 "R-SXTMBASE-24" V 6400 7450 50  0000 C CNN
+F 1 "R" V 6100 7600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6180 7600 50  0001 C CNN
+F 3 "~" H 6250 7600 50  0001 C CNN
+	1    6250 7600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 7600 6100 7600
+Wire Wire Line
+	5200 6650 5200 7600
+$Comp
+L Device:R R-SXTMBASE-25
+U 1 1 62D19B10
+P 6800 6350
+F 0 "R-SXTMBASE-25" H 6900 6400 50  0000 L CNN
+F 1 "3k3 6W" H 6900 6350 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 6730 6350 50  0001 C CNN
+F 3 "~" H 6800 6350 50  0001 C CNN
+	1    6800 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R-SXTMBASE-27
+U 1 1 62F060B5
+P 7250 7250
+F 0 "R-SXTMBASE-27" H 7350 7300 50  0000 L CNN
+F 1 "3k9 3W" H 7350 7250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 7180 7250 50  0001 C CNN
+F 3 "~" H 7250 7250 50  0001 C CNN
+	1    7250 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 7500 7250 7400
+Wire Wire Line
+	7250 7100 7250 6050
+Wire Wire Line
+	6800 6650 6800 6500
+Wire Wire Line
+	6800 6200 6800 6050
+Connection ~ 6800 6050
+Wire Wire Line
+	6800 6050 7250 6050
+Wire Wire Line
+	3600 6650 3600 6500
+Wire Wire Line
+	3600 6200 3600 6050
+Wire Wire Line
+	3600 6050 6800 6050
+Connection ~ 3600 6050
+Wire Wire Line
+	6800 6650 6350 6400
+$Comp
+L Connector:Conn_01x01_Female J-SXTMBASE-4
+U 1 1 632DAA06
+P 6150 6400
+F 0 "J-SXTMBASE-4" H 6000 6600 50  0000 C CNN
+F 1 "X1" H 6000 6500 50  0000 C CNN
+F 2 "SamacSys_Parts_l:242431" H 6150 6400 50  0001 C CNN
+F 3 "~" H 6150 6400 50  0001 C CNN
+	1    6150 6400
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6800 6650
+Wire Wire Line
+	6500 7700 6500 8250
+Text Label 6500 8250 2    50   ~ 0
+GND
+Wire Wire Line
+	7250 6050 7600 6050
+Wire Wire Line
+	7600 6050 7600 6150
+Connection ~ 7250 6050
+$Comp
+L Device:C C-SXTMBASE-17
+U 1 1 635D2B1D
+P 7600 6300
+F 0 "C-SXTMBASE-17" H 7450 6350 50  0000 R CNN
+F 1 "33u" H 7450 6300 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 7638 6150 50  0001 C CNN
+F 3 "~" H 7600 6300 50  0001 C CNN
+	1    7600 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 6450 7600 6550
+Text Label 7600 6550 2    50   ~ 0
+GND
+Text Label 9550 6000 2    50   ~ 0
++200V
+$Comp
+L Device:R R-SXTMBASE-34
+U 1 1 6369B0E9
+P 9550 6200
+F 0 "R-SXTMBASE-34" H 9450 6250 50  0000 R CNN
+F 1 "1M" H 9450 6200 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 9480 6200 50  0001 C CNN
+F 3 "~" H 9550 6200 50  0001 C CNN
+	1    9550 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 6000 9550 6050
+$Comp
+L Device:CP C-SXTMBASE-20
+U 1 1 6369B0F7
+P 9550 6700
+F 0 "C-SXTMBASE-20" H 9400 6750 50  0000 R CNN
+F 1 "5uF 350v" H 9400 6700 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 9588 6550 50  0001 C CNN
+F 3 "~" H 9550 6700 50  0001 C CNN
+	1    9550 6700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 6950 9550 6850
+Text Label 9550 6950 0    50   ~ 0
+GND
+Wire Wire Line
+	9550 6350 9550 6450
+Wire Wire Line
+	9550 6450 9650 6450
+Connection ~ 9550 6450
+Wire Wire Line
+	9550 6450 9550 6550
+Text Label 9650 6450 0    50   ~ 0
++200V*
+Text Label 11200 7200 2    50   ~ 0
+-150V
+$Comp
+L Device:R R-SXTMBASE-37
+U 1 1 6384BF0B
+P 11200 7000
+F 0 "R-SXTMBASE-37" H 11100 7050 50  0000 R CNN
+F 1 "1M" H 11100 7000 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P5.08mm_Vertical" V 11130 7000 50  0001 C CNN
+F 3 "~" H 11200 7000 50  0001 C CNN
+	1    11200 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11200 7200 11200 7150
+$Comp
+L Device:CP C-SXTMBASE-22
+U 1 1 6384BF16
+P 11200 6500
+F 0 "C-SXTMBASE-22" H 11350 6550 50  0000 L CNN
+F 1 "8uF 350v" H 11350 6500 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P5.00mm" H 11238 6350 50  0001 C CNN
+F 3 "~" H 11200 6500 50  0001 C CNN
+	1    11200 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11200 6250 11200 6350
+Text Label 11200 6250 0    50   ~ 0
+GND
+Wire Wire Line
+	11200 6850 11200 6750
+Wire Wire Line
+	11200 6750 11300 6750
+Connection ~ 11200 6750
+Wire Wire Line
+	11200 6750 11200 6650
+Text Label 11300 6750 0    50   ~ 0
+-150V*
+Connection ~ 3150 9400
+Connection ~ 3350 9650
+Wire Wire Line
+	9300 9600 9650 9600
+Wire Wire Line
+	9300 9350 9450 9350
+Connection ~ 9450 9350
+Connection ~ 9650 9600
+Text Label 9300 9350 2    50   ~ 0
+Heater-GND_Bal
+Text Label 9300 9600 2    50   ~ 0
+Heater-6.3V+Bal
+Connection ~ 2475 9400
+Connection ~ 2675 9650
+Wire Wire Line
+	5175 9400 5850 9400
+Wire Wire Line
+	5850 9400 6525 9400
+Connection ~ 5850 9400
+Wire Wire Line
+	5850 9400 5850 9350
+Wire Wire Line
+	6050 9650 6725 9650
+Wire Wire Line
+	6725 9350 6725 9650
+Wire Wire Line
+	6525 9350 6525 9400
+$Comp
+L NEWValves:EA50 D-SXTMBASE-9
+U 2 1 658AB430
+P 6625 8900
+F 0 "D-SXTMBASE-9" H 6625 9200 50  0000 C CNN
+F 1 "EA50" H 6625 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 7225 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 6625 8900 50  0001 C CNN
+	2    6625 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5375 9650 6050 9650
+Connection ~ 6050 9650
+Wire Wire Line
+	6050 9350 6050 9650
+$Comp
+L NEWValves:EA50 D-SXTMBASE-8
+U 2 1 63F81924
+P 5950 8900
+F 0 "D-SXTMBASE-8" H 5975 9200 50  0000 C CNN
+F 1 "EA50" H 5975 9100 50  0000 C CNN
+F 2 "NewValves:Valve_B3G" H 6550 8700 50  0001 C CNN
+F 3 "http://www.r-type.org/pdfs/ea50.pdf" H 5950 8900 50  0001 C CNN
+	2    5950 8900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6525 9400
+Connection ~ 6725 9650
+$EndSCHEMATC
