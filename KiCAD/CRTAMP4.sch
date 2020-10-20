@@ -4,7 +4,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 11 45
-Title "Control Adder Position 6.4"
+Title "CRT Amplifier Type 4 Position 7.4"
 Date "2020-10-08"
 Rev "Alpha"
 Comp "John Bradley"

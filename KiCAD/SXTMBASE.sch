@@ -4,7 +4,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 41 45
-Title "Dot and Strobe 2.3"
+Title "X Timebase Panel/Diag 2.4"
 Date "2020-10-15"
 Rev "Alpha"
 Comp "John Bradley"

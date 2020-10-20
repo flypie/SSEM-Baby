@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 13 45
-Title "Control Adder Position 6.4"
+Title "Control CRT Position 7.1"
 Date "2020-10-08"
 Rev "Alpha"
 Comp "John Bradley"
